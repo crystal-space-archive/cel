@@ -41955,25 +41955,6 @@ static PyObject *_wrap_iLight_GetSector(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iLight_SetSector(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    iSector *arg2 = (iSector *) 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetSector",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetSector(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iLight_GetColor(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
@@ -42418,23 +42399,6 @@ static PyObject *_wrap_iLight_Setup(PyObject *self, PyObject *args) {
     (arg1)->Setup();
     
     Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_GetNext(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    iLight *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetNext",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iLight *)(arg1)->GetNext();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iLight, 0);
     return resultobj;
     fail:
     return NULL;
@@ -110934,7 +110898,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iLight_GetCenter", _wrap_iLight_GetCenter, METH_VARARGS },
 	 { (char *)"iLight_SetCenter", _wrap_iLight_SetCenter, METH_VARARGS },
 	 { (char *)"iLight_GetSector", _wrap_iLight_GetSector, METH_VARARGS },
-	 { (char *)"iLight_SetSector", _wrap_iLight_SetSector, METH_VARARGS },
 	 { (char *)"iLight_GetColor", _wrap_iLight_GetColor, METH_VARARGS },
 	 { (char *)"iLight_SetColor", _wrap_iLight_SetColor, METH_VARARGS },
 	 { (char *)"iLight_GetInfluenceRadius", _wrap_iLight_GetInfluenceRadius, METH_VARARGS },
@@ -110959,7 +110922,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iLight_AddAffectedLightingInfo", _wrap_iLight_AddAffectedLightingInfo, METH_VARARGS },
 	 { (char *)"iLight_RemoveAffectedLightingInfo", _wrap_iLight_RemoveAffectedLightingInfo, METH_VARARGS },
 	 { (char *)"iLight_Setup", _wrap_iLight_Setup, METH_VARARGS },
-	 { (char *)"iLight_GetNext", _wrap_iLight_GetNext, METH_VARARGS },
 	 { (char *)"delete_iLight", _wrap_delete_iLight, METH_VARARGS },
 	 { (char *)"iLight_swigregister", iLight_swigregister, METH_VARARGS },
 	 { (char *)"iLightList_GetCount", _wrap_iLightList_GetCount, METH_VARARGS },
