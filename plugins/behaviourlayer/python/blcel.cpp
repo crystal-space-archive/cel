@@ -7048,6 +7048,35 @@ static PyObject *_wrap_csVector2_Rotate(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csVector2_IsLeft(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csVector2 *arg1 = (csVector2 *) 0 ;
+    csVector2 *arg2 = 0 ;
+    csVector2 *arg3 = 0 ;
+    float result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOO:csVector2_IsLeft",&obj0,&obj1,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (float)(arg1)->IsLeft((csVector2 const &)*arg2,(csVector2 const &)*arg3);
+    
+    resultobj = PyFloat_FromDouble(result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csVector2___iadd__(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csVector2 *arg1 = (csVector2 *) 0 ;
@@ -111022,6 +111051,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csVector2_Norm", _wrap_csVector2_Norm, METH_VARARGS },
 	 { (char *)"csVector2_SquaredNorm", _wrap_csVector2_SquaredNorm, METH_VARARGS },
 	 { (char *)"csVector2_Rotate", _wrap_csVector2_Rotate, METH_VARARGS },
+	 { (char *)"csVector2_IsLeft", _wrap_csVector2_IsLeft, METH_VARARGS },
 	 { (char *)"csVector2___iadd__", _wrap_csVector2___iadd__, METH_VARARGS },
 	 { (char *)"csVector2___isub__", _wrap_csVector2___isub__, METH_VARARGS },
 	 { (char *)"csVector2___imul__", _wrap_csVector2___imul__, METH_VARARGS },
