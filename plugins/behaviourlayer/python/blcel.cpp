@@ -2077,7 +2077,6 @@ iCelPlLayer *csQueryRegistry_iCelPlLayer (iObjectRegistry *object_reg)
 iCelBehaviour *iCelEntity_CreateBehaviour(iCelEntity *self,iCelBlLayer *bl,char const *name){
       csRef<iCelBehaviour> bh(bl->CreateBehaviour(self, name));
       if (!bh.IsValid()) return 0;
-      self->SetBehaviour(bh);
       return bh;
     }
 
