@@ -43357,17 +43357,18 @@ static PyObject *_wrap_iLight_GetDynamicType(PyObject *self, PyObject *args) {
 static PyObject *_wrap_iLight_GetCenter(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
-    csVector3 *result;
+    csVector3 result;
     PyObject * obj0 = 0 ;
     
     if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetCenter",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    {
-        csVector3 const &_result_ref = (arg1)->GetCenter();
-        result = (csVector3 *) &_result_ref;
-    }
+    result = (arg1)->GetCenter();
     
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector3, 0);
+    {
+        csVector3 * resultptr;
+        resultptr = new csVector3((csVector3 &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csVector3, 1);
+    }
     return resultobj;
     fail:
     return NULL;
@@ -43413,6 +43414,23 @@ static PyObject *_wrap_iLight_GetSector(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_iLight_GetMovable(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    iMovable *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetMovable",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (iMovable *)(arg1)->GetMovable();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iMovable, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_iLight_GetColor(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
@@ -43447,6 +43465,124 @@ static PyObject *_wrap_iLight_SetColor(PyObject *self, PyObject *args) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
     (arg1)->SetColor((csColor const &)*arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_GetType(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetType",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)((iLight const *)arg1)->GetType();
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetType(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    int arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oi:iLight_SetType",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetType((csLightType )arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_GetDirection(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csVector3 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetDirection",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    {
+        csVector3 const &_result_ref = ((iLight const *)arg1)->GetDirection();
+        result = (csVector3 *) &_result_ref;
+    }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector3, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetDirection(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csVector3 *arg2 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetDirection",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->SetDirection((csVector3 const &)*arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_GetSpotFalloff(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csVector2 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetSpotFalloff",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    {
+        csVector2 const &_result_ref = ((iLight const *)arg1)->GetSpotFalloff();
+        result = (csVector2 *) &_result_ref;
+    }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetSpotFalloff(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csVector2 *arg2 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetSpotFalloff",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->SetSpotFalloff((csVector2 const &)*arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43531,7 +43667,7 @@ static PyObject *_wrap_iLight_SetAttenuation(PyObject *self, PyObject *args) {
     
     if(!PyArg_ParseTuple(args,(char *)"Oi:iLight_SetAttenuation",&obj0,&arg2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetAttenuation(arg2);
+    (arg1)->SetAttenuation((csLightAttenuationMode )arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43592,7 +43728,7 @@ static PyObject *_wrap_iLight_CalculateAttenuationVector(PyObject *self, PyObjec
     
     if(!PyArg_ParseTuple(args,(char *)"Oi|ff:iLight_CalculateAttenuationVector",&obj0,&arg2,&arg3,&arg4)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->CalculateAttenuationVector(arg2,arg3,arg4);
+    (arg1)->CalculateAttenuationVector((csLightAttenuationMode )arg2,arg3,arg4);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -47376,7 +47512,7 @@ static PyObject *_wrap_iEngine_CreateLight(PyObject *self, PyObject *args) {
     csVector3 *arg3 = 0 ;
     float arg4 ;
     csColor *arg5 = 0 ;
-    int arg6 = (int) 1 ;
+    int arg6 = (int) CS_LIGHT_DYNAMICTYPE_STATIC ;
     SwigValueWrapper< csPtr<iLight > > result;
     PyObject * obj0 = 0 ;
     PyObject * obj2 = 0 ;
@@ -47392,7 +47528,7 @@ static PyObject *_wrap_iEngine_CreateLight(PyObject *self, PyObject *args) {
     if (arg5 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (arg1)->CreateLight((char const *)arg2,(csVector3 const &)*arg3,arg4,(csColor const &)*arg5,arg6);
+    result = (arg1)->CreateLight((char const *)arg2,(csVector3 const &)*arg3,arg4,(csColor const &)*arg5,(csLightDynamicType )arg6);
     
     {
         /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
@@ -112766,8 +112902,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iLight_GetCenter", _wrap_iLight_GetCenter, METH_VARARGS },
 	 { (char *)"iLight_SetCenter", _wrap_iLight_SetCenter, METH_VARARGS },
 	 { (char *)"iLight_GetSector", _wrap_iLight_GetSector, METH_VARARGS },
+	 { (char *)"iLight_GetMovable", _wrap_iLight_GetMovable, METH_VARARGS },
 	 { (char *)"iLight_GetColor", _wrap_iLight_GetColor, METH_VARARGS },
 	 { (char *)"iLight_SetColor", _wrap_iLight_SetColor, METH_VARARGS },
+	 { (char *)"iLight_GetType", _wrap_iLight_GetType, METH_VARARGS },
+	 { (char *)"iLight_SetType", _wrap_iLight_SetType, METH_VARARGS },
+	 { (char *)"iLight_GetDirection", _wrap_iLight_GetDirection, METH_VARARGS },
+	 { (char *)"iLight_SetDirection", _wrap_iLight_SetDirection, METH_VARARGS },
+	 { (char *)"iLight_GetSpotFalloff", _wrap_iLight_GetSpotFalloff, METH_VARARGS },
+	 { (char *)"iLight_SetSpotFalloff", _wrap_iLight_SetSpotFalloff, METH_VARARGS },
 	 { (char *)"iLight_GetInfluenceRadius", _wrap_iLight_GetInfluenceRadius, METH_VARARGS },
 	 { (char *)"iLight_GetInfluenceRadiusSq", _wrap_iLight_GetInfluenceRadiusSq, METH_VARARGS },
 	 { (char *)"iLight_SetInfluenceRadius", _wrap_iLight_SetInfluenceRadius, METH_VARARGS },
@@ -118335,16 +118478,19 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_POLYMESH_TRIANGLEMESH", (long) 32, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_LIGHT_THINGSHADOWS", (long) 0x00000001, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_LIGHT_ACTIVEHALO", (long) 0x80000000, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_STATIC", (long) 1, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_PSEUDO", (long) 2, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_DYNAMIC", (long) 3, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_STATIC", (long) CS_LIGHT_DYNAMICTYPE_STATIC, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_PSEUDO", (long) CS_LIGHT_DYNAMICTYPE_PSEUDO, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_DYNAMICTYPE_DYNAMIC", (long) CS_LIGHT_DYNAMICTYPE_DYNAMIC, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_DEFAULT_LIGHT_LEVEL", (long) 20, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_NORMAL_LIGHT_LEVEL", (long) 128, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_ATTN_NONE", (long) 0, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_ATTN_LINEAR", (long) 1, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_ATTN_INVERSE", (long) 2, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_ATTN_REALISTIC", (long) 3, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_ATTN_CLQ", (long) 4, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_ATTN_NONE", (long) CS_ATTN_NONE, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_ATTN_LINEAR", (long) CS_ATTN_LINEAR, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_ATTN_INVERSE", (long) CS_ATTN_INVERSE, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_ATTN_REALISTIC", (long) CS_ATTN_REALISTIC, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_ATTN_CLQ", (long) CS_ATTN_CLQ, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_POINTLIGHT", (long) CS_LIGHT_POINTLIGHT, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_DIRECTIONAL", (long) CS_LIGHT_DIRECTIONAL, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHT_SPOTLIGHT", (long) CS_LIGHT_SPOTLIGHT, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_READ", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_WRITE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_NOUPDATE", (long) 4, 0, 0, 0},
