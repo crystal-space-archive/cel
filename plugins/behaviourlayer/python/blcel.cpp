@@ -798,17 +798,17 @@ SWIG_Python_InstallConstants(PyObject *d, swig_const_info constants[]) {
 #define  SWIGTYPE_p_csRefArrayTiShader_t swig_types[75] 
 #define  SWIGTYPE_p_csPtrTiShader_t swig_types[76] 
 #define  SWIGTYPE_p_uint8 swig_types[77] 
-#define  SWIGTYPE_p_iConfigIterator swig_types[78] 
-#define  SWIGTYPE_p_iPluginIterator swig_types[79] 
-#define  SWIGTYPE_p_iEventAttributeIterator swig_types[80] 
-#define  SWIGTYPE_p_iObjectRegistryIterator swig_types[81] 
-#define  SWIGTYPE_p_iObjectIterator swig_types[82] 
-#define  SWIGTYPE_p_iVisibilityObjectIterator swig_types[83] 
-#define  SWIGTYPE_p_iMeshWrapperIterator swig_types[84] 
-#define  SWIGTYPE_p_iSectorIterator swig_types[85] 
-#define  SWIGTYPE_p_iLightIterator swig_types[86] 
-#define  SWIGTYPE_p_csStringSetIterator swig_types[87] 
-#define  SWIGTYPE_p_iDocumentAttributeIterator swig_types[88] 
+#define  SWIGTYPE_p_iDocumentAttributeIterator swig_types[78] 
+#define  SWIGTYPE_p_iConfigIterator swig_types[79] 
+#define  SWIGTYPE_p_iPluginIterator swig_types[80] 
+#define  SWIGTYPE_p_iEventAttributeIterator swig_types[81] 
+#define  SWIGTYPE_p_iObjectRegistryIterator swig_types[82] 
+#define  SWIGTYPE_p_iObjectIterator swig_types[83] 
+#define  SWIGTYPE_p_iVisibilityObjectIterator swig_types[84] 
+#define  SWIGTYPE_p_iMeshWrapperIterator swig_types[85] 
+#define  SWIGTYPE_p_iSectorIterator swig_types[86] 
+#define  SWIGTYPE_p_iLightIterator swig_types[87] 
+#define  SWIGTYPE_p_csStringSetIterator swig_types[88] 
 #define  SWIGTYPE_p_iDocumentNodeIterator swig_types[89] 
 #define  SWIGTYPE_p_iStreamIterator swig_types[90] 
 #define  SWIGTYPE_p_iReporterIterator swig_types[91] 
@@ -913,286 +913,285 @@ SWIG_Python_InstallConstants(PyObject *d, swig_const_info constants[]) {
 #define  SWIGTYPE_p_csArrayTcsArrayTcsShaderVariable_p_t_t swig_types[190] 
 #define  SWIGTYPE_p_iLightingProcessInfo swig_types[191] 
 #define  SWIGTYPE_p_csPtrTiKeyComposer_t swig_types[192] 
-#define  SWIGTYPE_p_csPoly2DUnbounded swig_types[193] 
-#define  SWIGTYPE_p_iPcCommandInput swig_types[194] 
-#define  SWIGTYPE_p_csPtrTcsFrustum_t swig_types[195] 
-#define  SWIGTYPE_p_unsigned_int swig_types[196] 
-#define  SWIGTYPE_p_iReporter swig_types[197] 
-#define  SWIGTYPE_p_csArrayTcsIntersectingTriangle_t swig_types[198] 
-#define  SWIGTYPE_p_csPtrTiLoaderContext_t swig_types[199] 
-#define  SWIGTYPE_p_f_p_void_p_iAwsSource__void swig_types[200] 
-#define  SWIGTYPE_p_csRefTiScriptObject_t swig_types[201] 
-#define  SWIGTYPE_p_csPtrTiShadowBlock_t swig_types[202] 
-#define  SWIGTYPE_p_csEventCommandData swig_types[203] 
-#define  SWIGTYPE_p_iSoundData swig_types[204] 
-#define  SWIGTYPE_p_iAwsRGBKey swig_types[205] 
-#define  SWIGTYPE_p_iCelPropertyClass swig_types[206] 
-#define  SWIGTYPE_p_csSetTcsStringID_t swig_types[207] 
-#define  SWIGTYPE_p_csHashTcsRefTiShader_t_csStringID_t swig_types[208] 
-#define  SWIGTYPE_p_csPtrTiPolygonRenderer_t swig_types[209] 
-#define  SWIGTYPE_p_csPtrTiGenMeshAnimationControl_t swig_types[210] 
-#define  SWIGTYPE_p_iProgressMeter swig_types[211] 
-#define  SWIGTYPE_p_csString swig_types[212] 
-#define  SWIGTYPE_p_iString swig_types[213] 
-#define  SWIGTYPE_p_p_iString swig_types[214] 
-#define  SWIGTYPE_p_iPcCharacteristics swig_types[215] 
-#define  SWIGTYPE_p_iKeyboardDriver swig_types[216] 
-#define  SWIGTYPE_p_iSoundDriver swig_types[217] 
-#define  SWIGTYPE_p_iShadowBlockList swig_types[218] 
-#define  SWIGTYPE_p_iJoystickDriver swig_types[219] 
-#define  SWIGTYPE_p_iMouseDriver swig_types[220] 
-#define  SWIGTYPE_p_iSCF swig_types[221] 
-#define  SWIGTYPE_p_double swig_types[222] 
-#define  SWIGTYPE_p_csVertexAttrib swig_types[223] 
-#define  SWIGTYPE_p_bool swig_types[224] 
-#define  SWIGTYPE_p_celData swig_types[225] 
-#define  SWIGTYPE_p_iBillboard swig_types[226] 
-#define  SWIGTYPE_p_iPcBillboard swig_types[227] 
-#define  SWIGTYPE_p_p_char swig_types[228] 
-#define  SWIGTYPE_p_iGeneralMeshState swig_types[229] 
-#define  SWIGTYPE_p_iModelData swig_types[230] 
-#define  SWIGTYPE_p_char swig_types[231] 
-#define  SWIGTYPE_p_csPtrTiRenderBuffer_t swig_types[232] 
-#define  SWIGTYPE_p_csRefTiRenderBuffer_t swig_types[233] 
-#define  SWIGTYPE_p_iSequenceTimedOperation swig_types[234] 
-#define  SWIGTYPE_p_iJoint swig_types[235] 
-#define  SWIGTYPE_p_iLightingProcessData swig_types[236] 
-#define  SWIGTYPE_p_uint32 swig_types[237] 
-#define  SWIGTYPE_p_iEngineSequenceParameters swig_types[238] 
-#define  SWIGTYPE_p_iKeyComposer swig_types[239] 
-#define  SWIGTYPE_p_iBodyGroup swig_types[240] 
-#define  SWIGTYPE_p_csMeshedPolygon swig_types[241] 
-#define  SWIGTYPE_p_iShaderPriorityList swig_types[242] 
-#define  SWIGTYPE_p_iCelEntityList swig_types[243] 
-#define  SWIGTYPE_p_iSprite2DUVAnimationFrame swig_types[244] 
-#define  SWIGTYPE_p_iCollection swig_types[245] 
-#define  SWIGTYPE_p_iPcCollisionDetection swig_types[246] 
-#define  SWIGTYPE_p_iPcMeshSelect swig_types[247] 
-#define  SWIGTYPE_p_csPtrTiSoundData_t swig_types[248] 
-#define  SWIGTYPE_p_csPtrTiModelData_t swig_types[249] 
-#define  SWIGTYPE_p_csFlags swig_types[250] 
-#define  SWIGTYPE_p_csPtrTiLightingProcessData_t swig_types[251] 
-#define  SWIGTYPE_p_iDocument swig_types[252] 
-#define  SWIGTYPE_p_csIntersect2 swig_types[253] 
-#define  SWIGTYPE_p_csIntersect3 swig_types[254] 
-#define  SWIGTYPE_p_csRefArrayTiAwsKey_t swig_types[255] 
-#define  SWIGTYPE_p_csFileTime swig_types[256] 
-#define  SWIGTYPE_p_iMaterialList swig_types[257] 
-#define  SWIGTYPE_p_p_iLight swig_types[258] 
-#define  SWIGTYPE_p_iLight swig_types[259] 
-#define  SWIGTYPE_p_csBox2 swig_types[260] 
-#define  SWIGTYPE_p_csMath2 swig_types[261] 
-#define  SWIGTYPE_p_CalModel swig_types[262] 
-#define  SWIGTYPE_p_csBox3 swig_types[263] 
-#define  SWIGTYPE_p_csMath3 swig_types[264] 
-#define  SWIGTYPE_p_iMaterial swig_types[265] 
-#define  SWIGTYPE_p_int32 swig_types[266] 
-#define  SWIGTYPE_p_iConfigFile swig_types[267] 
-#define  SWIGTYPE_p_csPtrTiPluginIterator_t swig_types[268] 
-#define  SWIGTYPE_p_csRefTiEventAttributeIterator_t swig_types[269] 
-#define  SWIGTYPE_p_csPtrTiObjectRegistryIterator_t swig_types[270] 
-#define  SWIGTYPE_p_csPtrTiVisibilityObjectIterator_t swig_types[271] 
-#define  SWIGTYPE_p_csPtrTiObjectIterator_t swig_types[272] 
-#define  SWIGTYPE_p_csPtrTiSectorIterator_t swig_types[273] 
-#define  SWIGTYPE_p_csPtrTiLightIterator_t swig_types[274] 
-#define  SWIGTYPE_p_basetype swig_types[275] 
-#define  SWIGTYPE_p_csRefTiDocumentNodeIterator_t swig_types[276] 
-#define  SWIGTYPE_p_csRefTiDocumentAttributeIterator_t swig_types[277] 
-#define  SWIGTYPE_p_iEvent swig_types[278] 
-#define  SWIGTYPE_p_csPtrTiObjectWatcher_t swig_types[279] 
-#define  SWIGTYPE_p_iThingState swig_types[280] 
-#define  SWIGTYPE_p_csPtrTiSequenceWrapper_t swig_types[281] 
-#define  SWIGTYPE_p_iHalo swig_types[282] 
-#define  SWIGTYPE_p_iCollider swig_types[283] 
-#define  SWIGTYPE_p_p_iCollider swig_types[284] 
-#define  SWIGTYPE_p_iPcMesh swig_types[285] 
-#define  SWIGTYPE_p_csColor swig_types[286] 
-#define  SWIGTYPE_p_iPcTimer swig_types[287] 
-#define  SWIGTYPE_p_unsigned_char swig_types[288] 
-#define  SWIGTYPE_p_iDocumentNode swig_types[289] 
-#define  SWIGTYPE_p_iAwsComponentNode swig_types[290] 
-#define  SWIGTYPE_p_iSequenceTrigger swig_types[291] 
-#define  SWIGTYPE_p_iGraphics2D swig_types[292] 
-#define  SWIGTYPE_p_iCameraPosition swig_types[293] 
-#define  SWIGTYPE_p_iPolygonMesh swig_types[294] 
-#define  SWIGTYPE_p_csPolygonMesh swig_types[295] 
-#define  SWIGTYPE_p_iTextureList swig_types[296] 
-#define  SWIGTYPE_p_iPcMovableConstraint swig_types[297] 
-#define  SWIGTYPE_p_iView swig_types[298] 
-#define  SWIGTYPE_p_csPtrTiLoaderStatus_t swig_types[299] 
-#define  SWIGTYPE_p_csPtrTiRigidBody_t swig_types[300] 
-#define  SWIGTYPE_p_csRefTiRigidBody_t swig_types[301] 
-#define  SWIGTYPE_p_csRefTiDocumentNode_t swig_types[302] 
-#define  SWIGTYPE_p_iSectorList swig_types[303] 
-#define  SWIGTYPE_p_csWrapPtr swig_types[304] 
-#define  SWIGTYPE_p_iSoundHandle swig_types[305] 
-#define  SWIGTYPE_p_iPolygonHandle swig_types[306] 
-#define  SWIGTYPE_p_iMaterialHandle swig_types[307] 
-#define  SWIGTYPE_p_iTextureHandle swig_types[308] 
-#define  SWIGTYPE_p_p_iTextureHandle swig_types[309] 
-#define  SWIGTYPE_p_iCommandLineParser swig_types[310] 
-#define  SWIGTYPE_p_csRenderBufferHolder swig_types[311] 
-#define  SWIGTYPE_p_iFontDeleteNotify swig_types[312] 
-#define  SWIGTYPE_p_iAwsSlot swig_types[313] 
-#define  SWIGTYPE_p_iCelPlLayer swig_types[314] 
-#define  SWIGTYPE_p_iCelBlLayer swig_types[315] 
-#define  SWIGTYPE_p_csInitializer swig_types[316] 
-#define  SWIGTYPE_p_celInitializer swig_types[317] 
-#define  SWIGTYPE_p_csRenderBufferComponentType swig_types[318] 
-#define  SWIGTYPE_p_int8 swig_types[319] 
-#define  SWIGTYPE_p_iSoundSource swig_types[320] 
-#define  SWIGTYPE_p_iMeshFactoryList swig_types[321] 
-#define  SWIGTYPE_p_csPtrTiPolygonHandle_t swig_types[322] 
-#define  SWIGTYPE_p_csPtrTiMaterialHandle_t swig_types[323] 
-#define  SWIGTYPE_p_csRefTiTextureHandle_t swig_types[324] 
-#define  SWIGTYPE_p_iAwsSource swig_types[325] 
-#define  SWIGTYPE_p_iSoundRender swig_types[326] 
-#define  SWIGTYPE_p_size_t swig_types[327] 
-#define  SWIGTYPE_p_csGraphics3DCaps swig_types[328] 
-#define  SWIGTYPE_p_iGraphics3D swig_types[329] 
-#define  SWIGTYPE_p_iMeshObjectType swig_types[330] 
-#define  SWIGTYPE_p_iRigidBody swig_types[331] 
-#define  SWIGTYPE_p_csRenderBufferType swig_types[332] 
-#define  SWIGTYPE_p_csBitmapMetrics swig_types[333] 
-#define  SWIGTYPE_p_csGlyphMetrics swig_types[334] 
-#define  SWIGTYPE_p_iRenderLoopManager swig_types[335] 
-#define  SWIGTYPE_p_iCacheManager swig_types[336] 
-#define  SWIGTYPE_p_iPluginManager swig_types[337] 
-#define  SWIGTYPE_p_iVerbosityManager swig_types[338] 
-#define  SWIGTYPE_p_iConfigManager swig_types[339] 
-#define  SWIGTYPE_p_iAwsPrefManager swig_types[340] 
-#define  SWIGTYPE_p_iAwsSinkManager swig_types[341] 
-#define  SWIGTYPE_p_iTextureManager swig_types[342] 
-#define  SWIGTYPE_p_iAwsLayoutManager swig_types[343] 
-#define  SWIGTYPE_p_csRect swig_types[344] 
-#define  SWIGTYPE_p_iNativeWindowManager swig_types[345] 
-#define  SWIGTYPE_p_iShaderManager swig_types[346] 
-#define  SWIGTYPE_p_iDynamics swig_types[347] 
-#define  SWIGTYPE_p_iEngineSequenceManager swig_types[348] 
-#define  SWIGTYPE_p_iSequenceManager swig_types[349] 
-#define  SWIGTYPE_p_iBillboardManager swig_types[350] 
-#define  SWIGTYPE_p_iPcZoneManager swig_types[351] 
-#define  SWIGTYPE_p_iParameterESM swig_types[352] 
-#define  SWIGTYPE_p_csStringID swig_types[353] 
-#define  SWIGTYPE_p_iCrossHalo swig_types[354] 
-#define  SWIGTYPE_p_iRenderLoop swig_types[355] 
-#define  SWIGTYPE_p_csKeyEventHelper swig_types[356] 
-#define  SWIGTYPE_p_csReporterHelper swig_types[357] 
-#define  SWIGTYPE_p_csColliderHelper swig_types[358] 
-#define  SWIGTYPE_p_csEventJoystickData swig_types[359] 
-#define  SWIGTYPE_p_csCommandLineHelper swig_types[360] 
-#define  SWIGTYPE_p_iDebugHelper swig_types[361] 
-#define  SWIGTYPE_p_csGeomDebugHelper swig_types[362] 
-#define  SWIGTYPE_p_iAwsRectKey swig_types[363] 
-#define  SWIGTYPE_p_iGenMeshAnimationControlFactory swig_types[364] 
-#define  SWIGTYPE_p_iMeshObjectFactory swig_types[365] 
-#define  SWIGTYPE_p_csPoly2DFactory swig_types[366] 
-#define  SWIGTYPE_p_iFactory swig_types[367] 
-#define  SWIGTYPE_p_iAwsComponentFactory swig_types[368] 
-#define  SWIGTYPE_p_iAwsKeyFactory swig_types[369] 
-#define  SWIGTYPE_p_iAwsConnectionNodeFactory swig_types[370] 
-#define  SWIGTYPE_p_csFog swig_types[371] 
-#define  SWIGTYPE_p_csPtrTiShadowBlockList_t swig_types[372] 
-#define  SWIGTYPE_p_csPtrTiEventOutlet_t swig_types[373] 
-#define  SWIGTYPE_p_csPtrTiShaderPriorityList_t swig_types[374] 
-#define  SWIGTYPE_p_csPixelCoord swig_types[375] 
-#define  SWIGTYPE_p_uint swig_types[376] 
-#define  SWIGTYPE_p_iCamera swig_types[377] 
-#define  SWIGTYPE_p_iAwsCanvas swig_types[378] 
-#define  SWIGTYPE_p_iPcCamera swig_types[379] 
-#define  SWIGTYPE_p_uint64 swig_types[380] 
-#define  SWIGTYPE_p_csShaderVariable swig_types[381] 
-#define  SWIGTYPE_p_iSharedVariable swig_types[382] 
-#define  SWIGTYPE_p_iShadowReceiver swig_types[383] 
-#define  SWIGTYPE_p_iFrustumViewUserdata swig_types[384] 
-#define  SWIGTYPE_p_int swig_types[385] 
-#define  SWIGTYPE_p_iObjectModel swig_types[386] 
-#define  SWIGTYPE_p_iModelConverter swig_types[387] 
-#define  SWIGTYPE_p_csKeyModifiers swig_types[388] 
-#define  SWIGTYPE_p_void swig_types[389] 
-#define  SWIGTYPE_p_p_void swig_types[390] 
-#define  SWIGTYPE_p_iPcDynamicBody swig_types[391] 
-#define  SWIGTYPE_p_iMovable swig_types[392] 
-#define  SWIGTYPE_p_csPoly2D swig_types[393] 
-#define  SWIGTYPE_p_iPcMovable swig_types[394] 
-#define  SWIGTYPE_p_csSprite2DVertex swig_types[395] 
-#define  SWIGTYPE_p_iNativeWindow swig_types[396] 
-#define  SWIGTYPE_p_csCompressVertex swig_types[397] 
-#define  SWIGTYPE_p_iStream swig_types[398] 
-#define  SWIGTYPE_p_iAudioStream swig_types[399] 
-#define  SWIGTYPE_p_iVideoStream swig_types[400] 
-#define  SWIGTYPE_p_iBinaryLoaderPlugin swig_types[401] 
-#define  SWIGTYPE_p_iLoaderPlugin swig_types[402] 
-#define  SWIGTYPE_p_csBSpline swig_types[403] 
-#define  SWIGTYPE_p_csEventMouseData swig_types[404] 
-#define  SWIGTYPE_p_csTriangle swig_types[405] 
-#define  SWIGTYPE_p_csSpline swig_types[406] 
-#define  SWIGTYPE_p_csCubicSpline swig_types[407] 
-#define  SWIGTYPE_p_csCatmullRomSpline swig_types[408] 
-#define  SWIGTYPE_p_csIntersectingTriangle swig_types[409] 
-#define  SWIGTYPE_p_iPortalContainer swig_types[410] 
-#define  SWIGTYPE_p_iAwsKeyContainer swig_types[411] 
-#define  SWIGTYPE_p_iAwsParmList swig_types[412] 
-#define  SWIGTYPE_p_iImageIO swig_types[413] 
-#define  SWIGTYPE_p_int64 swig_types[414] 
-#define  SWIGTYPE_p_iSprite2DState swig_types[415] 
-#define  SWIGTYPE_p_p_iRenderBuffer swig_types[416] 
-#define  SWIGTYPE_p_iSpriteCal3DState swig_types[417] 
-#define  SWIGTYPE_p_iSprite3DState swig_types[418] 
-#define  SWIGTYPE_p_iDataBuffer swig_types[419] 
-#define  SWIGTYPE_p_csKeyEventData swig_types[420] 
-#define  SWIGTYPE_p_iShaderCompiler swig_types[421] 
-#define  SWIGTYPE_p_iRendererLightmap swig_types[422] 
-#define  SWIGTYPE_p_iSuperLightmap swig_types[423] 
-#define  SWIGTYPE_p_csSphere swig_types[424] 
-#define  SWIGTYPE_p_csStreamDescription swig_types[425] 
-#define  SWIGTYPE_p_csVideoStreamDescription swig_types[426] 
-#define  SWIGTYPE_p_csAudioStreamDescription swig_types[427] 
-#define  SWIGTYPE_p_csCodecDescription swig_types[428] 
-#define  SWIGTYPE_p_csImageIOFileFormatDescription swig_types[429] 
-#define  SWIGTYPE_p_iImageIO__FileFormatDescription swig_types[430] 
-#define  SWIGTYPE_p_iComponent swig_types[431] 
-#define  SWIGTYPE_p_iAwsComponent swig_types[432] 
-#define  SWIGTYPE_p_iSpriteAction swig_types[433] 
-#define  SWIGTYPE_p_iThingFactoryState swig_types[434] 
-#define  SWIGTYPE_p_iSpriteCal3DFactoryState swig_types[435] 
-#define  SWIGTYPE_p_iSprite3DFactoryState swig_types[436] 
-#define  SWIGTYPE_p_iGeneralFactoryState swig_types[437] 
-#define  SWIGTYPE_p_iSprite2DFactoryState swig_types[438] 
-#define  SWIGTYPE_p_iCelParameterBlock swig_types[439] 
-#define  SWIGTYPE_p_csPixmap swig_types[440] 
-#define  SWIGTYPE_p_csPoly3D swig_types[441] 
-#define  SWIGTYPE_p_csSimplePixmap swig_types[442] 
-#define  SWIGTYPE_p_iGeneralMeshCommonState swig_types[443] 
-#define  SWIGTYPE_p_csPtrTiGenMeshAnimationControlFactory_t swig_types[444] 
-#define  SWIGTYPE_p_csShaderVarStack swig_types[445] 
-#define  SWIGTYPE_p_iAwsRGBKey__RGB swig_types[446] 
-#define  SWIGTYPE_p_iPcSolid swig_types[447] 
-#define  SWIGTYPE_p_csMatrix2 swig_types[448] 
-#define  SWIGTYPE_p_csZScaleMatrix3 swig_types[449] 
-#define  SWIGTYPE_p_csYScaleMatrix3 swig_types[450] 
-#define  SWIGTYPE_p_csXScaleMatrix3 swig_types[451] 
-#define  SWIGTYPE_p_csZRotMatrix3 swig_types[452] 
-#define  SWIGTYPE_p_csYRotMatrix3 swig_types[453] 
-#define  SWIGTYPE_p_csXRotMatrix3 swig_types[454] 
-#define  SWIGTYPE_p_csMatrix3 swig_types[455] 
-#define  SWIGTYPE_p_iAws swig_types[456] 
-#define  SWIGTYPE_p_csRenderMeshModes swig_types[457] 
-#define  SWIGTYPE_p_iSprite2DUVAnimation swig_types[458] 
-#define  SWIGTYPE_p_iCelEntity swig_types[459] 
-#define  SWIGTYPE_p_celDataType swig_types[460] 
-#define  SWIGTYPE_p_csSquaredDist swig_types[461] 
-#define  SWIGTYPE_p_csPoint swig_types[462] 
-#define  SWIGTYPE_p_iShadowCaster swig_types[463] 
-#define  SWIGTYPE_p_iEventPlug swig_types[464] 
-#define  SWIGTYPE_p_iSequence swig_types[465] 
-#define  SWIGTYPE_p_csPlane2 swig_types[466] 
-#define  SWIGTYPE_p_iEventCord swig_types[467] 
-#define  SWIGTYPE_p_csPlane3 swig_types[468] 
-#define  SWIGTYPE_p_iPcGravity swig_types[469] 
-#define  SWIGTYPE_p_iPortal swig_types[470] 
-#define  SWIGTYPE_p_p_iPortal swig_types[471] 
-static swig_type_info *swig_types[473];
+#define  SWIGTYPE_p_iPcCommandInput swig_types[193] 
+#define  SWIGTYPE_p_csPtrTcsFrustum_t swig_types[194] 
+#define  SWIGTYPE_p_unsigned_int swig_types[195] 
+#define  SWIGTYPE_p_iReporter swig_types[196] 
+#define  SWIGTYPE_p_csArrayTcsIntersectingTriangle_t swig_types[197] 
+#define  SWIGTYPE_p_csPtrTiLoaderContext_t swig_types[198] 
+#define  SWIGTYPE_p_f_p_void_p_iAwsSource__void swig_types[199] 
+#define  SWIGTYPE_p_csRefTiScriptObject_t swig_types[200] 
+#define  SWIGTYPE_p_csPtrTiShadowBlock_t swig_types[201] 
+#define  SWIGTYPE_p_csEventCommandData swig_types[202] 
+#define  SWIGTYPE_p_iSoundData swig_types[203] 
+#define  SWIGTYPE_p_iAwsRGBKey swig_types[204] 
+#define  SWIGTYPE_p_iCelPropertyClass swig_types[205] 
+#define  SWIGTYPE_p_csSetTcsStringID_t swig_types[206] 
+#define  SWIGTYPE_p_csHashTcsRefTiShader_t_csStringID_t swig_types[207] 
+#define  SWIGTYPE_p_csPtrTiPolygonRenderer_t swig_types[208] 
+#define  SWIGTYPE_p_csPtrTiGenMeshAnimationControl_t swig_types[209] 
+#define  SWIGTYPE_p_iProgressMeter swig_types[210] 
+#define  SWIGTYPE_p_csString swig_types[211] 
+#define  SWIGTYPE_p_iString swig_types[212] 
+#define  SWIGTYPE_p_p_iString swig_types[213] 
+#define  SWIGTYPE_p_iPcCharacteristics swig_types[214] 
+#define  SWIGTYPE_p_iKeyboardDriver swig_types[215] 
+#define  SWIGTYPE_p_iSoundDriver swig_types[216] 
+#define  SWIGTYPE_p_iShadowBlockList swig_types[217] 
+#define  SWIGTYPE_p_iJoystickDriver swig_types[218] 
+#define  SWIGTYPE_p_iMouseDriver swig_types[219] 
+#define  SWIGTYPE_p_iSCF swig_types[220] 
+#define  SWIGTYPE_p_double swig_types[221] 
+#define  SWIGTYPE_p_csVertexAttrib swig_types[222] 
+#define  SWIGTYPE_p_bool swig_types[223] 
+#define  SWIGTYPE_p_celData swig_types[224] 
+#define  SWIGTYPE_p_iBillboard swig_types[225] 
+#define  SWIGTYPE_p_iPcBillboard swig_types[226] 
+#define  SWIGTYPE_p_p_char swig_types[227] 
+#define  SWIGTYPE_p_iGeneralMeshState swig_types[228] 
+#define  SWIGTYPE_p_iModelData swig_types[229] 
+#define  SWIGTYPE_p_char swig_types[230] 
+#define  SWIGTYPE_p_csPtrTiRenderBuffer_t swig_types[231] 
+#define  SWIGTYPE_p_csRefTiRenderBuffer_t swig_types[232] 
+#define  SWIGTYPE_p_iSequenceTimedOperation swig_types[233] 
+#define  SWIGTYPE_p_iJoint swig_types[234] 
+#define  SWIGTYPE_p_iLightingProcessData swig_types[235] 
+#define  SWIGTYPE_p_uint32 swig_types[236] 
+#define  SWIGTYPE_p_iEngineSequenceParameters swig_types[237] 
+#define  SWIGTYPE_p_iKeyComposer swig_types[238] 
+#define  SWIGTYPE_p_iBodyGroup swig_types[239] 
+#define  SWIGTYPE_p_csMeshedPolygon swig_types[240] 
+#define  SWIGTYPE_p_iShaderPriorityList swig_types[241] 
+#define  SWIGTYPE_p_iCelEntityList swig_types[242] 
+#define  SWIGTYPE_p_iSprite2DUVAnimationFrame swig_types[243] 
+#define  SWIGTYPE_p_iCollection swig_types[244] 
+#define  SWIGTYPE_p_iPcCollisionDetection swig_types[245] 
+#define  SWIGTYPE_p_iPcMeshSelect swig_types[246] 
+#define  SWIGTYPE_p_csPtrTiSoundData_t swig_types[247] 
+#define  SWIGTYPE_p_csPtrTiModelData_t swig_types[248] 
+#define  SWIGTYPE_p_csFlags swig_types[249] 
+#define  SWIGTYPE_p_csPtrTiLightingProcessData_t swig_types[250] 
+#define  SWIGTYPE_p_iDocument swig_types[251] 
+#define  SWIGTYPE_p_csIntersect2 swig_types[252] 
+#define  SWIGTYPE_p_csIntersect3 swig_types[253] 
+#define  SWIGTYPE_p_csRefArrayTiAwsKey_t swig_types[254] 
+#define  SWIGTYPE_p_csFileTime swig_types[255] 
+#define  SWIGTYPE_p_iMaterialList swig_types[256] 
+#define  SWIGTYPE_p_p_iLight swig_types[257] 
+#define  SWIGTYPE_p_iLight swig_types[258] 
+#define  SWIGTYPE_p_csBox2 swig_types[259] 
+#define  SWIGTYPE_p_csMath2 swig_types[260] 
+#define  SWIGTYPE_p_CalModel swig_types[261] 
+#define  SWIGTYPE_p_csBox3 swig_types[262] 
+#define  SWIGTYPE_p_csMath3 swig_types[263] 
+#define  SWIGTYPE_p_iMaterial swig_types[264] 
+#define  SWIGTYPE_p_int32 swig_types[265] 
+#define  SWIGTYPE_p_iConfigFile swig_types[266] 
+#define  SWIGTYPE_p_csPtrTiPluginIterator_t swig_types[267] 
+#define  SWIGTYPE_p_csRefTiEventAttributeIterator_t swig_types[268] 
+#define  SWIGTYPE_p_csPtrTiObjectRegistryIterator_t swig_types[269] 
+#define  SWIGTYPE_p_csPtrTiVisibilityObjectIterator_t swig_types[270] 
+#define  SWIGTYPE_p_csPtrTiObjectIterator_t swig_types[271] 
+#define  SWIGTYPE_p_csPtrTiSectorIterator_t swig_types[272] 
+#define  SWIGTYPE_p_csPtrTiLightIterator_t swig_types[273] 
+#define  SWIGTYPE_p_basetype swig_types[274] 
+#define  SWIGTYPE_p_csRefTiDocumentNodeIterator_t swig_types[275] 
+#define  SWIGTYPE_p_csRefTiDocumentAttributeIterator_t swig_types[276] 
+#define  SWIGTYPE_p_iEvent swig_types[277] 
+#define  SWIGTYPE_p_csPtrTiObjectWatcher_t swig_types[278] 
+#define  SWIGTYPE_p_iThingState swig_types[279] 
+#define  SWIGTYPE_p_csPtrTiSequenceWrapper_t swig_types[280] 
+#define  SWIGTYPE_p_iHalo swig_types[281] 
+#define  SWIGTYPE_p_iCollider swig_types[282] 
+#define  SWIGTYPE_p_p_iCollider swig_types[283] 
+#define  SWIGTYPE_p_iPcMesh swig_types[284] 
+#define  SWIGTYPE_p_csColor swig_types[285] 
+#define  SWIGTYPE_p_iPcTimer swig_types[286] 
+#define  SWIGTYPE_p_unsigned_char swig_types[287] 
+#define  SWIGTYPE_p_iDocumentNode swig_types[288] 
+#define  SWIGTYPE_p_iAwsComponentNode swig_types[289] 
+#define  SWIGTYPE_p_iSequenceTrigger swig_types[290] 
+#define  SWIGTYPE_p_iGraphics2D swig_types[291] 
+#define  SWIGTYPE_p_iCameraPosition swig_types[292] 
+#define  SWIGTYPE_p_iPolygonMesh swig_types[293] 
+#define  SWIGTYPE_p_csPolygonMesh swig_types[294] 
+#define  SWIGTYPE_p_iTextureList swig_types[295] 
+#define  SWIGTYPE_p_iPcMovableConstraint swig_types[296] 
+#define  SWIGTYPE_p_iView swig_types[297] 
+#define  SWIGTYPE_p_csPtrTiLoaderStatus_t swig_types[298] 
+#define  SWIGTYPE_p_csPtrTiRigidBody_t swig_types[299] 
+#define  SWIGTYPE_p_csRefTiRigidBody_t swig_types[300] 
+#define  SWIGTYPE_p_csRefTiDocumentNode_t swig_types[301] 
+#define  SWIGTYPE_p_iSectorList swig_types[302] 
+#define  SWIGTYPE_p_csWrapPtr swig_types[303] 
+#define  SWIGTYPE_p_iSoundHandle swig_types[304] 
+#define  SWIGTYPE_p_iPolygonHandle swig_types[305] 
+#define  SWIGTYPE_p_iMaterialHandle swig_types[306] 
+#define  SWIGTYPE_p_iTextureHandle swig_types[307] 
+#define  SWIGTYPE_p_p_iTextureHandle swig_types[308] 
+#define  SWIGTYPE_p_iCommandLineParser swig_types[309] 
+#define  SWIGTYPE_p_csRenderBufferHolder swig_types[310] 
+#define  SWIGTYPE_p_iFontDeleteNotify swig_types[311] 
+#define  SWIGTYPE_p_iAwsSlot swig_types[312] 
+#define  SWIGTYPE_p_iCelPlLayer swig_types[313] 
+#define  SWIGTYPE_p_iCelBlLayer swig_types[314] 
+#define  SWIGTYPE_p_csInitializer swig_types[315] 
+#define  SWIGTYPE_p_celInitializer swig_types[316] 
+#define  SWIGTYPE_p_csRenderBufferComponentType swig_types[317] 
+#define  SWIGTYPE_p_int8 swig_types[318] 
+#define  SWIGTYPE_p_iSoundSource swig_types[319] 
+#define  SWIGTYPE_p_iMeshFactoryList swig_types[320] 
+#define  SWIGTYPE_p_csPtrTiPolygonHandle_t swig_types[321] 
+#define  SWIGTYPE_p_csPtrTiMaterialHandle_t swig_types[322] 
+#define  SWIGTYPE_p_csRefTiTextureHandle_t swig_types[323] 
+#define  SWIGTYPE_p_iAwsSource swig_types[324] 
+#define  SWIGTYPE_p_iSoundRender swig_types[325] 
+#define  SWIGTYPE_p_size_t swig_types[326] 
+#define  SWIGTYPE_p_csGraphics3DCaps swig_types[327] 
+#define  SWIGTYPE_p_iGraphics3D swig_types[328] 
+#define  SWIGTYPE_p_iMeshObjectType swig_types[329] 
+#define  SWIGTYPE_p_iRigidBody swig_types[330] 
+#define  SWIGTYPE_p_csRenderBufferType swig_types[331] 
+#define  SWIGTYPE_p_csBitmapMetrics swig_types[332] 
+#define  SWIGTYPE_p_csGlyphMetrics swig_types[333] 
+#define  SWIGTYPE_p_iRenderLoopManager swig_types[334] 
+#define  SWIGTYPE_p_iCacheManager swig_types[335] 
+#define  SWIGTYPE_p_iPluginManager swig_types[336] 
+#define  SWIGTYPE_p_iVerbosityManager swig_types[337] 
+#define  SWIGTYPE_p_iConfigManager swig_types[338] 
+#define  SWIGTYPE_p_iAwsPrefManager swig_types[339] 
+#define  SWIGTYPE_p_iAwsSinkManager swig_types[340] 
+#define  SWIGTYPE_p_iTextureManager swig_types[341] 
+#define  SWIGTYPE_p_iAwsLayoutManager swig_types[342] 
+#define  SWIGTYPE_p_csRect swig_types[343] 
+#define  SWIGTYPE_p_iNativeWindowManager swig_types[344] 
+#define  SWIGTYPE_p_iShaderManager swig_types[345] 
+#define  SWIGTYPE_p_iDynamics swig_types[346] 
+#define  SWIGTYPE_p_iEngineSequenceManager swig_types[347] 
+#define  SWIGTYPE_p_iSequenceManager swig_types[348] 
+#define  SWIGTYPE_p_iBillboardManager swig_types[349] 
+#define  SWIGTYPE_p_iPcZoneManager swig_types[350] 
+#define  SWIGTYPE_p_iParameterESM swig_types[351] 
+#define  SWIGTYPE_p_csStringID swig_types[352] 
+#define  SWIGTYPE_p_iCrossHalo swig_types[353] 
+#define  SWIGTYPE_p_iRenderLoop swig_types[354] 
+#define  SWIGTYPE_p_csKeyEventHelper swig_types[355] 
+#define  SWIGTYPE_p_csReporterHelper swig_types[356] 
+#define  SWIGTYPE_p_csColliderHelper swig_types[357] 
+#define  SWIGTYPE_p_csEventJoystickData swig_types[358] 
+#define  SWIGTYPE_p_csCommandLineHelper swig_types[359] 
+#define  SWIGTYPE_p_iDebugHelper swig_types[360] 
+#define  SWIGTYPE_p_csGeomDebugHelper swig_types[361] 
+#define  SWIGTYPE_p_iAwsRectKey swig_types[362] 
+#define  SWIGTYPE_p_iGenMeshAnimationControlFactory swig_types[363] 
+#define  SWIGTYPE_p_iMeshObjectFactory swig_types[364] 
+#define  SWIGTYPE_p_csPoly2DFactory swig_types[365] 
+#define  SWIGTYPE_p_iFactory swig_types[366] 
+#define  SWIGTYPE_p_iAwsComponentFactory swig_types[367] 
+#define  SWIGTYPE_p_iAwsKeyFactory swig_types[368] 
+#define  SWIGTYPE_p_iAwsConnectionNodeFactory swig_types[369] 
+#define  SWIGTYPE_p_csFog swig_types[370] 
+#define  SWIGTYPE_p_csPtrTiShadowBlockList_t swig_types[371] 
+#define  SWIGTYPE_p_csPtrTiEventOutlet_t swig_types[372] 
+#define  SWIGTYPE_p_csPtrTiShaderPriorityList_t swig_types[373] 
+#define  SWIGTYPE_p_csPixelCoord swig_types[374] 
+#define  SWIGTYPE_p_uint swig_types[375] 
+#define  SWIGTYPE_p_iCamera swig_types[376] 
+#define  SWIGTYPE_p_iAwsCanvas swig_types[377] 
+#define  SWIGTYPE_p_iPcCamera swig_types[378] 
+#define  SWIGTYPE_p_uint64 swig_types[379] 
+#define  SWIGTYPE_p_csShaderVariable swig_types[380] 
+#define  SWIGTYPE_p_iSharedVariable swig_types[381] 
+#define  SWIGTYPE_p_iShadowReceiver swig_types[382] 
+#define  SWIGTYPE_p_iFrustumViewUserdata swig_types[383] 
+#define  SWIGTYPE_p_int swig_types[384] 
+#define  SWIGTYPE_p_iObjectModel swig_types[385] 
+#define  SWIGTYPE_p_iModelConverter swig_types[386] 
+#define  SWIGTYPE_p_csKeyModifiers swig_types[387] 
+#define  SWIGTYPE_p_void swig_types[388] 
+#define  SWIGTYPE_p_p_void swig_types[389] 
+#define  SWIGTYPE_p_iPcDynamicBody swig_types[390] 
+#define  SWIGTYPE_p_iMovable swig_types[391] 
+#define  SWIGTYPE_p_csPoly2D swig_types[392] 
+#define  SWIGTYPE_p_iPcMovable swig_types[393] 
+#define  SWIGTYPE_p_csSprite2DVertex swig_types[394] 
+#define  SWIGTYPE_p_iNativeWindow swig_types[395] 
+#define  SWIGTYPE_p_csCompressVertex swig_types[396] 
+#define  SWIGTYPE_p_iStream swig_types[397] 
+#define  SWIGTYPE_p_iAudioStream swig_types[398] 
+#define  SWIGTYPE_p_iVideoStream swig_types[399] 
+#define  SWIGTYPE_p_iBinaryLoaderPlugin swig_types[400] 
+#define  SWIGTYPE_p_iLoaderPlugin swig_types[401] 
+#define  SWIGTYPE_p_csBSpline swig_types[402] 
+#define  SWIGTYPE_p_csEventMouseData swig_types[403] 
+#define  SWIGTYPE_p_csTriangle swig_types[404] 
+#define  SWIGTYPE_p_csSpline swig_types[405] 
+#define  SWIGTYPE_p_csCubicSpline swig_types[406] 
+#define  SWIGTYPE_p_csCatmullRomSpline swig_types[407] 
+#define  SWIGTYPE_p_csIntersectingTriangle swig_types[408] 
+#define  SWIGTYPE_p_iPortalContainer swig_types[409] 
+#define  SWIGTYPE_p_iAwsKeyContainer swig_types[410] 
+#define  SWIGTYPE_p_iAwsParmList swig_types[411] 
+#define  SWIGTYPE_p_iImageIO swig_types[412] 
+#define  SWIGTYPE_p_int64 swig_types[413] 
+#define  SWIGTYPE_p_iSprite2DState swig_types[414] 
+#define  SWIGTYPE_p_p_iRenderBuffer swig_types[415] 
+#define  SWIGTYPE_p_iSpriteCal3DState swig_types[416] 
+#define  SWIGTYPE_p_iSprite3DState swig_types[417] 
+#define  SWIGTYPE_p_iDataBuffer swig_types[418] 
+#define  SWIGTYPE_p_csKeyEventData swig_types[419] 
+#define  SWIGTYPE_p_iShaderCompiler swig_types[420] 
+#define  SWIGTYPE_p_iRendererLightmap swig_types[421] 
+#define  SWIGTYPE_p_iSuperLightmap swig_types[422] 
+#define  SWIGTYPE_p_csSphere swig_types[423] 
+#define  SWIGTYPE_p_csStreamDescription swig_types[424] 
+#define  SWIGTYPE_p_csVideoStreamDescription swig_types[425] 
+#define  SWIGTYPE_p_csAudioStreamDescription swig_types[426] 
+#define  SWIGTYPE_p_csCodecDescription swig_types[427] 
+#define  SWIGTYPE_p_csImageIOFileFormatDescription swig_types[428] 
+#define  SWIGTYPE_p_iImageIO__FileFormatDescription swig_types[429] 
+#define  SWIGTYPE_p_iComponent swig_types[430] 
+#define  SWIGTYPE_p_iAwsComponent swig_types[431] 
+#define  SWIGTYPE_p_iSpriteAction swig_types[432] 
+#define  SWIGTYPE_p_iThingFactoryState swig_types[433] 
+#define  SWIGTYPE_p_iSpriteCal3DFactoryState swig_types[434] 
+#define  SWIGTYPE_p_iSprite3DFactoryState swig_types[435] 
+#define  SWIGTYPE_p_iGeneralFactoryState swig_types[436] 
+#define  SWIGTYPE_p_iSprite2DFactoryState swig_types[437] 
+#define  SWIGTYPE_p_iCelParameterBlock swig_types[438] 
+#define  SWIGTYPE_p_csPixmap swig_types[439] 
+#define  SWIGTYPE_p_csPoly3D swig_types[440] 
+#define  SWIGTYPE_p_csSimplePixmap swig_types[441] 
+#define  SWIGTYPE_p_iGeneralMeshCommonState swig_types[442] 
+#define  SWIGTYPE_p_csPtrTiGenMeshAnimationControlFactory_t swig_types[443] 
+#define  SWIGTYPE_p_csShaderVarStack swig_types[444] 
+#define  SWIGTYPE_p_iAwsRGBKey__RGB swig_types[445] 
+#define  SWIGTYPE_p_iPcSolid swig_types[446] 
+#define  SWIGTYPE_p_csMatrix2 swig_types[447] 
+#define  SWIGTYPE_p_csZScaleMatrix3 swig_types[448] 
+#define  SWIGTYPE_p_csYScaleMatrix3 swig_types[449] 
+#define  SWIGTYPE_p_csXScaleMatrix3 swig_types[450] 
+#define  SWIGTYPE_p_csZRotMatrix3 swig_types[451] 
+#define  SWIGTYPE_p_csYRotMatrix3 swig_types[452] 
+#define  SWIGTYPE_p_csXRotMatrix3 swig_types[453] 
+#define  SWIGTYPE_p_csMatrix3 swig_types[454] 
+#define  SWIGTYPE_p_iAws swig_types[455] 
+#define  SWIGTYPE_p_csRenderMeshModes swig_types[456] 
+#define  SWIGTYPE_p_iSprite2DUVAnimation swig_types[457] 
+#define  SWIGTYPE_p_iCelEntity swig_types[458] 
+#define  SWIGTYPE_p_celDataType swig_types[459] 
+#define  SWIGTYPE_p_csSquaredDist swig_types[460] 
+#define  SWIGTYPE_p_csPoint swig_types[461] 
+#define  SWIGTYPE_p_iShadowCaster swig_types[462] 
+#define  SWIGTYPE_p_iEventPlug swig_types[463] 
+#define  SWIGTYPE_p_iSequence swig_types[464] 
+#define  SWIGTYPE_p_csPlane2 swig_types[465] 
+#define  SWIGTYPE_p_iEventCord swig_types[466] 
+#define  SWIGTYPE_p_csPlane3 swig_types[467] 
+#define  SWIGTYPE_p_iPcGravity swig_types[468] 
+#define  SWIGTYPE_p_iPortal swig_types[469] 
+#define  SWIGTYPE_p_p_iPortal swig_types[470] 
+static swig_type_info *swig_types[472];
 
 /* -------- TYPES TABLE (END) -------- */
 
@@ -16901,660 +16900,6 @@ static PyObject * csIntersect2_swigregister(PyObject *self, PyObject *args) {
     Py_INCREF(obj);
     return Py_BuildValue((char *)"");
 }
-static PyObject *_wrap_new_csPoly2DUnbounded__SWIG_0(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    int arg1 = (int) 10 ;
-    csPoly2DUnbounded *result;
-    
-    if(!PyArg_ParseTuple(args,(char *)"|i:new_csPoly2DUnbounded",&arg1)) goto fail;
-    result = (csPoly2DUnbounded *)new csPoly2DUnbounded(arg1);
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csPoly2DUnbounded, 1);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_new_csPoly2DUnbounded__SWIG_1(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = 0 ;
-    csPoly2DUnbounded *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:new_csPoly2DUnbounded",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg1 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    result = (csPoly2DUnbounded *)new csPoly2DUnbounded((csPoly2DUnbounded const &)*arg1);
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csPoly2DUnbounded, 1);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_new_csPoly2DUnbounded(PyObject *self, PyObject *args) {
-    int argc;
-    PyObject *argv[2];
-    int ii;
-    
-    argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 1); ii++) {
-        argv[ii] = PyTuple_GetItem(args,ii);
-    }
-    if ((argc >= 0) && (argc <= 1)) {
-        int _v;
-        if (argc <= 0) {
-            return _wrap_new_csPoly2DUnbounded__SWIG_0(self,args);
-        }
-        {
-            _v = (PyInt_Check(argv[0]) || PyLong_Check(argv[0])) ? 1 : 0;
-        }
-        if (_v) {
-            return _wrap_new_csPoly2DUnbounded__SWIG_0(self,args);
-        }
-    }
-    if (argc == 1) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly2DUnbounded, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            return _wrap_new_csPoly2DUnbounded__SWIG_1(self,args);
-        }
-    }
-    
-    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'new_csPoly2DUnbounded'");
-    return NULL;
-}
-
-
-static PyObject *_wrap_delete_csPoly2DUnbounded(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:delete_csPoly2DUnbounded",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    delete arg1;
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_assign(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csPoly2DUnbounded *arg2 = 0 ;
-    csPoly2DUnbounded *result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly2DUnbounded_assign",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    {
-        csPoly2DUnbounded &_result_ref = (arg1)->operator =((csPoly2DUnbounded const &)*arg2);
-        result = (csPoly2DUnbounded *) &_result_ref;
-    }
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csPoly2DUnbounded, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_MakeEmpty(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_MakeEmpty",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->MakeEmpty();
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetVertexCount(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    int result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_GetVertexCount",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)((csPoly2DUnbounded const *)arg1)->GetVertexCount();
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetVertices(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_GetVertices",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (csVector2 *)((csPoly2DUnbounded const *)arg1)->GetVertices();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetVertex(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    int arg2 ;
-    csVector2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2DUnbounded_GetVertex",&obj0,&arg2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (csVector2 *)(arg1)->GetVertex(arg2);
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetFirst(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_GetFirst",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (csVector2 *)(arg1)->GetFirst();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetLast(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_GetLast",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (csVector2 *)(arg1)->GetLast();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_In__SWIG_0(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *arg2 = 0 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly2DUnbounded_In",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    result = (bool)(arg1)->In((csVector2 const &)*arg2);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_In__SWIG_1(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csVector2 *arg1 = (csVector2 *) 0 ;
-    int arg2 ;
-    csVector2 *arg3 = 0 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj2 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OiO:csPoly2DUnbounded_In",&obj0,&arg2,&obj2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg3 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    result = (bool)csPoly2DUnbounded::In(arg1,arg2,(csVector2 const &)*arg3);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_In(PyObject *self, PyObject *args) {
-    int argc;
-    PyObject *argv[4];
-    int ii;
-    
-    argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
-        argv[ii] = PyTuple_GetItem(args,ii);
-    }
-    if (argc == 2) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly2DUnbounded, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            {
-                void *ptr;
-                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
-                    _v = 0;
-                    PyErr_Clear();
-                } else {
-                    _v = 1;
-                }
-            }
-            if (_v) {
-                return _wrap_csPoly2DUnbounded_In__SWIG_0(self,args);
-            }
-        }
-    }
-    if (argc == 3) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            {
-                _v = (PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
-            }
-            if (_v) {
-                {
-                    void *ptr;
-                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
-                        _v = 0;
-                        PyErr_Clear();
-                    } else {
-                        _v = 1;
-                    }
-                }
-                if (_v) {
-                    return _wrap_csPoly2DUnbounded_In__SWIG_1(self,args);
-                }
-            }
-        }
-    }
-    
-    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csPoly2DUnbounded_In'");
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_MakeRoom(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    int arg2 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2DUnbounded_MakeRoom",&obj0,&arg2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->MakeRoom(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_SetVertexCount(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    int arg2 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2DUnbounded_SetVertexCount",&obj0,&arg2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetVertexCount(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_AddVertex__SWIG_0(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *arg2 = 0 ;
-    int result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly2DUnbounded_AddVertex",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    result = (int)(arg1)->AddVertex((csVector2 const &)*arg2);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_AddVertex__SWIG_1(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    float arg2 ;
-    float arg3 ;
-    int result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Off:csPoly2DUnbounded_AddVertex",&obj0,&arg2,&arg3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->AddVertex(arg2,arg3);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_AddVertex(PyObject *self, PyObject *args) {
-    int argc;
-    PyObject *argv[4];
-    int ii;
-    
-    argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
-        argv[ii] = PyTuple_GetItem(args,ii);
-    }
-    if (argc == 2) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly2DUnbounded, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            {
-                void *ptr;
-                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
-                    _v = 0;
-                    PyErr_Clear();
-                } else {
-                    _v = 1;
-                }
-            }
-            if (_v) {
-                return _wrap_csPoly2DUnbounded_AddVertex__SWIG_0(self,args);
-            }
-        }
-    }
-    if (argc == 3) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly2DUnbounded, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            {
-                _v = (PyFloat_Check(argv[1]) || PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
-            }
-            if (_v) {
-                {
-                    _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
-                }
-                if (_v) {
-                    return _wrap_csPoly2DUnbounded_AddVertex__SWIG_1(self,args);
-                }
-            }
-        }
-    }
-    
-    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csPoly2DUnbounded_AddVertex'");
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_SetVertices(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csVector2 *arg2 = (csVector2 *) 0 ;
-    int arg3 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOi:csPoly2DUnbounded_SetVertices",&obj0,&obj1,&arg3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetVertices((csVector2 const *)arg2,arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_ClipAgainst(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    iClipper2D *arg2 = (iClipper2D *) 0 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly2DUnbounded_ClipAgainst",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iClipper2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)(arg1)->ClipAgainst(arg2);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_Intersect(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csPlane2 *arg2 = 0 ;
-    csPoly2DUnbounded *arg3 = 0 ;
-    csPoly2DUnbounded *arg4 = 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    PyObject * obj2 = 0 ;
-    PyObject * obj3 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOOO:csPoly2DUnbounded_Intersect",&obj0,&obj1,&obj2,&obj3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPlane2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg3 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg4 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    ((csPoly2DUnbounded const *)arg1)->Intersect((csPlane2 const &)*arg2,*arg3,*arg4);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_ClipPlane(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csPlane2 *arg2 = 0 ;
-    csPoly2DUnbounded *arg3 = 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    PyObject * obj2 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOO:csPoly2DUnbounded_ClipPlane",&obj0,&obj1,&obj2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPlane2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg3 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    ((csPoly2DUnbounded const *)arg1)->ClipPlane((csPlane2 const &)*arg2,*arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_ExtendConvex(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    csPoly2DUnbounded *arg2 = 0 ;
-    int arg3 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOi:csPoly2DUnbounded_ExtendConvex",&obj0,&obj1,&arg3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    (arg1)->ExtendConvex((csPoly2DUnbounded const &)*arg2,arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_GetSignedArea(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    float result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2DUnbounded_GetSignedArea",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (float)(arg1)->GetSignedArea();
-    
-    resultobj = PyFloat_FromDouble(result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2DUnbounded_Random(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2DUnbounded *arg1 = (csPoly2DUnbounded *) 0 ;
-    int arg2 ;
-    csBox2 *arg3 = 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj2 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OiO:csPoly2DUnbounded_Random",&obj0,&arg2,&obj2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2DUnbounded,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg3 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    (arg1)->Random(arg2,(csBox2 const &)*arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject * csPoly2DUnbounded_swigregister(PyObject *self, PyObject *args) {
-    PyObject *obj;
-    if (!PyArg_ParseTuple(args,(char*)"O", &obj)) return NULL;
-    SWIG_TypeClientData(SWIGTYPE_p_csPoly2DUnbounded, obj);
-    Py_INCREF(obj);
-    return Py_BuildValue((char *)"");
-}
 static PyObject *_wrap_new_csPoly2D__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     int arg1 = (int) 10 ;
@@ -17632,6 +16977,22 @@ static PyObject *_wrap_new_csPoly2D(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_delete_csPoly2D(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:delete_csPoly2D",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    delete arg1;
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csPoly2D_assign(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly2D *arg1 = (csPoly2D *) 0 ;
@@ -17674,17 +17035,15 @@ static PyObject *_wrap_csPoly2D_MakeEmpty(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_csPoly2D_AddVertex__SWIG_0(PyObject *self, PyObject *args) {
+static PyObject *_wrap_csPoly2D_GetVertexCount(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly2D *arg1 = (csPoly2D *) 0 ;
-    float arg2 ;
-    float arg3 ;
     int result;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Off:csPoly2D_AddVertex",&obj0,&arg2,&arg3)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetVertexCount",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->AddVertex(arg2,arg3);
+    result = (int)((csPoly2D const *)arg1)->GetVertexCount();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -17693,7 +17052,229 @@ static PyObject *_wrap_csPoly2D_AddVertex__SWIG_0(PyObject *self, PyObject *args
 }
 
 
-static PyObject *_wrap_csPoly2D_AddVertex__SWIG_1(PyObject *self, PyObject *args) {
+static PyObject *_wrap_csPoly2D_GetVertices(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csVector2 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetVertices",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (csVector2 *)((csPoly2D const *)arg1)->GetVertices();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_GetVertex(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    int arg2 ;
+    csVector2 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2D_GetVertex",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (csVector2 *)(arg1)->GetVertex(arg2);
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_GetFirst(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csVector2 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetFirst",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (csVector2 *)(arg1)->GetFirst();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_GetLast(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csVector2 *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetLast",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (csVector2 *)(arg1)->GetLast();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_In__SWIG_0(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csVector2 *arg2 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly2D_In",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)(arg1)->In((csVector2 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_In__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csVector2 *arg1 = (csVector2 *) 0 ;
+    int arg2 ;
+    csVector2 *arg3 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OiO:csPoly2D_In",&obj0,&arg2,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)csPoly2D::In(arg1,arg2,(csVector2 const &)*arg3);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_In(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[4];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 2) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly2D, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                return _wrap_csPoly2D_In__SWIG_0(self,args);
+            }
+        }
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                _v = (PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+            }
+            if (_v) {
+                {
+                    void *ptr;
+                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
+                        _v = 0;
+                        PyErr_Clear();
+                    } else {
+                        _v = 1;
+                    }
+                }
+                if (_v) {
+                    return _wrap_csPoly2D_In__SWIG_1(self,args);
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csPoly2D_In'");
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_MakeRoom(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    int arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2D_MakeRoom",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->MakeRoom(arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_SetVertexCount(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    int arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oi:csPoly2D_SetVertexCount",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetVertexCount(arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_AddVertex__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly2D *arg1 = (csPoly2D *) 0 ;
     csVector2 *arg2 = 0 ;
@@ -17708,6 +17289,25 @@ static PyObject *_wrap_csPoly2D_AddVertex__SWIG_1(PyObject *self, PyObject *args
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
     result = (int)(arg1)->AddVertex((csVector2 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_AddVertex__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Off:csPoly2D_AddVertex",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)(arg1)->AddVertex(arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -17747,7 +17347,7 @@ static PyObject *_wrap_csPoly2D_AddVertex(PyObject *self, PyObject *args) {
                 }
             }
             if (_v) {
-                return _wrap_csPoly2D_AddVertex__SWIG_1(self,args);
+                return _wrap_csPoly2D_AddVertex__SWIG_0(self,args);
             }
         }
     }
@@ -17771,7 +17371,7 @@ static PyObject *_wrap_csPoly2D_AddVertex(PyObject *self, PyObject *args) {
                     _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
                 }
                 if (_v) {
-                    return _wrap_csPoly2D_AddVertex__SWIG_0(self,args);
+                    return _wrap_csPoly2D_AddVertex__SWIG_1(self,args);
                 }
             }
         }
@@ -17782,36 +17382,20 @@ static PyObject *_wrap_csPoly2D_AddVertex(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_csPoly2D_UpdateBoundingBox(PyObject *self, PyObject *args) {
+static PyObject *_wrap_csPoly2D_SetVertices(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csVector2 *arg2 = (csVector2 *) 0 ;
+    int arg3 ;
     PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_UpdateBoundingBox",&obj0)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOi:csPoly2D_SetVertices",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->UpdateBoundingBox();
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetVertices((csVector2 const *)arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_csPoly2D_GetBoundingBox(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2D *arg1 = (csPoly2D *) 0 ;
-    csBox2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetBoundingBox",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    {
-        csBox2 &_result_ref = (arg1)->GetBoundingBox();
-        result = (csBox2 *) &_result_ref;
-    }
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csBox2, 0);
     return resultobj;
     fail:
     return NULL;
@@ -17838,6 +17422,131 @@ static PyObject *_wrap_csPoly2D_ClipAgainst(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csPoly2D_Intersect(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csPlane2 *arg2 = 0 ;
+    csPoly2D *arg3 = 0 ;
+    csPoly2D *arg4 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    PyObject * obj3 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOOO:csPoly2D_Intersect",&obj0,&obj1,&obj2,&obj3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPlane2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg4 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    ((csPoly2D const *)arg1)->Intersect((csPlane2 const &)*arg2,*arg3,*arg4);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_ClipPlane(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csPlane2 *arg2 = 0 ;
+    csPoly2D *arg3 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOO:csPoly2D_ClipPlane",&obj0,&obj1,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPlane2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    ((csPoly2D const *)arg1)->ClipPlane((csPlane2 const &)*arg2,*arg3);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_ExtendConvex(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    csPoly2D *arg2 = 0 ;
+    int arg3 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOi:csPoly2D_ExtendConvex",&obj0,&obj1,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->ExtendConvex((csPoly2D const &)*arg2,arg3);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_GetSignedArea(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    float result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csPoly2D_GetSignedArea",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (float)(arg1)->GetSignedArea();
+    
+    resultobj = PyFloat_FromDouble(result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly2D_Random(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly2D *arg1 = (csPoly2D *) 0 ;
+    int arg2 ;
+    csBox2 *arg3 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OiO:csPoly2D_Random",&obj0,&arg2,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->Random(arg2,(csBox2 const &)*arg3);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csPoly2D___getitem__(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly2D *arg1 = (csPoly2D *) 0 ;
@@ -17853,22 +17562,6 @@ static PyObject *_wrap_csPoly2D___getitem__(PyObject *self, PyObject *args) {
     }
     
     resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_delete_csPoly2D(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    csPoly2D *arg1 = (csPoly2D *) 0 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:delete_csPoly2D",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    delete arg1;
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
     fail:
     return NULL;
@@ -111891,36 +111584,27 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_csIntersect2", _wrap_new_csIntersect2, METH_VARARGS },
 	 { (char *)"delete_csIntersect2", _wrap_delete_csIntersect2, METH_VARARGS },
 	 { (char *)"csIntersect2_swigregister", csIntersect2_swigregister, METH_VARARGS },
-	 { (char *)"new_csPoly2DUnbounded", _wrap_new_csPoly2DUnbounded, METH_VARARGS },
-	 { (char *)"delete_csPoly2DUnbounded", _wrap_delete_csPoly2DUnbounded, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_assign", _wrap_csPoly2DUnbounded_assign, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_MakeEmpty", _wrap_csPoly2DUnbounded_MakeEmpty, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetVertexCount", _wrap_csPoly2DUnbounded_GetVertexCount, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetVertices", _wrap_csPoly2DUnbounded_GetVertices, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetVertex", _wrap_csPoly2DUnbounded_GetVertex, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetFirst", _wrap_csPoly2DUnbounded_GetFirst, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetLast", _wrap_csPoly2DUnbounded_GetLast, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_In", _wrap_csPoly2DUnbounded_In, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_MakeRoom", _wrap_csPoly2DUnbounded_MakeRoom, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_SetVertexCount", _wrap_csPoly2DUnbounded_SetVertexCount, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_AddVertex", _wrap_csPoly2DUnbounded_AddVertex, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_SetVertices", _wrap_csPoly2DUnbounded_SetVertices, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_ClipAgainst", _wrap_csPoly2DUnbounded_ClipAgainst, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_Intersect", _wrap_csPoly2DUnbounded_Intersect, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_ClipPlane", _wrap_csPoly2DUnbounded_ClipPlane, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_ExtendConvex", _wrap_csPoly2DUnbounded_ExtendConvex, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_GetSignedArea", _wrap_csPoly2DUnbounded_GetSignedArea, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_Random", _wrap_csPoly2DUnbounded_Random, METH_VARARGS },
-	 { (char *)"csPoly2DUnbounded_swigregister", csPoly2DUnbounded_swigregister, METH_VARARGS },
 	 { (char *)"new_csPoly2D", _wrap_new_csPoly2D, METH_VARARGS },
+	 { (char *)"delete_csPoly2D", _wrap_delete_csPoly2D, METH_VARARGS },
 	 { (char *)"csPoly2D_assign", _wrap_csPoly2D_assign, METH_VARARGS },
 	 { (char *)"csPoly2D_MakeEmpty", _wrap_csPoly2D_MakeEmpty, METH_VARARGS },
+	 { (char *)"csPoly2D_GetVertexCount", _wrap_csPoly2D_GetVertexCount, METH_VARARGS },
+	 { (char *)"csPoly2D_GetVertices", _wrap_csPoly2D_GetVertices, METH_VARARGS },
+	 { (char *)"csPoly2D_GetVertex", _wrap_csPoly2D_GetVertex, METH_VARARGS },
+	 { (char *)"csPoly2D_GetFirst", _wrap_csPoly2D_GetFirst, METH_VARARGS },
+	 { (char *)"csPoly2D_GetLast", _wrap_csPoly2D_GetLast, METH_VARARGS },
+	 { (char *)"csPoly2D_In", _wrap_csPoly2D_In, METH_VARARGS },
+	 { (char *)"csPoly2D_MakeRoom", _wrap_csPoly2D_MakeRoom, METH_VARARGS },
+	 { (char *)"csPoly2D_SetVertexCount", _wrap_csPoly2D_SetVertexCount, METH_VARARGS },
 	 { (char *)"csPoly2D_AddVertex", _wrap_csPoly2D_AddVertex, METH_VARARGS },
-	 { (char *)"csPoly2D_UpdateBoundingBox", _wrap_csPoly2D_UpdateBoundingBox, METH_VARARGS },
-	 { (char *)"csPoly2D_GetBoundingBox", _wrap_csPoly2D_GetBoundingBox, METH_VARARGS },
+	 { (char *)"csPoly2D_SetVertices", _wrap_csPoly2D_SetVertices, METH_VARARGS },
 	 { (char *)"csPoly2D_ClipAgainst", _wrap_csPoly2D_ClipAgainst, METH_VARARGS },
+	 { (char *)"csPoly2D_Intersect", _wrap_csPoly2D_Intersect, METH_VARARGS },
+	 { (char *)"csPoly2D_ClipPlane", _wrap_csPoly2D_ClipPlane, METH_VARARGS },
+	 { (char *)"csPoly2D_ExtendConvex", _wrap_csPoly2D_ExtendConvex, METH_VARARGS },
+	 { (char *)"csPoly2D_GetSignedArea", _wrap_csPoly2D_GetSignedArea, METH_VARARGS },
+	 { (char *)"csPoly2D_Random", _wrap_csPoly2D_Random, METH_VARARGS },
 	 { (char *)"csPoly2D___getitem__", _wrap_csPoly2D___getitem__, METH_VARARGS },
-	 { (char *)"delete_csPoly2D", _wrap_delete_csPoly2D, METH_VARARGS },
 	 { (char *)"csPoly2D_swigregister", csPoly2D_swigregister, METH_VARARGS },
 	 { (char *)"csPoly2DFactory_Create", _wrap_csPoly2DFactory_Create, METH_VARARGS },
 	 { (char *)"new_csPoly2DFactory", _wrap_new_csPoly2DFactory, METH_VARARGS },
@@ -115889,9 +115573,6 @@ static void *_p_iAwsFloatKeyTo_p_iAwsKey(void *x) {
 static void *_p_csViewTo_p_iView(void *x) {
     return (void *)((iView *)  ((csView *) x));
 }
-static void *_p_csPoly2DTo_p_csPoly2DUnbounded(void *x) {
-    return (void *)((csPoly2DUnbounded *)  ((csPoly2D *) x));
-}
 static void *_p_iConfigManagerTo_p_iConfigFile(void *x) {
     return (void *)((iConfigFile *)  ((iConfigManager *) x));
 }
@@ -115936,690 +115617,6 @@ static void *_p_csCatmullRomSplineTo_p_csSpline(void *x) {
 }
 static void *_p_iAwsComponentNodeTo_p_iAwsKeyContainer(void *x) {
     return (void *)((iAwsKeyContainer *)  ((iAwsComponentNode *) x));
-}
-static void *_p_p_iAwsRGBKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsRGBKey **) x));
-}
-static void *_p_p_iEventTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEvent **) x));
-}
-static void *_p_p_iRendererLightmapTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iRendererLightmap **) x));
-}
-static void *_p_p_iSuperLightmapTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSuperLightmap **) x));
-}
-static void *_p_p_iConsoleOutputTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iConsoleOutput **) x));
-}
-static void *_p_p_iClipper2DTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iClipper2D **) x));
-}
-static void *_p_p_iDebugHelperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDebugHelper **) x));
-}
-static void *_p_p_csGeomDebugHelperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iDebugHelper *) ((csGeomDebugHelper **) x));
-}
-static void *_p_p_iDocumentAttributeTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocumentAttribute **) x));
-}
-static void *_p_p_iMaterialEngineTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMaterialEngine **) x));
-}
-static void *_p_p_iImageIOTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iImageIO **) x));
-}
-static void *_p_p_iBillboardTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iBillboard **) x));
-}
-static void *_p_p_iPcBillboardTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcBillboard **) x));
-}
-static void *_p_p_iLoaderStatusTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLoaderStatus **) x));
-}
-static void *_p_p_iImageTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iImage **) x));
-}
-static void *_p_p_iPcCharacteristicsTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcCharacteristics **) x));
-}
-static void *_p_p_iTextureHandleTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iTextureHandle **) x));
-}
-static void *_p_p_iGeneralMeshStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iGeneralMeshCommonState *) ((iGeneralMeshState **) x));
-}
-static void *_p_p_iDynamicsTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDynamics **) x));
-}
-static void *_p_p_iModelConverterTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iModelConverter **) x));
-}
-static void *_p_p_iParameterESMTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iParameterESM **) x));
-}
-static void *_p_p_csViewTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iView *) ((csView **) x));
-}
-static void *_p_p_iPcCommandInputTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcCommandInput **) x));
-}
-static void *_p_p_iAwsIntKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsIntKey **) x));
-}
-static void *_p_p_iSaverTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSaver **) x));
-}
-static void *_p_p_iMeshListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshList **) x));
-}
-static void *_p_p_iEventPlugTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventPlug **) x));
-}
-static void *_p_p_iCelPropertyClassTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelPropertyClass **) x));
-}
-static void *_p_p_iSoundWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundWrapper **) x));
-}
-static void *_p_p_iTextureWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iTextureWrapper **) x));
-}
-static void *_p_p_iMaterialWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMaterialWrapper **) x));
-}
-static void *_p_p_iMeshWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshWrapper **) x));
-}
-static void *_p_p_iMeshFactoryWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshFactoryWrapper **) x));
-}
-static void *_p_p_iStringTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iString **) x));
-}
-static void *_p_p_iSequenceWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSequenceWrapper **) x));
-}
-static void *_p_p_csColliderWrapperTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iObject *)(csObject *) ((csColliderWrapper **) x));
-}
-static void *_p_p_iEngineTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEngine **) x));
-}
-static void *_p_p_iConsoleWatcherTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iConsoleWatcher **) x));
-}
-static void *_p_p_iPcInventoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcInventory **) x));
-}
-static void *_p_p_iMaterialTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iShaderVariableContext *) ((iMaterial **) x));
-}
-static void *_p_p_iSprite2DUVAnimationTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSprite2DUVAnimation **) x));
-}
-static void *_p_p_csPolygonMeshTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iPolygonMesh *) ((csPolygonMesh **) x));
-}
-static void *_p_p_iPolygonMeshTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPolygonMesh **) x));
-}
-static void *_p_p_iThingFactoryStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iThingFactoryState **) x));
-}
-static void *_p_p_iSpriteCal3DFactoryStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteCal3DFactoryState **) x));
-}
-static void *_p_p_iSprite3DFactoryStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSprite3DFactoryState **) x));
-}
-static void *_p_p_iSprite2DFactoryStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSprite2DFactoryState **) x));
-}
-static void *_p_p_iGeneralFactoryStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iGeneralMeshCommonState *) ((iGeneralFactoryState **) x));
-}
-static void *_p_p_iSCFTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSCF **) x));
-}
-static void *_p_p_iGraphics2DTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGraphics2D **) x));
-}
-static void *_p_p_iDocumentTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocument **) x));
-}
-static void *_p_p_iShaderPriorityListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iShaderPriorityList **) x));
-}
-static void *_p_p_iCelEntityListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelEntityList **) x));
-}
-static void *_p_p_iDataBufferTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDataBuffer **) x));
-}
-static void *_p_p_iMeshObjectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshObject **) x));
-}
-static void *_p_p_iScriptObjectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iScriptObject **) x));
-}
-static void *_p_p_iSequenceTimedOperationTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSequenceTimedOperation **) x));
-}
-static void *_p_p_iFontServerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFontServer **) x));
-}
-static void *_p_p_csPolygonMeshBoxTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iPolygonMesh *) ((csPolygonMeshBox **) x));
-}
-static void *_p_p_iStringArrayTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iStringArray **) x));
-}
-static void *_p_p_iReporterTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iReporter **) x));
-}
-static void *_p_p_iDocumentNodeIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocumentNodeIterator **) x));
-}
-static void *_p_p_iDocumentAttributeIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocumentAttributeIterator **) x));
-}
-static void *_p_p_iConfigIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iConfigIterator **) x));
-}
-static void *_p_p_iPluginIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPluginIterator **) x));
-}
-static void *_p_p_iEventAttributeIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventAttributeIterator **) x));
-}
-static void *_p_p_iObjectRegistryIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObjectRegistryIterator **) x));
-}
-static void *_p_p_iObjectIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObjectIterator **) x));
-}
-static void *_p_p_iLightIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLightIterator **) x));
-}
-static void *_p_p_iSectorIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSectorIterator **) x));
-}
-static void *_p_p_iMeshWrapperIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshWrapperIterator **) x));
-}
-static void *_p_p_iVisibilityObjectIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVisibilityObjectIterator **) x));
-}
-static void *_p_p_iStreamIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iStreamIterator **) x));
-}
-static void *_p_p_iReporterIteratorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iReporterIterator **) x));
-}
-static void *_p_p_iGenMeshAnimationControlTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGenMeshAnimationControl **) x));
-}
-static void *_p_p_iObjectRegistryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObjectRegistry **) x));
-}
-static void *_p_p_iCelPlLayerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelPlLayer **) x));
-}
-static void *_p_p_iCelBlLayerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelBlLayer **) x));
-}
-static void *_p_p_iPcLinearMovementTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcLinearMovement **) x));
-}
-static void *_p_p_iObjectModelListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObjectModelListener **) x));
-}
-static void *_p_p_iCameraSectorListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCameraSectorListener **) x));
-}
-static void *_p_p_iMovableListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMovableListener **) x));
-}
-static void *_p_p_iVisibilityCullerListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVisibilityCullerListener **) x));
-}
-static void *_p_p_csTinyDocumentSystemTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iDocumentSystem *) ((csTinyDocumentSystem **) x));
-}
-static void *_p_p_iDocumentSystemTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocumentSystem **) x));
-}
-static void *_p_p_iReporterListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iReporterListener **) x));
-}
-static void *_p_p_iStandardReporterListenerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iStandardReporterListener **) x));
-}
-static void *_p_p_iPcTimerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcTimer **) x));
-}
-static void *_p_p_iSprite2DUVAnimationFrameTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSprite2DUVAnimationFrame **) x));
-}
-static void *_p_p_iSectorTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSector **) x));
-}
-static void *_p_p_iSequenceTriggerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSequenceTrigger **) x));
-}
-static void *_p_p_iAwsKeyContainerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsKeyContainer **) x));
-}
-static void *_p_p_iPortalContainerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPortalContainer **) x));
-}
-static void *_p_p_iPcGravityTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcGravity **) x));
-}
-static void *_p_p_iCameraPositionListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCameraPositionList **) x));
-}
-static void *_p_p_iRegionListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iRegionList **) x));
-}
-static void *_p_p_iSpriteActionTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteAction **) x));
-}
-static void *_p_p_iLightListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLightList **) x));
-}
-static void *_p_p_iOffscreenCanvasCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iOffscreenCanvasCallback **) x));
-}
-static void *_p_p_iMeshObjectDrawCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshObjectDrawCallback **) x));
-}
-static void *_p_p_iLightCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLightCallback **) x));
-}
-static void *_p_p_iSectorCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSectorCallback **) x));
-}
-static void *_p_p_iSectorMeshCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSectorMeshCallback **) x));
-}
-static void *_p_p_iEngineSectorCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEngineSectorCallback **) x));
-}
-static void *_p_p_iTextureCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iTextureCallback **) x));
-}
-static void *_p_p_iMeshDrawCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshDrawCallback **) x));
-}
-static void *_p_p_iPortalCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPortalCallback **) x));
-}
-static void *_p_p_iObjectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObject **) x));
-}
-static void *_p_p_iVisibilityObjectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVisibilityObject **) x));
-}
-static void *_p_p_iDynamicsMoveCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDynamicsMoveCallback **) x));
-}
-static void *_p_p_iDynamicsCollisionCallbackTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDynamicsCollisionCallback **) x));
-}
-static void *_p_p_csObjectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iObject *) ((csObject **) x));
-}
-static void *_p_p_iCameraTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCamera **) x));
-}
-static void *_p_p_iMeshFactoryListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshFactoryList **) x));
-}
-static void *_p_p_iPcCameraTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcCamera **) x));
-}
-static void *_p_p_iGraphics3DTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGraphics3D **) x));
-}
-static void *_p_p_iVirtualClockTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVirtualClock **) x));
-}
-static void *_p_p_iMeshObjectTypeTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshObjectType **) x));
-}
-static void *_p_p_iSprite2DStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iSprite2DFactoryState *) ((iSprite2DState **) x));
-}
-static void *_p_p_iThingEnvironmentTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iThingEnvironment **) x));
-}
-static void *_p_p_iMovableTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMovable **) x));
-}
-static void *_p_p_iPcMovableTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcMovable **) x));
-}
-static void *_p_p_iShaderVariableContextTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iShaderVariableContext **) x));
-}
-static void *_p_p_iSectorListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSectorList **) x));
-}
-static void *_p_p_iCollideSystemTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCollideSystem **) x));
-}
-static void *_p_p_iDynamicSystemTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDynamicSystem **) x));
-}
-static void *_p_p_iPcDynamicSystemTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcDynamicSystem **) x));
-}
-static void *_p_p_iShaderCompilerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iShaderCompiler **) x));
-}
-static void *_p_p_iLightingProcessDataTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLightingProcessData **) x));
-}
-static void *_p_p_iHaloTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iHalo **) x));
-}
-static void *_p_p_iCameraPositionTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCameraPosition **) x));
-}
-static void *_p_p_iBinaryLoaderPluginTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iBinaryLoaderPlugin **) x));
-}
-static void *_p_p_iLoaderPluginTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLoaderPlugin **) x));
-}
-static void *_p_p_iSpriteCal3DSocketTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteCal3DSocket **) x));
-}
-static void *_p_p_iStreamTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iStream **) x));
-}
-static void *_p_p_iVideoStreamTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iStream *) ((iVideoStream **) x));
-}
-static void *_p_p_iAudioStreamTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iStream *) ((iAudioStream **) x));
-}
-static void *_p_p_iVisibilityCullerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVisibilityCuller **) x));
-}
-static void *_p_p_iGeneralMeshCommonStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGeneralMeshCommonState **) x));
-}
-static void *_p_p_iConfigFileTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iConfigFile **) x));
-}
-static void *_p_p_iEventQueueTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventQueue **) x));
-}
-static void *_p_p_iSoundSourceTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundSource **) x));
-}
-static void *_p_p_iRigidBodyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iRigidBody **) x));
-}
-static void *_p_p_iEventOutletTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventOutlet **) x));
-}
-static void *_p_p_iDocumentNodeTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iDocumentNode **) x));
-}
-static void *_p_p_iAwsComponentNodeTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *)(iAwsKeyContainer *) ((iAwsComponentNode **) x));
-}
-static void *_p_p_iStreamFormatTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iStreamFormat **) x));
-}
-static void *_p_p_iKeyboardDriverTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iKeyboardDriver **) x));
-}
-static void *_p_p_iSoundDriverTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundDriver **) x));
-}
-static void *_p_p_iSpriteCal3DStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteCal3DState **) x));
-}
-static void *_p_p_iSprite3DStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSprite3DState **) x));
-}
-static void *_p_p_iBodyGroupTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iBodyGroup **) x));
-}
-static void *_p_p_iPcDynamicBodyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcDynamicBody **) x));
-}
-static void *_p_p_iFrustumViewTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFrustumView **) x));
-}
-static void *_p_p_iCelBehaviourTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelBehaviour **) x));
-}
-static void *_p_p_iEventHandlerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventHandler **) x));
-}
-static void *_p_p_iSoundLoaderTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundLoader **) x));
-}
-static void *_p_p__csPyEventHandlerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iEventHandler *) ((_csPyEventHandler **) x));
-}
-static void *_p_p_iPortalTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPortal **) x));
-}
-static void *_p_p_iAwsTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAws **) x));
-}
-static void *_p_p_iEngineSequenceParametersTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEngineSequenceParameters **) x));
-}
-static void *_p_p_iAwsKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsKey **) x));
-}
-static void *_p_p_iGenMeshAnimationControlTypeTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGenMeshAnimationControlType **) x));
-}
-static void *_p_p_iSoundRenderTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundRender **) x));
-}
-static void *_p_p_iFileTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFile **) x));
-}
-static void *_p_p_iKeyComposerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iKeyComposer **) x));
-}
-static void *_p_p_iShaderRenderInterfaceTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iShaderRenderInterface **) x));
-}
-static void *_p_p_iMaterialListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMaterialList **) x));
-}
-static void *_p_p_iAwsRectKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsRectKey **) x));
-}
-static void *_p_p_iLightingProcessInfoTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iFrustumViewUserdata *) ((iLightingProcessInfo **) x));
-}
-static void *_p_p_iSpriteSocketTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteSocket **) x));
-}
-static void *_p_p_iComponentTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iComponent **) x));
-}
-static void *_p_p_iAwsComponentTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsSource *) ((iAwsComponent **) x));
-}
-static void *_p_p_iAwsStringKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsStringKey **) x));
-}
-static void *_p_p_iAwsSourceTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsSource **) x));
-}
-static void *_p_p_iCelEntityTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelEntity **) x));
-}
-static void *_p_p_iVFSTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iVFS **) x));
-}
-static void *_p_p_iJoystickDriverTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iJoystickDriver **) x));
-}
-static void *_p_p_iMouseDriverTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMouseDriver **) x));
-}
-static void *_p_p_iMeshObjectFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMeshObjectFactory **) x));
-}
-static void *_p_p_iGenMeshAnimationControlFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iGenMeshAnimationControlFactory **) x));
-}
-static void *_p_p_iAwsConnectionNodeFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsConnectionNodeFactory **) x));
-}
-static void *_p_p_iAwsKeyFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsKeyFactory **) x));
-}
-static void *_p_p_iAwsComponentFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsComponentFactory **) x));
-}
-static void *_p_p_iFactoryTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFactory **) x));
-}
-static void *_p_p_iLoaderTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLoader **) x));
-}
-static void *_p_p_iFrustumViewUserdataTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFrustumViewUserdata **) x));
-}
-static void *_p_p_iAwsSinkTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsSink **) x));
-}
-static void *_p_p_iShaderTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iShaderVariableContext *) ((iShader **) x));
-}
-static void *_p_p_iTextureListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iTextureList **) x));
-}
-static void *_p_p_iNativeWindowTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iNativeWindow **) x));
-}
-static void *_p_p_iSpriteFrameTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSpriteFrame **) x));
-}
-static void *_p_p_iFontDeleteNotifyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFontDeleteNotify **) x));
-}
-static void *_p_p_iThingStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iThingState **) x));
-}
-static void *_p_p_iAwsFloatKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsFloatKey **) x));
-}
-static void *_p_p_iJointTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iJoint **) x));
-}
-static void *_p_p_iFontTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iFont **) x));
-}
-static void *_p_p_iAwsSlotTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsSlot **) x));
-}
-static void *_p_p_iLightTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iLight **) x));
-}
-static void *_p_p_iBallStateTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iBallState **) x));
-}
-static void *_p_p_iViewTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iView **) x));
-}
-static void *_p_p_iColliderTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCollider **) x));
-}
-static void *_p_p_iCelParameterBlockTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelParameterBlock **) x));
-}
-static void *_p_p_iPcMeshSelectTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcMeshSelect **) x));
-}
-static void *_p_p_iSoundHandleTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iSoundHandle **) x));
-}
-static void *_p_p_iPolygonHandleTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPolygonHandle **) x));
-}
-static void *_p_p_iObjectModelTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iObjectModel **) x));
-}
-static void *_p_p_iAwsConnectionKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsConnectionKey **) x));
-}
-static void *_p_p_iMaterialHandleTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iMaterialHandle **) x));
-}
-static void *_p_p_iCelPropertyClassListTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCelPropertyClassList **) x));
-}
-static void *_p_p_iRegionTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iRegion **) x));
-}
-static void *_p_p_iPcRegionTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcRegion **) x));
-}
-static void *_p_p_iShaderManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iShaderVariableContext *) ((iShaderManager **) x));
-}
-static void *_p_p_iNativeWindowManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iNativeWindowManager **) x));
-}
-static void *_p_p_iConfigManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iConfigFile *) ((iConfigManager **) x));
-}
-static void *_p_p_iPluginManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPluginManager **) x));
-}
-static void *_p_p_iCacheManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iCacheManager **) x));
-}
-static void *_p_p_iAwsLayoutManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsLayoutManager **) x));
-}
-static void *_p_p_iAwsSinkManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsSinkManager **) x));
-}
-static void *_p_p_iAwsPrefManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iAwsPrefManager **) x));
-}
-static void *_p_p_iTextureManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iTextureManager **) x));
-}
-static void *_p_p_iEngineSequenceManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEngineSequenceManager **) x));
-}
-static void *_p_p_iBillboardManagerTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iBillboardManager **) x));
-}
-static void *_p_p_iAwsPointKeyTo_p_p_iBase(void *x) {
-    return (void *)((iBase **) (iAwsKey *) ((iAwsPointKey **) x));
-}
-static void *_p_p_iScriptTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iScript **) x));
-}
-static void *_p_p_iPcSolidTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcSolid **) x));
-}
-static void *_p_p_iPcMeshTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iPcMesh **) x));
-}
-static void *_p_p_iEventCordTo_p_p_iBase(void *x) {
-    return (void *)((iBase **)  ((iEventCord **) x));
 }
 static void *_p_iAwsRGBKeyTo_p_iBase(void *x) {
     return (void *)((iBase *) (iAwsKey *) ((iAwsRGBKey *) x));
@@ -117305,6 +116302,690 @@ static void *_p_iPcMeshTo_p_iBase(void *x) {
 static void *_p_iEventCordTo_p_iBase(void *x) {
     return (void *)((iBase *)  ((iEventCord *) x));
 }
+static void *_p_p_iAwsRGBKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsRGBKey **) x));
+}
+static void *_p_p_iEventTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEvent **) x));
+}
+static void *_p_p_iRendererLightmapTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iRendererLightmap **) x));
+}
+static void *_p_p_iSuperLightmapTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSuperLightmap **) x));
+}
+static void *_p_p_iConsoleOutputTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iConsoleOutput **) x));
+}
+static void *_p_p_iClipper2DTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iClipper2D **) x));
+}
+static void *_p_p_iDebugHelperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDebugHelper **) x));
+}
+static void *_p_p_csGeomDebugHelperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iDebugHelper *) ((csGeomDebugHelper **) x));
+}
+static void *_p_p_iDocumentAttributeTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocumentAttribute **) x));
+}
+static void *_p_p_iMaterialEngineTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMaterialEngine **) x));
+}
+static void *_p_p_iImageIOTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iImageIO **) x));
+}
+static void *_p_p_iBillboardTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iBillboard **) x));
+}
+static void *_p_p_iPcBillboardTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcBillboard **) x));
+}
+static void *_p_p_iLoaderStatusTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLoaderStatus **) x));
+}
+static void *_p_p_iImageTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iImage **) x));
+}
+static void *_p_p_iPcCharacteristicsTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcCharacteristics **) x));
+}
+static void *_p_p_iTextureHandleTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iTextureHandle **) x));
+}
+static void *_p_p_iGeneralMeshStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iGeneralMeshCommonState *) ((iGeneralMeshState **) x));
+}
+static void *_p_p_iDynamicsTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDynamics **) x));
+}
+static void *_p_p_iModelConverterTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iModelConverter **) x));
+}
+static void *_p_p_iParameterESMTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iParameterESM **) x));
+}
+static void *_p_p_csViewTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iView *) ((csView **) x));
+}
+static void *_p_p_iPcCommandInputTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcCommandInput **) x));
+}
+static void *_p_p_iAwsIntKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsIntKey **) x));
+}
+static void *_p_p_iSaverTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSaver **) x));
+}
+static void *_p_p_iMeshListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshList **) x));
+}
+static void *_p_p_iEventPlugTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventPlug **) x));
+}
+static void *_p_p_iCelPropertyClassTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelPropertyClass **) x));
+}
+static void *_p_p_iSoundWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundWrapper **) x));
+}
+static void *_p_p_iTextureWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iTextureWrapper **) x));
+}
+static void *_p_p_iMaterialWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMaterialWrapper **) x));
+}
+static void *_p_p_iMeshWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshWrapper **) x));
+}
+static void *_p_p_iMeshFactoryWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshFactoryWrapper **) x));
+}
+static void *_p_p_iStringTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iString **) x));
+}
+static void *_p_p_iSequenceWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSequenceWrapper **) x));
+}
+static void *_p_p_csColliderWrapperTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iObject *)(csObject *) ((csColliderWrapper **) x));
+}
+static void *_p_p_iEngineTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEngine **) x));
+}
+static void *_p_p_iConsoleWatcherTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iConsoleWatcher **) x));
+}
+static void *_p_p_iPcInventoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcInventory **) x));
+}
+static void *_p_p_iMaterialTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iShaderVariableContext *) ((iMaterial **) x));
+}
+static void *_p_p_iSprite2DUVAnimationTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSprite2DUVAnimation **) x));
+}
+static void *_p_p_csPolygonMeshTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iPolygonMesh *) ((csPolygonMesh **) x));
+}
+static void *_p_p_iPolygonMeshTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPolygonMesh **) x));
+}
+static void *_p_p_iThingFactoryStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iThingFactoryState **) x));
+}
+static void *_p_p_iSpriteCal3DFactoryStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteCal3DFactoryState **) x));
+}
+static void *_p_p_iSprite3DFactoryStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSprite3DFactoryState **) x));
+}
+static void *_p_p_iSprite2DFactoryStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSprite2DFactoryState **) x));
+}
+static void *_p_p_iGeneralFactoryStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iGeneralMeshCommonState *) ((iGeneralFactoryState **) x));
+}
+static void *_p_p_iSCFTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSCF **) x));
+}
+static void *_p_p_iGraphics2DTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGraphics2D **) x));
+}
+static void *_p_p_iDocumentTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocument **) x));
+}
+static void *_p_p_iShaderPriorityListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iShaderPriorityList **) x));
+}
+static void *_p_p_iCelEntityListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelEntityList **) x));
+}
+static void *_p_p_iDataBufferTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDataBuffer **) x));
+}
+static void *_p_p_iMeshObjectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshObject **) x));
+}
+static void *_p_p_iScriptObjectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iScriptObject **) x));
+}
+static void *_p_p_iSequenceTimedOperationTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSequenceTimedOperation **) x));
+}
+static void *_p_p_iFontServerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFontServer **) x));
+}
+static void *_p_p_csPolygonMeshBoxTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iPolygonMesh *) ((csPolygonMeshBox **) x));
+}
+static void *_p_p_iStringArrayTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iStringArray **) x));
+}
+static void *_p_p_iReporterTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iReporter **) x));
+}
+static void *_p_p_iDocumentNodeIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocumentNodeIterator **) x));
+}
+static void *_p_p_iDocumentAttributeIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocumentAttributeIterator **) x));
+}
+static void *_p_p_iConfigIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iConfigIterator **) x));
+}
+static void *_p_p_iPluginIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPluginIterator **) x));
+}
+static void *_p_p_iEventAttributeIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventAttributeIterator **) x));
+}
+static void *_p_p_iObjectRegistryIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObjectRegistryIterator **) x));
+}
+static void *_p_p_iObjectIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObjectIterator **) x));
+}
+static void *_p_p_iLightIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLightIterator **) x));
+}
+static void *_p_p_iSectorIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSectorIterator **) x));
+}
+static void *_p_p_iMeshWrapperIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshWrapperIterator **) x));
+}
+static void *_p_p_iVisibilityObjectIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVisibilityObjectIterator **) x));
+}
+static void *_p_p_iStreamIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iStreamIterator **) x));
+}
+static void *_p_p_iReporterIteratorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iReporterIterator **) x));
+}
+static void *_p_p_iGenMeshAnimationControlTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGenMeshAnimationControl **) x));
+}
+static void *_p_p_iObjectRegistryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObjectRegistry **) x));
+}
+static void *_p_p_iCelPlLayerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelPlLayer **) x));
+}
+static void *_p_p_iCelBlLayerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelBlLayer **) x));
+}
+static void *_p_p_iPcLinearMovementTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcLinearMovement **) x));
+}
+static void *_p_p_iObjectModelListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObjectModelListener **) x));
+}
+static void *_p_p_iCameraSectorListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCameraSectorListener **) x));
+}
+static void *_p_p_iMovableListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMovableListener **) x));
+}
+static void *_p_p_iVisibilityCullerListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVisibilityCullerListener **) x));
+}
+static void *_p_p_csTinyDocumentSystemTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iDocumentSystem *) ((csTinyDocumentSystem **) x));
+}
+static void *_p_p_iDocumentSystemTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocumentSystem **) x));
+}
+static void *_p_p_iReporterListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iReporterListener **) x));
+}
+static void *_p_p_iStandardReporterListenerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iStandardReporterListener **) x));
+}
+static void *_p_p_iPcTimerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcTimer **) x));
+}
+static void *_p_p_iSprite2DUVAnimationFrameTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSprite2DUVAnimationFrame **) x));
+}
+static void *_p_p_iSectorTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSector **) x));
+}
+static void *_p_p_iSequenceTriggerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSequenceTrigger **) x));
+}
+static void *_p_p_iAwsKeyContainerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsKeyContainer **) x));
+}
+static void *_p_p_iPortalContainerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPortalContainer **) x));
+}
+static void *_p_p_iPcGravityTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcGravity **) x));
+}
+static void *_p_p_iCameraPositionListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCameraPositionList **) x));
+}
+static void *_p_p_iRegionListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iRegionList **) x));
+}
+static void *_p_p_iSpriteActionTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteAction **) x));
+}
+static void *_p_p_iLightListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLightList **) x));
+}
+static void *_p_p_iOffscreenCanvasCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iOffscreenCanvasCallback **) x));
+}
+static void *_p_p_iMeshObjectDrawCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshObjectDrawCallback **) x));
+}
+static void *_p_p_iLightCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLightCallback **) x));
+}
+static void *_p_p_iSectorCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSectorCallback **) x));
+}
+static void *_p_p_iSectorMeshCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSectorMeshCallback **) x));
+}
+static void *_p_p_iEngineSectorCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEngineSectorCallback **) x));
+}
+static void *_p_p_iTextureCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iTextureCallback **) x));
+}
+static void *_p_p_iMeshDrawCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshDrawCallback **) x));
+}
+static void *_p_p_iPortalCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPortalCallback **) x));
+}
+static void *_p_p_iObjectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObject **) x));
+}
+static void *_p_p_iVisibilityObjectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVisibilityObject **) x));
+}
+static void *_p_p_iDynamicsMoveCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDynamicsMoveCallback **) x));
+}
+static void *_p_p_iDynamicsCollisionCallbackTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDynamicsCollisionCallback **) x));
+}
+static void *_p_p_csObjectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iObject *) ((csObject **) x));
+}
+static void *_p_p_iCameraTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCamera **) x));
+}
+static void *_p_p_iMeshFactoryListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshFactoryList **) x));
+}
+static void *_p_p_iPcCameraTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcCamera **) x));
+}
+static void *_p_p_iGraphics3DTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGraphics3D **) x));
+}
+static void *_p_p_iVirtualClockTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVirtualClock **) x));
+}
+static void *_p_p_iMeshObjectTypeTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshObjectType **) x));
+}
+static void *_p_p_iSprite2DStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iSprite2DFactoryState *) ((iSprite2DState **) x));
+}
+static void *_p_p_iThingEnvironmentTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iThingEnvironment **) x));
+}
+static void *_p_p_iMovableTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMovable **) x));
+}
+static void *_p_p_iPcMovableTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcMovable **) x));
+}
+static void *_p_p_iShaderVariableContextTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iShaderVariableContext **) x));
+}
+static void *_p_p_iSectorListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSectorList **) x));
+}
+static void *_p_p_iCollideSystemTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCollideSystem **) x));
+}
+static void *_p_p_iDynamicSystemTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDynamicSystem **) x));
+}
+static void *_p_p_iPcDynamicSystemTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcDynamicSystem **) x));
+}
+static void *_p_p_iShaderCompilerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iShaderCompiler **) x));
+}
+static void *_p_p_iLightingProcessDataTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLightingProcessData **) x));
+}
+static void *_p_p_iHaloTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iHalo **) x));
+}
+static void *_p_p_iCameraPositionTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCameraPosition **) x));
+}
+static void *_p_p_iBinaryLoaderPluginTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iBinaryLoaderPlugin **) x));
+}
+static void *_p_p_iLoaderPluginTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLoaderPlugin **) x));
+}
+static void *_p_p_iSpriteCal3DSocketTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteCal3DSocket **) x));
+}
+static void *_p_p_iStreamTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iStream **) x));
+}
+static void *_p_p_iVideoStreamTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iStream *) ((iVideoStream **) x));
+}
+static void *_p_p_iAudioStreamTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iStream *) ((iAudioStream **) x));
+}
+static void *_p_p_iVisibilityCullerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVisibilityCuller **) x));
+}
+static void *_p_p_iGeneralMeshCommonStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGeneralMeshCommonState **) x));
+}
+static void *_p_p_iConfigFileTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iConfigFile **) x));
+}
+static void *_p_p_iEventQueueTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventQueue **) x));
+}
+static void *_p_p_iSoundSourceTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundSource **) x));
+}
+static void *_p_p_iRigidBodyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iRigidBody **) x));
+}
+static void *_p_p_iEventOutletTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventOutlet **) x));
+}
+static void *_p_p_iDocumentNodeTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iDocumentNode **) x));
+}
+static void *_p_p_iAwsComponentNodeTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *)(iAwsKeyContainer *) ((iAwsComponentNode **) x));
+}
+static void *_p_p_iStreamFormatTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iStreamFormat **) x));
+}
+static void *_p_p_iKeyboardDriverTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iKeyboardDriver **) x));
+}
+static void *_p_p_iSoundDriverTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundDriver **) x));
+}
+static void *_p_p_iSpriteCal3DStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteCal3DState **) x));
+}
+static void *_p_p_iSprite3DStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSprite3DState **) x));
+}
+static void *_p_p_iBodyGroupTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iBodyGroup **) x));
+}
+static void *_p_p_iPcDynamicBodyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcDynamicBody **) x));
+}
+static void *_p_p_iFrustumViewTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFrustumView **) x));
+}
+static void *_p_p_iCelBehaviourTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelBehaviour **) x));
+}
+static void *_p_p_iEventHandlerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventHandler **) x));
+}
+static void *_p_p_iSoundLoaderTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundLoader **) x));
+}
+static void *_p_p__csPyEventHandlerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iEventHandler *) ((_csPyEventHandler **) x));
+}
+static void *_p_p_iPortalTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPortal **) x));
+}
+static void *_p_p_iAwsTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAws **) x));
+}
+static void *_p_p_iEngineSequenceParametersTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEngineSequenceParameters **) x));
+}
+static void *_p_p_iAwsKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsKey **) x));
+}
+static void *_p_p_iGenMeshAnimationControlTypeTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGenMeshAnimationControlType **) x));
+}
+static void *_p_p_iSoundRenderTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundRender **) x));
+}
+static void *_p_p_iFileTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFile **) x));
+}
+static void *_p_p_iKeyComposerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iKeyComposer **) x));
+}
+static void *_p_p_iShaderRenderInterfaceTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iShaderRenderInterface **) x));
+}
+static void *_p_p_iMaterialListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMaterialList **) x));
+}
+static void *_p_p_iAwsRectKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsRectKey **) x));
+}
+static void *_p_p_iLightingProcessInfoTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iFrustumViewUserdata *) ((iLightingProcessInfo **) x));
+}
+static void *_p_p_iSpriteSocketTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteSocket **) x));
+}
+static void *_p_p_iComponentTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iComponent **) x));
+}
+static void *_p_p_iAwsComponentTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsSource *) ((iAwsComponent **) x));
+}
+static void *_p_p_iAwsStringKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsStringKey **) x));
+}
+static void *_p_p_iAwsSourceTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsSource **) x));
+}
+static void *_p_p_iCelEntityTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelEntity **) x));
+}
+static void *_p_p_iVFSTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iVFS **) x));
+}
+static void *_p_p_iJoystickDriverTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iJoystickDriver **) x));
+}
+static void *_p_p_iMouseDriverTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMouseDriver **) x));
+}
+static void *_p_p_iMeshObjectFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMeshObjectFactory **) x));
+}
+static void *_p_p_iGenMeshAnimationControlFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iGenMeshAnimationControlFactory **) x));
+}
+static void *_p_p_iAwsConnectionNodeFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsConnectionNodeFactory **) x));
+}
+static void *_p_p_iAwsKeyFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsKeyFactory **) x));
+}
+static void *_p_p_iAwsComponentFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsComponentFactory **) x));
+}
+static void *_p_p_iFactoryTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFactory **) x));
+}
+static void *_p_p_iLoaderTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLoader **) x));
+}
+static void *_p_p_iFrustumViewUserdataTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFrustumViewUserdata **) x));
+}
+static void *_p_p_iAwsSinkTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsSink **) x));
+}
+static void *_p_p_iShaderTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iShaderVariableContext *) ((iShader **) x));
+}
+static void *_p_p_iTextureListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iTextureList **) x));
+}
+static void *_p_p_iNativeWindowTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iNativeWindow **) x));
+}
+static void *_p_p_iSpriteFrameTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSpriteFrame **) x));
+}
+static void *_p_p_iFontDeleteNotifyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFontDeleteNotify **) x));
+}
+static void *_p_p_iThingStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iThingState **) x));
+}
+static void *_p_p_iAwsFloatKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsFloatKey **) x));
+}
+static void *_p_p_iJointTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iJoint **) x));
+}
+static void *_p_p_iFontTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iFont **) x));
+}
+static void *_p_p_iAwsSlotTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsSlot **) x));
+}
+static void *_p_p_iLightTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iLight **) x));
+}
+static void *_p_p_iBallStateTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iBallState **) x));
+}
+static void *_p_p_iViewTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iView **) x));
+}
+static void *_p_p_iColliderTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCollider **) x));
+}
+static void *_p_p_iCelParameterBlockTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelParameterBlock **) x));
+}
+static void *_p_p_iPcMeshSelectTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcMeshSelect **) x));
+}
+static void *_p_p_iSoundHandleTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iSoundHandle **) x));
+}
+static void *_p_p_iPolygonHandleTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPolygonHandle **) x));
+}
+static void *_p_p_iObjectModelTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iObjectModel **) x));
+}
+static void *_p_p_iAwsConnectionKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsConnectionKey **) x));
+}
+static void *_p_p_iMaterialHandleTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iMaterialHandle **) x));
+}
+static void *_p_p_iCelPropertyClassListTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCelPropertyClassList **) x));
+}
+static void *_p_p_iRegionTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iRegion **) x));
+}
+static void *_p_p_iPcRegionTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcRegion **) x));
+}
+static void *_p_p_iShaderManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iShaderVariableContext *) ((iShaderManager **) x));
+}
+static void *_p_p_iNativeWindowManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iNativeWindowManager **) x));
+}
+static void *_p_p_iConfigManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iConfigFile *) ((iConfigManager **) x));
+}
+static void *_p_p_iPluginManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPluginManager **) x));
+}
+static void *_p_p_iCacheManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iCacheManager **) x));
+}
+static void *_p_p_iAwsLayoutManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsLayoutManager **) x));
+}
+static void *_p_p_iAwsSinkManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsSinkManager **) x));
+}
+static void *_p_p_iAwsPrefManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iAwsPrefManager **) x));
+}
+static void *_p_p_iTextureManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iTextureManager **) x));
+}
+static void *_p_p_iEngineSequenceManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEngineSequenceManager **) x));
+}
+static void *_p_p_iBillboardManagerTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iBillboardManager **) x));
+}
+static void *_p_p_iAwsPointKeyTo_p_p_iBase(void *x) {
+    return (void *)((iBase **) (iAwsKey *) ((iAwsPointKey **) x));
+}
+static void *_p_p_iScriptTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iScript **) x));
+}
+static void *_p_p_iPcSolidTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcSolid **) x));
+}
+static void *_p_p_iPcMeshTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iPcMesh **) x));
+}
+static void *_p_p_iEventCordTo_p_p_iBase(void *x) {
+    return (void *)((iBase **)  ((iEventCord **) x));
+}
 static void *_p_csVideoStreamDescriptionTo_p_csStreamDescription(void *x) {
     return (void *)((csStreamDescription *)  ((csVideoStreamDescription *) x));
 }
@@ -117422,6 +117103,7 @@ static swig_type_info _swigt__p_csRefTiDocumentAttribute_t[] = {{"_p_csRefTiDocu
 static swig_type_info _swigt__p_csRefArrayTiShader_t[] = {{"_p_csRefArrayTiShader_t", 0, "csRefArray<iShader > *", 0},{"_p_csRefArrayTiShader_t"},{0}};
 static swig_type_info _swigt__p_csPtrTiShader_t[] = {{"_p_csPtrTiShader_t", 0, "csPtr<iShader > *", 0},{"_p_csPtrTiShader_t"},{0}};
 static swig_type_info _swigt__p_uint8[] = {{"_p_uint8", 0, "uint8 const *", 0},{"_p_unsigned_char"},{"_p_uint8"},{0}};
+static swig_type_info _swigt__p_iDocumentAttributeIterator[] = {{"_p_iDocumentAttributeIterator", 0, "iDocumentAttributeIterator *", 0},{"_p_iDocumentAttributeIterator"},{0}};
 static swig_type_info _swigt__p_iConfigIterator[] = {{"_p_iConfigIterator", 0, "iConfigIterator *", 0},{"_p_iConfigIterator"},{0}};
 static swig_type_info _swigt__p_iPluginIterator[] = {{"_p_iPluginIterator", 0, "iPluginIterator *", 0},{"_p_iPluginIterator"},{0}};
 static swig_type_info _swigt__p_iEventAttributeIterator[] = {{"_p_iEventAttributeIterator", 0, "iEventAttributeIterator *", 0},{"_p_iEventAttributeIterator"},{0}};
@@ -117432,7 +117114,6 @@ static swig_type_info _swigt__p_iMeshWrapperIterator[] = {{"_p_iMeshWrapperItera
 static swig_type_info _swigt__p_iSectorIterator[] = {{"_p_iSectorIterator", 0, "iSectorIterator *", 0},{"_p_iSectorIterator"},{0}};
 static swig_type_info _swigt__p_iLightIterator[] = {{"_p_iLightIterator", 0, "iLightIterator *", 0},{"_p_iLightIterator"},{0}};
 static swig_type_info _swigt__p_csStringSetIterator[] = {{"_p_csStringSetIterator", 0, "csStringSetIterator *", 0},{"_p_csStringSetIterator"},{0}};
-static swig_type_info _swigt__p_iDocumentAttributeIterator[] = {{"_p_iDocumentAttributeIterator", 0, "iDocumentAttributeIterator *", 0},{"_p_iDocumentAttributeIterator"},{0}};
 static swig_type_info _swigt__p_iDocumentNodeIterator[] = {{"_p_iDocumentNodeIterator", 0, "iDocumentNodeIterator *", 0},{"_p_iDocumentNodeIterator"},{0}};
 static swig_type_info _swigt__p_iStreamIterator[] = {{"_p_iStreamIterator", 0, "iStreamIterator *", 0},{"_p_iStreamIterator"},{0}};
 static swig_type_info _swigt__p_iReporterIterator[] = {{"_p_iReporterIterator", 0, "iReporterIterator *", 0},{"_p_iReporterIterator"},{0}};
@@ -117537,7 +117218,6 @@ static swig_type_info _swigt__p_int16[] = {{"_p_int16", 0, "int16 *", 0},{"_p_in
 static swig_type_info _swigt__p_csArrayTcsArrayTcsShaderVariable_p_t_t[] = {{"_p_csArrayTcsArrayTcsShaderVariable_p_t_t", 0, "csArray<csArray<csShaderVariable * > > *", 0},{"_p_csArrayTcsArrayTcsShaderVariable_p_t_t"},{"_p_csShaderVarStack"},{0}};
 static swig_type_info _swigt__p_iLightingProcessInfo[] = {{"_p_iLightingProcessInfo", 0, "iLightingProcessInfo *", 0},{"_p_iLightingProcessInfo"},{0}};
 static swig_type_info _swigt__p_csPtrTiKeyComposer_t[] = {{"_p_csPtrTiKeyComposer_t", 0, "csPtr<iKeyComposer > *", 0},{"_p_csPtrTiKeyComposer_t"},{0}};
-static swig_type_info _swigt__p_csPoly2DUnbounded[] = {{"_p_csPoly2DUnbounded", 0, "csPoly2DUnbounded *", 0},{"_p_csPoly2D", _p_csPoly2DTo_p_csPoly2DUnbounded},{"_p_csPoly2DUnbounded"},{0}};
 static swig_type_info _swigt__p_iPcCommandInput[] = {{"_p_iPcCommandInput", 0, "iPcCommandInput *", 0},{"_p_iPcCommandInput"},{0}};
 static swig_type_info _swigt__p_csPtrTcsFrustum_t[] = {{"_p_csPtrTcsFrustum_t", 0, "csPtr<csFrustum > *", 0},{"_p_csPtrTcsFrustum_t"},{0}};
 static swig_type_info _swigt__p_unsigned_int[] = {{"_p_unsigned_int", 0, "unsigned int *", 0},{"_p_unsigned_int"},{0}};
@@ -117896,6 +117576,7 @@ _swigt__p_csRefTiDocumentAttribute_t,
 _swigt__p_csRefArrayTiShader_t, 
 _swigt__p_csPtrTiShader_t, 
 _swigt__p_uint8, 
+_swigt__p_iDocumentAttributeIterator, 
 _swigt__p_iConfigIterator, 
 _swigt__p_iPluginIterator, 
 _swigt__p_iEventAttributeIterator, 
@@ -117906,7 +117587,6 @@ _swigt__p_iMeshWrapperIterator,
 _swigt__p_iSectorIterator, 
 _swigt__p_iLightIterator, 
 _swigt__p_csStringSetIterator, 
-_swigt__p_iDocumentAttributeIterator, 
 _swigt__p_iDocumentNodeIterator, 
 _swigt__p_iStreamIterator, 
 _swigt__p_iReporterIterator, 
@@ -118011,7 +117691,6 @@ _swigt__p_int16,
 _swigt__p_csArrayTcsArrayTcsShaderVariable_p_t_t, 
 _swigt__p_iLightingProcessInfo, 
 _swigt__p_csPtrTiKeyComposer_t, 
-_swigt__p_csPoly2DUnbounded, 
 _swigt__p_iPcCommandInput, 
 _swigt__p_csPtrTcsFrustum_t, 
 _swigt__p_unsigned_int, 
