@@ -3569,6 +3569,30 @@ static PyObject *_wrap_iSCF_GetClassDependencies(PyObject *self, PyObject *args)
 }
 
 
+static PyObject *_wrap_iSCF_GetPluginMetadata(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iSCF *arg1 = (iSCF *) 0 ;
+    char *arg2 ;
+    SwigValueWrapper< csRef<iDocument > > result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Os:iSCF_GetPluginMetadata",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iSCF,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (arg1)->GetPluginMetadata((char const *)arg2);
+    
+    {
+        /*@c:/proj/cs/cs/include/ivaria/pythpre.i,59,TYPEMAP_OUT_csRef_BODY@*/
+        csRef<iDocument> ref(result);
+        resultobj = _csRef_to_Python(csRef<iBase>(
+        (iDocument *)ref), (void *)(iDocument *)ref, "iDocument" " *");
+        /*@@*/
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_iSCF_UnloadUnusedModules(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iSCF *arg1 = (iSCF *) 0 ;
@@ -3848,14 +3872,20 @@ static PyObject *_wrap_iSCF_QueryClassList(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iSCF *arg1 = (iSCF *) 0 ;
     char *arg2 ;
-    iStringArray *result;
+    SwigValueWrapper< csRef<iStringArray > > result;
     PyObject * obj0 = 0 ;
     
     if(!PyArg_ParseTuple(args,(char *)"Os:iSCF_QueryClassList",&obj0,&arg2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iSCF,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iStringArray *)(arg1)->QueryClassList((char const *)arg2);
+    result = (arg1)->QueryClassList((char const *)arg2);
     
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iStringArray, 0);
+    {
+        /*@c:/proj/cs/cs/include/ivaria/pythpre.i,59,TYPEMAP_OUT_csRef_BODY@*/
+        csRef<iStringArray> ref(result);
+        resultobj = _csRef_to_Python(csRef<iBase>(
+        (iStringArray *)ref), (void *)(iStringArray *)ref, "iStringArray" " *");
+        /*@@*/
+    }
     return resultobj;
     fail:
     return NULL;
@@ -25709,6 +25739,222 @@ static PyObject *_wrap_csBox2_AddBoundingVertexSmart(PyObject *self, PyObject *a
 }
 
 
+static PyObject *_wrap_csBox2_AddBoundingVertexTest__SWIG_0(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox2 *arg1 = (csBox2 *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Off:csBox2_AddBoundingVertexTest",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (bool)(arg1)->AddBoundingVertexTest(arg2,arg3);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox2_AddBoundingVertexTest__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox2 *arg1 = (csBox2 *) 0 ;
+    csVector2 *arg2 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csBox2_AddBoundingVertexTest",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)(arg1)->AddBoundingVertexTest((csVector2 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox2_AddBoundingVertexTest(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[4];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 2) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox2, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                }else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                return _wrap_csBox2_AddBoundingVertexTest__SWIG_1(self,args);
+            }
+        }
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox2, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                _v = (PyFloat_Check(argv[1]) || PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+            }
+            if (_v) {
+                {
+                    _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
+                }
+                if (_v) {
+                    return _wrap_csBox2_AddBoundingVertexTest__SWIG_0(self,args);
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csBox2_AddBoundingVertexTest'");
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox2_AddBoundingVertexSmartTest__SWIG_0(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox2 *arg1 = (csBox2 *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Off:csBox2_AddBoundingVertexSmartTest",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (bool)(arg1)->AddBoundingVertexSmartTest(arg2,arg3);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox2_AddBoundingVertexSmartTest__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox2 *arg1 = (csBox2 *) 0 ;
+    csVector2 *arg2 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csBox2_AddBoundingVertexSmartTest",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)(arg1)->AddBoundingVertexSmartTest((csVector2 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox2_AddBoundingVertexSmartTest(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[4];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 2) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox2, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector2, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                }else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                return _wrap_csBox2_AddBoundingVertexSmartTest__SWIG_1(self,args);
+            }
+        }
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox2, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                _v = (PyFloat_Check(argv[1]) || PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+            }
+            if (_v) {
+                {
+                    _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
+                }
+                if (_v) {
+                    return _wrap_csBox2_AddBoundingVertexSmartTest__SWIG_0(self,args);
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csBox2_AddBoundingVertexSmartTest'");
+    return NULL;
+}
+
+
 static PyObject *_wrap_new_csBox2__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox2 *result;
@@ -27576,6 +27822,234 @@ static PyObject *_wrap_csBox3_AddBoundingVertexSmart(PyObject *self, PyObject *a
     }
     
     PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csBox3_AddBoundingVertexSmart'");
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexTest__SWIG_0(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    float arg4 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Offf:csBox3_AddBoundingVertexTest",&obj0,&arg2,&arg3,&arg4)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (bool)(arg1)->AddBoundingVertexTest(arg2,arg3,arg4);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexTest__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    csVector3 *arg2 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_AddBoundingVertexTest",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)(arg1)->AddBoundingVertexTest((csVector3 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexTest(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[5];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 4); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 2) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox3, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector3, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                }else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                return _wrap_csBox3_AddBoundingVertexTest__SWIG_1(self,args);
+            }
+        }
+    }
+    if (argc == 4) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox3, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                _v = (PyFloat_Check(argv[1]) || PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+            }
+            if (_v) {
+                {
+                    _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
+                }
+                if (_v) {
+                    {
+                        _v = (PyFloat_Check(argv[3]) || PyInt_Check(argv[3]) || PyLong_Check(argv[3])) ? 1 : 0;
+                    }
+                    if (_v) {
+                        return _wrap_csBox3_AddBoundingVertexTest__SWIG_0(self,args);
+                    }
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csBox3_AddBoundingVertexTest'");
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexSmartTest__SWIG_0(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    float arg4 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Offf:csBox3_AddBoundingVertexSmartTest",&obj0,&arg2,&arg3,&arg4)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (bool)(arg1)->AddBoundingVertexSmartTest(arg2,arg3,arg4);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexSmartTest__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    csVector3 *arg2 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_AddBoundingVertexSmartTest",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)(arg1)->AddBoundingVertexSmartTest((csVector3 const &)*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_AddBoundingVertexSmartTest(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[5];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 4); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 2) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox3, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csVector3, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                }else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                return _wrap_csBox3_AddBoundingVertexSmartTest__SWIG_1(self,args);
+            }
+        }
+    }
+    if (argc == 4) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csBox3, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            }else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                _v = (PyFloat_Check(argv[1]) || PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+            }
+            if (_v) {
+                {
+                    _v = (PyFloat_Check(argv[2]) || PyInt_Check(argv[2]) || PyLong_Check(argv[2])) ? 1 : 0;
+                }
+                if (_v) {
+                    {
+                        _v = (PyFloat_Check(argv[3]) || PyInt_Check(argv[3]) || PyLong_Check(argv[3])) ? 1 : 0;
+                    }
+                    if (_v) {
+                        return _wrap_csBox3_AddBoundingVertexSmartTest__SWIG_0(self,args);
+                    }
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csBox3_AddBoundingVertexSmartTest'");
     return NULL;
 }
 
@@ -78321,7 +78795,7 @@ static PyObject *_wrap_iGraphics3D_Print(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OO:iGraphics3D_Print",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iGraphics3D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csRect,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->Print(arg2);
+    (arg1)->Print((csRect const *)arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -80467,7 +80941,7 @@ static PyObject *_wrap_iGraphics2D_Print(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OO:iGraphics2D_Print",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iGraphics2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csRect,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->Print(arg2);
+    (arg1)->Print((csRect const *)arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -80632,7 +81106,7 @@ static PyObject *_wrap_iGraphics2D_DrawPixels(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OOii:iGraphics2D_DrawPixels",&obj0,&obj1,&arg3,&arg4)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iGraphics2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPixelCoord,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->DrawPixels(arg2,arg3,arg4);
+    (arg1)->DrawPixels((csPixelCoord const *)arg2,arg3,arg4);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -80655,7 +81129,7 @@ static PyObject *_wrap_iGraphics2D_Blit(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OiiiiO:iGraphics2D_Blit",&obj0,&arg2,&arg3,&arg4,&arg5,&obj5)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iGraphics2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj5,(void **) &arg6, SWIGTYPE_p_unsigned_char,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->Blit(arg2,arg3,arg4,arg5,arg6);
+    (arg1)->Blit(arg2,arg3,arg4,arg5,(unsigned char const *)arg6);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -107127,6 +107601,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iSCF_CreateInstance", _wrap_iSCF_CreateInstance, METH_VARARGS },
 	 { (char *)"iSCF_GetClassDescription", _wrap_iSCF_GetClassDescription, METH_VARARGS },
 	 { (char *)"iSCF_GetClassDependencies", _wrap_iSCF_GetClassDependencies, METH_VARARGS },
+	 { (char *)"iSCF_GetPluginMetadata", _wrap_iSCF_GetPluginMetadata, METH_VARARGS },
 	 { (char *)"iSCF_UnloadUnusedModules", _wrap_iSCF_UnloadUnusedModules, METH_VARARGS },
 	 { (char *)"iSCF_RegisterClass", _wrap_iSCF_RegisterClass, METH_VARARGS },
 	 { (char *)"iSCF_RegisterFactoryFunc", _wrap_iSCF_RegisterFactoryFunc, METH_VARARGS },
@@ -107784,6 +108259,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox2_StartBoundingBox", _wrap_csBox2_StartBoundingBox, METH_VARARGS },
 	 { (char *)"csBox2_AddBoundingVertex", _wrap_csBox2_AddBoundingVertex, METH_VARARGS },
 	 { (char *)"csBox2_AddBoundingVertexSmart", _wrap_csBox2_AddBoundingVertexSmart, METH_VARARGS },
+	 { (char *)"csBox2_AddBoundingVertexTest", _wrap_csBox2_AddBoundingVertexTest, METH_VARARGS },
+	 { (char *)"csBox2_AddBoundingVertexSmartTest", _wrap_csBox2_AddBoundingVertexSmartTest, METH_VARARGS },
 	 { (char *)"new_csBox2", _wrap_new_csBox2, METH_VARARGS },
 	 { (char *)"csBox2_Set", _wrap_csBox2_Set, METH_VARARGS },
 	 { (char *)"csBox2_SetMin", _wrap_csBox2_SetMin, METH_VARARGS },
@@ -107823,6 +108300,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox3_StartBoundingBox", _wrap_csBox3_StartBoundingBox, METH_VARARGS },
 	 { (char *)"csBox3_AddBoundingVertex", _wrap_csBox3_AddBoundingVertex, METH_VARARGS },
 	 { (char *)"csBox3_AddBoundingVertexSmart", _wrap_csBox3_AddBoundingVertexSmart, METH_VARARGS },
+	 { (char *)"csBox3_AddBoundingVertexTest", _wrap_csBox3_AddBoundingVertexTest, METH_VARARGS },
+	 { (char *)"csBox3_AddBoundingVertexSmartTest", _wrap_csBox3_AddBoundingVertexSmartTest, METH_VARARGS },
 	 { (char *)"new_csBox3", _wrap_new_csBox3, METH_VARARGS },
 	 { (char *)"csBox3_Set", _wrap_csBox3_Set, METH_VARARGS },
 	 { (char *)"csBox3_SetMin", _wrap_csBox3_SetMin, METH_VARARGS },
