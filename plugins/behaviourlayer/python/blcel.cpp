@@ -2042,6 +2042,23 @@ csWrapPtr _CS_GET_FIRST_NAMED_CHILD_OBJECT (iObject *obj, const char *iface,
 
 
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+SWIGRUNTIME(PyObject *) csWrapTypedObject (void* objectptr, const char *typetag, int own)
+{
+  swig_type_info *ti = SWIG_TypeQuery (typetag);
+  PyObject *obj = SWIG_NewPointerObj (objectptr, ti, own);
+  return obj;
+}
+#ifdef __cplusplus
+}
+#endif
+
+
+
 #include "physicallayer/pl.h"
 #include "physicallayer/propfact.h"
 #include "physicallayer/propclas.h"
@@ -52785,6 +52802,26 @@ static PyObject *_wrap_iMeshObject_GetFactory(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_iMeshObject_GetFlags(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iMeshObject *arg1 = (iMeshObject *) 0 ;
+    csFlags *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iMeshObject_GetFlags",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshObject,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    {
+        csFlags &_result_ref = (arg1)->GetFlags();
+        result = (csFlags *) &_result_ref;
+    }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csFlags, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_iMeshObject_DrawTest(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iMeshObject *arg1 = (iMeshObject *) 0 ;
@@ -53251,6 +53288,26 @@ static PyObject * iMeshObject_swigregister(PyObject *self, PyObject *args) {
     Py_INCREF(obj);
     return Py_BuildValue((char *)"");
 }
+static PyObject *_wrap_iMeshObjectFactory_GetFlags(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iMeshObjectFactory *arg1 = (iMeshObjectFactory *) 0 ;
+    csFlags *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iMeshObjectFactory_GetFlags",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshObjectFactory,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    {
+        csFlags &_result_ref = (arg1)->GetFlags();
+        result = (csFlags *) &_result_ref;
+    }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csFlags, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_iMeshObjectFactory_NewInstance(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iMeshObjectFactory *arg1 = (iMeshObjectFactory *) 0 ;
@@ -57477,6 +57534,24 @@ static PyObject *_wrap_iSpriteCal3DFactoryState_FindMeshName(PyObject *self, PyO
     result = (int)(arg1)->FindMeshName((char const *)arg2);
     
     resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iSpriteCal3DFactoryState_GetDefaultMaterial(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iSpriteCal3DFactoryState *arg1 = (iSpriteCal3DFactoryState *) 0 ;
+    char *arg2 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Os:iSpriteCal3DFactoryState_GetDefaultMaterial",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iSpriteCal3DFactoryState,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)(arg1)->GetDefaultMaterial((char const *)arg2);
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
     return resultobj;
     fail:
     return NULL;
@@ -61878,26 +61953,6 @@ static PyObject *_wrap_iThingFactoryState_DeleteVertices(PyObject *self, PyObjec
     (arg1)->DeleteVertices(arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iThingFactoryState_GetFlags(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iThingFactoryState *arg1 = (iThingFactoryState *) 0 ;
-    csFlags *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iThingFactoryState_GetFlags",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iThingFactoryState,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    {
-        csFlags &_result_ref = (arg1)->GetFlags();
-        result = (csFlags *) &_result_ref;
-    }
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csFlags, 0);
     return resultobj;
     fail:
     return NULL;
@@ -109309,6 +109364,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_iMeshObjectDrawCallback", _wrap_delete_iMeshObjectDrawCallback, METH_VARARGS },
 	 { (char *)"iMeshObjectDrawCallback_swigregister", iMeshObjectDrawCallback_swigregister, METH_VARARGS },
 	 { (char *)"iMeshObject_GetFactory", _wrap_iMeshObject_GetFactory, METH_VARARGS },
+	 { (char *)"iMeshObject_GetFlags", _wrap_iMeshObject_GetFlags, METH_VARARGS },
 	 { (char *)"iMeshObject_DrawTest", _wrap_iMeshObject_DrawTest, METH_VARARGS },
 	 { (char *)"iMeshObject_Draw", _wrap_iMeshObject_Draw, METH_VARARGS },
 	 { (char *)"iMeshObject_GetRenderMeshes", _wrap_iMeshObject_GetRenderMeshes, METH_VARARGS },
@@ -109331,6 +109387,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_iMeshObject", _wrap_delete_iMeshObject, METH_VARARGS },
 	 { (char *)"iMeshObject_scfGetVersion", _wrap_iMeshObject_scfGetVersion, METH_VARARGS },
 	 { (char *)"iMeshObject_swigregister", iMeshObject_swigregister, METH_VARARGS },
+	 { (char *)"iMeshObjectFactory_GetFlags", _wrap_iMeshObjectFactory_GetFlags, METH_VARARGS },
 	 { (char *)"iMeshObjectFactory_NewInstance", _wrap_iMeshObjectFactory_NewInstance, METH_VARARGS },
 	 { (char *)"iMeshObjectFactory_HardTransform", _wrap_iMeshObjectFactory_HardTransform, METH_VARARGS },
 	 { (char *)"iMeshObjectFactory_SupportsHardTransform", _wrap_iMeshObjectFactory_SupportsHardTransform, METH_VARARGS },
@@ -109535,6 +109592,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iSpriteCal3DFactoryState_GetMorphTargetCount", _wrap_iSpriteCal3DFactoryState_GetMorphTargetCount, METH_VARARGS },
 	 { (char *)"iSpriteCal3DFactoryState_GetMeshName", _wrap_iSpriteCal3DFactoryState_GetMeshName, METH_VARARGS },
 	 { (char *)"iSpriteCal3DFactoryState_FindMeshName", _wrap_iSpriteCal3DFactoryState_FindMeshName, METH_VARARGS },
+	 { (char *)"iSpriteCal3DFactoryState_GetDefaultMaterial", _wrap_iSpriteCal3DFactoryState_GetDefaultMaterial, METH_VARARGS },
 	 { (char *)"iSpriteCal3DFactoryState_GetMorphAnimationName", _wrap_iSpriteCal3DFactoryState_GetMorphAnimationName, METH_VARARGS },
 	 { (char *)"iSpriteCal3DFactoryState_FindMorphAnimationName", _wrap_iSpriteCal3DFactoryState_FindMorphAnimationName, METH_VARARGS },
 	 { (char *)"iSpriteCal3DFactoryState_IsMeshDefault", _wrap_iSpriteCal3DFactoryState_IsMeshDefault, METH_VARARGS },
@@ -109685,7 +109743,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iThingFactoryState_SetVertex", _wrap_iThingFactoryState_SetVertex, METH_VARARGS },
 	 { (char *)"iThingFactoryState_DeleteVertex", _wrap_iThingFactoryState_DeleteVertex, METH_VARARGS },
 	 { (char *)"iThingFactoryState_DeleteVertices", _wrap_iThingFactoryState_DeleteVertices, METH_VARARGS },
-	 { (char *)"iThingFactoryState_GetFlags", _wrap_iThingFactoryState_GetFlags, METH_VARARGS },
 	 { (char *)"iThingFactoryState_SetSmoothingFlag", _wrap_iThingFactoryState_SetSmoothingFlag, METH_VARARGS },
 	 { (char *)"iThingFactoryState_GetSmoothingFlag", _wrap_iThingFactoryState_GetSmoothingFlag, METH_VARARGS },
 	 { (char *)"iThingFactoryState_GetNormals", _wrap_iThingFactoryState_GetNormals, METH_VARARGS },
@@ -114448,6 +114505,9 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_LIGHTINGUPDATE_ALWAYSUPDATE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_CULLER_HINT_GOODOCCLUDER", (long) 4, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_CULLER_HINT_BADOCCLUDER", (long) 8, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_MESH_STATICPOS", (long) 1, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_MESH_STATICSHAPE", (long) 2, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_FACTORY_STATICSHAPE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_SPR_LIGHTING_HQ", (long) 0, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_SPR_LIGHTING_LQ", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_SPR_LIGHTING_FAST", (long) 2, 0, 0, 0},
@@ -114468,7 +114528,7 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_POLY_COLLDET", (long) 0x00000002, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLY_VISCULL", (long) 0x00000004, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLYINDEX_LAST", (long) -1, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_THING_NOCOMPRESS", (long) 4, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_THING_NOCOMPRESS", (long) 0x00010000, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_THING_MOVE_NEVER", (long) 0, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_THING_MOVE_OCCASIONAL", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"SOUND_RESTART", (long) 1, 0, 0, 0},
