@@ -1066,7 +1066,6 @@ SWIG_Python_InstallConstants(PyObject *d, swig_const_info constants[]) {
 #define  SWIGTYPE_p_iEngineSequenceManager swig_types[343] 
 #define  SWIGTYPE_p_iSequenceManager swig_types[344] 
 #define  SWIGTYPE_p_iBillboardManager swig_types[345] 
-#define  SWIGTYPE_p_iPcZoneManager swig_types[346] 
 #define  SWIGTYPE_p_iParameterESM swig_types[347] 
 #define  SWIGTYPE_p_csStringID swig_types[348] 
 #define  SWIGTYPE_p_iCrossHalo swig_types[349] 
@@ -107324,31 +107323,6 @@ static PyObject *_wrap_iPcCamera_SetRegion(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iPcCamera_SetZoneManager(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iPcCamera *arg1 = (iPcCamera *) 0 ;
-    iPcZoneManager *arg2 = (iPcZoneManager *) 0 ;
-    bool arg3 ;
-    char *arg4 ;
-    char *arg5 = (char *) 0 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    PyObject * obj2 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOOs|s:iPcCamera_SetZoneManager",&obj0,&obj1,&obj2,&arg4,&arg5)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iPcCamera,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iPcZoneManager,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    arg3 = PyInt_AsLong(obj2) ? true : false;
-    if (PyErr_Occurred()) SWIG_fail;
-    result = (bool)(arg1)->SetZoneManager(arg2,arg3,(char const *)arg4,(char const *)arg5);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
 
 static PyObject *_wrap_iPcCamera_SetMode(PyObject *self, PyObject *args) {
     PyObject *resultobj;
@@ -114379,7 +114353,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celGetLinearMovement", _wrap_celGetLinearMovement, METH_VARARGS },
 	 { (char *)"scfQuery_iPcLinearMovement", _wrap_scfQuery_iPcLinearMovement, METH_VARARGS },
 	 { (char *)"iPcCamera_SetRegion", _wrap_iPcCamera_SetRegion, METH_VARARGS },
-	 { (char *)"iPcCamera_SetZoneManager", _wrap_iPcCamera_SetZoneManager, METH_VARARGS },
 	 { (char *)"iPcCamera_SetMode", _wrap_iPcCamera_SetMode, METH_VARARGS },
 	 { (char *)"iPcCamera_GetMode", _wrap_iPcCamera_GetMode, METH_VARARGS },
 	 { (char *)"iPcCamera_SetModeName", _wrap_iPcCamera_SetModeName, METH_VARARGS },
@@ -116393,7 +116366,6 @@ static swig_type_info _swigt__p_iDynamics[] = {{"_p_iDynamics", 0, "iDynamics *"
 static swig_type_info _swigt__p_iEngineSequenceManager[] = {{"_p_iEngineSequenceManager", 0, "iEngineSequenceManager *", 0},{"_p_iEngineSequenceManager"},{0}};
 static swig_type_info _swigt__p_iSequenceManager[] = {{"_p_iSequenceManager", 0, "iSequenceManager *", 0},{"_p_iSequenceManager"},{0}};
 static swig_type_info _swigt__p_iBillboardManager[] = {{"_p_iBillboardManager", 0, "iBillboardManager *", 0},{"_p_iBillboardManager"},{0}};
-static swig_type_info _swigt__p_iPcZoneManager[] = {{"_p_iPcZoneManager", 0, "iPcZoneManager *", 0},{"_p_iPcZoneManager"},{0}};
 static swig_type_info _swigt__p_iParameterESM[] = {{"_p_iParameterESM", 0, "iParameterESM *", 0},{"_p_iParameterESM"},{0}};
 static swig_type_info _swigt__p_csStringID[] = {{"_p_csStringID", 0, "csStringID *", 0},{"_p_csStringID"},{0}};
 static swig_type_info _swigt__p_iCrossHalo[] = {{"_p_iCrossHalo", 0, "iCrossHalo *", 0},{"_p_iCrossHalo"},{0}};
@@ -116865,7 +116837,6 @@ _swigt__p_iDynamics,
 _swigt__p_iEngineSequenceManager, 
 _swigt__p_iSequenceManager, 
 _swigt__p_iBillboardManager, 
-_swigt__p_iPcZoneManager, 
 _swigt__p_iParameterESM, 
 _swigt__p_csStringID, 
 _swigt__p_iCrossHalo, 
