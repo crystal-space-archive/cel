@@ -27,11 +27,13 @@
 
 /debug.txt
 
-/Jamfile
-
-/Jamrules
-
 /config.log
 
 /config.status
+
+/Jamconfig
+
+/autom4te.*
+
+/cel-config
 
