@@ -19,6 +19,10 @@
 
 /*.dll
 
+/*.exe
+
+/*.csplugin
+
 /csconfig.mak
 
 /cs-config
@@ -40,4 +44,6 @@
 /out
 
 /celtst
+
+/bootstrap
 
