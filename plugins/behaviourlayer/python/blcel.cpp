@@ -88175,6 +88175,23 @@ static PyObject *_wrap_iTextureHandle_GetTextureClass(PyObject *self, PyObject *
 }
 
 
+static PyObject *_wrap_iTextureHandle_SetAlphaType(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iTextureHandle *arg1 = (iTextureHandle *) 0 ;
+    int arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oi:iTextureHandle_SetAlphaType",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetAlphaType((csAlphaMode::AlphaType )arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_delete_iTextureHandle(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iTextureHandle *arg1 = (iTextureHandle *) 0 ;
@@ -114199,6 +114216,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iTextureHandle_Precache", _wrap_iTextureHandle_Precache, METH_VARARGS },
 	 { (char *)"iTextureHandle_SetTextureClass", _wrap_iTextureHandle_SetTextureClass, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetTextureClass", _wrap_iTextureHandle_GetTextureClass, METH_VARARGS },
+	 { (char *)"iTextureHandle_SetAlphaType", _wrap_iTextureHandle_SetAlphaType, METH_VARARGS },
 	 { (char *)"delete_iTextureHandle", _wrap_delete_iTextureHandle, METH_VARARGS },
 	 { (char *)"iTextureHandle_scfGetVersion", _wrap_iTextureHandle_scfGetVersion, METH_VARARGS },
 	 { (char *)"iTextureHandle_swigregister", iTextureHandle_swigregister, METH_VARARGS },
