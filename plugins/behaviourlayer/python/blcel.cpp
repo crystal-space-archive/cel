@@ -90883,6 +90883,23 @@ static PyObject *_wrap_iImage_GetHeight(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_iImage_GetDepth(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_GetDepth",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)((iImage const *)arg1)->GetDepth();
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_iImage_SetName(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImage *arg1 = (iImage *) 0 ;
@@ -91106,6 +91123,107 @@ static PyObject *_wrap_iImage_GetMipmap(PyObject *self, PyObject *args) {
     arg2 = (uint) PyInt_AsLong(obj1);
     if (PyErr_Occurred()) SWIG_fail;
     result = (arg1)->GetMipmap(arg2);
+    
+    {
+        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
+        csRef<iImage> ref((csRef<iImage>&)result); /* explicit cast */
+        resultobj = _csRef_to_Python(csRef<iBase>(
+        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
+        /*@@*/
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iImage_GetRawFormat(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_GetRawFormat",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)((iImage const *)arg1)->GetRawFormat();
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iImage_GetRawData(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    SwigValueWrapper< csRef<iDataBuffer > > result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_GetRawData",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = ((iImage const *)arg1)->GetRawData();
+    
+    {
+        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
+        csRef<iDataBuffer> ref((csRef<iDataBuffer>&)result); /* explicit cast */
+        resultobj = _csRef_to_Python(csRef<iBase>(
+        (iDataBuffer *)ref), (void *)(iDataBuffer *)ref, "iDataBuffer" " *");
+        /*@@*/
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iImage_GetImageType(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_GetImageType",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)((iImage const *)arg1)->GetImageType();
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iImage_HasSubImages(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    uint result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_HasSubImages",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (uint)((iImage const *)arg1)->HasSubImages();
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iImage_GetSubImage(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iImage *arg1 = (iImage *) 0 ;
+    uint arg2 ;
+    SwigValueWrapper< csRef<iImage > > result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iImage_GetSubImage",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    arg2 = (uint) PyInt_AsLong(obj1);
+    if (PyErr_Occurred()) SWIG_fail;
+    result = (arg1)->GetSubImage(arg2);
     
     {
         /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
@@ -114172,6 +114290,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iImage_GetImageData", _wrap_iImage_GetImageData, METH_VARARGS },
 	 { (char *)"iImage_GetWidth", _wrap_iImage_GetWidth, METH_VARARGS },
 	 { (char *)"iImage_GetHeight", _wrap_iImage_GetHeight, METH_VARARGS },
+	 { (char *)"iImage_GetDepth", _wrap_iImage_GetDepth, METH_VARARGS },
 	 { (char *)"iImage_SetName", _wrap_iImage_SetName, METH_VARARGS },
 	 { (char *)"iImage_GetName", _wrap_iImage_GetName, METH_VARARGS },
 	 { (char *)"iImage_GetFormat", _wrap_iImage_GetFormat, METH_VARARGS },
@@ -114183,6 +114302,11 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iImage_GetKeycolor", _wrap_iImage_GetKeycolor, METH_VARARGS },
 	 { (char *)"iImage_HasMipmaps", _wrap_iImage_HasMipmaps, METH_VARARGS },
 	 { (char *)"iImage_GetMipmap", _wrap_iImage_GetMipmap, METH_VARARGS },
+	 { (char *)"iImage_GetRawFormat", _wrap_iImage_GetRawFormat, METH_VARARGS },
+	 { (char *)"iImage_GetRawData", _wrap_iImage_GetRawData, METH_VARARGS },
+	 { (char *)"iImage_GetImageType", _wrap_iImage_GetImageType, METH_VARARGS },
+	 { (char *)"iImage_HasSubImages", _wrap_iImage_HasSubImages, METH_VARARGS },
+	 { (char *)"iImage_GetSubImage", _wrap_iImage_GetSubImage, METH_VARARGS },
 	 { (char *)"delete_iImage", _wrap_delete_iImage, METH_VARARGS },
 	 { (char *)"iImage_scfGetVersion", _wrap_iImage_scfGetVersion, METH_VARARGS },
 	 { (char *)"iImage_swigregister", iImage_swigregister, METH_VARARGS },
@@ -118037,6 +118161,9 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_IMGFMT_ANY", (long) 0x0000ffff, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_IMGFMT_ALPHA", (long) 0x00010000, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_IMGFMT_INVALID", (long) 0x80000000, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"csimg2D", (long) csimg2D, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"csimg3D", (long) csimg3D, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"csimgCube", (long) csimgCube, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_IMAGEIO_LOAD", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_IMAGEIO_SAVE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_REPORTER_SEVERITY_BUG", (long) 0, 0, 0, 0},
