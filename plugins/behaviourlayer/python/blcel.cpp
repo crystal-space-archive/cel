@@ -50334,6 +50334,40 @@ static PyObject *_wrap_iTextureWrapper_KeepImage(PyObject *self, PyObject *args)
 }
 
 
+static PyObject *_wrap_iTextureWrapper_SetTextureClass(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iTextureWrapper *arg1 = (iTextureWrapper *) 0 ;
+    char *arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Os:iTextureWrapper_SetTextureClass",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetTextureClass((char const *)arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iTextureWrapper_GetTextureClass(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iTextureWrapper *arg1 = (iTextureWrapper *) 0 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iTextureWrapper_GetTextureClass",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)(arg1)->GetTextureClass();
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_delete_iTextureWrapper(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iTextureWrapper *arg1 = (iTextureWrapper *) 0 ;
@@ -87523,30 +87557,29 @@ static PyObject *_wrap_iTextureHandle_GetKeyColor(PyObject *self, PyObject *args
 }
 
 
-static PyObject *_wrap_iTextureHandle_GetMipMapDimensions__SWIG_0(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iTextureHandle_GetRendererDimensions__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iTextureHandle *arg1 = (iTextureHandle *) 0 ;
-    int arg2 ;
+    int *arg2 = 0 ;
     int *arg3 = 0 ;
-    int *arg4 = 0 ;
     bool result;
+    int temp2 ;
     int temp3 ;
-    int temp4 ;
     PyObject * obj0 = 0 ;
     
+    arg2 = &temp2;
     arg3 = &temp3;
-    arg4 = &temp4;
-    if(!PyArg_ParseTuple(args,(char *)"Oi:iTextureHandle_GetMipMapDimensions",&obj0,&arg2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:iTextureHandle_GetRendererDimensions",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)(arg1)->GetMipMapDimensions(arg2,*arg3,*arg4);
+    result = (bool)(arg1)->GetRendererDimensions(*arg2,*arg3);
     
     resultobj = PyInt_FromLong((long)result);
     {
-        PyObject *o = PyInt_FromLong((long) (*arg3));
+        PyObject *o = PyInt_FromLong((long) (*arg2));
         resultobj = t_output_helper(resultobj,o);
     }
     {
-        PyObject *o = PyInt_FromLong((long) (*arg4));
+        PyObject *o = PyInt_FromLong((long) (*arg3));
         resultobj = t_output_helper(resultobj,o);
     }
     return resultobj;
@@ -87585,36 +87618,35 @@ static PyObject *_wrap_iTextureHandle_GetOriginalDimensions__SWIG_0(PyObject *se
 }
 
 
-static PyObject *_wrap_iTextureHandle_GetMipMapDimensions__SWIG_1(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iTextureHandle_GetRendererDimensions__SWIG_1(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iTextureHandle *arg1 = (iTextureHandle *) 0 ;
-    int arg2 ;
+    int *arg2 = 0 ;
     int *arg3 = 0 ;
     int *arg4 = 0 ;
-    int *arg5 = 0 ;
     bool result;
+    int temp2 ;
     int temp3 ;
-    int temp4 ;
     PyObject * obj0 = 0 ;
-    PyObject * obj2 = 0 ;
+    PyObject * obj1 = 0 ;
     
+    arg2 = &temp2;
     arg3 = &temp3;
-    arg4 = &temp4;
-    if(!PyArg_ParseTuple(args,(char *)"OiO:iTextureHandle_GetMipMapDimensions",&obj0,&arg2,&obj2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO:iTextureHandle_GetRendererDimensions",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg5, SWIGTYPE_p_int,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg5 == NULL) {
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg4, SWIGTYPE_p_int,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg4 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (bool)(arg1)->GetMipMapDimensions(arg2,*arg3,*arg4,*arg5);
+    result = (bool)(arg1)->GetRendererDimensions(*arg2,*arg3,*arg4);
     
     resultobj = PyInt_FromLong((long)result);
     {
-        PyObject *o = PyInt_FromLong((long) (*arg3));
+        PyObject *o = PyInt_FromLong((long) (*arg2));
         resultobj = t_output_helper(resultobj,o);
     }
     {
-        PyObject *o = PyInt_FromLong((long) (*arg4));
+        PyObject *o = PyInt_FromLong((long) (*arg3));
         resultobj = t_output_helper(resultobj,o);
     }
     return resultobj;
@@ -87623,14 +87655,29 @@ static PyObject *_wrap_iTextureHandle_GetMipMapDimensions__SWIG_1(PyObject *self
 }
 
 
-static PyObject *_wrap_iTextureHandle_GetMipMapDimensions(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iTextureHandle_GetRendererDimensions(PyObject *self, PyObject *args) {
     int argc;
-    PyObject *argv[4];
+    PyObject *argv[3];
     int ii;
     
     argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
+    for (ii = 0; (ii < argc) && (ii < 2); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 1) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_iTextureHandle, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            return _wrap_iTextureHandle_GetRendererDimensions__SWIG_0(self,args);
+        }
     }
     if (argc == 2) {
         int _v;
@@ -87645,46 +87692,21 @@ static PyObject *_wrap_iTextureHandle_GetMipMapDimensions(PyObject *self, PyObje
         }
         if (_v) {
             {
-                _v = (PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_int, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
             }
             if (_v) {
-                return _wrap_iTextureHandle_GetMipMapDimensions__SWIG_0(self,args);
-            }
-        }
-    }
-    if (argc == 3) {
-        int _v;
-        {
-            void *ptr;
-            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_iTextureHandle, 0) == -1) {
-                _v = 0;
-                PyErr_Clear();
-            } else {
-                _v = 1;
-            }
-        }
-        if (_v) {
-            {
-                _v = (PyInt_Check(argv[1]) || PyLong_Check(argv[1])) ? 1 : 0;
-            }
-            if (_v) {
-                {
-                    void *ptr;
-                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_int, 0) == -1) {
-                        _v = 0;
-                        PyErr_Clear();
-                    } else {
-                        _v = 1;
-                    }
-                }
-                if (_v) {
-                    return _wrap_iTextureHandle_GetMipMapDimensions__SWIG_1(self,args);
-                }
+                return _wrap_iTextureHandle_GetRendererDimensions__SWIG_1(self,args);
             }
         }
     }
     
-    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'iTextureHandle_GetMipMapDimensions'");
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'iTextureHandle_GetRendererDimensions'");
     return NULL;
 }
 
@@ -87963,23 +87985,6 @@ static PyObject *_wrap_iTextureHandle_GetAlphaMap(PyObject *self, PyObject *args
 }
 
 
-static PyObject *_wrap_iTextureHandle_GetCanvas(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iTextureHandle *arg1 = (iTextureHandle *) 0 ;
-    iGraphics2D *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iTextureHandle_GetCanvas",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iGraphics2D *)(arg1)->GetCanvas();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iGraphics2D, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iTextureHandle_GetAlphaType(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iTextureHandle *arg1 = (iTextureHandle *) 0 ;
@@ -88007,6 +88012,40 @@ static PyObject *_wrap_iTextureHandle_Precache(PyObject *self, PyObject *args) {
     (arg1)->Precache();
     
     Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iTextureHandle_SetTextureClass(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iTextureHandle *arg1 = (iTextureHandle *) 0 ;
+    char *arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Os:iTextureHandle_SetTextureClass",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetTextureClass((char const *)arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iTextureHandle_GetTextureClass(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iTextureHandle *arg1 = (iTextureHandle *) 0 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iTextureHandle_GetTextureClass",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)(arg1)->GetTextureClass();
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
     return resultobj;
     fail:
     return NULL;
@@ -92881,11 +92920,17 @@ static PyObject *_wrap_iStandardReporterListener_SetDebugFile(PyObject *self, Py
     PyObject *resultobj;
     iStandardReporterListener *arg1 = (iStandardReporterListener *) 0 ;
     char *arg2 ;
+    bool arg3 = (bool) false ;
     PyObject * obj0 = 0 ;
+    PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Os:iStandardReporterListener_SetDebugFile",&obj0,&arg2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"Os|O:iStandardReporterListener_SetDebugFile",&obj0,&arg2,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iStandardReporterListener,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetDebugFile((char const *)arg2);
+    if (obj2) {
+        arg3 = PyInt_AsLong(obj2) ? true : false;
+        if (PyErr_Occurred()) SWIG_fail;
+    }
+    (arg1)->SetDebugFile((char const *)arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -112472,6 +112517,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iTextureWrapper_IsVisitRequired", _wrap_iTextureWrapper_IsVisitRequired, METH_VARARGS },
 	 { (char *)"iTextureWrapper_SetKeepImage", _wrap_iTextureWrapper_SetKeepImage, METH_VARARGS },
 	 { (char *)"iTextureWrapper_KeepImage", _wrap_iTextureWrapper_KeepImage, METH_VARARGS },
+	 { (char *)"iTextureWrapper_SetTextureClass", _wrap_iTextureWrapper_SetTextureClass, METH_VARARGS },
+	 { (char *)"iTextureWrapper_GetTextureClass", _wrap_iTextureWrapper_GetTextureClass, METH_VARARGS },
 	 { (char *)"delete_iTextureWrapper", _wrap_delete_iTextureWrapper, METH_VARARGS },
 	 { (char *)"iTextureWrapper_scfGetVersion", _wrap_iTextureWrapper_scfGetVersion, METH_VARARGS },
 	 { (char *)"iTextureWrapper_swigregister", iTextureWrapper_swigregister, METH_VARARGS },
@@ -114112,7 +114159,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iTextureHandle_SetKeyColor", _wrap_iTextureHandle_SetKeyColor, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetKeyColorStatus", _wrap_iTextureHandle_GetKeyColorStatus, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetKeyColor", _wrap_iTextureHandle_GetKeyColor, METH_VARARGS },
-	 { (char *)"iTextureHandle_GetMipMapDimensions", _wrap_iTextureHandle_GetMipMapDimensions, METH_VARARGS },
+	 { (char *)"iTextureHandle_GetRendererDimensions", _wrap_iTextureHandle_GetRendererDimensions, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetOriginalDimensions", _wrap_iTextureHandle_GetOriginalDimensions, METH_VARARGS },
 	 { (char *)"iTextureHandle_SetTextureTarget", _wrap_iTextureHandle_SetTextureTarget, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetTextureTarget", _wrap_iTextureHandle_GetTextureTarget, METH_VARARGS },
@@ -114123,9 +114170,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iTextureHandle_SetCacheData", _wrap_iTextureHandle_SetCacheData, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetPrivateObject", _wrap_iTextureHandle_GetPrivateObject, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetAlphaMap", _wrap_iTextureHandle_GetAlphaMap, METH_VARARGS },
-	 { (char *)"iTextureHandle_GetCanvas", _wrap_iTextureHandle_GetCanvas, METH_VARARGS },
 	 { (char *)"iTextureHandle_GetAlphaType", _wrap_iTextureHandle_GetAlphaType, METH_VARARGS },
 	 { (char *)"iTextureHandle_Precache", _wrap_iTextureHandle_Precache, METH_VARARGS },
+	 { (char *)"iTextureHandle_SetTextureClass", _wrap_iTextureHandle_SetTextureClass, METH_VARARGS },
+	 { (char *)"iTextureHandle_GetTextureClass", _wrap_iTextureHandle_GetTextureClass, METH_VARARGS },
 	 { (char *)"delete_iTextureHandle", _wrap_delete_iTextureHandle, METH_VARARGS },
 	 { (char *)"iTextureHandle_scfGetVersion", _wrap_iTextureHandle_scfGetVersion, METH_VARARGS },
 	 { (char *)"iTextureHandle_swigregister", iTextureHandle_swigregister, METH_VARARGS },
