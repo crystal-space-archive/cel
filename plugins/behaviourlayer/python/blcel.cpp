@@ -21584,6 +21584,48 @@ static PyObject *_wrap_csPoly3D_ClassifyZ(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csPoly3D_ClassifyAxis(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly3D *arg1 = (csPoly3D *) 0 ;
+    int arg2 ;
+    float arg3 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oif:csPoly3D_ClassifyAxis",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly3D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)((csPoly3D const *)arg1)->ClassifyAxis(arg2,arg3);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly3D_IsAxisAligned(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly3D *arg1 = (csPoly3D *) 0 ;
+    float *arg2 = 0 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly3D_IsAxisAligned",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly3D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_float,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (int)((csPoly3D const *)arg1)->IsAxisAligned(*arg2);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csPoly3D_CutToPlane(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly3D *arg1 = (csPoly3D *) 0 ;
@@ -112104,6 +112146,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csPoly3D_ClassifyX", _wrap_csPoly3D_ClassifyX, METH_VARARGS },
 	 { (char *)"csPoly3D_ClassifyY", _wrap_csPoly3D_ClassifyY, METH_VARARGS },
 	 { (char *)"csPoly3D_ClassifyZ", _wrap_csPoly3D_ClassifyZ, METH_VARARGS },
+	 { (char *)"csPoly3D_ClassifyAxis", _wrap_csPoly3D_ClassifyAxis, METH_VARARGS },
+	 { (char *)"csPoly3D_IsAxisAligned", _wrap_csPoly3D_IsAxisAligned, METH_VARARGS },
 	 { (char *)"csPoly3D_CutToPlane", _wrap_csPoly3D_CutToPlane, METH_VARARGS },
 	 { (char *)"csPoly3D_SplitWithPlane", _wrap_csPoly3D_SplitWithPlane, METH_VARARGS },
 	 { (char *)"csPoly3D_SplitWithPlaneX", _wrap_csPoly3D_SplitWithPlaneX, METH_VARARGS },
@@ -118394,6 +118438,10 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_DBGHELP_TXTDUMP", (long) 4, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_DBGHELP_GFXDUMP", (long) 8, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_DBGHELP_STATETEST", (long) 16, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_AXIS_NONE", (long) -1, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_AXIS_X", (long) 0, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_AXIS_Y", (long) 1, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_AXIS_Z", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLY_IN", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLY_ON", (long) 0, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLY_OUT", (long) -1, 0, 0, 0},
