@@ -88099,7 +88099,7 @@ static PyObject *_wrap_iTextureHandle_GetAlphaMap(PyObject *self, PyObject *args
     
     if(!PyArg_ParseTuple(args,(char *)"O:iTextureHandle_GetAlphaMap",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iTextureHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)((iTextureHandle const *)arg1)->GetAlphaMap();
+    result = (bool)(arg1)->GetAlphaMap();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
