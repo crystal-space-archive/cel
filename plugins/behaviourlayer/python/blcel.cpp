@@ -73766,7 +73766,7 @@ static PyObject *_wrap_iConfigFile_SetFloat(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iConfigFile_SetBool(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iConfigFile_Set(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iConfigFile *arg1 = (iConfigFile *) 0 ;
     char *arg2 ;
@@ -73774,11 +73774,11 @@ static PyObject *_wrap_iConfigFile_SetBool(PyObject *self, PyObject *args) {
     PyObject * obj0 = 0 ;
     PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OsO:iConfigFile_SetBool",&obj0,&arg2,&obj2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OsO:iConfigFile_Set",&obj0,&arg2,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iConfigFile,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     arg3 = PyInt_AsLong(obj2) ? true : false;
     if (PyErr_Occurred()) SWIG_fail;
-    (arg1)->SetBool((char const *)arg2,arg3);
+    (arg1)->Set((char const *)arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -110627,7 +110627,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iConfigFile_SetStr", _wrap_iConfigFile_SetStr, METH_VARARGS },
 	 { (char *)"iConfigFile_SetInt", _wrap_iConfigFile_SetInt, METH_VARARGS },
 	 { (char *)"iConfigFile_SetFloat", _wrap_iConfigFile_SetFloat, METH_VARARGS },
-	 { (char *)"iConfigFile_SetBool", _wrap_iConfigFile_SetBool, METH_VARARGS },
+	 { (char *)"iConfigFile_Set", _wrap_iConfigFile_Set, METH_VARARGS },
 	 { (char *)"iConfigFile_SetComment", _wrap_iConfigFile_SetComment, METH_VARARGS },
 	 { (char *)"iConfigFile_DeleteKey", _wrap_iConfigFile_DeleteKey, METH_VARARGS },
 	 { (char *)"iConfigFile_GetEOFComment", _wrap_iConfigFile_GetEOFComment, METH_VARARGS },
