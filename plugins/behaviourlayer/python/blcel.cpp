@@ -6787,6 +6787,27 @@ static PyObject *_wrap_new_csVector2(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csVector2_Description(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csVector2 *arg1 = (csVector2 *) 0 ;
+    csString result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csVector2_Description",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = ((csVector2 const *)arg1)->Description();
+    
+    {
+        csString * resultptr;
+        resultptr = new csString((csString &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csString, 1);
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csVector2_Set__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csVector2 *arg1 = (csVector2 *) 0 ;
@@ -7835,6 +7856,27 @@ static PyObject *_wrap_new_csVector3(PyObject *self, PyObject *args) {
     }
     
     PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'new_csVector3'");
+    return NULL;
+}
+
+
+static PyObject *_wrap_csVector3_Description(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csVector3 *arg1 = (csVector3 *) 0 ;
+    csString result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csVector3_Description",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = ((csVector3 const *)arg1)->Description();
+    
+    {
+        csString * resultptr;
+        resultptr = new csString((csString &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csString, 1);
+    }
+    return resultobj;
+    fail:
     return NULL;
 }
 
@@ -27901,6 +27943,27 @@ static PyObject *_wrap_csBox2_SetMax(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csBox2_Description(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox2 *arg1 = (csBox2 *) 0 ;
+    csString result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csBox2_Description",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = ((csBox2 const *)arg1)->Description();
+    
+    {
+        csString * resultptr;
+        resultptr = new csString((csString &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csString, 1);
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csBox2___iadd____SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox2 *arg1 = (csBox2 *) 0 ;
@@ -30070,6 +30133,27 @@ static PyObject *_wrap_csBox3_SetMax(PyObject *self, PyObject *args) {
     (arg1)->SetMax(arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_Description(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    csString result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:csBox3_Description",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = ((csBox3 const *)arg1)->Description();
+    
+    {
+        csString * resultptr;
+        resultptr = new csString((csString &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csString, 1);
+    }
     return resultobj;
     fail:
     return NULL;
@@ -111672,6 +111756,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csVector2_y_set", _wrap_csVector2_y_set, METH_VARARGS },
 	 { (char *)"csVector2_y_get", _wrap_csVector2_y_get, METH_VARARGS },
 	 { (char *)"new_csVector2", _wrap_new_csVector2, METH_VARARGS },
+	 { (char *)"csVector2_Description", _wrap_csVector2_Description, METH_VARARGS },
 	 { (char *)"csVector2_Set", _wrap_csVector2_Set, METH_VARARGS },
 	 { (char *)"csVector2_Get", _wrap_csVector2_Get, METH_VARARGS },
 	 { (char *)"csVector2_Norm", _wrap_csVector2_Norm, METH_VARARGS },
@@ -111705,6 +111790,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csVector3_z_set", _wrap_csVector3_z_set, METH_VARARGS },
 	 { (char *)"csVector3_z_get", _wrap_csVector3_z_get, METH_VARARGS },
 	 { (char *)"new_csVector3", _wrap_new_csVector3, METH_VARARGS },
+	 { (char *)"csVector3_Description", _wrap_csVector3_Description, METH_VARARGS },
 	 { (char *)"csVector3_Cross", _wrap_csVector3_Cross, METH_VARARGS },
 	 { (char *)"csVector3___iadd__", _wrap_csVector3___iadd__, METH_VARARGS },
 	 { (char *)"csVector3___isub__", _wrap_csVector3___isub__, METH_VARARGS },
@@ -112246,6 +112332,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox2_Set", _wrap_csBox2_Set, METH_VARARGS },
 	 { (char *)"csBox2_SetMin", _wrap_csBox2_SetMin, METH_VARARGS },
 	 { (char *)"csBox2_SetMax", _wrap_csBox2_SetMax, METH_VARARGS },
+	 { (char *)"csBox2_Description", _wrap_csBox2_Description, METH_VARARGS },
 	 { (char *)"csBox2___iadd__", _wrap_csBox2___iadd__, METH_VARARGS },
 	 { (char *)"csBox2___imul__", _wrap_csBox2___imul__, METH_VARARGS },
 	 { (char *)"csBox2_TestIntersect", _wrap_csBox2_TestIntersect, METH_VARARGS },
@@ -112287,6 +112374,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox3_Set", _wrap_csBox3_Set, METH_VARARGS },
 	 { (char *)"csBox3_SetMin", _wrap_csBox3_SetMin, METH_VARARGS },
 	 { (char *)"csBox3_SetMax", _wrap_csBox3_SetMax, METH_VARARGS },
+	 { (char *)"csBox3_Description", _wrap_csBox3_Description, METH_VARARGS },
 	 { (char *)"csBox3_Split", _wrap_csBox3_Split, METH_VARARGS },
 	 { (char *)"csBox3_TestSplit", _wrap_csBox3_TestSplit, METH_VARARGS },
 	 { (char *)"csBox3_AdjacentX", _wrap_csBox3_AdjacentX, METH_VARARGS },
