@@ -51111,14 +51111,15 @@ static PyObject *_wrap_iMaterialList_NewMaterial__SWIG_0(PyObject *self, PyObjec
     PyObject *resultobj;
     iMaterialList *arg1 = (iMaterialList *) 0 ;
     iMaterial *arg2 = (iMaterial *) 0 ;
+    char *arg3 ;
     iMaterialWrapper *result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:iMaterialList_NewMaterial",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOs:iMaterialList_NewMaterial",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMaterialList,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iMaterial,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iMaterialWrapper *)(arg1)->NewMaterial(arg2);
+    result = (iMaterialWrapper *)(arg1)->NewMaterial(arg2,(char const *)arg3);
     
     resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iMaterialWrapper, 0);
     return resultobj;
@@ -51131,14 +51132,15 @@ static PyObject *_wrap_iMaterialList_NewMaterial__SWIG_1(PyObject *self, PyObjec
     PyObject *resultobj;
     iMaterialList *arg1 = (iMaterialList *) 0 ;
     iMaterialHandle *arg2 = (iMaterialHandle *) 0 ;
+    char *arg3 ;
     iMaterialWrapper *result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:iMaterialList_NewMaterial",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOs:iMaterialList_NewMaterial",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMaterialList,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iMaterialHandle,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iMaterialWrapper *)(arg1)->NewMaterial(arg2);
+    result = (iMaterialWrapper *)(arg1)->NewMaterial(arg2,(char const *)arg3);
     
     resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iMaterialWrapper, 0);
     return resultobj;
@@ -51149,14 +51151,14 @@ static PyObject *_wrap_iMaterialList_NewMaterial__SWIG_1(PyObject *self, PyObjec
 
 static PyObject *_wrap_iMaterialList_NewMaterial(PyObject *self, PyObject *args) {
     int argc;
-    PyObject *argv[3];
+    PyObject *argv[4];
     int ii;
     
     argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
-    if (argc == 2) {
+    if (argc == 3) {
         int _v;
         {
             void *ptr;
@@ -51178,11 +51180,16 @@ static PyObject *_wrap_iMaterialList_NewMaterial(PyObject *self, PyObject *args)
                 }
             }
             if (_v) {
-                return _wrap_iMaterialList_NewMaterial__SWIG_0(self,args);
+                {
+                    _v = PyString_Check(argv[2]) ? 1 : 0;
+                }
+                if (_v) {
+                    return _wrap_iMaterialList_NewMaterial__SWIG_0(self,args);
+                }
             }
         }
     }
-    if (argc == 2) {
+    if (argc == 3) {
         int _v;
         {
             void *ptr;
@@ -51204,7 +51211,12 @@ static PyObject *_wrap_iMaterialList_NewMaterial(PyObject *self, PyObject *args)
                 }
             }
             if (_v) {
-                return _wrap_iMaterialList_NewMaterial__SWIG_1(self,args);
+                {
+                    _v = PyString_Check(argv[2]) ? 1 : 0;
+                }
+                if (_v) {
+                    return _wrap_iMaterialList_NewMaterial__SWIG_1(self,args);
+                }
             }
         }
     }
