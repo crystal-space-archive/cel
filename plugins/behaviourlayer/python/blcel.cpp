@@ -29675,6 +29675,55 @@ static PyObject *_wrap_csBox3_SetMax(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csBox3_Split(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    int arg2 ;
+    float arg3 ;
+    csBox3 *arg4 = 0 ;
+    csBox3 *arg5 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj3 = 0 ;
+    PyObject * obj4 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OifOO:csBox3_Split",&obj0,&arg2,&arg3,&obj3,&obj4)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg4 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj4,(void **) &arg5, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg5 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    ((csBox3 const *)arg1)->Split(arg2,arg3,*arg4,*arg5);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csBox3_TestSplit(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    int arg2 ;
+    float arg3 ;
+    int result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Oif:csBox3_TestSplit",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)((csBox3 const *)arg1)->TestSplit(arg2,arg3);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csBox3_AdjacentX(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
@@ -93859,12 +93908,12 @@ static PyObject *_wrap_iCollideSystem_GetCollisionPairs(PyObject *self, PyObject
 static PyObject *_wrap_iCollideSystem_GetCollisionPairCount(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iCollideSystem *arg1 = (iCollideSystem *) 0 ;
-    int result;
+    size_t result;
     PyObject * obj0 = 0 ;
     
     if(!PyArg_ParseTuple(args,(char *)"O:iCollideSystem_GetCollisionPairCount",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iCollideSystem,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->GetCollisionPairCount();
+    result = (arg1)->GetCollisionPairCount();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -111617,6 +111666,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox3_Set", _wrap_csBox3_Set, METH_VARARGS },
 	 { (char *)"csBox3_SetMin", _wrap_csBox3_SetMin, METH_VARARGS },
 	 { (char *)"csBox3_SetMax", _wrap_csBox3_SetMax, METH_VARARGS },
+	 { (char *)"csBox3_Split", _wrap_csBox3_Split, METH_VARARGS },
+	 { (char *)"csBox3_TestSplit", _wrap_csBox3_TestSplit, METH_VARARGS },
 	 { (char *)"csBox3_AdjacentX", _wrap_csBox3_AdjacentX, METH_VARARGS },
 	 { (char *)"csBox3_AdjacentY", _wrap_csBox3_AdjacentY, METH_VARARGS },
 	 { (char *)"csBox3_AdjacentZ", _wrap_csBox3_AdjacentZ, METH_VARARGS },
