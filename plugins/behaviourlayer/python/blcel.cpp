@@ -18511,7 +18511,7 @@ static PyObject * csSquaredDist_swigregister(PyObject *self, PyObject *args) {
     Py_INCREF(obj);
     return Py_BuildValue((char *)"");
 }
-static PyObject *_wrap_csIntersect3_IntersectPolygon(PyObject *self, PyObject *args) {
+static PyObject *_wrap_csIntersect3_IntersectPolygon__SWIG_0(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPlane3 *arg1 = 0 ;
     csPoly3D *arg2 = (csPoly3D *) 0 ;
@@ -18604,6 +18604,144 @@ static PyObject *_wrap_csIntersect3_IntersectTriangle(PyObject *self, PyObject *
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csIntersect3_IntersectPolygon__SWIG_1(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csPoly3D *arg1 = 0 ;
+    csPlane3 *arg2 = 0 ;
+    csSegment3 *arg3 = 0 ;
+    csVector3 *arg4 = 0 ;
+    bool result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    PyObject * obj3 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOOO:csIntersect3_IntersectPolygon",&obj0,&obj1,&obj2,&obj3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly3D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg1 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csPlane3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csSegment3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg4 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    result = (bool)csIntersect3::IntersectPolygon((csPoly3D const &)*arg1,(csPlane3 const &)*arg2,(csSegment3 const &)*arg3,*arg4);
+    
+    resultobj = PyInt_FromLong((long)result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csIntersect3_IntersectPolygon(PyObject *self, PyObject *args) {
+    int argc;
+    PyObject *argv[5];
+    int ii;
+    
+    argc = PyObject_Length(args);
+    for (ii = 0; (ii < argc) && (ii < 4); ii++) {
+        argv[ii] = PyTuple_GetItem(args,ii);
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPlane3, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csPoly3D, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                {
+                    void *ptr;
+                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csSegment3, 0) == -1) {
+                        _v = 0;
+                        PyErr_Clear();
+                    } else {
+                        _v = 1;
+                    }
+                }
+                if (_v) {
+                    return _wrap_csIntersect3_IntersectPolygon__SWIG_0(self,args);
+                }
+            }
+        }
+    }
+    if (argc == 4) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_csPoly3D, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_csPlane3, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                {
+                    void *ptr;
+                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csSegment3, 0) == -1) {
+                        _v = 0;
+                        PyErr_Clear();
+                    } else {
+                        _v = 1;
+                    }
+                }
+                if (_v) {
+                    {
+                        void *ptr;
+                        if (SWIG_ConvertPtr(argv[3], (void **) &ptr, SWIGTYPE_p_csVector3, 0) == -1) {
+                            _v = 0;
+                            PyErr_Clear();
+                        } else {
+                            _v = 1;
+                        }
+                    }
+                    if (_v) {
+                        return _wrap_csIntersect3_IntersectPolygon__SWIG_1(self,args);
+                    }
+                }
+            }
+        }
+    }
+    
+    PyErr_SetString(PyExc_TypeError,"No matching function for overloaded 'csIntersect3_IntersectPolygon'");
     return NULL;
 }
 
@@ -21640,6 +21778,34 @@ static PyObject *_wrap_csPoly3D_ComputeNormal__SWIG_1(PyObject *self, PyObject *
 
 static PyObject *_wrap_csPoly3D_ComputeNormal__SWIG_2(PyObject *self, PyObject *args) {
     PyObject *resultobj;
+    int *arg1 = (int *) 0 ;
+    size_t arg2 ;
+    csVector3 *arg3 = (csVector3 *) 0 ;
+    csVector3 result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOO:csPoly3D_ComputeNormal",&obj0,&obj1,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_int,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    arg2 = (size_t) PyInt_AsLong(obj1);
+    if (PyErr_Occurred()) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = csPoly3D::ComputeNormal(arg1,arg2,arg3);
+    
+    {
+        csVector3 * resultptr;
+        resultptr = new csVector3((csVector3 &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csVector3, 1);
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly3D_ComputeNormal__SWIG_3(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
     csPoly3D *arg1 = (csPoly3D *) 0 ;
     csVector3 result;
     PyObject * obj0 = 0 ;
@@ -21661,11 +21827,11 @@ static PyObject *_wrap_csPoly3D_ComputeNormal__SWIG_2(PyObject *self, PyObject *
 
 static PyObject *_wrap_csPoly3D_ComputeNormal(PyObject *self, PyObject *args) {
     int argc;
-    PyObject *argv[3];
+    PyObject *argv[4];
     int ii;
     
     argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
     if (argc == 1) {
@@ -21695,7 +21861,7 @@ static PyObject *_wrap_csPoly3D_ComputeNormal(PyObject *self, PyObject *args) {
             }
         }
         if (_v) {
-            return _wrap_csPoly3D_ComputeNormal__SWIG_2(self,args);
+            return _wrap_csPoly3D_ComputeNormal__SWIG_3(self,args);
         }
     }
     if (argc == 2) {
@@ -21721,6 +21887,43 @@ static PyObject *_wrap_csPoly3D_ComputeNormal(PyObject *self, PyObject *args) {
             }
             if (_v) {
                 return _wrap_csPoly3D_ComputeNormal__SWIG_0(self,args);
+            }
+        }
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_int, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_size_t, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                {
+                    void *ptr;
+                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csVector3, 0) == -1) {
+                        _v = 0;
+                        PyErr_Clear();
+                    } else {
+                        _v = 1;
+                    }
+                }
+                if (_v) {
+                    return _wrap_csPoly3D_ComputeNormal__SWIG_2(self,args);
+                }
             }
         }
     }
@@ -21781,6 +21984,34 @@ static PyObject *_wrap_csPoly3D_ComputePlane__SWIG_1(PyObject *self, PyObject *a
 
 static PyObject *_wrap_csPoly3D_ComputePlane__SWIG_2(PyObject *self, PyObject *args) {
     PyObject *resultobj;
+    int *arg1 = (int *) 0 ;
+    size_t arg2 ;
+    csVector3 *arg3 = (csVector3 *) 0 ;
+    csPlane3 result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OOO:csPoly3D_ComputePlane",&obj0,&obj1,&obj2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_int,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    arg2 = (size_t) PyInt_AsLong(obj1);
+    if (PyErr_Occurred()) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = csPoly3D::ComputePlane(arg1,arg2,arg3);
+    
+    {
+        csPlane3 * resultptr;
+        resultptr = new csPlane3((csPlane3 &) result);
+        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csPlane3, 1);
+    }
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_csPoly3D_ComputePlane__SWIG_3(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
     csPoly3D *arg1 = (csPoly3D *) 0 ;
     csPlane3 result;
     PyObject * obj0 = 0 ;
@@ -21802,11 +22033,11 @@ static PyObject *_wrap_csPoly3D_ComputePlane__SWIG_2(PyObject *self, PyObject *a
 
 static PyObject *_wrap_csPoly3D_ComputePlane(PyObject *self, PyObject *args) {
     int argc;
-    PyObject *argv[3];
+    PyObject *argv[4];
     int ii;
     
     argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    for (ii = 0; (ii < argc) && (ii < 3); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
     if (argc == 1) {
@@ -21836,7 +22067,7 @@ static PyObject *_wrap_csPoly3D_ComputePlane(PyObject *self, PyObject *args) {
             }
         }
         if (_v) {
-            return _wrap_csPoly3D_ComputePlane__SWIG_2(self,args);
+            return _wrap_csPoly3D_ComputePlane__SWIG_3(self,args);
         }
     }
     if (argc == 2) {
@@ -21862,6 +22093,43 @@ static PyObject *_wrap_csPoly3D_ComputePlane(PyObject *self, PyObject *args) {
             }
             if (_v) {
                 return _wrap_csPoly3D_ComputePlane__SWIG_0(self,args);
+            }
+        }
+    }
+    if (argc == 3) {
+        int _v;
+        {
+            void *ptr;
+            if (SWIG_ConvertPtr(argv[0], (void **) &ptr, SWIGTYPE_p_int, 0) == -1) {
+                _v = 0;
+                PyErr_Clear();
+            } else {
+                _v = 1;
+            }
+        }
+        if (_v) {
+            {
+                void *ptr;
+                if (SWIG_ConvertPtr(argv[1], (void **) &ptr, SWIGTYPE_p_size_t, 0) == -1) {
+                    _v = 0;
+                    PyErr_Clear();
+                } else {
+                    _v = 1;
+                }
+            }
+            if (_v) {
+                {
+                    void *ptr;
+                    if (SWIG_ConvertPtr(argv[2], (void **) &ptr, SWIGTYPE_p_csVector3, 0) == -1) {
+                        _v = 0;
+                        PyErr_Clear();
+                    } else {
+                        _v = 1;
+                    }
+                }
+                if (_v) {
+                    return _wrap_csPoly3D_ComputePlane__SWIG_2(self,args);
+                }
             }
         }
     }
@@ -111635,9 +111903,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_csSquaredDist", _wrap_new_csSquaredDist, METH_VARARGS },
 	 { (char *)"delete_csSquaredDist", _wrap_delete_csSquaredDist, METH_VARARGS },
 	 { (char *)"csSquaredDist_swigregister", csSquaredDist_swigregister, METH_VARARGS },
-	 { (char *)"csIntersect3_IntersectPolygon", _wrap_csIntersect3_IntersectPolygon, METH_VARARGS },
 	 { (char *)"csIntersect3_IntersectSegment", _wrap_csIntersect3_IntersectSegment, METH_VARARGS },
 	 { (char *)"csIntersect3_IntersectTriangle", _wrap_csIntersect3_IntersectTriangle, METH_VARARGS },
+	 { (char *)"csIntersect3_IntersectPolygon", _wrap_csIntersect3_IntersectPolygon, METH_VARARGS },
 	 { (char *)"csIntersect3_Plane", _wrap_csIntersect3_Plane, METH_VARARGS },
 	 { (char *)"csIntersect3_Planes", _wrap_csIntersect3_Planes, METH_VARARGS },
 	 { (char *)"csIntersect3_PlaneXPlane", _wrap_csIntersect3_PlaneXPlane, METH_VARARGS },
