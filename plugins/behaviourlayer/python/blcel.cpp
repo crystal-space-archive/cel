@@ -103159,17 +103159,19 @@ static PyObject *_wrap_iCelPropertyClass_PerformAction(PyObject *self, PyObject 
     PyObject *resultobj;
     iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
     csStringID arg2 ;
-    char *arg3 ;
+    iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
     bool result;
     csStringID *argp2 ;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
+    PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OOs:iCelPropertyClass_PerformAction",&obj0,&obj1,&arg3)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOO:iCelPropertyClass_PerformAction",&obj0,&obj1,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iCelPropertyClass,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &argp2, SWIGTYPE_p_csStringID,SWIG_POINTER_EXCEPTION) == -1)) SWIG_fail;
     arg2 = *argp2; 
-    result = (bool)(arg1)->PerformAction(arg2,(char const *)arg3);
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_iCelParameterBlock,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (bool)(arg1)->PerformAction(arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
