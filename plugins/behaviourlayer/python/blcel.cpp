@@ -31860,7 +31860,7 @@ static PyObject *_wrap_csRGBpixel_Intensity(PyObject *self, PyObject *args) {
     
     if(!PyArg_ParseTuple(args,(char *)"O:csRGBpixel_Intensity",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csRGBpixel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->Intensity();
+    result = (int)((csRGBpixel const *)arg1)->Intensity();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -31877,7 +31877,7 @@ static PyObject *_wrap_csRGBpixel_Luminance(PyObject *self, PyObject *args) {
     
     if(!PyArg_ParseTuple(args,(char *)"O:csRGBpixel_Luminance",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csRGBpixel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (unsigned char)(arg1)->Luminance();
+    result = (unsigned char)((csRGBpixel const *)arg1)->Luminance();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -90833,68 +90833,6 @@ static PyObject *_wrap_iImage_GetHeight(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iImage_GetSize(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    int result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iImage_GetSize",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)((iImage const *)arg1)->GetSize();
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_Rescale(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    int arg2 ;
-    int arg3 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oii:iImage_Rescale",&obj0,&arg2,&arg3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->Rescale(arg2,arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_MipMap(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    int arg2 ;
-    csRGBpixel *arg3 = (csRGBpixel *) 0 ;
-    SwigValueWrapper< csPtr<iImage > > result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj2 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OiO:iImage_MipMap",&obj0,&arg2,&obj2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csRGBpixel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (arg1)->MipMap(arg2,arg3);
-    
-    {
-        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
-        csRef<iImage> ref((csPtr<iImage>&)result); /* explicit cast */
-        resultobj = _csRef_to_Python(csRef<iBase>(
-        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
-        /*@@*/
-    }
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iImage_SetName(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImage *arg1 = (iImage *) 0 ;
@@ -90980,89 +90918,6 @@ static PyObject *_wrap_iImage_GetAlpha(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iImage_SetFormat(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    int arg2 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oi:iImage_SetFormat",&obj0,&arg2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetFormat(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_Clone(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    SwigValueWrapper< csPtr<iImage > > result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iImage_Clone",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = ((iImage const *)arg1)->Clone();
-    
-    {
-        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
-        csRef<iImage> ref((csPtr<iImage>&)result); /* explicit cast */
-        resultobj = _csRef_to_Python(csRef<iBase>(
-        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
-        /*@@*/
-    }
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_Crop(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    int arg2 ;
-    int arg3 ;
-    int arg4 ;
-    int arg5 ;
-    SwigValueWrapper< csPtr<iImage > > result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Oiiii:iImage_Crop",&obj0,&arg2,&arg3,&arg4,&arg5)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = ((iImage const *)arg1)->Crop(arg2,arg3,arg4,arg5);
-    
-    {
-        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
-        csRef<iImage> ref((csPtr<iImage>&)result); /* explicit cast */
-        resultobj = _csRef_to_Python(csRef<iBase>(
-        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
-        /*@@*/
-    }
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_CheckAlpha(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iImage_CheckAlpha",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->CheckAlpha();
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iImage_HasKeyColor(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImage *arg1 = (iImage *) 0 ;
@@ -91072,78 +90927,6 @@ static PyObject *_wrap_iImage_HasKeyColor(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"O:iImage_HasKeyColor",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     result = (bool)((iImage const *)arg1)->HasKeyColor();
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_Copy(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    iImage *arg2 = (iImage *) 0 ;
-    int arg3 ;
-    int arg4 ;
-    int arg5 ;
-    int arg6 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOiiii:iImage_Copy",&obj0,&obj1,&arg3,&arg4,&arg5,&arg6)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)((iImage const *)arg1)->Copy(arg2,arg3,arg4,arg5,arg6);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_CopyScale(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    iImage *arg2 = (iImage *) 0 ;
-    int arg3 ;
-    int arg4 ;
-    int arg5 ;
-    int arg6 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOiiii:iImage_CopyScale",&obj0,&obj1,&arg3,&arg4,&arg5,&arg6)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)((iImage const *)arg1)->CopyScale(arg2,arg3,arg4,arg5,arg6);
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iImage_CopyTile(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iImage *arg1 = (iImage *) 0 ;
-    iImage *arg2 = (iImage *) 0 ;
-    int arg3 ;
-    int arg4 ;
-    int arg5 ;
-    int arg6 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOiiii:iImage_CopyTile",&obj0,&obj1,&arg3,&arg4,&arg5,&arg6)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)((iImage const *)arg1)->CopyTile(arg2,arg3,arg4,arg5,arg6);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -91243,44 +91026,44 @@ static PyObject *_wrap_iImage_GetKeycolor(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iImage_Sharpen(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iImage_HasMipmaps(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImage *arg1 = (iImage *) 0 ;
-    csRGBpixel *arg2 = (csRGBpixel *) 0 ;
-    int arg3 ;
-    SwigValueWrapper< csPtr<iImage > > result;
+    uint result;
     PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OOi:iImage_Sharpen",&obj0,&obj1,&arg3)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:iImage_HasMipmaps",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csRGBpixel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = ((iImage const *)arg1)->Sharpen(arg2,arg3);
+    result = (uint)((iImage const *)arg1)->HasMipmaps();
     
-    {
-        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
-        csRef<iImage> ref((csPtr<iImage>&)result); /* explicit cast */
-        resultobj = _csRef_to_Python(csRef<iBase>(
-        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
-        /*@@*/
-    }
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
 }
 
 
-static PyObject *_wrap_iImage_HasMipmaps(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iImage_GetMipmap(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImage *arg1 = (iImage *) 0 ;
-    int result;
+    uint arg2 ;
+    SwigValueWrapper< csRef<iImage > > result;
     PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"O:iImage_HasMipmaps",&obj0)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO:iImage_GetMipmap",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImage,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)((iImage const *)arg1)->HasMipmaps();
+    arg2 = (uint) PyInt_AsLong(obj1);
+    if (PyErr_Occurred()) SWIG_fail;
+    result = (arg1)->GetMipmap(arg2);
     
-    resultobj = PyInt_FromLong((long)result);
+    {
+        /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
+        csRef<iImage> ref((csRef<iImage>&)result); /* explicit cast */
+        resultobj = _csRef_to_Python(csRef<iBase>(
+        (iImage *)ref), (void *)(iImage *)ref, "iImage" " *");
+        /*@@*/
+    }
     return resultobj;
     fail:
     return NULL;
@@ -114341,27 +114124,17 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iImage_GetImageData", _wrap_iImage_GetImageData, METH_VARARGS },
 	 { (char *)"iImage_GetWidth", _wrap_iImage_GetWidth, METH_VARARGS },
 	 { (char *)"iImage_GetHeight", _wrap_iImage_GetHeight, METH_VARARGS },
-	 { (char *)"iImage_GetSize", _wrap_iImage_GetSize, METH_VARARGS },
-	 { (char *)"iImage_Rescale", _wrap_iImage_Rescale, METH_VARARGS },
-	 { (char *)"iImage_MipMap", _wrap_iImage_MipMap, METH_VARARGS },
 	 { (char *)"iImage_SetName", _wrap_iImage_SetName, METH_VARARGS },
 	 { (char *)"iImage_GetName", _wrap_iImage_GetName, METH_VARARGS },
 	 { (char *)"iImage_GetFormat", _wrap_iImage_GetFormat, METH_VARARGS },
 	 { (char *)"iImage_GetPalette", _wrap_iImage_GetPalette, METH_VARARGS },
 	 { (char *)"iImage_GetAlpha", _wrap_iImage_GetAlpha, METH_VARARGS },
-	 { (char *)"iImage_SetFormat", _wrap_iImage_SetFormat, METH_VARARGS },
-	 { (char *)"iImage_Clone", _wrap_iImage_Clone, METH_VARARGS },
-	 { (char *)"iImage_Crop", _wrap_iImage_Crop, METH_VARARGS },
-	 { (char *)"iImage_CheckAlpha", _wrap_iImage_CheckAlpha, METH_VARARGS },
 	 { (char *)"iImage_HasKeyColor", _wrap_iImage_HasKeyColor, METH_VARARGS },
-	 { (char *)"iImage_Copy", _wrap_iImage_Copy, METH_VARARGS },
-	 { (char *)"iImage_CopyScale", _wrap_iImage_CopyScale, METH_VARARGS },
-	 { (char *)"iImage_CopyTile", _wrap_iImage_CopyTile, METH_VARARGS },
 	 { (char *)"iImage_HasKeycolor", _wrap_iImage_HasKeycolor, METH_VARARGS },
 	 { (char *)"iImage_GetKeyColor", _wrap_iImage_GetKeyColor, METH_VARARGS },
 	 { (char *)"iImage_GetKeycolor", _wrap_iImage_GetKeycolor, METH_VARARGS },
-	 { (char *)"iImage_Sharpen", _wrap_iImage_Sharpen, METH_VARARGS },
 	 { (char *)"iImage_HasMipmaps", _wrap_iImage_HasMipmaps, METH_VARARGS },
+	 { (char *)"iImage_GetMipmap", _wrap_iImage_GetMipmap, METH_VARARGS },
 	 { (char *)"delete_iImage", _wrap_delete_iImage, METH_VARARGS },
 	 { (char *)"iImage_scfGetVersion", _wrap_iImage_scfGetVersion, METH_VARARGS },
 	 { (char *)"iImage_swigregister", iImage_swigregister, METH_VARARGS },
