@@ -2252,7 +2252,7 @@ iPcRegion *scfQueryPC_iPcRegion (iCelPropertyClassList *pclist)
 
 
 iPcCommandInput *celCreateCommandInput(iCelPlLayer *pl, iCelEntity *entity) {
-  csRef<iCelPropertyClass> pc = pl->CreatePropertyClass(entity,"pckeyinput" );
+  csRef<iCelPropertyClass> pc = pl->CreatePropertyClass(entity,"pccommandinput" );
   if (!pc.IsValid()) return 0;
   csRef<iPcCommandInput> pclm =    csPtr<iPcCommandInput> ((iPcCommandInput *)(pc)->QueryInterface (		   scfInterface<iPcCommandInput>::GetID (), scfInterface<iPcCommandInput>::GetVersion()));
   if (!pclm.IsValid()) return 0;
@@ -21646,17 +21646,18 @@ static PyObject *_wrap_csPoly3D_IsAxisAligned(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csPoly3D *arg1 = (csPoly3D *) 0 ;
     float *arg2 = 0 ;
+    float arg3 = (float) SMALL_EPSILON ;
     int result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:csPoly3D_IsAxisAligned",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO|f:csPoly3D_IsAxisAligned",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csPoly3D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_float,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (int)((csPoly3D const *)arg1)->IsAxisAligned(*arg2);
+    result = (int)((csPoly3D const *)arg1)->IsAxisAligned(*arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -28908,6 +28909,35 @@ static PyObject *_wrap_csBox3_GetSide(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_csBox3_GetAxisPlane(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    csBox3 *arg1 = (csBox3 *) 0 ;
+    int arg2 ;
+    int *arg3 = 0 ;
+    float *arg4 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj2 = 0 ;
+    PyObject * obj3 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OiOO:csBox3_GetAxisPlane",&obj0,&arg2,&obj2,&obj3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_int,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg3 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_float,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg4 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    ((csBox3 const *)arg1)->GetAxisPlane(arg2,*arg3,*arg4);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_csBox3_GetVisibleSides(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
@@ -30213,17 +30243,18 @@ static PyObject *_wrap_csBox3_AdjacentX(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
     csBox3 *arg2 = 0 ;
+    float arg3 = (float) SMALL_EPSILON ;
     bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_AdjacentX",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO|f:csBox3_AdjacentX",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (bool)((csBox3 const *)arg1)->AdjacentX((csBox3 const &)*arg2);
+    result = (bool)((csBox3 const *)arg1)->AdjacentX((csBox3 const &)*arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -30236,17 +30267,18 @@ static PyObject *_wrap_csBox3_AdjacentY(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
     csBox3 *arg2 = 0 ;
+    float arg3 = (float) SMALL_EPSILON ;
     bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_AdjacentY",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO|f:csBox3_AdjacentY",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (bool)((csBox3 const *)arg1)->AdjacentY((csBox3 const &)*arg2);
+    result = (bool)((csBox3 const *)arg1)->AdjacentY((csBox3 const &)*arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -30259,17 +30291,18 @@ static PyObject *_wrap_csBox3_AdjacentZ(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
     csBox3 *arg2 = 0 ;
+    float arg3 = (float) SMALL_EPSILON ;
     bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_AdjacentZ",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO|f:csBox3_AdjacentZ",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (bool)((csBox3 const *)arg1)->AdjacentZ((csBox3 const &)*arg2);
+    result = (bool)((csBox3 const *)arg1)->AdjacentZ((csBox3 const &)*arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -30282,17 +30315,18 @@ static PyObject *_wrap_csBox3_Adjacent(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     csBox3 *arg1 = (csBox3 *) 0 ;
     csBox3 *arg2 = 0 ;
+    float arg3 = (float) SMALL_EPSILON ;
     int result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:csBox3_Adjacent",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO|f:csBox3_Adjacent",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (int)((csBox3 const *)arg1)->Adjacent((csBox3 const &)*arg2);
+    result = (int)((csBox3 const *)arg1)->Adjacent((csBox3 const &)*arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -112207,6 +112241,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"csBox3_SetCenter", _wrap_csBox3_SetCenter, METH_VARARGS },
 	 { (char *)"csBox3_SetSize", _wrap_csBox3_SetSize, METH_VARARGS },
 	 { (char *)"csBox3_GetSide", _wrap_csBox3_GetSide, METH_VARARGS },
+	 { (char *)"csBox3_GetAxisPlane", _wrap_csBox3_GetAxisPlane, METH_VARARGS },
 	 { (char *)"csBox3_GetVisibleSides", _wrap_csBox3_GetVisibleSides, METH_VARARGS },
 	 { (char *)"csBox3_OtherSide", _wrap_csBox3_OtherSide, METH_VARARGS },
 	 { (char *)"csBox3_GetEdge", _wrap_csBox3_GetEdge, METH_VARARGS },
