@@ -46893,27 +46893,23 @@ static PyObject *_wrap_iEngine_GetNearbyLights__SWIG_0(PyObject *self, PyObject 
     iEngine *arg1 = (iEngine *) 0 ;
     iSector *arg2 = (iSector *) 0 ;
     csVector3 *arg3 = 0 ;
-    uint32 arg4 ;
-    iLight **arg5 = (iLight **) 0 ;
-    int arg6 ;
+    iLight **arg4 = (iLight **) 0 ;
+    int arg5 ;
     int result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
     PyObject * obj3 = 0 ;
-    PyObject * obj4 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OOOOOi:iEngine_GetNearbyLights",&obj0,&obj1,&obj2,&obj3,&obj4,&arg6)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOOOi:iEngine_GetNearbyLights",&obj0,&obj1,&obj2,&obj3,&arg5)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg3 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    arg4 = (uint32) PyInt_AsLong(obj3);
-    if (PyErr_Occurred()) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj4,(void **) &arg5, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->GetNearbyLights(arg2,(csVector3 const &)*arg3,arg4,arg5,arg6);
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)(arg1)->GetNearbyLights(arg2,(csVector3 const &)*arg3,arg4,arg5);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -46927,27 +46923,23 @@ static PyObject *_wrap_iEngine_GetNearbyLights__SWIG_1(PyObject *self, PyObject 
     iEngine *arg1 = (iEngine *) 0 ;
     iSector *arg2 = (iSector *) 0 ;
     csBox3 *arg3 = 0 ;
-    uint32 arg4 ;
-    iLight **arg5 = (iLight **) 0 ;
-    int arg6 ;
+    iLight **arg4 = (iLight **) 0 ;
+    int arg5 ;
     int result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
     PyObject * obj3 = 0 ;
-    PyObject * obj4 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OOOOOi:iEngine_GetNearbyLights",&obj0,&obj1,&obj2,&obj3,&obj4,&arg6)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOOOi:iEngine_GetNearbyLights",&obj0,&obj1,&obj2,&obj3,&arg5)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg3 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    arg4 = (uint32) PyInt_AsLong(obj3);
-    if (PyErr_Occurred()) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj4,(void **) &arg5, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->GetNearbyLights(arg2,(csBox3 const &)*arg3,arg4,arg5,arg6);
+    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (int)(arg1)->GetNearbyLights(arg2,(csBox3 const &)*arg3,arg4,arg5);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -46958,14 +46950,14 @@ static PyObject *_wrap_iEngine_GetNearbyLights__SWIG_1(PyObject *self, PyObject 
 
 static PyObject *_wrap_iEngine_GetNearbyLights(PyObject *self, PyObject *args) {
     int argc;
-    PyObject *argv[7];
+    PyObject *argv[6];
     int ii;
     
     argc = PyObject_Length(args);
-    for (ii = 0; (ii < argc) && (ii < 6); ii++) {
+    for (ii = 0; (ii < argc) && (ii < 5); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
-    if (argc == 6) {
+    if (argc == 5) {
         int _v;
         {
             void *ptr;
@@ -46998,32 +46990,27 @@ static PyObject *_wrap_iEngine_GetNearbyLights(PyObject *self, PyObject *args) {
                 }
                 if (_v) {
                     {
-                        _v = (PyInt_Check(argv[3]) || PyLong_Check(argv[3])) ? 1 : 0;
+                        void *ptr;
+                        if (SWIG_ConvertPtr(argv[3], (void **) &ptr, SWIGTYPE_p_p_iLight, 0) == -1) {
+                            _v = 0;
+                            PyErr_Clear();
+                        }else {
+                            _v = 1;
+                        }
                     }
                     if (_v) {
                         {
-                            void *ptr;
-                            if (SWIG_ConvertPtr(argv[4], (void **) &ptr, SWIGTYPE_p_p_iLight, 0) == -1) {
-                                _v = 0;
-                                PyErr_Clear();
-                            }else {
-                                _v = 1;
-                            }
+                            _v = (PyInt_Check(argv[4]) || PyLong_Check(argv[4])) ? 1 : 0;
                         }
                         if (_v) {
-                            {
-                                _v = (PyInt_Check(argv[5]) || PyLong_Check(argv[5])) ? 1 : 0;
-                            }
-                            if (_v) {
-                                return _wrap_iEngine_GetNearbyLights__SWIG_0(self,args);
-                            }
+                            return _wrap_iEngine_GetNearbyLights__SWIG_0(self,args);
                         }
                     }
                 }
             }
         }
     }
-    if (argc == 6) {
+    if (argc == 5) {
         int _v;
         {
             void *ptr;
@@ -47056,25 +47043,20 @@ static PyObject *_wrap_iEngine_GetNearbyLights(PyObject *self, PyObject *args) {
                 }
                 if (_v) {
                     {
-                        _v = (PyInt_Check(argv[3]) || PyLong_Check(argv[3])) ? 1 : 0;
+                        void *ptr;
+                        if (SWIG_ConvertPtr(argv[3], (void **) &ptr, SWIGTYPE_p_p_iLight, 0) == -1) {
+                            _v = 0;
+                            PyErr_Clear();
+                        }else {
+                            _v = 1;
+                        }
                     }
                     if (_v) {
                         {
-                            void *ptr;
-                            if (SWIG_ConvertPtr(argv[4], (void **) &ptr, SWIGTYPE_p_p_iLight, 0) == -1) {
-                                _v = 0;
-                                PyErr_Clear();
-                            }else {
-                                _v = 1;
-                            }
+                            _v = (PyInt_Check(argv[4]) || PyLong_Check(argv[4])) ? 1 : 0;
                         }
                         if (_v) {
-                            {
-                                _v = (PyInt_Check(argv[5]) || PyLong_Check(argv[5])) ? 1 : 0;
-                            }
-                            if (_v) {
-                                return _wrap_iEngine_GetNearbyLights__SWIG_1(self,args);
-                            }
+                            return _wrap_iEngine_GetNearbyLights__SWIG_1(self,args);
                         }
                     }
                 }
@@ -50605,36 +50587,16 @@ static PyObject *_wrap_iMeshWrapper_SetFactory(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iMeshWrapper_DeferUpdateLighting(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iMeshWrapper_SetLightingUpdate(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iMeshWrapper *arg1 = (iMeshWrapper *) 0 ;
     int arg2 ;
     int arg3 ;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Oii:iMeshWrapper_DeferUpdateLighting",&obj0,&arg2,&arg3)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"Oii:iMeshWrapper_SetLightingUpdate",&obj0,&arg2,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->DeferUpdateLighting(arg2,arg3);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iMeshWrapper_UpdateLighting(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iMeshWrapper *arg1 = (iMeshWrapper *) 0 ;
-    iLight **arg2 = (iLight **) 0 ;
-    int arg3 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOi:iMeshWrapper_UpdateLighting",&obj0,&obj1,&arg3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->UpdateLighting(arg2,arg3);
+    (arg1)->SetLightingUpdate(arg2,arg3);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -54956,29 +54918,6 @@ static PyObject *_wrap_iMeshObject_DrawTest(PyObject *self, PyObject *args) {
     result = (bool)(arg1)->DrawTest(arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iMeshObject_UpdateLighting(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iMeshObject *arg1 = (iMeshObject *) 0 ;
-    iLight **arg2 = (iLight **) 0 ;
-    int arg3 ;
-    iMovable *arg4 = (iMovable *) 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    PyObject * obj3 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOiO:iMeshObject_UpdateLighting",&obj0,&obj1,&arg3,&obj3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshObject,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_iMovable,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->UpdateLighting(arg2,arg3,arg4);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
     fail:
     return NULL;
@@ -111239,8 +111178,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iMeshWrapper_GetVisibilityNumber", _wrap_iMeshWrapper_GetVisibilityNumber, METH_VARARGS },
 	 { (char *)"iMeshWrapper_GetFactory", _wrap_iMeshWrapper_GetFactory, METH_VARARGS },
 	 { (char *)"iMeshWrapper_SetFactory", _wrap_iMeshWrapper_SetFactory, METH_VARARGS },
-	 { (char *)"iMeshWrapper_DeferUpdateLighting", _wrap_iMeshWrapper_DeferUpdateLighting, METH_VARARGS },
-	 { (char *)"iMeshWrapper_UpdateLighting", _wrap_iMeshWrapper_UpdateLighting, METH_VARARGS },
+	 { (char *)"iMeshWrapper_SetLightingUpdate", _wrap_iMeshWrapper_SetLightingUpdate, METH_VARARGS },
 	 { (char *)"iMeshWrapper_GetMovable", _wrap_iMeshWrapper_GetMovable, METH_VARARGS },
 	 { (char *)"iMeshWrapper_PlaceMesh", _wrap_iMeshWrapper_PlaceMesh, METH_VARARGS },
 	 { (char *)"iMeshWrapper_HitBeamBBox", _wrap_iMeshWrapper_HitBeamBBox, METH_VARARGS },
@@ -111422,7 +111360,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iMeshObjectDrawCallback_swigregister", iMeshObjectDrawCallback_swigregister, METH_VARARGS },
 	 { (char *)"iMeshObject_GetFactory", _wrap_iMeshObject_GetFactory, METH_VARARGS },
 	 { (char *)"iMeshObject_DrawTest", _wrap_iMeshObject_DrawTest, METH_VARARGS },
-	 { (char *)"iMeshObject_UpdateLighting", _wrap_iMeshObject_UpdateLighting, METH_VARARGS },
 	 { (char *)"iMeshObject_Draw", _wrap_iMeshObject_Draw, METH_VARARGS },
 	 { (char *)"iMeshObject_GetRenderMeshes", _wrap_iMeshObject_GetRenderMeshes, METH_VARARGS },
 	 { (char *)"iMeshObject_SetVisibleCallback", _wrap_iMeshObject_SetVisibleCallback, METH_VARARGS },
@@ -116555,10 +116492,6 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_ATTN_INVERSE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ATTN_REALISTIC", (long) 3, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ATTN_CLQ", (long) 4, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_NLIGHT_SHADOWS", (long) 1, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_NLIGHT_STATIC", (long) 2, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_NLIGHT_DYNAMIC", (long) 4, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_NLIGHT_NEARBYSECTORS", (long) 8, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_READ", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_WRITE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENGINE_CACHE_NOUPDATE", (long) 4, 0, 0, 0},
@@ -116570,6 +116503,8 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_ENTITY_INVISIBLE", (long) 8, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENTITY_NOSHADOWS", (long) 16, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_ENTITY_NOLIGHTING", (long) 32, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHTINGUPDATE_SORTRELEVANCE", (long) 1, 0, 0, 0},
+{ SWIG_PY_INT,     (char *)"CS_LIGHTINGUPDATE_ALWAYSUPDATE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_CULLER_HINT_GOODOCCLUDER", (long) 4, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_CULLER_HINT_BADOCCLUDER", (long) 8, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_SPR_LIGHTING_HQ", (long) 0, 0, 0, 0},
