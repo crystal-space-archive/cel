@@ -66118,23 +66118,6 @@ static PyObject * iPolygonHandle_swigregister(PyObject *self, PyObject *args) {
     Py_INCREF(obj);
     return Py_BuildValue((char *)"");
 }
-static PyObject *_wrap_iThingFactoryState_GetPrivateObject(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iThingFactoryState *arg1 = (iThingFactoryState *) 0 ;
-    void *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iThingFactoryState_GetPrivateObject",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iThingFactoryState,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (void *)(arg1)->GetPrivateObject();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_void, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iThingFactoryState_CompressVertices(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iThingFactoryState *arg1 = (iThingFactoryState *) 0 ;
@@ -68017,23 +68000,6 @@ static PyObject * iThingFactoryState_swigregister(PyObject *self, PyObject *args
     Py_INCREF(obj);
     return Py_BuildValue((char *)"");
 }
-static PyObject *_wrap_iThingState_GetPrivateObject(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iThingState *arg1 = (iThingState *) 0 ;
-    void *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iThingState_GetPrivateObject",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iThingState,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (void *)(arg1)->GetPrivateObject();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_void, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iThingState_GetFactory(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iThingState *arg1 = (iThingState *) 0 ;
@@ -112934,7 +112900,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPolygonHandle_GetIndex", _wrap_iPolygonHandle_GetIndex, METH_VARARGS },
 	 { (char *)"delete_iPolygonHandle", _wrap_delete_iPolygonHandle, METH_VARARGS },
 	 { (char *)"iPolygonHandle_swigregister", iPolygonHandle_swigregister, METH_VARARGS },
-	 { (char *)"iThingFactoryState_GetPrivateObject", _wrap_iThingFactoryState_GetPrivateObject, METH_VARARGS },
 	 { (char *)"iThingFactoryState_CompressVertices", _wrap_iThingFactoryState_CompressVertices, METH_VARARGS },
 	 { (char *)"iThingFactoryState_GetPolygonCount", _wrap_iThingFactoryState_GetPolygonCount, METH_VARARGS },
 	 { (char *)"iThingFactoryState_RemovePolygon", _wrap_iThingFactoryState_RemovePolygon, METH_VARARGS },
@@ -112980,7 +112945,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iThingFactoryState_SetCosinusFactor", _wrap_iThingFactoryState_SetCosinusFactor, METH_VARARGS },
 	 { (char *)"delete_iThingFactoryState", _wrap_delete_iThingFactoryState, METH_VARARGS },
 	 { (char *)"iThingFactoryState_swigregister", iThingFactoryState_swigregister, METH_VARARGS },
-	 { (char *)"iThingState_GetPrivateObject", _wrap_iThingState_GetPrivateObject, METH_VARARGS },
 	 { (char *)"iThingState_GetFactory", _wrap_iThingState_GetFactory, METH_VARARGS },
 	 { (char *)"iThingState_GetVertexW", _wrap_iThingState_GetVertexW, METH_VARARGS },
 	 { (char *)"iThingState_GetVerticesW", _wrap_iThingState_GetVerticesW, METH_VARARGS },
