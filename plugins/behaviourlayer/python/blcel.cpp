@@ -1283,10 +1283,12 @@ _csWrapPtr_to_Python (const csWrapPtr & wp)
   {
     ptr = wp.VoidPtr;
     ibase = (iBase *)SWIG_TypeCast(SWIG_TypeQuery("iBase *"), ptr);
+    // Assume that VoidPtrs have been IncRef()ed
   }
   else
   {
     ibase = (iBase *)wp.Ref;
+    ibase->IncRef();
     ptr = iBase__DynamicCast(ibase, wp.Type).VoidPtr;
   }
 
@@ -1307,7 +1309,7 @@ _csWrapPtr_to_Python (const csWrapPtr & wp)
   // internal correctness.)
 
   result = SWIG_NewPointerObj(ptr, SWIG_TypeQuery(type_name), 1);
-  ibase->IncRef();
+  //ibase->IncRef();
   PyObject * ibase_obj = SWIG_NewPointerObj(
     (void *) ibase, SWIG_TypeQuery(type_name), 1);
   PyObject * res_obj = PyObject_CallMethod(ibase_obj, "IncRef", "()");
@@ -40681,7 +40683,7 @@ static PyObject *_wrap_iClipper2D_Clip__SWIG_0(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OO:iClipper2D_Clip",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iClipper2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj1))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -40748,7 +40750,7 @@ static PyObject *_wrap_iClipper2D_Clip__SWIG_1(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OOO:iClipper2D_Clip",&obj0,&obj1,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iClipper2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj1))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -40819,7 +40821,7 @@ static PyObject *_wrap_iClipper2D_Clip__SWIG_2(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"OOO:iClipper2D_Clip",&obj0,&obj1,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iClipper2D,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj1))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -46931,7 +46933,7 @@ static PyObject *_wrap_iEngine_CreateBaseMaterial__SWIG_1(PyObject *self, PyObje
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iTextureWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj2))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -48679,7 +48681,7 @@ static PyObject *_wrap_iEngine_CreatePortal__SWIG_0(PyObject *self, PyObject *ar
     if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_iMeshWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj4))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -48755,7 +48757,7 @@ static PyObject *_wrap_iEngine_CreatePortal__SWIG_1(PyObject *self, PyObject *ar
     }
     if ((SWIG_ConvertPtr(obj4,(void **) &arg5, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj5))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -58277,7 +58279,7 @@ static PyObject *_wrap_iPortalContainer_CreatePortal(PyObject *self, PyObject *a
     if(!PyArg_ParseTuple(args,(char *)"OO:iPortalContainer_CreatePortal",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iPortalContainer,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj1))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -67616,7 +67618,7 @@ static PyObject *_wrap_iThingFactoryState_AddPolygon__SWIG_0(PyObject *self, PyO
     if(!PyArg_ParseTuple(args,(char *)"OO:iThingFactoryState_AddPolygon",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iThingFactoryState,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        /*@CS/include/ivaria/pythpre.i,260,TYPEMAP_IN_ARRAY_BODY@*/
+        /*@CS/include/ivaria/pythpre.i,262,TYPEMAP_IN_ARRAY_BODY@*/
         if (!PyList_Check(obj1))
         {
             PyErr_SetString(PyExc_TypeError, "not a list");
@@ -68148,6 +68150,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_0(PyObj
     csPolygonRange *arg2 = 0 ;
     csMatrix3 *arg3 = 0 ;
     csVector3 *arg4 = 0 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
@@ -68167,9 +68170,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_0(PyObj
     if (arg4 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csMatrix3 const &)*arg3,(csVector3 const &)*arg4);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csMatrix3 const &)*arg3,(csVector3 const &)*arg4);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
@@ -68183,6 +68186,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_1(PyObj
     csVector2 *arg3 = 0 ;
     csVector2 *arg4 = 0 ;
     csVector2 *arg5 = 0 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
@@ -68207,9 +68211,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_1(PyObj
     if (arg5 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector2 const &)*arg3,(csVector2 const &)*arg4,(csVector2 const &)*arg5);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector2 const &)*arg3,(csVector2 const &)*arg4,(csVector2 const &)*arg5);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
@@ -68226,6 +68230,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_2(PyObj
     csVector2 *arg6 = 0 ;
     csVector3 *arg7 = 0 ;
     csVector2 *arg8 = 0 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
@@ -68265,9 +68270,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_2(PyObj
     if (arg8 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector2 const &)*arg4,(csVector3 const &)*arg5,(csVector2 const &)*arg6,(csVector3 const &)*arg7,(csVector2 const &)*arg8);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector2 const &)*arg4,(csVector3 const &)*arg5,(csVector2 const &)*arg6,(csVector3 const &)*arg7,(csVector2 const &)*arg8);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
@@ -68281,6 +68286,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_3(PyObj
     csVector3 *arg3 = 0 ;
     csVector3 *arg4 = 0 ;
     float arg5 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
@@ -68300,9 +68306,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_3(PyObj
     if (arg4 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
@@ -68318,6 +68324,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_4(PyObj
     float arg5 ;
     csVector3 *arg6 = 0 ;
     float arg7 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
@@ -68342,9 +68349,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_4(PyObj
     if (arg6 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5,(csVector3 const &)*arg6,arg7);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5,(csVector3 const &)*arg6,arg7);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
@@ -68356,6 +68363,7 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_5(PyObj
     iThingFactoryState *arg1 = (iThingFactoryState *) 0 ;
     csPolygonRange *arg2 = 0 ;
     float arg3 ;
+    bool result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
@@ -68365,9 +68373,9 @@ static PyObject *_wrap_iThingFactoryState_SetPolygonTextureMapping__SWIG_5(PyObj
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,arg3);
+    result = (bool)(arg1)->SetPolygonTextureMapping((csPolygonRange const &)*arg2,arg3);
     
-    Py_INCREF(Py_None); resultobj = Py_None;
+    resultobj = PyInt_FromLong((long)result);
     return resultobj;
     fail:
     return NULL;
