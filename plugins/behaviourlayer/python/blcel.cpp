@@ -53390,6 +53390,23 @@ static PyObject *_wrap_iMeshWrapper_GetDrawAfterShadow(PyObject *self, PyObject 
 }
 
 
+static PyObject *_wrap_iMeshWrapper_GetSVContext(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iMeshWrapper *arg1 = (iMeshWrapper *) 0 ;
+    iShaderVariableContext *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iMeshWrapper_GetSVContext",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (iShaderVariableContext *)(arg1)->GetSVContext();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iShaderVariableContext, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_delete_iMeshWrapper(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iMeshWrapper *arg1 = (iMeshWrapper *) 0 ;
@@ -53902,6 +53919,23 @@ static PyObject *_wrap_iMeshFactoryWrapper_SetRenderPriorityRecursive(PyObject *
     (arg1)->SetRenderPriorityRecursive(arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iMeshFactoryWrapper_GetSVContext(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iMeshFactoryWrapper *arg1 = (iMeshFactoryWrapper *) 0 ;
+    iShaderVariableContext *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iMeshFactoryWrapper_GetSVContext",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iMeshFactoryWrapper,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (iShaderVariableContext *)(arg1)->GetSVContext();
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iShaderVariableContext, 0);
     return resultobj;
     fail:
     return NULL;
@@ -113353,6 +113387,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iMeshWrapper_CastHardwareShadow", _wrap_iMeshWrapper_CastHardwareShadow, METH_VARARGS },
 	 { (char *)"iMeshWrapper_SetDrawAfterShadow", _wrap_iMeshWrapper_SetDrawAfterShadow, METH_VARARGS },
 	 { (char *)"iMeshWrapper_GetDrawAfterShadow", _wrap_iMeshWrapper_GetDrawAfterShadow, METH_VARARGS },
+	 { (char *)"iMeshWrapper_GetSVContext", _wrap_iMeshWrapper_GetSVContext, METH_VARARGS },
 	 { (char *)"delete_iMeshWrapper", _wrap_delete_iMeshWrapper, METH_VARARGS },
 	 { (char *)"iMeshWrapper_scfGetVersion", _wrap_iMeshWrapper_scfGetVersion, METH_VARARGS },
 	 { (char *)"iMeshWrapper_swigregister", iMeshWrapper_swigregister, METH_VARARGS },
@@ -113378,6 +113413,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iMeshFactoryWrapper_SetRenderPriority", _wrap_iMeshFactoryWrapper_SetRenderPriority, METH_VARARGS },
 	 { (char *)"iMeshFactoryWrapper_GetRenderPriority", _wrap_iMeshFactoryWrapper_GetRenderPriority, METH_VARARGS },
 	 { (char *)"iMeshFactoryWrapper_SetRenderPriorityRecursive", _wrap_iMeshFactoryWrapper_SetRenderPriorityRecursive, METH_VARARGS },
+	 { (char *)"iMeshFactoryWrapper_GetSVContext", _wrap_iMeshFactoryWrapper_GetSVContext, METH_VARARGS },
 	 { (char *)"delete_iMeshFactoryWrapper", _wrap_delete_iMeshFactoryWrapper, METH_VARARGS },
 	 { (char *)"iMeshFactoryWrapper_scfGetVersion", _wrap_iMeshFactoryWrapper_scfGetVersion, METH_VARARGS },
 	 { (char *)"iMeshFactoryWrapper_swigregister", iMeshFactoryWrapper_swigregister, METH_VARARGS },
