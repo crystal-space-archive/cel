@@ -40344,17 +40344,38 @@ static PyObject *_wrap_iObjectModel_GetObjectBoundingBox(PyObject *self, PyObjec
     PyObject *resultobj;
     iObjectModel *arg1 = (iObjectModel *) 0 ;
     csBox3 *arg2 = 0 ;
-    int arg3 = (int) 0 ;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO|i:iObjectModel_GetObjectBoundingBox",&obj0,&obj1,&arg3)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO:iObjectModel_GetObjectBoundingBox",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iObjectModel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->GetObjectBoundingBox(*arg2,arg3);
+    (arg1)->GetObjectBoundingBox(*arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iObjectModel_SetObjectBoundingBox(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iObjectModel *arg1 = (iObjectModel *) 0 ;
+    csBox3 *arg2 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iObjectModel_SetObjectBoundingBox",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iObjectModel,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csBox3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->SetObjectBoundingBox((csBox3 const &)*arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -111895,6 +111916,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iObjectModel_SetPolygonMeshShadows", _wrap_iObjectModel_SetPolygonMeshShadows, METH_VARARGS },
 	 { (char *)"iObjectModel_CreateLowerDetailPolygonMesh", _wrap_iObjectModel_CreateLowerDetailPolygonMesh, METH_VARARGS },
 	 { (char *)"iObjectModel_GetObjectBoundingBox", _wrap_iObjectModel_GetObjectBoundingBox, METH_VARARGS },
+	 { (char *)"iObjectModel_SetObjectBoundingBox", _wrap_iObjectModel_SetObjectBoundingBox, METH_VARARGS },
 	 { (char *)"iObjectModel_GetRadius", _wrap_iObjectModel_GetRadius, METH_VARARGS },
 	 { (char *)"iObjectModel_AddListener", _wrap_iObjectModel_AddListener, METH_VARARGS },
 	 { (char *)"iObjectModel_RemoveListener", _wrap_iObjectModel_RemoveListener, METH_VARARGS },
@@ -117589,9 +117611,6 @@ static swig_const_info swig_const_table[] = {
 { SWIG_PY_INT,     (char *)"CS_VERTEX_INSIDE", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"iClipper2D_clipperPoly", (long) iClipper2D::clipperPoly, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"iClipper2D_clipperBox", (long) iClipper2D::clipperBox, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_BBOX_NORMAL", (long) 0, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_BBOX_ACCURATE", (long) 1, 0, 0, 0},
-{ SWIG_PY_INT,     (char *)"CS_BBOX_MAX", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLYMESH_CLOSED", (long) 1, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLYMESH_NOTCLOSED", (long) 2, 0, 0, 0},
 { SWIG_PY_INT,     (char *)"CS_POLYMESH_CONVEX", (long) 4, 0, 0, 0},
