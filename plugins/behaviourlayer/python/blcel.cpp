@@ -42016,23 +42016,6 @@ static PyObject *_wrap_iLight_SetColor(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iLight_IsDynamic(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    bool result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_IsDynamic",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)((iLight const *)arg1)->IsDynamic();
-    
-    resultobj = PyInt_FromLong((long)result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
 static PyObject *_wrap_iLight_GetInfluenceRadius(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
@@ -45785,14 +45768,13 @@ static PyObject *_wrap_iEngine_CreateLight(PyObject *self, PyObject *args) {
     csVector3 *arg3 = 0 ;
     float arg4 ;
     csColor *arg5 = 0 ;
-    bool arg6 ;
+    int arg6 = (int) 1 ;
     SwigValueWrapper< csPtr<iLight > > result;
     PyObject * obj0 = 0 ;
     PyObject * obj2 = 0 ;
     PyObject * obj4 = 0 ;
-    PyObject * obj5 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OsOfOO:iEngine_CreateLight",&obj0,&arg2,&obj2,&arg4,&obj4,&obj5)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OsOfO|i:iEngine_CreateLight",&obj0,&arg2,&obj2,&arg4,&obj4,&arg6)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg3 == NULL) {
@@ -45802,8 +45784,6 @@ static PyObject *_wrap_iEngine_CreateLight(PyObject *self, PyObject *args) {
     if (arg5 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    arg6 = PyInt_AsLong(obj5) ? true : false;
-    if (PyErr_Occurred()) SWIG_fail;
     result = (arg1)->CreateLight((char const *)arg2,(csVector3 const &)*arg3,arg4,(csColor const &)*arg5,arg6);
     
     {
@@ -45879,76 +45859,6 @@ static PyObject *_wrap_iEngine_GetLightIterator(PyObject *self, PyObject *args) 
         resultptr = new csPtr<iLightIterator >((csPtr<iLightIterator > &) result);
         resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csPtrTiLightIterator_t, 1);
     }
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iEngine_CreateDynLight(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iEngine *arg1 = (iEngine *) 0 ;
-    csVector3 *arg2 = 0 ;
-    float arg3 ;
-    csColor *arg4 = 0 ;
-    SwigValueWrapper< csPtr<iLight > > result;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    PyObject * obj3 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OOfO:iEngine_CreateDynLight",&obj0,&obj1,&arg3,&obj3)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    if ((SWIG_ConvertPtr(obj3,(void **) &arg4, SWIGTYPE_p_csColor,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg4 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    result = (arg1)->CreateDynLight((csVector3 const &)*arg2,arg3,(csColor const &)*arg4);
-    
-    {
-        csPtr<iLight > * resultptr;
-        resultptr = new csPtr<iLight >((csPtr<iLight > &) result);
-        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csPtrTiLight_t, 1);
-    }
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iEngine_RemoveDynLight(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iEngine *arg1 = (iEngine *) 0 ;
-    iLight *arg2 = (iLight *) 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:iEngine_RemoveDynLight",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->RemoveDynLight(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iEngine_GetFirstDynLight(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iEngine *arg1 = (iEngine *) 0 ;
-    iLight *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iEngine_GetFirstDynLight",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iEngine,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iLight *)((iEngine const *)arg1)->GetFirstDynLight();
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iLight, 0);
     return resultobj;
     fail:
     return NULL;
@@ -111027,7 +110937,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iLight_SetSector", _wrap_iLight_SetSector, METH_VARARGS },
 	 { (char *)"iLight_GetColor", _wrap_iLight_GetColor, METH_VARARGS },
 	 { (char *)"iLight_SetColor", _wrap_iLight_SetColor, METH_VARARGS },
-	 { (char *)"iLight_IsDynamic", _wrap_iLight_IsDynamic, METH_VARARGS },
 	 { (char *)"iLight_GetInfluenceRadius", _wrap_iLight_GetInfluenceRadius, METH_VARARGS },
 	 { (char *)"iLight_GetInfluenceRadiusSq", _wrap_iLight_GetInfluenceRadiusSq, METH_VARARGS },
 	 { (char *)"iLight_SetInfluenceRadius", _wrap_iLight_SetInfluenceRadius, METH_VARARGS },
@@ -111199,9 +111108,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iEngine_FindLight", _wrap_iEngine_FindLight, METH_VARARGS },
 	 { (char *)"iEngine_FindLightID", _wrap_iEngine_FindLightID, METH_VARARGS },
 	 { (char *)"iEngine_GetLightIterator", _wrap_iEngine_GetLightIterator, METH_VARARGS },
-	 { (char *)"iEngine_CreateDynLight", _wrap_iEngine_CreateDynLight, METH_VARARGS },
-	 { (char *)"iEngine_RemoveDynLight", _wrap_iEngine_RemoveDynLight, METH_VARARGS },
-	 { (char *)"iEngine_GetFirstDynLight", _wrap_iEngine_GetFirstDynLight, METH_VARARGS },
 	 { (char *)"iEngine_GetBeginDrawFlags", _wrap_iEngine_GetBeginDrawFlags, METH_VARARGS },
 	 { (char *)"iEngine_GetTopLevelClipper", _wrap_iEngine_GetTopLevelClipper, METH_VARARGS },
 	 { (char *)"iEngine_CreateMeshFactory", _wrap_iEngine_CreateMeshFactory, METH_VARARGS },
