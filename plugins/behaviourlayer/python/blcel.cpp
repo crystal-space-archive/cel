@@ -3147,6 +3147,23 @@ static PyObject *_wrap_iFactory_QueryClassID(PyObject *self, PyObject *args) {
 }
 
 
+static PyObject *_wrap_iFactory_QueryModuleName(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iFactory *arg1 = (iFactory *) 0 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iFactory_QueryModuleName",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iFactory,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)(arg1)->QueryModuleName();
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
 static PyObject *_wrap_delete_iFactory(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iFactory *arg1 = (iFactory *) 0 ;
@@ -91268,20 +91285,16 @@ static PyObject *_wrap_iImageIO_GetDescription(PyObject *self, PyObject *args) {
 static PyObject *_wrap_iImageIO_Load(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iImageIO *arg1 = (iImageIO *) 0 ;
-    uint8 *arg2 = (uint8 *) 0 ;
-    size_t arg3 ;
-    int arg4 ;
+    iDataBuffer *arg2 = (iDataBuffer *) 0 ;
+    int arg3 ;
     SwigValueWrapper< csPtr<iImage > > result;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
-    PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OOOi:iImageIO_Load",&obj0,&obj1,&obj2,&arg4)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOi:iImageIO_Load",&obj0,&obj1,&arg3)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iImageIO,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_uint8,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    arg3 = (size_t) PyInt_AsLong(obj2);
-    if (PyErr_Occurred()) SWIG_fail;
-    result = (arg1)->Load(arg2,arg3,arg4);
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iDataBuffer,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (arg1)->Load(arg2,arg3);
     
     {
         /*@CS/include/ivaria/pythpre.i,82,TYPEMAP_OUT_csRef_BODY@*/
@@ -110758,6 +110771,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iFactory_QueryDescription", _wrap_iFactory_QueryDescription, METH_VARARGS },
 	 { (char *)"iFactory_QueryDependencies", _wrap_iFactory_QueryDependencies, METH_VARARGS },
 	 { (char *)"iFactory_QueryClassID", _wrap_iFactory_QueryClassID, METH_VARARGS },
+	 { (char *)"iFactory_QueryModuleName", _wrap_iFactory_QueryModuleName, METH_VARARGS },
 	 { (char *)"delete_iFactory", _wrap_delete_iFactory, METH_VARARGS },
 	 { (char *)"iFactory_scfGetVersion", _wrap_iFactory_scfGetVersion, METH_VARARGS },
 	 { (char *)"iFactory_swigregister", iFactory_swigregister, METH_VARARGS },
@@ -116652,7 +116666,7 @@ static swig_type_info _swigt__p_iPcRegion[] = {{"_p_iPcRegion", 0, "iPcRegion *"
 static swig_type_info _swigt__p_csRefTiDocumentAttribute_t[] = {{"_p_csRefTiDocumentAttribute_t", 0, "csRef<iDocumentAttribute > *", 0},{"_p_csRefTiDocumentAttribute_t"},{0}};
 static swig_type_info _swigt__p_csRefArrayTiShader_t[] = {{"_p_csRefArrayTiShader_t", 0, "csRefArray<iShader > *", 0},{"_p_csRefArrayTiShader_t"},{0}};
 static swig_type_info _swigt__p_csPtrTiShader_t[] = {{"_p_csPtrTiShader_t", 0, "csPtr<iShader > *", 0},{"_p_csPtrTiShader_t"},{0}};
-static swig_type_info _swigt__p_uint8[] = {{"_p_uint8", 0, "uint8 *", 0},{"_p_unsigned_char"},{"_p_uint8"},{0}};
+static swig_type_info _swigt__p_uint8[] = {{"_p_uint8", 0, "uint8 const *", 0},{"_p_unsigned_char"},{"_p_uint8"},{0}};
 static swig_type_info _swigt__p_iDocumentAttributeIterator[] = {{"_p_iDocumentAttributeIterator", 0, "iDocumentAttributeIterator *", 0},{"_p_iDocumentAttributeIterator"},{0}};
 static swig_type_info _swigt__p_iConfigIterator[] = {{"_p_iConfigIterator", 0, "iConfigIterator *", 0},{"_p_iConfigIterator"},{0}};
 static swig_type_info _swigt__p_iPluginIterator[] = {{"_p_iPluginIterator", 0, "iPluginIterator *", 0},{"_p_iPluginIterator"},{0}};
