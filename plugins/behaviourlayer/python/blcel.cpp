@@ -43480,18 +43480,17 @@ static PyObject *_wrap_iLight_GetDynamicType(PyObject *self, PyObject *args) {
 static PyObject *_wrap_iLight_GetCenter(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
-    csVector3 result;
+    csVector3 *result;
     PyObject * obj0 = 0 ;
     
     if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetCenter",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (arg1)->GetCenter();
-    
     {
-        csVector3 * resultptr;
-        resultptr = new csVector3((csVector3 &) result);
-        resultobj = SWIG_NewPointerObj((void *) resultptr, SWIGTYPE_p_csVector3, 1);
+        csVector3 const &_result_ref = ((iLight const *)arg1)->GetCenter();
+        result = (csVector3 *) &_result_ref;
     }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector3, 0);
     return resultobj;
     fail:
     return NULL;
@@ -43563,7 +43562,7 @@ static PyObject *_wrap_iLight_GetColor(PyObject *self, PyObject *args) {
     if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetColor",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        csColor const &_result_ref = (arg1)->GetColor();
+        csColor const &_result_ref = ((iLight const *)arg1)->GetColor();
         result = (csColor *) &_result_ref;
     }
     
@@ -43588,6 +43587,48 @@ static PyObject *_wrap_iLight_SetColor(PyObject *self, PyObject *args) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
     (arg1)->SetColor((csColor const &)*arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_GetSpecularColor(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csColor *result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetSpecularColor",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    {
+        csColor const &_result_ref = ((iLight const *)arg1)->GetSpecularColor();
+        result = (csColor *) &_result_ref;
+    }
+    
+    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csColor, 0);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetSpecularColor(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    csColor *arg2 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetSpecularColor",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csColor,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
+    (arg1)->SetSpecularColor((csColor const &)*arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43672,108 +43713,15 @@ static PyObject *_wrap_iLight_SetDirection(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iLight_GetSpotFalloff(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    csVector2 *result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetSpotFalloff",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    {
-        csVector2 const &_result_ref = ((iLight const *)arg1)->GetSpotFalloff();
-        result = (csVector2 *) &_result_ref;
-    }
-    
-    resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_csVector2, 0);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_SetSpotFalloff(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    csVector2 *arg2 = 0 ;
-    PyObject * obj0 = 0 ;
-    PyObject * obj1 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetSpotFalloff",&obj0,&obj1)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector2,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    if (arg2 == NULL) {
-        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
-    }
-    (arg1)->SetSpotFalloff((csVector2 const &)*arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_GetInfluenceRadius(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    float result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetInfluenceRadius",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (float)(arg1)->GetInfluenceRadius();
-    
-    resultobj = PyFloat_FromDouble(result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_GetInfluenceRadiusSq(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    float result;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetInfluenceRadiusSq",&obj0)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (float)(arg1)->GetInfluenceRadiusSq();
-    
-    resultobj = PyFloat_FromDouble(result);
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_SetInfluenceRadius(PyObject *self, PyObject *args) {
-    PyObject *resultobj;
-    iLight *arg1 = (iLight *) 0 ;
-    float arg2 ;
-    PyObject * obj0 = 0 ;
-    
-    if(!PyArg_ParseTuple(args,(char *)"Of:iLight_SetInfluenceRadius",&obj0,&arg2)) goto fail;
-    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetInfluenceRadius(arg2);
-    
-    Py_INCREF(Py_None); resultobj = Py_None;
-    return resultobj;
-    fail:
-    return NULL;
-}
-
-
-static PyObject *_wrap_iLight_GetAttenuation(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_GetAttenuationMode(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
     int result;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetAttenuation",&obj0)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetAttenuationMode",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (int)(arg1)->GetAttenuation();
+    result = (int)((iLight const *)arg1)->GetAttenuationMode();
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -43782,15 +43730,15 @@ static PyObject *_wrap_iLight_GetAttenuation(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iLight_SetAttenuation(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_SetAttenuationMode(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
     int arg2 ;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Oi:iLight_SetAttenuation",&obj0,&arg2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"Oi:iLight_SetAttenuationMode",&obj0,&arg2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->SetAttenuation((csLightAttenuationMode )arg2);
+    (arg1)->SetAttenuationMode((csLightAttenuationMode )arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43799,20 +43747,20 @@ static PyObject *_wrap_iLight_SetAttenuation(PyObject *self, PyObject *args) {
 }
 
 
-static PyObject *_wrap_iLight_SetAttenuationVector(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_SetAttenuationConstants(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
     csVector3 *arg2 = 0 ;
     PyObject * obj0 = 0 ;
     PyObject * obj1 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetAttenuationVector",&obj0,&obj1)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OO:iLight_SetAttenuationConstants",&obj0,&obj1)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_csVector3,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg2 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    (arg1)->SetAttenuationVector((csVector3 const &)*arg2);
+    (arg1)->SetAttenuationConstants((csVector3 const &)*arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43821,16 +43769,16 @@ static PyObject *_wrap_iLight_SetAttenuationVector(PyObject *self, PyObject *arg
 }
 
 
-static PyObject *_wrap_iLight_GetAttenuationVector(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_GetAttenuationConstants(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
     csVector3 *result;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetAttenuationVector",&obj0)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetAttenuationConstants",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     {
-        csVector3 const &_result_ref = (arg1)->GetAttenuationVector();
+        csVector3 const &_result_ref = ((iLight const *)arg1)->GetAttenuationConstants();
         result = (csVector3 *) &_result_ref;
     }
     
@@ -43841,17 +43789,32 @@ static PyObject *_wrap_iLight_GetAttenuationVector(PyObject *self, PyObject *arg
 }
 
 
-static PyObject *_wrap_iLight_CalculateAttenuationVector(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_GetCutoffDistance(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
-    int arg2 ;
-    float arg3 = (float) 1.0f ;
-    float arg4 = (float) 1.0f ;
+    float result;
     PyObject * obj0 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Oi|ff:iLight_CalculateAttenuationVector",&obj0,&arg2,&arg3,&arg4)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetCutoffDistance",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    (arg1)->CalculateAttenuationVector((csLightAttenuationMode )arg2,arg3,arg4);
+    result = (float)((iLight const *)arg1)->GetCutoffDistance();
+    
+    resultobj = PyFloat_FromDouble(result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetCutoffDistance(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    float arg2 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Of:iLight_SetCutoffDistance",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetCutoffDistance(arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
@@ -43860,24 +43823,80 @@ static PyObject *_wrap_iLight_CalculateAttenuationVector(PyObject *self, PyObjec
 }
 
 
-static PyObject *_wrap_iLight_GetDistanceForBrightness(PyObject *self, PyObject *args) {
+static PyObject *_wrap_iLight_GetDirectionalCutoffRadius(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    float result;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetDirectionalCutoffRadius",&obj0)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (float)((iLight const *)arg1)->GetDirectionalCutoffRadius();
+    
+    resultobj = PyFloat_FromDouble(result);
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetDirectionalCutoffRadius(PyObject *self, PyObject *args) {
     PyObject *resultobj;
     iLight *arg1 = (iLight *) 0 ;
     float arg2 ;
-    float *arg3 = 0 ;
-    bool result;
     PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Of:iLight_SetDirectionalCutoffRadius",&obj0,&arg2)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetDirectionalCutoffRadius(arg2);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_SetSpotLightFalloff(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    float arg2 ;
+    float arg3 ;
+    PyObject * obj0 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"Off:iLight_SetSpotLightFalloff",&obj0,&arg2,&arg3)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    (arg1)->SetSpotLightFalloff(arg2,arg3);
+    
+    Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iLight_GetSpotLightFalloff(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iLight *arg1 = (iLight *) 0 ;
+    float *arg2 = 0 ;
+    float *arg3 = 0 ;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
     PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"OfO:iLight_GetDistanceForBrightness",&obj0,&arg2,&obj2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"OOO:iLight_GetSpotLightFalloff",&obj0,&obj1,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_float,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if (arg2 == NULL) {
+        PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
+    }
     if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_float,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
     if (arg3 == NULL) {
         PyErr_SetString(PyExc_TypeError,"null reference"); SWIG_fail; 
     }
-    result = (bool)(arg1)->GetDistanceForBrightness(arg2,*arg3);
+    ((iLight const *)arg1)->GetSpotLightFalloff(*arg2,*arg3);
     
-    resultobj = PyInt_FromLong((long)result);
+    Py_INCREF(Py_None); resultobj = Py_None;
     return resultobj;
     fail:
     return NULL;
@@ -43948,7 +43967,7 @@ static PyObject *_wrap_iLight_GetHalo(PyObject *self, PyObject *args) {
     
     if(!PyArg_ParseTuple(args,(char *)"O:iLight_GetHalo",&obj0)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (iBaseHalo *)(arg1)->GetHalo();
+    result = (iBaseHalo *)((iLight const *)arg1)->GetHalo();
     
     resultobj = SWIG_NewPointerObj((void *) result, SWIGTYPE_p_iBaseHalo, 0);
     return resultobj;
@@ -43966,7 +43985,7 @@ static PyObject *_wrap_iLight_GetBrightnessAtDistance(PyObject *self, PyObject *
     
     if(!PyArg_ParseTuple(args,(char *)"Of:iLight_GetBrightnessAtDistance",&obj0,&arg2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iLight,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (float)(arg1)->GetBrightnessAtDistance(arg2);
+    result = (float)((iLight const *)arg1)->GetBrightnessAtDistance(arg2);
     
     resultobj = PyFloat_FromDouble(result);
     return resultobj;
@@ -112948,21 +112967,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iLight_GetMovable", _wrap_iLight_GetMovable, METH_VARARGS },
 	 { (char *)"iLight_GetColor", _wrap_iLight_GetColor, METH_VARARGS },
 	 { (char *)"iLight_SetColor", _wrap_iLight_SetColor, METH_VARARGS },
+	 { (char *)"iLight_GetSpecularColor", _wrap_iLight_GetSpecularColor, METH_VARARGS },
+	 { (char *)"iLight_SetSpecularColor", _wrap_iLight_SetSpecularColor, METH_VARARGS },
 	 { (char *)"iLight_GetType", _wrap_iLight_GetType, METH_VARARGS },
 	 { (char *)"iLight_SetType", _wrap_iLight_SetType, METH_VARARGS },
 	 { (char *)"iLight_GetDirection", _wrap_iLight_GetDirection, METH_VARARGS },
 	 { (char *)"iLight_SetDirection", _wrap_iLight_SetDirection, METH_VARARGS },
-	 { (char *)"iLight_GetSpotFalloff", _wrap_iLight_GetSpotFalloff, METH_VARARGS },
-	 { (char *)"iLight_SetSpotFalloff", _wrap_iLight_SetSpotFalloff, METH_VARARGS },
-	 { (char *)"iLight_GetInfluenceRadius", _wrap_iLight_GetInfluenceRadius, METH_VARARGS },
-	 { (char *)"iLight_GetInfluenceRadiusSq", _wrap_iLight_GetInfluenceRadiusSq, METH_VARARGS },
-	 { (char *)"iLight_SetInfluenceRadius", _wrap_iLight_SetInfluenceRadius, METH_VARARGS },
-	 { (char *)"iLight_GetAttenuation", _wrap_iLight_GetAttenuation, METH_VARARGS },
-	 { (char *)"iLight_SetAttenuation", _wrap_iLight_SetAttenuation, METH_VARARGS },
-	 { (char *)"iLight_SetAttenuationVector", _wrap_iLight_SetAttenuationVector, METH_VARARGS },
-	 { (char *)"iLight_GetAttenuationVector", _wrap_iLight_GetAttenuationVector, METH_VARARGS },
-	 { (char *)"iLight_CalculateAttenuationVector", _wrap_iLight_CalculateAttenuationVector, METH_VARARGS },
-	 { (char *)"iLight_GetDistanceForBrightness", _wrap_iLight_GetDistanceForBrightness, METH_VARARGS },
+	 { (char *)"iLight_GetAttenuationMode", _wrap_iLight_GetAttenuationMode, METH_VARARGS },
+	 { (char *)"iLight_SetAttenuationMode", _wrap_iLight_SetAttenuationMode, METH_VARARGS },
+	 { (char *)"iLight_SetAttenuationConstants", _wrap_iLight_SetAttenuationConstants, METH_VARARGS },
+	 { (char *)"iLight_GetAttenuationConstants", _wrap_iLight_GetAttenuationConstants, METH_VARARGS },
+	 { (char *)"iLight_GetCutoffDistance", _wrap_iLight_GetCutoffDistance, METH_VARARGS },
+	 { (char *)"iLight_SetCutoffDistance", _wrap_iLight_SetCutoffDistance, METH_VARARGS },
+	 { (char *)"iLight_GetDirectionalCutoffRadius", _wrap_iLight_GetDirectionalCutoffRadius, METH_VARARGS },
+	 { (char *)"iLight_SetDirectionalCutoffRadius", _wrap_iLight_SetDirectionalCutoffRadius, METH_VARARGS },
+	 { (char *)"iLight_SetSpotLightFalloff", _wrap_iLight_SetSpotLightFalloff, METH_VARARGS },
+	 { (char *)"iLight_GetSpotLightFalloff", _wrap_iLight_GetSpotLightFalloff, METH_VARARGS },
 	 { (char *)"iLight_CreateCrossHalo", _wrap_iLight_CreateCrossHalo, METH_VARARGS },
 	 { (char *)"iLight_CreateNovaHalo", _wrap_iLight_CreateNovaHalo, METH_VARARGS },
 	 { (char *)"iLight_CreateFlareHalo", _wrap_iLight_CreateFlareHalo, METH_VARARGS },
