@@ -1200,7 +1200,6 @@ static swig_type_info *swig_types[473];
 /*-----------------------------------------------
               @(target):= _blcelc.so
   ------------------------------------------------*/
-#define SWIG_init    init_blcelc
 
 #define SWIG_name    "_blcelc"
 
