@@ -44212,12 +44212,17 @@ static PyObject *_wrap_iSector_SetVisibilityCullerPlugin(PyObject *self, PyObjec
     PyObject *resultobj;
     iSector *arg1 = (iSector *) 0 ;
     char *arg2 ;
+    iDocumentNode *arg3 = (iDocumentNode *) 0 ;
     bool result;
     PyObject * obj0 = 0 ;
+    PyObject * obj2 = 0 ;
     
-    if(!PyArg_ParseTuple(args,(char *)"Os:iSector_SetVisibilityCullerPlugin",&obj0,&arg2)) goto fail;
+    if(!PyArg_ParseTuple(args,(char *)"Os|O:iSector_SetVisibilityCullerPlugin",&obj0,&arg2,&obj2)) goto fail;
     if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iSector,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
-    result = (bool)(arg1)->SetVisibilityCullerPlugin((char const *)arg2);
+    if (obj2) {
+        if ((SWIG_ConvertPtr(obj2,(void **) &arg3, SWIGTYPE_p_iDocumentNode,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    }
+    result = (bool)(arg1)->SetVisibilityCullerPlugin((char const *)arg2,arg3);
     
     resultobj = PyInt_FromLong((long)result);
     return resultobj;
@@ -55663,6 +55668,26 @@ static PyObject *_wrap_iVisibilityCuller_CastShadows(PyObject *self, PyObject *a
     (arg1)->CastShadows(arg2);
     
     Py_INCREF(Py_None); resultobj = Py_None;
+    return resultobj;
+    fail:
+    return NULL;
+}
+
+
+static PyObject *_wrap_iVisibilityCuller_ParseCullerParameters(PyObject *self, PyObject *args) {
+    PyObject *resultobj;
+    iVisibilityCuller *arg1 = (iVisibilityCuller *) 0 ;
+    iDocumentNode *arg2 = (iDocumentNode *) 0 ;
+    char *result;
+    PyObject * obj0 = 0 ;
+    PyObject * obj1 = 0 ;
+    
+    if(!PyArg_ParseTuple(args,(char *)"OO:iVisibilityCuller_ParseCullerParameters",&obj0,&obj1)) goto fail;
+    if ((SWIG_ConvertPtr(obj0,(void **) &arg1, SWIGTYPE_p_iVisibilityCuller,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    if ((SWIG_ConvertPtr(obj1,(void **) &arg2, SWIGTYPE_p_iDocumentNode,SWIG_POINTER_EXCEPTION | 0 )) == -1) SWIG_fail;
+    result = (char *)(arg1)->ParseCullerParameters(arg2);
+    
+    resultobj = result ? PyString_FromString(result) : Py_BuildValue((char*)"");
     return resultobj;
     fail:
     return NULL;
@@ -112734,6 +112759,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iVisibilityCuller_IntersectSegmentSloppy", _wrap_iVisibilityCuller_IntersectSegmentSloppy, METH_VARARGS },
 	 { (char *)"iVisibilityCuller_IntersectSegment", _wrap_iVisibilityCuller_IntersectSegment, METH_VARARGS },
 	 { (char *)"iVisibilityCuller_CastShadows", _wrap_iVisibilityCuller_CastShadows, METH_VARARGS },
+	 { (char *)"iVisibilityCuller_ParseCullerParameters", _wrap_iVisibilityCuller_ParseCullerParameters, METH_VARARGS },
 	 { (char *)"delete_iVisibilityCuller", _wrap_delete_iVisibilityCuller, METH_VARARGS },
 	 { (char *)"iVisibilityCuller_scfGetVersion", _wrap_iVisibilityCuller_scfGetVersion, METH_VARARGS },
 	 { (char *)"iVisibilityCuller_swigregister", iVisibilityCuller_swigregister, METH_VARARGS },
