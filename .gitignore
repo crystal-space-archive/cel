@@ -31,11 +31,15 @@
 
 /debug.txt
 
+/config.cache
+
 /config.log
 
 /config.status
 
 /Jamconfig
+
+/Jamfile
 
 /autom4te.*
 
