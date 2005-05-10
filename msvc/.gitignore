@@ -1,4 +1,14 @@
-/.cvsignore
+/*.suo
+
+/*.ncb
+
+/*.opt
 
 /*.plg
+
+/*.user
+
+/_UpgradeReport_Files
+
+/UpgradeLog*.XML
 
