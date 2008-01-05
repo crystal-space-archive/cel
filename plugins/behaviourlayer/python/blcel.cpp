@@ -4413,7 +4413,7 @@ _celWrapPtr_to_Python (const celWrapPtr & wp)
   }
   iBase * ibase = (iBase *)wp.Ref;
   void * ptr = ibase->QueryInterface(iSCF::SCF->GetInterfaceID(wp.Type), wp.Version);
-//  ibase->DecRef(); // Undo IncRef from QueryInterface
+  // ibase->DecRef(); // Undo IncRef from QueryInterface
 
   // This is a bit tricky: We want the generated Python 'result' object
   // to own one reference to the wrapped object, so we want to call
@@ -5049,6 +5049,7 @@ SWIGINTERN void delete_iPcMechanicsJoint(iPcMechanicsJoint *self){ if (self) sel
 
 iPcMechanicsSystem *celCreateMechanicsSystem(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcphysics.system", tagname);
@@ -5063,6 +5064,7 @@ iPcMechanicsSystem *celCreateMechanicsSystem(iCelPlLayer *pl, iCelEntity *entity
 
 iPcMechanicsSystem * celGetSetMechanicsSystem (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsSystem> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsSystem> (entity->GetPropertyClassList (),tagname));
@@ -5083,6 +5085,7 @@ iPcMechanicsSystem * celGetSetMechanicsSystem (iCelPlLayer *pl, iCelEntity *enti
 
 iPcMechanicsSystem * celGetMechanicsSystem (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsSystem> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsSystem> (entity->GetPropertyClassList (),tagname));
@@ -5111,6 +5114,7 @@ iPcMechanicsSystem *scfQueryPC_iPcMechanicsSystem (iCelPropertyClassList *pclist
 
 iPcMechanicsObject *celCreateMechanicsObject(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcphysics.object", tagname);
@@ -5125,6 +5129,7 @@ iPcMechanicsObject *celCreateMechanicsObject(iCelPlLayer *pl, iCelEntity *entity
 
 iPcMechanicsObject * celGetSetMechanicsObject (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsObject> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsObject> (entity->GetPropertyClassList (),tagname));
@@ -5145,6 +5150,7 @@ iPcMechanicsObject * celGetSetMechanicsObject (iCelPlLayer *pl, iCelEntity *enti
 
 iPcMechanicsObject * celGetMechanicsObject (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsObject> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsObject> (entity->GetPropertyClassList (),tagname));
@@ -5181,6 +5187,7 @@ iPcMechanicsJoint *scfQueryPC_iPcMechanicsJoint (iCelPropertyClassList *pclist)
 
 iPcMechanicsJoint *celCreateMechanicsJoint(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcphysics.joint", tagname);
@@ -5195,6 +5202,7 @@ iPcMechanicsJoint *celCreateMechanicsJoint(iCelPlLayer *pl, iCelEntity *entity, 
 
 iPcMechanicsJoint * celGetSetMechanicsJoint (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsJoint> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsJoint> (entity->GetPropertyClassList (),tagname));
@@ -5215,6 +5223,7 @@ iPcMechanicsJoint * celGetSetMechanicsJoint (iCelPlLayer *pl, iCelEntity *entity
 
 iPcMechanicsJoint * celGetMechanicsJoint (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsJoint> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsJoint> (entity->GetPropertyClassList (),tagname));
@@ -5253,6 +5262,7 @@ SWIGINTERN void delete_iPcMechanicsThrusterController(iPcMechanicsThrusterContro
 
 iPcMechanicsThruster *celCreateMechanicsThrusterReactionary(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmechthrustreactionary", tagname);
@@ -5267,6 +5277,7 @@ iPcMechanicsThruster *celCreateMechanicsThrusterReactionary(iCelPlLayer *pl, iCe
 
 iPcMechanicsThruster * celGetSetMechanicsThrusterReactionary (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThruster> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsThruster> (entity->GetPropertyClassList (),tagname));
@@ -5287,6 +5298,7 @@ iPcMechanicsThruster * celGetSetMechanicsThrusterReactionary (iCelPlLayer *pl, i
 
 iPcMechanicsThruster * celGetMechanicsThrusterReactionary (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThruster> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsThruster> (entity->GetPropertyClassList (),tagname));
@@ -5315,6 +5327,7 @@ iPcMechanicsThruster *scfQueryPC_iPcMechanicsThruster (iCelPropertyClassList *pc
 
 iPcMechanicsBalancedGroup *celCreateMechanicsBalancedGroup(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmechbalancedgroup", tagname);
@@ -5329,6 +5342,7 @@ iPcMechanicsBalancedGroup *celCreateMechanicsBalancedGroup(iCelPlLayer *pl, iCel
 
 iPcMechanicsBalancedGroup * celGetSetMechanicsBalancedGroup (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsBalancedGroup> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList (),tagname));
@@ -5349,6 +5363,7 @@ iPcMechanicsBalancedGroup * celGetSetMechanicsBalancedGroup (iCelPlLayer *pl, iC
 
 iPcMechanicsBalancedGroup * celGetMechanicsBalancedGroup (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsBalancedGroup> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList (),tagname));
@@ -5377,6 +5392,7 @@ iPcMechanicsBalancedGroup *scfQueryPC_iPcMechanicsBalancedGroup (iCelPropertyCla
 
 iPcMechanicsThrusterController *celCreateMechanicsThrusterController(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmechthrustercontroller", tagname);
@@ -5391,6 +5407,7 @@ iPcMechanicsThrusterController *celCreateMechanicsThrusterController(iCelPlLayer
 
 iPcMechanicsThrusterController * celGetSetMechanicsThrusterController (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThrusterController> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMechanicsThrusterController> (entity->GetPropertyClassList (),tagname));
@@ -5411,6 +5428,7 @@ iPcMechanicsThrusterController * celGetSetMechanicsThrusterController (iCelPlLay
 
 iPcMechanicsThrusterController * celGetMechanicsThrusterController (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThrusterController> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMechanicsThrusterController> (entity->GetPropertyClassList (),tagname));
@@ -5478,6 +5496,7 @@ SWIGINTERN void delete_iPcBillboard(iPcBillboard *self){ if (self) self->DecRef 
 
 iPcBillboard *celCreateBillboard(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pc2d.billboard", tagname);
@@ -5492,6 +5511,7 @@ iPcBillboard *celCreateBillboard(iCelPlLayer *pl, iCelEntity *entity, const char
 
 iPcBillboard * celGetSetBillboard (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcBillboard> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcBillboard> (entity->GetPropertyClassList (),tagname));
@@ -5512,6 +5532,7 @@ iPcBillboard * celGetSetBillboard (iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcBillboard * celGetBillboard (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcBillboard> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcBillboard> (entity->GetPropertyClassList (),tagname));
@@ -5550,6 +5571,7 @@ SWIGINTERN void delete_iPcRegion(iPcRegion *self){ if (self) self->DecRef (); }
 
 iPcRegion *celCreateRegion(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcworld.region", tagname);
@@ -5564,6 +5586,7 @@ iPcRegion *celCreateRegion(iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcRegion * celGetSetRegion (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcRegion> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcRegion> (entity->GetPropertyClassList (),tagname));
@@ -5584,6 +5607,7 @@ iPcRegion * celGetSetRegion (iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcRegion * celGetRegion (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcRegion> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcRegion> (entity->GetPropertyClassList (),tagname));
@@ -5626,6 +5650,7 @@ SWIGINTERN void delete_iPcZoneManager(iPcZoneManager *self){ if (self) self->Dec
 
 iPcZoneManager *celCreateZoneManager(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcworld.zonemanager", tagname);
@@ -5640,6 +5665,7 @@ iPcZoneManager *celCreateZoneManager(iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcZoneManager * celGetSetZoneManager (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcZoneManager> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcZoneManager> (entity->GetPropertyClassList (),tagname));
@@ -5660,6 +5686,7 @@ iPcZoneManager * celGetSetZoneManager (iCelPlLayer *pl, iCelEntity *entity, cons
 
 iPcZoneManager * celGetZoneManager (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcZoneManager> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcZoneManager> (entity->GetPropertyClassList (),tagname));
@@ -5686,6 +5713,7 @@ SWIGINTERN void delete_iPcCommandInput(iPcCommandInput *self){ if (self) self->D
 
 iPcCommandInput *celCreateCommandInput(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcinput.standard", tagname);
@@ -5700,6 +5728,7 @@ iPcCommandInput *celCreateCommandInput(iCelPlLayer *pl, iCelEntity *entity, cons
 
 iPcCommandInput * celGetSetCommandInput (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCommandInput> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcCommandInput> (entity->GetPropertyClassList (),tagname));
@@ -5720,6 +5749,7 @@ iPcCommandInput * celGetSetCommandInput (iCelPlLayer *pl, iCelEntity *entity, co
 
 iPcCommandInput * celGetCommandInput (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCommandInput> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcCommandInput> (entity->GetPropertyClassList (),tagname));
@@ -5756,6 +5786,7 @@ SWIGINTERN void delete_iPcLinearMovement(iPcLinearMovement *self){ if (self) sel
 
 iPcLinearMovement *celCreateLinearMovement(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.linear", tagname);
@@ -5770,6 +5801,7 @@ iPcLinearMovement *celCreateLinearMovement(iCelPlLayer *pl, iCelEntity *entity, 
 
 iPcLinearMovement * celGetSetLinearMovement (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcLinearMovement> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcLinearMovement> (entity->GetPropertyClassList (),tagname));
@@ -5790,6 +5822,7 @@ iPcLinearMovement * celGetSetLinearMovement (iCelPlLayer *pl, iCelEntity *entity
 
 iPcLinearMovement * celGetLinearMovement (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcLinearMovement> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcLinearMovement> (entity->GetPropertyClassList (),tagname));
@@ -5841,6 +5874,7 @@ SWIGINTERN void delete_iPcActorMove(iPcActorMove *self){ if (self) self->DecRef 
 
 iPcActorMove *celCreateActorMove(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.actor.standard", tagname);
@@ -5855,6 +5889,7 @@ iPcActorMove *celCreateActorMove(iCelPlLayer *pl, iCelEntity *entity, const char
 
 iPcActorMove * celGetSetActorMove (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcActorMove> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcActorMove> (entity->GetPropertyClassList (),tagname));
@@ -5875,6 +5910,7 @@ iPcActorMove * celGetSetActorMove (iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcActorMove * celGetActorMove (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcActorMove> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcActorMove> (entity->GetPropertyClassList (),tagname));
@@ -5897,6 +5933,7 @@ SWIGINTERN void delete_iPcActorAnalog(iPcActorAnalog *self){ if (self) self->Dec
 
 iPcActorAnalog *celCreateActorAnalog(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.actor.analog", tagname);
@@ -5911,6 +5948,7 @@ iPcActorAnalog *celCreateActorAnalog(iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcActorAnalog * celGetSetActorAnalog (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcActorAnalog> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcActorAnalog> (entity->GetPropertyClassList (),tagname));
@@ -5931,6 +5969,7 @@ iPcActorAnalog * celGetSetActorAnalog (iCelPlLayer *pl, iCelEntity *entity, cons
 
 iPcActorAnalog * celGetActorAnalog (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcActorAnalog> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcActorAnalog> (entity->GetPropertyClassList (),tagname));
@@ -5983,6 +6022,7 @@ SWIGINTERN void delete_iPcDefaultCamera(iPcDefaultCamera *self){ if (self) self-
 
 iPcDefaultCamera *celCreateDefaultCamera(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pccamera.old", tagname);
@@ -5997,6 +6037,7 @@ iPcDefaultCamera *celCreateDefaultCamera(iCelPlLayer *pl, iCelEntity *entity, co
 
 iPcDefaultCamera * celGetSetDefaultCamera (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcDefaultCamera> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcDefaultCamera> (entity->GetPropertyClassList (),tagname));
@@ -6017,6 +6058,7 @@ iPcDefaultCamera * celGetSetDefaultCamera (iCelPlLayer *pl, iCelEntity *entity, 
 
 iPcDefaultCamera * celGetDefaultCamera (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcDefaultCamera> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcDefaultCamera> (entity->GetPropertyClassList (),tagname));
@@ -6042,6 +6084,7 @@ SWIGINTERN void delete_iPcSimpleCamera(iPcSimpleCamera *self){ if (self) self->D
 
 iPcSimpleCamera *celCreateSimpleCamera(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pccamera.simple", tagname);
@@ -6056,6 +6099,7 @@ iPcSimpleCamera *celCreateSimpleCamera(iCelPlLayer *pl, iCelEntity *entity, cons
 
 iPcSimpleCamera * celGetSetSimpleCamera (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSimpleCamera> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcSimpleCamera> (entity->GetPropertyClassList (),tagname));
@@ -6076,6 +6120,7 @@ iPcSimpleCamera * celGetSetSimpleCamera (iCelPlLayer *pl, iCelEntity *entity, co
 
 iPcSimpleCamera * celGetSimpleCamera (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSimpleCamera> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcSimpleCamera> (entity->GetPropertyClassList (),tagname));
@@ -6098,6 +6143,7 @@ SWIGINTERN void delete_iPcNewCamera(iPcNewCamera *self){ if (self) self->DecRef 
 
 iPcNewCamera *celCreateNewCamera(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pccamera.standard", tagname);
@@ -6112,6 +6158,7 @@ iPcNewCamera *celCreateNewCamera(iCelPlLayer *pl, iCelEntity *entity, const char
 
 iPcNewCamera * celGetSetNewCamera (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcNewCamera> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcNewCamera> (entity->GetPropertyClassList (),tagname));
@@ -6132,6 +6179,7 @@ iPcNewCamera * celGetSetNewCamera (iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcNewCamera * celGetNewCamera (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcNewCamera> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcNewCamera> (entity->GetPropertyClassList (),tagname));
@@ -6171,6 +6219,7 @@ SWIGINTERN void delete_iPcMeshSelect(iPcMeshSelect *self){ if (self) self->DecRe
 
 iPcMeshSelect *celCreateMeshSelect(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcobject.mesh.select", tagname);
@@ -6185,6 +6234,7 @@ iPcMeshSelect *celCreateMeshSelect(iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcMeshSelect * celGetSetMeshSelect (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMeshSelect> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMeshSelect> (entity->GetPropertyClassList (),tagname));
@@ -6205,6 +6255,7 @@ iPcMeshSelect * celGetSetMeshSelect (iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcMeshSelect * celGetMeshSelect (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMeshSelect> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMeshSelect> (entity->GetPropertyClassList (),tagname));
@@ -6236,6 +6287,7 @@ SWIGINTERN void delete_iPcMesh(iPcMesh *self){ if (self) self->DecRef (); }
 
 iPcMesh *celCreateMesh(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcobject.mesh", tagname);
@@ -6250,6 +6302,7 @@ iPcMesh *celCreateMesh(iCelPlLayer *pl, iCelEntity *entity, const char* tagname 
 
 iPcMesh * celGetSetMesh (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMesh> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMesh> (entity->GetPropertyClassList (),tagname));
@@ -6270,6 +6323,7 @@ iPcMesh * celGetSetMesh (iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcMesh * celGetMesh (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMesh> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMesh> (entity->GetPropertyClassList (),tagname));
@@ -6292,6 +6346,7 @@ SWIGINTERN void delete_iPcTimer(iPcTimer *self){ if (self) self->DecRef (); }
 
 iPcTimer *celCreateTimer(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pctools.timer", tagname);
@@ -6306,6 +6361,7 @@ iPcTimer *celCreateTimer(iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcTimer * celGetSetTimer (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTimer> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcTimer> (entity->GetPropertyClassList (),tagname));
@@ -6326,6 +6382,7 @@ iPcTimer * celGetSetTimer (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcTimer * celGetTimer (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTimer> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcTimer> (entity->GetPropertyClassList (),tagname));
@@ -6348,6 +6405,7 @@ SWIGINTERN void delete_iPcTrigger(iPcTrigger *self){ if (self) self->DecRef (); 
 
 iPcTrigger *celCreateTrigger(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pclogic.trigger", tagname);
@@ -6362,6 +6420,7 @@ iPcTrigger *celCreateTrigger(iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcTrigger * celGetSetTrigger (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTrigger> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcTrigger> (entity->GetPropertyClassList (),tagname));
@@ -6382,6 +6441,7 @@ iPcTrigger * celGetSetTrigger (iCelPlLayer *pl, iCelEntity *entity, const char* 
 
 iPcTrigger * celGetTrigger (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTrigger> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcTrigger> (entity->GetPropertyClassList (),tagname));
@@ -6405,6 +6465,7 @@ SWIGINTERN void delete_iPcProjectile(iPcProjectile *self){ if (self) self->DecRe
 
 iPcProjectile *celCreateProjectile(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.projectile", tagname);
@@ -6419,6 +6480,7 @@ iPcProjectile *celCreateProjectile(iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcProjectile * celGetSetProjectile (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcProjectile> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcProjectile> (entity->GetPropertyClassList (),tagname));
@@ -6439,6 +6501,7 @@ iPcProjectile * celGetSetProjectile (iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcProjectile * celGetProjectile (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcProjectile> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcProjectile> (entity->GetPropertyClassList (),tagname));
@@ -6464,6 +6527,7 @@ SWIGINTERN void delete_iPcSolid(iPcSolid *self){ if (self) self->DecRef (); }
 
 iPcSolid *celCreateSolid(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.solid", tagname);
@@ -6478,6 +6542,7 @@ iPcSolid *celCreateSolid(iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcSolid * celGetSetSolid (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSolid> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcSolid> (entity->GetPropertyClassList (),tagname));
@@ -6498,6 +6563,7 @@ iPcSolid * celGetSetSolid (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcSolid * celGetSolid (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSolid> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcSolid> (entity->GetPropertyClassList (),tagname));
@@ -6530,6 +6596,7 @@ SWIGINTERN void delete_iPcGravity(iPcGravity *self){ if (self) self->DecRef (); 
 
 iPcGravity *celCreateGravity(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.gravity", tagname);
@@ -6544,6 +6611,7 @@ iPcGravity *celCreateGravity(iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcGravity * celGetSetGravity (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcGravity> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcGravity> (entity->GetPropertyClassList (),tagname));
@@ -6564,6 +6632,7 @@ iPcGravity * celGetSetGravity (iCelPlLayer *pl, iCelEntity *entity, const char* 
 
 iPcGravity * celGetGravity (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcGravity> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcGravity> (entity->GetPropertyClassList (),tagname));
@@ -6588,6 +6657,7 @@ SWIGINTERN void delete_iPcMovable(iPcMovable *self){ if (self) self->DecRef (); 
 
 iPcMovable *celCreateMovable(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.movable", tagname);
@@ -6602,6 +6672,7 @@ iPcMovable *celCreateMovable(iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcMovable * celGetSetMovable (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMovable> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMovable> (entity->GetPropertyClassList (),tagname));
@@ -6622,6 +6693,7 @@ iPcMovable * celGetSetMovable (iCelPlLayer *pl, iCelEntity *entity, const char* 
 
 iPcMovable * celGetMovable (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMovable> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMovable> (entity->GetPropertyClassList (),tagname));
@@ -6652,6 +6724,7 @@ SWIGINTERN void delete_iPcInventory(iPcInventory *self){ if (self) self->DecRef 
 
 iPcInventory *celCreateInventory(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pctools.inventory", tagname);
@@ -6666,6 +6739,7 @@ iPcInventory *celCreateInventory(iCelPlLayer *pl, iCelEntity *entity, const char
 
 iPcInventory * celGetSetInventory (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcInventory> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcInventory> (entity->GetPropertyClassList (),tagname));
@@ -6686,6 +6760,7 @@ iPcInventory * celGetSetInventory (iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcInventory * celGetInventory (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcInventory> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcInventory> (entity->GetPropertyClassList (),tagname));
@@ -6708,6 +6783,7 @@ SWIGINTERN void delete_iPcCharacteristics(iPcCharacteristics *self){ if (self) s
 
 iPcCharacteristics *celCreateCharacteristics(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pctools.inventory.characteristics", tagname);
@@ -6722,6 +6798,7 @@ iPcCharacteristics *celCreateCharacteristics(iCelPlLayer *pl, iCelEntity *entity
 
 iPcCharacteristics * celGetSetCharacteristics (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCharacteristics> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcCharacteristics> (entity->GetPropertyClassList (),tagname));
@@ -6742,6 +6819,7 @@ iPcCharacteristics * celGetSetCharacteristics (iCelPlLayer *pl, iCelEntity *enti
 
 iPcCharacteristics * celGetCharacteristics (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCharacteristics> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcCharacteristics> (entity->GetPropertyClassList (),tagname));
@@ -6768,6 +6846,7 @@ SWIGINTERN void delete_iPcTooltip(iPcTooltip *self){ if (self) self->DecRef (); 
 
 iPcTooltip *celCreateToolTip(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pc2d.tooltip", tagname);
@@ -6782,6 +6861,7 @@ iPcTooltip *celCreateToolTip(iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcTooltip * celGetSetToolTip (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTooltip> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcTooltip> (entity->GetPropertyClassList (),tagname));
@@ -6802,6 +6882,7 @@ iPcTooltip * celGetSetToolTip (iCelPlLayer *pl, iCelEntity *entity, const char* 
 
 iPcTooltip * celGetToolTip (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcTooltip> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcTooltip> (entity->GetPropertyClassList (),tagname));
@@ -6830,6 +6911,7 @@ SWIGINTERN void delete_iPcSoundSource(iPcSoundSource *self){ if (self) self->Dec
 
 iPcSoundSource *celCreateSoundSource(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcsound.source", tagname);
@@ -6844,6 +6926,7 @@ iPcSoundSource *celCreateSoundSource(iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcSoundSource * celGetSetSoundSource (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSoundSource> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcSoundSource> (entity->GetPropertyClassList (),tagname));
@@ -6864,6 +6947,7 @@ iPcSoundSource * celGetSetSoundSource (iCelPlLayer *pl, iCelEntity *entity, cons
 
 iPcSoundSource * celGetSoundSource (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSoundSource> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcSoundSource> (entity->GetPropertyClassList (),tagname));
@@ -6884,6 +6968,7 @@ iPcSoundSource *scfQuery_iPcSoundSource (iCelPropertyClass *pc)
 
 iPcSoundListener *celCreateSoundListener(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcsound.listener", tagname);
@@ -6898,6 +6983,7 @@ iPcSoundListener *celCreateSoundListener(iCelPlLayer *pl, iCelEntity *entity, co
 
 iPcSoundListener * celGetSetSoundListener (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSoundListener> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcSoundListener> (entity->GetPropertyClassList (),tagname));
@@ -6918,6 +7004,7 @@ iPcSoundListener * celGetSetSoundListener (iCelPlLayer *pl, iCelEntity *entity, 
 
 iPcSoundListener * celGetSoundListener (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcSoundListener> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcSoundListener> (entity->GetPropertyClassList (),tagname));
@@ -7014,6 +7101,7 @@ SWIGINTERN bool iPcProperties___contains__(iPcProperties *self,char const *name)
 
 iPcProperties *celCreateProperties(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pctools.properties", tagname);
@@ -7028,6 +7116,7 @@ iPcProperties *celCreateProperties(iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcProperties * celGetSetProperties (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcProperties> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcProperties> (entity->GetPropertyClassList (),tagname));
@@ -7048,6 +7137,7 @@ iPcProperties * celGetSetProperties (iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcProperties * celGetProperties (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcProperties> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcProperties> (entity->GetPropertyClassList (),tagname));
@@ -7075,6 +7165,7 @@ SWIGINTERN void delete_iPcMover(iPcMover *self){ if (self) self->DecRef (); }
 
 iPcMover *celCreateMover(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcmove.mover", tagname);
@@ -7089,6 +7180,7 @@ iPcMover *celCreateMover(iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcMover * celGetSetMover (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMover> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMover> (entity->GetPropertyClassList (),tagname));
@@ -7109,6 +7201,7 @@ iPcMover * celGetSetMover (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcMover * celGetMover (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMover> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMover> (entity->GetPropertyClassList (),tagname));
@@ -7137,6 +7230,7 @@ SWIGINTERN void delete_iPcHover(iPcHover *self){ if (self) self->DecRef (); }
 
 iPcHover *celCreateHover(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcvehicle.hover", tagname);
@@ -7151,6 +7245,7 @@ iPcHover *celCreateHover(iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcHover * celGetSetHover (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcHover> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcHover> (entity->GetPropertyClassList (),tagname));
@@ -7171,6 +7266,7 @@ iPcHover * celGetSetHover (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcHover * celGetHover (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcHover> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcHover> (entity->GetPropertyClassList (),tagname));
@@ -7204,6 +7300,7 @@ SWIGINTERN void delete_iPcCraftController(iPcCraftController *self){ if (self) s
 
 iPcCraftController *celCreateCraftController(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcvehicle.craft", tagname);
@@ -7218,6 +7315,7 @@ iPcCraftController *celCreateCraftController(iCelPlLayer *pl, iCelEntity *entity
 
 iPcCraftController * celGetSetCraftController (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCraftController> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcCraftController> (entity->GetPropertyClassList (),tagname));
@@ -7238,6 +7336,7 @@ iPcCraftController * celGetSetCraftController (iCelPlLayer *pl, iCelEntity *enti
 
 iPcCraftController * celGetCraftController (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcCraftController> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcCraftController> (entity->GetPropertyClassList (),tagname));
@@ -7273,6 +7372,7 @@ SWIGINTERN void delete_iPcWheeled(iPcWheeled *self){ if (self) self->DecRef (); 
 
 iPcWheeled *celCreateWheeled(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcvehicle.wheeled", tagname);
@@ -7287,6 +7387,7 @@ iPcWheeled *celCreateWheeled(iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcWheeled * celGetSetWheeled (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcWheeled> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcWheeled> (entity->GetPropertyClassList (),tagname));
@@ -7307,6 +7408,7 @@ iPcWheeled * celGetSetWheeled (iCelPlLayer *pl, iCelEntity *entity, const char* 
 
 iPcWheeled * celGetWheeled (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcWheeled> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcWheeled> (entity->GetPropertyClassList (),tagname));
@@ -7329,6 +7431,7 @@ SWIGINTERN void delete_iPcMeshDeform(iPcMeshDeform *self){ if (self) self->DecRe
 
 iPcMeshDeform *celCreateMeshDeform(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pcobject.mesh.deform", tagname);
@@ -7343,6 +7446,7 @@ iPcMeshDeform *celCreateMeshDeform(iCelPlLayer *pl, iCelEntity *entity, const ch
 
 iPcMeshDeform * celGetSetMeshDeform (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMeshDeform> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcMeshDeform> (entity->GetPropertyClassList (),tagname));
@@ -7363,6 +7467,7 @@ iPcMeshDeform * celGetSetMeshDeform (iCelPlLayer *pl, iCelEntity *entity, const 
 
 iPcMeshDeform * celGetMeshDeform (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcMeshDeform> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcMeshDeform> (entity->GetPropertyClassList (),tagname));
@@ -7395,6 +7500,7 @@ SWIGINTERN void delete_iPcDamage(iPcDamage *self){ if (self) self->DecRef (); }
 
 iPcDamage *celCreateDamage(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pclogic.damage", tagname);
@@ -7409,6 +7515,7 @@ iPcDamage *celCreateDamage(iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcDamage * celGetSetDamage (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcDamage> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcDamage> (entity->GetPropertyClassList (),tagname));
@@ -7429,6 +7536,7 @@ iPcDamage * celGetSetDamage (iCelPlLayer *pl, iCelEntity *entity, const char* ta
 
 iPcDamage * celGetDamage (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcDamage> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcDamage> (entity->GetPropertyClassList (),tagname));
@@ -7453,6 +7561,7 @@ SWIGINTERN void delete_iPcQuest(iPcQuest *self){ if (self) self->DecRef (); }
 
 iPcQuest *celCreateQuest(iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0 ) 
 {
+  CS_ASSERT (entity != 0);
   csRef<iCelPropertyClass> pc;
   if (tagname)
     pc = pl->CreateTaggedPropertyClass(entity,"pclogic.quest", tagname);
@@ -7467,6 +7576,7 @@ iPcQuest *celCreateQuest(iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
 
 iPcQuest * celGetSetQuest (iCelPlLayer *pl, iCelEntity *entity, const char* tagname = 0)
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcQuest> pclm;
   if (tagname)
     pclm =    (celQueryPropertyClassTag<iPcQuest> (entity->GetPropertyClassList (),tagname));
@@ -7487,6 +7597,7 @@ iPcQuest * celGetSetQuest (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
 
 iPcQuest * celGetQuest (iCelEntity *entity, const char* tagname = 0 )
 {
+  CS_ASSERT (entity != 0);
   csRef<iPcQuest> pc;
   if (tagname)
     pc =    (celQueryPropertyClassTag<iPcQuest> (entity->GetPropertyClassList (),tagname));
