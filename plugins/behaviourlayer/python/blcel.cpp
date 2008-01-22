@@ -14066,14 +14066,15 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher(PyObject *SWI
   PyObject *resultobj = 0;
   iMessageChannel *arg1 = (iMessageChannel *) 0 ;
   iMessageSender *arg2 = (iMessageSender *) 0 ;
-  csStringID arg3 ;
+  char *arg3 = (char *) 0 ;
   SwigValueWrapper<csRef<iMessageDispatcher > > result;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
-  unsigned long val3 ;
-  int ecode3 = 0 ;
+  int res3 ;
+  char *buf3 = 0 ;
+  int alloc3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -14089,15 +14090,17 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher(PyObject *SWI
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageChannel_CreateMessageDispatcher" "', argument " "2"" of type '" "iMessageSender *""'"); 
   }
   arg2 = reinterpret_cast< iMessageSender * >(argp2);
-  ecode3 = SWIG_AsVal_unsigned_SS_long(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "iMessageChannel_CreateMessageDispatcher" "', argument " "3"" of type '" "csStringID""'");
-  } 
-  arg3 = static_cast< csStringID >(val3);
-  result = (arg1)->CreateMessageDispatcher(arg2,arg3);
+  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iMessageChannel_CreateMessageDispatcher" "', argument " "3"" of type '" "char const *""'");
+  }
+  arg3 = reinterpret_cast< char * >(buf3);
+  result = (arg1)->CreateMessageDispatcher(arg2,(char const *)arg3);
   resultobj = SWIG_NewPointerObj((new csRef<iMessageDispatcher >(static_cast< const csRef<iMessageDispatcher >& >(result))), SWIGTYPE_p_csRefTiMessageDispatcher_t, SWIG_POINTER_OWN |  0 );
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   return resultobj;
 fail:
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   return NULL;
 }
 
@@ -14295,6 +14298,187 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iMessageChannel_SendMessage__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iMessageChannel *arg1 = (iMessageChannel *) 0 ;
+  char *arg2 = (char *) 0 ;
+  iMessageSender *arg3 = (iMessageSender *) 0 ;
+  iCelParameterBlock *arg4 = (iCelParameterBlock *) 0 ;
+  iCelDataArray *arg5 = (iCelDataArray *) 0 ;
+  bool result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iMessageChannel_SendMessage",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iMessageChannel, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iMessageChannel_SendMessage" "', argument " "1"" of type '" "iMessageChannel *""'"); 
+  }
+  arg1 = reinterpret_cast< iMessageChannel * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageChannel_SendMessage" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iMessageSender, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iMessageChannel_SendMessage" "', argument " "3"" of type '" "iMessageSender *""'"); 
+  }
+  arg3 = reinterpret_cast< iMessageSender * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iMessageChannel_SendMessage" "', argument " "4"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg4 = reinterpret_cast< iCelParameterBlock * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5,SWIGTYPE_p_iCelDataArray, 0 |  0 );
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "iMessageChannel_SendMessage" "', argument " "5"" of type '" "iCelDataArray *""'"); 
+  }
+  arg5 = reinterpret_cast< iCelDataArray * >(argp5);
+  result = (bool)(arg1)->SendMessage((char const *)arg2,arg3,arg4,arg5);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iMessageChannel_SendMessage__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iMessageChannel *arg1 = (iMessageChannel *) 0 ;
+  char *arg2 = (char *) 0 ;
+  iMessageSender *arg3 = (iMessageSender *) 0 ;
+  iCelParameterBlock *arg4 = (iCelParameterBlock *) 0 ;
+  bool result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iMessageChannel_SendMessage",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iMessageChannel, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iMessageChannel_SendMessage" "', argument " "1"" of type '" "iMessageChannel *""'"); 
+  }
+  arg1 = reinterpret_cast< iMessageChannel * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageChannel_SendMessage" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iMessageSender, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iMessageChannel_SendMessage" "', argument " "3"" of type '" "iMessageSender *""'"); 
+  }
+  arg3 = reinterpret_cast< iMessageSender * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iMessageChannel_SendMessage" "', argument " "4"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg4 = reinterpret_cast< iCelParameterBlock * >(argp4);
+  result = (bool)(arg1)->SendMessage((char const *)arg2,arg3,arg4);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iMessageChannel_SendMessage(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[6];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 5); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iMessageChannel, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iMessageSender, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_iMessageChannel_SendMessage__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iMessageChannel, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iMessageSender, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            void *vptr = 0;
+            int res = SWIG_ConvertPtr(argv[4], &vptr, SWIGTYPE_p_iCelDataArray, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              return _wrap_iMessageChannel_SendMessage__SWIG_0(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iMessageChannel_SendMessage'.\n  Possible C/C++ prototypes are:\n    SendMessage(char const *,iMessageSender *,iCelParameterBlock *,iCelDataArray *)\n    SendMessage(char const *,iMessageSender *,iCelParameterBlock *)\n");
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_delete_iMessageChannel(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iMessageChannel *arg1 = (iMessageChannel *) 0 ;
@@ -14473,11 +14657,11 @@ SWIGINTERN PyObject *iMessageSender_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_iMessageDispatcher_SendMessage(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iMessageDispatcher_SendMessage__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iMessageDispatcher *arg1 = (iMessageDispatcher *) 0 ;
-  iCelDataArray *arg2 = (iCelDataArray *) 0 ;
-  iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
+  iCelParameterBlock *arg2 = (iCelParameterBlock *) 0 ;
+  iCelDataArray *arg3 = (iCelDataArray *) 0 ;
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -14495,20 +14679,101 @@ SWIGINTERN PyObject *_wrap_iMessageDispatcher_SendMessage(PyObject *SWIGUNUSEDPA
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iMessageDispatcher_SendMessage" "', argument " "1"" of type '" "iMessageDispatcher *""'"); 
   }
   arg1 = reinterpret_cast< iMessageDispatcher * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataArray, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageDispatcher_SendMessage" "', argument " "2"" of type '" "iCelDataArray *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageDispatcher_SendMessage" "', argument " "2"" of type '" "iCelParameterBlock *""'"); 
   }
-  arg2 = reinterpret_cast< iCelDataArray * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelDataArray, 0 |  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iMessageDispatcher_SendMessage" "', argument " "3"" of type '" "iCelParameterBlock *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iMessageDispatcher_SendMessage" "', argument " "3"" of type '" "iCelDataArray *""'"); 
   }
-  arg3 = reinterpret_cast< iCelParameterBlock * >(argp3);
+  arg3 = reinterpret_cast< iCelDataArray * >(argp3);
   result = (bool)(arg1)->SendMessage(arg2,arg3);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iMessageDispatcher_SendMessage__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iMessageDispatcher *arg1 = (iMessageDispatcher *) 0 ;
+  iCelParameterBlock *arg2 = (iCelParameterBlock *) 0 ;
+  bool result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iMessageDispatcher_SendMessage",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iMessageDispatcher, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iMessageDispatcher_SendMessage" "', argument " "1"" of type '" "iMessageDispatcher *""'"); 
+  }
+  arg1 = reinterpret_cast< iMessageDispatcher * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iMessageDispatcher_SendMessage" "', argument " "2"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
+  result = (bool)(arg1)->SendMessage(arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iMessageDispatcher_SendMessage(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 3); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iMessageDispatcher, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_iMessageDispatcher_SendMessage__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iMessageDispatcher, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelDataArray, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_iMessageDispatcher_SendMessage__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iMessageDispatcher_SendMessage'.\n  Possible C/C++ prototypes are:\n    SendMessage(iCelParameterBlock *,iCelDataArray *)\n    SendMessage(iCelParameterBlock *)\n");
   return NULL;
 }
 
@@ -18481,7 +18746,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage__SWIG_0__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iCelEntityList *arg2 = (iCelEntityList *) 0 ;
@@ -18534,17 +18799,274 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage__SWIG_0(PyObject *self, PyObject *args) {
   PyObject *resultobj;
   PyObject *varargs;
   PyObject *newargs;
   
   newargs = PyTuple_GetSlice(args,0,4);
   varargs = PyTuple_GetSlice(args,4,PyTuple_Size(args)+1);
-  resultobj = _wrap_iCelPlLayer_SendMessage__varargs__(self,newargs,varargs);
+  resultobj = _wrap_iCelPlLayer_SendMessage__SWIG_0__varargs__(self,newargs,varargs);
   Py_XDECREF(newargs);
   Py_XDECREF(varargs);
   return resultobj;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  char *arg2 = (char *) 0 ;
+  iMessageSender *arg3 = (iMessageSender *) 0 ;
+  iCelEntityList *arg4 = (iCelEntityList *) 0 ;
+  iCelParameterBlock *arg5 = (iCelParameterBlock *) 0 ;
+  iCelDataArray *arg6 = (iCelDataArray *) 0 ;
+  int result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
+  void *argp6 = 0 ;
+  int res6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_SendMessage",6,6,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_SendMessage" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_SendMessage" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iMessageSender, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_SendMessage" "', argument " "3"" of type '" "iMessageSender *""'"); 
+  }
+  arg3 = reinterpret_cast< iMessageSender * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_iCelEntityList, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iCelPlLayer_SendMessage" "', argument " "4"" of type '" "iCelEntityList *""'"); 
+  }
+  arg4 = reinterpret_cast< iCelEntityList * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "iCelPlLayer_SendMessage" "', argument " "5"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg5 = reinterpret_cast< iCelParameterBlock * >(argp5);
+  res6 = SWIG_ConvertPtr(obj5, &argp6,SWIGTYPE_p_iCelDataArray, 0 |  0 );
+  if (!SWIG_IsOK(res6)) {
+    SWIG_exception_fail(SWIG_ArgError(res6), "in method '" "iCelPlLayer_SendMessage" "', argument " "6"" of type '" "iCelDataArray *""'"); 
+  }
+  arg6 = reinterpret_cast< iCelDataArray * >(argp6);
+  result = (int)(arg1)->SendMessage((char const *)arg2,arg3,arg4,arg5,arg6);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  char *arg2 = (char *) 0 ;
+  iMessageSender *arg3 = (iMessageSender *) 0 ;
+  iCelEntityList *arg4 = (iCelEntityList *) 0 ;
+  iCelParameterBlock *arg5 = (iCelParameterBlock *) 0 ;
+  int result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_SendMessage",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_SendMessage" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_SendMessage" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iMessageSender, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_SendMessage" "', argument " "3"" of type '" "iMessageSender *""'"); 
+  }
+  arg3 = reinterpret_cast< iMessageSender * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_iCelEntityList, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iCelPlLayer_SendMessage" "', argument " "4"" of type '" "iCelEntityList *""'"); 
+  }
+  arg4 = reinterpret_cast< iCelEntityList * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "iCelPlLayer_SendMessage" "', argument " "5"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg5 = reinterpret_cast< iCelParameterBlock * >(argp5);
+  result = (int)(arg1)->SendMessage((char const *)arg2,arg3,arg4,arg5);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_SendMessage(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[7];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 6); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc >= 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iCelEntityList, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_AsCharPtrAndSize(argv[2], 0, NULL, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            if (argc <= 4) {
+              return _wrap_iCelPlLayer_SendMessage__SWIG_0(self, args);
+            }
+            return _wrap_iCelPlLayer_SendMessage__SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iMessageSender, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_iCelEntityList, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            void *vptr = 0;
+            int res = SWIG_ConvertPtr(argv[4], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              return _wrap_iCelPlLayer_SendMessage__SWIG_2(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iMessageSender, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_iCelEntityList, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            void *vptr = 0;
+            int res = SWIG_ConvertPtr(argv[4], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+            _v = SWIG_CheckState(res);
+            if (_v) {
+              void *vptr = 0;
+              int res = SWIG_ConvertPtr(argv[5], &vptr, SWIGTYPE_p_iCelDataArray, 0);
+              _v = SWIG_CheckState(res);
+              if (_v) {
+                return _wrap_iCelPlLayer_SendMessage__SWIG_1(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelPlLayer_SendMessage'.\n  Possible C/C++ prototypes are:\n    SendMessage(iCelEntityList *,char const *,iCelParameterBlock *,...)\n    SendMessage(char const *,iMessageSender *,iCelEntityList *,iCelParameterBlock *,iCelDataArray *)\n    SendMessage(char const *,iMessageSender *,iCelEntityList *,iCelParameterBlock *)\n");
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_QueryMessageSender(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iMessageSender *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_QueryMessageSender",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_QueryMessageSender" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  result = (iMessageSender *)(arg1)->QueryMessageSender();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iMessageSender, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
@@ -103863,6 +104385,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iMessageChannel_RemoveMessageDispatcher", _wrap_iMessageChannel_RemoveMessageDispatcher, METH_VARARGS, NULL},
 	 { (char *)"iMessageChannel_Subscribe", _wrap_iMessageChannel_Subscribe, METH_VARARGS, NULL},
 	 { (char *)"iMessageChannel_Unsubscribe", _wrap_iMessageChannel_Unsubscribe, METH_VARARGS, NULL},
+	 { (char *)"iMessageChannel_SendMessage", _wrap_iMessageChannel_SendMessage, METH_VARARGS, NULL},
 	 { (char *)"delete_iMessageChannel", _wrap_delete_iMessageChannel, METH_VARARGS, NULL},
 	 { (char *)"iMessageChannel_swigregister", iMessageChannel_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iMessageReceiver_ReceiveMessage", _wrap_iMessageReceiver_ReceiveMessage, METH_VARARGS, NULL},
@@ -103956,6 +104479,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPlLayer_AddScope", _wrap_iCelPlLayer_AddScope, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_GetClassEntitiesList", _wrap_iCelPlLayer_GetClassEntitiesList, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_SendMessage", _wrap_iCelPlLayer_SendMessage, METH_VARARGS, NULL},
+	 { (char *)"iCelPlLayer_QueryMessageSender", _wrap_iCelPlLayer_QueryMessageSender, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityTemplateCount_get", _wrap_iCelPlLayer_EntityTemplateCount_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityCount_get", _wrap_iCelPlLayer_EntityCount_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityAddonAllowed_set", _wrap_iCelPlLayer_EntityAddonAllowed_set, METH_VARARGS, NULL},
