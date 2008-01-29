@@ -7800,6 +7800,7 @@ class pyPcCommon : public scfImplementationExt1<pyPcCommon, PcCommon, iPcPython>
         }
         virtual PyObject *GetPythonObject()
         {
+           Py_INCREF(pySelf);
            return pySelf;
         }
 
@@ -9114,38 +9115,12 @@ char const *SwigDirector_pyPcCommon::GetPropertyOrActionDescription(csStringID a
 }
 
 
-void SwigDirector_pyPcCommon::PropertyClassesHaveChanged() {
-  if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
-  }
-#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 27;
-  const char * const swig_method_name = "PropertyClassesHaveChanged";
-  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
-  swig::PyObject_var args = PyTuple_New(0);
-  swig::PyObject_var result = PyObject_Call(method, (PyObject*) args, NULL);
-#else
-  swig::PyObject_var swig_method_name = PyString_FromString((char *)"PropertyClassesHaveChanged");
-  swig::PyObject_var result = PyObject_CallMethodObjArgs(swig_get_self(), (PyObject *) swig_method_name, NULL);
-#endif
-  if (result == NULL) {
-    PyObject *error = PyErr_Occurred();
-    {
-      if (error != NULL) {
-        PyErr_Print ();
-        throw Swig::DirectorMethodException();
-      }
-    }
-  }
-}
-
-
 void SwigDirector_pyPcCommon::TickEveryFrame() {
   if (!swig_get_self()) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 28;
+  const size_t swig_method_index = 27;
   const char * const swig_method_name = "TickEveryFrame";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var args = PyTuple_New(0);
@@ -9171,7 +9146,7 @@ void SwigDirector_pyPcCommon::TickOnce() {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 29;
+  const size_t swig_method_index = 28;
   const char * const swig_method_name = "TickOnce";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var args = PyTuple_New(0);
@@ -9199,7 +9174,7 @@ void SwigDirector_pyPcCommon::MessageDispatcherRemoved(iMessageDispatcher *dispa
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 30;
+  const size_t swig_method_index = 29;
   const char * const swig_method_name = "MessageDispatcherRemoved";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0, NULL);
@@ -9229,7 +9204,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, long arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 31;
+  const size_t swig_method_index = 30;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9266,7 +9241,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, float arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 32;
+  const size_t swig_method_index = 31;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9303,7 +9278,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, bool arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 33;
+  const size_t swig_method_index = 32;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9340,7 +9315,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, char const *arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 34;
+  const size_t swig_method_index = 33;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9377,7 +9352,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csVector2 const &arg1
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 35;
+  const size_t swig_method_index = 34;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9414,7 +9389,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csVector3 const &arg1
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 36;
+  const size_t swig_method_index = 35;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9451,7 +9426,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csColor const &arg1) 
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 37;
+  const size_t swig_method_index = 36;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9488,7 +9463,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iCelPropertyClass *pc
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 38;
+  const size_t swig_method_index = 37;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9525,7 +9500,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iCelEntity *entity) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 39;
+  const size_t swig_method_index = 38;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9562,7 +9537,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iBase *ibase) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 40;
+  const size_t swig_method_index = 39;
   const char * const swig_method_name = "SetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9599,7 +9574,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, long &l) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 41;
+  const size_t swig_method_index = 40;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9636,7 +9611,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, float &f) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 42;
+  const size_t swig_method_index = 41;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9673,7 +9648,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, bool &b) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 43;
+  const size_t swig_method_index = 42;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9710,7 +9685,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, char const *&arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 44;
+  const size_t swig_method_index = 43;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9747,7 +9722,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csVector2 &arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 45;
+  const size_t swig_method_index = 44;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9784,7 +9759,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csVector3 &arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 46;
+  const size_t swig_method_index = 45;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9821,7 +9796,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csColor &arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 47;
+  const size_t swig_method_index = 46;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9858,7 +9833,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iCelPropertyClass *&a
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 48;
+  const size_t swig_method_index = 47;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9895,7 +9870,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iCelEntity *&arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 49;
+  const size_t swig_method_index = 48;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9932,7 +9907,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iBase *&arg1) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 50;
+  const size_t swig_method_index = 49;
   const char * const swig_method_name = "GetPropertyIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1, NULL);
@@ -9971,7 +9946,7 @@ bool SwigDirector_pyPcCommon::PerformActionIndexed(int arg0, iCelParameterBlock 
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 51;
+  const size_t swig_method_index = 50;
   const char * const swig_method_name = "PerformActionIndexed";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1,(PyObject *)obj2, NULL);
@@ -103371,8 +103346,6 @@ SWIGINTERN PyObject *_wrap_pyPcCommon_PropertyClassesHaveChanged(PyObject *SWIGU
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  Swig::Director *director = 0;
-  bool upcall = false;
   
   if(!PyArg_UnpackTuple(args,(char *)"pyPcCommon_PropertyClassesHaveChanged",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_pyPcCommon, 0 |  0 );
@@ -103380,17 +103353,7 @@ SWIGINTERN PyObject *_wrap_pyPcCommon_PropertyClassesHaveChanged(PyObject *SWIGU
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "pyPcCommon_PropertyClassesHaveChanged" "', argument " "1"" of type '" "pyPcCommon *""'"); 
   }
   arg1 = reinterpret_cast< pyPcCommon * >(argp1);
-  director = SWIG_DIRECTOR_CAST(arg1);
-  upcall = (director && (director->swig_get_self()==obj0));
-  try {
-    if (upcall) {
-      (arg1)->pyPcCommon::PropertyClassesHaveChanged();
-    } else {
-      (arg1)->PropertyClassesHaveChanged();
-    }
-  } catch (Swig::DirectorException&) {
-    SWIG_fail;
-  }
+  (arg1)->PropertyClassesHaveChanged();
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
