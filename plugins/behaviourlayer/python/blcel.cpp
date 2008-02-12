@@ -3968,8 +3968,8 @@ namespace Swig {
 #define SWIGTYPE_p_uint16_t swig_types[996]
 #define SWIGTYPE_p_uint32_t swig_types[997]
 #define SWIGTYPE_p_uint64_t swig_types[998]
-#define SWIGTYPE_p_uint8_t swig_types[999]
-#define SWIGTYPE_p_uint_least64_t swig_types[1000]
+#define SWIGTYPE_p_uint_least64_t swig_types[999]
+#define SWIGTYPE_p_unsigned_char swig_types[1000]
 #define SWIGTYPE_p_unsigned_int swig_types[1001]
 #define SWIGTYPE_p_unsigned_long swig_types[1002]
 #define SWIGTYPE_p_void swig_types[1003]
@@ -4573,6 +4573,22 @@ SWIG_AsVal_bool (PyObject *obj, bool *val)
 
 
 SWIGINTERN int
+SWIG_AsVal_unsigned_SS_char (PyObject * obj, unsigned char *val)
+{
+  unsigned long v;
+  int res = SWIG_AsVal_unsigned_SS_long (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v > UCHAR_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< unsigned char >(v);
+    }
+  }  
+  return res;
+}
+
+
+SWIGINTERN int
 SWIG_AsVal_float (PyObject * obj, float *val)
 {
   double v;
@@ -4613,6 +4629,13 @@ typedef union {
     } par;
   } celData_value;
 
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_unsigned_SS_char  (unsigned char value)
+{    
+  return SWIG_From_unsigned_SS_long  (value);
+}
 
 
   #define SWIG_From_double   PyFloat_FromDouble 
@@ -11778,8 +11801,8 @@ SWIGINTERN PyObject *_wrap_celData_Set__SWIG_2(PyObject *SWIGUNUSEDPARM(self), P
   uint8 arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
+  unsigned char val2 ;
+  int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -11789,19 +11812,11 @@ SWIGINTERN PyObject *_wrap_celData_Set__SWIG_2(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celData_Set" "', argument " "1"" of type '" "celData *""'"); 
   }
   arg1 = reinterpret_cast< celData * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_uint8_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celData_Set" "', argument " "2"" of type '" "uint8""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celData_Set" "', argument " "2"" of type '" "uint8""'");
-    } else {
-      uint8 * temp = reinterpret_cast< uint8 * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
+  ecode2 = SWIG_AsVal_unsigned_SS_char(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "celData_Set" "', argument " "2"" of type '" "uint8""'");
+  } 
+  arg2 = static_cast< uint8 >(val2);
   (arg1)->Set(arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -12263,19 +12278,6 @@ SWIGINTERN PyObject *_wrap_celData_Set(PyObject *self, PyObject *args) {
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celData, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_uint8_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_celData_Set__SWIG_2(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celData, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_int16_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
@@ -12386,6 +12388,21 @@ SWIGINTERN PyObject *_wrap_celData_Set(PyObject *self, PyObject *args) {
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_celData_Set__SWIG_15(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celData, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_unsigned_SS_char(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_celData_Set__SWIG_2(self, args);
       }
     }
   }
@@ -12723,8 +12740,8 @@ SWIGINTERN PyObject *_wrap_celData_value_ub_set(PyObject *SWIGUNUSEDPARM(self), 
   uint8 arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
+  unsigned char val2 ;
+  int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -12734,19 +12751,11 @@ SWIGINTERN PyObject *_wrap_celData_value_ub_set(PyObject *SWIGUNUSEDPARM(self), 
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celData_value_ub_set" "', argument " "1"" of type '" "celData_value *""'"); 
   }
   arg1 = reinterpret_cast< celData_value * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_uint8_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celData_value_ub_set" "', argument " "2"" of type '" "uint8""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celData_value_ub_set" "', argument " "2"" of type '" "uint8""'");
-    } else {
-      uint8 * temp = reinterpret_cast< uint8 * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
+  ecode2 = SWIG_AsVal_unsigned_SS_char(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "celData_value_ub_set" "', argument " "2"" of type '" "uint8""'");
+  } 
+  arg2 = static_cast< uint8 >(val2);
   if (arg1) (arg1)->ub = arg2;
   
   resultobj = SWIG_Py_Void();
@@ -12770,8 +12779,8 @@ SWIGINTERN PyObject *_wrap_celData_value_ub_get(PyObject *SWIGUNUSEDPARM(self), 
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celData_value_ub_get" "', argument " "1"" of type '" "celData_value *""'"); 
   }
   arg1 = reinterpret_cast< celData_value * >(argp1);
-  result =  ((arg1)->ub);
-  resultobj = SWIG_NewPointerObj((new uint8(static_cast< const uint8& >(result))), SWIGTYPE_p_uint8_t, SWIG_POINTER_OWN |  0 );
+  result = (uint8) ((arg1)->ub);
+  resultobj = SWIG_From_unsigned_SS_char(static_cast< unsigned char >(result));
   return resultobj;
 fail:
   return NULL;
@@ -24005,8 +24014,8 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock___setitem____SWIG_4(PyObject *SWIG
   int res1 = 0 ;
   unsigned long val2 ;
   int ecode2 = 0 ;
-  void *argp3 ;
-  int res3 = 0 ;
+  unsigned char val3 ;
+  int ecode3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -24022,19 +24031,11 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock___setitem____SWIG_4(PyObject *SWIG
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iCelParameterBlock___setitem__" "', argument " "2"" of type '" "csStringID""'");
   } 
   arg2 = static_cast< csStringID >(val2);
-  {
-    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_uint8_t,  0  | 0);
-    if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelParameterBlock___setitem__" "', argument " "3"" of type '" "uint8""'"); 
-    }  
-    if (!argp3) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelParameterBlock___setitem__" "', argument " "3"" of type '" "uint8""'");
-    } else {
-      uint8 * temp = reinterpret_cast< uint8 * >(argp3);
-      arg3 = *temp;
-      if (SWIG_IsNewObj(res3)) delete temp;
-    }
-  }
+  ecode3 = SWIG_AsVal_unsigned_SS_char(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "iCelParameterBlock___setitem__" "', argument " "3"" of type '" "uint8""'");
+  } 
+  arg3 = static_cast< uint8 >(val3);
   iCelParameterBlock___setitem____SWIG_4(arg1,arg2,arg3);
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -24473,25 +24474,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock___setitem__(PyObject *self, PyObje
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_uint8_t, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_iCelParameterBlock___setitem____SWIG_4(self, args);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_unsigned_SS_long(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
         int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_uint16_t, 0);
         _v = SWIG_CheckState(res);
         if (_v) {
@@ -24596,6 +24578,27 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock___setitem__(PyObject *self, PyObje
         _v = SWIG_CheckState(res);
         if (_v) {
           return _wrap_iCelParameterBlock___setitem____SWIG_13(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_unsigned_SS_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_unsigned_SS_char(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_iCelParameterBlock___setitem____SWIG_4(self, args);
         }
       }
     }
@@ -112205,8 +112208,8 @@ static swig_type_info _swigt__p_scfInterfaceMetadataList = {"_p_scfInterfaceMeta
 static swig_type_info _swigt__p_uint16_t = {"_p_uint16_t", "uint16_t *|uint16 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint32_t = {"_p_uint32_t", "uint32_t *|uint32 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uintmax_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_uint8_t = {"_p_uint8_t", "uint8_t *|uint8 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint_least64_t = {"_p_uint_least64_t", "uint_least64_t *|ulonglong *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|uint8 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "unsigned int *|uint *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_long = {"_p_unsigned_long", "unsigned long *|csStringID *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
@@ -113212,8 +113215,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_uint16_t,
   &_swigt__p_uint32_t,
   &_swigt__p_uint64_t,
-  &_swigt__p_uint8_t,
   &_swigt__p_uint_least64_t,
+  &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
   &_swigt__p_unsigned_long,
   &_swigt__p_void,
@@ -114219,8 +114222,8 @@ static swig_cast_info _swigc__p_scfInterfaceMetadataList[] = {  {&_swigt__p_scfI
 static swig_cast_info _swigc__p_uint16_t[] = {  {&_swigt__p_uint16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint32_t[] = {  {&_swigt__p_uint32_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint64_t[] = {  {&_swigt__p_uint64_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_uint8_t[] = {  {&_swigt__p_uint8_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint_least64_t[] = {  {&_swigt__p_uint_least64_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_long[] = {  {&_swigt__p_unsigned_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
@@ -115226,8 +115229,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_uint16_t,
   _swigc__p_uint32_t,
   _swigc__p_uint64_t,
-  _swigc__p_uint8_t,
   _swigc__p_uint_least64_t,
+  _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,
   _swigc__p_unsigned_long,
   _swigc__p_void,
