@@ -5540,6 +5540,8 @@ SWIGINTERN csColor const &iBillboardManager_DefaultTextFgColor_get(iBillboardMan
 SWIGINTERN void iBillboardManager_DefaultTextBgColor_set(iBillboardManager *self,csColor const &_val){ self->SetDefaultTextBgColor(_val); }
 SWIGINTERN csColor const &iBillboardManager_DefaultTextBgColor_get(iBillboardManager *self){ return (const csColor&)(self->GetDefaultTextBgColor()); }
 SWIGINTERN iSector *iBillboardManager_Showroom_get(iBillboardManager *self){ return (iSector*)(self->GetShowroom()); }
+SWIGINTERN int iBillboardManager_scfGetVersion(){ return scfInterfaceTraits<iBillboardManager>::GetVersion(); }
+SWIGINTERN void delete_iBillboardManager(iBillboardManager *self){ if (self) self->DecRef (); }
 SWIGINTERN void iPcBillboard_BillboardName_set(iPcBillboard *self,char const *_val){ self->SetBillboardName(_val); }
 SWIGINTERN char const *iPcBillboard_BillboardName_get(iPcBillboard *self){ return (const char*)(self->GetBillboardName()); }
 SWIGINTERN iBillboard *iPcBillboard_Billboard_get(iPcBillboard *self){ return (iBillboard*)(self->GetBillboard()); }
@@ -42209,6 +42211,19 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iBillboardManager_scfGetVersion(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iBillboardManager_scfGetVersion",0,0)) SWIG_fail;
+  result = (int)iBillboardManager_scfGetVersion();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_delete_iBillboardManager(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iBillboardManager *arg1 = (iBillboardManager *) 0 ;
@@ -42222,7 +42237,7 @@ SWIGINTERN PyObject *_wrap_delete_iBillboardManager(PyObject *SWIGUNUSEDPARM(sel
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_iBillboardManager" "', argument " "1"" of type '" "iBillboardManager *""'"); 
   }
   arg1 = reinterpret_cast< iBillboardManager * >(argp1);
-  delete arg1;
+  delete_iBillboardManager(arg1);
   
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -106718,6 +106733,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iBillboardManager_DefaultTextBgColor_set", _wrap_iBillboardManager_DefaultTextBgColor_set, METH_VARARGS, NULL},
 	 { (char *)"iBillboardManager_DefaultTextBgColor_get", _wrap_iBillboardManager_DefaultTextBgColor_get, METH_VARARGS, NULL},
 	 { (char *)"iBillboardManager_Showroom_get", _wrap_iBillboardManager_Showroom_get, METH_VARARGS, NULL},
+	 { (char *)"iBillboardManager_scfGetVersion", _wrap_iBillboardManager_scfGetVersion, METH_VARARGS, NULL},
 	 { (char *)"delete_iBillboardManager", _wrap_delete_iBillboardManager, METH_VARARGS, NULL},
 	 { (char *)"iBillboardManager_swigregister", iBillboardManager_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iPcBillboard_SetBillboardName", _wrap_iPcBillboard_SetBillboardName, METH_VARARGS, NULL},
