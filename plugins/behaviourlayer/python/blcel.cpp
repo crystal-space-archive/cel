@@ -17017,6 +17017,93 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(PyObject *SWIG
   csVector3 *arg3 = 0 ;
   float arg4 ;
   bool arg5 ;
+  csStringID arg6 ;
+  SwigValueWrapper<csPtr<iCelEntityList > > result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  float val4 ;
+  int ecode4 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  unsigned long val6 ;
+  int ecode6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_FindNearbyEntities",6,6,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iSector, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "2"" of type '" "iSector *""'"); 
+  }
+  arg2 = reinterpret_cast< iSector * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csVector3,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  arg3 = reinterpret_cast< csVector3 * >(argp3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "4"" of type '" "float""'");
+  } 
+  arg4 = static_cast< float >(val4);
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
+  ecode6 = SWIG_AsVal_unsigned_SS_long(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "6"" of type '" "csStringID""'");
+  } 
+  arg6 = static_cast< csStringID >(val6);
+  result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5,arg6);
+  {
+    /*@SWIG:TYPEMAP_OUT_csRef_BODY@*/
+    csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
+    /*const csRef<iBase> ref = csRef<iBase>((iCelEntityList *)ref1);
+      if (!ref.IsValid())
+      {
+        Py_INCREF(Py_None);
+        resultobj = Py_None;
+      }
+      else
+      {
+        ref->IncRef();
+        resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref1, SWIG_TypeQuery("iCelEntityList" " *"), 1);
+      }*/
+    resultobj = _csRef_to_Python(csRef<iBase>(
+        (iCelEntityList *)ref), (void *)(iCelEntityList *)ref, "iCelEntityList" " *");
+    /*@SWIG@*/
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iSector *arg2 = (iSector *) 0 ;
+  csVector3 *arg3 = 0 ;
+  float arg4 ;
+  bool arg5 ;
   SwigValueWrapper<csPtr<iCelEntityList > > result;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -17088,7 +17175,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -17157,7 +17244,85 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iSector *arg2 = (iSector *) 0 ;
+  csBox3 *arg3 = 0 ;
+  bool arg4 ;
+  csStringID arg5 ;
+  SwigValueWrapper<csPtr<iCelEntityList > > result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  bool val4 ;
+  int ecode4 = 0 ;
+  unsigned long val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_FindNearbyEntities",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iSector, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "2"" of type '" "iSector *""'"); 
+  }
+  arg2 = reinterpret_cast< iSector * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csBox3,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csBox3 const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csBox3 const &""'"); 
+  }
+  arg3 = reinterpret_cast< csBox3 * >(argp3);
+  ecode4 = SWIG_AsVal_bool(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "4"" of type '" "bool""'");
+  } 
+  arg4 = static_cast< bool >(val4);
+  ecode5 = SWIG_AsVal_unsigned_SS_long(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "5"" of type '" "csStringID""'");
+  } 
+  arg5 = static_cast< csStringID >(val5);
+  result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3,arg4,arg5);
+  {
+    /*@SWIG:TYPEMAP_OUT_csRef_BODY@*/
+    csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
+    /*const csRef<iBase> ref = csRef<iBase>((iCelEntityList *)ref1);
+      if (!ref.IsValid())
+      {
+        Py_INCREF(Py_None);
+        resultobj = Py_None;
+      }
+      else
+      {
+        ref->IncRef();
+        resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref1, SWIG_TypeQuery("iCelEntityList" " *"), 1);
+      }*/
+    resultobj = _csRef_to_Python(csRef<iBase>(
+        (iCelEntityList *)ref), (void *)(iCelEntityList *)ref, "iCelEntityList" " *");
+    /*@SWIG@*/
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -17226,7 +17391,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -17286,7 +17451,97 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_6(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iSector *arg2 = (iSector *) 0 ;
+  csVector3 *arg3 = 0 ;
+  csVector3 *arg4 = 0 ;
+  bool arg5 ;
+  csStringID arg6 ;
+  SwigValueWrapper<csPtr<iCelEntityList > > result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  unsigned long val6 ;
+  int ecode6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_FindNearbyEntities",6,6,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iSector, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "2"" of type '" "iSector *""'"); 
+  }
+  arg2 = reinterpret_cast< iSector * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csVector3,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  arg3 = reinterpret_cast< csVector3 * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_csVector3,  0  | 0);
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "4"" of type '" "csVector3 const &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "4"" of type '" "csVector3 const &""'"); 
+  }
+  arg4 = reinterpret_cast< csVector3 * >(argp4);
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
+  ecode6 = SWIG_AsVal_unsigned_SS_long(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "iCelPlLayer_FindNearbyEntities" "', argument " "6"" of type '" "csStringID""'");
+  } 
+  arg6 = static_cast< csStringID >(val6);
+  result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5,arg6);
+  {
+    /*@SWIG:TYPEMAP_OUT_csRef_BODY@*/
+    csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
+    /*const csRef<iBase> ref = csRef<iBase>((iCelEntityList *)ref1);
+      if (!ref.IsValid())
+      {
+        Py_INCREF(Py_None);
+        resultobj = Py_None;
+      }
+      else
+      {
+        ref->IncRef();
+        resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref1, SWIG_TypeQuery("iCelEntityList" " *"), 1);
+      }*/
+    resultobj = _csRef_to_Python(csRef<iBase>(
+        (iCelEntityList *)ref), (void *)(iCelEntityList *)ref, "iCelEntityList" " *");
+    /*@SWIG@*/
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_7(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -17367,7 +17622,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_8(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -17441,12 +17696,12 @@ fail:
 
 SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObject *args) {
   int argc;
-  PyObject *argv[6];
+  PyObject *argv[7];
   int ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = PyObject_Length(args);
-  for (ii = 0; (ii < argc) && (ii < 5); ii++) {
+  for (ii = 0; (ii < argc) && (ii < 6); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 3) {
@@ -17462,7 +17717,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
         int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csBox3, 0);
         _v = SWIG_CheckState(res);
         if (_v) {
-          return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(self, args);
+          return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(self, args);
         }
       }
     }
@@ -17485,13 +17740,59 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
             _v = SWIG_CheckState(res);
           }
           if (_v) {
+            return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_csVector3, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_8(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_float(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
             return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(self, args);
           }
         }
       }
     }
   }
-  if (argc == 4) {
+  if (argc == 5) {
     int _v;
     void *vptr = 0;
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
@@ -17501,37 +17802,21 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
       int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_csVector3, 0);
-          _v = SWIG_CheckState(res);
-          if (_v) {
-            return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(self, args);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csBox3, 0);
         _v = SWIG_CheckState(res);
         if (_v) {
           {
-            int res = SWIG_AsVal_float(argv[3], NULL);
+            int res = SWIG_AsVal_bool(argv[3], NULL);
             _v = SWIG_CheckState(res);
           }
           if (_v) {
-            return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(self, args);
+            {
+              int res = SWIG_AsVal_unsigned_SS_long(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(self, args);
+            }
           }
         }
       }
@@ -17558,7 +17843,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(self, args);
+              return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_7(self, args);
             }
           }
         }
@@ -17588,7 +17873,77 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(self, args);
+              return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          int res = SWIG_ConvertPtr(argv[3], 0, SWIGTYPE_p_csVector3, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            {
+              int res = SWIG_AsVal_bool(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              {
+                int res = SWIG_AsVal_unsigned_SS_long(argv[5], NULL);
+                _v = SWIG_CheckState(res);
+              }
+              if (_v) {
+                return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_6(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_float(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_bool(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              {
+                int res = SWIG_AsVal_unsigned_SS_long(argv[5], NULL);
+                _v = SWIG_CheckState(res);
+              }
+              if (_v) {
+                return _wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(self, args);
+              }
             }
           }
         }
@@ -17597,7 +17952,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities(PyObject *self, PyObje
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelPlLayer_FindNearbyEntities'.\n  Possible C/C++ prototypes are:\n    FindNearbyEntities(iSector *,csVector3 const &,float,bool)\n    FindNearbyEntities(iSector *,csVector3 const &,float)\n    FindNearbyEntities(iSector *,csBox3 const &,bool)\n    FindNearbyEntities(iSector *,csBox3 const &)\n    FindNearbyEntities(iSector *,csVector3 const &,csVector3 const &,bool)\n    FindNearbyEntities(iSector *,csVector3 const &,csVector3 const &)\n");
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelPlLayer_FindNearbyEntities'.\n  Possible C/C++ prototypes are:\n    FindNearbyEntities(iSector *,csVector3 const &,float,bool,csStringID)\n    FindNearbyEntities(iSector *,csVector3 const &,float,bool)\n    FindNearbyEntities(iSector *,csVector3 const &,float)\n    FindNearbyEntities(iSector *,csBox3 const &,bool,csStringID)\n    FindNearbyEntities(iSector *,csBox3 const &,bool)\n    FindNearbyEntities(iSector *,csBox3 const &)\n    FindNearbyEntities(iSector *,csVector3 const &,csVector3 const &,bool,csStringID)\n    FindNearbyEntities(iSector *,csVector3 const &,csVector3 const &,bool)\n    FindNearbyEntities(iSector *,csVector3 const &,csVector3 const &)\n");
   return NULL;
 }
 
@@ -19594,7 +19949,85 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntityTracker *arg1 = (iCelEntityTracker *) 0 ;
+  iSector *arg2 = (iSector *) 0 ;
+  csVector3 *arg3 = 0 ;
+  float arg4 ;
+  csStringID arg5 ;
+  SwigValueWrapper<csPtr<iCelEntityList > > result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  float val4 ;
+  int ecode4 = 0 ;
+  unsigned long val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntityTracker_FindNearbyEntities",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntityTracker, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "1"" of type '" "iCelEntityTracker *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntityTracker * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iSector, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "2"" of type '" "iSector *""'"); 
+  }
+  arg2 = reinterpret_cast< iSector * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csVector3,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  arg3 = reinterpret_cast< csVector3 * >(argp3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "4"" of type '" "float""'");
+  } 
+  arg4 = static_cast< float >(val4);
+  ecode5 = SWIG_AsVal_unsigned_SS_long(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "iCelEntityTracker_FindNearbyEntities" "', argument " "5"" of type '" "csStringID""'");
+  } 
+  arg5 = static_cast< csStringID >(val5);
+  result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5);
+  {
+    /*@SWIG:TYPEMAP_OUT_csRef_BODY@*/
+    csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
+    /*const csRef<iBase> ref = csRef<iBase>((iCelEntityList *)ref1);
+      if (!ref.IsValid())
+      {
+        Py_INCREF(Py_None);
+        resultobj = Py_None;
+      }
+      else
+      {
+        ref->IncRef();
+        resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref1, SWIG_TypeQuery("iCelEntityList" " *"), 1);
+      }*/
+    resultobj = _csRef_to_Python(csRef<iBase>(
+        (iCelEntityList *)ref), (void *)(iCelEntityList *)ref, "iCelEntityList" " *");
+    /*@SWIG@*/
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelEntityTracker *arg1 = (iCelEntityTracker *) 0 ;
   iSector *arg2 = (iSector *) 0 ;
@@ -19659,6 +20092,77 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities(PyObject *SWIGUN
   }
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[6];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 5); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelEntityTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_float(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_iCelEntityTracker_FindNearbyEntities__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelEntityTracker, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iSector, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            int res = SWIG_AsVal_float(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_unsigned_SS_long(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              return _wrap_iCelEntityTracker_FindNearbyEntities__SWIG_0(self, args);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelEntityTracker_FindNearbyEntities'.\n  Possible C/C++ prototypes are:\n    FindNearbyEntities(iSector *,csVector3 const &,float,csStringID)\n    FindNearbyEntities(iSector *,csVector3 const &,float)\n");
   return NULL;
 }
 
@@ -66629,6 +67133,61 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcTrigger_MonitorClass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_MonitorClass",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_MonitorClass" "', argument " "1"" of type '" "iPcTrigger *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iPcTrigger_MonitorClass" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  (arg1)->MonitorClass((char const *)arg2);
+  resultobj = SWIG_Py_Void();
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_GetMonitorClass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  char *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_GetMonitorClass",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_GetMonitorClass" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (char *)((iPcTrigger const *)arg1)->GetMonitorClass();
+  resultobj = SWIG_FromCharPtr((const char *)result);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcTrigger_SetMonitorDelay(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrigger *arg1 = (iPcTrigger *) 0 ;
@@ -108069,6 +108628,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcTrigger_SetupTriggerAboveMesh", _wrap_iPcTrigger_SetupTriggerAboveMesh, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_MonitorEntity", _wrap_iPcTrigger_MonitorEntity, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_GetMonitorEntity", _wrap_iPcTrigger_GetMonitorEntity, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_MonitorClass", _wrap_iPcTrigger_MonitorClass, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_GetMonitorClass", _wrap_iPcTrigger_GetMonitorClass, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_SetMonitorDelay", _wrap_iPcTrigger_SetMonitorDelay, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_EnableMonitorInvisible", _wrap_iPcTrigger_EnableMonitorInvisible, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_EnableMessagesToSelf", _wrap_iPcTrigger_EnableMessagesToSelf, METH_VARARGS, NULL},
