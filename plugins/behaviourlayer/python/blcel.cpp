@@ -64539,6 +64539,48 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcMesh_MoveMesh__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcMesh *arg1 = (iPcMesh *) 0 ;
+  iPcMesh *arg2 = (iPcMesh *) 0 ;
+  csVector3 *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcMesh_MoveMesh",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcMesh, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcMesh_MoveMesh" "', argument " "1"" of type '" "iPcMesh *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcMesh * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iPcMesh, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iPcMesh_MoveMesh" "', argument " "2"" of type '" "iPcMesh *""'"); 
+  }
+  arg2 = reinterpret_cast< iPcMesh * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csVector3,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iPcMesh_MoveMesh" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iPcMesh_MoveMesh" "', argument " "3"" of type '" "csVector3 const &""'"); 
+  }
+  arg3 = reinterpret_cast< csVector3 * >(argp3);
+  (arg1)->MoveMesh(arg2,(csVector3 const &)*arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcMesh_MoveMesh(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[4];
@@ -64585,9 +64627,27 @@ SWIGINTERN PyObject *_wrap_iPcMesh_MoveMesh(PyObject *self, PyObject *args) {
       }
     }
   }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcMesh, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iPcMesh, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csVector3, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_iPcMesh_MoveMesh__SWIG_2(self, args);
+        }
+      }
+    }
+  }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcMesh_MoveMesh'.\n  Possible C/C++ prototypes are:\n    MoveMesh(iSector *,csVector3 const &)\n    MoveMesh(iSector *,char const *)\n");
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcMesh_MoveMesh'.\n  Possible C/C++ prototypes are:\n    MoveMesh(iSector *,csVector3 const &)\n    MoveMesh(iSector *,char const *)\n    MoveMesh(iPcMesh *,csVector3 const &)\n");
   return NULL;
 }
 
@@ -75317,6 +75377,37 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcInventory_FindEntity__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcInventory *arg1 = (iPcInventory *) 0 ;
+  csStringID arg2 ;
+  size_t result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned long val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcInventory_FindEntity",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcInventory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcInventory_FindEntity" "', argument " "1"" of type '" "iPcInventory const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcInventory * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_long(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcInventory_FindEntity" "', argument " "2"" of type '" "csStringID""'");
+  } 
+  arg2 = static_cast< csStringID >(val2);
+  result = ((iPcInventory const *)arg1)->FindEntity(arg2);
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcInventory_FindEntity(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3];
@@ -75347,6 +75438,21 @@ SWIGINTERN PyObject *_wrap_iPcInventory_FindEntity(PyObject *self, PyObject *arg
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcInventory, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
+      {
+        int res = SWIG_AsVal_unsigned_SS_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_iPcInventory_FindEntity__SWIG_2(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcInventory, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
       int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
@@ -75356,7 +75462,7 @@ SWIGINTERN PyObject *_wrap_iPcInventory_FindEntity(PyObject *self, PyObject *arg
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcInventory_FindEntity'.\n  Possible C/C++ prototypes are:\n    FindEntity(iCelEntity *)\n    FindEntity(char const *)\n");
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcInventory_FindEntity'.\n  Possible C/C++ prototypes are:\n    FindEntity(iCelEntity *)\n    FindEntity(char const *)\n    FindEntity(csStringID)\n");
   return NULL;
 }
 
@@ -96699,6 +96805,69 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPropertyChangeQuestTriggerFactory_SetOperationParameter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPropertyChangeQuestTriggerFactory *arg1 = (iPropertyChangeQuestTriggerFactory *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPropertyChangeQuestTriggerFactory_SetOperationParameter",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPropertyChangeQuestTriggerFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPropertyChangeQuestTriggerFactory_SetOperationParameter" "', argument " "1"" of type '" "iPropertyChangeQuestTriggerFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iPropertyChangeQuestTriggerFactory * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iPropertyChangeQuestTriggerFactory_SetOperationParameter" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  (arg1)->SetOperationParameter((char const *)arg2);
+  resultobj = SWIG_Py_Void();
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPropertyChangeQuestTriggerFactory_SetOnChangeOnly(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPropertyChangeQuestTriggerFactory *arg1 = (iPropertyChangeQuestTriggerFactory *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPropertyChangeQuestTriggerFactory_SetOnChangeOnly",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPropertyChangeQuestTriggerFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPropertyChangeQuestTriggerFactory_SetOnChangeOnly" "', argument " "1"" of type '" "iPropertyChangeQuestTriggerFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iPropertyChangeQuestTriggerFactory * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPropertyChangeQuestTriggerFactory_SetOnChangeOnly" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  (arg1)->SetOnChangeOnly(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_delete_iPropertyChangeQuestTriggerFactory(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPropertyChangeQuestTriggerFactory *arg1 = (iPropertyChangeQuestTriggerFactory *) 0 ;
@@ -112770,6 +112939,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPropertyChangeQuestTriggerFactory_SetEntityParameter", _wrap_iPropertyChangeQuestTriggerFactory_SetEntityParameter, METH_VARARGS, NULL},
 	 { (char *)"iPropertyChangeQuestTriggerFactory_SetPropertyParameter", _wrap_iPropertyChangeQuestTriggerFactory_SetPropertyParameter, METH_VARARGS, NULL},
 	 { (char *)"iPropertyChangeQuestTriggerFactory_SetValueParameter", _wrap_iPropertyChangeQuestTriggerFactory_SetValueParameter, METH_VARARGS, NULL},
+	 { (char *)"iPropertyChangeQuestTriggerFactory_SetOperationParameter", _wrap_iPropertyChangeQuestTriggerFactory_SetOperationParameter, METH_VARARGS, NULL},
+	 { (char *)"iPropertyChangeQuestTriggerFactory_SetOnChangeOnly", _wrap_iPropertyChangeQuestTriggerFactory_SetOnChangeOnly, METH_VARARGS, NULL},
 	 { (char *)"delete_iPropertyChangeQuestTriggerFactory", _wrap_delete_iPropertyChangeQuestTriggerFactory, METH_VARARGS, NULL},
 	 { (char *)"iPropertyChangeQuestTriggerFactory_swigregister", iPropertyChangeQuestTriggerFactory_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iMeshSelectQuestTriggerFactory_SetEntityParameter", _wrap_iMeshSelectQuestTriggerFactory_SetEntityParameter, METH_VARARGS, NULL},
