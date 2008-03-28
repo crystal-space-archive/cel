@@ -104257,6 +104257,39 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iActionQuestRewardFactory_SetClassParameter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iActionQuestRewardFactory *arg1 = (iActionQuestRewardFactory *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iActionQuestRewardFactory_SetClassParameter",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iActionQuestRewardFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iActionQuestRewardFactory_SetClassParameter" "', argument " "1"" of type '" "iActionQuestRewardFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iActionQuestRewardFactory * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iActionQuestRewardFactory_SetClassParameter" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  (arg1)->SetClassParameter((char const *)arg2);
+  resultobj = SWIG_Py_Void();
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iActionQuestRewardFactory_SetIDParameter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iActionQuestRewardFactory *arg1 = (iActionQuestRewardFactory *) 0 ;
@@ -118815,6 +118848,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_iMessageQuestRewardFactory", _wrap_delete_iMessageQuestRewardFactory, METH_VARARGS, NULL},
 	 { (char *)"iMessageQuestRewardFactory_swigregister", iMessageQuestRewardFactory_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iActionQuestRewardFactory_SetEntityParameter", _wrap_iActionQuestRewardFactory_SetEntityParameter, METH_VARARGS, NULL},
+	 { (char *)"iActionQuestRewardFactory_SetClassParameter", _wrap_iActionQuestRewardFactory_SetClassParameter, METH_VARARGS, NULL},
 	 { (char *)"iActionQuestRewardFactory_SetIDParameter", _wrap_iActionQuestRewardFactory_SetIDParameter, METH_VARARGS, NULL},
 	 { (char *)"iActionQuestRewardFactory_SetPropertyClassParameter", _wrap_iActionQuestRewardFactory_SetPropertyClassParameter, METH_VARARGS, NULL},
 	 { (char *)"iActionQuestRewardFactory_SetTagParameter", _wrap_iActionQuestRewardFactory_SetTagParameter, METH_VARARGS, NULL},
