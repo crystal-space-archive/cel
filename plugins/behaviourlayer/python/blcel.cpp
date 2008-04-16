@@ -4964,6 +4964,11 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
 		{
 		    switch((&ret)->type)
 		    {
+			case CEL_DATA_UBYTE:
+			{
+				obj = PyLong_FromUnsignedLong((unsigned long)(&ret)->value.ub);
+				break;
+			}
 			case CEL_DATA_FLOAT:
 				obj = PyFloat_FromDouble((float)(&ret)->value.f);
 				break;
@@ -4989,6 +4994,13 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
 				csVector3 *res;
 				res = new csVector3((&ret)->value.v.x,(&ret)->value.v.y,(&ret)->value.v.z);
 				obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+				break;
+			}
+			case CEL_DATA_VECTOR4:
+			{
+				csVector4 *res;
+				res = new csVector4((&ret)->value.v.x,(&ret)->value.v.y,(&ret)->value.v.z,(&ret)->value.v.w);
+				obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
 				break;
 			}
 			case CEL_DATA_ENTITY:
@@ -5026,6 +5038,13 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
 				obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
 				break;
 			}
+			case CEL_DATA_COLOR4:
+			{
+				csColor4 *res;
+				res = new csColor4((&ret)->value.col.red,(&ret)->value.col.green,(&ret)->value.col.blue,(&ret)->value.col.alpha);
+				obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+				break;
+			}
 			case CEL_DATA_WORD:
 			{
 				obj = SWIG_From_int((int)(&ret)->value.w);
@@ -5041,14 +5060,20 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
 				obj = PyLong_FromUnsignedLong((unsigned long)(&ret)->value.ul);
 				break;
 			}
+			case CEL_DATA_BYTE:
 			{
+				obj = SWIG_From_long((long)(&ret)->value.b);
 				break;
 			}
-			/* Still to be done (and some more) */
-			case CEL_DATA_BYTE:
 				/*(&ret)->value.b (int8)*/
 			case CEL_DATA_UWORD:
+			{
+				obj = PyLong_FromUnsignedLong((unsigned long)(&ret)->value.uw);
+				break;
+			}
+
 				/*(&ret)->value.uw (uint16)*/
+			/* Still to be done (and some more) */
 			case CEL_DATA_PARAMETER:
 				/*(&ret)->value.par (iString+celDataType)*/
 			default:
@@ -23837,6 +23862,11 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -23862,6 +23892,13 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -23899,6 +23936,13 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -23914,14 +23958,20 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -24029,6 +24079,11 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -24054,6 +24109,13 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -24091,6 +24153,13 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -24106,14 +24175,20 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -26302,6 +26377,11 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -26327,6 +26407,13 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -26364,6 +26451,13 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -26379,14 +26473,20 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -26494,6 +26594,11 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -26519,6 +26624,13 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -26556,6 +26668,13 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -26571,14 +26690,20 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -26872,6 +26997,11 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -26897,6 +27027,13 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -26934,6 +27071,13 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -26949,14 +27093,20 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -27064,6 +27214,11 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -27089,6 +27244,13 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -27126,6 +27288,13 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -27141,14 +27310,20 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -27416,6 +27591,11 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -27441,6 +27621,13 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -27478,6 +27665,13 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -27493,14 +27687,20 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -27623,6 +27823,11 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -27648,6 +27853,13 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -27685,6 +27897,13 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -27700,14 +27919,20 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -27977,6 +28202,11 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -28002,6 +28232,13 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -28039,6 +28276,13 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -28054,14 +28298,20 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
@@ -28169,6 +28419,11 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
     {
       switch(result->type)
       {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
       case CEL_DATA_FLOAT:
         obj = PyFloat_FromDouble((float)result->value.f);
         break;
@@ -28194,6 +28449,13 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
           csVector3 *res;
           res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
           break;
         }
       case CEL_DATA_ENTITY:
@@ -28231,6 +28493,13 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
           obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
           break;
         }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
       case CEL_DATA_WORD:
         {
           obj = SWIG_From_int((int)result->value.w);
@@ -28246,14 +28515,20 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
           obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
           break;
         }
+      case CEL_DATA_BYTE:
         {
+          obj = SWIG_From_long((long)result->value.b);
           break;
         }
-        /* Still to be done (and some more) */
-      case CEL_DATA_BYTE:
         /*result->value.b (int8)*/
       case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
         /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
       case CEL_DATA_PARAMETER:
         /*result->value.par (iString+celDataType)*/
       default:
