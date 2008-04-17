@@ -3016,42 +3016,42 @@ namespace Swig {
 #define SWIGTYPE_p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t swig_types[44]
 #define SWIGTYPE_p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t swig_types[45]
 #define SWIGTYPE_p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t swig_types[46]
-#define SWIGTYPE_p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t swig_types[47]
-#define SWIGTYPE_p_csBox3 swig_types[48]
-#define SWIGTYPE_p_csColliderWrapper swig_types[49]
-#define SWIGTYPE_p_csColor swig_types[50]
-#define SWIGTYPE_p_csColor4 swig_types[51]
-#define SWIGTYPE_p_csConfigFile swig_types[52]
-#define SWIGTYPE_p_csFlags swig_types[53]
-#define SWIGTYPE_p_csHashTcsStringBase_csStringBase_t swig_types[54]
-#define SWIGTYPE_p_csHashTcsStringFastT12_t_csStringFastT12_t_t swig_types[55]
-#define SWIGTYPE_p_csHashTint_unsigned_long_t swig_types[56]
-#define SWIGTYPE_p_csImageBase swig_types[57]
-#define SWIGTYPE_p_csImageMemory swig_types[58]
-#define SWIGTYPE_p_csInitializer swig_types[59]
-#define SWIGTYPE_p_csMatrix3 swig_types[60]
-#define SWIGTYPE_p_csOBB swig_types[61]
-#define SWIGTYPE_p_csObject swig_types[62]
-#define SWIGTYPE_p_csOrthoTransform swig_types[63]
-#define SWIGTYPE_p_csPath swig_types[64]
-#define SWIGTYPE_p_csPlane3 swig_types[65]
-#define SWIGTYPE_p_csProcAnimated swig_types[66]
-#define SWIGTYPE_p_csProcTexture swig_types[67]
-#define SWIGTYPE_p_csPtrTcelVariableParameterBlock_t swig_types[68]
-#define SWIGTYPE_p_csPtrTiBase_t swig_types[69]
-#define SWIGTYPE_p_csPtrTiCelDataBuffer_t swig_types[70]
-#define SWIGTYPE_p_csPtrTiCelEntityIterator_t swig_types[71]
-#define SWIGTYPE_p_csPtrTiQuestParameter_t swig_types[72]
-#define SWIGTYPE_p_csPtrTiQuestRewardFactory_t swig_types[73]
-#define SWIGTYPE_p_csPtrTiQuestReward_t swig_types[74]
-#define SWIGTYPE_p_csPtrTiQuestSeqOpFactory_t swig_types[75]
-#define SWIGTYPE_p_csPtrTiQuestSeqOp_t swig_types[76]
-#define SWIGTYPE_p_csPtrTiQuestTriggerFactory_t swig_types[77]
-#define SWIGTYPE_p_csPtrTiQuestTrigger_t swig_types[78]
-#define SWIGTYPE_p_csPtrTiQuest_t swig_types[79]
-#define SWIGTYPE_p_csPtrTiRigidBody_t swig_types[80]
-#define SWIGTYPE_p_csRefArrayTiMaterialWrapper_t swig_types[81]
-#define SWIGTYPE_p_csRefArrayTiObject_t swig_types[82]
+#define SWIGTYPE_p_csBox3 swig_types[47]
+#define SWIGTYPE_p_csColliderWrapper swig_types[48]
+#define SWIGTYPE_p_csColor swig_types[49]
+#define SWIGTYPE_p_csColor4 swig_types[50]
+#define SWIGTYPE_p_csConfigFile swig_types[51]
+#define SWIGTYPE_p_csFlags swig_types[52]
+#define SWIGTYPE_p_csHashTcsStringBase_csStringBase_t swig_types[53]
+#define SWIGTYPE_p_csHashTcsStringFastT12_t_csStringFastT12_t_t swig_types[54]
+#define SWIGTYPE_p_csHashTint_unsigned_long_t swig_types[55]
+#define SWIGTYPE_p_csImageBase swig_types[56]
+#define SWIGTYPE_p_csImageMemory swig_types[57]
+#define SWIGTYPE_p_csInitializer swig_types[58]
+#define SWIGTYPE_p_csMatrix3 swig_types[59]
+#define SWIGTYPE_p_csOBB swig_types[60]
+#define SWIGTYPE_p_csObject swig_types[61]
+#define SWIGTYPE_p_csOrthoTransform swig_types[62]
+#define SWIGTYPE_p_csPath swig_types[63]
+#define SWIGTYPE_p_csPlane3 swig_types[64]
+#define SWIGTYPE_p_csProcAnimated swig_types[65]
+#define SWIGTYPE_p_csProcTexture swig_types[66]
+#define SWIGTYPE_p_csPtrTcelVariableParameterBlock_t swig_types[67]
+#define SWIGTYPE_p_csPtrTiBase_t swig_types[68]
+#define SWIGTYPE_p_csPtrTiCelDataBuffer_t swig_types[69]
+#define SWIGTYPE_p_csPtrTiCelEntityIterator_t swig_types[70]
+#define SWIGTYPE_p_csPtrTiQuestParameter_t swig_types[71]
+#define SWIGTYPE_p_csPtrTiQuestRewardFactory_t swig_types[72]
+#define SWIGTYPE_p_csPtrTiQuestReward_t swig_types[73]
+#define SWIGTYPE_p_csPtrTiQuestSeqOpFactory_t swig_types[74]
+#define SWIGTYPE_p_csPtrTiQuestSeqOp_t swig_types[75]
+#define SWIGTYPE_p_csPtrTiQuestTriggerFactory_t swig_types[76]
+#define SWIGTYPE_p_csPtrTiQuestTrigger_t swig_types[77]
+#define SWIGTYPE_p_csPtrTiQuest_t swig_types[78]
+#define SWIGTYPE_p_csPtrTiRigidBody_t swig_types[79]
+#define SWIGTYPE_p_csRefArrayTiMaterialWrapper_t swig_types[80]
+#define SWIGTYPE_p_csRefArrayTiObject_t swig_types[81]
+#define SWIGTYPE_p_csRefArrayTiQuestParameter_t swig_types[82]
 #define SWIGTYPE_p_csRefArrayTiQuestTriggerFactory_t swig_types[83]
 #define SWIGTYPE_p_csRefTiBase_t swig_types[84]
 #define SWIGTYPE_p_csReversibleTransform swig_types[85]
@@ -95613,6 +95613,166 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestParameter_GetData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestParameter *arg1 = (iQuestParameter *) 0 ;
+  iCelParameterBlock *arg2 = (iCelParameterBlock *) 0 ;
+  celData *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestParameter_GetData",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestParameter, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestParameter_GetData" "', argument " "1"" of type '" "iQuestParameter *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestParameter * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestParameter_GetData" "', argument " "2"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
+  result = (celData *)(arg1)->GetData(arg2);
+  {
+    /*@SWIG:CELDATA_RETURN@*/
+    PyObject *obj = Py_None;
+    if (result)
+    {
+      switch(result->type)
+      {
+      case CEL_DATA_UBYTE:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ub);
+          break;
+        }
+      case CEL_DATA_FLOAT:
+        obj = PyFloat_FromDouble((float)result->value.f);
+        break;
+      case CEL_DATA_BOOL:
+        obj = SWIG_From_bool((bool)result->value.bo);
+        break;
+      case CEL_DATA_STRING:
+        {
+          char *res;
+          res = (char*)((iString const *)(result->value.s)->GetData());
+          obj = SWIG_FromCharPtr(res);
+          break;
+        }
+      case CEL_DATA_VECTOR2:
+        {
+          csVector2 *res;
+          res = new csVector2(result->value.v.x,result->value.v.y);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector2, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR3:
+        {
+          csVector3 *res;
+          res = new csVector3(result->value.v.x,result->value.v.y,result->value.v.z);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector3, 1);
+          break;
+        }
+      case CEL_DATA_VECTOR4:
+        {
+          csVector4 *res;
+          res = new csVector4(result->value.v.x,result->value.v.y,result->value.v.z,result->value.v.w);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csVector4, 1);
+          break;
+        }
+      case CEL_DATA_ENTITY:
+        {
+          iCelEntity *res;
+          res = (iCelEntity *)(result->value.ent);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_iCelEntity, 0);
+          break;
+        }
+      case CEL_DATA_PCLASS:
+        {
+          iCelPropertyClass *res;
+          res = (iCelPropertyClass *)(result->value.pc);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_iCelPropertyClass, 0);
+          break;
+        }
+      case CEL_DATA_ACTION:
+        {
+          char *res;
+          res = (char*)((iString const *)(result->value.s)->GetData());
+          obj = SWIG_FromCharPtr(res);
+          break;
+        }
+      case CEL_DATA_IBASE:
+        {
+          iBase *res;
+          res = (iBase *)(result->value.pc);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_iBase, 0);
+          break;
+        }
+      case CEL_DATA_COLOR:
+        {
+          csColor *res;
+          res = new csColor(result->value.col.red,result->value.col.green,result->value.col.blue);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor, 1);
+          break;
+        }
+      case CEL_DATA_COLOR4:
+        {
+          csColor4 *res;
+          res = new csColor4(result->value.col.red,result->value.col.green,result->value.col.blue,result->value.col.alpha);
+          obj = SWIG_NewPointerObj((void*)(res), SWIGTYPE_p_csColor4, 1);
+          break;
+        }
+      case CEL_DATA_WORD:
+        {
+          obj = SWIG_From_int((int)result->value.w);
+          break;
+        }
+      case CEL_DATA_LONG:
+        {
+          obj = SWIG_From_long((long)result->value.l);
+          break;
+        }
+      case CEL_DATA_ULONG:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.ul);
+          break;
+        }
+      case CEL_DATA_BYTE:
+        {
+          obj = SWIG_From_long((long)result->value.b);
+          break;
+        }
+        /*result->value.b (int8)*/
+      case CEL_DATA_UWORD:
+        {
+          obj = PyLong_FromUnsignedLong((unsigned long)result->value.uw);
+          break;
+        }
+        
+        /*result->value.uw (uint16)*/
+        /* Still to be done (and some more) */
+      case CEL_DATA_PARAMETER:
+        /*result->value.par (iString+celDataType)*/
+      default:
+        Py_INCREF(Py_None);
+        obj = Py_None;
+        break;
+      }
+    }
+    else
+    Py_INCREF(Py_None);
+    /*@SWIG@*/
+    resultobj = obj;
+  }
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestParameter_Get__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestParameter *arg1 = (iQuestParameter *) 0 ;
@@ -95733,6 +95893,37 @@ SWIGINTERN PyObject *_wrap_iQuestParameter_Get(PyObject *self, PyObject *args) {
   
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iQuestParameter_Get'.\n  Possible C/C++ prototypes are:\n    Get(iCelParameterBlock *)\n    Get(iCelParameterBlock *,bool &)\n");
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestParameter_GetLong(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestParameter *arg1 = (iQuestParameter *) 0 ;
+  iCelParameterBlock *arg2 = (iCelParameterBlock *) 0 ;
+  int32 result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestParameter_GetLong",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestParameter, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestParameter_GetLong" "', argument " "1"" of type '" "iQuestParameter *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestParameter * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestParameter_GetLong" "', argument " "2"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
+  result = (int32)(arg1)->GetLong(arg2);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
   return NULL;
 }
 
@@ -98687,7 +98878,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameter__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestManager *arg1 = (iQuestManager *) 0 ;
   celQuestParams *arg2 = 0 ;
@@ -98733,126 +98924,12 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameter__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iQuestManager *arg1 = (iQuestManager *) 0 ;
-  celQuestParams *arg2 = 0 ;
-  char *arg3 = (char *) 0 ;
-  csStringID *arg4 = 0 ;
-  char *result = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_ResolveParameter",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_ResolveParameter" "', argument " "1"" of type '" "iQuestManager *""'"); 
-  }
-  arg1 = reinterpret_cast< iQuestManager * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csHashTcsStringBase_csStringBase_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_ResolveParameter" "', argument " "2"" of type '" "celQuestParams const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_ResolveParameter" "', argument " "2"" of type '" "celQuestParams const &""'"); 
-  }
-  arg2 = reinterpret_cast< celQuestParams * >(argp2);
-  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuestManager_ResolveParameter" "', argument " "3"" of type '" "char const *""'");
-  }
-  arg3 = reinterpret_cast< char * >(buf3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_unsigned_long,  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_ResolveParameter" "', argument " "4"" of type '" "csStringID &""'"); 
-  }
-  if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_ResolveParameter" "', argument " "4"" of type '" "csStringID &""'"); 
-  }
-  arg4 = reinterpret_cast< csStringID * >(argp4);
-  result = (char *)(arg1)->ResolveParameter((celQuestParams const &)*arg2,(char const *)arg3,*arg4);
-  resultobj = SWIG_FromCharPtr((const char *)result);
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  return resultobj;
-fail:
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameter(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[5];
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = PyObject_Length(args);
-  for (ii = 0; (ii < argc) && (ii < 4); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iQuestManager, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csHashTcsStringBase_csStringBase_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        int res = SWIG_AsCharPtrAndSize(argv[2], 0, NULL, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_iQuestManager_ResolveParameter__SWIG_0(self, args);
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iQuestManager, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csHashTcsStringBase_csStringBase_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        int res = SWIG_AsCharPtrAndSize(argv[2], 0, NULL, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          void *vptr = 0;
-          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_unsigned_long, 0);
-          _v = SWIG_CheckState(res);
-          if (_v) {
-            return _wrap_iQuestManager_ResolveParameter__SWIG_1(self, args);
-          }
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iQuestManager_ResolveParameter'.\n  Possible C/C++ prototypes are:\n    ResolveParameter(celQuestParams const &,char const *)\n    ResolveParameter(celQuestParams const &,char const *,csStringID &)\n");
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameterBlock(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iQuestManager_GetParameterBlock(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestManager *arg1 = (iQuestManager *) 0 ;
   celQuestParams *arg2 = 0 ;
   csArray<celParSpec > *arg3 = 0 ;
-  csArray<csStringID > *arg4 = 0 ;
+  csRefArray<iQuestParameter > *arg4 = 0 ;
   SwigValueWrapper<csPtr<celVariableParameterBlock > > result;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -98867,37 +98944,37 @@ SWIGINTERN PyObject *_wrap_iQuestManager_ResolveParameterBlock(PyObject *SWIGUNU
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_ResolveParameterBlock",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_GetParameterBlock",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "1"" of type '" "iQuestManager *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_GetParameterBlock" "', argument " "1"" of type '" "iQuestManager *""'"); 
   }
   arg1 = reinterpret_cast< iQuestManager * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csHashTcsStringBase_csStringBase_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "2"" of type '" "celQuestParams const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_GetParameterBlock" "', argument " "2"" of type '" "celQuestParams const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "2"" of type '" "celQuestParams const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_GetParameterBlock" "', argument " "2"" of type '" "celQuestParams const &""'"); 
   }
   arg2 = reinterpret_cast< celQuestParams * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csArrayTcelParSpec_csArrayElementHandlerTcelParSpec_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,  0  | 0);
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "3"" of type '" "csArray<celParSpec > const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuestManager_GetParameterBlock" "', argument " "3"" of type '" "csArray<celParSpec > const &""'"); 
   }
   if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "3"" of type '" "csArray<celParSpec > const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_GetParameterBlock" "', argument " "3"" of type '" "csArray<celParSpec > const &""'"); 
   }
   arg3 = reinterpret_cast< csArray<celParSpec > * >(argp3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,  0 );
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_csRefArrayTiQuestParameter_t,  0 );
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "4"" of type '" "csArray<csStringID > &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_GetParameterBlock" "', argument " "4"" of type '" "csRefArray<iQuestParameter > &""'"); 
   }
   if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_ResolveParameterBlock" "', argument " "4"" of type '" "csArray<csStringID > &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_GetParameterBlock" "', argument " "4"" of type '" "csRefArray<iQuestParameter > &""'"); 
   }
-  arg4 = reinterpret_cast< csArray<csStringID > * >(argp4);
-  result = (arg1)->ResolveParameterBlock((celQuestParams const &)*arg2,(csArray<celParSpec > const &)*arg3,*arg4);
+  arg4 = reinterpret_cast< csRefArray<iQuestParameter > * >(argp4);
+  result = (arg1)->GetParameterBlock((celQuestParams const &)*arg2,(csArray<celParSpec > const &)*arg3,*arg4);
   resultobj = SWIG_NewPointerObj((new csPtr<celVariableParameterBlock >(static_cast< const csPtr<celVariableParameterBlock >& >(result))), SWIGTYPE_p_csPtrTcelVariableParameterBlock_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
@@ -98910,7 +98987,8 @@ SWIGINTERN PyObject *_wrap_iQuestManager_FillParameterBlock(PyObject *SWIGUNUSED
   iQuestManager *arg1 = (iQuestManager *) 0 ;
   iCelParameterBlock *arg2 = (iCelParameterBlock *) 0 ;
   celVariableParameterBlock *arg3 = (celVariableParameterBlock *) 0 ;
-  csArray<csStringID > *arg4 = 0 ;
+  csArray<celParSpec > *arg4 = 0 ;
+  csRefArray<iQuestParameter > *arg5 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -98919,12 +98997,15 @@ SWIGINTERN PyObject *_wrap_iQuestManager_FillParameterBlock(PyObject *SWIGUNUSED
   int res3 = 0 ;
   void *argp4 = 0 ;
   int res4 = 0 ;
+  void *argp5 = 0 ;
+  int res5 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_FillParameterBlock",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_FillParameterBlock",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_FillParameterBlock" "', argument " "1"" of type '" "iQuestManager *""'"); 
@@ -98940,15 +99021,23 @@ SWIGINTERN PyObject *_wrap_iQuestManager_FillParameterBlock(PyObject *SWIGUNUSED
     SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuestManager_FillParameterBlock" "', argument " "3"" of type '" "celVariableParameterBlock *""'"); 
   }
   arg3 = reinterpret_cast< celVariableParameterBlock * >(argp3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,  0  | 0);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_csArrayTcelParSpec_csArrayElementHandlerTcelParSpec_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,  0  | 0);
   if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_FillParameterBlock" "', argument " "4"" of type '" "csArray<csStringID > const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_FillParameterBlock" "', argument " "4"" of type '" "csArray<celParSpec > const &""'"); 
   }
   if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_FillParameterBlock" "', argument " "4"" of type '" "csArray<csStringID > const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_FillParameterBlock" "', argument " "4"" of type '" "csArray<celParSpec > const &""'"); 
   }
-  arg4 = reinterpret_cast< csArray<csStringID > * >(argp4);
-  (arg1)->FillParameterBlock(arg2,arg3,(csArray<csStringID > const &)*arg4);
+  arg4 = reinterpret_cast< csArray<celParSpec > * >(argp4);
+  res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_csRefArrayTiQuestParameter_t,  0  | 0);
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "iQuestManager_FillParameterBlock" "', argument " "5"" of type '" "csRefArray<iQuestParameter > const &""'"); 
+  }
+  if (!argp5) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuestManager_FillParameterBlock" "', argument " "5"" of type '" "csRefArray<iQuestParameter > const &""'"); 
+  }
+  arg5 = reinterpret_cast< csRefArray<iQuestParameter > * >(argp5);
+  (arg1)->FillParameterBlock(arg2,arg3,(csArray<celParSpec > const &)*arg4,(csRefArray<iQuestParameter > const &)*arg5);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -119149,7 +119238,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celGetSetDamage", _wrap_celGetSetDamage, METH_VARARGS, NULL},
 	 { (char *)"celGetDamage", _wrap_celGetDamage, METH_VARARGS, NULL},
 	 { (char *)"scfQuery_iPcDamage", _wrap_scfQuery_iPcDamage, METH_VARARGS, NULL},
+	 { (char *)"iQuestParameter_GetData", _wrap_iQuestParameter_GetData, METH_VARARGS, NULL},
 	 { (char *)"iQuestParameter_Get", _wrap_iQuestParameter_Get, METH_VARARGS, NULL},
+	 { (char *)"iQuestParameter_GetLong", _wrap_iQuestParameter_GetLong, METH_VARARGS, NULL},
 	 { (char *)"delete_iQuestParameter", _wrap_delete_iQuestParameter, METH_VARARGS, NULL},
 	 { (char *)"iQuestParameter_swigregister", iQuestParameter_swigregister, METH_VARARGS, NULL},
 	 { (char *)"celParSpec_type_set", _wrap_celParSpec_type_set, METH_VARARGS, NULL},
@@ -119273,7 +119364,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestManager_CreateQuestFactory", _wrap_iQuestManager_CreateQuestFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_GetParameter", _wrap_iQuestManager_GetParameter, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_ResolveParameter", _wrap_iQuestManager_ResolveParameter, METH_VARARGS, NULL},
-	 { (char *)"iQuestManager_ResolveParameterBlock", _wrap_iQuestManager_ResolveParameterBlock, METH_VARARGS, NULL},
+	 { (char *)"iQuestManager_GetParameterBlock", _wrap_iQuestManager_GetParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_FillParameterBlock", _wrap_iQuestManager_FillParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_Load", _wrap_iQuestManager_Load, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddNewStateReward", _wrap_iQuestManager_AddNewStateReward, METH_VARARGS, NULL},
@@ -122924,7 +123015,6 @@ static swig_type_info _swigt__p_csArrayTcsImageIOFileFormatDescription_const_p_c
 static swig_type_info _swigt__p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t = {"_p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t", "csArray<csPluginRequest > *|csArray<csPluginRequest,csArrayElementHandler<csPluginRequest >,CS::Memory::AllocatorMalloc,csArrayCapacityDefault > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t = {"_p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t", "csArray<csShaderVariable *,csArrayElementHandler<csShaderVariable * >,CS::Memory::AllocatorMalloc,csArrayCapacityDefault > *|csShaderVarStack *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t = {"_p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t", "csArray<iCelNode * > *|csArray<iCelNode *,csArrayElementHandler<iCelNode * >,CS::Memory::AllocatorMalloc,csArrayCapacityDefault > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t = {"_p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t", "csArray<unsigned long > *|csArray<csStringID > *|csArray<unsigned long,csArrayElementHandler<unsigned long >,CS::Memory::AllocatorMalloc,csArrayCapacityDefault > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csBox3 = {"_p_csBox3", "csBox3 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csOBB = {"_p_csOBB", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_csColor = {"_p_csColor", "csColor *", 0, 0, (void*)0, 0};
@@ -122958,6 +123048,7 @@ static swig_type_info _swigt__p_csPtrTiQuest_t = {"_p_csPtrTiQuest_t", "csPtr<iQ
 static swig_type_info _swigt__p_csPtrTiRigidBody_t = {"_p_csPtrTiRigidBody_t", "csPtr<iRigidBody > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csRefArrayTiMaterialWrapper_t = {"_p_csRefArrayTiMaterialWrapper_t", "csRefArray<iMaterialWrapper > *|csTerrainMaterialPalette *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csRefArrayTiObject_t = {"_p_csRefArrayTiObject_t", "csRefArray<iObject > *|csObjectContainer *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_csRefArrayTiQuestParameter_t = {"_p_csRefArrayTiQuestParameter_t", "csRefArray<iQuestParameter > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csRefArrayTiQuestTriggerFactory_t = {"_p_csRefArrayTiQuestTriggerFactory_t", "csRefArray<iQuestTriggerFactory > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csRefTiBase_t = {"_p_csRefTiBase_t", "csRef<iBase > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csReversibleTransform = {"_p_csReversibleTransform", "csReversibleTransform *", 0, 0, (void*)0, 0};
@@ -123981,7 +124072,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   &_swigt__p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   &_swigt__p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
-  &_swigt__p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   &_swigt__p_csBox3,
   &_swigt__p_csColliderWrapper,
   &_swigt__p_csColor,
@@ -124017,6 +124107,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_csPtrTiRigidBody_t,
   &_swigt__p_csRefArrayTiMaterialWrapper_t,
   &_swigt__p_csRefArrayTiObject_t,
+  &_swigt__p_csRefArrayTiQuestParameter_t,
   &_swigt__p_csRefArrayTiQuestTriggerFactory_t,
   &_swigt__p_csRefTiBase_t,
   &_swigt__p_csReversibleTransform,
@@ -125038,7 +125129,6 @@ static swig_cast_info _swigc__p_csArrayTcsImageIOFileFormatDescription_const_p_c
 static swig_cast_info _swigc__p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t[] = {  {&_swigt__p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t[] = {  {&_swigt__p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t[] = {  {&_swigt__p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t[] = {  {&_swigt__p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csOBB[] = {{&_swigt__p_csOBB, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csBox3[] = {  {&_swigt__p_csBox3, 0, 0, 0},  {&_swigt__p_csOBB, _p_csOBBTo_p_csBox3, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csColor[] = {  {&_swigt__p_csColor, 0, 0, 0},  {&_swigt__p_csColor4, _p_csColor4To_p_csColor, 0, 0},{0, 0, 0, 0}};
@@ -125072,6 +125162,7 @@ static swig_cast_info _swigc__p_csPtrTiQuest_t[] = {  {&_swigt__p_csPtrTiQuest_t
 static swig_cast_info _swigc__p_csPtrTiRigidBody_t[] = {  {&_swigt__p_csPtrTiRigidBody_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csRefArrayTiMaterialWrapper_t[] = {  {&_swigt__p_csRefArrayTiMaterialWrapper_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csRefArrayTiObject_t[] = {  {&_swigt__p_csRefArrayTiObject_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_csRefArrayTiQuestParameter_t[] = {  {&_swigt__p_csRefArrayTiQuestParameter_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csRefArrayTiQuestTriggerFactory_t[] = {  {&_swigt__p_csRefArrayTiQuestTriggerFactory_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csRefTiBase_t[] = {  {&_swigt__p_csRefTiBase_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csReversibleTransform[] = {  {&_swigt__p_csReversibleTransform, 0, 0, 0},  {&_swigt__p_csOrthoTransform, _p_csOrthoTransformTo_p_csReversibleTransform, 0, 0},{0, 0, 0, 0}};
@@ -126095,7 +126186,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_csArrayTcsPluginRequest_csArrayElementHandlerTcsPluginRequest_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   _swigc__p_csArrayTcsShaderVariable_p_csArrayElementHandlerTcsShaderVariable_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   _swigc__p_csArrayTiCelNode_p_csArrayElementHandlerTiCelNode_p_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
-  _swigc__p_csArrayTunsigned_long_csArrayElementHandlerTunsigned_long_t_CS__Memory__AllocatorMalloc_csArrayCapacityDefault_t,
   _swigc__p_csBox3,
   _swigc__p_csColliderWrapper,
   _swigc__p_csColor,
@@ -126131,6 +126221,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_csPtrTiRigidBody_t,
   _swigc__p_csRefArrayTiMaterialWrapper_t,
   _swigc__p_csRefArrayTiObject_t,
+  _swigc__p_csRefArrayTiQuestParameter_t,
   _swigc__p_csRefArrayTiQuestTriggerFactory_t,
   _swigc__p_csRefTiBase_t,
   _swigc__p_csReversibleTransform,
