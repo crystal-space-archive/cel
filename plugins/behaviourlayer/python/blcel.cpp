@@ -97969,6 +97969,66 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestStateFactory_AddInitRewardFactory(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestStateFactory *arg1 = (iQuestStateFactory *) 0 ;
+  iQuestRewardFactory *arg2 = (iQuestRewardFactory *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestStateFactory_AddInitRewardFactory",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestStateFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_AddInitRewardFactory" "', argument " "1"" of type '" "iQuestStateFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestStateFactory * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iQuestRewardFactory, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestStateFactory_AddInitRewardFactory" "', argument " "2"" of type '" "iQuestRewardFactory *""'"); 
+  }
+  arg2 = reinterpret_cast< iQuestRewardFactory * >(argp2);
+  (arg1)->AddInitRewardFactory(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestStateFactory_AddExitRewardFactory(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestStateFactory *arg1 = (iQuestStateFactory *) 0 ;
+  iQuestRewardFactory *arg2 = (iQuestRewardFactory *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestStateFactory_AddExitRewardFactory",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestStateFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_AddExitRewardFactory" "', argument " "1"" of type '" "iQuestStateFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestStateFactory * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iQuestRewardFactory, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestStateFactory_AddExitRewardFactory" "', argument " "2"" of type '" "iQuestRewardFactory *""'"); 
+  }
+  arg2 = reinterpret_cast< iQuestRewardFactory * >(argp2);
+  (arg1)->AddExitRewardFactory(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestStateFactory_Name_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestStateFactory *arg1 = (iQuestStateFactory *) 0 ;
@@ -119335,6 +119395,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestTriggerResponseFactory_swigregister", iQuestTriggerResponseFactory_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iQuestStateFactory_GetName", _wrap_iQuestStateFactory_GetName, METH_VARARGS, NULL},
 	 { (char *)"iQuestStateFactory_CreateTriggerResponseFactory", _wrap_iQuestStateFactory_CreateTriggerResponseFactory, METH_VARARGS, NULL},
+	 { (char *)"iQuestStateFactory_AddInitRewardFactory", _wrap_iQuestStateFactory_AddInitRewardFactory, METH_VARARGS, NULL},
+	 { (char *)"iQuestStateFactory_AddExitRewardFactory", _wrap_iQuestStateFactory_AddExitRewardFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestStateFactory_Name_get", _wrap_iQuestStateFactory_Name_get, METH_VARARGS, NULL},
 	 { (char *)"delete_iQuestStateFactory", _wrap_delete_iQuestStateFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestStateFactory_swigregister", iQuestStateFactory_swigregister, METH_VARARGS, NULL},
