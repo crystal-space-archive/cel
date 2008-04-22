@@ -127862,6 +127862,11 @@ SWIGEXPORT void SWIG_init(void) {
   SWIG_Python_SetConstant(d, "CEL_MOUSE_BUTTON2",SWIG_From_int(static_cast< int >(2)));
   SWIG_Python_SetConstant(d, "CEL_MOUSE_BUTTON3",SWIG_From_int(static_cast< int >(4)));
   SWIG_Python_SetConstant(d, "CEL_PCMESH_PROPERTY_MESH",SWIG_From_int(static_cast< int >(1)));
+  SWIG_Python_SetConstant(d, "TRIGGER_NONE",SWIG_From_int(static_cast< int >(TRIGGER_NONE)));
+  SWIG_Python_SetConstant(d, "TRIGGER_SPHERE",SWIG_From_int(static_cast< int >(TRIGGER_SPHERE)));
+  SWIG_Python_SetConstant(d, "TRIGGER_BOX",SWIG_From_int(static_cast< int >(TRIGGER_BOX)));
+  SWIG_Python_SetConstant(d, "TRIGGER_ABOVE",SWIG_From_int(static_cast< int >(TRIGGER_ABOVE)));
+  SWIG_Python_SetConstant(d, "TRIGGER_BEAM",SWIG_From_int(static_cast< int >(TRIGGER_BEAM)));
   SWIG_Python_SetConstant(d, "CEL_PCMOVABLE_PROPERTY_POSITION",SWIG_From_int(static_cast< int >(1)));
   SWIG_Python_SetConstant(d, "CEL_MOVE_FAIL",SWIG_From_int(static_cast< int >(0)));
   SWIG_Python_SetConstant(d, "CEL_MOVE_SUCCEED",SWIG_From_int(static_cast< int >(1)));
