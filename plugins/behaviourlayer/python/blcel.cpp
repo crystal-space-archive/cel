@@ -8243,8 +8243,6 @@ SWIGINTERN void delete_iPcPython(iPcPython *self){ if (self) self->DecRef (); }
            size_t dot_pos = propname.FindLast('.');                         \
            PyObject_SetAttrString(pySelf,const_cast<char*>(propname.GetData()+dot_pos+1),      \
                                         py_value);                          \
-           /*PyObject_Print(py_value,stdout,Py_PRINT_RAW);*/                    \
-           printf("\n");                                                    \
            Py_DECREF(py_value);                                             \
            return true;                                               
 
@@ -8597,7 +8595,7 @@ char const *SwigDirector_PcCommonFactory::GetName() const {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8638,7 +8636,7 @@ iCelPropertyClass *SwigDirector_PcCommonFactory::CreateScriptPropertyClass(char 
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8682,7 +8680,7 @@ void SwigDirector_pyPcCommon::SetEntity(iCelEntity *entity) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8712,7 +8710,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, long value) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8749,7 +8747,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, float value) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8786,7 +8784,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, bool value) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8823,7 +8821,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, char const *value) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8860,7 +8858,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, csVector2 const &value)
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8897,7 +8895,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, csVector3 const &value)
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8934,7 +8932,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, csColor const &value) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -8971,7 +8969,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, iCelPropertyClass *valu
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9008,7 +9006,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, iCelEntity *entity) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9045,7 +9043,7 @@ bool SwigDirector_pyPcCommon::SetProperty(csStringID id, iBase *ibase) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9080,7 +9078,7 @@ celDataType SwigDirector_pyPcCommon::GetPropertyOrActionType(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9115,7 +9113,7 @@ bool SwigDirector_pyPcCommon::IsPropertyReadOnly(csStringID arg0) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9150,7 +9148,7 @@ long SwigDirector_pyPcCommon::GetPropertyLongByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9185,7 +9183,7 @@ float SwigDirector_pyPcCommon::GetPropertyFloatByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9220,7 +9218,7 @@ bool SwigDirector_pyPcCommon::GetPropertyBoolByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9259,7 +9257,7 @@ char const *SwigDirector_pyPcCommon::GetPropertyStringByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9298,7 +9296,7 @@ bool SwigDirector_pyPcCommon::GetPropertyVectorByID(csStringID id, csVector2 &v)
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9335,7 +9333,7 @@ bool SwigDirector_pyPcCommon::GetPropertyVectorByID(csStringID id, csVector3 &v)
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9372,7 +9370,7 @@ bool SwigDirector_pyPcCommon::GetPropertyColorByID(csStringID id, csColor &v) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9411,7 +9409,7 @@ iCelPropertyClass *SwigDirector_pyPcCommon::GetPropertyPClassByID(csStringID id)
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9450,7 +9448,7 @@ iCelEntity *SwigDirector_pyPcCommon::GetPropertyEntityByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9489,7 +9487,7 @@ iBase *SwigDirector_pyPcCommon::GetPropertyIBaseByID(csStringID id) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9528,7 +9526,7 @@ bool SwigDirector_pyPcCommon::PerformAction(csStringID actionID, iCelParameterBl
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9562,7 +9560,7 @@ size_t SwigDirector_pyPcCommon::GetPropertyAndActionCount() {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9597,7 +9595,7 @@ csStringID SwigDirector_pyPcCommon::GetPropertyOrActionID(size_t arg0) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9636,7 +9634,7 @@ char const *SwigDirector_pyPcCommon::GetPropertyOrActionDescription(csStringID a
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9671,7 +9669,7 @@ void SwigDirector_pyPcCommon::TickEveryFrame() {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9697,7 +9695,7 @@ void SwigDirector_pyPcCommon::TickOnce() {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9724,7 +9722,7 @@ void SwigDirector_pyPcCommon::MessageDispatcherRemoved(iMessageDispatcher *dispa
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9754,7 +9752,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, long arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9791,7 +9789,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, float arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9828,7 +9826,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, bool arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9865,7 +9863,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, char const *arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9902,7 +9900,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csVector2 const &arg1
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9939,7 +9937,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csVector3 const &arg1
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -9976,7 +9974,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, csColor const &arg1) 
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10013,7 +10011,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iCelPropertyClass *pc
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10050,7 +10048,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iCelEntity *entity) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10087,7 +10085,7 @@ bool SwigDirector_pyPcCommon::SetPropertyIndexed(int arg0, iBase *ibase) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10124,7 +10122,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, long &l) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10161,7 +10159,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, float &f) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10198,7 +10196,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, bool &b) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10235,7 +10233,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, char const *&arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10272,7 +10270,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csVector2 &arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10309,7 +10307,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csVector3 &arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10346,7 +10344,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, csColor &arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10383,7 +10381,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iCelPropertyClass *&a
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10420,7 +10418,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iCelEntity *&arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10457,7 +10455,7 @@ bool SwigDirector_pyPcCommon::GetPropertyIndexed(int arg0, iBase *&arg1) {
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10496,7 +10494,7 @@ bool SwigDirector_pyPcCommon::PerformActionIndexed(int arg0, iCelParameterBlock 
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10540,7 +10538,7 @@ void SwigDirector_pyMessageSender::MessageDispatcherRemoved(iMessageDispatcher *
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10584,7 +10582,7 @@ bool SwigDirector_pyMessageReceiver::ReceiveMessage(csStringID msg_id, iMessageS
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
@@ -10630,7 +10628,7 @@ void SwigDirector_pyPcPropertyListener::PropertyChanged(iPcProperties *pcprop, s
     {
       if (error != NULL) {
         PyErr_Print ();
-        throw Swig::DirectorMethodException();
+        //throw Swig::DirectorMethodException();
       }
     }
   }
