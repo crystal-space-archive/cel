@@ -35584,6 +35584,27 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcMechanicsObject_AttachColliderConvexMesh(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcMechanicsObject *arg1 = (iPcMechanicsObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcMechanicsObject_AttachColliderConvexMesh",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcMechanicsObject, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcMechanicsObject_AttachColliderConvexMesh" "', argument " "1"" of type '" "iPcMechanicsObject *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcMechanicsObject * >(argp1);
+  (arg1)->AttachColliderConvexMesh();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcMechanicsObject_AddForceOnce(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcMechanicsObject *arg1 = (iPcMechanicsObject *) 0 ;
@@ -119109,6 +119130,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcMechanicsObject_AttachColliderBox", _wrap_iPcMechanicsObject_AttachColliderBox, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_AttachColliderPlane", _wrap_iPcMechanicsObject_AttachColliderPlane, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_AttachColliderMesh", _wrap_iPcMechanicsObject_AttachColliderMesh, METH_VARARGS, NULL},
+	 { (char *)"iPcMechanicsObject_AttachColliderConvexMesh", _wrap_iPcMechanicsObject_AttachColliderConvexMesh, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_AddForceOnce", _wrap_iPcMechanicsObject_AddForceOnce, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_AddForceDuration", _wrap_iPcMechanicsObject_AddForceDuration, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_AddForceFrame", _wrap_iPcMechanicsObject_AddForceFrame, METH_VARARGS, NULL},
