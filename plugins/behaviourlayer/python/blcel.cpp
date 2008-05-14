@@ -42113,6 +42113,66 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iBillboard_StackAfter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iBillboard *arg1 = (iBillboard *) 0 ;
+  iBillboard *arg2 = (iBillboard *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iBillboard_StackAfter",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iBillboard, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iBillboard_StackAfter" "', argument " "1"" of type '" "iBillboard *""'"); 
+  }
+  arg1 = reinterpret_cast< iBillboard * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iBillboard, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iBillboard_StackAfter" "', argument " "2"" of type '" "iBillboard *""'"); 
+  }
+  arg2 = reinterpret_cast< iBillboard * >(argp2);
+  (arg1)->StackAfter(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iBillboard_StackBefore(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iBillboard *arg1 = (iBillboard *) 0 ;
+  iBillboard *arg2 = (iBillboard *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iBillboard_StackBefore",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iBillboard, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iBillboard_StackBefore" "', argument " "1"" of type '" "iBillboard *""'"); 
+  }
+  arg1 = reinterpret_cast< iBillboard * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iBillboard, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iBillboard_StackBefore" "', argument " "2"" of type '" "iBillboard *""'"); 
+  }
+  arg2 = reinterpret_cast< iBillboard * >(argp2);
+  (arg1)->StackBefore(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iBillboard_StackUp(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iBillboard *arg1 = (iBillboard *) 0 ;
@@ -119293,6 +119353,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iBillboard_GetRotation", _wrap_iBillboard_GetRotation, METH_VARARGS, NULL},
 	 { (char *)"iBillboard_StackTop", _wrap_iBillboard_StackTop, METH_VARARGS, NULL},
 	 { (char *)"iBillboard_StackBottom", _wrap_iBillboard_StackBottom, METH_VARARGS, NULL},
+	 { (char *)"iBillboard_StackAfter", _wrap_iBillboard_StackAfter, METH_VARARGS, NULL},
+	 { (char *)"iBillboard_StackBefore", _wrap_iBillboard_StackBefore, METH_VARARGS, NULL},
 	 { (char *)"iBillboard_StackUp", _wrap_iBillboard_StackUp, METH_VARARGS, NULL},
 	 { (char *)"iBillboard_StackDown", _wrap_iBillboard_StackDown, METH_VARARGS, NULL},
 	 { (char *)"iBillboard_SetUVTopLeft", _wrap_iBillboard_SetUVTopLeft, METH_VARARGS, NULL},
