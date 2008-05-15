@@ -100245,6 +100245,60 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestManager_RemoveQuestFactory(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestManager *arg1 = (iQuestManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_RemoveQuestFactory",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_RemoveQuestFactory" "', argument " "1"" of type '" "iQuestManager *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestManager * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_RemoveQuestFactory" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  (arg1)->RemoveQuestFactory((char const *)arg2);
+  resultobj = SWIG_Py_Void();
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestManager_RemoveQuestFactories(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestManager *arg1 = (iQuestManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_RemoveQuestFactories",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_RemoveQuestFactories" "', argument " "1"" of type '" "iQuestManager *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestManager * >(argp1);
+  (arg1)->RemoveQuestFactories();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestManager_CreateQuestFactory(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestManager *arg1 = (iQuestManager *) 0 ;
@@ -120833,6 +120887,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestManager_RegisterSeqOpType", _wrap_iQuestManager_RegisterSeqOpType, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_GetSeqOpType", _wrap_iQuestManager_GetSeqOpType, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_GetQuestFactory", _wrap_iQuestManager_GetQuestFactory, METH_VARARGS, NULL},
+	 { (char *)"iQuestManager_RemoveQuestFactory", _wrap_iQuestManager_RemoveQuestFactory, METH_VARARGS, NULL},
+	 { (char *)"iQuestManager_RemoveQuestFactories", _wrap_iQuestManager_RemoveQuestFactories, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_CreateQuestFactory", _wrap_iQuestManager_CreateQuestFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_GetParameter", _wrap_iQuestManager_GetParameter, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_ResolveParameter", _wrap_iQuestManager_ResolveParameter, METH_VARARGS, NULL},
