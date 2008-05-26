@@ -3027,7 +3027,7 @@ namespace Swig {
 #define SWIGTYPE_p_csFlags swig_types[55]
 #define SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t swig_types[56]
 #define SWIGTYPE_p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t swig_types[57]
-#define SWIGTYPE_p_csHashTint_unsigned_long_t swig_types[58]
+#define SWIGTYPE_p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t swig_types[58]
 #define SWIGTYPE_p_csImageBase swig_types[59]
 #define SWIGTYPE_p_csImageMemory swig_types[60]
 #define SWIGTYPE_p_csInitializer swig_types[61]
@@ -112872,7 +112872,7 @@ SWIGINTERN PyObject *_wrap_PropertyHolder_constants_set(PyObject *SWIGUNUSEDPARM
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PropertyHolder_constants_set" "', argument " "1"" of type '" "PropertyHolder *""'"); 
   }
   arg1 = reinterpret_cast< PropertyHolder * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_csHashTint_unsigned_long_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PropertyHolder_constants_set" "', argument " "2"" of type '" "csHash<int,csStringID > *""'"); 
   }
@@ -112901,7 +112901,7 @@ SWIGINTERN PyObject *_wrap_PropertyHolder_constants_get(PyObject *SWIGUNUSEDPARM
   }
   arg1 = reinterpret_cast< PropertyHolder * >(argp1);
   result = (csHash<int,csStringID > *)& ((arg1)->constants);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csHashTint_unsigned_long_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -125998,7 +125998,7 @@ static swig_type_info _swigt__p_csColor4 = {"_p_csColor4", "csColor4 *", 0, 0, (
 static swig_type_info _swigt__p_csFlags = {"_p_csFlags", "csFlags *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t = {"_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t", "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *|celQuestParams *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t = {"_p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t", "csHash<csStringFast<12 >,csStringFast<12 >,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringFast<12 >,csStringFast<12 > > > > *|celEntityTemplateParams *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_csHashTint_unsigned_long_t = {"_p_csHashTint_unsigned_long_t", "csHash<int,unsigned long > *|csHash<int,csStringID > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t = {"_p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t", "csHash<int,unsigned long > *|csHash<int,csStringID > *|csHash<int,unsigned long,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<int,unsigned long > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csInitializer = {"_p_csInitializer", "csInitializer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csMatrix3 = {"_p_csMatrix3", "csMatrix3 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_csXRotMatrix3 = {"_p_csXRotMatrix3", 0, 0, 0, 0, 0};
@@ -127102,7 +127102,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_csFlags,
   &_swigt__p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t,
   &_swigt__p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t,
-  &_swigt__p_csHashTint_unsigned_long_t,
+  &_swigt__p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t,
   &_swigt__p_csImageBase,
   &_swigt__p_csImageMemory,
   &_swigt__p_csInitializer,
@@ -128204,7 +128204,7 @@ static swig_cast_info _swigc__p_csColor4[] = {  {&_swigt__p_csColor4, 0, 0, 0},{
 static swig_cast_info _swigc__p_csFlags[] = {  {&_swigt__p_csFlags, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t[] = {  {&_swigt__p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t[] = {  {&_swigt__p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_csHashTint_unsigned_long_t[] = {  {&_swigt__p_csHashTint_unsigned_long_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t[] = {  {&_swigt__p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csInitializer[] = {  {&_swigt__p_csInitializer, 0, 0, 0},  {&_swigt__p_celInitializer, _p_celInitializerTo_p_csInitializer, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csXRotMatrix3[] = {{&_swigt__p_csXRotMatrix3, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_csYRotMatrix3[] = {{&_swigt__p_csYRotMatrix3, 0, 0, 0},{0, 0, 0, 0}};
@@ -129308,7 +129308,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_csFlags,
   _swigc__p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t,
   _swigc__p_csHashTcsStringFastT12_t_csStringFastT12_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringFastT12_t_csStringFastT12_t_t_t_t,
-  _swigc__p_csHashTint_unsigned_long_t,
+  _swigc__p_csHashTint_unsigned_long_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTint_unsigned_long_t_t_t,
   _swigc__p_csImageBase,
   _swigc__p_csImageMemory,
   _swigc__p_csInitializer,
