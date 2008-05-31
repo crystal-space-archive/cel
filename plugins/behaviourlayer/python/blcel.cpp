@@ -28688,6 +28688,7 @@ SWIGINTERN PyObject *_wrap_new_celGenericParameterBlock(PyObject *SWIGUNUSEDPARM
   arg1 = static_cast< size_t >(val1);
   result = (celGenericParameterBlock *)new celGenericParameterBlock(arg1);
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_celGenericParameterBlock, SWIG_POINTER_NEW |  0 );
+  result->IncRef();
   return resultobj;
 fail:
   return NULL;
@@ -28707,7 +28708,7 @@ SWIGINTERN PyObject *_wrap_delete_celGenericParameterBlock(PyObject *SWIGUNUSEDP
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_celGenericParameterBlock" "', argument " "1"" of type '" "celGenericParameterBlock *""'"); 
   }
   arg1 = reinterpret_cast< celGenericParameterBlock * >(argp1);
-  delete arg1;
+  arg1->DecRef();
   
   resultobj = SWIG_Py_Void();
   return resultobj;
