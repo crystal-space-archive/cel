@@ -64044,10 +64044,180 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_Tracking_GetPositionOffset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  csVector3 *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetPositionOffset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetPositionOffset" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  {
+    csVector3 const &_result_ref = ((iPcmNewCamera::Tracking const *)arg1)->GetPositionOffset();
+    result = (csVector3 *) &_result_ref;
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csVector3, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetFollowSpringLength(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetFollowSpringLength",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetFollowSpringLength" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetFollowSpringLength" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetFollowSpringLength(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetFollowSpringLength(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetFollowSpringLength",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetFollowSpringLength" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->GetFollowSpringLength();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetFollowMinimumSpringFactor__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetFollowMinimumSpringFactor",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetFollowMinimumSpringFactor" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetFollowMinimumSpringFactor" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetFollowMinimumSpringFactor(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetFollowMinimumSpringFactor__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetFollowMinimumSpringFactor",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetFollowMinimumSpringFactor" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->SetFollowMinimumSpringFactor();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetFollowMinimumSpringFactor(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcmNewCamera__Tracking, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_Tracking_SetFollowMinimumSpringFactor__SWIG_1(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcmNewCamera__Tracking, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_float(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_Tracking_SetFollowMinimumSpringFactor__SWIG_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'Tracking_SetFollowMinimumSpringFactor'.\n  Possible C/C++ prototypes are:\n    SetFollowMinimumSpringFactor(float)\n    SetFollowMinimumSpringFactor()\n");
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_Tracking_Pan(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
-  iPcmNewCamera::Tracking::PanningDirection arg2 ;
+  iPcmNewCamera::Tracking::PanDirection arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
@@ -64063,9 +64233,9 @@ SWIGINTERN PyObject *_wrap_Tracking_Pan(PyObject *SWIGUNUSEDPARM(self), PyObject
   arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_Pan" "', argument " "2"" of type '" "iPcmNewCamera::Tracking::PanningDirection""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_Pan" "', argument " "2"" of type '" "iPcmNewCamera::Tracking::PanDirection""'");
   } 
-  arg2 = static_cast< iPcmNewCamera::Tracking::PanningDirection >(val2);
+  arg2 = static_cast< iPcmNewCamera::Tracking::PanDirection >(val2);
   (arg1)->Pan(arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -64074,7 +64244,29 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Tracking_SetPanningSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_Tracking_GetPanDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  iPcmNewCamera::Tracking::PanDirection result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetPanDirection",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetPanDirection" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (iPcmNewCamera::Tracking::PanDirection)((iPcmNewCamera::Tracking const *)arg1)->GetPanDirection();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetPanSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
   float arg2 ;
@@ -64085,19 +64277,249 @@ SWIGINTERN PyObject *_wrap_Tracking_SetPanningSpeed(PyObject *SWIGUNUSEDPARM(sel
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetPanningSpeed",2,2,&obj0,&obj1)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetPanSpeed",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetPanningSpeed" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetPanSpeed" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
   }
   arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
   ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetPanningSpeed" "', argument " "2"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetPanSpeed" "', argument " "2"" of type '" "float""'");
   } 
   arg2 = static_cast< float >(val2);
-  (arg1)->SetPanningSpeed(arg2);
+  (arg1)->SetPanSpeed(arg2);
   resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetPanSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetPanSpeed",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetPanSpeed" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->GetPanSpeed();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetPanAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetPanAcceleration",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetPanAcceleration" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetPanAcceleration" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetPanAcceleration(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetPanAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetPanAcceleration",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetPanAcceleration" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->GetPanAcceleration();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_Tilt(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  iPcmNewCamera::Tracking::TiltDirection arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_Tilt",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_Tilt" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_Tilt" "', argument " "2"" of type '" "iPcmNewCamera::Tracking::TiltDirection""'");
+  } 
+  arg2 = static_cast< iPcmNewCamera::Tracking::TiltDirection >(val2);
+  (arg1)->Tilt(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetTiltDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  iPcmNewCamera::Tracking::TiltDirection result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetTiltDirection",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetTiltDirection" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (iPcmNewCamera::Tracking::TiltDirection)((iPcmNewCamera::Tracking const *)arg1)->GetTiltDirection();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetTiltSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetTiltSpeed",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetTiltSpeed" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetTiltSpeed" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetTiltSpeed(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetTiltSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetTiltSpeed",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetTiltSpeed" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->GetTiltSpeed();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_SetTiltAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_SetTiltAcceleration",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_SetTiltAcceleration" "', argument " "1"" of type '" "iPcmNewCamera::Tracking *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tracking_SetTiltAcceleration" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetTiltAcceleration(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_Tracking_GetTiltAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcmNewCamera::Tracking *arg1 = (iPcmNewCamera::Tracking *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"Tracking_GetTiltAcceleration",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcmNewCamera__Tracking, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tracking_GetTiltAcceleration" "', argument " "1"" of type '" "iPcmNewCamera::Tracking const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcmNewCamera::Tracking * >(argp1);
+  result = (float)((iPcmNewCamera::Tracking const *)arg1)->GetTiltAcceleration();
+  resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
   return NULL;
@@ -122152,8 +122574,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Tracking_GetTargetState", _wrap_Tracking_GetTargetState, METH_VARARGS, NULL},
 	 { (char *)"Tracking_SetTargetYOffset", _wrap_Tracking_SetTargetYOffset, METH_VARARGS, NULL},
 	 { (char *)"Tracking_SetPositionOffset", _wrap_Tracking_SetPositionOffset, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetPositionOffset", _wrap_Tracking_GetPositionOffset, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetFollowSpringLength", _wrap_Tracking_SetFollowSpringLength, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetFollowSpringLength", _wrap_Tracking_GetFollowSpringLength, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetFollowMinimumSpringFactor", _wrap_Tracking_SetFollowMinimumSpringFactor, METH_VARARGS, NULL},
 	 { (char *)"Tracking_Pan", _wrap_Tracking_Pan, METH_VARARGS, NULL},
-	 { (char *)"Tracking_SetPanningSpeed", _wrap_Tracking_SetPanningSpeed, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetPanDirection", _wrap_Tracking_GetPanDirection, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetPanSpeed", _wrap_Tracking_SetPanSpeed, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetPanSpeed", _wrap_Tracking_GetPanSpeed, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetPanAcceleration", _wrap_Tracking_SetPanAcceleration, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetPanAcceleration", _wrap_Tracking_GetPanAcceleration, METH_VARARGS, NULL},
+	 { (char *)"Tracking_Tilt", _wrap_Tracking_Tilt, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetTiltDirection", _wrap_Tracking_GetTiltDirection, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetTiltSpeed", _wrap_Tracking_SetTiltSpeed, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetTiltSpeed", _wrap_Tracking_GetTiltSpeed, METH_VARARGS, NULL},
+	 { (char *)"Tracking_SetTiltAcceleration", _wrap_Tracking_SetTiltAcceleration, METH_VARARGS, NULL},
+	 { (char *)"Tracking_GetTiltAcceleration", _wrap_Tracking_GetTiltAcceleration, METH_VARARGS, NULL},
 	 { (char *)"delete_Tracking", _wrap_delete_Tracking, METH_VARARGS, NULL},
 	 { (char *)"Tracking_swigregister", Tracking_swigregister, METH_VARARGS, NULL},
 	 { (char *)"ThirdPerson_SetTargetYOffset", _wrap_ThirdPerson_SetTargetYOffset, METH_VARARGS, NULL},
@@ -131868,6 +132304,9 @@ SWIGEXPORT void SWIG_init(void) {
   SWIG_Python_SetConstant(d, "Tracking_PAN_LEFT",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::PAN_LEFT)));
   SWIG_Python_SetConstant(d, "Tracking_PAN_NONE",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::PAN_NONE)));
   SWIG_Python_SetConstant(d, "Tracking_PAN_RIGHT",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::PAN_RIGHT)));
+  SWIG_Python_SetConstant(d, "Tracking_TILT_UP",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::TILT_UP)));
+  SWIG_Python_SetConstant(d, "Tracking_TILT_NONE",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::TILT_NONE)));
+  SWIG_Python_SetConstant(d, "Tracking_TILT_DOWN",SWIG_From_int(static_cast< int >(iPcmNewCamera::Tracking::TILT_DOWN)));
   SWIG_Python_SetConstant(d, "iPcNewCamera_CCM_FIRST_PERSON",SWIG_From_int(static_cast< int >(iPcNewCamera::CCM_FIRST_PERSON)));
   SWIG_Python_SetConstant(d, "iPcNewCamera_CCM_THIRD_PERSON",SWIG_From_int(static_cast< int >(iPcNewCamera::CCM_THIRD_PERSON)));
   SWIG_Python_SetConstant(d, "iPcNewCamera_CCM_TRACKING",SWIG_From_int(static_cast< int >(iPcNewCamera::CCM_TRACKING)));
