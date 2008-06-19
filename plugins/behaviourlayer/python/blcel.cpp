@@ -46696,22 +46696,22 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcRegion_GetRegion(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcRegion_GetCollection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcRegion *arg1 = (iPcRegion *) 0 ;
-  iRegion *result = 0 ;
+  iCollection *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iPcRegion_GetRegion",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iPcRegion_GetCollection",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcRegion, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcRegion_GetRegion" "', argument " "1"" of type '" "iPcRegion *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcRegion_GetCollection" "', argument " "1"" of type '" "iPcRegion *""'"); 
   }
   arg1 = reinterpret_cast< iPcRegion * >(argp1);
-  result = (iRegion *)(arg1)->GetRegion();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iRegion, 0 |  0 );
+  result = (iCollection *)(arg1)->GetCollection();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCollection, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -47759,7 +47759,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelRegion_GetCsRegionName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelRegion_GetCsCollectionName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelRegion *arg1 = (iCelRegion *) 0 ;
   char *result = 0 ;
@@ -47767,13 +47767,13 @@ SWIGINTERN PyObject *_wrap_iCelRegion_GetCsRegionName(PyObject *SWIGUNUSEDPARM(s
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iCelRegion_GetCsRegionName",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iCelRegion_GetCsCollectionName",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelRegion, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelRegion_GetCsRegionName" "', argument " "1"" of type '" "iCelRegion const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelRegion_GetCsCollectionName" "', argument " "1"" of type '" "iCelRegion const *""'"); 
   }
   arg1 = reinterpret_cast< iCelRegion * >(argp1);
-  result = (char *)((iCelRegion const *)arg1)->GetCsRegionName();
+  result = (char *)((iCelRegion const *)arg1)->GetCsCollectionName();
   resultobj = SWIG_FromCharPtr((const char *)result);
   return resultobj;
 fail:
@@ -48088,22 +48088,22 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelRegion_GetCsRegion(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelRegion_GetCollection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelRegion *arg1 = (iCelRegion *) 0 ;
-  iRegion *result = 0 ;
+  iCollection *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iCelRegion_GetCsRegion",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iCelRegion_GetCollection",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelRegion, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelRegion_GetCsRegion" "', argument " "1"" of type '" "iCelRegion *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelRegion_GetCollection" "', argument " "1"" of type '" "iCelRegion *""'"); 
   }
   arg1 = reinterpret_cast< iCelRegion * >(argp1);
-  result = (iRegion *)(arg1)->GetCsRegion();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iRegion, 0 |  0 );
+  result = (iCollection *)(arg1)->GetCollection();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCollection, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -122878,7 +122878,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcRegion_GetStartSector", _wrap_iPcRegion_GetStartSector, METH_VARARGS, NULL},
 	 { (char *)"iPcRegion_GetStartPosition", _wrap_iPcRegion_GetStartPosition, METH_VARARGS, NULL},
 	 { (char *)"iPcRegion_PointCamera", _wrap_iPcRegion_PointCamera, METH_VARARGS, NULL},
-	 { (char *)"iPcRegion_GetRegion", _wrap_iPcRegion_GetRegion, METH_VARARGS, NULL},
+	 { (char *)"iPcRegion_GetCollection", _wrap_iPcRegion_GetCollection, METH_VARARGS, NULL},
 	 { (char *)"iPcRegion_WorldDir_get", _wrap_iPcRegion_WorldDir_get, METH_VARARGS, NULL},
 	 { (char *)"iPcRegion_RegionName_set", _wrap_iPcRegion_RegionName_set, METH_VARARGS, NULL},
 	 { (char *)"iPcRegion_RegionName_get", _wrap_iPcRegion_RegionName_get, METH_VARARGS, NULL},
@@ -122910,7 +122910,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_iCelMapFile", _wrap_delete_iCelMapFile, METH_VARARGS, NULL},
 	 { (char *)"iCelMapFile_swigregister", iCelMapFile_swigregister, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_GetName", _wrap_iCelRegion_GetName, METH_VARARGS, NULL},
-	 { (char *)"iCelRegion_GetCsRegionName", _wrap_iCelRegion_GetCsRegionName, METH_VARARGS, NULL},
+	 { (char *)"iCelRegion_GetCsCollectionName", _wrap_iCelRegion_GetCsCollectionName, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_SetCachePath", _wrap_iCelRegion_SetCachePath, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_GetCachePath", _wrap_iCelRegion_GetCachePath, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_CreateMapFile", _wrap_iCelRegion_CreateMapFile, METH_VARARGS, NULL},
@@ -122922,7 +122922,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelRegion_AssociateEntity", _wrap_iCelRegion_AssociateEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_DissociateEntity", _wrap_iCelRegion_DissociateEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_ContainsEntity", _wrap_iCelRegion_ContainsEntity, METH_VARARGS, NULL},
-	 { (char *)"iCelRegion_GetCsRegion", _wrap_iCelRegion_GetCsRegion, METH_VARARGS, NULL},
+	 { (char *)"iCelRegion_GetCollection", _wrap_iCelRegion_GetCollection, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_Name_get", _wrap_iCelRegion_Name_get, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_CsRegionName_get", _wrap_iCelRegion_CsRegionName_get, METH_VARARGS, NULL},
 	 { (char *)"iCelRegion_CachePath_set", _wrap_iCelRegion_CachePath_set, METH_VARARGS, NULL},
@@ -128500,7 +128500,6 @@ static swig_type_info _swigt__p_iTerrainRenderer = {"_p_iTerrainRenderer", 0, 0,
 static swig_type_info _swigt__p_iSndSysRenderer = {"_p_iSndSysRenderer", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_iShaderPriorityList = {"_p_iShaderPriorityList", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_iSprite2DUVAnimationFrame = {"_p_iSprite2DUVAnimationFrame", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_iCollection = {"_p_iCollection", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_iDocument = {"_p_iDocument", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_iAnimatedMesh = {"_p_iAnimatedMesh", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_iMaterialList = {"_p_iMaterialList", 0, 0, 0, 0, 0};
@@ -128685,6 +128684,7 @@ static swig_type_info _swigt__p_iCelRegion = {"_p_iCelRegion", "iCelRegion *", 0
 static swig_type_info _swigt__p_iCelTimerListener = {"_p_iCelTimerListener", "iCelTimerListener *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iCelZone = {"_p_iCelZone", "iCelZone *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iChangePropertyQuestRewardFactory = {"_p_iChangePropertyQuestRewardFactory", "iChangePropertyQuestRewardFactory *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_iCollection = {"_p_iCollection", "iCollection *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iCollider = {"_p_iCollider", "iCollider *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iConsoleInput = {"_p_iConsoleInput", "iConsoleInput *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iConsoleOutput = {"_p_iConsoleOutput", "iConsoleOutput *", 0, 0, (void*)0, 0};
@@ -130791,7 +130791,6 @@ static swig_cast_info _swigc__p_iTerrainRenderer[] = {{&_swigt__p_iTerrainRender
 static swig_cast_info _swigc__p_iSndSysRenderer[] = {{&_swigt__p_iSndSysRenderer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iShaderPriorityList[] = {{&_swigt__p_iShaderPriorityList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iSprite2DUVAnimationFrame[] = {{&_swigt__p_iSprite2DUVAnimationFrame, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_iCollection[] = {{&_swigt__p_iCollection, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iDocument[] = {{&_swigt__p_iDocument, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iAnimatedMesh[] = {{&_swigt__p_iAnimatedMesh, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iMaterialList[] = {{&_swigt__p_iMaterialList, 0, 0, 0},{0, 0, 0, 0}};
@@ -130977,6 +130976,7 @@ static swig_cast_info _swigc__p_iCelRegion[] = {  {&_swigt__p_iCelRegion, 0, 0, 
 static swig_cast_info _swigc__p_iCelTimerListener[] = {  {&_swigt__p_scfImplementationExt0TPcCommon_celPcCommon_t, _p_scfImplementationExt0TPcCommon_celPcCommon_tTo_p_iCelTimerListener, 0, 0},  {&_swigt__p_PcCommon, _p_PcCommonTo_p_iCelTimerListener, 0, 0},  {&_swigt__p_pyPcCommon, _p_pyPcCommonTo_p_iCelTimerListener, 0, 0},  {&_swigt__p_celPcCommon, _p_celPcCommonTo_p_iCelTimerListener, 0, 0},  {&_swigt__p_scfImplementation3TcelPcCommon_iCelPropertyClass_iCelTimerListener_iMessageSender_t, _p_scfImplementation3TcelPcCommon_iCelPropertyClass_iCelTimerListener_iMessageSender_tTo_p_iCelTimerListener, 0, 0},  {&_swigt__p_iCelTimerListener, 0, 0, 0},  {&_swigt__p_scfImplementationExt1TpyPcCommon_PcCommon_iPcPython_t, _p_scfImplementationExt1TpyPcCommon_PcCommon_iPcPython_tTo_p_iCelTimerListener, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iCelZone[] = {  {&_swigt__p_iCelZone, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iChangePropertyQuestRewardFactory[] = {  {&_swigt__p_iChangePropertyQuestRewardFactory, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_iCollection[] = {  {&_swigt__p_iCollection, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iCollider[] = {  {&_swigt__p_iCollider, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iConsoleInput[] = {  {&_swigt__p_iConsoleInput, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_iConsoleOutput[] = {  {&_swigt__p_iConsoleOutput, 0, 0, 0},{0, 0, 0, 0}};
