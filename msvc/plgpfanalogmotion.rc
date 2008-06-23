@@ -19,7 +19,7 @@ FILEFLAGS 0x0
       VALUE "ProductVersion", "1.9"
       VALUE "FileVersion", "1.9"
       VALUE "LegalCopyright", "Copyright (C)2002-2008 Jorrit Tyberghein and others."
-      VALUE "FileDescription", "pfactoranalog"
+      VALUE "FileDescription", "pfanalogmotion"
 #ifdef CS_DEBUG
       VALUE "Comments", "Debug build"
 #else
@@ -43,9 +43,15 @@ FILEFLAGS 0x0
   "<plugin>",
   "  <scf>",
   "    <classes>",
+  "      <!-- @@@ DEPRECATED -->",
   "      <class>",
   "        <name>cel.pcfactory.move.actor.analog</name>",
-  "        <implementation>celPfActorAnalog</implementation>",
+  "        <implementation>celPfAnalogMotion</implementation>",
+  "        <description>CEL Analog Actor Movement Property Class Factory</description>",
+  "      </class>",
+  "      <class>",
+  "        <name>cel.pcfactory.move.analogmotion</name>",
+  "        <implementation>celPfAnalogMotion</implementation>",
   "        <description>CEL Analog Actor Movement Property Class Factory</description>",
   "      </class>",
   "    </classes>",

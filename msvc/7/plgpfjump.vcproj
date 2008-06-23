@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="7.00"
-	Name="plgpfactoranalog"
-	ProjectGUID="{26C0690C-CDA5-5C37-87AC-D0C18C4F7064}"
+	Name="plgpfjump"
+	ProjectGUID="{4F4A2447-5243-2EF5-BE00-701BB9473BA1}"
 	SccProjectName=""
 	SccLocalPath="">
 	<Platforms>
@@ -13,8 +13,8 @@
 	<Configurations>
   		<Configuration
 			Name="Release (with static libs)|Win32"
-			OutputDirectory="..\..\out\release7\build\plgpfactoranalog\"
-			IntermediateDirectory="..\..\out\release7\build\plgpfactoranalog\"
+			OutputDirectory="..\..\out\release7\build\plgpfjump\"
+			IntermediateDirectory="..\..\out\release7\build\plgpfjump\"
 			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
@@ -27,14 +27,14 @@
 				RuntimeLibrary="2"
 				DebugInformationFormat="3"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release7\build\plgpfactoranalog\pfactoranalog.pdb"
+				ProgramDataBaseFileName="..\..\out\release7\build\plgpfjump\pfjump.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32"
 				OptimizeForProcessor="1"
 				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.pch"
-				AssemblerListingLocation="..\..\out\release7\build\plgpfactoranalog\"
-				ObjectFile="..\..\out\release7\build\plgpfactoranalog\"
+				PrecompiledHeaderFile="..\..\out\release7\build\plgpfjump\plgpfjump.pch"
+				AssemblerListingLocation="..\..\out\release7\build\plgpfjump\"
+				ObjectFile="..\..\out\release7\build\plgpfjump\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="TRUE"
@@ -50,11 +50,11 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\pfactoranalog.dll"
-				ProgramDatabaseFile="..\..\out\release7\build\plgpfactoranalog\pfactoranalog.pdb"
+				OutputFile="..\..\pfjump.dll"
+				ProgramDatabaseFile="..\..\out\release7\build\plgpfjump\pfjump.pdb"
 				IgnoreImportLibrary="TRUE"
 				DelayLoadDLLs=""
-				ImportLibrary="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.lib"
+				ImportLibrary="..\..\out\release7\build\plgpfjump\plgpfjump.lib"
 				AdditionalOptions=" "
 				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
@@ -69,7 +69,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.tlb"/>
+				TypeLibraryName="..\..\out\release7\build\plgpfjump\plgpfjump.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release7\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release7\bin\&#x0D;&#x0A;"
@@ -81,7 +81,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=7"
-				AdditionalIncludeDirectories=".;..\..\plugins\propclass\actoranalog;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\propclass\jump;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -90,8 +90,8 @@
 		</Configuration>
   		<Configuration
 			Name="Release (with DLLs)|Win32"
-			OutputDirectory="..\..\out\release7\build\plgpfactoranalog\"
-			IntermediateDirectory="..\..\out\release7\build\plgpfactoranalog\"
+			OutputDirectory="..\..\out\release7\build\plgpfjump\"
+			IntermediateDirectory="..\..\out\release7\build\plgpfjump\"
 			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
@@ -104,14 +104,14 @@
 				RuntimeLibrary="2"
 				DebugInformationFormat="3"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release7\build\plgpfactoranalog\pfactoranalog.pdb"
+				ProgramDataBaseFileName="..\..\out\release7\build\plgpfjump\pfjump.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_BUILD_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.pch"
-				AssemblerListingLocation="..\..\out\release7\build\plgpfactoranalog\"
-				ObjectFile="..\..\out\release7\build\plgpfactoranalog\"
+				PrecompiledHeaderFile="..\..\out\release7\build\plgpfjump\plgpfjump.pch"
+				AssemblerListingLocation="..\..\out\release7\build\plgpfjump\"
+				ObjectFile="..\..\out\release7\build\plgpfjump\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="TRUE"
@@ -127,11 +127,11 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\pfactoranalog.dll"
-				ProgramDatabaseFile="..\..\out\release7\build\plgpfactoranalog\pfactoranalog.pdb"
+				OutputFile="..\..\pfjump.dll"
+				ProgramDatabaseFile="..\..\out\release7\build\plgpfjump\pfjump.pdb"
 				IgnoreImportLibrary="TRUE"
 				DelayLoadDLLs=""
-				ImportLibrary="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.lib"
+				ImportLibrary="..\..\out\release7\build\plgpfjump\plgpfjump.lib"
 				AdditionalOptions=" "
 				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
@@ -146,7 +146,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release7\build\plgpfactoranalog\plgpfactoranalog.tlb"/>
+				TypeLibraryName="..\..\out\release7\build\plgpfjump\plgpfjump.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release7\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release7\bin\&#x0D;&#x0A;"
@@ -158,7 +158,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=7"
-				AdditionalIncludeDirectories=".;..\..\plugins\propclass\actoranalog;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\propclass\jump;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -167,8 +167,8 @@
 		</Configuration>
     		<Configuration
 			Name="Debug (with static libs)|Win32"
-			OutputDirectory="..\..\out\debug7\build\plgpfactoranalog\"
-			IntermediateDirectory="..\..\out\debug7\build\plgpfactoranalog\"
+			OutputDirectory="..\..\out\debug7\build\plgpfjump\"
+			IntermediateDirectory="..\..\out\debug7\build\plgpfjump\"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -180,14 +180,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug7\build\plgpfactoranalog\pfactoranalog.pdb"
+				ProgramDataBaseFileName="..\..\out\debug7\build\plgpfjump\pfjump.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32"
 				OptimizeForProcessor="1"
 				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.pch"
-				AssemblerListingLocation="..\..\out\debug7\build\plgpfactoranalog\"
-				ObjectFile="..\..\out\debug7\build\plgpfactoranalog\"
+				PrecompiledHeaderFile="..\..\out\debug7\build\plgpfjump\plgpfjump.pch"
+				AssemblerListingLocation="..\..\out\debug7\build\plgpfjump\"
+				ObjectFile="..\..\out\debug7\build\plgpfjump\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="TRUE"
@@ -201,11 +201,11 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\pfactoranalog.dll"
-				ProgramDatabaseFile="..\..\out\debug7\build\plgpfactoranalog\pfactoranalog.pdb"
+				OutputFile="..\..\pfjump.dll"
+				ProgramDatabaseFile="..\..\out\debug7\build\plgpfjump\pfjump.pdb"
 				IgnoreImportLibrary="TRUE"
 				DelayLoadDLLs=""
-				ImportLibrary="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.lib"
+				ImportLibrary="..\..\out\debug7\build\plgpfjump\plgpfjump.lib"
 				AdditionalOptions=" "
 				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
@@ -220,7 +220,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.tlb"/>
+				TypeLibraryName="..\..\out\debug7\build\plgpfjump\plgpfjump.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug7\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug7\bin\&#x0D;&#x0A;"
@@ -232,7 +232,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=7"
-				AdditionalIncludeDirectories=".;..\..\plugins\propclass\actoranalog;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\propclass\jump;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -241,8 +241,8 @@
 		</Configuration>
   		<Configuration
 			Name="Debug (with DLLs)|Win32"
-			OutputDirectory="..\..\out\debug7\build\plgpfactoranalog\"
-			IntermediateDirectory="..\..\out\debug7\build\plgpfactoranalog\"
+			OutputDirectory="..\..\out\debug7\build\plgpfjump\"
+			IntermediateDirectory="..\..\out\debug7\build\plgpfjump\"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -254,14 +254,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug7\build\plgpfactoranalog\pfactoranalog.pdb"
+				ProgramDataBaseFileName="..\..\out\debug7\build\plgpfjump\pfjump.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_BUILD_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.pch"
-				AssemblerListingLocation="..\..\out\debug7\build\plgpfactoranalog\"
-				ObjectFile="..\..\out\debug7\build\plgpfactoranalog\"
+				PrecompiledHeaderFile="..\..\out\debug7\build\plgpfjump\plgpfjump.pch"
+				AssemblerListingLocation="..\..\out\debug7\build\plgpfjump\"
+				ObjectFile="..\..\out\debug7\build\plgpfjump\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="TRUE"
@@ -275,11 +275,11 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\pfactoranalog.dll"
-				ProgramDatabaseFile="..\..\out\debug7\build\plgpfactoranalog\pfactoranalog.pdb"
+				OutputFile="..\..\pfjump.dll"
+				ProgramDatabaseFile="..\..\out\debug7\build\plgpfjump\pfjump.pdb"
 				IgnoreImportLibrary="TRUE"
 				DelayLoadDLLs=""
-				ImportLibrary="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.lib"
+				ImportLibrary="..\..\out\debug7\build\plgpfjump\plgpfjump.lib"
 				AdditionalOptions=" "
 				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
@@ -294,7 +294,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug7\build\plgpfactoranalog\plgpfactoranalog.tlb"/>
+				TypeLibraryName="..\..\out\debug7\build\plgpfjump\plgpfjump.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug7\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug7\bin\&#x0D;&#x0A;"
@@ -306,7 +306,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=7"
-				AdditionalIncludeDirectories=".;..\..\plugins\propclass\actoranalog;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\propclass\jump;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -319,24 +319,24 @@
 			Name="Source Files"
 			Filter="">
 			<File
-				RelativePath="..\..\plugins\propclass\actoranalog\actoranalog.cpp">
+				RelativePath="..\..\plugins\propclass\jump\jump.cpp">
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="">
 			<File
-				RelativePath="..\..\plugins\propclass\actoranalog\actoranalog.h">
+				RelativePath="..\..\plugins\propclass\jump\jump.h">
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="">
 			<File
-				RelativePath="..\..\msvc\plgpfactoranalog.rc">
+				RelativePath="..\..\msvc\plgpfjump.rc">
 			</File>
 			<File
-				RelativePath="..\..\plugins\propclass\actoranalog\pfactoranalog.csplugin">
+				RelativePath="..\..\plugins\propclass\jump\pfjump.csplugin">
 			</File>
 		</Filter>
 	</Files>
