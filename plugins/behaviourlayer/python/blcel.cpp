@@ -86242,6 +86242,90 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcSoundSource_Play(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcSoundSource *arg1 = (iPcSoundSource *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcSoundSource_Play",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcSoundSource, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcSoundSource_Play" "', argument " "1"" of type '" "iPcSoundSource *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcSoundSource * >(argp1);
+  (arg1)->Play();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcSoundSource_Stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcSoundSource *arg1 = (iPcSoundSource *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcSoundSource_Stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcSoundSource, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcSoundSource_Stop" "', argument " "1"" of type '" "iPcSoundSource *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcSoundSource * >(argp1);
+  (arg1)->Stop();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcSoundSource_Pause(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcSoundSource *arg1 = (iPcSoundSource *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcSoundSource_Pause",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcSoundSource, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcSoundSource_Pause" "', argument " "1"" of type '" "iPcSoundSource *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcSoundSource * >(argp1);
+  (arg1)->Pause();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcSoundSource_Unpause(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcSoundSource *arg1 = (iPcSoundSource *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcSoundSource_Unpause",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcSoundSource, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcSoundSource_Unpause" "', argument " "1"" of type '" "iPcSoundSource *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcSoundSource * >(argp1);
+  (arg1)->Unpause();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcSoundSource_SoundSource_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcSoundSource *arg1 = (iPcSoundSource *) 0 ;
@@ -125743,6 +125827,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcSoundSource_GetSoundName", _wrap_iPcSoundSource_GetSoundName, METH_VARARGS, NULL},
 	 { (char *)"iPcSoundSource_SetMode", _wrap_iPcSoundSource_SetMode, METH_VARARGS, NULL},
 	 { (char *)"iPcSoundSource_GetMode", _wrap_iPcSoundSource_GetMode, METH_VARARGS, NULL},
+	 { (char *)"iPcSoundSource_Play", _wrap_iPcSoundSource_Play, METH_VARARGS, NULL},
+	 { (char *)"iPcSoundSource_Stop", _wrap_iPcSoundSource_Stop, METH_VARARGS, NULL},
+	 { (char *)"iPcSoundSource_Pause", _wrap_iPcSoundSource_Pause, METH_VARARGS, NULL},
+	 { (char *)"iPcSoundSource_Unpause", _wrap_iPcSoundSource_Unpause, METH_VARARGS, NULL},
 	 { (char *)"iPcSoundSource_SoundSource_get", _wrap_iPcSoundSource_SoundSource_get, METH_VARARGS, NULL},
 	 { (char *)"iPcSoundSource_SoundName_set", _wrap_iPcSoundSource_SoundName_set, METH_VARARGS, NULL},
 	 { (char *)"iPcSoundSource_SoundName_get", _wrap_iPcSoundSource_SoundName_get, METH_VARARGS, NULL},
