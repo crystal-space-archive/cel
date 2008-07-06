@@ -59444,120 +59444,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcJump_Enable__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iPcJump *arg1 = (iPcJump *) 0 ;
-  bool arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  bool val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_Enable",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_Enable" "', argument " "1"" of type '" "iPcJump *""'"); 
-  }
-  arg1 = reinterpret_cast< iPcJump * >(argp1);
-  ecode2 = SWIG_AsVal_bool(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_Enable" "', argument " "2"" of type '" "bool""'");
-  } 
-  arg2 = static_cast< bool >(val2);
-  (arg1)->Enable(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcJump_Enable__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iPcJump *arg1 = (iPcJump *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_Enable",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_Enable" "', argument " "1"" of type '" "iPcJump *""'"); 
-  }
-  arg1 = reinterpret_cast< iPcJump * >(argp1);
-  (arg1)->Enable();
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcJump_Enable(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[3];
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = PyObject_Length(args);
-  for (ii = 0; (ii < argc) && (ii < 2); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcJump, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_iPcJump_Enable__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcJump, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_bool(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_iPcJump_Enable__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcJump_Enable'.\n  Possible C/C++ prototypes are:\n    Enable(bool)\n    Enable()\n");
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcJump_IsEnabled(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iPcJump *arg1 = (iPcJump *) 0 ;
-  bool result;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_IsEnabled",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_IsEnabled" "', argument " "1"" of type '" "iPcJump const *""'"); 
-  }
-  arg1 = reinterpret_cast< iPcJump * >(argp1);
-  result = (bool)((iPcJump const *)arg1)->IsEnabled();
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_iPcJump_scfGetVersion(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int result;
@@ -125147,8 +125033,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcJump_GetGravity", _wrap_iPcJump_GetGravity, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetFixedJump", _wrap_iPcJump_SetFixedJump, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetFixedJump", _wrap_iPcJump_GetFixedJump, METH_VARARGS, NULL},
-	 { (char *)"iPcJump_Enable", _wrap_iPcJump_Enable, METH_VARARGS, NULL},
-	 { (char *)"iPcJump_IsEnabled", _wrap_iPcJump_IsEnabled, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_scfGetVersion", _wrap_iPcJump_scfGetVersion, METH_VARARGS, NULL},
 	 { (char *)"delete_iPcJump", _wrap_delete_iPcJump, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_swigregister", iPcJump_swigregister, METH_VARARGS, NULL},
