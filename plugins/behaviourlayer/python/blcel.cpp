@@ -59088,22 +59088,82 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcJump_GetActiveAction(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcJump_GetState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcJump *arg1 = (iPcJump *) 0 ;
-  iPcJump::Action result;
+  iPcJump::State result;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetActiveAction",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetState",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetActiveAction" "', argument " "1"" of type '" "iPcJump const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetState" "', argument " "1"" of type '" "iPcJump const *""'"); 
   }
   arg1 = reinterpret_cast< iPcJump * >(argp1);
-  result = (iPcJump::Action)((iPcJump const *)arg1)->GetActiveAction();
+  result = (iPcJump::State)((iPcJump const *)arg1)->GetState();
   resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GlideTurn(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  iPcJump::GlideTurnDirection arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GlideTurn",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GlideTurn" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_GlideTurn" "', argument " "2"" of type '" "iPcJump::GlideTurnDirection""'");
+  } 
+  arg2 = static_cast< iPcJump::GlideTurnDirection >(val2);
+  (arg1)->GlideTurn(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GlidePitch(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  iPcJump::GlidePitchDirection arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GlidePitch",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GlidePitch" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_GlidePitch" "', argument " "2"" of type '" "iPcJump::GlidePitchDirection""'");
+  } 
+  arg2 = static_cast< iPcJump::GlidePitchDirection >(val2);
+  (arg1)->GlidePitch(arg2);
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
@@ -59281,58 +59341,6 @@ SWIGINTERN PyObject *_wrap_iPcJump_GetDoubleJumpSpeed(PyObject *SWIGUNUSEDPARM(s
   }
   arg1 = reinterpret_cast< iPcJump * >(argp1);
   result = (float)((iPcJump const *)arg1)->GetDoubleJumpSpeed();
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcJump_SetDoubleJumpSensitivity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iPcJump *arg1 = (iPcJump *) 0 ;
-  float arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  float val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetDoubleJumpSensitivity",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetDoubleJumpSensitivity" "', argument " "1"" of type '" "iPcJump *""'"); 
-  }
-  arg1 = reinterpret_cast< iPcJump * >(argp1);
-  ecode2 = SWIG_AsVal_float(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetDoubleJumpSensitivity" "', argument " "2"" of type '" "float""'");
-  } 
-  arg2 = static_cast< float >(val2);
-  (arg1)->SetDoubleJumpSensitivity(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcJump_GetDoubleJumpSensitivity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iPcJump *arg1 = (iPcJump *) 0 ;
-  float result;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetDoubleJumpSensitivity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetDoubleJumpSensitivity" "', argument " "1"" of type '" "iPcJump const *""'"); 
-  }
-  arg1 = reinterpret_cast< iPcJump * >(argp1);
-  result = (float)((iPcJump const *)arg1)->GetDoubleJumpSensitivity();
   resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
@@ -125019,7 +125027,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"scfQuery_iPcAnalogMotion", _wrap_scfQuery_iPcAnalogMotion, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_Jump", _wrap_iPcJump_Jump, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_Freeze", _wrap_iPcJump_Freeze, METH_VARARGS, NULL},
-	 { (char *)"iPcJump_GetActiveAction", _wrap_iPcJump_GetActiveAction, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetState", _wrap_iPcJump_GetState, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GlideTurn", _wrap_iPcJump_GlideTurn, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GlidePitch", _wrap_iPcJump_GlidePitch, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetJumpSpeed", _wrap_iPcJump_SetJumpSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetJumpSpeed", _wrap_iPcJump_GetJumpSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetJumpHeight", _wrap_iPcJump_SetJumpHeight, METH_VARARGS, NULL},
@@ -125027,8 +125037,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcJump_GetAirTime", _wrap_iPcJump_GetAirTime, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetDoubleJumpSpeed", _wrap_iPcJump_SetDoubleJumpSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetDoubleJumpSpeed", _wrap_iPcJump_GetDoubleJumpSpeed, METH_VARARGS, NULL},
-	 { (char *)"iPcJump_SetDoubleJumpSensitivity", _wrap_iPcJump_SetDoubleJumpSensitivity, METH_VARARGS, NULL},
-	 { (char *)"iPcJump_GetDoubleJumpSensitivity", _wrap_iPcJump_GetDoubleJumpSensitivity, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetGravity", _wrap_iPcJump_SetGravity, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetGravity", _wrap_iPcJump_GetGravity, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetFixedJump", _wrap_iPcJump_SetFixedJump, METH_VARARGS, NULL},
@@ -135240,7 +135248,14 @@ SWIGEXPORT void SWIG_init(void) {
   SWIG_Python_SetConstant(d, "iPcJump_STAND",SWIG_From_int(static_cast< int >(iPcJump::STAND)));
   SWIG_Python_SetConstant(d, "iPcJump_JUMP",SWIG_From_int(static_cast< int >(iPcJump::JUMP)));
   SWIG_Python_SetConstant(d, "iPcJump_DOUBLEJUMP",SWIG_From_int(static_cast< int >(iPcJump::DOUBLEJUMP)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE",SWIG_From_int(static_cast< int >(iPcJump::GLIDE)));
   SWIG_Python_SetConstant(d, "iPcJump_FROZEN",SWIG_From_int(static_cast< int >(iPcJump::FROZEN)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_NOTURN",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_NOTURN)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_LEFT",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_LEFT)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_RIGHT",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_RIGHT)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_NOPITCH",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_NOPITCH)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_UP",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_UP)));
+  SWIG_Python_SetConstant(d, "iPcJump_GLIDE_DOWN",SWIG_From_int(static_cast< int >(iPcJump::GLIDE_DOWN)));
   SWIG_Python_SetConstant(d, "iPcDefaultCamera_freelook",SWIG_From_int(static_cast< int >(iPcDefaultCamera::freelook)));
   SWIG_Python_SetConstant(d, "iPcDefaultCamera_firstperson",SWIG_From_int(static_cast< int >(iPcDefaultCamera::firstperson)));
   SWIG_Python_SetConstant(d, "iPcDefaultCamera_thirdperson",SWIG_From_int(static_cast< int >(iPcDefaultCamera::thirdperson)));
