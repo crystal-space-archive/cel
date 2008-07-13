@@ -59170,6 +59170,162 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcJump_SetGlideGravity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetGlideGravity",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetGlideGravity" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetGlideGravity" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetGlideGravity(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetGlideGravity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetGlideGravity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetGlideGravity" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (float)((iPcJump const *)arg1)->GetGlideGravity();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_SetGlidePitchLimit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetGlidePitchLimit",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetGlidePitchLimit" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetGlidePitchLimit" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetGlidePitchLimit(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetGlidePitchLimit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetGlidePitchLimit",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetGlidePitchLimit" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (float)((iPcJump const *)arg1)->GetGlidePitchLimit();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_SetGlidePitchSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetGlidePitchSpeed",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetGlidePitchSpeed" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetGlidePitchSpeed" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetGlidePitchSpeed(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetGlidePitchSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetGlidePitchSpeed",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetGlidePitchSpeed" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (float)((iPcJump const *)arg1)->GetGlidePitchSpeed();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcJump_SetJumpSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcJump *arg1 = (iPcJump *) 0 ;
@@ -125030,6 +125186,12 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcJump_GetState", _wrap_iPcJump_GetState, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GlideTurn", _wrap_iPcJump_GlideTurn, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GlidePitch", _wrap_iPcJump_GlidePitch, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetGlideGravity", _wrap_iPcJump_SetGlideGravity, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetGlideGravity", _wrap_iPcJump_GetGlideGravity, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetGlidePitchLimit", _wrap_iPcJump_SetGlidePitchLimit, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetGlidePitchLimit", _wrap_iPcJump_GetGlidePitchLimit, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetGlidePitchSpeed", _wrap_iPcJump_SetGlidePitchSpeed, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetGlidePitchSpeed", _wrap_iPcJump_GetGlidePitchSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetJumpSpeed", _wrap_iPcJump_SetJumpSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetJumpSpeed", _wrap_iPcJump_GetJumpSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetJumpHeight", _wrap_iPcJump_SetJumpHeight, METH_VARARGS, NULL},
