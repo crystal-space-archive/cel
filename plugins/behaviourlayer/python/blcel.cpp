@@ -59058,6 +59058,27 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcJump_FinishBoost(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_FinishBoost",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_FinishBoost" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  (arg1)->FinishBoost();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcJump_Freeze(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcJump *arg1 = (iPcJump *) 0 ;
@@ -59654,6 +59675,162 @@ SWIGINTERN PyObject *_wrap_iPcJump_GetFixedJump(PyObject *SWIGUNUSEDPARM(self), 
   arg1 = reinterpret_cast< iPcJump * >(argp1);
   result = (bool)((iPcJump const *)arg1)->GetFixedJump();
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_SetBoostJump(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetBoostJump",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetBoostJump" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetBoostJump" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  (arg1)->SetBoostJump(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetBoostJump(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  bool result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetBoostJump",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetBoostJump" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (bool)((iPcJump const *)arg1)->GetBoostJump();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_SetBoostTime(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetBoostTime",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetBoostTime" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetBoostTime" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetBoostTime(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetBoostTime(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetBoostTime",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetBoostTime" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (float)((iPcJump const *)arg1)->GetBoostTime();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_SetBoostAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_SetBoostAcceleration",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_SetBoostAcceleration" "', argument " "1"" of type '" "iPcJump *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcJump_SetBoostAcceleration" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetBoostAcceleration(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcJump_GetBoostAcceleration(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcJump *arg1 = (iPcJump *) 0 ;
+  float result;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcJump_GetBoostAcceleration",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcJump, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcJump_GetBoostAcceleration" "', argument " "1"" of type '" "iPcJump const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcJump * >(argp1);
+  result = (float)((iPcJump const *)arg1)->GetBoostAcceleration();
+  resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
   return NULL;
@@ -125234,6 +125411,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celGetAnalogMotion", _wrap_celGetAnalogMotion, METH_VARARGS, NULL},
 	 { (char *)"scfQuery_iPcAnalogMotion", _wrap_scfQuery_iPcAnalogMotion, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_Jump", _wrap_iPcJump_Jump, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_FinishBoost", _wrap_iPcJump_FinishBoost, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_Freeze", _wrap_iPcJump_Freeze, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetState", _wrap_iPcJump_GetState, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GlideTurn", _wrap_iPcJump_GlideTurn, METH_VARARGS, NULL},
@@ -125257,6 +125435,12 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcJump_GetGravity", _wrap_iPcJump_GetGravity, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_SetFixedJump", _wrap_iPcJump_SetFixedJump, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_GetFixedJump", _wrap_iPcJump_GetFixedJump, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetBoostJump", _wrap_iPcJump_SetBoostJump, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetBoostJump", _wrap_iPcJump_GetBoostJump, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetBoostTime", _wrap_iPcJump_SetBoostTime, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetBoostTime", _wrap_iPcJump_GetBoostTime, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_SetBoostAcceleration", _wrap_iPcJump_SetBoostAcceleration, METH_VARARGS, NULL},
+	 { (char *)"iPcJump_GetBoostAcceleration", _wrap_iPcJump_GetBoostAcceleration, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_scfGetVersion", _wrap_iPcJump_scfGetVersion, METH_VARARGS, NULL},
 	 { (char *)"delete_iPcJump", _wrap_delete_iPcJump, METH_VARARGS, NULL},
 	 { (char *)"iPcJump_swigregister", iPcJump_swigregister, METH_VARARGS, NULL},
