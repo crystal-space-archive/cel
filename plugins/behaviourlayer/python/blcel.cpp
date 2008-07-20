@@ -69360,29 +69360,29 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcTrackingCamera_Pan(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetPanDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
-  iPcTrackingCamera::PanDirection arg2 ;
+  float arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int val2 ;
+  float val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_Pan",2,2,&obj0,&obj1)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_SetPanDirection",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrackingCamera, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_Pan" "', argument " "1"" of type '" "iPcTrackingCamera *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_SetPanDirection" "', argument " "1"" of type '" "iPcTrackingCamera *""'"); 
   }
   arg1 = reinterpret_cast< iPcTrackingCamera * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrackingCamera_Pan" "', argument " "2"" of type '" "iPcTrackingCamera::PanDirection""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrackingCamera_SetPanDirection" "', argument " "2"" of type '" "float""'");
   } 
-  arg2 = static_cast< iPcTrackingCamera::PanDirection >(val2);
-  (arg1)->Pan(arg2);
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetPanDirection(arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -69393,7 +69393,7 @@ fail:
 SWIGINTERN PyObject *_wrap_iPcTrackingCamera_GetPanDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
-  iPcTrackingCamera::PanDirection result;
+  float result;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
@@ -69404,8 +69404,8 @@ SWIGINTERN PyObject *_wrap_iPcTrackingCamera_GetPanDirection(PyObject *SWIGUNUSE
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_GetPanDirection" "', argument " "1"" of type '" "iPcTrackingCamera const *""'"); 
   }
   arg1 = reinterpret_cast< iPcTrackingCamera * >(argp1);
-  result = (iPcTrackingCamera::PanDirection)((iPcTrackingCamera const *)arg1)->GetPanDirection();
-  resultobj = SWIG_From_int(static_cast< int >(result));
+  result = (float)((iPcTrackingCamera const *)arg1)->GetPanDirection();
+  resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
   return NULL;
@@ -69516,29 +69516,29 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcTrackingCamera_Tilt(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetTiltDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
-  iPcTrackingCamera::TiltDirection arg2 ;
+  float arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int val2 ;
+  float val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_Tilt",2,2,&obj0,&obj1)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_SetTiltDirection",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrackingCamera, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_Tilt" "', argument " "1"" of type '" "iPcTrackingCamera *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_SetTiltDirection" "', argument " "1"" of type '" "iPcTrackingCamera *""'"); 
   }
   arg1 = reinterpret_cast< iPcTrackingCamera * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrackingCamera_Tilt" "', argument " "2"" of type '" "iPcTrackingCamera::TiltDirection""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrackingCamera_SetTiltDirection" "', argument " "2"" of type '" "float""'");
   } 
-  arg2 = static_cast< iPcTrackingCamera::TiltDirection >(val2);
-  (arg1)->Tilt(arg2);
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetTiltDirection(arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -69549,7 +69549,7 @@ fail:
 SWIGINTERN PyObject *_wrap_iPcTrackingCamera_GetTiltDirection(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
-  iPcTrackingCamera::TiltDirection result;
+  float result;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
@@ -69560,8 +69560,8 @@ SWIGINTERN PyObject *_wrap_iPcTrackingCamera_GetTiltDirection(PyObject *SWIGUNUS
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_GetTiltDirection" "', argument " "1"" of type '" "iPcTrackingCamera const *""'"); 
   }
   arg1 = reinterpret_cast< iPcTrackingCamera * >(argp1);
-  result = (iPcTrackingCamera::TiltDirection)((iPcTrackingCamera const *)arg1)->GetTiltDirection();
-  resultobj = SWIG_From_int(static_cast< int >(result));
+  result = (float)((iPcTrackingCamera const *)arg1)->GetTiltDirection();
+  resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
   return NULL;
@@ -125707,13 +125707,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcTrackingCamera_SetFollowSpringLength", _wrap_iPcTrackingCamera_SetFollowSpringLength, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetFollowSpringLength", _wrap_iPcTrackingCamera_GetFollowSpringLength, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetFollowMinimumSpringFactor", _wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor, METH_VARARGS, NULL},
-	 { (char *)"iPcTrackingCamera_Pan", _wrap_iPcTrackingCamera_Pan, METH_VARARGS, NULL},
+	 { (char *)"iPcTrackingCamera_SetPanDirection", _wrap_iPcTrackingCamera_SetPanDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetPanDirection", _wrap_iPcTrackingCamera_GetPanDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetPanSpeed", _wrap_iPcTrackingCamera_SetPanSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetPanSpeed", _wrap_iPcTrackingCamera_GetPanSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetPanAcceleration", _wrap_iPcTrackingCamera_SetPanAcceleration, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetPanAcceleration", _wrap_iPcTrackingCamera_GetPanAcceleration, METH_VARARGS, NULL},
-	 { (char *)"iPcTrackingCamera_Tilt", _wrap_iPcTrackingCamera_Tilt, METH_VARARGS, NULL},
+	 { (char *)"iPcTrackingCamera_SetTiltDirection", _wrap_iPcTrackingCamera_SetTiltDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetTiltDirection", _wrap_iPcTrackingCamera_GetTiltDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetTiltSpeed", _wrap_iPcTrackingCamera_SetTiltSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetTiltSpeed", _wrap_iPcTrackingCamera_GetTiltSpeed, METH_VARARGS, NULL},
@@ -135678,12 +135678,6 @@ SWIGEXPORT void SWIG_init(void) {
   SWIG_Python_SetConstant(d, "iPcTrackingCamera_TARGET_BASE",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TARGET_BASE)));
   SWIG_Python_SetConstant(d, "iPcTrackingCamera_TARGET_OBJ",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TARGET_OBJ)));
   SWIG_Python_SetConstant(d, "iPcTrackingCamera_TARGET_NONE",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TARGET_NONE)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_PAN_LEFT",SWIG_From_int(static_cast< int >(iPcTrackingCamera::PAN_LEFT)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_PAN_NONE",SWIG_From_int(static_cast< int >(iPcTrackingCamera::PAN_NONE)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_PAN_RIGHT",SWIG_From_int(static_cast< int >(iPcTrackingCamera::PAN_RIGHT)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_TILT_UP",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TILT_UP)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_TILT_NONE",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TILT_NONE)));
-  SWIG_Python_SetConstant(d, "iPcTrackingCamera_TILT_DOWN",SWIG_From_int(static_cast< int >(iPcTrackingCamera::TILT_DOWN)));
   SWIG_Python_SetConstant(d, "CEL_MOUSE_BUTTON1",SWIG_From_int(static_cast< int >(1)));
   SWIG_Python_SetConstant(d, "CEL_MOUSE_BUTTON2",SWIG_From_int(static_cast< int >(2)));
   SWIG_Python_SetConstant(d, "CEL_MOUSE_BUTTON3",SWIG_From_int(static_cast< int >(4)));
