@@ -3560,8 +3560,8 @@ namespace Swig {
 #define SWIGTYPE_p_int16_t swig_types[588]
 #define SWIGTYPE_p_int64_t swig_types[589]
 #define SWIGTYPE_p_int8_t swig_types[590]
-#define SWIGTYPE_p_long swig_types[591]
-#define SWIGTYPE_p_long_long swig_types[592]
+#define SWIGTYPE_p_int_least64_t swig_types[591]
+#define SWIGTYPE_p_long swig_types[592]
 #define SWIGTYPE_p_p_PcCommon swig_types[593]
 #define SWIGTYPE_p_p_PcCommonFactory swig_types[594]
 #define SWIGTYPE_p_p_celCombineParameterBlock swig_types[595]
@@ -4108,13 +4108,14 @@ namespace Swig {
 #define SWIGTYPE_p_uint16_t swig_types[1136]
 #define SWIGTYPE_p_uint32_t swig_types[1137]
 #define SWIGTYPE_p_uint64_t swig_types[1138]
-#define SWIGTYPE_p_unsigned_char swig_types[1139]
-#define SWIGTYPE_p_unsigned_int swig_types[1140]
-#define SWIGTYPE_p_unsigned_long swig_types[1141]
-#define SWIGTYPE_p_unsigned_long_long swig_types[1142]
+#define SWIGTYPE_p_uint_least64_t swig_types[1139]
+#define SWIGTYPE_p_unsigned_char swig_types[1140]
+#define SWIGTYPE_p_unsigned_int swig_types[1141]
+#define SWIGTYPE_p_unsigned_long swig_types[1142]
 #define SWIGTYPE_p_void swig_types[1143]
-static swig_type_info *swig_types[1145];
-static swig_module_info swig_module = {swig_types, 1144, 0, 0, 0, 0};
+#define SWIGTYPE_p_wchar_t swig_types[1144]
+static swig_type_info *swig_types[1146];
+static swig_module_info swig_module = {swig_types, 1145, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -130520,10 +130521,10 @@ static swig_type_info _swigt__p_iView = {"_p_iView", "iView *", 0, 0, (void*)0, 
 static swig_type_info _swigt__p_iWatchQuestTriggerFactory = {"_p_iWatchQuestTriggerFactory", "iWatchQuestTriggerFactory *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int16_t = {"_p_int16_t", "int16_t *|int16 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *|int64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *|intmax_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int8_t = {"_p_int8_t", "int8_t *|int8 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int_least64_t = {"_p_int_least64_t", "int_least64_t *|longlong *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long = {"_p_long", "long *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_long_long = {"_p_long_long", "long long *|longlong *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_iBase = {"_p_p_iBase", "iBase **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_iSaver = {"_p_p_iSaver", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_p_iODEDynamicSystemState = {"_p_p_iODEDynamicSystemState", 0, 0, 0, 0, 0};
@@ -131058,12 +131059,13 @@ static swig_type_info _swigt__p_scfImplementationExt1TpyPcCommon_PcCommon_iPcPyt
 static swig_type_info _swigt__p_scfInterfaceMetadataList = {"_p_scfInterfaceMetadataList", "scfInterfaceMetadataList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint16_t = {"_p_uint16_t", "uint16_t *|uint16 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint32_t = {"_p_uint32_t", "uint32_t *|uint32 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uint64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uintmax_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_uint_least64_t = {"_p_uint_least64_t", "uint_least64_t *|ulonglong *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|uint8 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "unsigned int *|CS::Animation::StateID *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_long = {"_p_unsigned_long", "unsigned long *|scfInterfaceID *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_long_long = {"_p_unsigned_long_long", "unsigned long long *|ulonglong *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_wchar_t = {"_p_wchar_t", "wchar_t *|wint_t *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_AllocatorType,
@@ -131657,8 +131659,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_int16_t,
   &_swigt__p_int64_t,
   &_swigt__p_int8_t,
+  &_swigt__p_int_least64_t,
   &_swigt__p_long,
-  &_swigt__p_long_long,
   &_swigt__p_p_PcCommon,
   &_swigt__p_p_PcCommonFactory,
   &_swigt__p_p_celCombineParameterBlock,
@@ -132205,11 +132207,12 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_uint16_t,
   &_swigt__p_uint32_t,
   &_swigt__p_uint64_t,
+  &_swigt__p_uint_least64_t,
   &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
   &_swigt__p_unsigned_long,
-  &_swigt__p_unsigned_long_long,
   &_swigt__p_void,
+  &_swigt__p_wchar_t,
 };
 
 static swig_cast_info _swigc__p_AllocatorType[] = {  {&_swigt__p_AllocatorType, 0, 0, 0},{0, 0, 0, 0}};
@@ -132814,8 +132817,8 @@ static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0
 static swig_cast_info _swigc__p_int16_t[] = {  {&_swigt__p_int16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int64_t[] = {  {&_swigt__p_int64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int8_t[] = {  {&_swigt__p_int8_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_int_least64_t[] = {  {&_swigt__p_int_least64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long[] = {  {&_swigt__p_long, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iSaver[] = {{&_swigt__p_p_iSaver, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iODEDynamicSystemState[] = {{&_swigt__p_p_iODEDynamicSystemState, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iTerrainVector3Array[] = {{&_swigt__p_p_iTerrainVector3Array, 0, 0, 0},{0, 0, 0, 0}};
@@ -133351,11 +133354,12 @@ static swig_cast_info _swigc__p_scfInterfaceMetadataList[] = {  {&_swigt__p_scfI
 static swig_cast_info _swigc__p_uint16_t[] = {  {&_swigt__p_uint16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint32_t[] = {  {&_swigt__p_uint32_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint64_t[] = {  {&_swigt__p_uint64_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_uint_least64_t[] = {  {&_swigt__p_uint_least64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_long[] = {  {&_swigt__p_unsigned_long, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_wchar_t[] = {  {&_swigt__p_wchar_t, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_AllocatorType,
@@ -133949,8 +133953,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_int16_t,
   _swigc__p_int64_t,
   _swigc__p_int8_t,
+  _swigc__p_int_least64_t,
   _swigc__p_long,
-  _swigc__p_long_long,
   _swigc__p_p_PcCommon,
   _swigc__p_p_PcCommonFactory,
   _swigc__p_p_celCombineParameterBlock,
@@ -134497,11 +134501,12 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_uint16_t,
   _swigc__p_uint32_t,
   _swigc__p_uint64_t,
+  _swigc__p_uint_least64_t,
   _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,
   _swigc__p_unsigned_long,
-  _swigc__p_unsigned_long_long,
   _swigc__p_void,
+  _swigc__p_wchar_t,
 };
 
 
