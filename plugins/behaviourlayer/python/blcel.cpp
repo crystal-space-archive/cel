@@ -4966,7 +4966,6 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
        celData ret;
        if(self->SendMessage (msg_id,prop,ret,params))
        {
-         /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
 		PyObject *obj = Py_None;
 		if ((&ret))
 		{
@@ -5092,7 +5091,6 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
 		}
                 else
                     Py_INCREF(Py_None);
-/*@SWIG@*/;
 	 return obj;
        }
        else
@@ -14640,7 +14638,6 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_0(PyObj
   arg4 = reinterpret_cast< iMessageReceiverFilter * >(argp4);
   result = (arg1)->CreateMessageDispatcher(arg2,(char const *)arg3,arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -14650,7 +14647,6 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_0(PyObj
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iMessageDispatcher *)ref, SWIGTYPE_p_iMessageDispatcher, 1);
-    /*@SWIG@*/
   }
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   return resultobj;
@@ -14695,7 +14691,6 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_1(PyObj
   arg3 = reinterpret_cast< char * >(buf3);
   result = (arg1)->CreateMessageDispatcher(arg2,(char const *)arg3);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -14705,7 +14700,6 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_1(PyObj
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iMessageDispatcher *)ref, SWIGTYPE_p_iMessageDispatcher, 1);
-    /*@SWIG@*/
   }
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   return resultobj;
@@ -18099,7 +18093,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_0(PyObject *SWIGUNUSED
   arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
   result = (arg1)->CreateEntity();
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18109,7 +18102,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_0(PyObject *SWIGUNUSED
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntity *)ref, SWIGTYPE_p_iCelEntity, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -18142,7 +18134,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntityInScope(PyObject *SWIGUNUSEDP
   arg2 = static_cast< int >(val2);
   result = (arg1)->CreateEntityInScope(arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18152,7 +18143,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntityInScope(PyObject *SWIGUNUSEDP
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntity *)ref, SWIGTYPE_p_iCelEntity, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -18185,7 +18175,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_1(PyObject *SWIGUNUSED
   arg2 = static_cast< uint >(val2);
   result = (arg1)->CreateEntity(arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18195,7 +18184,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_1(PyObject *SWIGUNUSED
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntity *)ref, SWIGTYPE_p_iCelEntity, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -18249,7 +18237,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_2__varargs__(PyObject 
   arg4 = reinterpret_cast< char * >(buf4);
   result = (arg1)->CreateEntity((char const *)arg2,arg3,(char const *)arg4,arg5);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18259,7 +18246,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_2__varargs__(PyObject 
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntity *)ref, SWIGTYPE_p_iCelEntity, 1);
-    /*@SWIG@*/
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
@@ -19000,7 +18986,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(PyObject *SWIG
   }
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5,arg6);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19010,7 +18995,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19073,7 +19057,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(PyObject *SWIG
   arg5 = static_cast< bool >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19083,7 +19066,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19137,7 +19119,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(PyObject *SWIG
   arg4 = static_cast< float >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19147,7 +19128,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19206,7 +19186,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(PyObject *SWIG
   }
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19216,7 +19195,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19270,7 +19248,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(PyObject *SWIG
   arg4 = static_cast< bool >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3,arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19280,7 +19257,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19325,7 +19301,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(PyObject *SWIG
   arg3 = reinterpret_cast< csBox3 * >(argp3);
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19335,7 +19310,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19406,7 +19380,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_6(PyObject *SWIG
   }
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5,arg6);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19416,7 +19389,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_6(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19482,7 +19454,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_7(PyObject *SWIG
   arg5 = static_cast< bool >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19492,7 +19463,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_7(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19549,7 +19519,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_8(PyObject *SWIG
   arg4 = reinterpret_cast< csVector3 * >(argp4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19559,7 +19528,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_8(PyObject *SWIG
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -19892,7 +19860,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEmptyEntityList(PyObject *SWIGUNUSE
   arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
   result = (arg1)->CreateEmptyEntityList();
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19902,7 +19869,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEmptyEntityList(PyObject *SWIGUNUSE
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -21176,7 +21142,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_GetClassEntitiesList(PyObject *SWIGUNUSED
   }
   result = (arg1)->GetClassEntitiesList(arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csRef<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -21186,7 +21151,6 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_GetClassEntitiesList(PyObject *SWIGUNUSED
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -21877,7 +21841,6 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_0(PyObject
   }
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -21887,7 +21850,6 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_0(PyObject
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -21941,7 +21903,6 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_1(PyObject
   arg4 = static_cast< float >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -21951,7 +21912,6 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_1(PyObject
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntityList *)ref, SWIGTYPE_p_iCelEntityList, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
@@ -22620,7 +22580,6 @@ SWIGINTERN PyObject *_wrap_iCelEntity_CreateTaggedMessageDispatcher(PyObject *SW
   arg4 = reinterpret_cast< char * >(buf4);
   result = (arg1)->CreateTaggedMessageDispatcher(arg2,(char const *)arg3,(char const *)arg4);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -22630,7 +22589,6 @@ SWIGINTERN PyObject *_wrap_iCelEntity_CreateTaggedMessageDispatcher(PyObject *SW
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iMessageDispatcher *)ref, SWIGTYPE_p_iMessageDispatcher, 1);
-    /*@SWIG@*/
   }
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
@@ -23798,7 +23756,6 @@ SWIGINTERN PyObject *_wrap_celCreateEntity(PyObject *SWIGUNUSEDPARM(self), PyObj
   arg2 = reinterpret_cast< char * >(buf2);
   result = celCreateEntity(arg1,(char const *)arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -23808,7 +23765,6 @@ SWIGINTERN PyObject *_wrap_celCreateEntity(PyObject *SWIGUNUSEDPARM(self), PyObj
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelEntity *)ref, SWIGTYPE_p_iCelEntity, 1);
-    /*@SWIG@*/
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   return resultobj;
@@ -25951,7 +25907,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
   }
   result = (celData *)((iCelParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -26077,7 +26032,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -26167,7 +26121,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((iCelParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -26293,7 +26246,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -28586,7 +28538,6 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
   }
   result = (celData *)((celGenericParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -28712,7 +28663,6 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -28802,7 +28752,6 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celGenericParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -28928,7 +28877,6 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -29197,7 +29145,6 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
   }
   result = (celData *)((celVariableParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29323,7 +29270,6 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -29413,7 +29359,6 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celVariableParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29539,7 +29484,6 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -29782,7 +29726,6 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
   }
   result = (celData *)((celOneParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29908,7 +29851,6 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -30013,7 +29955,6 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celOneParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30139,7 +30080,6 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -30388,7 +30328,6 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
   }
   result = (celData *)((celCombineParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30514,7 +30453,6 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -30604,7 +30542,6 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celCombineParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30730,7 +30667,6 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -30794,7 +30730,6 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClassFactory_CreatePropertyClass(PyObject
   arg2 = reinterpret_cast< char * >(buf2);
   result = (arg1)->CreatePropertyClass((char const *)arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPropertyClass> ref((csPtr<iCelPropertyClass>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -30804,7 +30739,6 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClassFactory_CreatePropertyClass(PyObject
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelPropertyClass *)ref, SWIGTYPE_p_iCelPropertyClass, 1);
-    /*@SWIG@*/
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   return resultobj;
@@ -102002,7 +101936,6 @@ SWIGINTERN PyObject *_wrap_iQuestParameter_GetData(PyObject *SWIGUNUSEDPARM(self
   arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
   result = (celData *)(arg1)->GetData(arg2);
   {
-    /*@SWIG:/tmp/tmp0/trunk/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -102128,7 +102061,6 @@ SWIGINTERN PyObject *_wrap_iQuestParameter_GetData(PyObject *SWIGUNUSEDPARM(self
     }
     else
     Py_INCREF(Py_None);
-    /*@SWIG@*/
     resultobj = obj;
   }
   return resultobj;
@@ -120438,7 +120370,6 @@ SWIGINTERN PyObject *_wrap_PcCommonFactory_CreatePropertyClass(PyObject *SWIGUNU
   arg2 = reinterpret_cast< char * >(buf2);
   result = (arg1)->CreatePropertyClass((char const *)arg2);
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPropertyClass> ref((csPtr<iCelPropertyClass>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -120448,7 +120379,6 @@ SWIGINTERN PyObject *_wrap_PcCommonFactory_CreatePropertyClass(PyObject *SWIGUNU
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelPropertyClass *)ref, SWIGTYPE_p_iCelPropertyClass, 1);
-    /*@SWIG@*/
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   return resultobj;
@@ -122200,7 +122130,6 @@ SWIGINTERN PyObject *_wrap_pyPcCommon_GetPL(PyObject *SWIGUNUSEDPARM(self), PyOb
   arg1 = reinterpret_cast< pyPcCommon * >(argp1);
   result = (arg1)->GetPL();
   {
-    /*@SWIG:csinclude/bindings/python/pythpre.i,119,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPlLayer> ref((csPtr<iCelPlLayer>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -122210,7 +122139,6 @@ SWIGINTERN PyObject *_wrap_pyPcCommon_GetPL(PyObject *SWIGUNUSEDPARM(self), PyOb
     }
     ref->IncRef();
     resultobj = SWIG_NewPointerObj((void *)(iCelPlLayer *)ref, SWIGTYPE_p_iCelPlLayer, 1);
-    /*@SWIG@*/
   }
   return resultobj;
 fail:
