@@ -11402,7 +11402,41 @@ SWIGINTERN PyObject *celDataArrayReadOnly_swigregister(PyObject *SWIGUNUSEDPARM(
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Get__SWIG_0_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iArrayChangeElements<celData > *arg1 = (iArrayChangeElements<celData > *) 0 ;
+  size_t arg2 ;
+  celData *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celDataArrayChangeElements_Get",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celDataArrayChangeElements_Get" "', argument " "1"" of type '" "iArrayChangeElements<celData > const *""'"); 
+  }
+  arg1 = reinterpret_cast< iArrayChangeElements<celData > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "celDataArrayChangeElements_Get" "', argument " "2"" of type '" "size_t""'");
+  } 
+  arg2 = static_cast< size_t >(val2);
+  {
+    celData const &_result_ref = ((iArrayChangeElements<celData > const *)arg1)->Get(arg2);
+    result = (celData *) &_result_ref;
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_celData, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Get__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iArrayChangeElements<celData > *arg1 = (iArrayChangeElements<celData > *) 0 ;
   size_t arg2 ;
@@ -11436,7 +11470,79 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Top(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Get(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = (int)PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_celDataArrayChangeElements_Get__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_celDataArrayChangeElements_Get__SWIG_0_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'celDataArrayChangeElements_Get'.\n  Possible C/C++ prototypes are:\n""    Get(iArrayChangeElements<celData > const *,size_t)\n""    Get(iArrayChangeElements<celData > *,size_t)\n");
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Top__SWIG_0_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iArrayChangeElements<celData > *arg1 = (iArrayChangeElements<celData > *) 0 ;
+  celData *result = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celDataArrayChangeElements_Top",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celDataArrayChangeElements_Top" "', argument " "1"" of type '" "iArrayChangeElements<celData > const *""'"); 
+  }
+  arg1 = reinterpret_cast< iArrayChangeElements<celData > * >(argp1);
+  {
+    celData const &_result_ref = ((iArrayChangeElements<celData > const *)arg1)->Top();
+    result = (celData *) &_result_ref;
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_celData, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Top__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iArrayChangeElements<celData > *arg1 = (iArrayChangeElements<celData > *) 0 ;
   celData *result = 0 ;
@@ -11457,6 +11563,41 @@ SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Top(PyObject *SWIGUNUSEDPA
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_celData, 0 |  0 );
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celDataArrayChangeElements_Top(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = (int)PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 1); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_celDataArrayChangeElements_Top__SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iArrayChangeElementsTcelData_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_celDataArrayChangeElements_Top__SWIG_0_0(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'celDataArrayChangeElements_Top'.\n  Possible C/C++ prototypes are:\n""    Top(iArrayChangeElements<celData > const *)\n""    Top(iArrayChangeElements<celData > *)\n");
   return NULL;
 }
 
@@ -16950,10 +17091,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Put(PyObject *SWIGUNUSEDPARM(self), Py
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -16964,29 +17101,31 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Put(PyObject *SWIGUNUSEDPARM(self), Py
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_Put" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_Put" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Put" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams_Put" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Put" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   {
     csStringBase &_result_ref = (arg1)->Put((csStringBase const &)*arg2,(csStringBase const &)*arg3);
     result = (csStringBase *) &_result_ref;
   }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
@@ -17020,8 +17159,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetAll__SWIG_1(PyObject *SWIGUNUSEDPAR
   SwigValueWrapper< csArray<csStringBase > > result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17031,18 +17168,19 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetAll__SWIG_1(PyObject *SWIGUNUSEDPAR
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_GetAll" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_GetAll" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetAll" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = ((csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *)arg1)->GetAll((csStringBase const &)*arg2);
   resultobj = SWIG_NewPointerObj((new csArray<csStringBase >(static_cast< const csArray<csStringBase >& >(result))), SWIGTYPE_p_csArrayTcsStringBase_csArrayElementHandlerTcsStringBase_t_CS__Memory__AllocatorMalloc_csArrayCapacityFixedGrowT16_t_t, SWIG_POINTER_OWN |  0 );
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17072,8 +17210,9 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetAll(PyObject *self, PyObject *args)
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
         return _wrap_celQuestParams_GetAll__SWIG_1(self, args);
       }
@@ -17094,10 +17233,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_PutUnique(PyObject *SWIGUNUSEDPARM(sel
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -17108,29 +17243,31 @@ SWIGINTERN PyObject *_wrap_celQuestParams_PutUnique(PyObject *SWIGUNUSEDPARM(sel
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_PutUnique" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_PutUnique" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_PutUnique" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams_PutUnique" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_PutUnique" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   {
     csStringBase &_result_ref = (arg1)->PutUnique((csStringBase const &)*arg2,(csStringBase const &)*arg3);
     result = (csStringBase *) &_result_ref;
   }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
@@ -17142,8 +17279,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Contains(PyObject *SWIGUNUSEDPARM(self
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17153,18 +17288,19 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Contains(PyObject *SWIGUNUSEDPARM(self
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_Contains" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_Contains" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Contains" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (bool)((csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *)arg1)->Contains((csStringBase const &)*arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17176,8 +17312,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_In(PyObject *SWIGUNUSEDPARM(self), PyO
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17187,18 +17321,19 @@ SWIGINTERN PyObject *_wrap_celQuestParams_In(PyObject *SWIGUNUSEDPARM(self), PyO
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_In" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_In" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_In" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (bool)((csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *)arg1)->In((csStringBase const &)*arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17210,8 +17345,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer__SWIG_0(PyObject *SW
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17221,18 +17354,22 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer__SWIG_0(PyObject *SW
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_GetElementPointer" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_GetElementPointer" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetElementPointer" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (csStringBase *)((csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *)arg1)->GetElementPointer((csStringBase const &)*arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    const char *res = result->GetData();
+    resultobj = PyString_FromString(res);
+  }
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17244,8 +17381,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer__SWIG_1(PyObject *SW
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17255,18 +17390,22 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer__SWIG_1(PyObject *SW
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_GetElementPointer" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_GetElementPointer" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetElementPointer" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (csStringBase *)(arg1)->GetElementPointer((csStringBase const &)*arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    const char *res = result->GetData();
+    resultobj = PyString_FromString(res);
+  }
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17287,8 +17426,9 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer(PyObject *self, PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
         return _wrap_celQuestParams_GetElementPointer__SWIG_1(self, args);
       }
@@ -17300,8 +17440,9 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetElementPointer(PyObject *self, PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
         return _wrap_celQuestParams_GetElementPointer__SWIG_0(self, args);
       }
@@ -17322,10 +17463,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Get(PyObject *SWIGUNUSEDPARM(self), Py
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -17336,29 +17473,34 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Get(PyObject *SWIGUNUSEDPARM(self), Py
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_Get" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_Get" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Get" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams_Get" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Get" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   {
     csStringBase const &_result_ref = ((csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > const *)arg1)->Get((csStringBase const &)*arg2,(csStringBase const &)*arg3);
     result = (csStringBase *) &_result_ref;
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    const char *res = result->GetData();
+    resultobj = PyString_FromString(res);
+  }
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
@@ -17371,10 +17513,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate__SWIG_0(PyObject *SWIGUNUS
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -17385,29 +17523,31 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate__SWIG_0(PyObject *SWIGUNUS
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_GetOrCreate" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_GetOrCreate" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetOrCreate" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams_GetOrCreate" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetOrCreate" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   {
     csStringBase &_result_ref = (arg1)->GetOrCreate((csStringBase const &)*arg2,(csStringBase const &)*arg3);
     result = (csStringBase *) &_result_ref;
   }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
@@ -17419,8 +17559,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate__SWIG_1(PyObject *SWIGUNUS
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17430,21 +17568,22 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate__SWIG_1(PyObject *SWIGUNUS
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_GetOrCreate" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_GetOrCreate" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_GetOrCreate" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   {
     csStringBase &_result_ref = (arg1)->GetOrCreate((csStringBase const &)*arg2);
     result = (csStringBase *) &_result_ref;
   }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17465,8 +17604,9 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate(PyObject *self, PyObject *
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
         return _wrap_celQuestParams_GetOrCreate__SWIG_1(self, args);
       }
@@ -17478,11 +17618,13 @@ SWIGINTERN PyObject *_wrap_celQuestParams_GetOrCreate(PyObject *self, PyObject *
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
-        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_csStringBase, 0);
-        _v = SWIG_CheckState(res);
+        {
+          _v = PyString_Check(argv[2]);
+        }
         if (_v) {
           return _wrap_celQuestParams_GetOrCreate__SWIG_0(self, args);
         }
@@ -17545,8 +17687,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_DeleteAll__SWIG_1(PyObject *SWIGUNUSED
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17556,18 +17696,19 @@ SWIGINTERN PyObject *_wrap_celQuestParams_DeleteAll__SWIG_1(PyObject *SWIGUNUSED
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_DeleteAll" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_DeleteAll" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_DeleteAll" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (bool)(arg1)->DeleteAll((csStringBase const &)*arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17597,8 +17738,9 @@ SWIGINTERN PyObject *_wrap_celQuestParams_DeleteAll(PyObject *self, PyObject *ar
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_csHashTcsStringBase_csStringBase_CS__Memory__AllocatorMalloc_csArrayElementHandlerTCS__Container__HashElementTcsStringBase_csStringBase_t_t_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_csStringBase, 0);
-      _v = SWIG_CheckState(res);
+      {
+        _v = PyString_Check(argv[1]);
+      }
       if (_v) {
         return _wrap_celQuestParams_DeleteAll__SWIG_1(self, args);
       }
@@ -17619,10 +17761,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Delete(PyObject *SWIGUNUSEDPARM(self),
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -17633,26 +17771,28 @@ SWIGINTERN PyObject *_wrap_celQuestParams_Delete(PyObject *SWIGUNUSEDPARM(self),
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams_Delete" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams_Delete" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Delete" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams_Delete" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams_Delete" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   result = (bool)(arg1)->Delete((csStringBase const &)*arg2,(csStringBase const &)*arg3);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
@@ -17708,8 +17848,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams___getitem__(PyObject *SWIGUNUSEDPARM(s
   csStringBase *result = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17719,21 +17857,25 @@ SWIGINTERN PyObject *_wrap_celQuestParams___getitem__(PyObject *SWIGUNUSEDPARM(s
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams___getitem__" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams___getitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams___getitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   {
     csStringBase const &_result_ref = csHash_Sl_csStringBase_Sc_csStringBase_Sc_CS_Memory_AllocatorMalloc_Sc_csArrayElementHandler_Sl_CS_Container_HashElement_Sl_csStringBase_Sc_csStringBase_Sg__Sg__Sg____getitem__(arg1,(csStringBase const &)*arg2);
     result = (csStringBase *) &_result_ref;
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_csStringBase, 0 |  0 );
+  {
+    const char *res = result->GetData();
+    resultobj = PyString_FromString(res);
+  }
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17745,8 +17887,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams___delitem__(PyObject *SWIGUNUSEDPARM(s
   bool result;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
@@ -17756,18 +17896,19 @@ SWIGINTERN PyObject *_wrap_celQuestParams___delitem__(PyObject *SWIGUNUSEDPARM(s
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams___delitem__" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams___delitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams___delitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
-  }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
   result = (bool)csHash_Sl_csStringBase_Sc_csStringBase_Sc_CS_Memory_AllocatorMalloc_Sc_csArrayElementHandler_Sl_CS_Container_HashElement_Sl_csStringBase_Sc_csStringBase_Sg__Sg__Sg____delitem__(arg1,(csStringBase const &)*arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  {
+    delete arg2;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
   return NULL;
 }
 
@@ -17822,10 +17963,6 @@ SWIGINTERN PyObject *_wrap_celQuestParams___setitem__(PyObject *SWIGUNUSEDPARM(s
   csStringBase *arg3 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -17836,26 +17973,28 @@ SWIGINTERN PyObject *_wrap_celQuestParams___setitem__(PyObject *SWIGUNUSEDPARM(s
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celQuestParams___setitem__" "', argument " "1"" of type '" "csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > *""'"); 
   }
   arg1 = reinterpret_cast< csHash<csStringBase,csStringBase,CS::Memory::AllocatorMalloc,csArrayElementHandler<CS::Container::HashElement<csStringBase,csStringBase > > > * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celQuestParams___setitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg2 = new csStringBase(PyString_AsString(obj1));
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams___setitem__" "', argument " "2"" of type '" "csStringBase const &""'"); 
+  {
+    arg3 = new csStringBase(PyString_AsString(obj2));
   }
-  arg2 = reinterpret_cast< csStringBase * >(argp2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csStringBase,  0  | 0);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celQuestParams___setitem__" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celQuestParams___setitem__" "', argument " "3"" of type '" "csStringBase const &""'"); 
-  }
-  arg3 = reinterpret_cast< csStringBase * >(argp3);
   csHash_Sl_csStringBase_Sc_csStringBase_Sc_CS_Memory_AllocatorMalloc_Sc_csArrayElementHandler_Sl_CS_Container_HashElement_Sl_csStringBase_Sc_csStringBase_Sg__Sg__Sg____setitem__(arg1,(csStringBase const &)*arg2,(csStringBase const &)*arg3);
   resultobj = SWIG_Py_Void();
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return resultobj;
 fail:
+  {
+    delete arg2;
+  }
+  {
+    delete arg3;
+  }
   return NULL;
 }
 
