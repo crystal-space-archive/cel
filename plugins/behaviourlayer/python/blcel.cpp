@@ -3553,8 +3553,8 @@ namespace Swig {
 #define SWIGTYPE_p_int16_t swig_types[580]
 #define SWIGTYPE_p_int64_t swig_types[581]
 #define SWIGTYPE_p_int8_t swig_types[582]
-#define SWIGTYPE_p_long swig_types[583]
-#define SWIGTYPE_p_long_long swig_types[584]
+#define SWIGTYPE_p_int_least64_t swig_types[583]
+#define SWIGTYPE_p_long swig_types[584]
 #define SWIGTYPE_p_p_PcCommon swig_types[585]
 #define SWIGTYPE_p_p_PcCommonFactory swig_types[586]
 #define SWIGTYPE_p_p_celCombineParameterBlock swig_types[587]
@@ -4097,9 +4097,9 @@ namespace Swig {
 #define SWIGTYPE_p_uint32_t swig_types[1124]
 #define SWIGTYPE_p_uint64_t swig_types[1125]
 #define SWIGTYPE_p_uint8_t swig_types[1126]
-#define SWIGTYPE_p_unsigned_int swig_types[1127]
-#define SWIGTYPE_p_unsigned_long swig_types[1128]
-#define SWIGTYPE_p_unsigned_long_long swig_types[1129]
+#define SWIGTYPE_p_uint_least64_t swig_types[1127]
+#define SWIGTYPE_p_unsigned_int swig_types[1128]
+#define SWIGTYPE_p_unsigned_long swig_types[1129]
 #define SWIGTYPE_p_void swig_types[1130]
 static swig_type_info *swig_types[1132];
 static swig_module_info swig_module = {swig_types, 1131, 0, 0, 0, 0};
@@ -5010,7 +5010,7 @@ SWIGINTERN PyObject *iCelBehaviour_SendMessage__SWIG_1(iCelBehaviour *self,char 
        celData ret;
        if(self->SendMessage (msg_id,prop,ret,params))
        {
-         /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+         /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
 		PyObject *obj = Py_None;
 		if ((&ret))
 		{
@@ -14874,7 +14874,7 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_0(PyObj
   arg4 = reinterpret_cast< iMessageReceiverFilter * >(argp4);
   result = (arg1)->CreateMessageDispatcher(arg2,(char const *)arg3,arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -14929,7 +14929,7 @@ SWIGINTERN PyObject *_wrap_iMessageChannel_CreateMessageDispatcher__SWIG_1(PyObj
   arg3 = reinterpret_cast< char * >(buf3);
   result = (arg1)->CreateMessageDispatcher(arg2,(char const *)arg3);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18335,7 +18335,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_0(PyObject *SWIGUNUSED
   arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
   result = (arg1)->CreateEntity();
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18378,7 +18378,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntityInScope(PyObject *SWIGUNUSEDP
   arg2 = static_cast< int >(val2);
   result = (arg1)->CreateEntityInScope(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18421,7 +18421,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_1(PyObject *SWIGUNUSED
   arg2 = static_cast< uint >(val2);
   result = (arg1)->CreateEntity(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -18485,7 +18485,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEntity__SWIG_2__varargs__(PyObject 
   arg4 = reinterpret_cast< char * >(buf4);
   result = (arg1)->CreateEntity((char const *)arg2,arg3,(char const *)arg4,arg5);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19240,7 +19240,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_0(PyObject *SWIG
   arg6 = static_cast< csStringID >(val6);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5,arg6);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19313,7 +19313,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_1(PyObject *SWIG
   arg5 = static_cast< bool >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19377,7 +19377,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_2(PyObject *SWIG
   arg4 = static_cast< float >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19450,7 +19450,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_3(PyObject *SWIG
   arg5 = static_cast< csStringID >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19514,7 +19514,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_4(PyObject *SWIG
   arg4 = static_cast< bool >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3,arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19569,7 +19569,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_5(PyObject *SWIG
   arg3 = reinterpret_cast< csBox3 * >(argp3);
   result = (arg1)->FindNearbyEntities(arg2,(csBox3 const &)*arg3);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19654,7 +19654,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_6(PyObject *SWIG
   arg6 = static_cast< csStringID >(val6);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5,arg6);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19730,7 +19730,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_7(PyObject *SWIG
   arg5 = static_cast< bool >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4,arg5);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -19797,7 +19797,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_FindNearbyEntities__SWIG_8(PyObject *SWIG
   arg4 = reinterpret_cast< csVector3 * >(argp4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,(csVector3 const &)*arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -20143,7 +20143,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateEmptyEntityList(PyObject *SWIGUNUSE
   arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
   result = (arg1)->CreateEmptyEntityList();
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -21432,7 +21432,7 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_GetClassEntitiesList(PyObject *SWIGUNUSED
   arg2 = static_cast< csStringID >(val2);
   result = (arg1)->GetClassEntitiesList(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csRef<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -22137,7 +22137,7 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_0(PyObject
   arg5 = static_cast< csStringID >(val5);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4,arg5);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -22201,7 +22201,7 @@ SWIGINTERN PyObject *_wrap_iCelEntityTracker_FindNearbyEntities__SWIG_1(PyObject
   arg4 = static_cast< float >(val4);
   result = (arg1)->FindNearbyEntities(arg2,(csVector3 const &)*arg3,arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntityList> ref((csPtr<iCelEntityList>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -22893,7 +22893,7 @@ SWIGINTERN PyObject *_wrap_iCelEntity_CreateTaggedMessageDispatcher(PyObject *SW
   arg4 = reinterpret_cast< char * >(buf4);
   result = (arg1)->CreateTaggedMessageDispatcher(arg2,(char const *)arg3,(char const *)arg4);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iMessageDispatcher> ref((csRef<iMessageDispatcher>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -24071,7 +24071,7 @@ SWIGINTERN PyObject *_wrap_celCreateEntity(PyObject *SWIGUNUSEDPARM(self), PyObj
   arg2 = reinterpret_cast< char * >(buf2);
   result = celCreateEntity(arg1,(char const *)arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelEntity> ref((csPtr<iCelEntity>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -26293,7 +26293,7 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameter__SWIG_1(PyObject *SWI
   arg2 = static_cast< csStringID >(val2);
   result = (celData *)((iCelParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -26510,7 +26510,7 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterByIndex(PyObject *SWIG
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((iCelParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29008,7 +29008,7 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameter__SWIG_1(PyObjec
   arg2 = static_cast< csStringID >(val2);
   result = (celData *)((celGenericParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29225,7 +29225,7 @@ SWIGINTERN PyObject *_wrap_celGenericParameterBlock_GetParameterByIndex(PyObject
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celGenericParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29628,7 +29628,7 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameter__SWIG_1(PyObje
   arg2 = static_cast< csStringID >(val2);
   result = (celData *)((celVariableParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -29845,7 +29845,7 @@ SWIGINTERN PyObject *_wrap_celVariableParameterBlock_GetParameterByIndex(PyObjec
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celVariableParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30222,7 +30222,7 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameter__SWIG_2(PyObject *S
   arg2 = static_cast< csStringID >(val2);
   result = (celData *)((celOneParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30454,7 +30454,7 @@ SWIGINTERN PyObject *_wrap_celOneParameterBlock_GetParameterByIndex(PyObject *SW
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celOneParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -30833,7 +30833,7 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameter__SWIG_1(PyObjec
   arg2 = static_cast< csStringID >(val2);
   result = (celData *)((celCombineParameterBlock const *)arg1)->GetParameter(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -31050,7 +31050,7 @@ SWIGINTERN PyObject *_wrap_celCombineParameterBlock_GetParameterByIndex(PyObject
   arg2 = static_cast< size_t >(val2);
   result = (celData *)((celCombineParameterBlock const *)arg1)->GetParameterByIndex(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -31240,7 +31240,7 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClassFactory_CreatePropertyClass(PyObject
   arg2 = reinterpret_cast< char * >(buf2);
   result = (arg1)->CreatePropertyClass((char const *)arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPropertyClass> ref((csPtr<iCelPropertyClass>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -100460,7 +100460,7 @@ SWIGINTERN PyObject *_wrap_iQuestParameter_GetData(PyObject *SWIGUNUSEDPARM(self
   arg2 = reinterpret_cast< iCelParameterBlock * >(argp2);
   result = (celData *)(arg1)->GetData(arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/cel/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
+    /*@SWIG:/tmp/tmp1/V1.4/include/bindings/python/datatype.i,1,CELDATA_RETURN@*/
     PyObject *obj = Py_None;
     if (result)
     {
@@ -118985,7 +118985,7 @@ SWIGINTERN PyObject *_wrap_PcCommonFactory_CreatePropertyClass(PyObject *SWIGUNU
   arg2 = reinterpret_cast< char * >(buf2);
   result = (arg1)->CreatePropertyClass((char const *)arg2);
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPropertyClass> ref((csPtr<iCelPropertyClass>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -120965,7 +120965,7 @@ SWIGINTERN PyObject *_wrap_pyPcCommon_GetPL(PyObject *SWIGUNUSEDPARM(self), PyOb
   arg1 = reinterpret_cast< pyPcCommon * >(argp1);
   result = (arg1)->GetPL();
   {
-    /*@SWIG:/home/vince/Projects/CrystalSpace/1.4/CS/include/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
+    /*@SWIG:csinclude/bindings/python/pythpre.i,114,TYPEMAP_OUT_csRef_BODY@*/
     csRef<iCelPlLayer> ref((csPtr<iCelPlLayer>&)result); /* explicit cast */
     
     if (!ref.IsValid())
@@ -128782,12 +128782,12 @@ static swig_type_info _swigt__p_iTriggerQuestTriggerFactory = {"_p_iTriggerQuest
 static swig_type_info _swigt__p_iVFS = {"_p_iVFS", "iVFS *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iView = {"_p_iView", "iView *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_iWatchQuestTriggerFactory = {"_p_iWatchQuestTriggerFactory", "iWatchQuestTriggerFactory *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "int *|int32 *|scfInterfaceVersion *|int32_t *|csSoundSample *|CS::Graphics::RenderPriority *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int = {"_p_int", "intptr_t *|ptrdiff_t *|int *|int32 *|scfInterfaceVersion *|int32_t *|csSoundSample *|CS::Graphics::RenderPriority *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int16_t = {"_p_int16_t", "int16 *|int16_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *|int64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *|int64 *|intmax_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int8_t = {"_p_int8_t", "int8 *|int8_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int_least64_t = {"_p_int_least64_t", "int_least64_t *|longlong *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long = {"_p_long", "long *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_long_long = {"_p_long_long", "longlong *|long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_iBase = {"_p_p_iBase", "iBase **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_iSaver = {"_p_p_iSaver", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_p_iODEDynamicSystemState = {"_p_p_iODEDynamicSystemState", 0, 0, 0, 0, 0};
@@ -129317,11 +129317,11 @@ static swig_type_info _swigt__p_scfImplementationExt1TpyPcCommon_PcCommon_iPcPyt
 static swig_type_info _swigt__p_scfInterfaceMetadataList = {"_p_scfInterfaceMetadataList", "scfInterfaceMetadataList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint16_t = {"_p_uint16_t", "uint16 *|uint16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint32_t = {"_p_uint32_t", "uint32_t *|uint32 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uint64 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uint64 *|uintmax_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint8_t = {"_p_uint8_t", "uint8 *|uint8_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "unsigned int *|uint *|CS::Animation::ChannelID *|CS::Animation::StateID *|CS::Animation::KeyFrameID *|csTicks *|BoneID *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_uint_least64_t = {"_p_uint_least64_t", "uint_least64_t *|ulonglong *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "uintptr_t *|unsigned int *|uint *|CS::Animation::ChannelID *|CS::Animation::StateID *|CS::Animation::KeyFrameID *|csTicks *|BoneID *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_long = {"_p_unsigned_long", "csStringID *|unsigned long *|csEventID *|scfInterfaceID *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_unsigned_long_long = {"_p_unsigned_long_long", "ulonglong *|unsigned long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
@@ -129908,8 +129908,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_int16_t,
   &_swigt__p_int64_t,
   &_swigt__p_int8_t,
+  &_swigt__p_int_least64_t,
   &_swigt__p_long,
-  &_swigt__p_long_long,
   &_swigt__p_p_PcCommon,
   &_swigt__p_p_PcCommonFactory,
   &_swigt__p_p_celCombineParameterBlock,
@@ -130452,9 +130452,9 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_uint32_t,
   &_swigt__p_uint64_t,
   &_swigt__p_uint8_t,
+  &_swigt__p_uint_least64_t,
   &_swigt__p_unsigned_int,
   &_swigt__p_unsigned_long,
-  &_swigt__p_unsigned_long_long,
   &_swigt__p_void,
 };
 
@@ -131052,8 +131052,8 @@ static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0
 static swig_cast_info _swigc__p_int16_t[] = {  {&_swigt__p_int16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int64_t[] = {  {&_swigt__p_int64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int8_t[] = {  {&_swigt__p_int8_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_int_least64_t[] = {  {&_swigt__p_int_least64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long[] = {  {&_swigt__p_long, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iSaver[] = {{&_swigt__p_p_iSaver, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iODEDynamicSystemState[] = {{&_swigt__p_p_iODEDynamicSystemState, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_iTerrainVector3Array[] = {{&_swigt__p_p_iTerrainVector3Array, 0, 0, 0},{0, 0, 0, 0}};
@@ -131585,9 +131585,9 @@ static swig_cast_info _swigc__p_uint16_t[] = {  {&_swigt__p_uint16_t, 0, 0, 0},{
 static swig_cast_info _swigc__p_uint32_t[] = {  {&_swigt__p_uint32_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint64_t[] = {  {&_swigt__p_uint64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint8_t[] = {  {&_swigt__p_uint8_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_uint_least64_t[] = {  {&_swigt__p_uint_least64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_long[] = {  {&_swigt__p_unsigned_long, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
@@ -132174,8 +132174,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_int16_t,
   _swigc__p_int64_t,
   _swigc__p_int8_t,
+  _swigc__p_int_least64_t,
   _swigc__p_long,
-  _swigc__p_long_long,
   _swigc__p_p_PcCommon,
   _swigc__p_p_PcCommonFactory,
   _swigc__p_p_celCombineParameterBlock,
@@ -132718,9 +132718,9 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_uint32_t,
   _swigc__p_uint64_t,
   _swigc__p_uint8_t,
+  _swigc__p_uint_least64_t,
   _swigc__p_unsigned_int,
   _swigc__p_unsigned_long,
-  _swigc__p_unsigned_long_long,
   _swigc__p_void,
 };
 
