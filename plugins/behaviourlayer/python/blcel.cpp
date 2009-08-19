@@ -68620,6 +68620,58 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcDelegateCamera_GetContinousTransitionSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcDelegateCamera *arg1 = (iPcDelegateCamera *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcDelegateCamera_GetContinousTransitionSpeed",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcDelegateCamera, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcDelegateCamera_GetContinousTransitionSpeed" "', argument " "1"" of type '" "iPcDelegateCamera const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcDelegateCamera * >(argp1);
+  result = (float)((iPcDelegateCamera const *)arg1)->GetContinousTransitionSpeed();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcDelegateCamera_SetContinousTransitionSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcDelegateCamera *arg1 = (iPcDelegateCamera *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcDelegateCamera_SetContinousTransitionSpeed",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcDelegateCamera, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcDelegateCamera_SetContinousTransitionSpeed" "', argument " "1"" of type '" "iPcDelegateCamera *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcDelegateCamera * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcDelegateCamera_SetContinousTransitionSpeed" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->SetContinousTransitionSpeed(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcDelegateCamera_scfGetVersion(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int result;
@@ -125961,6 +126013,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcDelegateCamera_GetCurrentMode", _wrap_iPcDelegateCamera_GetCurrentMode, METH_VARARGS, NULL},
 	 { (char *)"iPcDelegateCamera_SetTransitionTime", _wrap_iPcDelegateCamera_SetTransitionTime, METH_VARARGS, NULL},
 	 { (char *)"iPcDelegateCamera_GetTransitionTime", _wrap_iPcDelegateCamera_GetTransitionTime, METH_VARARGS, NULL},
+	 { (char *)"iPcDelegateCamera_GetContinousTransitionSpeed", _wrap_iPcDelegateCamera_GetContinousTransitionSpeed, METH_VARARGS, NULL},
+	 { (char *)"iPcDelegateCamera_SetContinousTransitionSpeed", _wrap_iPcDelegateCamera_SetContinousTransitionSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcDelegateCamera_scfGetVersion", _wrap_iPcDelegateCamera_scfGetVersion, METH_VARARGS, NULL},
 	 { (char *)"delete_iPcDelegateCamera", _wrap_delete_iPcDelegateCamera, METH_VARARGS, NULL},
 	 { (char *)"iPcDelegateCamera_swigregister", iPcDelegateCamera_swigregister, METH_VARARGS, NULL},
