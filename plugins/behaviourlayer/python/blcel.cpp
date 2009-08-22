@@ -75831,6 +75831,198 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcTrigger_GetUpdateDelay(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  csTicks result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_GetUpdateDelay",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_GetUpdateDelay" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (csTicks)((iPcTrigger const *)arg1)->GetUpdateDelay();
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_GetUpdateJitter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  csTicks result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_GetUpdateJitter",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_GetUpdateJitter" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (csTicks)((iPcTrigger const *)arg1)->GetUpdateJitter();
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_HasCheckingOnInvisibleEntities(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_HasCheckingOnInvisibleEntities",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_HasCheckingOnInvisibleEntities" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (bool)((iPcTrigger const *)arg1)->HasCheckingOnInvisibleEntities();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_HasFollowEntity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_HasFollowEntity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_HasFollowEntity" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (bool)((iPcTrigger const *)arg1)->HasFollowEntity();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_SetFollowEntity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_SetFollowEntity",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_SetFollowEntity" "', argument " "1"" of type '" "iPcTrigger *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrigger_SetFollowEntity" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  (arg1)->SetFollowEntity(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_HasStrictChecking(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_HasStrictChecking",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_HasStrictChecking" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (bool)((iPcTrigger const *)arg1)->HasStrictChecking();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_SetStrictChecking(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_SetStrictChecking",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_SetStrictChecking" "', argument " "1"" of type '" "iPcTrigger *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iPcTrigger_SetStrictChecking" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  (arg1)->SetStrictChecking(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcTrigger_GetTriggerType(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcTrigger *arg1 = (iPcTrigger *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  TriggerType result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrigger_GetTriggerType",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrigger, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrigger_GetTriggerType" "', argument " "1"" of type '" "iPcTrigger const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcTrigger * >(argp1);
+  result = (TriggerType)((iPcTrigger const *)arg1)->GetTriggerType();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcTrigger_Enabled_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrigger *arg1 = (iPcTrigger *) 0 ;
@@ -126177,6 +126369,14 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcTrigger_IsEnabled", _wrap_iPcTrigger_IsEnabled, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_GetEntitiesInTrigger", _wrap_iPcTrigger_GetEntitiesInTrigger, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_Check", _wrap_iPcTrigger_Check, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_GetUpdateDelay", _wrap_iPcTrigger_GetUpdateDelay, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_GetUpdateJitter", _wrap_iPcTrigger_GetUpdateJitter, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_HasCheckingOnInvisibleEntities", _wrap_iPcTrigger_HasCheckingOnInvisibleEntities, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_HasFollowEntity", _wrap_iPcTrigger_HasFollowEntity, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_SetFollowEntity", _wrap_iPcTrigger_SetFollowEntity, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_HasStrictChecking", _wrap_iPcTrigger_HasStrictChecking, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_SetStrictChecking", _wrap_iPcTrigger_SetStrictChecking, METH_VARARGS, NULL},
+	 { (char *)"iPcTrigger_GetTriggerType", _wrap_iPcTrigger_GetTriggerType, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_Enabled_get", _wrap_iPcTrigger_Enabled_get, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_EntitiesInTrigger_get", _wrap_iPcTrigger_EntitiesInTrigger_get, METH_VARARGS, NULL},
 	 { (char *)"iPcTrigger_scfGetVersion", _wrap_iPcTrigger_scfGetVersion, METH_VARARGS, NULL},
