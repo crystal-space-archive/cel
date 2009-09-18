@@ -52096,6 +52096,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcLinearMovement_GetSpeed(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcLinearMovement *arg1 = (iPcLinearMovement *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcLinearMovement_GetSpeed",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcLinearMovement, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcLinearMovement_GetSpeed" "', argument " "1"" of type '" "iPcLinearMovement const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcLinearMovement * >(argp1);
+  result = (float)((iPcLinearMovement const *)arg1)->GetSpeed();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcLinearMovement_SetVelocity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcLinearMovement *arg1 = (iPcLinearMovement *) 0 ;
@@ -54022,6 +54044,28 @@ SWIGINTERN PyObject *_wrap_iPcLinearMovement_SetDeltaLimit(PyObject *SWIGUNUSEDP
   arg2 = static_cast< float >(val2);
   (arg1)->SetDeltaLimit(arg2);
   resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcLinearMovement_GetDeltaLimit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcLinearMovement *arg1 = (iPcLinearMovement *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcLinearMovement_GetDeltaLimit",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcLinearMovement, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcLinearMovement_GetDeltaLimit" "', argument " "1"" of type '" "iPcLinearMovement const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcLinearMovement * >(argp1);
+  result = (float)((iPcLinearMovement const *)arg1)->GetDeltaLimit();
+  resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
   return NULL;
@@ -69584,7 +69628,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
   float arg2 ;
@@ -69614,7 +69658,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iPcTrackingCamera_GetFollowMinimumSpringFactor(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcTrackingCamera *arg1 = (iPcTrackingCamera *) 0 ;
   void *argp1 = 0 ;
@@ -69622,60 +69666,16 @@ SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor__SWIG_
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_SetFollowMinimumSpringFactor",1,1,&obj0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"iPcTrackingCamera_GetFollowMinimumSpringFactor",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcTrackingCamera, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_SetFollowMinimumSpringFactor" "', argument " "1"" of type '" "iPcTrackingCamera const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcTrackingCamera_GetFollowMinimumSpringFactor" "', argument " "1"" of type '" "iPcTrackingCamera const *""'"); 
   }
   arg1 = reinterpret_cast< iPcTrackingCamera * >(argp1);
-  result = (float)((iPcTrackingCamera const *)arg1)->SetFollowMinimumSpringFactor();
+  result = (float)((iPcTrackingCamera const *)arg1)->GetFollowMinimumSpringFactor();
   resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[3];
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = (int)PyObject_Length(args);
-  for (ii = 0; (ii < argc) && (ii < 2); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcTrackingCamera, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iPcTrackingCamera, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_float(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iPcTrackingCamera_SetFollowMinimumSpringFactor'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    SetFollowMinimumSpringFactor(iPcTrackingCamera *,float)\n"
-    "    SetFollowMinimumSpringFactor(iPcTrackingCamera const *)\n");
   return NULL;
 }
 
@@ -126113,6 +126113,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcLinearMovement_GetAnchor", _wrap_iPcLinearMovement_GetAnchor, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetAngularVelocity", _wrap_iPcLinearMovement_SetAngularVelocity, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetSpeed", _wrap_iPcLinearMovement_SetSpeed, METH_VARARGS, NULL},
+	 { (char *)"iPcLinearMovement_GetSpeed", _wrap_iPcLinearMovement_GetSpeed, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetVelocity", _wrap_iPcLinearMovement_SetVelocity, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetBodyVelocity", _wrap_iPcLinearMovement_SetBodyVelocity, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetWorldVelocity", _wrap_iPcLinearMovement_SetWorldVelocity, METH_VARARGS, NULL},
@@ -126148,6 +126149,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcLinearMovement_SetOnGround", _wrap_iPcLinearMovement_SetOnGround, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetHugGround", _wrap_iPcLinearMovement_SetHugGround, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetDeltaLimit", _wrap_iPcLinearMovement_SetDeltaLimit, METH_VARARGS, NULL},
+	 { (char *)"iPcLinearMovement_GetDeltaLimit", _wrap_iPcLinearMovement_GetDeltaLimit, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_RotateV", _wrap_iPcLinearMovement_RotateV, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_SetGravity", _wrap_iPcLinearMovement_SetGravity, METH_VARARGS, NULL},
 	 { (char *)"iPcLinearMovement_GetGravity", _wrap_iPcLinearMovement_GetGravity, METH_VARARGS, NULL},
@@ -126588,6 +126590,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcTrackingCamera_SetFollowSpringLength", _wrap_iPcTrackingCamera_SetFollowSpringLength, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetFollowSpringLength", _wrap_iPcTrackingCamera_GetFollowSpringLength, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetFollowMinimumSpringFactor", _wrap_iPcTrackingCamera_SetFollowMinimumSpringFactor, METH_VARARGS, NULL},
+	 { (char *)"iPcTrackingCamera_GetFollowMinimumSpringFactor", _wrap_iPcTrackingCamera_GetFollowMinimumSpringFactor, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetPanDirection", _wrap_iPcTrackingCamera_SetPanDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_GetPanDirection", _wrap_iPcTrackingCamera_GetPanDirection, METH_VARARGS, NULL},
 	 { (char *)"iPcTrackingCamera_SetPanSpeed", _wrap_iPcTrackingCamera_SetPanSpeed, METH_VARARGS, NULL},
