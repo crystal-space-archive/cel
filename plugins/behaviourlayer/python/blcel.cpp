@@ -4929,13 +4929,8 @@ SWIGINTERN size_t iCelParameterBlock_ParameterCount_get(iCelParameterBlock *self
 SWIGINTERN csStringID iCelParameterBlock_GetParameterIDByIndex(iCelParameterBlock *self,size_t idx){
 		csStringID id;
 		celDataType t;
-		const char *name = self->GetParameter(idx, id, t);
+		id = self->GetParameterDef(idx, t);
 		return id;
-	}
-SWIGINTERN char const *iCelParameterBlock_GetParameterNameByIndex(iCelParameterBlock *self,size_t idx){
-		csStringID id;
-		celDataType t;
-		return self->GetParameter(idx, id, t);
 	}
 SWIGINTERN bool iCelParameterBlock___contains__(iCelParameterBlock *self,csStringID id){
 		if (self->GetParameter(id))
@@ -26556,37 +26551,6 @@ SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterIDByIndex(PyObject *SW
     csStringID stringid = result;
     resultobj = PyLong_FromUnsignedLong((unsigned long)stringid);
   }
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iCelParameterBlock_GetParameterNameByIndex(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iCelParameterBlock *arg1 = (iCelParameterBlock *) 0 ;
-  size_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  size_t val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *result = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iCelParameterBlock_GetParameterNameByIndex",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelParameterBlock_GetParameterNameByIndex" "', argument " "1"" of type '" "iCelParameterBlock *""'"); 
-  }
-  arg1 = reinterpret_cast< iCelParameterBlock * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iCelParameterBlock_GetParameterNameByIndex" "', argument " "2"" of type '" "size_t""'");
-  } 
-  arg2 = static_cast< size_t >(val2);
-  result = (char *)iCelParameterBlock_GetParameterNameByIndex(arg1,arg2);
-  resultobj = SWIG_FromCharPtr((const char *)result);
   return resultobj;
 fail:
   return NULL;
@@ -120997,6 +120961,59 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celPcCommon_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Save",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Save" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  result = (arg1)->Save();
+  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Load",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Load" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Load" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
+  result = (bool)(arg1)->Load(arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_celPcCommon_GetPersistentData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
@@ -125443,7 +125460,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelParameterBlock_GetParameterByIndex", _wrap_iCelParameterBlock_GetParameterByIndex, METH_VARARGS, NULL},
 	 { (char *)"iCelParameterBlock_ParameterCount_get", _wrap_iCelParameterBlock_ParameterCount_get, METH_VARARGS, NULL},
 	 { (char *)"iCelParameterBlock_GetParameterIDByIndex", _wrap_iCelParameterBlock_GetParameterIDByIndex, METH_VARARGS, NULL},
-	 { (char *)"iCelParameterBlock_GetParameterNameByIndex", _wrap_iCelParameterBlock_GetParameterNameByIndex, METH_VARARGS, NULL},
 	 { (char *)"iCelParameterBlock___contains__", _wrap_iCelParameterBlock___contains__, METH_VARARGS, NULL},
 	 { (char *)"iCelParameterBlock___setitem__", _wrap_iCelParameterBlock___setitem__, METH_VARARGS, NULL},
 	 { (char *)"iCelParameterBlock___len__", _wrap_iCelParameterBlock___len__, METH_VARARGS, NULL},
@@ -127849,6 +127865,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celPcCommon_IsPropertyReadOnly", _wrap_celPcCommon_IsPropertyReadOnly, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_SaveFirstPass", _wrap_celPcCommon_SaveFirstPass, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_LoadFirstPass", _wrap_celPcCommon_LoadFirstPass, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Save", _wrap_celPcCommon_Save, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Load", _wrap_celPcCommon_Load, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_GetPersistentData", _wrap_celPcCommon_GetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_SetPersistentData", _wrap_celPcCommon_SetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_TickEveryFrame", _wrap_celPcCommon_TickEveryFrame, METH_VARARGS, NULL},
