@@ -27380,9 +27380,31 @@
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="scf__implgen_8h" name="scf_implgen.h" local="yes" imported="no">scf_implgen.h</includes>
     <class kind="class">scfFakeInterface</class>
     <class kind="class">scfImplementation</class>
     <class kind="class">scfImplementationHelper</class>
+  </compound>
+  <compound kind="file">
+    <name>scf_implgen.h</name>
+    <path>/tmp/tmp4/trunk/include/csutil/</path>
+    <filename>scf__implgen_8h</filename>
+    <class kind="class">scfImplementation0</class>
+    <class kind="class">scfImplementation1</class>
+    <class kind="class">scfImplementation2</class>
+    <class kind="class">scfImplementation3</class>
+    <class kind="class">scfImplementation4</class>
+    <class kind="class">scfImplementation5</class>
+    <class kind="class">scfImplementation6</class>
+    <class kind="class">scfImplementation7</class>
+    <class kind="class">scfImplementationExt0</class>
+    <class kind="class">scfImplementationExt1</class>
+    <class kind="class">scfImplementationExt2</class>
+    <class kind="class">scfImplementationExt3</class>
+    <class kind="class">scfImplementationExt4</class>
+    <class kind="class">scfImplementationExt5</class>
+    <class kind="class">scfImplementationExt6</class>
+    <class kind="class">scfImplementationExt7</class>
   </compound>
   <compound kind="file">
     <name>scf_interface.h</name>
@@ -41468,12 +41490,48 @@
   <compound kind="class">
     <name>csAddonReference</name>
     <filename>classcsAddonReference.html</filename>
+    <base>scfImplementationExt2&lt; csAddonReference, csObject, iAddonReference, iSelfDestruct &gt;</base>
     <member kind="function">
       <type></type>
       <name>csAddonReference</name>
       <anchorfile>classcsAddonReference.html</anchorfile>
       <anchor>a70bab78820b31849ec1abe7b6070831a</anchor>
       <arglist>(const char *plugin, const char *paramsfile, iBase *addonobj=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iBase *</type>
+      <name>GetAddonObject</name>
+      <anchorfile>classcsAddonReference.html</anchorfile>
+      <anchor>ada714f9a3a5b036b4bb69a7c5d9babb0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetParamsFile</name>
+      <anchorfile>classcsAddonReference.html</anchorfile>
+      <anchor>ab66a1e1bc451f1282ee2a4d9e801e781</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetPlugin</name>
+      <anchorfile>classcsAddonReference.html</anchorfile>
+      <anchor>af9ca437de99cb387c7ef00ed185bcbe7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsAddonReference.html</anchorfile>
+      <anchor>a4e0bb58341be550312a16343e5ee335f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SelfDestruct</name>
+      <anchorfile>classcsAddonReference.html</anchorfile>
+      <anchor>a61e5c817e970c0347dfec36dfb40971c</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -43194,6 +43252,56 @@
   <compound kind="class">
     <name>csBaseEventHandler::EventHandlerImpl</name>
     <filename>classcsBaseEventHandler_1_1EventHandlerImpl.html</filename>
+    <base>scfImplementation1&lt; EventHandlerImpl, iEventHandler &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csHandlerID</type>
+      <name>GenericID</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a0b69dc57e24f376909d7a9c5ee07f1eb</anchor>
+      <arglist>(csRef&lt; iEventHandlerRegistry &gt; &amp;reg) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GenericName</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a548a7253a37a043550179555ff25a515</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csHandlerID *</type>
+      <name>GenericPrec</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a5a2323763399255f017a6dcf383674c3</anchor>
+      <arglist>(csRef&lt; iEventHandlerRegistry &gt; &amp;hreg, csRef&lt; iEventNameRegistry &gt; &amp;nreg, csEventID id) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csHandlerID *</type>
+      <name>GenericSucc</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>ade6a73bb3a3813d9ee2e3f13a66e351e</anchor>
+      <arglist>(csRef&lt; iEventHandlerRegistry &gt; &amp;hreg, csRef&lt; iEventNameRegistry &gt; &amp;nreg, csEventID id) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a58fd1c4713ea7a12d0d9fc63144d0340</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csHandlerID *</type>
+      <name>InstancePrec</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a3908be5eb8cb8f90e32e4716ecbadea4</anchor>
+      <arglist>(csRef&lt; iEventHandlerRegistry &gt; &amp;hreg, csRef&lt; iEventNameRegistry &gt; &amp;nreg, csEventID id) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csHandlerID *</type>
+      <name>InstanceSucc</name>
+      <anchorfile>classcsBaseEventHandler_1_1EventHandlerImpl.html</anchorfile>
+      <anchor>a5e3d8c7f06c2461646bdf6b1532e9056</anchor>
+      <arglist>(csRef&lt; iEventHandlerRegistry &gt; &amp;hreg, csRef&lt; iEventNameRegistry &gt; &amp;nreg, csEventID id) const </arglist>
+    </member>
     <member kind="friend" protection="private">
       <type>friend class</type>
       <name>csBaseEventHandler</name>
@@ -43205,14 +43313,38 @@
   <compound kind="class">
     <name>csBaseRenderStepLoader</name>
     <filename>classcsBaseRenderStepLoader.html</filename>
+    <base>scfImplementation2&lt; csBaseRenderStepLoader, iLoaderPlugin, iComponent &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Initialize</name>
+      <anchorfile>classcsBaseRenderStepLoader.html</anchorfile>
+      <anchor>adb0825d1659e98f1a9bb1bd1be103cae</anchor>
+      <arglist>(iObjectRegistry *object_reg)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iBase &gt;</type>
+      <name>Parse</name>
+      <anchorfile>classcsBaseRenderStepLoader.html</anchorfile>
+      <anchor>a3f792dcfa7a900c628f52d2376b68d5c</anchor>
+      <arglist>(iDocumentNode *node, iStreamSource *ssource, iLoaderContext *ldr_context, iBase *context)=0</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csBaseRenderStepType</name>
     <filename>classcsBaseRenderStepType.html</filename>
+    <base>scfImplementation2&lt; csBaseRenderStepType, iRenderStepType, iComponent &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Initialize</name>
+      <anchorfile>classcsBaseRenderStepType.html</anchorfile>
+      <anchor>a8d6ca5d58f7feec3c2d554ec462d444a</anchor>
+      <arglist>(iObjectRegistry *object_reg)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csBaseTextureFactory</name>
     <filename>classcsBaseTextureFactory.html</filename>
+    <base>scfImplementation1&lt; csBaseTextureFactory, iTextureFactory &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>GetSize</name>
@@ -45068,6 +45200,13 @@
       <arglist>(const csBox2 &amp;b)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual ClipperType</type>
+      <name>GetClipperType</name>
+      <anchorfile>classcsBoxClipper.html</anchorfile>
+      <anchor>af352d510f25cd20537cf3edeffd00d27</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csVector2 *</type>
       <name>GetClipPoly</name>
       <anchorfile>classcsBoxClipper.html</anchorfile>
@@ -45312,6 +45451,7 @@
   <compound kind="class">
     <name>csClipper</name>
     <filename>classcsClipper.html</filename>
+    <base>scfImplementation1&lt; csClipper, iClipper2D &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual uint8</type>
       <name>ClipInPlace</name>
@@ -45552,6 +45692,7 @@
   <compound kind="class">
     <name>csColliderWrapper</name>
     <filename>classcsColliderWrapper.html</filename>
+    <base>scfImplementationExt1&lt; csColliderWrapper, csObject, scfFakeInterface&lt; csColliderWrapper &gt; &gt;</base>
     <member kind="function">
       <type>bool</type>
       <name>Collide</name>
@@ -46170,6 +46311,7 @@
   <compound kind="class">
     <name>csCommandLineParser</name>
     <filename>classcsCommandLineParser.html</filename>
+    <base>scfImplementation1&lt; csCommandLineParser, iCommandLineParser &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>AddName</name>
@@ -46242,6 +46384,13 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
+      <name>GetOptionName</name>
+      <anchorfile>classcsCommandLineParser.html</anchorfile>
+      <anchor>ab65d818d702dab3ac75f0590b15209ac</anchor>
+      <arglist>(size_t iIndex) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
       <name>GetResourceDir</name>
       <anchorfile>classcsCommandLineParser.html</anchorfile>
       <anchor>a00bb8be99d3ed54a89418040bd0073d6</anchor>
@@ -46286,6 +46435,56 @@
   <compound kind="class">
     <name>csCommonImageFile</name>
     <filename>classcsCommonImageFile.html</filename>
+    <base>scfImplementationExt0&lt; csCommonImageFile, csImageMemory &gt;</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const uint8 *</type>
+      <name>GetAlpha</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>a52eb4dcce4f38fded746cc8e6df78d33</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const void *</type>
+      <name>GetImageData</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>a0fc5c8f36c1f8ad9626d339300a8ce11</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>a3d4f16347be90e13ce89d1d81f8247c7</anchor>
+      <arglist>(int &amp;r, int &amp;g, int &amp;b) const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const csRGBpixel *</type>
+      <name>GetPalette</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>a930e39e085bc6a905036711f9047788e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>aec21772b6225bce4b19c4a5bfeaac688</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetRawFormat</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>adf390477df78180ad356ddd90fe83383</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasKeyColor</name>
+      <anchorfile>classcsCommonImageFile.html</anchorfile>
+      <anchor>a421637e134710b348c21c683e4626381</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual csRef&lt; iImageFileLoader &gt;</type>
       <name>InitLoader</name>
@@ -46346,6 +46545,63 @@
   <compound kind="class">
     <name>csCommonImageFileLoader</name>
     <filename>classcsCommonImageFileLoader.html</filename>
+    <base>scfImplementation1&lt; csCommonImageFileLoader, iImageFileLoader &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>ApplyTo</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a289f7a0009e82e4662ad15f3aa2fb9c7</anchor>
+      <arglist>(csImageMemory *image)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csLoaderDataType</type>
+      <name>GetDataType</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a8fea10ad1fe46eb22e87e02bf22cb3ab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFormat</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a4821bd4279703bdc69f617e0ef58c9ea</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>aa7d5a62b388f423c0d8847b46a65e9f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a403e9c442e761b2571648f1d08d06e4e</anchor>
+      <arglist>(int &amp;r, int &amp;g, int &amp;b) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a5f5f35baa9fb50918494768a53e08266</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>aadca4ec1ddc31763ac789a1974fead37</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasKeyColor</name>
+      <anchorfile>classcsCommonImageFileLoader.html</anchorfile>
+      <anchor>a73e11ce96661d3352e9093d7f47f121e</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>uint8 *</type>
       <name>alpha</name>
@@ -46557,10 +46813,187 @@
   <compound kind="class">
     <name>csConfigDocument</name>
     <filename>classcsConfigDocument.html</filename>
+    <base>scfImplementation1&lt; csConfigDocument, iConfigFile &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Clear</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ab55461e66f03529809c3dded055ceb10</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DeleteKey</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a8d9e991d7ad5573724a7b33bc57f5131</anchor>
+      <arglist>(const char *Key)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iConfigIterator &gt;</type>
+      <name>Enumerate</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a7d5b7af4ccc465571c7d298406d6b38b</anchor>
+      <arglist>(const char *Subsection=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetBool</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a3769ac0113adc9100192e35cf7253876</anchor>
+      <arglist>(const char *Key, bool Def=false) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetComment</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a5cf83d6805cab6e510142bdaae54c2c2</anchor>
+      <arglist>(const char *Key) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetEOFComment</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a641b3678813f048b77c9f52dbf1cf351</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetFileName</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>aed78a9af7beb8ca100114ffd9eacab10</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetFloat</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ae41a8fb03a2f8835c808962765ca80eb</anchor>
+      <arglist>(const char *Key, float Def=0.0) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetInt</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a2a78abfdecf67de8f38ddb6dd58e2363</anchor>
+      <arglist>(const char *Key, int Def=0) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetStr</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>abaadb6f7762e6e4d139f937888928e87</anchor>
+      <arglist>(const char *Key, const char *Def=&quot;&quot;) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iStringArray &gt;</type>
+      <name>GetTuple</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ad48577696d0919c0538e57921919c97a</anchor>
+      <arglist>(const char *Key) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iVFS *</type>
+      <name>GetVFS</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a54c442a7b7e4515a1f04239be412749d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>KeyExists</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a68ffd081f6a5c8b52b8392337f5ce181</anchor>
+      <arglist>(const char *Key) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Load</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a69c9563509de9808a933f112d04688d8</anchor>
+      <arglist>(const char *iFileName, iVFS *=0, bool Merge=false, bool NewWins=true)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Save</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a2b60fc041e5db05fedfa3280cf470e8b</anchor>
+      <arglist>(const char *iFileName, iVFS *=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Save</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ac5a631484a168eda72e2c97c6b1205a6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetBool</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a25ba3d450ad400086d95c08484689031</anchor>
+      <arglist>(const char *Key, bool Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetComment</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a6b2957a2bba8322122c689aabc6b8ba5</anchor>
+      <arglist>(const char *Key, const char *Text)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetEOFComment</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>a258e6d4e309361fcc9f1d1ea9abbc830</anchor>
+      <arglist>(const char *Text)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetFileName</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>aab298a9fef921cc09d792d895a41834b</anchor>
+      <arglist>(const char *, iVFS *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetFloat</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ac3e47f1649084d08d261839e501afabc</anchor>
+      <arglist>(const char *Key, float Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetInt</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ac114a34be1fd6d6df8c574f75ed1ec3e</anchor>
+      <arglist>(const char *Key, int Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetStr</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>aeda4ec9a09c275793814a5b624e66d3b</anchor>
+      <arglist>(const char *Key, const char *Val)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetTuple</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>ab7e7f6422b3f59fa3c05228b3c9b41ff</anchor>
+      <arglist>(const char *Key, iStringArray *Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SubsectionExists</name>
+      <anchorfile>classcsConfigDocument.html</anchorfile>
+      <anchor>af327ccb56ae680e16a4f63744ff9af50</anchor>
+      <arglist>(const char *Subsection) const </arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csConfigFile</name>
     <filename>classcsConfigFile.html</filename>
+    <base>scfImplementation1&lt; csConfigFile, iConfigFile &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Clear</name>
@@ -46782,6 +47215,7 @@
   <compound kind="class">
     <name>csConfigManager</name>
     <filename>classcsConfigManager.html</filename>
+    <base>scfImplementation3&lt; csConfigManager, iConfigManager, scfFakeInterface&lt; iConfigFile &gt;, iConfigNotifier &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual iConfigFile *</type>
       <name>AddDomain</name>
@@ -47936,6 +48370,7 @@
   <compound kind="class">
     <name>csDocumentAttributeCommon</name>
     <filename>classcsDocumentAttributeCommon.html</filename>
+    <base>scfImplementation1&lt; csDocumentAttributeCommon, iDocumentAttribute &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>GetValueAsBool</name>
@@ -47975,6 +48410,7 @@
   <compound kind="class">
     <name>csDocumentNodeCommon</name>
     <filename>classcsDocumentNodeCommon.html</filename>
+    <base>scfImplementation1&lt; csDocumentNodeCommon, iDocumentNode &gt;</base>
     <member kind="function">
       <type>csRef&lt; iDocumentAttribute &gt;</type>
       <name>GetAttribute</name>
@@ -48091,6 +48527,7 @@
   <compound kind="class">
     <name>csDocumentNodeReadOnly</name>
     <filename>classcsDocumentNodeReadOnly.html</filename>
+    <base>scfImplementationExt0&lt; csDocumentNodeReadOnly, csDocumentNodeCommon &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual csRef&lt; iDocumentNode &gt;</type>
       <name>CreateNodeBefore</name>
@@ -48899,10 +49336,54 @@
   <compound kind="class">
     <name>csEmptyDocumentAttributeIterator</name>
     <filename>classcsEmptyDocumentAttributeIterator.html</filename>
+    <base>scfImplementation1&lt; csEmptyDocumentAttributeIterator, iDocumentAttributeIterator &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasNext</name>
+      <anchorfile>classcsEmptyDocumentAttributeIterator.html</anchorfile>
+      <anchor>ac88a6609d24a0e8c4d7cdf29cc2fde61</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDocumentAttribute &gt;</type>
+      <name>Next</name>
+      <anchorfile>classcsEmptyDocumentAttributeIterator.html</anchorfile>
+      <anchor>ae68cabd0081f9952b904fb246e1b4396</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csEmptyDocumentNodeIterator</name>
     <filename>classcsEmptyDocumentNodeIterator.html</filename>
+    <base>scfImplementation1&lt; csEmptyDocumentNodeIterator, iDocumentNodeIterator &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetEndPosition</name>
+      <anchorfile>classcsEmptyDocumentNodeIterator.html</anchorfile>
+      <anchor>a5a697e48413308a09a4131603f1159cd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetNextPosition</name>
+      <anchorfile>classcsEmptyDocumentNodeIterator.html</anchorfile>
+      <anchor>ae6edd032029f5d95ba089d330ddaeaf7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasNext</name>
+      <anchorfile>classcsEmptyDocumentNodeIterator.html</anchorfile>
+      <anchor>a05d55d09f93057fa0b2518d49d99cd9f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDocumentNode &gt;</type>
+      <name>Next</name>
+      <anchorfile>classcsEmptyDocumentNodeIterator.html</anchorfile>
+      <anchor>ad4261d397183de9dfaff76d997ae68b2</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csEngineTools</name>
@@ -48925,6 +49406,63 @@
   <compound kind="class">
     <name>csEvent</name>
     <filename>classcsEvent.html</filename>
+    <base>scfImplementation1&lt; csEvent, iEvent &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a4ab0fa13187b817fb31fddf9a28a5444</anchor>
+      <arglist>(const char *name, void *v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ad38ec2244bacd0677851bddacbd55cb7</anchor>
+      <arglist>(const char *name, iBase *v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a06d33fbbd196c7dd08818bee792e18b0</anchor>
+      <arglist>(const char *name, bool v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a03f0fc1b0b2cd963cf7b20268b474892</anchor>
+      <arglist>(const char *name, const void *v, size_t size)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>aa5cf0386ff48e4bf90b7fd61d80f04a9</anchor>
+      <arglist>(const char *name, const char *v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a5cce7b4b977c9e821643a064ccb2f628</anchor>
+      <arglist>(const char *name, double v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Add</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a92fa6801ffdfdfab130d44660e7d80e7</anchor>
+      <arglist>(const char *name, float v)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>AttributeExists</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a8511f51216b50c9a4adbe2b999607f3e</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csEvent</name>
@@ -48946,12 +49484,103 @@
       <anchor>a7201cd3fb4e4568c24e4beff5332c851</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iEventAttributeIterator &gt;</type>
+      <name>GetAttributeIterator</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a5205f1316dcb14712547bd24c8e2bd2c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventAttributeType</type>
+      <name>GetAttributeType</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ab628cbc7e69c6bd183cc7cd0fbf60501</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
     <member kind="function">
       <type>const csEventID</type>
       <name>GetName</name>
       <anchorfile>classcsEvent.html</anchorfile>
       <anchor>a3ad72866942a33aae56fd023aef0bc47</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Remove</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a347e050262f2760d62c0571a44b82f2a</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>RemoveAll</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a901711a2bc2d9dc13cc4f94c7aec7286</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a2b8de1b6135de9a0699b026b161b4f77</anchor>
+      <arglist>(const char *name, void *&amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ad6f67e5d58398a352f0455e03d3742ac</anchor>
+      <arglist>(const char *name, csRef&lt; iBase &gt; &amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ae11713fe37cadc4ad95f0e233b08de79</anchor>
+      <arglist>(const char *name, bool &amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ac6a7da36d5138d27d3c184fadc7e5e39</anchor>
+      <arglist>(const char *name, const void *&amp;v, size_t &amp;size) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a6fb9dc196b54322c46d06d2a48d196c3</anchor>
+      <arglist>(const char *name, const char *&amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ad1296d1f477f14104e8d95b0b6965624</anchor>
+      <arglist>(const char *name, double &amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a945e60c0861558b24596fe16df1dbdd1</anchor>
+      <arglist>(const char *name, float &amp;v) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>a87d9fc40e174778ecc428bc153e1339b</anchor>
+      <arglist>(const char *name, uint64 &amp;value) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csEventError</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsEvent.html</anchorfile>
+      <anchor>ae1675a238f9e349d6ad5a6018597f100</anchor>
+      <arglist>(const char *name, int64 &amp;value) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -48964,6 +49593,7 @@
   <compound kind="class">
     <name>csEventCord</name>
     <filename>classcsEventCord.html</filename>
+    <base>scfImplementation1&lt; csEventCord, iEventCord &gt;</base>
     <member kind="function">
       <type></type>
       <name>csEventCord</name>
@@ -49091,6 +49721,7 @@
   <compound kind="class">
     <name>csEventHandlerRegistry</name>
     <filename>classcsEventHandlerRegistry.html</filename>
+    <base>scfImplementation1&lt; csEventHandlerRegistry, iEventHandlerRegistry &gt;</base>
     <member kind="function">
       <type>csHandlerID const</type>
       <name>GetGeneric</name>
@@ -49148,6 +49779,13 @@
       <arglist>(csHandlerID instanceid, csHandlerID genericid)</arglist>
     </member>
     <member kind="function">
+      <type>csHandlerID</type>
+      <name>RegisterID</name>
+      <anchorfile>classcsEventHandlerRegistry.html</anchorfile>
+      <anchor>ab87efdee85136c0fc3342d18d3d0bfa1</anchor>
+      <arglist>(iEventHandler *)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>ReleaseID</name>
       <anchorfile>classcsEventHandlerRegistry.html</anchorfile>
@@ -49165,6 +49803,7 @@
   <compound kind="class">
     <name>csEventNameRegistry</name>
     <filename>classcsEventNameRegistry.html</filename>
+    <base>scfImplementation1&lt; csEventNameRegistry, iEventNameRegistry &gt;</base>
     <member kind="function" static="yes">
       <type>static csRef&lt; iEventNameRegistry &gt;</type>
       <name>GetRegistry</name>
@@ -49218,6 +49857,7 @@
   <compound kind="class">
     <name>csEventOutlet</name>
     <filename>classcsEventOutlet.html</filename>
+    <base>scfImplementation1&lt; csEventOutlet, iEventOutlet &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Broadcast</name>
@@ -49292,6 +49932,7 @@
   <compound kind="class">
     <name>csEventQueue</name>
     <filename>classcsEventQueue.html</filename>
+    <base>scfImplementation1&lt; csEventQueue, iEventQueue &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Clear</name>
@@ -49305,6 +49946,20 @@
       <anchorfile>classcsEventQueue.html</anchorfile>
       <anchor>a99229403fdbe7badb9446ae0301afa57</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iEvent &gt;</type>
+      <name>CreateBroadcastEvent</name>
+      <anchorfile>classcsEventQueue.html</anchorfile>
+      <anchor>a6c9bc4dee2d776c2b9141dedfb6b176d</anchor>
+      <arglist>(const csEventID &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iEvent &gt;</type>
+      <name>CreateEvent</name>
+      <anchorfile>classcsEventQueue.html</anchorfile>
+      <anchor>ac2e7ffe12dbb5f60c2fdcd61c806eb28</anchor>
+      <arglist>(const csEventID &amp;name)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual csPtr&lt; iEvent &gt;</type>
@@ -49471,6 +50126,42 @@
   <compound kind="class">
     <name>csEventTimer</name>
     <filename>classcsEventTimer.html</filename>
+    <base>scfImplementation1&lt; csEventTimer, iEventTimer &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>AddTimerEvent</name>
+      <anchorfile>classcsEventTimer.html</anchorfile>
+      <anchor>a5ec1cfeb085f70a266ef0f20ae55ef92</anchor>
+      <arglist>(iTimerEvent *ev, csTicks delay)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetEventCount</name>
+      <anchorfile>classcsEventTimer.html</anchorfile>
+      <anchor>adbe80cf32749062636d9816f4a596b20</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTicks</type>
+      <name>GetTimeLeft</name>
+      <anchorfile>classcsEventTimer.html</anchorfile>
+      <anchor>a88daf685b1df8016b92749b7fdfc4004</anchor>
+      <arglist>(size_t idx) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveAllTimerEvents</name>
+      <anchorfile>classcsEventTimer.html</anchorfile>
+      <anchor>a4c62c5d635f309d9fb15d0a9f19b35cb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveTimerEvent</name>
+      <anchorfile>classcsEventTimer.html</anchorfile>
+      <anchor>a3f8a23d8204ce11a3e89ac2ef4de1f33</anchor>
+      <arglist>(iTimerEvent *ev)</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static csPtr&lt; iEventTimer &gt;</type>
       <name>GetStandardTimer</name>
@@ -50619,6 +51310,14 @@
   <compound kind="struct">
     <name>csFontCache::FontDeleteNotify</name>
     <filename>structcsFontCache_1_1FontDeleteNotify.html</filename>
+    <base>scfImplementation1&lt; FontDeleteNotify, iFontDeleteNotify &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>BeforeDelete</name>
+      <anchorfile>structcsFontCache_1_1FontDeleteNotify.html</anchorfile>
+      <anchor>ac194c2f868492551945baef7c93f4780</anchor>
+      <arglist>(iFont *font)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>csFontCache::GlyphCacheData</name>
@@ -60651,6 +61350,63 @@
   <compound kind="class">
     <name>csGLScreenShot</name>
     <filename>classcsGLScreenShot.html</filename>
+    <base>scfImplementationExt1&lt; csGLScreenShot, csImageBase, iDataBuffer &gt;</base>
+    <member kind="function">
+      <type>void</type>
+      <name>DecRef</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a2c5acf7325aaa74f89ef9cd3f9af22e7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFormat</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a76965a2695b8855283dec646377771da</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a524cbe56c8437ba44601faedf51881f9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const void *</type>
+      <name>GetImageData</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a45e05911e47d2c1b6bb3f60aefb41ac3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a147479d189c1cf592608018d03847655</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetRawFormat</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a95c146cfd8e0ba9a512fbfc58a8e4757</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>a21c1660dc928935c88246f576ad73755</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>IncRef</name>
+      <anchorfile>classcsGLScreenShot.html</anchorfile>
+      <anchor>ad56814b513b2217658ab8143c203c3c2</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>char *</type>
       <name>GetData</name>
@@ -60852,6 +61608,7 @@
   <compound kind="class">
     <name>csGradient</name>
     <filename>classcsGradient.html</filename>
+    <base>scfImplementation1&lt; csGradient, iGradient &gt;</base>
     <member kind="function">
       <type>void</type>
       <name>Clear</name>
@@ -60986,6 +61743,7 @@
   <compound kind="class">
     <name>csGraphics2D</name>
     <filename>classcsGraphics2D.html</filename>
+    <base>scfImplementation7&lt; csGraphics2D, iGraphics2D, iComponent, iNativeWindow, iNativeWindowManager, iPluginConfig, iDebugHelper, iEventHandler &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>AllowResize</name>
@@ -61043,6 +61801,13 @@
       <arglist>(iBase *)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>FindRGB</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a8ec4bfdefe11b76c144bc5ddbe7601d8</anchor>
+      <arglist>(int r, int g, int b, int a=255)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>FinishDraw</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
@@ -61056,6 +61821,13 @@
       <anchor>a311639eac3b096eed0e54758194069b3</anchor>
       <arglist>(int &amp;xmin, int &amp;ymin, int &amp;xmax, int &amp;ymax)</arglist>
     </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetColorDepth</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a747bf4580c47309a2b052266937e3ec4</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iFontServer *</type>
       <name>GetFontServer</name>
@@ -61063,11 +61835,53 @@
       <anchor>a8a56ffc416252a5a7ec887e9615e1b0a</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>GetFramebufferDimensions</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a66f7d8f58d8b7008bc44323c132ced2b</anchor>
+      <arglist>(int &amp;width, int &amp;height)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>GetFullScreen</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>aa4f549d06eec17c7c9c1a03f9e01694d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetGamma</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab371a0110449fa6fb6bba59f11dab181</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a96f58c12519379b06e75f38e958f8264</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetHWGLVersion</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a63af63d798c85c44a3c260621a3e7516</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetHWRenderer</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a8b9f600dae09a74fcefdc11f509451f0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetHWVendor</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a6e748e4d705cb1a6ebfdbc3e3a2c4048</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -61082,6 +61896,34 @@
       <name>GetNativeWindow</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>a79a53b47a12044f8404384f8da038cbb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetRGB</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a834bef9425152a2e0938768670cee386</anchor>
+      <arglist>(int color, int &amp;r, int &amp;g, int &amp;b, int &amp;a)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetRGB</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>af8dee69eb3096a1f931e67ae951bfb8c</anchor>
+      <arglist>(int color, int &amp;r, int &amp;g, int &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>GetViewport</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab99a88cd0015759257d7e0a2ebc3dbe9</anchor>
+      <arglist>(int &amp;left, int &amp;top, int &amp;width, int &amp;height)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a3643ee0bced27258452706c31db6bafb</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -61149,6 +61991,13 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
+      <name>SetGamma</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a6746d39f949e7cbdf644ae7156ce942b</anchor>
+      <arglist>(float)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
       <name>SetMouseCursor</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>a8c997d56caf7ade4ff472dc5312cfc7d</anchor>
@@ -61167,6 +62016,13 @@
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>a52df41f8798a298b94088009003ae2e3</anchor>
       <arglist>(int x, int y)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetViewport</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a4646fd1db4d7871364a5c03557446d51</anchor>
+      <arglist>(int left, int top, int width, int height)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -61417,6 +62273,7 @@
   <compound kind="class">
     <name>csGraphics2DGLCommon</name>
     <filename>classcsGraphics2DGLCommon.html</filename>
+    <base>scfImplementationExt2&lt; csGraphics2DGLCommon, csGraphics2D, iEventPlug, iOpenGLDriverDatabase &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>BeginDraw</name>
@@ -61437,6 +62294,13 @@
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a1939957bae2ba62625234304cdce98c7</anchor>
       <arglist>(int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Close</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>ac987ef155f3779924bab7650fa346af6</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -61502,6 +62366,27 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetHWGLVersion</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a1a169ca0339a15af22bb1db08e7cc096</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetHWRenderer</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a3da445e6cc8898a7e6e8069181a4eeea</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetHWVendor</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a32e8dfb193701965ada154841c9d73e7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>GetPixel</name>
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
@@ -61549,6 +62434,20 @@
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a293fb50b2add94853c56bf540e045ccd</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetClipRect</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a271d5c0ec31dbf7bb1c415eecd98f2a4</anchor>
+      <arglist>(int xmin, int ymin, int xmax, int ymax)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetViewport</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a56fc8707fb9274edf7dc91e9f78e2b02</anchor>
+      <arglist>(int left, int top, int width, int height)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -62385,6 +63284,105 @@
   <compound kind="class">
     <name>csImageBase</name>
     <filename>classcsImageBase.html</filename>
+    <base>scfImplementation1&lt; csImageBase, iImage &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const uint8 *</type>
+      <name>GetAlpha</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a9088e2e94fb55125292f8bd2e6b71d83</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>csRef&lt; iDataBuffer &gt;</type>
+      <name>GetCookedImageData</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a5e46b4dc60c79f9c549bc6d09fac2053</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetCookedImageFormat</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a18d802b2b03757ab46a09bf0d9363439</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetDepth</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a05356f886e5dcb7866294515bf31ed38</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csImageType</type>
+      <name>GetImageType</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a851e69042d59791db1276e4daa1280e5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a3b394ea924569d578b6b8a7392159b56</anchor>
+      <arglist>(int &amp;, int &amp;, int &amp;) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iImage &gt;</type>
+      <name>GetMipmap</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a65885bfc9872abbc3850437037ddadf7</anchor>
+      <arglist>(uint num)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>acffe6abf869943c09d67a06f62f706e6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csRGBpixel *</type>
+      <name>GetPalette</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>ab5259fde6544f4ebf4fd6200a75c5efa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iImage &gt;</type>
+      <name>GetSubImage</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a1c9b0cac6e4263c30ea2ef9b2483ac39</anchor>
+      <arglist>(uint num)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasKeyColor</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a0074d236d0bf6c41c5bd71cf471f6506</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>HasMipmaps</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a828abaf036fd86f5be6ababdda0933d2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>HasSubImages</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>acd8a764af200c94c351677087d66d28e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetName</name>
+      <anchorfile>classcsImageBase.html</anchorfile>
+      <anchor>a0f830f7221167e2c6094ec8e06e07cab</anchor>
+      <arglist>(const char *iName)</arglist>
+    </member>
     <member kind="function" protection="protected">
       <type></type>
       <name>csImageBase</name>
@@ -62403,6 +63401,7 @@
   <compound kind="class">
     <name>csImageCubeMapMaker</name>
     <filename>classcsImageCubeMapMaker.html</filename>
+    <base>scfImplementationExt0&lt; csImageCubeMapMaker, csImageBase &gt;</base>
     <member kind="function">
       <type></type>
       <name>csImageCubeMapMaker</name>
@@ -62425,10 +63424,115 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual const uint8 *</type>
+      <name>GetAlpha</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>adaf90be8743b935bcebf931b878c51d4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFormat</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a42b0da787053aebbeab41ad8c78c722e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a08b1d618ff2b0cfd6e33efe95beab34e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const void *</type>
+      <name>GetImageData</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>abd77827fc1966df6aec28d3f5b43b857</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csImageType</type>
+      <name>GetImageType</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a57e23729d42b3137d94782b72b66d8e1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a3e7e0179fea867f85671f8367a83e81b</anchor>
+      <arglist>(int &amp;, int &amp;, int &amp;) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iImage &gt;</type>
+      <name>GetMipmap</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>ac5f134c33fe9fbfcf62a9585975b502e</anchor>
+      <arglist>(uint num)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
       <name>GetName</name>
       <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
       <anchor>a2b15a9f2e30f90fd82418b9eda0e0b75</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csRGBpixel *</type>
+      <name>GetPalette</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>ab8767b4bdbf8d9ef64ed3c5fc8668931</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a14aaa8b027bc3d77db31bb5808046ce5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetRawFormat</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a6707c60c37d82db16217cf9ae1cb508a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iImage &gt;</type>
+      <name>GetSubImage</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>ad94bf407ace9f03464dcf19b6a06d3fb</anchor>
+      <arglist>(uint num)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a00c0fe27b82bbfc21a57cd83a77edf2e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasKeyColor</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a055960080dc6774a34861ee833705283</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>HasMipmaps</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a0903f8d02180b8a1b358de9efe228fff</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>HasSubImages</name>
+      <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
+      <anchor>a52ecf095e206b8a5a9a976d3978fe5ff</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -62614,6 +63718,7 @@
   <compound kind="class">
     <name>csImageMemory</name>
     <filename>classcsImageMemory.html</filename>
+    <base>scfImplementationExt0&lt; csImageMemory, csImageBase &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>ApplyKeyColor</name>
@@ -62726,11 +63831,46 @@
       <anchor>a37cc4d56a6658e1c53b00f80ef9ae355</anchor>
       <arglist>(int width, int height, int format=CS_IMGFMT_TRUECOLOR)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const uint8 *</type>
+      <name>GetAlpha</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a792c385b2e95334f99e2bf0c4f9d73e2</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>uint8 *</type>
       <name>GetAlphaPtr</name>
       <anchorfile>classcsImageMemory.html</anchorfile>
       <anchor>a9646bf443e67279e6caf424ff6c97061</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetDepth</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a1d0a156069b7eaa44abecd5c96774ec8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFormat</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>ac028edc605d3badec020c952e8368dc2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>ad61754c0e0af35591d725e08a5e72b83</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const void *</type>
+      <name>GetImageData</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>aad1819c50cc745d90b45e513a59bdb9f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -62740,12 +63880,75 @@
       <anchor>a58aa18774e821efe4873462800c6d5cd</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csImageType</type>
+      <name>GetImageType</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>aaa59a1047cdd54de633a79accfca7bc5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a4599b6db9460da15d5f04be8a5fe9ee3</anchor>
+      <arglist>(int &amp;r, int &amp;g, int &amp;b) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iImage &gt;</type>
+      <name>GetMipmap</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>aa1c6e2410cea2aa451d0f6e7dd0a02ba</anchor>
+      <arglist>(uint num)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csRGBpixel *</type>
+      <name>GetPalette</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a678bb2fa71f077c58d30640890ad7b8c</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>csRGBpixel *</type>
       <name>GetPalettePtr</name>
       <anchorfile>classcsImageMemory.html</anchorfile>
       <anchor>a5f22433b9c886da004fb0f40db441a90</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a090a23f2bd3cad916f8f099d3dd2eb6a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetRawFormat</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a5e78e6a1bedf5a2f652791f60a42b2aa</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>af4f7ac725ac7de173b05ba9b64cf7be2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HasKeyColor</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a3ac872e07d79054d064495b428669dcc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>HasMipmaps</name>
+      <anchorfile>classcsImageMemory.html</anchorfile>
+      <anchor>a556b083728f0a01ebded70e20c137e5b</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -62909,6 +64112,7 @@
   <compound kind="class">
     <name>csImageVolumeMaker</name>
     <filename>classcsImageVolumeMaker.html</filename>
+    <base>scfImplementationExt0&lt; csImageVolumeMaker, csImageBase &gt;</base>
     <member kind="function">
       <type></type>
       <name>csImageVolumeMaker</name>
@@ -62924,10 +64128,80 @@
       <arglist>(int format=-1, int width=-1, int height=-1)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual const uint8 *</type>
+      <name>GetAlpha</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>a2f88437dcfb8c4a8a61221b102a640f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetDepth</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ac9864e6490c49cb9af3e4640fb7e54e6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFormat</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>aa42e5883f270705815666c3e444910de</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ac534fd025a3a75eb984952089dc5d3af</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const void *</type>
+      <name>GetImageData</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ae192e3a1098a32850de0c55f19deb7dd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csImageType</type>
+      <name>GetImageType</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ab8be733ec0bdaa934131e00c2afb46c1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
       <name>GetName</name>
       <anchorfile>classcsImageVolumeMaker.html</anchorfile>
       <anchor>a86fc346978d9f30e4215572be8ba9ded</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csRGBpixel *</type>
+      <name>GetPalette</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ac100fc1164081bf1a6606cc6d0e48734</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDataBuffer &gt;</type>
+      <name>GetRawData</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>ab0c93563968e5e6994a25e8f3774e421</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetRawFormat</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>aac94b127bbcae3ffa4b3f57c4fa1c22c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsImageVolumeMaker.html</anchorfile>
+      <anchor>a0461e3b10f6f8ba1f1c4764ab8b9e494</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -63190,12 +64464,90 @@
   <compound kind="class">
     <name>csInputBinder</name>
     <filename>classcsInputBinder.html</filename>
+    <base>scfImplementation2&lt; csInputBinder, iInputBinder, iEventHandler &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>Axis</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a7e96c7d5a76531b056026ef9624f6a47</anchor>
+      <arglist>(unsigned cmd)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>BindAxis</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>af8a79f3996e5c12ea14fdf88cd65dcc0</anchor>
+      <arglist>(csInputDefinition const &amp;def, unsigned int cmd, int sensitivity=1)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>BindButton</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>aed7dd149f5614e7cb6745cb857c14334</anchor>
+      <arglist>(csInputDefinition const &amp;def, unsigned int cmd, bool toggle=false)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Button</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a51c93c254f5f5b3bc9006b52a8610d5d</anchor>
+      <arglist>(unsigned cmd)</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csInputBinder</name>
       <anchorfile>classcsInputBinder.html</anchorfile>
       <anchor>a63fd0ade996f5d3917e87e33b3259322</anchor>
       <arglist>(iObjectRegistry *, iBase *parent=0, int btnSize=127, int axisSize=13)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>LoadConfig</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a58910c350b567bd011a7e0cdc01a6ea0</anchor>
+      <arglist>(iConfigFile *, const char *subsection)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iEventHandler *</type>
+      <name>QueryHandler</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>aea9c59b1df9fb94c1b52e98fedb96e36</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SaveConfig</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a192b715a852fbb3e7d06948a6ce07e48</anchor>
+      <arglist>(iConfigFile *, const char *subsection)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>UnbindAll</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a2f0a8d8467c78d3c87663531beb064a9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>UnbindAxis</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>a95923955df63e1141b51ad3fe3952b6c</anchor>
+      <arglist>(unsigned cmd)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>UnbindButton</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>ab8476dfeef69506278d41aa1fab84686</anchor>
+      <arglist>(unsigned cmd)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classcsInputBinder.html</anchorfile>
+      <anchor>ab92889788b062c6ea8f3f14d7aebe6f3</anchor>
+      <arglist>(iEvent &amp;)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -63819,6 +65171,7 @@
     <name>csJoystickDriver</name>
     <filename>classcsJoystickDriver.html</filename>
     <base>csInputDriver</base>
+    <base>scfImplementation2&lt; csJoystickDriver, iJoystickDriver, iEventHandler &gt;</base>
     <member kind="function">
       <type></type>
       <name>csJoystickDriver</name>
@@ -63839,6 +65192,20 @@
       <anchorfile>classcsJoystickDriver.html</anchorfile>
       <anchor>a4aa22e64513af06818bfe9a5cdea9815</anchor>
       <arglist>(uint number, const int32 *axes, uint numAxes)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetLast</name>
+      <anchorfile>classcsJoystickDriver.html</anchorfile>
+      <anchor>a58025d87ddfa39daece3b1bafcdcc9f5</anchor>
+      <arglist>(uint number, uint axis) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const int32 *</type>
+      <name>GetLast</name>
+      <anchorfile>classcsJoystickDriver.html</anchorfile>
+      <anchor>aceeea898ab3a53d7c30a12b89b8923d3</anchor>
+      <arglist>(uint number) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
@@ -64020,12 +65387,20 @@
   <compound kind="class">
     <name>csKDTree</name>
     <filename>classcsKDTree.html</filename>
+    <base>scfImplementation1&lt; csKDTree, iDebugHelper &gt;</base>
     <member kind="function">
       <type>csKDTreeChild *</type>
       <name>AddObject</name>
       <anchorfile>classcsKDTree.html</anchorfile>
       <anchor>a3be15758430b4d89834dff8a0abb23a1</anchor>
       <arglist>(const csBox3 &amp;bbox, void *object)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTicks</type>
+      <name>Benchmark</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>a3e9b0ec3f292e61ad2eeb25a7d5c6054</anchor>
+      <arglist>(int num_iterations)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -64041,11 +65416,32 @@
       <anchor>a80c7edecba2ebf6acff61a35448855ca</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>DebugCommand</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>aaebffde40199efca8acd9d785e75cd0f</anchor>
+      <arglist>(const char *)</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>Distribute</name>
       <anchorfile>classcsKDTree.html</anchorfile>
       <anchor>a9a63c52048b778cdcc32bfa6dae8a312</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Dump</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>a713cb0e510c875003221d3a780f4c237</anchor>
+      <arglist>(iGraphics3D *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iString &gt;</type>
+      <name>Dump</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>a2891fcb30d19fd8cf56c4707b5569677</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -64111,6 +65507,13 @@
       <anchor>a72dd0fce97684a66b62fc7308d060a34</anchor>
       <arglist>() const </arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSupportedTests</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>ab2a1459a108d03e095ae26bf727c312a</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function">
       <type>iKDTreeUserData *</type>
       <name>GetUserObject</name>
@@ -64159,6 +65562,13 @@
       <anchorfile>classcsKDTree.html</anchorfile>
       <anchor>ad6f0678cdf707347f4d1005c27f06e39</anchor>
       <arglist>(iKDTreeUserData *userobj)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iString &gt;</type>
+      <name>StateTest</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>a5e63f841e839490bc862980a3c8bc35c</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -64246,6 +65656,14 @@
     <name>csKeyboardDriver</name>
     <filename>classcsKeyboardDriver.html</filename>
     <base>csInputDriver</base>
+    <base>scfImplementation2&lt; csKeyboardDriver, iKeyboardDriver, iEventHandler &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iKeyComposer &gt;</type>
+      <name>CreateKeyComposer</name>
+      <anchorfile>classcsKeyboardDriver.html</anchorfile>
+      <anchor>a015a278792cd4497285b07092040dfd4</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csKeyboardDriver</name>
@@ -64266,6 +65684,13 @@
       <anchorfile>classcsKeyboardDriver.html</anchorfile>
       <anchor>acaae2174c81e85bbf9583f2ce2b287e4</anchor>
       <arglist>(utf32_char codeRaw) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const csKeyModifiers &amp;</type>
+      <name>GetModifiersState</name>
+      <anchorfile>classcsKeyboardDriver.html</anchorfile>
+      <anchor>af36a9807465d2f0109e86bc8df95c044</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual uint32</type>
@@ -64454,6 +65879,7 @@
   <compound kind="class">
     <name>csKeyValuePair</name>
     <filename>classcsKeyValuePair.html</filename>
+    <base>scfImplementationExt1&lt; csKeyValuePair, csObject, iKeyValuePair &gt;</base>
     <member kind="function">
       <type></type>
       <name>csKeyValuePair</name>
@@ -64549,12 +65975,48 @@
   <compound kind="class">
     <name>csLibraryReference</name>
     <filename>classcsLibraryReference.html</filename>
+    <base>scfImplementationExt2&lt; csLibraryReference, csObject, iLibraryReference, iSelfDestruct &gt;</base>
     <member kind="function">
       <type></type>
       <name>csLibraryReference</name>
       <anchorfile>classcsLibraryReference.html</anchorfile>
       <anchor>ab06db698ffd63526bdd6279b08d3fc82</anchor>
       <arglist>(const char *file, const char *path=0, bool checkDupes=false)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetCheckDupes</name>
+      <anchorfile>classcsLibraryReference.html</anchorfile>
+      <anchor>a86aaedf941f6dac1897029f045122de2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetFile</name>
+      <anchorfile>classcsLibraryReference.html</anchorfile>
+      <anchor>a48f90a1e56932d5525ca4c6c597d5f07</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetPath</name>
+      <anchorfile>classcsLibraryReference.html</anchorfile>
+      <anchor>a9171e7581f1ec64e6c2e154165cdf8f3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsLibraryReference.html</anchorfile>
+      <anchor>a62f14e5580310f858f07c18d2bd3e9d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SelfDestruct</name>
+      <anchorfile>classcsLibraryReference.html</anchorfile>
+      <anchor>a00a09adf1fa67a799c69c61b0d2cad1b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -65237,6 +66699,7 @@
   <compound kind="class">
     <name>csLoaderReturn</name>
     <filename>classcsLoaderReturn.html</filename>
+    <base>scfImplementation1&lt; csLoaderReturn, iThreadReturn &gt;</base>
   </compound>
   <compound kind="struct">
     <name>csLoadResult</name>
@@ -65295,12 +66758,90 @@
   <compound kind="class">
     <name>csMapNode</name>
     <filename>classcsMapNode.html</filename>
+    <base>scfImplementationExt1&lt; csMapNode, csObject, iMapNode &gt;</base>
     <member kind="function">
       <type></type>
       <name>csMapNode</name>
       <anchorfile>classcsMapNode.html</anchorfile>
       <anchor>a9ac7d25753cec687fd292e71fcedb8ed</anchor>
       <arglist>(const char *Name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetPosition</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>aca3af07877181de149972417dd939311</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iSector *</type>
+      <name>GetSector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a5618ff6289318b123816b7465412b334</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetXVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>af761b5e784fbbae7d0c3a53334f427a9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetYVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a51e5043ddd997a27d7975169a51443fc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetZVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a8b1f4b5e5fa48c5424164de28e2c2c2c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>afad30d54e55b125a3787c1cc345ff688</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetPosition</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a01eae0831dcdc66124c25018250fe61d</anchor>
+      <arglist>(const csVector3 &amp;pos)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetSector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a4dcc3d9005f231c3a51127c27871d3b1</anchor>
+      <arglist>(iSector *sec)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetXVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a417b7021e3e01d0d429801919512e085</anchor>
+      <arglist>(const csVector3 &amp;vec)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetYVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>ad7676197e97e6d9dcdc0baa362ff36a2</anchor>
+      <arglist>(const csVector3 &amp;vec)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetZVector</name>
+      <anchorfile>classcsMapNode.html</anchorfile>
+      <anchor>a2f943921fcec228fa46b81f9427e4eda</anchor>
+      <arglist>(const csVector3 &amp;vec)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -66080,6 +67621,7 @@
   <compound kind="class">
     <name>csMemFile</name>
     <filename>classcsMemFile.html</filename>
+    <base>scfImplementation1&lt; csMemFile, iFile &gt;</base>
     <member kind="enumeration">
       <name>Disposition</name>
       <anchorfile>classcsMemFile.html</anchorfile>
@@ -66115,6 +67657,13 @@
       <anchorfile>classcsMemFile.html</anchorfile>
       <anchor>aab9cfa5b94ecee97a760b0c17418ce50ad0be9f2517a6e4fae91477b16f1ce695</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>AtEOF</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>aad2813d90ec4b3c13a04649b2b5c37af</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -66152,6 +67701,20 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Flush</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>ab4851e941844524a07eafb8c0b93c779</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetAllData</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>aef66782be803c3534a755ccb7844f58e</anchor>
+      <arglist>(bool nullterm=false)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
       <name>GetData</name>
       <anchorfile>classcsMemFile.html</anchorfile>
@@ -66164,6 +67727,48 @@
       <anchorfile>classcsMemFile.html</anchorfile>
       <anchor>aa4bf78fccb504a3c9d938b2950ee8d34</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetPos</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>aabfa720728dfe01f03c0272a413873ba</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetSize</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>a67936bab115af26874b4579a5c3f53bf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetStatus</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>a933a67a9a10e158a3a3a1201941e423c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>Read</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>a20215cecbaaf5122253b77f20862f8ea</anchor>
+      <arglist>(char *Data, size_t DataSize)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetPos</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>a9577865cdba807b26362a59a11baa7a4</anchor>
+      <arglist>(size_t newpos)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>Write</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>aec57eadb7ecd407ededeca5bf1685ae4</anchor>
+      <arglist>(const char *Data, size_t DataSize)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -66454,6 +68059,7 @@
   <compound kind="class">
     <name>csMeshFactory</name>
     <filename>classcsMeshFactory.html</filename>
+    <base>scfImplementation1&lt; csMeshFactory, iMeshObjectFactory &gt;</base>
     <member kind="function">
       <type></type>
       <name>csMeshFactory</name>
@@ -66469,6 +68075,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual iMaterialWrapper *</type>
+      <name>GetMaterialWrapper</name>
+      <anchorfile>classcsMeshFactory.html</anchorfile>
+      <anchor>a3ced49b5b2088e210e4fbe3d4a1cd905</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual iMeshFactoryWrapper *</type>
       <name>GetMeshFactoryWrapper</name>
       <anchorfile>classcsMeshFactory.html</anchorfile>
@@ -66480,6 +68093,13 @@
       <name>GetMeshObjectType</name>
       <anchorfile>classcsMeshFactory.html</anchorfile>
       <anchor>a51d3d3fed207c2268a246cb445dcdb94</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint</type>
+      <name>GetMixMode</name>
+      <anchorfile>classcsMeshFactory.html</anchorfile>
+      <anchor>a67d94fdef09b6f2bf66a7f619fed06d0</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -66511,11 +68131,25 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetMaterialWrapper</name>
+      <anchorfile>classcsMeshFactory.html</anchorfile>
+      <anchor>accbc98dabf71f885ef317d4ca07a1ea1</anchor>
+      <arglist>(iMaterialWrapper *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>SetMeshFactoryWrapper</name>
       <anchorfile>classcsMeshFactory.html</anchorfile>
       <anchor>a7bbdb8c4d8a3a6ffb18e63820471b626</anchor>
       <arglist>(iMeshFactoryWrapper *logparent)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetMixMode</name>
+      <anchorfile>classcsMeshFactory.html</anchorfile>
+      <anchor>ad5f86e907dfd2bf578d8c29503d3adad</anchor>
+      <arglist>(uint)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
@@ -66570,6 +68204,7 @@
   <compound kind="class">
     <name>csMeshObject</name>
     <filename>classcsMeshObject.html</filename>
+    <base>scfImplementationExt1&lt; csMeshObject, csObjectModel, iMeshObject &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>BuildDecal</name>
@@ -66666,6 +68301,13 @@
       <name>GetTerraFormerColldet</name>
       <anchorfile>classcsMeshObject.html</anchorfile>
       <anchor>a27632054cc980e5c59eab9e92c9b2b32</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iTerrainSystem *</type>
+      <name>GetTerrainColldet</name>
+      <anchorfile>classcsMeshObject.html</anchorfile>
+      <anchor>ae70dd21501643528c7fbfbfae068f92a</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -66858,6 +68500,7 @@
   <compound kind="class">
     <name>csMeshType</name>
     <filename>classcsMeshType.html</filename>
+    <base>scfImplementation2&lt; csMeshType, iMeshObjectType, iComponent &gt;</base>
     <member kind="function">
       <type></type>
       <name>csMeshType</name>
@@ -66905,6 +68548,7 @@
     <name>csMouseDriver</name>
     <filename>classcsMouseDriver.html</filename>
     <base>csInputDriver</base>
+    <base>scfImplementation2&lt; csMouseDriver, iMouseDriver, iEventHandler &gt;</base>
     <member kind="function">
       <type></type>
       <name>csMouseDriver</name>
@@ -67279,12 +68923,20 @@
   <compound kind="class">
     <name>csNormalizationCubeAccessor</name>
     <filename>classcsNormalizationCubeAccessor.html</filename>
+    <base>scfImplementation1&lt; csNormalizationCubeAccessor, iShaderVariableAccessor &gt;</base>
     <member kind="function">
       <type></type>
       <name>csNormalizationCubeAccessor</name>
       <anchorfile>classcsNormalizationCubeAccessor.html</anchorfile>
       <anchor>ad7a3151d0474268592dfd5d1f2f56f84</anchor>
       <arglist>(iTextureManager *txtmgr, int sideSize)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>PreGetValue</name>
+      <anchorfile>classcsNormalizationCubeAccessor.html</anchorfile>
+      <anchor>a04f4e2dcbad38bc52489d59ba3cfaec7</anchor>
+      <arglist>(csShaderVariable *variable)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -67301,6 +68953,7 @@
   <compound kind="class">
     <name>csNullCacheManager</name>
     <filename>classcsNullCacheManager.html</filename>
+    <base>scfImplementation1&lt; csNullCacheManager, iCacheManager &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>CacheData</name>
@@ -67344,6 +68997,13 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsReadOnly</name>
+      <anchorfile>classcsNullCacheManager.html</anchorfile>
+      <anchor>a69fbf038696378ec0a6001b9dea77947</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csPtr&lt; iDataBuffer &gt;</type>
       <name>ReadCache</name>
       <anchorfile>classcsNullCacheManager.html</anchorfile>
@@ -67363,6 +69023,13 @@
       <anchorfile>classcsNullCacheManager.html</anchorfile>
       <anchor>a94c2e512887ab82dc6c3bfad6e3c4ea4</anchor>
       <arglist>(const char *type)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetReadOnly</name>
+      <anchorfile>classcsNullCacheManager.html</anchorfile>
+      <anchor>ad66c76d2349f6261db3ba2a4c07752bb</anchor>
+      <arglist>(bool)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -67517,7 +69184,15 @@
   <compound kind="class">
     <name>csObject</name>
     <filename>classcsObject.html</filename>
+    <base>scfImplementation1&lt; csObject, iObject &gt;</base>
     <base>CS::Utility::InternalRefCount</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>AddNameChangeListener</name>
+      <anchorfile>classcsObject.html</anchorfile>
+      <anchor>a8ff9a089c1e378a0b11d9bf4e77875c9</anchor>
+      <arglist>(iObjectNameChangeListener *listener)</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csObject</name>
@@ -67531,6 +69206,13 @@
       <anchorfile>classcsObject.html</anchorfile>
       <anchor>af5fcc1b440c38fec4f84e9d7449d658d</anchor>
       <arglist>(iBase *pParent=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>GetChild</name>
+      <anchorfile>classcsObject.html</anchorfile>
+      <anchor>a5868b0226ddabeadc05316e5390bff03</anchor>
+      <arglist>(int iInterfaceID, int iVersion, const char *Name=0) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iObject *</type>
@@ -67601,6 +69283,13 @@
       <anchorfile>classcsObject.html</anchorfile>
       <anchor>a4f27cbe3ad4814e8140b87ed2c3f85c0</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveNameChangeListener</name>
+      <anchorfile>classcsObject.html</anchorfile>
+      <anchor>a04e23cb4fbcc97a6c8e0c6b91ea56315</anchor>
+      <arglist>(iObjectNameChangeListener *listener)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -67676,6 +69365,14 @@
   <compound kind="class">
     <name>csObjectModel</name>
     <filename>classcsObjectModel.html</filename>
+    <base>scfImplementation1&lt; csObjectModel, iObjectModel &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>AddListener</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>abef7c5bcb13ca768d5fe1a4990ae8e1a</anchor>
+      <arglist>(iObjectModelListener *listener)</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csObjectModel</name>
@@ -67697,6 +69394,13 @@
       <anchor>afa93475b9ee3984b1a47d70b117dc954</anchor>
       <arglist>(iObjectRegistry *object_reg)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual long</type>
+      <name>GetShapeNumber</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>aac1075c91da02e10642b326c5f6af701</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function">
       <type>csRef&lt; iStringSet &gt;</type>
       <name>GetStandardStringSet</name>
@@ -67704,12 +69408,68 @@
       <anchor>a8b47864eba7b6199578e22778484b26d</anchor>
       <arglist>(iObjectRegistry *object_reg)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iTerraFormer *</type>
+      <name>GetTerraFormerColldet</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a4cffdad0c34be68df1fce291195c3d91</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iTerrainSystem *</type>
+      <name>GetTerrainColldet</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a8f92cd29ac8d2f9a7452986dccc1c554</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iTriangleMesh *</type>
+      <name>GetTriangleData</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a8f619970982e6ba2edc32ef36d13ce30</anchor>
+      <arglist>(csStringID)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iTriangleMeshIterator &gt;</type>
+      <name>GetTriangleDataIterator</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a8248d73ac5f36b68ac617a3544b17fe6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsTriangleDataSet</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>ae3834345d01321df7d9c6233414606c4</anchor>
+      <arglist>(csStringID)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveListener</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a088c1c38c9ae9c7d1493ed6c45521690</anchor>
+      <arglist>(iObjectModelListener *listener)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>ResetTriangleData</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>af4f8f4e54ebc46042c62612fd723f79b</anchor>
+      <arglist>(csStringID)</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>SetShapeNumber</name>
       <anchorfile>classcsObjectModel.html</anchorfile>
       <anchor>a9053f5697cfb2e735ce87362cad51f9e</anchor>
       <arglist>(long n)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetTriangleData</name>
+      <anchorfile>classcsObjectModel.html</anchorfile>
+      <anchor>a5bf9f9b5642ee1f06fc24d9f570f5244</anchor>
+      <arglist>(csStringID, iTriangleMesh *)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -67722,6 +69482,7 @@
   <compound kind="class">
     <name>csObjectRegistry</name>
     <filename>classcsObjectRegistry.html</filename>
+    <base>scfImplementation1&lt; csObjectRegistry, iObjectRegistry &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Clear</name>
@@ -67981,6 +69742,7 @@
   <compound kind="class">
     <name>csParasiticDataBuffer</name>
     <filename>classcsParasiticDataBuffer.html</filename>
+    <base>scfImplementationExt0&lt; csParasiticDataBuffer, csParasiticDataBufferBase &gt;</base>
     <member kind="function">
       <type></type>
       <name>csParasiticDataBuffer</name>
@@ -67992,6 +69754,42 @@
   <compound kind="class">
     <name>csParasiticDataBufferBase</name>
     <filename>classcsParasiticDataBufferBase.html</filename>
+    <base>scfImplementation1&lt; csParasiticDataBufferBase, iDataBuffer &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual char *</type>
+      <name>GetData</name>
+      <anchorfile>classcsParasiticDataBufferBase.html</anchorfile>
+      <anchor>a45fb374e0fd1661f3784a55d8f152b89</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int8 *</type>
+      <name>GetInt8</name>
+      <anchorfile>classcsParasiticDataBufferBase.html</anchorfile>
+      <anchor>ae8daf38dc467368ee68fb61762f17ca7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetSize</name>
+      <anchorfile>classcsParasiticDataBufferBase.html</anchorfile>
+      <anchor>a90f505cef368118c4ca0349f6df0b0a6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint8 *</type>
+      <name>GetUint8</name>
+      <anchorfile>classcsParasiticDataBufferBase.html</anchorfile>
+      <anchor>a8d7db71ef6d7637c7acccbaa58afb2d4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>char *</type>
+      <name>operator*</name>
+      <anchorfile>classcsParasiticDataBufferBase.html</anchorfile>
+      <anchor>a20138deced046ba80f390d20f61ef969</anchor>
+      <arglist>() const </arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csParasiticDataBufferPooled</name>
@@ -68281,6 +70079,7 @@
   <compound kind="class">
     <name>csPath</name>
     <filename>classcsPath.html</filename>
+    <base>scfImplementationExt1&lt; csPath, csObject, iPath &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>CalculateAtTime</name>
@@ -68384,6 +70183,13 @@
       <name>Length</name>
       <anchorfile>classcsPath.html</anchorfile>
       <anchor>a29ff2c85c39e43484bf6eede70c9e713</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsPath.html</anchorfile>
+      <anchor>a4921fae0cf84234d853913e899e1ba3f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -68976,6 +70782,7 @@
   <compound kind="class">
     <name>csPhysicalFile</name>
     <filename>classcsPhysicalFile.html</filename>
+    <base>scfImplementation1&lt; csPhysicalFile, iFile &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>AtEOF</name>
@@ -69761,6 +71568,14 @@
   <compound kind="class">
     <name>csPluginManager</name>
     <filename>classcsPluginManager.html</filename>
+    <base>scfImplementation1&lt; csPluginManager, iPluginManager &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Clear</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a868097d308ec8c36c3e859f9fa4355e9</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>csPluginManager</name>
@@ -69768,12 +71583,103 @@
       <anchor>a9c13deeb1dc64769d57c66b1ff87299b</anchor>
       <arglist>(iObjectRegistry *object_reg)</arglist>
     </member>
+    <member kind="function">
+      <type>csPtr&lt; iStringArray &gt;</type>
+      <name>GetClassIDTags</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>ae47a19c114668f12122a388df230cf03</anchor>
+      <arglist>(const char *classID)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iPluginIterator &gt;</type>
+      <name>GetPluginInstances</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a90c98a9a4f0e57def2f642614fc7a66d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetTagClassIDMapping</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a2eda426f78d8dc85abf4373e0ba3c554</anchor>
+      <arglist>(const char *tag)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iComponent &gt;</type>
+      <name>LoadPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>ae577e1447b3c67dca181de8185511134</anchor>
+      <arglist>(const char *iClassID, uint flags)</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; iComponent &gt;</type>
+      <name>LoadTagPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>ad771a07f0e69a6a815bc2414edb5709a</anchor>
+      <arglist>(const char *tag, uint loadFlags)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>QueryOptions</name>
       <anchorfile>classcsPluginManager.html</anchorfile>
       <anchor>a28bb2c3568de1f501c22aef662d21907</anchor>
       <arglist>(iComponent *iObject)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iComponent &gt;</type>
+      <name>QueryPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>ac92111866b77d637994bbde69eadbf3c</anchor>
+      <arglist>(const char *iClassID, const char *iInterface, int iVersion)</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; iComponent &gt;</type>
+      <name>QueryPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a46d3fab2dc9a4e699eec46f5970fbf9c</anchor>
+      <arglist>(const char *classID)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iComponent &gt;</type>
+      <name>QueryPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a3116baca884c8ba2eb7c5cf49c70d76d</anchor>
+      <arglist>(const char *iInterface, int iVersion)</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; iComponent &gt;</type>
+      <name>QueryTagPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a1da454981fdaca866f791460f91b1e8a</anchor>
+      <arglist>(const char *tag)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>RegisterPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a2b07010f62a9e278493a0dc4d716e19d</anchor>
+      <arglist>(const char *iClassID, iComponent *iObject)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetTagClassIDMapping</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>a80f36a878e8b6654decdbf0809a1ce2f</anchor>
+      <arglist>(const char *tag, const char *classID)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>UnloadPluginInstance</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>ad8dfbec62eab4285243fa75ee764982a</anchor>
+      <arglist>(iComponent *iObject)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>UnsetTagClassIDMapping</name>
+      <anchorfile>classcsPluginManager.html</anchorfile>
+      <anchor>adc985199b91fc9b4788a325c1f8ee758</anchor>
+      <arglist>(const char *tag)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -69786,12 +71692,41 @@
   <compound kind="class">
     <name>csPluginReference</name>
     <filename>classcsPluginReference.html</filename>
+    <base>scfImplementationExt2&lt; csPluginReference, csObject, iPluginReference, iSelfDestruct &gt;</base>
     <member kind="function">
       <type></type>
       <name>csPluginReference</name>
       <anchorfile>classcsPluginReference.html</anchorfile>
       <anchor>a32ac808f66124116a83070f177fa4e13</anchor>
       <arglist>(const char *name, const char *id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetClassID</name>
+      <anchorfile>classcsPluginReference.html</anchorfile>
+      <anchor>ad1f0de80547c7b8d62764aff2c0623a2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>classcsPluginReference.html</anchorfile>
+      <anchor>aebe1ca794c453f23800d4cea242552ba</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsPluginReference.html</anchorfile>
+      <anchor>a8c42ba697ab9a2073ab44e75bf1759d0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SelfDestruct</name>
+      <anchorfile>classcsPluginReference.html</anchorfile>
+      <anchor>a61efd0327ce643be83404871cf64c237</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -70433,6 +72368,13 @@
       <arglist>(csPoly2D *Clipper, bool mirror=false, bool copy=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual ClipperType</type>
+      <name>GetClipperType</name>
+      <anchorfile>classcsPolygonClipper.html</anchorfile>
+      <anchor>a243d6b080a6679ec445bd4342267edd0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csVector2 *</type>
       <name>GetClipPoly</name>
       <anchorfile>classcsPolygonClipper.html</anchorfile>
@@ -70669,6 +72611,7 @@
   <compound kind="class">
     <name>csProcTexture</name>
     <filename>classcsProcTexture.html</filename>
+    <base>scfImplementationExt3&lt; csProcTexture, csObject, iTextureWrapper, iProcTexture, iSelfDestruct &gt;</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Animate</name>
@@ -70734,10 +72677,157 @@
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual iTextureWrapper *</type>
+      <name>Clone</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a6093ffb9829bfad875a6750b24e84e46</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iTextureWrapper *</type>
       <name>CreateTexture</name>
       <anchorfile>classcsProcTexture.html</anchorfile>
       <anchor>ac83a47929a309c00ce984277585a073a</anchor>
       <arglist>(iObjectRegistry *object_reg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetAlwaysAnimate</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>aa3aad1582d066edc5e34ba630ca375f3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iTextureFactory *</type>
+      <name>GetFactory</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ad40508ae4a0c4121bd1840549d63c6ca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFlags</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ac59d257256e42f237e9d094dab7867f1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iImage *</type>
+      <name>GetImageFile</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a7870e79c94adb1a1ed7f9c361017a6b7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetKeyColor</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a0d345c071b427b5c15ebdc78970de8bf</anchor>
+      <arglist>(int &amp;red, int &amp;green, int &amp;blue) const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetTextureClass</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a4f3c20226d39522c14f68721847c54d5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iTextureHandle *</type>
+      <name>GetTextureHandle</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ae02dd2d1a52783c2e624aa3ea695d219</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iTextureCallback *</type>
+      <name>GetUseCallback</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a5db888c8a6fa1ad51ae4a616f513d644</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsVisitRequired</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a72f46cd4ca5fa83f80b08d6819e13f2a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>KeepImage</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>aa9eed0c9687b5a12dc0533f1e7fd78df</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ae7fe95e577f408490f600c71b6c37051</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Register</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>afe9f9fa66012dd39f021a8a3ba818b19</anchor>
+      <arglist>(iTextureManager *txtmng)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetAlwaysAnimate</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a5cbe863d8e3a21b20b54711cd5edab98</anchor>
+      <arglist>(bool enable)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetFlags</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ab49ef3b190533cf52e006a1842920ec2</anchor>
+      <arglist>(int flags)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetImageFile</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ac8eb135f128062f1db09e827dac1ed80</anchor>
+      <arglist>(iImage *Image)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetKeepImage</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a34ebe7ede550bf1f9dccea8e0ace0b8d</anchor>
+      <arglist>(bool k)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetTextureClass</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a4c7203c6af49ba6b9f2ab8bb624b432e</anchor>
+      <arglist>(const char *className)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetTextureHandle</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>ae65ea96e6ce05fe0eb092bf889c6bd9a</anchor>
+      <arglist>(iTextureHandle *tex)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetUseCallback</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a504a7e24aef7e5b4b9108478141c1803</anchor>
+      <arglist>(iTextureCallback *callback)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Visit</name>
+      <anchorfile>classcsProcTexture.html</anchorfile>
+      <anchor>a2512090468fca9b7dca070037b421ef8</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -72730,6 +74820,7 @@
   <compound kind="class">
     <name>csRenderBuffer</name>
     <filename>classcsRenderBuffer.html</filename>
+    <base>scfImplementation1&lt; csRenderBuffer, iRenderBuffer &gt;</base>
     <class kind="struct">csRenderBuffer::Props</class>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -73848,12 +75939,41 @@
   <compound kind="class">
     <name>csSaverFile</name>
     <filename>classcsSaverFile.html</filename>
+    <base>scfImplementationExt2&lt; csSaverFile, csObject, iSaverFile, iSelfDestruct &gt;</base>
     <member kind="function">
       <type></type>
       <name>csSaverFile</name>
       <anchorfile>classcsSaverFile.html</anchorfile>
       <anchor>a6e7feeb8d37e29bab7dcc70e5b74ea7c</anchor>
       <arglist>(const char *file, int filetype)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetFile</name>
+      <anchorfile>classcsSaverFile.html</anchorfile>
+      <anchor>a2c73171ffb2fcef77ae38904cde6e6f2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetFileType</name>
+      <anchorfile>classcsSaverFile.html</anchorfile>
+      <anchor>acea7faf8be3631f15b3aba3a89d74bb2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsSaverFile.html</anchorfile>
+      <anchor>ab11a80099468f60219a408c367e3ee58</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SelfDestruct</name>
+      <anchorfile>classcsSaverFile.html</anchorfile>
+      <anchor>a0cfa864a91dd4671adc7818d65678e0a</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -73969,10 +76089,68 @@
   <compound kind="class">
     <name>csScriptCommon</name>
     <filename>classcsScriptCommon.html</filename>
+    <base>scfImplementation1&lt; csScriptCommon, iScript &gt;</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iScriptValue &gt;</type>
+      <name>Call</name>
+      <anchorfile>classcsScriptCommon.html</anchorfile>
+      <anchor>a0831d2643d12f5d631064966c737fe22</anchor>
+      <arglist>(const char *, const csRefArray&lt; iScriptValue &gt; &amp;=csRefArray&lt; iScriptValue &gt;())=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iScriptValue &gt;</type>
+      <name>Retrieve</name>
+      <anchorfile>classcsScriptCommon.html</anchorfile>
+      <anchor>a83624bf5629bbac3821bfb742d51189d</anchor>
+      <arglist>(const char *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Store</name>
+      <anchorfile>classcsScriptCommon.html</anchorfile>
+      <anchor>a68ddb4368e3402a74cdadabf3aba58ec</anchor>
+      <arglist>(const char *name, iScriptValue *)=0</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csScriptObjectCommon</name>
     <filename>classcsScriptObjectCommon.html</filename>
+    <base>scfImplementation1&lt; csScriptObjectCommon, iScriptObject &gt;</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iScriptValue &gt;</type>
+      <name>Call</name>
+      <anchorfile>classcsScriptObjectCommon.html</anchorfile>
+      <anchor>ae3b439ad9a523ac6ef8b09d398012c0a</anchor>
+      <arglist>(const char *, const csRefArray&lt; iScriptValue &gt; &amp;=csRefArray&lt; iScriptValue &gt;())=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iScriptValue &gt;</type>
+      <name>Get</name>
+      <anchorfile>classcsScriptObjectCommon.html</anchorfile>
+      <anchor>aee17cf93439dd148db8a1018b6cce61a</anchor>
+      <arglist>(const char *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsType</name>
+      <anchorfile>classcsScriptObjectCommon.html</anchorfile>
+      <anchor>a9531a46cb2389949b95ba7a053bef979</anchor>
+      <arglist>(const char *t) const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Set</name>
+      <anchorfile>classcsScriptObjectCommon.html</anchorfile>
+      <anchor>a967152e96305bfc54e04a2986eafc533</anchor>
+      <arglist>(const char *name, iScriptValue *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetPointer</name>
+      <anchorfile>classcsScriptObjectCommon.html</anchorfile>
+      <anchor>a99fce64b3ff9cf097918aa8a898e4ec5</anchor>
+      <arglist>(void *)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>csSectorHitBeamResult</name>
@@ -74355,12 +76533,27 @@
   <compound kind="class">
     <name>csShaderExpressionAccessor</name>
     <filename>classcsShaderExpressionAccessor.html</filename>
+    <base>scfImplementationExt2&lt; csShaderExpressionAccessor, csObject, iShaderVariableAccessor, iSelfDestruct &gt;</base>
     <member kind="function">
       <type></type>
       <name>csShaderExpressionAccessor</name>
       <anchorfile>classcsShaderExpressionAccessor.html</anchorfile>
       <anchor>a7bfe671af6c23d2854164f435ec5a45d</anchor>
       <arglist>(iObjectRegistry *object_reg, csShaderExpression *expression)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>PreGetValue</name>
+      <anchorfile>classcsShaderExpressionAccessor.html</anchorfile>
+      <anchor>a64d05ae9bbf6ca3bd38efb4176766be7</anchor>
+      <arglist>(csShaderVariable *variable)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SelfDestruct</name>
+      <anchorfile>classcsShaderExpressionAccessor.html</anchorfile>
+      <anchor>a5f0195f7e28402b456c35ceb23b68446</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -74391,6 +76584,7 @@
   <compound kind="class">
     <name>csShaderProgram</name>
     <filename>classcsShaderProgram.html</filename>
+    <base>scfImplementation2&lt; csShaderProgram, iShaderProgram, iShaderDestinationResolver &gt;</base>
     <class kind="struct">csShaderProgram::ProgramParam</class>
     <class kind="struct">csShaderProgram::VariableMapEntry</class>
     <member kind="enumeration">
@@ -74398,6 +76592,27 @@
       <anchorfile>classcsShaderProgram.html</anchorfile>
       <anchor>ab05c11b742bbed5058d2d91fa80b9020</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>GetUsedShaderVars</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a4432ebbcf43630ef4bf8bcb47fb6371f</anchor>
+      <arglist>(csBitArray &amp;bits) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iShaderProgram::CacheLoadResult</type>
+      <name>LoadFromCache</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>abf93c286c750bd9f8993a31c64a3d8ca</anchor>
+      <arglist>(iHierarchicalCache *cache, iBase *previous, iDocumentNode *programNode, csRef&lt; iString &gt; *failReason=0, csRef&lt; iString &gt; *=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>ResolveTU</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a58c7a43856e39a04d5d2bb99ae1f6e91</anchor>
+      <arglist>(const char *)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -74975,6 +77190,7 @@
   <compound kind="class">
     <name>csShaderVariableContext</name>
     <filename>classcsShaderVariableContext.html</filename>
+    <base>scfImplementation1&lt; csShaderVariableContext, scfFakeInterface&lt; iShaderVariableContext &gt; &gt;</base>
     <base>CS::Graphics::ShaderVariableContextImpl</base>
   </compound>
   <compound kind="class">
@@ -76976,6 +79192,7 @@
   <compound kind="class">
     <name>csTextProgressMeter</name>
     <filename>classcsTextProgressMeter.html</filename>
+    <base>scfImplementation1&lt; csTextProgressMeter, iProgressMeter &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Abort</name>
@@ -77053,6 +79270,13 @@
       <anchor>ae3f59ea198e81ebc2336da45a41380cf</anchor>
       <arglist>(const char *, const char *,...)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetProgressDescriptionV</name>
+      <anchorfile>classcsTextProgressMeter.html</anchorfile>
+      <anchor>a9b991bcf42de8168818e2fb59fe0da2a</anchor>
+      <arglist>(const char *, const char *, va_list)</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>SetTickScale</name>
@@ -77085,12 +79309,20 @@
   <compound kind="class">
     <name>csTiledCoverageBuffer</name>
     <filename>classcsTiledCoverageBuffer.html</filename>
+    <base>scfImplementation1&lt; csTiledCoverageBuffer, iDebugHelper &gt;</base>
     <member kind="function">
       <type>int</type>
       <name>AddWriteQueueTest</name>
       <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
       <anchor>a5d2d878f7e66bb7de1326e2749df83f6</anchor>
       <arglist>(const csTestRectData &amp;maindata, const csTestRectData &amp;data, bool &amp;relevant)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTicks</type>
+      <name>Benchmark</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>a1a0ba4431d06a2884bce3f868171701c</anchor>
+      <arglist>(int num_iterations)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -77105,6 +79337,34 @@
       <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
       <anchor>a7e26d2365a59c188e649bfd94e598855</anchor>
       <arglist>(int w, int h)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>DebugCommand</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>a4db2a44db8f35e2c2dd0f5b540db0f2d</anchor>
+      <arglist>(const char *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Dump</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>aff892b34c5fecd465866e5af5366e720</anchor>
+      <arglist>(iGraphics3D *g3d)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iString &gt;</type>
+      <name>Dump</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>a9e1346aba35ee17b3b5357ddfdf83f66</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSupportedTests</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>aa7d1f565e23e9816447ac9962fcb9139</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -77176,6 +79436,13 @@
       <anchor>a2b2e8028e90a5addf1930fca84ef5952</anchor>
       <arglist>(int w, int h)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iString &gt;</type>
+      <name>StateTest</name>
+      <anchorfile>classcsTiledCoverageBuffer.html</anchorfile>
+      <anchor>aaf6cc73b5cb2f67340437c7e233f1738</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>StatusNoDepth</name>
@@ -77229,6 +79496,14 @@
   <compound kind="class">
     <name>csTinyDocumentSystem</name>
     <filename>classcsTinyDocumentSystem.html</filename>
+    <base>scfImplementation1&lt; csTinyDocumentSystem, iDocumentSystem &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csRef&lt; iDocument &gt;</type>
+      <name>CreateDocument</name>
+      <anchorfile>classcsTinyDocumentSystem.html</anchorfile>
+      <anchor>a6c492719e7a6cb7026c989357735bbe3</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>csTraceBeamResult</name>
@@ -77651,6 +79926,7 @@
   <compound kind="class">
     <name>csTriangleMesh</name>
     <filename>classcsTriangleMesh.html</filename>
+    <base>scfImplementation1&lt; csTriangleMesh, iTriangleMesh &gt;</base>
     <member kind="function">
       <type>void</type>
       <name>AddTriangle</name>
@@ -77677,6 +79953,20 @@
       <name>Clear</name>
       <anchorfile>classcsTriangleMesh.html</anchorfile>
       <anchor>a1aeda316d758fa235243113dfc1db2b2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32</type>
+      <name>GetChangeNumber</name>
+      <anchorfile>classcsTriangleMesh.html</anchorfile>
+      <anchor>a6e6a57cc6ee1fe820913db5ff49a95e2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csFlags &amp;</type>
+      <name>GetFlags</name>
+      <anchorfile>classcsTriangleMesh.html</anchorfile>
+      <anchor>ae32e852eedc1ed87a044a4c1f2c60a20</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -77735,6 +80025,13 @@
       <anchor>ae9175d90bef11428eef07081885c8e69</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Lock</name>
+      <anchorfile>classcsTriangleMesh.html</anchorfile>
+      <anchor>aa166091d21245beba50ebb6df7f6a1b5</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>csTriangleMesh &amp;</type>
       <name>operator+=</name>
@@ -77756,6 +80053,13 @@
       <anchor>a5d968323ae5354b58b0ab88d04a886e1</anchor>
       <arglist>(csTriangle const *trigs, int count)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Unlock</name>
+      <anchorfile>classcsTriangleMesh.html</anchorfile>
+      <anchor>a957f5b45da8955aadc355230eff13bb3</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>csDirtyAccessArray&lt; csTriangle &gt;</type>
       <name>triangles</name>
@@ -77767,6 +80071,7 @@
   <compound kind="class">
     <name>csTriangleMeshBox</name>
     <filename>classcsTriangleMeshBox.html</filename>
+    <base>scfImplementation1&lt; csTriangleMeshBox, iTriangleMesh &gt;</base>
     <member kind="function">
       <type></type>
       <name>csTriangleMeshBox</name>
@@ -77774,12 +80079,68 @@
       <anchor>a4e1104b3aae6f7cc70385d0c42d5e816</anchor>
       <arglist>(const csBox3 &amp;box)</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32</type>
+      <name>GetChangeNumber</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a2f3c28510134ee44a3286197501affd0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csFlags &amp;</type>
+      <name>GetFlags</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>aabb999713726f0a8af06833cbb652962</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetTriangleCount</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a6eeaa1cb49882a3b9bc52a5c110d9d50</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTriangle *</type>
+      <name>GetTriangles</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a59ccbd2d6d1e51fa75bb5d92566c5182</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetVertexCount</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a7a6ad0433904e0660b07434a257008b2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector3 *</type>
+      <name>GetVertices</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a2dfda51f217994fa05561a6624ceb360</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Lock</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a844fa4b35e57c70551f49e500af8b486</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>SetBox</name>
       <anchorfile>classcsTriangleMeshBox.html</anchorfile>
       <anchor>a8509d00cf19c504400b036a60e7322be</anchor>
       <arglist>(const csBox3 &amp;box)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Unlock</name>
+      <anchorfile>classcsTriangleMeshBox.html</anchorfile>
+      <anchor>a7611d2140aec24cac1e163621c7f9d45</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -77836,12 +80197,69 @@
   <compound kind="class">
     <name>csTriangleMeshPointer</name>
     <filename>classcsTriangleMeshPointer.html</filename>
+    <base>scfImplementation1&lt; csTriangleMeshPointer, iTriangleMesh &gt;</base>
     <member kind="function">
       <type></type>
       <name>csTriangleMeshPointer</name>
       <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
       <anchor>a200c5ed1f5303b0343a3bf436ab185ee</anchor>
       <arglist>(csVector3 *vertices, size_t num_vertices, csTriangle *triangles, size_t num_triangles)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint32</type>
+      <name>GetChangeNumber</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>a31b84f4b609f4e986bb4f8771bb817ef</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csFlags &amp;</type>
+      <name>GetFlags</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>ab7a080de353ead50a5c00dde42d8f96c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetTriangleCount</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>aec1416178b8474716bd3a8b3d5cced64</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTriangle *</type>
+      <name>GetTriangles</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>a672095ba463df9bfb2835076eee30609</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetVertexCount</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>a341762f8f2dd5b2f48c28716eef78b99</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector3 *</type>
+      <name>GetVertices</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>a0d02af4de2c3b18984df35c3022fcd04</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Lock</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>aab0d92ac481db4b857798f63d05162a8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Unlock</name>
+      <anchorfile>classcsTriangleMeshPointer.html</anchorfile>
+      <anchor>a1d6ca3e6fc4271ce54cd02d5b9fde080</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -79544,6 +81962,7 @@
   <compound kind="class">
     <name>csVerbosityManager</name>
     <filename>classcsVerbosityManager.html</filename>
+    <base>scfImplementation1&lt; csVerbosityManager, iVerbosityManager &gt;</base>
     <member kind="function">
       <type></type>
       <name>csVerbosityManager</name>
@@ -79747,6 +82166,7 @@
   <compound kind="class">
     <name>csVfsCacheManager</name>
     <filename>classcsVfsCacheManager.html</filename>
+    <base>scfImplementation1&lt; csVfsCacheManager, iCacheManager &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>CacheData</name>
@@ -79790,6 +82210,13 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsReadOnly</name>
+      <anchorfile>classcsVfsCacheManager.html</anchorfile>
+      <anchor>a4024c7cfb5a6b10275538943f1d45c28</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csPtr&lt; iDataBuffer &gt;</type>
       <name>ReadCache</name>
       <anchorfile>classcsVfsCacheManager.html</anchorfile>
@@ -79809,6 +82236,13 @@
       <anchorfile>classcsVfsCacheManager.html</anchorfile>
       <anchor>af313ceafd06b7a528b7d4925181994b0</anchor>
       <arglist>(const char *type)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetReadOnly</name>
+      <anchorfile>classcsVfsCacheManager.html</anchorfile>
+      <anchor>a37027ad3efed70589a378920b6c808ef</anchor>
+      <arglist>(bool ro)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -79853,6 +82287,7 @@
   <compound kind="class">
     <name>csView</name>
     <filename>classcsView.html</filename>
+    <base>scfImplementation1&lt; csView, iView &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>AddViewVertex</name>
@@ -79903,10 +82338,24 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual iCustomMatrixCamera *</type>
+      <name>GetCustomMatrixCamera</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>acacfd8478049d7b1d817f52b9966e9ca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual iEngine *</type>
       <name>GetEngine</name>
       <anchorfile>classcsView.html</anchorfile>
       <anchor>ae85e857e055ba95a7283e395697f72db</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iPerspectiveCamera *</type>
+      <name>GetPerspectiveCamera</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a8c33410ba6a06b6b4b001cd2f4d8081e</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -79939,10 +82388,24 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>SetCustomMatrixCamera</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>ad711506853b6c83051bd8b8ed2753fc9</anchor>
+      <arglist>(iCustomMatrixCamera *c)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetEngine</name>
       <anchorfile>classcsView.html</anchorfile>
       <anchor>ada142bfff145a279a259bff3a653d02c</anchor>
       <arglist>(iEngine *e)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetPerspectiveCamera</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a8e597e107e614c22eaa6852283873b10</anchor>
+      <arglist>(iPerspectiveCamera *c)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -79969,6 +82432,42 @@
   <compound kind="class">
     <name>csVirtualClock</name>
     <filename>classcsVirtualClock.html</filename>
+    <base>scfImplementation1&lt; csVirtualClock, iVirtualClock &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Advance</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>a5a7a5ae17720ca637fe1cce12d01fd1f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTicks</type>
+      <name>GetCurrentTicks</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>a6857d06127ee64b06bd97b663a936303</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csTicks</type>
+      <name>GetElapsedTicks</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>afd25e0e367b639007d153c82a844756a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Resume</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>a1e7cea5a9a9fc67688271ab64bba41fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Suspend</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>adde2d554d25ad1ea5ff3e5283aeed241</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csWeakRef</name>
@@ -80177,6 +82676,14 @@
   <compound kind="class">
     <name>csWin32RegistryConfig</name>
     <filename>classcsWin32RegistryConfig.html</filename>
+    <base>scfImplementation1&lt; csWin32RegistryConfig, iConfigFile &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Clear</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>ac7f7575e742d0549f2a699bb4ffdba17</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>Close</name>
@@ -80184,12 +82691,166 @@
       <anchor>a85f7f54f4ac7e74153a1e748454ff4f3</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DeleteKey</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a33035cf4c20b06cf5f828a9757e24af4</anchor>
+      <arglist>(const char *Key)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iConfigIterator &gt;</type>
+      <name>Enumerate</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>ac29298fbb929ed4dba97d57daf331775</anchor>
+      <arglist>(const char *Subsection=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetBool</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a68b9ff7111fbae27326ac0ed265fba1c</anchor>
+      <arglist>(const char *Key, bool Def=false) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetComment</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>adbff21a5476ca6a1e2d0a6f4f9b4d3c3</anchor>
+      <arglist>(const char *Key) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetEOFComment</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a127186ba95646a877035dd16034867dc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetFileName</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a296ab62133b7b0418e4a5c2e340df2a4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetFloat</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a06b408eed05fc2e77896f6ca9e3f0ee5</anchor>
+      <arglist>(const char *Key, float Def=0.0) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetInt</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a01653ae73d610c0b52eb2d4cd7b72925</anchor>
+      <arglist>(const char *Key, int Def=0) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetStr</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a04325f7942794369b27142dedfe25a4a</anchor>
+      <arglist>(const char *Key, const char *Def=&quot;&quot;) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iVFS *</type>
+      <name>GetVFS</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a5f309ce1e0b982be5accdbad4896e1bf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>KeyExists</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a45f8a00b2de8434d2679ec19158af664</anchor>
+      <arglist>(const char *Key) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Load</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a3f01c814ef0b4e966f491e3645fad565</anchor>
+      <arglist>(const char *iFileName, iVFS *=0, bool Merge=false, bool NewWins=true)</arglist>
+    </member>
     <member kind="function">
       <type>bool</type>
       <name>Open</name>
       <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
       <anchor>aa9f2a5b99fc6835e24c5efb4176e5e3a</anchor>
       <arglist>(const char *Key, HKEY parent=HKEY_CURRENT_USER)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Save</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a3a8b6f3197fe76a5ddf44c6b70af811d</anchor>
+      <arglist>(const char *iFileName, iVFS *=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>Save</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a60b982a8a96271cf70d36b89b740820f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetBool</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a11fc03c6da5c97db62b3bc35a121dd95</anchor>
+      <arglist>(const char *Key, bool Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetComment</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a56de946a28e14d9702cc7c26c2b54031</anchor>
+      <arglist>(const char *Key, const char *Text)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetEOFComment</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>abd52bf1a5a93386e17a15ccf9cf8ef74</anchor>
+      <arglist>(const char *Text)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetFileName</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a2b87d62f4a4b4c519f907611e4998d78</anchor>
+      <arglist>(const char *, iVFS *)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetFloat</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a1a40181d308a58a724ba72113cf5eed0</anchor>
+      <arglist>(const char *Key, float Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetInt</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a63e3f776010beea80ba85f72f76534e4</anchor>
+      <arglist>(const char *Key, int Value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetStr</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>ade3e146f04918761d1a2ebd779ee1e59</anchor>
+      <arglist>(const char *Key, const char *Val)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SubsectionExists</name>
+      <anchorfile>classcsWin32RegistryConfig.html</anchorfile>
+      <anchor>a6e5d482e8c3448178fc50f45cc90fa9f</anchor>
+      <arglist>(const char *Subsection) const </arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -80353,10 +83014,26 @@
   <compound kind="class">
     <name>FrameBegin3DDraw</name>
     <filename>classFrameBegin3DDraw.html</filename>
+    <base>scfImplementation1&lt; FrameBegin3DDraw, iEventHandler &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classFrameBegin3DDraw.html</anchorfile>
+      <anchor>ae5f8becceec3962f5ea8bc98dec1e3af</anchor>
+      <arglist>(iEvent &amp;)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>FramePrinter</name>
     <filename>classFramePrinter.html</filename>
+    <base>scfImplementation1&lt; FramePrinter, iEventHandler &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classFramePrinter.html</anchorfile>
+      <anchor>a364dc046123282715a47f816256cff12</anchor>
+      <arglist>(iEvent &amp;)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>getopt_option</name>
@@ -108189,6 +110866,7 @@
     <filename>classscfArray.html</filename>
     <templarg></templarg>
     <templarg></templarg>
+    <base>scfImplementation1&lt; scfArray&lt; IF, Backend &gt;, IF &gt;</base>
     <member kind="function">
       <type></type>
       <name>scfArray</name>
@@ -108384,6 +111062,7 @@
     <filename>classscfArrayWrap.html</filename>
     <templarg></templarg>
     <templarg></templarg>
+    <base>scfImplementation1&lt; scfArrayWrap&lt; IF, Backend &gt;, IF &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>Delete</name>
@@ -108572,6 +111251,7 @@
     <filename>classscfArrayWrapConst.html</filename>
     <templarg>IF</templarg>
     <templarg>Backend</templarg>
+    <base>scfImplementation1&lt; scfArrayWrapConst&lt; IF, Backend &gt;, IF &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>Find</name>
@@ -108727,6 +111407,214 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>scfImplementation0</name>
+    <filename>classscfImplementation0.html</filename>
+    <templarg></templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation0.html</anchorfile>
+      <anchor>a874c0b98d6e12a6710bf57a8c4c36c89</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation1</name>
+    <filename>classscfImplementation1.html</filename>
+    <templarg>Class</templarg>
+    <templarg>I1</templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation1.html</anchorfile>
+      <anchor>a57c8afe96ab774365da99dd7c6aa00f1</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation2</name>
+    <filename>classscfImplementation2.html</filename>
+    <templarg>Class</templarg>
+    <templarg>I1</templarg>
+    <templarg>I2</templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation2.html</anchorfile>
+      <anchor>a2b21cc2fd687a92276be0c4e86c13206</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation3</name>
+    <filename>classscfImplementation3.html</filename>
+    <templarg>Class</templarg>
+    <templarg>I1</templarg>
+    <templarg>I2</templarg>
+    <templarg>I3</templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation3.html</anchorfile>
+      <anchor>ad4560cb4ae4256b92008fb2c0d2b19f5</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation4</name>
+    <filename>classscfImplementation4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation4.html</anchorfile>
+      <anchor>a58706639323b202de7e6aa73e96fe785</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation5</name>
+    <filename>classscfImplementation5.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation5.html</anchorfile>
+      <anchor>aae0e9c4d62c3318d2688a1d1a4e68d90</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation6</name>
+    <filename>classscfImplementation6.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation6.html</anchorfile>
+      <anchor>a70dc7b983f97cd16f75341295bc67502</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementation7</name>
+    <filename>classscfImplementation7.html</filename>
+    <templarg>Class</templarg>
+    <templarg>I1</templarg>
+    <templarg>I2</templarg>
+    <templarg>I3</templarg>
+    <templarg>I4</templarg>
+    <templarg>I5</templarg>
+    <templarg>I6</templarg>
+    <templarg>I7</templarg>
+    <base>scfImplementation</base>
+    <member kind="function">
+      <type>void *</type>
+      <name>QueryInterface</name>
+      <anchorfile>classscfImplementation7.html</anchorfile>
+      <anchor>a8677a45339f1a540b1f012291b53caa4</anchor>
+      <arglist>(scfInterfaceID id, scfInterfaceVersion version)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt0</name>
+    <filename>classscfImplementationExt0.html</filename>
+    <templarg>Class</templarg>
+    <templarg>Super</templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt1</name>
+    <filename>classscfImplementationExt1.html</filename>
+    <templarg>Class</templarg>
+    <templarg>Super</templarg>
+    <templarg>I1</templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt2</name>
+    <filename>classscfImplementationExt2.html</filename>
+    <templarg>Class</templarg>
+    <templarg>Super</templarg>
+    <templarg>I1</templarg>
+    <templarg>I2</templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt3</name>
+    <filename>classscfImplementationExt3.html</filename>
+    <templarg>Class</templarg>
+    <templarg>Super</templarg>
+    <templarg>I1</templarg>
+    <templarg>I2</templarg>
+    <templarg>I3</templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt4</name>
+    <filename>classscfImplementationExt4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt5</name>
+    <filename>classscfImplementationExt5.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt6</name>
+    <filename>classscfImplementationExt6.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>scfImplementationExt7</name>
+    <filename>classscfImplementationExt7.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
     <name>scfImplementationHelper</name>
     <filename>classscfImplementationHelper.html</filename>
   </compound>
@@ -108860,7 +111748,7 @@
   <compound kind="class">
     <name>scfInterfaceTraits</name>
     <filename>classscfInterfaceTraits.html</filename>
-    <templarg>Interface</templarg>
+    <templarg></templarg>
     <member kind="function" static="yes">
       <type>static scfInterfaceID</type>
       <name>GetID</name>
@@ -108886,6 +111774,7 @@
   <compound kind="class">
     <name>scfString</name>
     <filename>classscfString.html</filename>
+    <base>scfImplementation1&lt; scfString, iString &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Append</name>
@@ -109275,6 +112164,7 @@
   <compound kind="class">
     <name>scfStringArray</name>
     <filename>classscfStringArray.html</filename>
+    <base>scfImplementation1&lt; scfStringArray, iStringArray &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>Contains</name>
@@ -109609,6 +112499,7 @@
     <name>CS::DataBuffer</name>
     <filename>classCS_1_1DataBuffer.html</filename>
     <templarg></templarg>
+    <base>scfImplementation1&lt; DataBuffer&lt; Allocator &gt;, iDataBuffer &gt;</base>
     <member kind="function">
       <type></type>
       <name>DataBuffer</name>
@@ -109764,6 +112655,14 @@
   <compound kind="class">
     <name>CS::RenderBufferPersistent</name>
     <filename>classCS_1_1RenderBufferPersistent.html</filename>
+    <base>scfImplementation2&lt; RenderBufferPersistent, iRenderBuffer, iRenderBufferPersistence &gt;</base>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetFileName</name>
+      <anchorfile>classCS_1_1RenderBufferPersistent.html</anchorfile>
+      <anchor>a6cbb3b65ffdf629c6f9bc5df5b7ca2b0</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>CopyInto</name>
@@ -109941,6 +112840,7 @@
     <name>CS::ScfStringSet</name>
     <filename>classCS_1_1ScfStringSet.html</filename>
     <templarg></templarg>
+    <base>scfImplementation1&lt; ScfStringSet&lt; IF &gt;, IF &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>Clear</name>
@@ -113929,6 +116829,21 @@
     <name>CS::DocSystem::Implementation::FilterDocumentNodeIterator</name>
     <filename>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</filename>
     <templarg>T</templarg>
+    <base>scfImplementation1&lt; FilterDocumentNodeIterator&lt; T &gt;, iDocumentNodeIterator &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetEndPosition</name>
+      <anchorfile>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</anchorfile>
+      <anchor>aa490d870473ef01296ee19173b624e02</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetNextPosition</name>
+      <anchorfile>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</anchorfile>
+      <anchor>afd278fef81b6eae34e66973c1354057a</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>HasNext</name>
@@ -117842,6 +120757,7 @@
   <compound kind="class">
     <name>CS::PluginCommon::ShaderProgramPluginGL</name>
     <filename>classCS_1_1PluginCommon_1_1ShaderProgramPluginGL.html</filename>
+    <base>scfImplementation1&lt; ShaderProgramPluginGL, iShaderProgramPlugin &gt;</base>
     <class kind="class">CS::PluginCommon::ShaderProgramPluginGL::ClipPlanes</class>
     <member kind="enumeration">
       <name>HardwareVendor</name>
@@ -118111,6 +121027,7 @@
   <compound kind="class">
     <name>CS::PluginCommon::ShaderCacheHelper::MicroArchiveCache</name>
     <filename>classCS_1_1PluginCommon_1_1ShaderCacheHelper_1_1MicroArchiveCache.html</filename>
+    <base>scfImplementation1&lt; MicroArchiveCache, iHierarchicalCache &gt;</base>
     <member kind="function">
       <type></type>
       <name>MicroArchiveCache</name>
@@ -121276,6 +124193,14 @@
     <name>CS::RenderManager::Implementation::ViscullCallback</name>
     <filename>classCS_1_1RenderManager_1_1Implementation_1_1ViscullCallback.html</filename>
     <templarg>RenderTree</templarg>
+    <base>scfImplementation1&lt; ViscullCallback&lt; RenderTree &gt;, iVisibilityCullerListener &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>ObjectVisible</name>
+      <anchorfile>classCS_1_1RenderManager_1_1Implementation_1_1ViscullCallback.html</anchorfile>
+      <anchor>a48f80210c45f0153f5c7ca6bb908a924</anchor>
+      <arglist>(iVisibilityObject *visobject, iMeshWrapper *imesh, uint32 frustum_mask)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::SndSys</name>
@@ -122674,6 +125599,7 @@
   <compound kind="class">
     <name>CS::Utility::RootedHierarchicalCache</name>
     <filename>classCS_1_1Utility_1_1RootedHierarchicalCache.html</filename>
+    <base>scfImplementation1&lt; RootedHierarchicalCache, iHierarchicalCache &gt;</base>
     <member kind="function">
       <type></type>
       <name>RootedHierarchicalCache</name>
@@ -123132,6 +126058,7 @@
   <compound kind="class">
     <name>CS::Utility::VfsHierarchicalCache</name>
     <filename>classCS_1_1Utility_1_1VfsHierarchicalCache.html</filename>
+    <base>scfImplementation1&lt; VfsHierarchicalCache, iHierarchicalCache &gt;</base>
     <member kind="function">
       <type></type>
       <name>VfsHierarchicalCache</name>
