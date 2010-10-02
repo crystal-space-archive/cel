@@ -28458,7 +28458,6 @@ SWIGINTERN PyObject *_wrap_new_celGenericParameterBlock(PyObject *SWIGUNUSEDPARM
   arg1 = static_cast< size_t >(val1);
   result = (celGenericParameterBlock *)new celGenericParameterBlock(arg1);
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_celGenericParameterBlock, SWIG_POINTER_NEW |  0 );
-  result->IncRef();
   return resultobj;
 fail:
   return NULL;
