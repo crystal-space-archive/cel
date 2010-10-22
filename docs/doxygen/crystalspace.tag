@@ -29554,6 +29554,8 @@
     <filename>ik_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <class kind="struct">CS::Animation::iSkeletonIKCCDNode</class>
+    <class kind="struct">CS::Animation::iSkeletonIKCCDNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonIKManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKNodeFactory</class>
@@ -113742,6 +113744,8 @@
     <class kind="struct">CS::Animation::iSkeletonFactory</class>
     <class kind="struct">CS::Animation::iSkeletonFSMNode</class>
     <class kind="struct">CS::Animation::iSkeletonFSMNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonIKCCDNode</class>
+    <class kind="struct">CS::Animation::iSkeletonIKCCDNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonIKManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKNodeFactory</class>
@@ -114395,6 +114399,13 @@
     <name>CS::Animation::iBodyChainNode</name>
     <filename>structCS_1_1Animation_1_1iBodyChainNode.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBodyChainNode *</type>
+      <name>FindSubChild</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChainNode.html</anchorfile>
+      <anchor>a169dc52c6a4bd752c637b8ef75c6922c</anchor>
+      <arglist>(CS::Animation::BoneID child) const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual iBodyBone *</type>
       <name>GetBodyBone</name>
@@ -115457,6 +115468,86 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>CS::Animation::iSkeletonIKCCDNode</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonIKCCDNode.html</filename>
+    <base>CS::Animation::iSkeletonIKNode</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonIKCCDNodeFactory</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</filename>
+    <base>CS::Animation::iSkeletonIKNodeFactory</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetJointInitialization</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a6099a7871e4122984c30fd8d35d55c56</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetMaximumIterations</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>abab76de45532c82bf2ffd4db9b49b767</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetMotionRatio</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a4ac35a6580fa5cf841c4c1f18314eac1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetTargetDistance</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>ad458a8a6e7d71b05ad1f1420fe7fa6ad</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetUpwardIterations</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a94b69b2af464e5038dd476257b1f5a0f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetJointInitialization</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a07d7c4af03cd9c927badcfaae15a6d36</anchor>
+      <arglist>(bool initialized)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMaximumIterations</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a4791b6f5752837451154473905b0cd91</anchor>
+      <arglist>(size_t max)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMotionRatio</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a08b86a0844ab3e9f6ed5d67d42086001</anchor>
+      <arglist>(float ratio)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetTargetDistance</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>aea1f556fba1be52103b1b40f9cd27e01</anchor>
+      <arglist>(float distance)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetUpwardIterations</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKCCDNodeFactory.html</anchorfile>
+      <anchor>a0d797c493f38fcd79e9561d7cf5f7f64</anchor>
+      <arglist>(bool upward)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>CS::Animation::iSkeletonIKManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonIKManager.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -116299,6 +116390,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>DebugVector</name>
+      <anchorfile>structCS_1_1Debug_1_1iVisualDebugger.html</anchorfile>
+      <anchor>a7df2bbf9023a615f5fc69a667fc6af51</anchor>
+      <arglist>(const csReversibleTransform &amp;transform, const csVector3 &amp;vector, bool persist=false, csColor color=csColor(0.0f, 1.0f, 0.0f))=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>Display</name>
       <anchorfile>structCS_1_1Debug_1_1iVisualDebugger.html</anchorfile>
       <anchor>aa78faf9076d5023b04b698aeecbdee14</anchor>
@@ -116321,6 +116419,13 @@
       <anchorfile>classCS_1_1Debug_1_1VisualDebuggerHelper.html</anchorfile>
       <anchor>afa49c039a981f2c1f06d35e14926adfd</anchor>
       <arglist>(iObjectRegistry *object_reg, const csReversibleTransform &amp;transform, bool persist=false, float size=0.1f)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>DebugVector</name>
+      <anchorfile>classCS_1_1Debug_1_1VisualDebuggerHelper.html</anchorfile>
+      <anchor>afcdb7fb9a6793b3badbda44647cf37b2</anchor>
+      <arglist>(iObjectRegistry *object_reg, const csReversibleTransform &amp;transform, const csVector3 &amp;vector, bool persist=false, csColor color=csColor(0.0f, 1.0f, 0.0f))</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
