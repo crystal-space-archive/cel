@@ -102773,6 +102773,36 @@
       <anchor>a3d92773963c63daf5c1f3339c06549f4</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SV_UNKNOWN</name>
+      <anchorfile>structiSharedVariable.html</anchorfile>
+      <anchor>a3d92773963c63daf5c1f3339c06549f4a8f19d9be5d2ea08d0cbba95e70662bab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SV_FLOAT</name>
+      <anchorfile>structiSharedVariable.html</anchorfile>
+      <anchor>a3d92773963c63daf5c1f3339c06549f4a63b6dd5e6712e779dd532ff96ad68b29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SV_COLOR</name>
+      <anchorfile>structiSharedVariable.html</anchorfile>
+      <anchor>a3d92773963c63daf5c1f3339c06549f4a6bdf786529f64bd593c36e5357d1a533</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SV_VECTOR</name>
+      <anchorfile>structiSharedVariable.html</anchorfile>
+      <anchor>a3d92773963c63daf5c1f3339c06549f4a1d9ecf0323bbe1bf11c805b0ab5ed9a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SV_STRING</name>
+      <anchorfile>structiSharedVariable.html</anchorfile>
+      <anchor>a3d92773963c63daf5c1f3339c06549f4a90bed0a4b597ccf73f2b86f6b5249050</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddListener</name>
