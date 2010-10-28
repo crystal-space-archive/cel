@@ -29556,9 +29556,9 @@
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <class kind="struct">CS::Animation::iSkeletonIKCCDNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKCCDNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonIKManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonIKNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKPhysicalNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKPhysicalNodeFactory</class>
     <namespace>CS</namespace>
@@ -29579,9 +29579,9 @@
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <class kind="struct">CS::Animation::iSkeletonLookAtListener</class>
-    <class kind="struct">CS::Animation::iSkeletonLookAtManager</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNode</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonLookAtNodeManager</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
@@ -29592,9 +29592,9 @@
     <filename>ragdoll_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="bodymesh_8h" name="bodymesh.h" local="yes" imported="no">imesh/bodymesh.h</includes>
-    <class kind="struct">CS::Animation::iSkeletonRagdollManager</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNode</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonRagdollNodeManager</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
@@ -29766,15 +29766,16 @@
     <filename>furmesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="no" imported="no">csutil/scf.h</includes>
     <includes id="crystalspace_8h" name="crystalspace.h" local="yes" imported="no">crystalspace.h</includes>
-    <class kind="struct">CS::Mesh::iFurAnimatedMeshControl</class>
-    <class kind="struct">CS::Mesh::iFurAnimationControl</class>
+    <class kind="struct">CS::Animation::iFurAnimatedMeshControl</class>
+    <class kind="struct">CS::Animation::iFurAnimationControl</class>
     <class kind="struct">CS::Mesh::iFurMesh</class>
     <class kind="struct">CS::Mesh::iFurMeshFactory</class>
     <class kind="struct">CS::Mesh::iFurMeshMaterialProperties</class>
     <class kind="struct">CS::Mesh::iFurMeshState</class>
     <class kind="struct">CS::Mesh::iFurMeshType</class>
-    <class kind="struct">CS::Mesh::iFurPhysicsControl</class>
+    <class kind="struct">CS::Animation::iFurPhysicsControl</class>
     <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
     <namespace>CS::Physics</namespace>
     <namespace>CS::Physics::Bullet</namespace>
@@ -93622,6 +93623,20 @@
       <arglist>(float &amp;m, float &amp;a) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetLODFade</name>
+      <anchorfile>structiLODControl.html</anchorfile>
+      <anchor>a973d7697656a1cfb97c050d5591be1c6</anchor>
+      <arglist>(iSharedVariable *&amp;varf) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetLODFade</name>
+      <anchorfile>structiLODControl.html</anchorfile>
+      <anchor>a0192650fbc06fe1cb91d7e007c7a591f</anchor>
+      <arglist>(float &amp;f) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual int</type>
       <name>GetLODPolygonCount</name>
       <anchorfile>structiLODControl.html</anchorfile>
@@ -93641,6 +93656,20 @@
       <anchorfile>structiLODControl.html</anchorfile>
       <anchor>ac444f50d2a0df9b032f7fe056de9d1cf</anchor>
       <arglist>(float m, float a)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLODFade</name>
+      <anchorfile>structiLODControl.html</anchorfile>
+      <anchor>a8a0cb968df87cbc1b2111058d83e1600</anchor>
+      <arglist>(iSharedVariable *varf)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLODFade</name>
+      <anchorfile>structiLODControl.html</anchorfile>
+      <anchor>a84242cc548dc79e121aacf121b55dd4b</anchor>
+      <arglist>(float f)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -113760,6 +113789,9 @@
     <class kind="struct">CS::Animation::iBodyChainNode</class>
     <class kind="struct">CS::Animation::iBodyManager</class>
     <class kind="struct">CS::Animation::iBodySkeleton</class>
+    <class kind="struct">CS::Animation::iFurAnimatedMeshControl</class>
+    <class kind="struct">CS::Animation::iFurAnimationControl</class>
+    <class kind="struct">CS::Animation::iFurPhysicsControl</class>
     <class kind="struct">CS::Animation::iSkeleton</class>
     <class kind="struct">CS::Animation::iSkeletonAnimation</class>
     <class kind="struct">CS::Animation::iSkeletonAnimationNode</class>
@@ -113776,21 +113808,21 @@
     <class kind="struct">CS::Animation::iSkeletonFSMNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonIKCCDNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKCCDNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonIKManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonIKNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonIKPhysicalNode</class>
     <class kind="struct">CS::Animation::iSkeletonIKPhysicalNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtListener</class>
-    <class kind="struct">CS::Animation::iSkeletonLookAtManager</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNode</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonLookAtNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonManager</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNode</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollManager</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNode</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonRagdollNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonRandomNode</class>
     <class kind="struct">CS::Animation::iSkeletonRandomNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonSpeedNode</class>
@@ -114564,6 +114596,84 @@
       <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
       <anchor>ae7875f8044d91335472d3d33ebb71a36</anchor>
       <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iFurAnimatedMeshControl</name>
+    <filename>structCS_1_1Animation_1_1iFurAnimatedMeshControl.html</filename>
+    <base virtualness="virtual">CS::Animation::iFurAnimationControl</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAnimatedMesh</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimatedMeshControl.html</anchorfile>
+      <anchor>aa03907c2a5a13140ea39cabfb03db844</anchor>
+      <arglist>(CS::Mesh::iAnimatedMesh *animesh)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDisplacement</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimatedMeshControl.html</anchorfile>
+      <anchor>a07352a9efb5bf1ac0ab913a73ee1aef9</anchor>
+      <arglist>(float displacement)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iFurAnimationControl</name>
+    <filename>structCS_1_1Animation_1_1iFurAnimationControl.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AnimateStrand</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimationControl.html</anchorfile>
+      <anchor>a5a15814d54de7d0b20f1f1cd8d35c19c</anchor>
+      <arglist>(size_t strandID, csVector3 *coordinates, size_t coordinatesCount) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>InitializeStrand</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimationControl.html</anchorfile>
+      <anchor>aca5cd34e6fa3e693286710d382075890</anchor>
+      <arglist>(size_t strandID, csVector3 *coordinates, size_t coordinatesCount)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveAllStrands</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimationControl.html</anchorfile>
+      <anchor>a5ca4a9715af4a73f85491304c6714d10</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveStrand</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurAnimationControl.html</anchorfile>
+      <anchor>aa812b43c267a1d622f3bc44f27decb06</anchor>
+      <arglist>(size_t strandID)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iFurPhysicsControl</name>
+    <filename>structCS_1_1Animation_1_1iFurPhysicsControl.html</filename>
+    <base virtualness="virtual">CS::Animation::iFurAnimationControl</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAnimatedMesh</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurPhysicsControl.html</anchorfile>
+      <anchor>a92d5a66731b682d6090741fc483cb5be</anchor>
+      <arglist>(CS::Mesh::iAnimatedMesh *animesh)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBulletDynamicSystem</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurPhysicsControl.html</anchorfile>
+      <anchor>a8c1cbc87688dd53539192d212aec9a38</anchor>
+      <arglist>(CS::Physics::Bullet::iDynamicSystem *bulletDynamicSystem)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRigidBody</name>
+      <anchorfile>structCS_1_1Animation_1_1iFurPhysicsControl.html</anchorfile>
+      <anchor>ac54f2c95f3ee0a15ce278e58aa905337</anchor>
+      <arglist>(iRigidBody *rigidBody)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -115578,32 +115688,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Animation::iSkeletonIKManager</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonIKManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKManager.html</anchorfile>
-      <anchor>a9cdadd271e61c7bae9e8af32efa440c0</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonIKNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKManager.html</anchorfile>
-      <anchor>a66431fdfa7667917d49d1dc094f9544a</anchor>
-      <arglist>(const char *name, CS::Animation::iBodySkeleton *skeleton)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonIKNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKManager.html</anchorfile>
-      <anchor>a18a963347f5d2ed7745ce4cc21f6532b</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Animation::iSkeletonIKNode</name>
     <filename>structCS_1_1Animation_1_1iSkeletonIKNode.html</filename>
     <base>CS::Animation::iSkeletonAnimNode</base>
@@ -115677,6 +115761,32 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>CS::Animation::iSkeletonIKNodeManager</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearAnimNodeFactories</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
+      <anchor>a956c8f1897c61b4e6fe3040cb6ef9c13</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonIKNodeFactory *</type>
+      <name>CreateAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
+      <anchor>a718853bf8f565da4ecef5887a87f7a2b</anchor>
+      <arglist>(const char *name, CS::Animation::iBodySkeleton *skeleton)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonIKNodeFactory *</type>
+      <name>FindAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
+      <anchor>a382a0bae60b5aa95259b90543f4564e1</anchor>
+      <arglist>(const char *name) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>CS::Animation::iSkeletonIKPhysicalNode</name>
     <filename>structCS_1_1Animation_1_1iSkeletonIKPhysicalNode.html</filename>
     <base>CS::Animation::iSkeletonIKNode</base>
@@ -115731,32 +115841,6 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtListener.html</anchorfile>
       <anchor>a12fc8d699cbc26cb1c9cb3e3e6a32330</anchor>
       <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Animation::iSkeletonLookAtManager</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonLookAtManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtManager.html</anchorfile>
-      <anchor>a402722a1bb32cd6f26e8ecdc558d7c83</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonLookAtNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtManager.html</anchorfile>
-      <anchor>a37d7a2a96468b7fb3c569dc15f48d7e5</anchor>
-      <arglist>(const char *name, iBodySkeleton *skeleton)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonLookAtNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtManager.html</anchorfile>
-      <anchor>a563610d1ea0f32f591455b80d2936132</anchor>
-      <arglist>(const char *name) const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -115858,6 +115942,32 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
       <anchor>aa1b9122dbe8108d2db082d7d39499547</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonLookAtNodeManager</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearAnimNodeFactories</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
+      <anchor>a6f21a3fa086da0671ada8f088f71361c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonLookAtNodeFactory *</type>
+      <name>CreateAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
+      <anchor>a521b1b6ddaf73e2978762f55e9ff3b9b</anchor>
+      <arglist>(const char *name, iBodySkeleton *skeleton)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonLookAtNodeFactory *</type>
+      <name>FindAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
+      <anchor>a4175a462fbefccdfe5ebd9f94712d193</anchor>
+      <arglist>(const char *name) const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -115967,32 +116077,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Animation::iSkeletonRagdollManager</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonRagdollManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollManager.html</anchorfile>
-      <anchor>a9fbf9a2ee41e658224ef545b9c71a6bf</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRagdollNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollManager.html</anchorfile>
-      <anchor>ab855960732353fa8bdf5859698de4bfe</anchor>
-      <arglist>(const char *name, iBodySkeleton *skeleton, iDynamicSystem *dynSys)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRagdollNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollManager.html</anchorfile>
-      <anchor>afb6d31d605ea76700341d210ad38a419</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Animation::iSkeletonRagdollNode</name>
     <filename>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</filename>
     <base>CS::Animation::iSkeletonAnimNode</base>
@@ -116091,6 +116175,32 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
       <anchor>ac610baccf57fe723ec7d184fb5b47755</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonRagdollNodeManager</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearAnimNodeFactories</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
+      <anchor>a630e2c63ba238ae8bceaf30326e98f1e</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonRagdollNodeFactory *</type>
+      <name>CreateAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
+      <anchor>a898cc5f1d4898e19f90fff33411dfb2d</anchor>
+      <arglist>(const char *name, iBodySkeleton *skeleton, iDynamicSystem *dynSys)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonRagdollNodeFactory *</type>
+      <name>FindAnimNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
+      <anchor>a780b24c8c03cc81a75b995f305b51105</anchor>
+      <arglist>(const char *name) const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -118821,14 +118931,11 @@
     <class kind="struct">CS::Mesh::iAnimatedMeshSocketFactory</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshSubMesh</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshSubMeshFactory</class>
-    <class kind="struct">CS::Mesh::iFurAnimatedMeshControl</class>
-    <class kind="struct">CS::Mesh::iFurAnimationControl</class>
     <class kind="struct">CS::Mesh::iFurMesh</class>
     <class kind="struct">CS::Mesh::iFurMeshFactory</class>
     <class kind="struct">CS::Mesh::iFurMeshMaterialProperties</class>
     <class kind="struct">CS::Mesh::iFurMeshState</class>
     <class kind="struct">CS::Mesh::iFurMeshType</class>
-    <class kind="struct">CS::Mesh::iFurPhysicsControl</class>
   </compound>
   <compound kind="struct">
     <name>CS::Mesh::csAnimatedMeshBoneInfluence</name>
@@ -119465,58 +119572,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Mesh::iFurAnimatedMeshControl</name>
-    <filename>structCS_1_1Mesh_1_1iFurAnimatedMeshControl.html</filename>
-    <base virtualness="virtual">CS::Mesh::iFurAnimationControl</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAnimatedMesh</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimatedMeshControl.html</anchorfile>
-      <anchor>ad6d6bf2c31567f98393e6bf9bd3a9cd4</anchor>
-      <arglist>(CS::Mesh::iAnimatedMesh *animesh)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDisplacement</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimatedMeshControl.html</anchorfile>
-      <anchor>a7808bbf528db598c87e8a23ec0cc0124</anchor>
-      <arglist>(float displacement)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Mesh::iFurAnimationControl</name>
-    <filename>structCS_1_1Mesh_1_1iFurAnimationControl.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AnimateStrand</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimationControl.html</anchorfile>
-      <anchor>ac3f8ef33de44981c17a6158aa0eaea3a</anchor>
-      <arglist>(size_t strandID, csVector3 *coordinates, size_t coordinatesCount) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>InitializeStrand</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimationControl.html</anchorfile>
-      <anchor>a640eea67e6e680cc71f961e1a1bbbce3</anchor>
-      <arglist>(size_t strandID, csVector3 *coordinates, size_t coordinatesCount)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveAllStrands</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimationControl.html</anchorfile>
-      <anchor>a22e06d6b094947cad172b0fb2c195b5c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveStrand</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurAnimationControl.html</anchorfile>
-      <anchor>ad0402cc8045733d8c4cfabc31c935d39</anchor>
-      <arglist>(size_t strandID)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Mesh::iFurMesh</name>
     <filename>structCS_1_1Mesh_1_1iFurMesh.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -119566,8 +119621,8 @@
       <type>virtual void</type>
       <name>SetAnimationControl</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMesh.html</anchorfile>
-      <anchor>a7be1b3c3d9e73d524654b48e981b6c7e</anchor>
-      <arglist>(iFurAnimationControl *physicsControl)=0</arglist>
+      <anchor>ae60bfb5ed4183422a062b23926f538bf</anchor>
+      <arglist>(CS::Animation::iFurAnimationControl *physicsControl)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -119931,7 +119986,7 @@
   <compound kind="struct">
     <name>CS::Mesh::iFurMeshType</name>
     <filename>structCS_1_1Mesh_1_1iFurMeshType.html</filename>
-    <base virtualness="virtual">iMeshObjectType</base>
+    <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>ClearFurAnimationControls</name>
@@ -119947,10 +120002,10 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iFurAnimationControl *</type>
+      <type>virtual CS::Animation::iFurAnimationControl *</type>
       <name>CreateFurAnimatedMeshControl</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshType.html</anchorfile>
-      <anchor>a00a04f42ff790bfde088f316578cec72</anchor>
+      <anchor>a72eed74687cb11e94fa44b22c3fdd44e</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -119961,10 +120016,10 @@
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iFurAnimationControl *</type>
+      <type>virtual CS::Animation::iFurAnimationControl *</type>
       <name>CreateFurPhysicsControl</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshType.html</anchorfile>
-      <anchor>a922d6e871490b1977437e5805abfd2d2</anchor>
+      <anchor>a6c90202e201bdecdbd6a4cc17d94e85f</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -119975,10 +120030,10 @@
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iFurAnimationControl *</type>
+      <type>virtual CS::Animation::iFurAnimationControl *</type>
       <name>FindFurAnimationControl</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshType.html</anchorfile>
-      <anchor>a118476b99e5502a0874db1f371f294cf</anchor>
+      <anchor>aeef3a4c00de8f586b52527b46e26e612</anchor>
       <arglist>(const char *name) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -120001,32 +120056,6 @@
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshType.html</anchorfile>
       <anchor>ac307534ef58720889786df6c20bb7bed</anchor>
       <arglist>(const char *name)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Mesh::iFurPhysicsControl</name>
-    <filename>structCS_1_1Mesh_1_1iFurPhysicsControl.html</filename>
-    <base virtualness="virtual">CS::Mesh::iFurAnimationControl</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAnimatedMesh</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurPhysicsControl.html</anchorfile>
-      <anchor>a6a1c9ff735c17cfd83d1a502b3c28811</anchor>
-      <arglist>(CS::Mesh::iAnimatedMesh *animesh)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBulletDynamicSystem</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurPhysicsControl.html</anchorfile>
-      <anchor>a17df47dd4de39c3df013b9cda8812191</anchor>
-      <arglist>(CS::Physics::Bullet::iDynamicSystem *bulletDynamicSystem)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRigidBody</name>
-      <anchorfile>structCS_1_1Mesh_1_1iFurPhysicsControl.html</anchorfile>
-      <anchor>a9f3a8185d439caf77409478788424050</anchor>
-      <arglist>(iRigidBody *rigidBody)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
