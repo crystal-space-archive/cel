@@ -23461,6 +23461,7 @@
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
     <class kind="class">CS::Demo::CameraHelper</class>
+    <class kind="class">CS::Demo::CameraManager</class>
     <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
     <class kind="class">CS::Demo::HUDHelper</class>
@@ -116579,6 +116580,7 @@
     <name>CS::Demo</name>
     <filename>namespaceCS_1_1Demo.html</filename>
     <class kind="class">CS::Demo::CameraHelper</class>
+    <class kind="class">CS::Demo::CameraManager</class>
     <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
     <class kind="class">CS::Demo::HUDHelper</class>
@@ -116620,8 +116622,8 @@
       <type></type>
       <name>CameraHelper</name>
       <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a79469b98a0928fc41dd9bec92f2a682f</anchor>
-      <arglist>(DemoApplication *demoApplication)</arglist>
+      <anchor>ae4798b6500cd494fe401b085e68c2161</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -116680,11 +116682,43 @@
       <arglist>(CameraMode cameraMode)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>SetContext</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
+      <anchor>a6d6f631dfe0770b8364f6d5e4017e992</anchor>
+      <arglist>(CameraManager *manager, iKeyboardDriver *kbd, iVirtualClock *vc, iCamera *camera)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>SetMouseMoveEnabled</name>
       <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
       <anchor>a9b4e4eb8d94f8031189aff6e2d21a9b8</anchor>
       <arglist>(bool enabled)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Demo::CameraManager</name>
+    <filename>classCS_1_1Demo_1_1CameraManager.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetCameraMinimumDistance</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a004a532db660c69a36730c13b782b57f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector3</type>
+      <name>GetCameraStart</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a74c1abb34350b74235658860e166d460</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector3</type>
+      <name>GetCameraTarget</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a3a9407ba93987a6bd0a95fb8002f89c8</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -116717,6 +116751,7 @@
     <filename>classCS_1_1Demo_1_1DemoApplication.html</filename>
     <base>csApplicationFramework</base>
     <base>csBaseEventHandler</base>
+    <base>CS::Demo::CameraManager</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>Application</name>
@@ -116757,27 +116792,6 @@
       <name>Frame</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
       <anchor>a90e035c0989c717e679b03a917091369</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual float</type>
-      <name>GetCameraMinimumDistance</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a0f062256828f683434edb7cb8b5b0b61</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual csVector3</type>
-      <name>GetCameraStart</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a6cae63cb8d17e657916b1c38d427b17d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual csVector3</type>
-      <name>GetCameraTarget</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a224cb9c2c31b98e55b9c089aab7fe20f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -116914,6 +116928,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>csRef&lt; iVFS &gt;</type>
+      <name>vfs</name>
+      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
+      <anchor>ae70a651630e455361bf9e0757412430c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>csRef&lt; iView &gt;</type>
       <name>view</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
@@ -116942,8 +116963,8 @@
       <type></type>
       <name>HUDHelper</name>
       <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>ab1a6c28df516bd8b15f2bb5b4f8300ff</anchor>
-      <arglist>(DemoApplication *demoApplication)</arglist>
+      <anchor>a5016c7a863019a861a413cfe6820e02f</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -116951,6 +116972,13 @@
       <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
       <anchor>a4ef4aef171933453784fede6073a5e78</anchor>
       <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetContext</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
+      <anchor>a13871cd40bdecea172669e864a7e1741</anchor>
+      <arglist>(csApplicationFramework *applicationFramework, iGraphics3D *g3d, iGraphics2D *g2d, iLoader *loader, iVirtualClock *vc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
