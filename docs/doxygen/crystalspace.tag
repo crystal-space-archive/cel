@@ -116085,8 +116085,8 @@
       <type>virtual RagdollState</type>
       <name>GetBodyChainState</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
-      <anchor>a38028ef920befde97851196fefd9caea</anchor>
-      <arglist>(iBodyChain *chain)=0</arglist>
+      <anchor>a95860f13f0e3227b2fb8a78b2a0aee8d</anchor>
+      <arglist>(iBodyChain *chain) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
@@ -116115,6 +116115,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
       <anchor>ac0d0686f9d29d5bf1ced91ec46dae58f</anchor>
       <arglist>(BoneID bone)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual BoneID</type>
+      <name>GetRigidBodyBone</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
+      <anchor>a5fff1f9be1c582342571ffae496849fa</anchor>
+      <arglist>(iRigidBody *body) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -116153,8 +116160,8 @@
       <type>virtual iSkeletonAnimNodeFactory *</type>
       <name>GetChildNode</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
-      <anchor>a29dff307d8d12fe9facc9d64fb20a61f</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a0698abd69cd7e01baa5d0c6cc072441b</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iDynamicSystem *</type>
