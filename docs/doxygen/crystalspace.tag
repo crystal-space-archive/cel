@@ -114042,14 +114042,14 @@
       <type>virtual iBodyBoneCollider *</type>
       <name>GetBoneCollider</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyBone.html</anchorfile>
-      <anchor>acd39b853d8aa15396a40abcb2f491e46</anchor>
-      <arglist>(uint index) const =0</arglist>
+      <anchor>a26ee85da00026322d155934ae69e8011</anchor>
+      <arglist>(size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual uint</type>
+      <type>virtual size_t</type>
       <name>GetBoneColliderCount</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyBone.html</anchorfile>
-      <anchor>a4bf168931b1b6d1ddf6c1855d059da6d</anchor>
+      <anchor>a816d3c05914cf0a2b5f7b585d3d848a0</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -114444,6 +114444,27 @@
     <filename>structCS_1_1Animation_1_1iBodyChain.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>AddAllSubChains</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
+      <anchor>a825c758e9f3aa2c0b3554f6ff48bb2e1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>AddSubChain</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
+      <anchor>ae58d81578d1e2b2f57ac5822dcc0443b</anchor>
+      <arglist>(CS::Animation::BoneID subBone)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBodySkeleton *</type>
+      <name>GetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
+      <anchor>a01b1bfcd04e89918b4a485a8d73e7ba2</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
       <name>GetName</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
@@ -114470,24 +114491,24 @@
       <arglist>(CS::Animation::BoneID child) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iBodyBone *</type>
-      <name>GetBodyBone</name>
+      <type>virtual BoneID</type>
+      <name>GetAnimeshBone</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChainNode.html</anchorfile>
-      <anchor>ae059a058b296e6e09efba9cd6b2c3d2c</anchor>
+      <anchor>a09253e9e4bf1f2ed95f7764b044b1a53</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iBodyChainNode *</type>
       <name>GetChild</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChainNode.html</anchorfile>
-      <anchor>a59e300d8bd160f384dd58035a550f574</anchor>
-      <arglist>(uint index) const =0</arglist>
+      <anchor>a5dc3b9ae7d66ed6b052bf1cded786bee</anchor>
+      <arglist>(size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual uint</type>
+      <type>virtual size_t</type>
       <name>GetChildCount</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChainNode.html</anchorfile>
-      <anchor>a726332b614da6a1948e177dff8cd5fc4</anchor>
+      <anchor>ae1c37e421def5d51e588c51b0bac288a</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -114560,8 +114581,8 @@
       <type>virtual iBodyChain *</type>
       <name>CreateBodyChain</name>
       <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
-      <anchor>a70d27956c0b4d5b125a0055bdedcf357</anchor>
-      <arglist>(const char *name, BoneID rootBone,...)=0</arglist>
+      <anchor>a8f3f4ad8adffb4f4c5f7665ef17ff658</anchor>
+      <arglist>(const char *name, BoneID rootBone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iBodyBone *</type>
@@ -116155,6 +116176,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
       <anchor>ac9b35d96a33f666183019e65cd56cc3b</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Animation::iBodySkeleton *</type>
+      <name>GetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
+      <anchor>a03ab60a69554546140a047239b1281b2</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimNodeFactory *</type>
