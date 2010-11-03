@@ -84195,6 +84195,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetAutoRender</name>
+      <anchorfile>structiCEGUI.html</anchorfile>
+      <anchor>ab40b6ad172e519cd154e6d5fde2056fe</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual CEGUI::FontManager *</type>
       <name>GetFontManagerPtr</name>
       <anchorfile>structiCEGUI.html</anchorfile>
@@ -84270,6 +84277,13 @@
       <anchorfile>structiCEGUI.html</anchorfile>
       <anchor>a2aa630e9e88cf0e1e3b384001c4eaaba</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAutoRender</name>
+      <anchorfile>structiCEGUI.html</anchorfile>
+      <anchor>a631a5a27a40f133840562d156e1536d6</anchor>
+      <arglist>(bool autoRender)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
