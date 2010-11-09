@@ -35413,6 +35413,13 @@
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csString</type>
+      <name>Description</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga42693c5e0dd0fde0586bcb296f55da92</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>DurationChanged</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -115400,6 +115407,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga619b3af2185dd7f7c66690375dcb74ef</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csString</type>
+      <name>Description</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga42693c5e0dd0fde0586bcb296f55da92</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimPacketFactory *</type>
