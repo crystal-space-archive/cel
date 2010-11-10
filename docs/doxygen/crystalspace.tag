@@ -29501,6 +29501,7 @@
     <filename>imesh_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="animesh_8h" name="animesh.h" local="yes" imported="no">imesh/animesh.h</includes>
+    <includes id="debug_8h" name="debug.h" local="yes" imported="no">imesh/animnode/debug.h</includes>
     <includes id="ik_8h" name="ik.h" local="yes" imported="no">imesh/animnode/ik.h</includes>
     <includes id="lookat_8h" name="lookat.h" local="yes" imported="no">imesh/animnode/lookat.h</includes>
     <includes id="ragdoll_8h" name="ragdoll.h" local="yes" imported="no">imesh/animnode/ragdoll.h</includes>
@@ -29548,6 +29549,49 @@
     <class kind="struct">CS::Mesh::iAnimatedMeshSubMeshFactory</class>
     <namespace>CS</namespace>
     <namespace>CS::Mesh</namespace>
+  </compound>
+  <compound kind="file">
+    <name>debug.h</name>
+    <path>/tmp/tmp4/trunk/include/imesh/animnode/</path>
+    <filename>debug_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
+    <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <class kind="struct">CS::Animation::iSkeletonDebugNode</class>
+    <class kind="struct">CS::Animation::iSkeletonDebugNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonDebugNodeManager</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
+    <member kind="enumeration">
+      <name>csSkeletonDebugMode</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_NONE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_2DLINES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ab489c1cdc80419818b3b9951cebd1fff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_SQUARES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16affe4ab547e4112cee491706ecc48945e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_IMAGES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16af777405c1616067670f4e01be0cd4992</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>ik.h</name>
@@ -78944,7 +78988,7 @@
   <compound kind="class">
     <name>csStringHashReversible</name>
     <filename>classcsStringHashReversible.html</filename>
-    <base>StringHash&lt; CS::StringSetTag::General &gt;</base>
+    <base>CS::Utility::StringHash</base>
     <member kind="function">
       <type></type>
       <name>csStringHashReversible</name>
@@ -113825,6 +113869,9 @@
     <class kind="struct">CS::Animation::iSkeletonAnimPacketFactory</class>
     <class kind="struct">CS::Animation::iSkeletonBlendNode</class>
     <class kind="struct">CS::Animation::iSkeletonBlendNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonDebugNode</class>
+    <class kind="struct">CS::Animation::iSkeletonDebugNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonDebugNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonFactory</class>
     <class kind="struct">CS::Animation::iSkeletonFSMNode</class>
     <class kind="struct">CS::Animation::iSkeletonFSMNodeFactory</class>
@@ -113858,6 +113905,36 @@
       <name>EffectorID</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>ad0c7f04753f935681871660e68665ff2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>csSkeletonDebugMode</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_NONE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_2DLINES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ab489c1cdc80419818b3b9951cebd1fff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_SQUARES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16affe4ab547e4112cee491706ecc48945e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_IMAGES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16af777405c1616067670f4e01be0cd4992</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -115395,6 +115472,70 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga5a447be8add2cd9c640cface9e1b30e8</anchor>
       <arglist>(SynchronizationMode mode)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonDebugNode</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonDebugNode.html</filename>
+    <base>CS::Animation::iSkeletonAnimNode</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Draw</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNode.html</anchorfile>
+      <anchor>a7e72ee68b7bf84f2c6c40f211ea90885</anchor>
+      <arglist>(iCamera *camera, csColor color=csColor(255, 0, 255))=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonDebugNodeFactory</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</filename>
+    <base>CS::Animation::iSkeletonAnimNodeFactory</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetChildNode</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a44f9f733f603a28ce7e7299eed6a38f1</anchor>
+      <arglist>(iSkeletonAnimNodeFactory *factory)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDebugImage</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a6ddad9212486a683031d3c1ce4680113</anchor>
+      <arglist>(csPixmap *image)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDebugModes</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a982a8a44b4eacd539b28b3ad22b2d675</anchor>
+      <arglist>(csSkeletonDebugMode modes)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonDebugNodeManager</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearDebugNodeFactories</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
+      <anchor>a79529f4e45f9deb9bc2cca1363d79bf3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonDebugNodeFactory *</type>
+      <name>CreateDebugNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
+      <anchor>a52b0063a4c381ce108ffa6e6a7f1b6cb</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonDebugNodeFactory *</type>
+      <name>FindDebugNodeFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
+      <anchor>ac9af652d88c41b6dbea9afad72ed5c43</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
