@@ -30797,6 +30797,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>CSMASK_ALLLOCKS</name>
+      <anchorfile>evdefs_8h.html</anchorfile>
+      <anchor>af15e7507067a081b1132e35c20242937</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>CSMASK_ALLMODIFIERS</name>
       <anchorfile>evdefs_8h.html</anchorfile>
       <anchor>a4090c450fd668ef91062983f0637fda6</anchor>
@@ -35920,6 +35927,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>RemoveChannel</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gac4c468e08b0552a0bcadfbb8bf44bbfd</anchor>
+      <arglist>(ChannelID channel)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>ResetSkeletonState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gad1ee9948e0ff96c14066f1209b9cf24f</anchor>
@@ -36001,6 +36015,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaaf29659662c97ddc625c203888cf04bc</anchor>
       <arglist>(BoneID bone)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetChannelBone</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gada1c5af61eef9d18b8f94f7495118c42</anchor>
+      <arglist>(ChannelID channel, BoneID bone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -115024,6 +115045,20 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>RemoveChannel</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gac4c468e08b0552a0bcadfbb8bf44bbfd</anchor>
+      <arglist>(ChannelID channel)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetChannelBone</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gada1c5af61eef9d18b8f94f7495118c42</anchor>
+      <arglist>(ChannelID channel, BoneID bone)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetFramesInBindSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gac33260e3d8eedae2570247c65f3c7fcc</anchor>
@@ -115518,23 +115553,23 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>ClearDebugNodeFactories</name>
+      <name>ClearAnimNodeFactories</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>a79529f4e45f9deb9bc2cca1363d79bf3</anchor>
+      <anchor>a3d82497e88e3e2501874c9b1bfefe1fb</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonDebugNodeFactory *</type>
-      <name>CreateDebugNodeFactory</name>
+      <name>CreateAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>a52b0063a4c381ce108ffa6e6a7f1b6cb</anchor>
+      <anchor>ad4f0e4be7ca2d007a825eab091f52e00</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonDebugNodeFactory *</type>
-      <name>FindDebugNodeFactory</name>
+      <name>FindAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>ac9af652d88c41b6dbea9afad72ed5c43</anchor>
+      <anchor>a187d4a9520b3f0aabdc20fe486e23761</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
   </compound>
@@ -116504,23 +116539,23 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>ClearSpeedNodeFactories</name>
+      <name>ClearAnimNodeFactories</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>ae6328750e7546281bbf93c9da8ba673b</anchor>
+      <anchor>a6ba2b245e134f39792140b842e305765</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonSpeedNodeFactory *</type>
-      <name>CreateSpeedNodeFactory</name>
+      <name>CreateAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>ae1fed8f95aebfa5410b274930cc2722e</anchor>
+      <anchor>a0562a1389422936a4bae1f02c5efe6d4</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonSpeedNodeFactory *</type>
-      <name>FindSpeedNodeFactory</name>
+      <name>FindAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>ac19f885e250328a05e4c7f180eb9b8ec</anchor>
+      <anchor>ae47ed8d6365922b3157621752e0c3ac1</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
   </compound>
@@ -120644,6 +120679,13 @@
       <arglist>(iTerrainCollider *collider)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DumpProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
+      <anchor>ae3f9a0c12e59202596b082d55ca42e33</anchor>
+      <arglist>(bool resetProfile=true)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual DebugMode</type>
       <name>GetDebugMode</name>
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
@@ -120726,6 +120768,20 @@
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
       <anchor>a156deee6b4a408b44a7a735eea694b30</anchor>
       <arglist>(float timeStep, size_t maxSteps, size_t iterations)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>StartProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
+      <anchor>afb53d7db00f6267a0db247ae2b9eef7f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>StopProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
+      <anchor>a1847648e30dcac2178be485fa72c339b</anchor>
+      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
