@@ -29563,33 +29563,33 @@
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <member kind="enumeration">
-      <name>csSkeletonDebugMode</name>
+      <name>SkeletonDebugMode</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16</anchor>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_NONE</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_2DLINES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ab489c1cdc80419818b3b9951cebd1fff</anchor>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ab489c1cdc80419818b3b9951cebd1fff</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_SQUARES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16affe4ab547e4112cee491706ecc48945e</anchor>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066affe4ab547e4112cee491706ecc48945e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_IMAGES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16af777405c1616067670f4e01be0cd4992</anchor>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066af777405c1616067670f4e01be0cd4992</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -113929,36 +113929,6 @@
       <arglist></arglist>
     </member>
     <member kind="enumeration">
-      <name>csSkeletonDebugMode</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_NONE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_2DLINES</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16ab489c1cdc80419818b3b9951cebd1fff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_SQUARES</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16affe4ab547e4112cee491706ecc48945e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_IMAGES</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a3bcbf26bac444dada7f66d8d73ee6d16af777405c1616067670f4e01be0cd4992</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
       <name>RagdollState</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a427abb69c514b522c593717fb27634c9</anchor>
@@ -113980,6 +113950,36 @@
       <name>STATE_KINEMATIC</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a427abb69c514b522c593717fb27634c9a045270b438ef548bbbd448f74353118b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>SkeletonDebugMode</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_NONE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ae68da25e2515e7ea8a0c2b1ef39ad491</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_2DLINES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ab489c1cdc80419818b3b9951cebd1fff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_SQUARES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066affe4ab547e4112cee491706ecc48945e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_IMAGES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066af777405c1616067670f4e01be0cd4992</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -115543,8 +115543,8 @@
       <type>virtual void</type>
       <name>SetDebugModes</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
-      <anchor>a982a8a44b4eacd539b28b3ad22b2d675</anchor>
-      <arglist>(csSkeletonDebugMode modes)=0</arglist>
+      <anchor>a8a9aa60dbd671851a7f3acbc1d21d86d</anchor>
+      <arglist>(SkeletonDebugMode modes)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -120089,10 +120089,10 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual uint</type>
-      <name>GetPriority</name>
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetRenderPriority</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshState.html</anchorfile>
-      <anchor>aa5cf57aaaf1cb60dfbaf01306142feee</anchor>
+      <anchor>a4c6d6333e69c7a399c654475c0147494</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -120216,10 +120216,10 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetPriority</name>
+      <name>SetRenderPriority</name>
       <anchorfile>structCS_1_1Mesh_1_1iFurMeshState.html</anchorfile>
-      <anchor>a8152265861b5aeba0a8d6156e87c8fb6</anchor>
-      <arglist>(uint priority)=0</arglist>
+      <anchor>a68b07dca02e32587ad2ca9acdcfcc3e9</anchor>
+      <arglist>(CS::Graphics::RenderPriority priority)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
