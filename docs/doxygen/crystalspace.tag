@@ -4145,6 +4145,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>GL_ANY_SAMPLES_PASSED</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ad9e9ba4651e46b14c7f74931c77cdd16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>GL_ARRAY_BUFFER</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>a7180045dcb52b22af2cd0366026bc3ed</anchor>
@@ -4491,6 +4498,13 @@
       <name>GL_WRITE_ONLY</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>ab43997c5949dffce6674a7bb8a3059da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_ANY_SAMPLES_PASSED_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a27082e84ef5e6cd58cc57b332860177c</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -22099,8 +22113,6 @@
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="texturecache_8h" name="texturecache.h" local="yes" imported="no">csplugincommon/rendermanager/texturecache.h</includes>
-    <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
-    <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
     <class kind="struct">CS::RenderManager::AutoFX::ReflectRefract_Base::PersistentData</class>
     <class kind="class">CS::RenderManager::AutoFX::ReflectRefract</class>
     <class kind="class">CS::RenderManager::AutoFX::ReflectRefract_Base</class>
@@ -22398,9 +22410,13 @@
     <includes id="pooledscfclass_8h" name="pooledscfclass.h" local="yes" imported="no">csutil/pooledscfclass.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="engine_8h" name="engine.h" local="yes" imported="no">iengine/engine.h</includes>
+    <includes id="portal_8h" name="portal.h" local="yes" imported="no">iengine/portal.h</includes>
     <includes id="rview_8h" name="rview.h" local="yes" imported="no">iengine/rview.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
+    <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">csutil/refcount.h</includes>
+    <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
     <class kind="class">CS::RenderManager::RenderView</class>
+    <class kind="class">CS::RenderManager::RenderViewCache</class>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
@@ -22457,8 +22473,6 @@
     <includes id="csplugincommon_2rendermanager_2viscull_8h" name="viscull.h" local="yes" imported="no">csplugincommon/rendermanager/viscull.h</includes>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
     <includes id="projections_8h" name="projections.h" local="yes" imported="no">csgeom/projections.h</includes>
-    <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
-    <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
     <class kind="struct">CS::RenderManager::ShadowPSSM::PersistentData</class>
     <class kind="class">CS::RenderManager::ShadowPSSM</class>
     <class kind="class">CS::RenderManager::ShadowPSSM::ViewSetup</class>
@@ -51994,6 +52008,13 @@
     </member>
     <member kind="variable">
       <type>bool</type>
+      <name>CS_GL_ARB_occlusion_query2</name>
+      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
+      <anchor>a8caba36fcdb39aef65ab6862f5ee8e35</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
       <name>CS_GL_ARB_pixel_buffer_object</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>a6f5f87515cdcb11d8bec4f4913841cb6</anchor>
@@ -60253,6 +60274,13 @@
       <name>InitGL_ARB_occlusion_query</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>ae90b1f2289d7d67c0e2f481fec886ff8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitGL_ARB_occlusion_query2</name>
+      <anchorfile>structcsGLExtensionManager.html</anchorfile>
+      <anchor>a8f9055664fb3d190c52269af13e62fdf</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -91452,6 +91480,27 @@
       <arglist>(size_t numVertices, const csVector2 *vertices, const csPlane3 &amp;normal, csFlags flags)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQInitQueries</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a69bdb39f630168e10edf9ede317544a4</anchor>
+      <arglist>(unsigned int *queries, int num_queries)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>OQIsVisible</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>add78692b223dbef165047332486b55fe</anchor>
+      <arglist>(unsigned int occlusion_query, unsigned int sampleLimit=0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>OQueryFinished</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a65f69595c9ee6f2e15c5089cf85670de</anchor>
+      <arglist>(unsigned int occlusion_query)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>PerformExtension</name>
       <anchorfile>structiGraphics3D.html</anchorfile>
@@ -100083,6 +100132,11 @@
       <anchor>afd915f8ea1289e32384b892003e150b5</anchor>
       <arglist>(iTextureHandle *target, int subtexture=0)=0</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>iRenderManagerVisCull</name>
+    <filename>structiRenderManagerVisCull.html</filename>
+    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="struct">
     <name>iRenderStep</name>
@@ -110599,6 +110653,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>RenderViscull</name>
+      <anchorfile>structiVisibilityCuller.html</anchorfile>
+      <anchor>ad7a6b252d37891645d6c0ebb7609e226</anchor>
+      <arglist>(iRenderView *rview)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>Setup</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
       <anchor>a07a0e0256194f61b96b0f0d2b90c77f9</anchor>
@@ -110659,6 +110720,20 @@
     <filename>structiVisibilityCullerListener.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetVisibleMeshes</name>
+      <anchorfile>structiVisibilityCullerListener.html</anchorfile>
+      <anchor>a6794949930d2d99f06cfb2db443b9fc2</anchor>
+      <arglist>(iMeshWrapper *mw, uint32 frustum_mask, csSectorVisibleRenderMeshes *&amp;meshList)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>MarkVisible</name>
+      <anchorfile>structiVisibilityCullerListener.html</anchorfile>
+      <anchor>af8c89984de76737c9e0de7a80dc82bde</anchor>
+      <arglist>(iMeshWrapper *mw, int numMeshes, csSectorVisibleRenderMeshes *&amp;meshList)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>ObjectVisible</name>
       <anchorfile>structiVisibilityCullerListener.html</anchorfile>
@@ -110670,6 +110745,13 @@
     <name>iVisibilityObject</name>
     <filename>structiVisibilityObject.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csBox3 &amp;</type>
+      <name>GetBBox</name>
+      <anchorfile>structiVisibilityObject.html</anchorfile>
+      <anchor>a5ade5c150090529106fd1d7d1b02b5aa</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual csFlags &amp;</type>
       <name>GetCullerFlags</name>
@@ -121654,6 +121736,7 @@
     <class kind="class">CS::RenderManager::RenderTreeBase</class>
     <class kind="class">CS::RenderManager::RenderTreeStandardTraits</class>
     <class kind="class">CS::RenderManager::RenderView</class>
+    <class kind="class">CS::RenderManager::RenderViewCache</class>
     <class kind="class">CS::RenderManager::RMDebugCommon</class>
     <class kind="class">CS::RenderManager::ShaderSetup</class>
     <class kind="class">CS::RenderManager::ShaderSVSetup</class>
@@ -123526,6 +123609,20 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>InitialiseFromCamera</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
+      <anchor>ae8d7f16f1d769acf139e67636a2c601e</anchor>
+      <arglist>(iCamera *camera)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitialiseFromView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
+      <anchor>ae327c0dc021d5e72614a5545238bf86e</anchor>
+      <arglist>(iView *view)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>IsClipperRequired</name>
       <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
@@ -123557,8 +123654,8 @@
       <type></type>
       <name>RenderView</name>
       <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
-      <anchor>a2b6b0cdbefc2fe4bcdc951da98ef28fa</anchor>
-      <arglist>(iCamera *c, iClipper2D *v, iGraphics3D *ig3d, iGraphics2D *ig2d)</arglist>
+      <anchor>ab6f14da8bba0277703bd0936e6571327</anchor>
+      <arglist>(iCamera *c, iClipper2D *v, iGraphics3D *ig3d)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -123699,6 +123796,45 @@
       <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
       <anchor>af334b2983b562ad45c8081acb5c8ab7a</anchor>
       <arglist>(bool u)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::RenderManager::RenderViewCache</name>
+    <filename>classCS_1_1RenderManager_1_1RenderViewCache.html</filename>
+    <member kind="function">
+      <type>csPtr&lt; RenderView &gt;</type>
+      <name>CreateRenderView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderViewCache.html</anchorfile>
+      <anchor>a6c8dbbabb4359d1c024b62c97dc5d2b5</anchor>
+      <arglist>(RenderView *view, bool keepCamera)</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; RenderView &gt;</type>
+      <name>CreateRenderView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderViewCache.html</anchorfile>
+      <anchor>a3f45689203362915ee56bf59b7ffc40a</anchor>
+      <arglist>(RenderView *view)</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; RenderView &gt;</type>
+      <name>CreateRenderView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderViewCache.html</anchorfile>
+      <anchor>a00011f66632495526ac79ae54fb8f027</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderView *</type>
+      <name>GetRenderView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderViewCache.html</anchorfile>
+      <anchor>af6c837a8f22ff33aa28b5cf9cbbe3da4</anchor>
+      <arglist>(RenderView *view, iPortal *portal, iCamera *camera)</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderView *</type>
+      <name>GetRenderView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderViewCache.html</anchorfile>
+      <anchor>ac916c515bfaa03543cb4f07640c38fc9</anchor>
+      <arglist>(iView *view)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -124466,6 +124602,13 @@
     <templarg></templarg>
     <templarg></templarg>
     <base>CS::RenderManager::AutoFX::ReflectRefract_Base</base>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>classCS_1_1RenderManager_1_1AutoFX_1_1ReflectRefract.html</anchorfile>
+      <anchor>a8d2ae3bee72f07e6e6b435e2fa89b020</anchor>
+      <arglist>(typename RenderTree::MeshNode *node, size_t layer, typename RenderTree::MeshNode::SingleMesh &amp;mesh, const csBitArray &amp;names)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::AutoFX::ReflectRefract_Base</name>
@@ -124646,6 +124789,20 @@
     <filename>classCS_1_1RenderManager_1_1Implementation_1_1ViscullCallback.html</filename>
     <templarg>RenderTree</templarg>
     <base>scfImplementation1&lt; ViscullCallback&lt; RenderTree &gt;, iVisibilityCullerListener &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetVisibleMeshes</name>
+      <anchorfile>classCS_1_1RenderManager_1_1Implementation_1_1ViscullCallback.html</anchorfile>
+      <anchor>a4d6b78d9412b8b305050096561db6fea</anchor>
+      <arglist>(iMeshWrapper *mw, uint32 frustum_mask, csSectorVisibleRenderMeshes *&amp;meshList)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>MarkVisible</name>
+      <anchorfile>classCS_1_1RenderManager_1_1Implementation_1_1ViscullCallback.html</anchorfile>
+      <anchor>a1420d8e9efeca869ac5fb97e5779a2a3</anchor>
+      <arglist>(iMeshWrapper *mw, int numMeshes, csSectorVisibleRenderMeshes *&amp;meshList)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>ObjectVisible</name>
