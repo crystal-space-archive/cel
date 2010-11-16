@@ -22350,6 +22350,7 @@
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="svarrayholder_8h" name="svarrayholder.h" local="yes" imported="no">csplugincommon/rendermanager/svarrayholder.h</includes>
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
+    <includes id="sector_8h" name="sector.h" local="yes" imported="no">iengine/sector.h</includes>
     <class kind="class">CS::RenderManager::BeginFinishDrawScope</class>
     <class kind="class">CS::RenderManager::ContextTargetSetup</class>
     <class kind="class">CS::RenderManager::SimpleContextRender</class>
@@ -28807,6 +28808,13 @@
     <class kind="struct">iMeshWrapperIterator</class>
     <member kind="define">
       <type>#define</type>
+      <name>CS_ENTITY_ALWAYSVISIBLE</name>
+      <anchorfile>group__engine3d__meshes.html</anchorfile>
+      <anchor>ga4f441b7ef1a3e142bcac7580c60d4be6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>CS_ENTITY_CAMERA</name>
       <anchorfile>group__engine3d__meshes.html</anchorfile>
       <anchor>ga707edf89325bf63f948e740ff3ae841c</anchor>
@@ -35038,6 +35046,13 @@
     <class kind="struct">iMeshWrapper</class>
     <class kind="struct">iMeshWrapperIterator</class>
     <subgroup>meshplugins</subgroup>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_ENTITY_ALWAYSVISIBLE</name>
+      <anchorfile>group__engine3d__meshes.html</anchorfile>
+      <anchor>ga4f441b7ef1a3e142bcac7580c60d4be6</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="define">
       <type>#define</type>
       <name>CS_ENTITY_CAMERA</name>
