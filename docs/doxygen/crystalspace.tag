@@ -32090,6 +32090,7 @@
     <includes id="script_8h" name="script.h" local="yes" imported="no">ivaria/script.h</includes>
     <includes id="sequence_8h" name="sequence.h" local="yes" imported="no">ivaria/sequence.h</includes>
     <includes id="simpleformer_8h" name="simpleformer.h" local="yes" imported="no">ivaria/simpleformer.h</includes>
+    <includes id="softanim_8h" name="softanim.h" local="yes" imported="no">ivaria/softanim.h</includes>
     <includes id="stdrep_8h" name="stdrep.h" local="yes" imported="no">ivaria/stdrep.h</includes>
     <includes id="terraform_8h" name="terraform.h" local="yes" imported="no">ivaria/terraform.h</includes>
     <includes id="translator_8h" name="translator.h" local="yes" imported="no">ivaria/translator.h</includes>
@@ -32514,6 +32515,21 @@
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
     <class kind="struct">iSimpleFormerState</class>
+  </compound>
+  <compound kind="file">
+    <name>softanim.h</name>
+    <path>/tmp/tmp4/trunk/include/ivaria/</path>
+    <filename>softanim_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
+    <class kind="struct">CS::Animation::iSoftBodyAnimationControl</class>
+    <class kind="struct">CS::Animation::iSoftBodyAnimationControlFactory</class>
+    <class kind="struct">CS::Animation::iSoftBodyAnimationControlType</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
+    <namespace>CS::Mesh</namespace>
+    <namespace>CS::Physics</namespace>
+    <namespace>CS::Physics::Bullet</namespace>
   </compound>
   <compound kind="file">
     <name>stdrep.h</name>
@@ -115624,6 +115640,20 @@
     <base>CS::Animation::iSkeletonAnimNodeFactory</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>AddChainMask</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a5f624f5e9cde3267871616ab4a0f17c2</anchor>
+      <arglist>(iBodyChain *chain)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveChainMask</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a9424e0634fbbbbd871f7281ec5550880</anchor>
+      <arglist>(iBodyChain *chain)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetChildNode</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
       <anchor>a44f9f733f603a28ce7e7299eed6a38f1</anchor>
@@ -115642,6 +115672,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
       <anchor>a8a9aa60dbd671851a7f3acbc1d21d86d</anchor>
       <arglist>(SkeletonDebugMode modes)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLeafBonesDisplayed</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a8a618231df180ba6903b37ea7fbe79e6</anchor>
+      <arglist>(bool displayed)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
