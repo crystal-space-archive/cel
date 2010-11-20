@@ -23351,6 +23351,7 @@
     <includes id="cstool_2mapnode_8h" name="mapnode.h" local="yes" imported="no">cstool/mapnode.h</includes>
     <includes id="materialbuilder_8h" name="materialbuilder.h" local="yes" imported="no">cstool/materialbuilder.h</includes>
     <includes id="meshobjtmpl_8h" name="meshobjtmpl.h" local="yes" imported="no">cstool/meshobjtmpl.h</includes>
+    <includes id="mocapparser_8h" name="mocapparser.h" local="yes" imported="no">cstool/mocapparser.h</includes>
     <includes id="normalcalc_8h" name="normalcalc.h" local="yes" imported="no">cstool/normalcalc.h</includes>
     <includes id="cstool_2objmodel_8h" name="objmodel.h" local="yes" imported="no">cstool/objmodel.h</includes>
     <includes id="pen_8h" name="pen.h" local="yes" imported="no">cstool/pen.h</includes>
@@ -23939,6 +23940,20 @@
       <anchor>afbf7aa119e9660c3f99b713e4d577b91</anchor>
       <arglist>(name, factclass)</arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>mocapparser.h</name>
+    <path>/tmp/tmp4/trunk/include/cstool/</path>
+    <filename>mocapparser_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
+    <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
+    <class kind="class">CS::Animation::BVHMocapParser</class>
+    <class kind="class">CS::Animation::MocapParser</class>
+    <class kind="struct">CS::Animation::MocapParserResult</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
   </compound>
   <compound kind="file">
     <name>normalcalc.h</name>
@@ -35654,6 +35669,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga84e4ad6f14b1f5f9a795a3ceb4938b5a</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csArray&lt; CS::Animation::BoneID &gt; &amp;</type>
+      <name>GetBoneOrderList</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gacac885322251372635a4b16a3da639aa</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
@@ -95844,6 +95866,20 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>SetFilenameFormat</name>
+      <anchorfile>structiMovieRecorder.html</anchorfile>
+      <anchor>a7f30c8998df567d1fb50bbe0bad6a966</anchor>
+      <arglist>(const char *format)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRecordingFile</name>
+      <anchorfile>structiMovieRecorder.html</anchorfile>
+      <anchor>aa94e48309c121603813b9bb4709afd43</anchor>
+      <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>Start</name>
       <anchorfile>structiMovieRecorder.html</anchorfile>
       <anchor>a8f9780f1cd6efbc2dc60b8833483c9e7</anchor>
@@ -113980,6 +114016,7 @@
   <compound kind="namespace">
     <name>CS::Animation</name>
     <filename>namespaceCS_1_1Animation.html</filename>
+    <class kind="class">CS::Animation::BVHMocapParser</class>
     <class kind="class">CS::Animation::csSkeletalState</class>
     <class kind="struct">CS::Animation::iBodyBone</class>
     <class kind="struct">CS::Animation::iBodyBoneCollider</class>
@@ -114034,6 +114071,8 @@
     <class kind="struct">CS::Animation::iSoftBodyAnimationControl</class>
     <class kind="struct">CS::Animation::iSoftBodyAnimationControlFactory</class>
     <class kind="struct">CS::Animation::iSoftBodyAnimationControlType</class>
+    <class kind="class">CS::Animation::MocapParser</class>
+    <class kind="struct">CS::Animation::MocapParserResult</class>
     <member kind="typedef">
       <type>unsigned int</type>
       <name>EffectorID</name>
@@ -114168,6 +114207,53 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga90d1bfb9103f93dd98699f756d150451</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::BVHMocapParser</name>
+    <filename>classCS_1_1Animation_1_1BVHMocapParser.html</filename>
+    <base>CS::Animation::MocapParser</base>
+    <member kind="function">
+      <type></type>
+      <name>BVHMocapParser</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a3b60e3eb105a647cecb9bec06a77be31</anchor>
+      <arglist>(iObjectRegistry *object_reg, iVFS *vfs)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual MocapParserResult</type>
+      <name>ParseData</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>ac6dea8a9390bbcc2cc6e70533b205644</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetEndFrame</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a224927d7632482de48c51e66dcbc25cb</anchor>
+      <arglist>(size_t frame)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetGlobalScale</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>ab458d70b2cde19afd9fd68d0fc07b723</anchor>
+      <arglist>(float scale)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetRessourceFile</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a374cca99fbd1e68ae63f8e34ddd233fa</anchor>
+      <arglist>(const char *filename)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetStartFrame</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a75b742cf2e20b5214a16db9dd0067046</anchor>
+      <arglist>(size_t frame)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -114690,6 +114776,13 @@
       <arglist>(CS::Animation::BoneID subBone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DebugPrint</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
+      <anchor>a37a65b3816cf43665b0d2c8b93525ecf</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iBodySkeleton *</type>
       <name>GetBodySkeleton</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
@@ -114715,6 +114808,13 @@
     <name>CS::Animation::iBodyChainNode</name>
     <filename>structCS_1_1Animation_1_1iBodyChainNode.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DebugPrint</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChainNode.html</anchorfile>
+      <anchor>a3434ace1fff0a091559fe1402d6cc870</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual iBodyChainNode *</type>
       <name>FindSubChild</name>
@@ -115740,6 +115840,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual const csArray&lt; CS::Animation::BoneID &gt; &amp;</type>
+      <name>GetBoneOrderList</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gacac885322251372635a4b16a3da639aa</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAnimationPacket</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -116742,6 +116849,84 @@
     <name>CS::Animation::iSoftBodyAnimationControlType</name>
     <filename>structCS_1_1Animation_1_1iSoftBodyAnimationControlType.html</filename>
     <base>iGenMeshAnimationControlType</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::MocapParser</name>
+    <filename>classCS_1_1Animation_1_1MocapParser.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual MocapParserResult</type>
+      <name>ParseData</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>aed854152cb0837ef9dfec42b2c18fa51</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetEndFrame</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>aae0bd1dc5c6f7a38130985bbaa97c6c1</anchor>
+      <arglist>(size_t frame)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetGlobalScale</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>aa7985721c0d6bc7fe7d598d17af360ce</anchor>
+      <arglist>(float scale)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetRessourceFile</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>a7d904fb8c1fd404d91df6daaf1118f4a</anchor>
+      <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetStartFrame</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>a202eb57fac973975b302134cab34f299</anchor>
+      <arglist>(size_t frame)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::MocapParserResult</name>
+    <filename>structCS_1_1Animation_1_1MocapParserResult.html</filename>
+    <member kind="variable">
+      <type>csRef&lt; CS::Animation::iSkeletonAnimPacketFactory &gt;</type>
+      <name>animPacketFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
+      <anchor>aa2bf5565c580f6264f28449a4f45e99d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>frameCount</name>
+      <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
+      <anchor>afd1de730717bf923cb2a5f6004c62f96</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>frameDuration</name>
+      <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
+      <anchor>a2148e76b95b5f4c0b725940fd210c93c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>result</name>
+      <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
+      <anchor>a06642d52a0fd972ef13e411a8dc21e20</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRef&lt; CS::Animation::iSkeletonFactory &gt;</type>
+      <name>skeletonFactory</name>
+      <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
+      <anchor>a90cf126c4a128b86c240f642d54860f4</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Container</name>
@@ -125690,8 +125875,8 @@
       <type>csArray&lt; size_t &gt;</type>
       <name>TopologicalSort</name>
       <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
-      <anchor>ab2de96ed6f160a0fb08d4a2410cf2f60</anchor>
-      <arglist>(csArray&lt; GraphEdge &gt; inputGraph)</arglist>
+      <anchor>aa63f956fe65e1f32424dcdff0e3582d8</anchor>
+      <arglist>(csArray&lt; GraphEdge &gt; &amp;inputGraph)</arglist>
     </member>
     <member kind="function">
       <type>csString</type>
