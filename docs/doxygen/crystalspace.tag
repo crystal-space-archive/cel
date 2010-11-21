@@ -30311,10 +30311,10 @@
     <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
     <member kind="typedef">
-      <type>unsigned int</type>
+      <type>size_t</type>
       <name>BoneID</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga9c7f04a5022520e20985a8fbdc7e81f1</anchor>
+      <anchor>gafbb0feb49ef613294c026e6e80538f73</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -36540,10 +36540,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>unsigned int</type>
+      <type>size_t</type>
       <name>BoneID</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga9c7f04a5022520e20985a8fbdc7e81f1</anchor>
+      <anchor>gafbb0feb49ef613294c026e6e80538f73</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -92336,8 +92336,8 @@
       <type>virtual void</type>
       <name>SetShader</name>
       <anchorfile>structiImposterFactory.html</anchorfile>
-      <anchor>afd1c23bfa334539cca35b53bb170f101</anchor>
-      <arglist>(const char *shader)=0</arglist>
+      <anchor>a84d578c42abe4cb249f22ad59cc5b3b5</anchor>
+      <arglist>(const char *type, const char *shader)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -114195,10 +114195,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>unsigned int</type>
+      <type>size_t</type>
       <name>BoneID</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga9c7f04a5022520e20985a8fbdc7e81f1</anchor>
+      <anchor>gafbb0feb49ef613294c026e6e80538f73</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
