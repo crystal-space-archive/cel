@@ -41661,13 +41661,6 @@
     </member>
     <member kind="variable">
       <type>const double</type>
-      <name>PI</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga4ad8acc0197b2ff6adc03b64c6a4148a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
       <name>RAD_TO_DEG</name>
       <anchorfile>group__libnoise.html</anchorfile>
       <anchor>gad79307c82891436d3da15db70360ab49</anchor>
@@ -121374,13 +121367,6 @@
       <name>DEG_TO_RAD</name>
       <anchorfile>group__libnoise.html</anchorfile>
       <anchor>ga83f544d8d41d83cb04ddd8d973230199</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>PI</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga4ad8acc0197b2ff6adc03b64c6a4148a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
