@@ -23956,6 +23956,7 @@
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
+    <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <class kind="class">CS::Animation::BVHMocapParser</class>
     <class kind="class">CS::Animation::MocapParser</class>
     <class kind="struct">CS::Animation::MocapParserResult</class>
@@ -115373,6 +115374,13 @@
       <anchor>a9aba77f999f9cb9ea4ae5f042f5b5a5f</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>PopulateBoneMask</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
+      <anchor>a7000dd009ed1da61c00c66545f603eb3</anchor>
+      <arglist>(csBitArray &amp;boneMask) const =0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iBodyChainNode</name>
@@ -116310,17 +116318,10 @@
     <base>CS::Animation::iSkeletonAnimNodeFactory</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>AddChainMask</name>
+      <name>SetBoneMask</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
-      <anchor>a5f624f5e9cde3267871616ab4a0f17c2</anchor>
-      <arglist>(iBodyChain *chain)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveChainMask</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
-      <anchor>a9424e0634fbbbbd871f7281ec5550880</anchor>
-      <arglist>(iBodyChain *chain)=0</arglist>
+      <anchor>a8909b528527cf064f341f2ad390341df</anchor>
+      <arglist>(csBitArray &amp;boneMask)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -116349,6 +116350,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
       <anchor>a8a618231df180ba6903b37ea7fbe79e6</anchor>
       <arglist>(bool displayed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>UnsetBoneMask</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a695cfd7fef9cc4c2bb8ee281c50df5fd</anchor>
+      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
