@@ -24570,6 +24570,7 @@
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
     <includes id="stringconv_8h" name="stringconv.h" local="yes" imported="no">csutil/stringconv.h</includes>
+    <includes id="stringquote_8h" name="stringquote.h" local="yes" imported="no">csutil/stringquote.h</includes>
     <includes id="stringreader_8h" name="stringreader.h" local="yes" imported="no">csutil/stringreader.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
     <includes id="sysfunc_8h" name="sysfunc.h" local="yes" imported="no">csutil/sysfunc.h</includes>
@@ -27678,6 +27679,14 @@
       <anchor>a983d25931d24b9fae0a253e00d637712</anchor>
       <arglist>(const char *str, const char **end=0)</arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>stringquote.h</name>
+    <path>/tmp/tmp5/trunk/include/csutil/</path>
+    <filename>stringquote_8h</filename>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csstring.h</includes>
+    <class kind="struct">CS::Quote</class>
+    <namespace>CS</namespace>
   </compound>
   <compound kind="file">
     <name>stringreader.h</name>
@@ -35934,6 +35943,13 @@
       <anchor>gac4c468e08b0552a0bcadfbb8bf44bbfd</anchor>
       <arglist>(ChannelID channel)=0</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gab3c2245adb5b83fd9e629dfeb7a3c130</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>ResetSkeletonState</name>
@@ -36185,6 +36201,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga006d107a155bc2b1e997db98864895a2</anchor>
       <arglist>(float dt)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletalState</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga31317b36295216dd1889f7f29cd975a7</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="enumeration">
       <name>csParticleBuiltinEffectorVFType</name>
@@ -36492,8 +36515,8 @@
       <type>virtual BoneID</type>
       <name>CreateBone</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gabac544f578a5c24a9e460d6cb2109341</anchor>
-      <arglist>(BoneID parent=InvalidBoneID)=0</arglist>
+      <anchor>ga6b8ad31bf08f776dd2b3678363086807</anchor>
+      <arglist>(BoneID parent=CS::Animation::InvalidBoneID)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
@@ -44367,6 +44390,13 @@
       <anchorfile>classcsBitArrayTweakable.html</anchorfile>
       <anchor>aa50b928e221ee91e073ed651bf04e430</anchor>
       <arglist>(size_t pos, bool val=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetAll</name>
+      <anchorfile>classcsBitArrayTweakable.html</anchorfile>
+      <anchor>a705877aa16ef269f6fe14bb9ddd56a15</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -113127,6 +113157,7 @@
     <class kind="struct">CS::InvalidStringID</class>
     <class kind="class">CS::MeasureTime</class>
     <class kind="class">CS::NumberedFilenameHelper</class>
+    <class kind="struct">CS::Quote</class>
     <class kind="class">CS::RenderBufferPersistent</class>
     <class kind="class">CS::RenderViewClipper</class>
     <class kind="class">CS::ScfStringSet</class>
@@ -113470,6 +113501,38 @@
       <anchorfile>classCS_1_1NumberedFilenameHelper.html</anchorfile>
       <anchor>a93480e0f4fd385df6d839cbacab31593</anchor>
       <arglist>(const char *mask)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Quote</name>
+    <filename>structCS_1_1Quote.html</filename>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>Double</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a37d8385715004ac829792fc2baf2a4df</anchor>
+      <arglist>(const char *str)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>Double</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a316b565595a25ac169e5b51c4640f65e</anchor>
+      <arglist>(csStringBase &amp;out, const char *str)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>Single</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>acba4c56db91d2f73b1779d19c8597311</anchor>
+      <arglist>(const char *str)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>Single</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>ad8fcd8ff1caf6f72da60714220fe3825</anchor>
+      <arglist>(csStringBase &amp;out, const char *str)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -114882,6 +114945,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>Reset</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gab3c2245adb5b83fd9e629dfeb7a3c130</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetBoneUsed</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaaf29659662c97ddc625c203888cf04bc</anchor>
@@ -114893,6 +114963,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga71e5e907de896e4f3bbe9ef32196f9fc</anchor>
       <arglist>(size_t numBones)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletalState</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga31317b36295216dd1889f7f29cd975a7</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -116442,8 +116519,8 @@
       <type>virtual BoneID</type>
       <name>CreateBone</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gabac544f578a5c24a9e460d6cb2109341</anchor>
-      <arglist>(BoneID parent=InvalidBoneID)=0</arglist>
+      <anchor>ga6b8ad31bf08f776dd2b3678363086807</anchor>
+      <arglist>(BoneID parent=CS::Animation::InvalidBoneID)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
