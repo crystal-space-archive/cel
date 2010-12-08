@@ -23957,6 +23957,7 @@
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
     <class kind="class">CS::Animation::BVHMocapParser</class>
     <class kind="class">CS::Animation::MocapParser</class>
     <class kind="struct">CS::Animation::MocapParserResult</class>
@@ -29746,24 +29747,6 @@
     <class kind="struct">CS::Animation::NameBoneMappingHelper</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
-    <member kind="enumeration">
-      <name>RetargetMode</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RETARGET_NAIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1aa88579691ee3141d95cef8a10df0b4faf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RETARGET_ALIGN_BONES</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1aa8511a82c43ffff09e09bfc3d9051924d</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>skeleton2anim.h</name>
@@ -35389,6 +35372,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga372baa38763e0bc7aebd8787582505db</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ConvertFrameSpace</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gacb275c7bb491ac0e8b4d408e986acd5c</anchor>
+      <arglist>(CS::Animation::iSkeletonFactory *skeleton)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimation *</type>
@@ -114696,24 +114686,6 @@
       <arglist></arglist>
     </member>
     <member kind="enumeration">
-      <name>RetargetMode</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RETARGET_NAIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1aa88579691ee3141d95cef8a10df0b4faf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RETARGET_ALIGN_BONES</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a82fe9ea15b518988347f5dd5cb602b1aa8511a82c43ffff09e09bfc3d9051924d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
       <name>SkeletonDebugMode</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066</anchor>
@@ -114842,6 +114814,13 @@
       <anchor>a52a16f0e95278b5607225b950e9654b2</anchor>
       <arglist>(CS::Animation::BoneID bone)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RemoveMapping</name>
+      <anchorfile>structCS_1_1Animation_1_1BoneMapping.html</anchorfile>
+      <anchor>a5c13a69da36d6a76cc67a1ace5eaf2b9</anchor>
+      <arglist>(CS::Animation::BoneID sourceBone, CS::Animation::BoneID targetBone)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::Animation::BVHMocapParser</name>
@@ -114851,8 +114830,8 @@
       <type></type>
       <name>BVHMocapParser</name>
       <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
-      <anchor>a3b60e3eb105a647cecb9bec06a77be31</anchor>
-      <arglist>(iObjectRegistry *object_reg, iVFS *vfs)</arglist>
+      <anchor>a9cc18de83394aa4b6fac79c4ff145f35</anchor>
+      <arglist>(iObjectRegistry *object_reg)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual MocapParserResult</type>
@@ -114863,10 +114842,24 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>SetAnimationName</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a79fdd53520afa199737ca5c4dd3859d1</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetEndFrame</name>
       <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
       <anchor>a224927d7632482de48c51e66dcbc25cb</anchor>
       <arglist>(size_t frame)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetEndSitesAdded</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a67f2c2ed3345d3498afe8a1e5d1e4a10</anchor>
+      <arglist>(bool added)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -114876,11 +114869,25 @@
       <arglist>(float scale)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetPacketName</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>a90bf74750759ada7d7372b018d3d0be0</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>SetRessourceFile</name>
       <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
       <anchor>a374cca99fbd1e68ae63f8e34ddd233fa</anchor>
       <arglist>(const char *filename)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetSkeletonName</name>
+      <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
+      <anchor>ae19ab7a9bf4f03c53e0a79d85a5e343e</anchor>
+      <arglist>(const char *name)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -115847,6 +115854,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gabaa8db007441f85309f980402687ddb3</anchor>
       <arglist>(csSkeletalState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ConvertFrameSpace</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gacb275c7bb491ac0e8b4d408e986acd5c</anchor>
+      <arglist>(CS::Animation::iSkeletonFactory *skeleton)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ChannelID</type>
@@ -116992,34 +117006,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetAlwaysRotate</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
-      <anchor>aa8c147c8c5bd36f81718f87cbf62813e</anchor>
-      <arglist>(bool alwaysRotate)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBone</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
-      <anchor>a35b1955b45305fcd568e9b164b67378e</anchor>
-      <arglist>(BoneID boneID)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetListenerDelay</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
-      <anchor>aabeb6a514541bd625bf9f9549c784da2</anchor>
-      <arglist>(float delay)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaximumSpeed</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
-      <anchor>a2b03234ec8e7e90995cf14f7698c7962</anchor>
-      <arglist>(float speed)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetTarget</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
       <anchor>a20f22dfaf5db398793b70beb730311b4</anchor>
@@ -117060,10 +117046,45 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>SetAlwaysRotate</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>a345813e40f1358e96f701099093c79a8</anchor>
+      <arglist>(bool alwaysRotate)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>a7a2b3c61bab65f08b1c4871e0706446e</anchor>
+      <arglist>(iBodySkeleton *skeleton)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBone</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>ab77ad85ce8386b2155c1b64229930f74</anchor>
+      <arglist>(BoneID boneID)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetChildNode</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
       <anchor>aa1b9122dbe8108d2db082d7d39499547</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetListenerDelay</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>af3f89d4de68c0b80fb8b498f89f7e529</anchor>
+      <arglist>(float delay)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMaximumSpeed</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>a3c676acae6ee765afc7d737db07c64d1</anchor>
+      <arglist>(float speed)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -117081,8 +117102,8 @@
       <type>virtual iSkeletonLookAtNodeFactory *</type>
       <name>CreateAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
-      <anchor>a521b1b6ddaf73e2978762f55e9ff3b9b</anchor>
-      <arglist>(const char *name, iBodySkeleton *skeleton)=0</arglist>
+      <anchor>afcec434d414ae12ed7d32606cc3a23f3</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonLookAtNodeFactory *</type>
@@ -117436,13 +117457,6 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Animation::RetargetMode</type>
-      <name>GetRetargetMode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeFactory.html</anchorfile>
-      <anchor>aaa564af8e55c909acc8f99abb606f0c7</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveBodyChain</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeFactory.html</anchorfile>
@@ -117462,13 +117476,6 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeFactory.html</anchorfile>
       <anchor>a5ab5c9fac6acdb48893cf87e71b5c7e2</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRetargetMode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeFactory.html</anchorfile>
-      <anchor>a1ff31b8396959b4e5293e1ebf3bfd77e</anchor>
-      <arglist>(CS::Animation::RetargetMode mode)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117616,6 +117623,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>SetAnimationName</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>a2b8a152135a35a0d25a3136074a73d13</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetEndFrame</name>
       <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
       <anchor>aae0bd1dc5c6f7a38130985bbaa97c6c1</anchor>
@@ -117629,11 +117643,25 @@
       <arglist>(float scale)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPacketName</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>a512725527a00ab14e6c979b8bc0c1968</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>SetRessourceFile</name>
       <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
       <anchor>a7d904fb8c1fd404d91df6daaf1118f4a</anchor>
       <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSkeletonName</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>af59efb81afdc4eef5adcc68720aa25eb</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117647,10 +117675,10 @@
     <name>CS::Animation::MocapParserResult</name>
     <filename>structCS_1_1Animation_1_1MocapParserResult.html</filename>
     <member kind="variable">
-      <type>csRef&lt; CS::Animation::iSkeletonAnimPacketFactory &gt;</type>
+      <type>CS::Animation::iSkeletonAnimPacketFactory *</type>
       <name>animPacketFactory</name>
       <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
-      <anchor>aa2bf5565c580f6264f28449a4f45e99d</anchor>
+      <anchor>aa4ffbc3d7007eeaca5698d8ddc700033</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -117675,10 +117703,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csRef&lt; CS::Animation::iSkeletonFactory &gt;</type>
+      <type>CS::Animation::iSkeletonFactory *</type>
       <name>skeletonFactory</name>
       <anchorfile>structCS_1_1Animation_1_1MocapParserResult.html</anchorfile>
-      <anchor>a90cf126c4a128b86c240f642d54860f4</anchor>
+      <anchor>ab9e976ad25917af0f7f183e66b7ad3d7</anchor>
       <arglist></arglist>
     </member>
   </compound>
