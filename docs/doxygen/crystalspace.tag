@@ -23958,6 +23958,7 @@
     <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
+    <includes id="csutil_2objreg_8h" name="objreg.h" local="yes" imported="no">csutil/objreg.h</includes>
     <class kind="class">CS::Animation::BVHMocapParser</class>
     <class kind="class">CS::Animation::MocapParser</class>
     <class kind="struct">CS::Animation::MocapParserResult</class>
@@ -87535,6 +87536,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>AddJoint</name>
+      <anchorfile>structiDynamicSystem.html</anchorfile>
+      <anchor>a4431a0413f669151f2cfc91b96a41778</anchor>
+      <arglist>(iJoint *joint)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>AttachCollider</name>
       <anchorfile>structiDynamicSystem.html</anchorfile>
       <anchor>abd16f41cc92cba534dde08c84cd2275d</anchor>
@@ -116408,6 +116416,20 @@
     <filename>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</filename>
     <base>CS::Animation::iSkeletonAnimNodeFactory</base>
     <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonAnimNodeFactory *</type>
+      <name>GetChildNode</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a93d9bf151096685c2dbdd25447a6fb43</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual SkeletonDebugMode</type>
+      <name>GetDebugModes</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>ab9d34cab353ad714d8b9c5eb24a245b9</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetBoneMask</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
@@ -116875,6 +116897,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual CS::Animation::iBodySkeleton *</type>
+      <name>GetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
+      <anchor>ae4efda7e64e45c636ff6d4b5124d0209</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual CS::Animation::iSkeletonAnimNodeFactory *</type>
       <name>GetChildNode</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
@@ -116887,6 +116916,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
       <anchor>ada8d1d0342e8121e5e1a0a75a3e72b74</anchor>
       <arglist>(CS::Animation::EffectorID effector)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
+      <anchor>aec822870f2f0e3451bfa16d6bc6569f7</anchor>
+      <arglist>(CS::Animation::iBodySkeleton *skeleton)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -116911,8 +116947,8 @@
       <type>virtual iSkeletonIKNodeFactory *</type>
       <name>CreateAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
-      <anchor>a718853bf8f565da4ecef5887a87f7a2b</anchor>
-      <arglist>(const char *name, CS::Animation::iBodySkeleton *skeleton)=0</arglist>
+      <anchor>a50accb1f0a1920281d6c526e2f0e8f43</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonIKNodeFactory *</type>
@@ -117259,6 +117295,13 @@
       <arglist>(BoneID bone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iDynamicSystem *</type>
+      <name>GetDynamicSystem</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
+      <anchor>a5b8d40d52eeff67c58ddabb86c060ee8</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
       <name>GetRigidBodyBone</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
@@ -117278,6 +117321,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
       <anchor>ae1281b1cbe1a775e9d12cb9d7c82cc19</anchor>
       <arglist>(iBodyChain *chain, RagdollState state)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDynamicSystem</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode.html</anchorfile>
+      <anchor>a551bf638a3f1443cb638d63a2b26b3f8</anchor>
+      <arglist>(iDynamicSystem *system)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -117313,18 +117363,18 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iDynamicSystem *</type>
-      <name>GetDynamicSystem</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
-      <anchor>a4003df829ca7c1bb69f035075d2b8d0f</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveBodyChain</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
       <anchor>a66ce592ce66ec5475e9f30c72c62c57e</anchor>
       <arglist>(iBodyChain *chain)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBodySkeleton</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
+      <anchor>a86c3074a75f8aaed3056360b41291f95</anchor>
+      <arglist>(CS::Animation::iBodySkeleton *skeleton)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117349,8 +117399,8 @@
       <type>virtual iSkeletonRagdollNodeFactory *</type>
       <name>CreateAnimNodeFactory</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
-      <anchor>a898cc5f1d4898e19f90fff33411dfb2d</anchor>
-      <arglist>(const char *name, iBodySkeleton *skeleton, iDynamicSystem *dynSys)=0</arglist>
+      <anchor>a06115ce75f17e32561f949bffb3c11e5</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonRagdollNodeFactory *</type>
