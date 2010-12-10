@@ -22353,8 +22353,17 @@
     <includes id="sector_8h" name="sector.h" local="yes" imported="no">iengine/sector.h</includes>
     <class kind="class">CS::RenderManager::BeginFinishDrawScope</class>
     <class kind="class">CS::RenderManager::ContextTargetSetup</class>
+    <class kind="class">CS::RenderManager::RenderCommon</class>
     <class kind="class">CS::RenderManager::SimpleContextRender</class>
+    <class kind="class">CS::RenderManager::SimpleContextRenderByMesh</class>
     <class kind="class">CS::RenderManager::SimpleTreeRenderer</class>
+    <namespace>CS</namespace>
+    <namespace>CS::RenderManager</namespace>
+  </compound>
+  <compound kind="file">
+    <name>rendergroupinghandler.h</name>
+    <path>/tmp/tmp5/trunk/include/csplugincommon/rendermanager/</path>
+    <filename>rendergroupinghandler_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
@@ -28575,6 +28584,25 @@
     <class kind="struct">iEngine</class>
     <class kind="struct">iEngineFrameCallback</class>
     <class kind="struct">iEngineSectorCallback</class>
+    <namespace>CS</namespace>
+    <member kind="enumeration">
+      <name>RenderPriorityGrouping</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>rpgByLayer</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4abc4624523cd4189b3324938d1e596a6a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>rpgByMesh</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4ae6762fc4bbfde4e1306ddfb44547a649</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>csRenderPrioritySorting</name>
       <anchorfile>group__engine3d.html</anchorfile>
@@ -34669,6 +34697,7 @@
     <class kind="struct">iSharedVariable</class>
     <class kind="struct">iSharedVariableList</class>
     <class kind="struct">iSharedVariableListener</class>
+    <namespace>CS</namespace>
     <subgroup>engine3d_light</subgroup>
     <subgroup>engine3d_meshes</subgroup>
     <subgroup>engine3d_rloop</subgroup>
@@ -74931,6 +74960,13 @@
     <class kind="class">csRedBlackTreeMap::Iterator</class>
     <class kind="class">csRedBlackTreeMap::ReverseIterator</class>
     <member kind="function">
+      <type>void</type>
+      <name>Delete</name>
+      <anchorfile>classcsRedBlackTreeMap.html</anchorfile>
+      <anchor>a6122a692d69927ec25eb499a92f22058</anchor>
+      <arglist>(Iterator &amp;it)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>Delete</name>
       <anchorfile>classcsRedBlackTreeMap.html</anchorfile>
@@ -75081,6 +75117,20 @@
       <anchor>a5f661bb0917e74c0e4a02e4a049877c9</anchor>
       <arglist>(K &amp;key)</arglist>
     </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ConstIterator.html</anchorfile>
+      <anchor>a86e2f7ccbeb123e9e1f84df857fe3cd9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ConstIterator.html</anchorfile>
+      <anchor>ad59672f092ac8d6f9306f5021450f5a8</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
     <member kind="friend" protection="protected">
       <type>friend class</type>
       <name>csRedBlackTreeMap</name>
@@ -75113,6 +75163,20 @@
       <anchor>ace4878a799ac750c05f331d98ff6003b</anchor>
       <arglist>(K &amp;key)</arglist>
     </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ConstReverseIterator.html</anchorfile>
+      <anchor>a2db9b34810142b6dabd2ecb8370f0a40</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ConstReverseIterator.html</anchorfile>
+      <anchor>ac70b65618ad4ffcabfef431cf562ca25</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
     <member kind="friend" protection="protected">
       <type>friend class</type>
       <name>csRedBlackTreeMap</name>
@@ -75138,6 +75202,20 @@
       <anchor>a5040490461bd57d9fd90399d70dd5d78</anchor>
       <arglist>(K &amp;key)</arglist>
     </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1Iterator.html</anchorfile>
+      <anchor>a51286c283feff94857ceda820436e680</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1Iterator.html</anchorfile>
+      <anchor>a3a73cea693130eb044ef2f7d161dc108</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
     <member kind="friend" protection="protected">
       <type>friend class</type>
       <name>csRedBlackTreeMap</name>
@@ -75161,6 +75239,20 @@
       <name>Next</name>
       <anchorfile>classcsRedBlackTreeMap_1_1ReverseIterator.html</anchorfile>
       <anchor>a053775fc94ea26387d0ab74b2ddfde79</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ReverseIterator.html</anchorfile>
+      <anchor>ad7ffd77a1e8e6f16e3f4f9f570357b0c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>PeekNext</name>
+      <anchorfile>classcsRedBlackTreeMap_1_1ReverseIterator.html</anchorfile>
+      <anchor>a20e902d6ba32014bf96df529b476ad6d</anchor>
       <arglist>(K &amp;key)</arglist>
     </member>
     <member kind="friend" protection="protected">
@@ -88287,10 +88379,66 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>ClearRenderPriorities</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>ab7170c64726aa3e2bd0401fbc4a9b678</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>FireStartFrame</name>
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>a1831c5836a5fe21ad216a31d9b09a3e8</anchor>
       <arglist>(iRenderView *rview)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetAlphaRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>aa71300626b8622de9522e1cd7cad0a22</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetObjectRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>ae34923fd9665326c755e258ff381359d</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetPortalRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>afd889fe729ed5e0f80edb66b860d95de</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetRenderPriorityCount</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>aa54916c14e47a8d89a0c77fd704ce26a</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetRenderPriorityName</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>ad6007e95f96ec243e5f683b312e1fa4b</anchor>
+      <arglist>(CS::Graphics::RenderPriority priority) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetSkyRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a04b10ea7b60287c389c2db977932b72f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetWallRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a837b16e88b444971d1bc98dfda4cdd42</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
@@ -88368,97 +88516,6 @@
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>aafd8134db68980b21b38fc819eb16b5b</anchor>
       <arglist>(iEngineSectorCallback *cb)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearRenderPriorities</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>ab7170c64726aa3e2bd0401fbc4a9b678</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetAlphaRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>aa71300626b8622de9522e1cd7cad0a22</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetObjectRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>ae34923fd9665326c755e258ff381359d</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetPortalRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>afd889fe729ed5e0f80edb66b860d95de</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>ada64048947692b7cd38e265e2d55d184</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetRenderPriorityCount</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>aa54916c14e47a8d89a0c77fd704ce26a</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetRenderPriorityName</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>ad6007e95f96ec243e5f683b312e1fa4b</anchor>
-      <arglist>(CS::Graphics::RenderPriority priority) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRenderPrioritySorting</type>
-      <name>GetRenderPrioritySorting</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a00633e4eeae08d234a7c7d2e96e7ee5e</anchor>
-      <arglist>(CS::Graphics::RenderPriority priority) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRenderPrioritySorting</type>
-      <name>GetRenderPrioritySorting</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a56c311b104db1938bb17b2f8e5aa7129</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetSkyRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a04b10ea7b60287c389c2db977932b72f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetWallRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a837b16e88b444971d1bc98dfda4cdd42</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RegisterDefaultRenderPriorities</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a94860d03d6bf8280ed6102267e7ac4d3</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RegisterRenderPriority</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>ae149430c7507c369967f8ecae730108e</anchor>
-      <arglist>(const char *name, uint priority, csRenderPrioritySorting rendsort=CS_RENDPRI_SORT_NONE)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iMaterial &gt;</type>
@@ -89145,6 +89202,55 @@
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>a7aa606346f0d3bc9452e7123c0710084</anchor>
       <arglist>(iRenderManager *)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderPriority</type>
+      <name>GetRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>ada64048947692b7cd38e265e2d55d184</anchor>
+      <arglist>(const char *name) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::RenderPriorityGrouping</type>
+      <name>GetRenderPriorityGrouping</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a7a8f311d384da5e95b8344e4ab107a98</anchor>
+      <arglist>(CS::Graphics::RenderPriority priority) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::RenderPriorityGrouping</type>
+      <name>GetRenderPriorityGrouping</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a6a4e616eb3d0e575b59f5d1264019c4e</anchor>
+      <arglist>(const char *name) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csRenderPrioritySorting</type>
+      <name>GetRenderPrioritySorting</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a00633e4eeae08d234a7c7d2e96e7ee5e</anchor>
+      <arglist>(CS::Graphics::RenderPriority priority) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csRenderPrioritySorting</type>
+      <name>GetRenderPrioritySorting</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a56c311b104db1938bb17b2f8e5aa7129</anchor>
+      <arglist>(const char *name) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RegisterDefaultRenderPriorities</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a94860d03d6bf8280ed6102267e7ac4d3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RegisterRenderPriority</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a9ddb3dfb7bef13649d0f56056942a567</anchor>
+      <arglist>(const char *name, uint priority, csRenderPrioritySorting rendsort=CS_RENDPRI_SORT_NONE, CS::RenderPriorityGrouping grouping=CS::rpgByLayer)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -113183,6 +113289,24 @@
       <anchor>a83a7535624c75b4253ef98c021649e27</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <name>RenderPriorityGrouping</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>rpgByLayer</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4abc4624523cd4189b3324938d1e596a6a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>rpgByMesh</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a59af6d30527b23957e35cdd99fff3af4ae6762fc4bbfde4e1306ddfb44547a649</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>Fn &amp;</type>
       <name>ForEach</name>
@@ -125650,6 +125774,7 @@
     <class kind="class">CS::RenderManager::PostEffectLayersParser</class>
     <class kind="class">CS::RenderManager::PostEffectManager</class>
     <class kind="class">CS::RenderManager::PostEffectsSupport</class>
+    <class kind="class">CS::RenderManager::RenderCommon</class>
     <class kind="class">CS::RenderManager::RenderTree</class>
     <class kind="class">CS::RenderManager::RenderTreeBase</class>
     <class kind="class">CS::RenderManager::RenderTreeStandardTraits</class>
@@ -125662,6 +125787,7 @@
     <class kind="class">CS::RenderManager::ShadowPSSM</class>
     <class kind="class">CS::RenderManager::ShadowSettings</class>
     <class kind="class">CS::RenderManager::SimpleContextRender</class>
+    <class kind="class">CS::RenderManager::SimpleContextRenderByMesh</class>
     <class kind="class">CS::RenderManager::SimpleTreeRenderer</class>
     <class kind="class">CS::RenderManager::SingleMeshContextNumbering</class>
     <class kind="class">CS::RenderManager::SingleRenderLayer</class>
@@ -126820,6 +126946,11 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CS::RenderManager::RenderCommon</name>
+    <filename>classCS_1_1RenderManager_1_1RenderCommon.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
     <name>CS::RenderManager::RenderTree</name>
     <filename>classCS_1_1RenderManager_1_1RenderTree.html</filename>
     <templarg></templarg>
@@ -126827,6 +126958,13 @@
     <class kind="struct">CS::RenderManager::RenderTree::ContextNode</class>
     <class kind="struct">CS::RenderManager::RenderTree::MeshNode</class>
     <class kind="struct">CS::RenderManager::RenderTree::PersistentData</class>
+    <member kind="function">
+      <type>ContextNode *</type>
+      <name>CloneContext</name>
+      <anchorfile>classCS_1_1RenderManager_1_1RenderTree.html</anchorfile>
+      <anchor>ac6a4f27f3b8b2adfa4ea7ee8909af599</anchor>
+      <arglist>(ContextNode *context)</arglist>
+    </member>
     <member kind="function">
       <type>ContextNode *</type>
       <name>CreateContext</name>
@@ -126961,6 +127099,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>CS::RenderPriorityGrouping</type>
+      <name>renderGrouping</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1ContextNode.html</anchorfile>
+      <anchor>ac395ff43b47a3eadfb918eab04a82af8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>TargetTexture</type>
       <name>renderTargets</name>
       <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1ContextNode.html</anchorfile>
@@ -127065,6 +127210,13 @@
     <filename>structCS_1_1RenderManager_1_1RenderTree_1_1MeshNode.html</filename>
     <base>EBOptHelper&lt; TreeTraitsType::MeshNodeExtraDataType &gt;</base>
     <class kind="struct">CS::RenderManager::RenderTree::MeshNode::SingleMesh</class>
+    <member kind="function">
+      <type>ContextNode &amp;</type>
+      <name>GetOwner</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1MeshNode.html</anchorfile>
+      <anchor>a3e3c21252d444b66f022f7e017212544</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="variable">
       <type>TreeTraitsType::MeshNodeKeyType</type>
       <name>key</name>
@@ -127077,13 +127229,6 @@
       <name>meshes</name>
       <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1MeshNode.html</anchorfile>
       <anchor>ab0bf384b9a9f3266634fcfa1661780e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>ContextNode &amp;</type>
-      <name>owner</name>
-      <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1MeshNode.html</anchorfile>
-      <anchor>abe1ecac28c46774be102372bb53ad413</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -127991,6 +128136,13 @@
     <name>CS::RenderManager::SimpleContextRender</name>
     <filename>classCS_1_1RenderManager_1_1SimpleContextRender.html</filename>
     <templarg></templarg>
+    <base>CS::RenderManager::RenderCommon</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::RenderManager::SimpleContextRenderByMesh</name>
+    <filename>classCS_1_1RenderManager_1_1SimpleContextRenderByMesh.html</filename>
+    <templarg></templarg>
+    <base>CS::RenderManager::RenderCommon</base>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::SimpleTreeRenderer</name>
