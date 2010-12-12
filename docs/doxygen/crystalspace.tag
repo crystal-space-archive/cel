@@ -1453,6 +1453,7 @@
     <name>vertexlistwalker.h</name>
     <path>/tmp/tmp5/trunk/include/csgfx/</path>
     <filename>vertexlistwalker_8h</filename>
+    <includes id="csendian_8h" name="csendian.h" local="yes" imported="no">csutil/csendian.h</includes>
     <includes id="rbuflock_8h" name="rbuflock.h" local="yes" imported="no">cstool/rbuflock.h</includes>
     <class kind="class">csVertexListWalker</class>
   </compound>
@@ -30495,6 +30496,7 @@
     <includes id="imesh_2object_8h" name="object.h" local="yes" imported="no">imesh/object.h</includes>
     <class kind="struct">csLockedHeightData</class>
     <class kind="struct">csLockedMaterialMap</class>
+    <class kind="struct">csLockedNormalData</class>
     <class kind="struct">csTerrainColliderCollideSegmentResult</class>
     <class kind="struct">iTerrainCell</class>
     <class kind="struct">iTerrainCellCollisionProperties</class>
@@ -33941,6 +33943,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CS_BUFCOMP_HALF</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>gga2e793d8189bb8566ed81c168875f452baef17828da2bab62beb988704ec133361</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CS_BUFCOMP_NORMALIZED</name>
       <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>gga2e793d8189bb8566ed81c168875f452ba1c520a545fedccd2df0598a6fb005cdb</anchor>
@@ -34244,8 +34252,8 @@
       <type>static const size_t</type>
       <name>csRenderBufferComponentSizes</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga542a5dba96bc9616b5857070afe19ef0</anchor>
-      <arglist>[CS_BUFCOMP_TYPECOUNT]</arglist>
+      <anchor>ga7628fb4571baef0d00b1120abf842675</anchor>
+      <arglist>[CS_BUFCOMP_BASE_TYPECOUNT]</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -38823,6 +38831,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CS_BUFCOMP_HALF</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>gga2e793d8189bb8566ed81c168875f452baef17828da2bab62beb988704ec133361</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CS_BUFCOMP_NORMALIZED</name>
       <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>gga2e793d8189bb8566ed81c168875f452ba1c520a545fedccd2df0598a6fb005cdb</anchor>
@@ -39515,8 +39529,8 @@
       <type>static const size_t</type>
       <name>csRenderBufferComponentSizes</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga542a5dba96bc9616b5857070afe19ef0</anchor>
-      <arglist>[CS_BUFCOMP_TYPECOUNT]</arglist>
+      <anchor>ga7628fb4571baef0d00b1120abf842675</anchor>
+      <arglist>[CS_BUFCOMP_BASE_TYPECOUNT]</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -63961,6 +63975,20 @@
     <name>csIEEEfloat</name>
     <filename>structcsIEEEfloat.html</filename>
     <member kind="function" static="yes">
+      <type>static uint16</type>
+      <name>FromNativeRTZ</name>
+      <anchorfile>structcsIEEEfloat.html</anchorfile>
+      <anchor>a7255fa4b133a37abf613c3793f43a826</anchor>
+      <arglist>(float f)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static float</type>
+      <name>ToNative</name>
+      <anchorfile>structcsIEEEfloat.html</anchorfile>
+      <anchor>a76c831f6980ea7da97cc2a9961fd070a</anchor>
+      <arglist>(uint16 half)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static uint64</type>
       <name>FromNative</name>
       <anchorfile>structcsIEEEfloat.html</anchorfile>
@@ -67460,6 +67488,24 @@
       <name>pitch</name>
       <anchorfile>structcsLockedMaterialMap.html</anchorfile>
       <anchor>a07a66bf044b64b7c7136b252a53709ac</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>csLockedNormalData</name>
+    <filename>structcsLockedNormalData.html</filename>
+    <member kind="variable">
+      <type>csVector3 *</type>
+      <name>data</name>
+      <anchorfile>structcsLockedNormalData.html</anchorfile>
+      <anchor>ae2c3c47eb0069f5b1cbd9b7ab51ad6ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>pitch</name>
+      <anchorfile>structcsLockedNormalData.html</anchorfile>
+      <anchor>a423abdcdede934d2336129ecba4c22f0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -108666,6 +108712,13 @@
       <arglist>(int x, int y) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csLockedNormalData</type>
+      <name>GetNormalData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a3a3fd0cf3af7191f28b400b7cabca6d3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual const csVector2 &amp;</type>
       <name>GetPosition</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
@@ -108727,6 +108780,20 @@
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>a540a1f4680778ab24bf37360909a2651</anchor>
       <arglist>(const csRect &amp;rectangle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csLockedNormalData</type>
+      <name>LockNormalData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a87caaad0e1d81a97c51a771b492e7f84</anchor>
+      <arglist>(const csRect &amp;rectangle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RecalculateNormalData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a85d8c932c237649670478b52d77723d1</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -108803,6 +108870,13 @@
       <name>UnlockMaterialMap</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>afcf27017cb7b9c91d7117f8ca9ee39a1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>UnlockNormalData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a5a234335e1282e16d1453e7294dec9fc</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
@@ -108932,6 +109006,13 @@
       <name>SetMaterialMapSource</name>
       <anchorfile>structiTerrainCellFeederProperties.html</anchorfile>
       <anchor>ada8045c5669bbfc4bda2fb05f58cd9f8</anchor>
+      <arglist>(const char *source)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetNormalMapSource</name>
+      <anchorfile>structiTerrainCellFeederProperties.html</anchorfile>
+      <anchor>a606582c8ea02f67d34bf3c58322d7c64</anchor>
       <arglist>(const char *source)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
