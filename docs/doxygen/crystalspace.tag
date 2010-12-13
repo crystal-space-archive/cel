@@ -636,6 +636,34 @@
       <anchor>gac1760aed89ed0cc61c40d2826ab21c2c</anchor>
       <arglist>(float f)</arglist>
     </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsFinite</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>acde9e5ab9adccf1e316d40ce0d6de205</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsFinite</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a46446f81c4ba39b205d485ff0277eb67</anchor>
+      <arglist>(float f)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a385295be5f7f1997d1054ba678673dc0</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a680111cfbcf5692e3dbe692d553e0284</anchor>
+      <arglist>(float f)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>math2d.h</name>
@@ -49158,29 +49186,29 @@
       <type>virtual const char *</type>
       <name>GetAttributeValue</name>
       <anchorfile>classcsDocumentNodeCommon.html</anchorfile>
-      <anchor>ae40ab312fa6cafc72939f0f021bed5cb</anchor>
-      <arglist>(const char *name)</arglist>
+      <anchor>acc2b6c89c96efa58407777785bf378ad</anchor>
+      <arglist>(const char *name, const char *defaultValue=0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>GetAttributeValueAsBool</name>
       <anchorfile>classcsDocumentNodeCommon.html</anchorfile>
-      <anchor>a4983a241756a0ba6256d7f40b2f79d17</anchor>
-      <arglist>(const char *name, bool defaultvalue=false)</arglist>
+      <anchor>a6fca17068a2b213e718c82fc9a21b41b</anchor>
+      <arglist>(const char *name, bool defaultValue=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual float</type>
       <name>GetAttributeValueAsFloat</name>
       <anchorfile>classcsDocumentNodeCommon.html</anchorfile>
-      <anchor>a40f1100c8d06a96160c02d496b7bf700</anchor>
-      <arglist>(const char *name)</arglist>
+      <anchor>a7ad6d51535b980767ca506b7b9f64ebe</anchor>
+      <arglist>(const char *name, float defaultValue=0.0f)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual int</type>
       <name>GetAttributeValueAsInt</name>
       <anchorfile>classcsDocumentNodeCommon.html</anchorfile>
-      <anchor>a8d5cae0d92878e97df8d937baa832da9</anchor>
-      <arglist>(const char *name)</arglist>
+      <anchor>a1b8ecb7fe5d933ea817f0455eeaedbe5</anchor>
+      <arglist>(const char *name, int defaultValue=0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
@@ -87106,29 +87134,29 @@
       <type>virtual const char *</type>
       <name>GetAttributeValue</name>
       <anchorfile>structiDocumentNode.html</anchorfile>
-      <anchor>a41651de583fb1c5956450c4c9664482b</anchor>
-      <arglist>(const char *name)=0</arglist>
+      <anchor>a7a0e37569c647aeaaae22f52c078a411</anchor>
+      <arglist>(const char *name, const char *defaultValue=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>GetAttributeValueAsBool</name>
       <anchorfile>structiDocumentNode.html</anchorfile>
-      <anchor>a69940b2e70c1d09ca2078eb3e66b7e0c</anchor>
-      <arglist>(const char *name, bool defaultvalue=false)=0</arglist>
+      <anchor>a1bbcb5721a0095d8b60a202dad689f7f</anchor>
+      <arglist>(const char *name, bool defaultValue=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetAttributeValueAsFloat</name>
       <anchorfile>structiDocumentNode.html</anchorfile>
-      <anchor>a29e14141c0a083af47a93742e8a9dab7</anchor>
-      <arglist>(const char *name)=0</arglist>
+      <anchor>a8deaefc7954a46c391d319a5d0490f29</anchor>
+      <arglist>(const char *name, float defaultValue=0.0f)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>
       <name>GetAttributeValueAsInt</name>
       <anchorfile>structiDocumentNode.html</anchorfile>
-      <anchor>a62a20d58cbceb33904990ac32d60bf99</anchor>
-      <arglist>(const char *name)=0</arglist>
+      <anchor>ab48b1be64fac654bf2324831990cdca8</anchor>
+      <arglist>(const char *name, int defaultValue=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
@@ -92951,13 +92979,6 @@
       <anchorfile>structiImageIO.html</anchorfile>
       <anchor>a51941798545ffe384889a16f7cee9c1e</anchor>
       <arglist>(iImage *image, FileFormatDescription *format, const char *extraoptions=0)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDithering</name>
-      <anchorfile>structiImageIO.html</anchorfile>
-      <anchor>a60fb5f7b069dac4534465ad07eb82efd</anchor>
-      <arglist>(bool iEnable)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -108580,6 +108601,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iMaterialWrapper *</type>
+      <name>GetAlphaSplatMaterial</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a396ce393aec67cb99339091bc45c7ea5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iMaterialWrapper *</type>
       <name>GetBaseMaterial</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>a7c3429378a4d15538aba42ddf1e069ec</anchor>
@@ -108801,6 +108829,13 @@
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>a1b6a3ea58468ceb4b6de55977d172802</anchor>
       <arglist>(iMaterialWrapper *material, iImage *alphaMap)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAlphaSplatMaterial</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>aeaa12c49389877b590ba95f943162645</anchor>
+      <arglist>(iMaterialWrapper *material)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -109372,6 +109407,13 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual iMaterialWrapper *</type>
+      <name>GetAlphaSplatMaterial</name>
+      <anchorfile>structiTerrainFactoryCell.html</anchorfile>
+      <anchor>ab92781978c6a26929d7705a9afc1e85a</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iMaterialWrapper *</type>
       <name>GetBaseMaterial</name>
       <anchorfile>structiTerrainFactoryCell.html</anchorfile>
       <anchor>a4d60c9aadcc419f30f51fba206e032ea</anchor>
@@ -109453,6 +109495,13 @@
       <anchorfile>structiTerrainFactoryCell.html</anchorfile>
       <anchor>a7e3a08e162f7bdefc5445b15329f27d4</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAlphaSplatMaterial</name>
+      <anchorfile>structiTerrainFactoryCell.html</anchorfile>
+      <anchor>a1104b7a18171b47fde96cab6fc9f477a</anchor>
+      <arglist>(iMaterialWrapper *material)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -113485,6 +113534,34 @@
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a13c0bf5c66dc07cb3c8109c64832fb48</anchor>
       <arglist>(T &amp;a, T &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsFinite</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>acde9e5ab9adccf1e316d40ce0d6de205</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsFinite</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a46446f81c4ba39b205d485ff0277eb67</anchor>
+      <arglist>(float f)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a385295be5f7f1997d1054ba678673dc0</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a680111cfbcf5692e3dbe692d553e0284</anchor>
+      <arglist>(float f)</arglist>
     </member>
     <member kind="variable">
       <type>ShaderVarStringID const</type>
