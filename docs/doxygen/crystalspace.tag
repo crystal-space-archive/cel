@@ -92256,27 +92256,6 @@
       <arglist>(size_t numVertices, const csVector2 *vertices, const csPlane3 &amp;normal, csFlags flags)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OQInitQueries</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>a69bdb39f630168e10edf9ede317544a4</anchor>
-      <arglist>(unsigned int *queries, int num_queries)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>OQIsVisible</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>add78692b223dbef165047332486b55fe</anchor>
-      <arglist>(unsigned int occlusion_query, unsigned int sampleLimit=0)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>OQueryFinished</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>a65f69595c9ee6f2e15c5089cf85670de</anchor>
-      <arglist>(unsigned int occlusion_query)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>PerformExtension</name>
       <anchorfile>structiGraphics3D.html</anchorfile>
@@ -92429,6 +92408,48 @@
       <anchorfile>structiGraphics3D.html</anchorfile>
       <anchor>a77b608c15acfc295466268922347f4bc</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQBeginQuery</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>aec331268788942ceca8b10402460129b</anchor>
+      <arglist>(unsigned int occlusion_query)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQDelQueries</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>adbfc4a4241cf1ae570029d6b291bbd2b</anchor>
+      <arglist>(unsigned int *queries, int num_queries)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQEndQuery</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>aae606fe589052b7cad0e7b021438204c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQInitQueries</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a69bdb39f630168e10edf9ede317544a4</anchor>
+      <arglist>(unsigned int *queries, int num_queries)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>OQIsVisible</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>add78692b223dbef165047332486b55fe</anchor>
+      <arglist>(unsigned int occlusion_query, unsigned int sampleLimit=0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>OQueryFinished</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a65f69595c9ee6f2e15c5089cf85670de</anchor>
+      <arglist>(unsigned int occlusion_query)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -117307,6 +117328,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
       <anchor>a426a35e21e7f7bd2b89fd105ccf03d5a</anchor>
       <arglist>(iSkeletonLookAtListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasTarget</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNode.html</anchorfile>
+      <anchor>a3917279aca4f9b9f6e333b3941be241a</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
