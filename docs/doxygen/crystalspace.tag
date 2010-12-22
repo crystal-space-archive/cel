@@ -79391,10 +79391,10 @@
       <arglist>(const csStringBase &amp;Str, size_t Count=(size_t)-1)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>csStringBase &amp;</type>
       <name>ReplaceAll</name>
       <anchorfile>classcsStringBase.html</anchorfile>
-      <anchor>a5fb9de53fd9334313112e57cc9158074</anchor>
+      <anchor>ae0b9728b3a6717e14a09de265e0033c3</anchor>
       <arglist>(const char *search, const char *replacement)</arglist>
     </member>
     <member kind="function">
