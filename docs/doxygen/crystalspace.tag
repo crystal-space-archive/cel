@@ -1718,6 +1718,7 @@
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
     <includes id="cfgacc_8h" name="cfgacc.h" local="yes" imported="no">csutil/cfgacc.h</includes>
+    <includes id="stringquote_8h" name="stringquote.h" local="yes" imported="no">csutil/stringquote.h</includes>
     <includes id="openglinterface_8h" name="openglinterface.h" local="yes" imported="no">csplugincommon/iopengl/openglinterface.h</includes>
     <class kind="struct">csGLExtensionFlags</class>
     <class kind="struct">csGLExtensionFunctions</class>
@@ -29798,6 +29799,7 @@
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <includes id="stringquote_8h" name="stringquote.h" local="yes" imported="no">csutil/stringquote.h</includes>
     <class kind="struct">CS::Animation::BoneMapping</class>
     <class kind="struct">CS::Animation::iSkeletonRetargetNode</class>
     <class kind="struct">CS::Animation::iSkeletonRetargetNodeFactory</class>
@@ -31912,6 +31914,7 @@
     <path>/tmp/tmp5/trunk/include/iutil/</path>
     <filename>plugin_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="stringquote_8h" name="stringquote.h" local="yes" imported="no">csutil/stringquote.h</includes>
     <includes id="comp_8h" name="comp.h" local="yes" imported="no">iutil/comp.h</includes>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
