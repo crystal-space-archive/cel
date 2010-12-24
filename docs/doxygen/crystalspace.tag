@@ -23510,6 +23510,7 @@
     <includes id="common__handlers_8h" name="common_handlers.h" local="yes" imported="no">csutil/common_handlers.h</includes>
     <includes id="csbaseeventh_8h" name="csbaseeventh.h" local="yes" imported="no">csutil/csbaseeventh.h</includes>
     <includes id="csutil_2event_8h" name="event.h" local="yes" imported="no">csutil/event.h</includes>
+    <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
     <includes id="scenenode_8h" name="scenenode.h" local="yes" imported="no">iengine/scenenode.h</includes>
@@ -23529,6 +23530,13 @@
     <class kind="class">CS::Demo::HUDHelper</class>
     <namespace>CS</namespace>
     <namespace>CS::Demo</namespace>
+    <member kind="typedef">
+      <type>size_t</type>
+      <name>CommandLineBlockID</name>
+      <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
+      <anchor>a90290f0c5fb2ad06d5c53bde0b32ec7b</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>CameraMode</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
@@ -118298,6 +118306,13 @@
     <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
     <class kind="class">CS::Demo::HUDHelper</class>
+    <member kind="typedef">
+      <type>size_t</type>
+      <name>CommandLineBlockID</name>
+      <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
+      <anchor>a90290f0c5fb2ad06d5c53bde0b32ec7b</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>CameraMode</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
@@ -118354,10 +118369,24 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>float</type>
+      <name>GetMotionSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
+      <anchor>ac3ec44daa9c2033b0c6af04a942b53ff</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>GetMouseMoveEnabled</name>
       <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
       <anchor>a634015b93cfafcfbf59edcde788c07f3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>GetRotationSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
+      <anchor>a75ea73190966688b408f1c268f0e8f89</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -118404,10 +118433,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetMotionSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
+      <anchor>a64a11bc57dea3c0c317136900d71db9d</anchor>
+      <arglist>(float speed)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetMouseMoveEnabled</name>
       <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
       <anchor>a9b4e4eb8d94f8031189aff6e2d21a9b8</anchor>
       <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetRotationSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
+      <anchor>a329f8e97342da69e136ddaa3386b8b56</anchor>
+      <arglist>(float speed)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -118439,11 +118482,18 @@
     <name>CS::Demo::CommandLineHelper</name>
     <filename>classCS_1_1Demo_1_1CommandLineHelper.html</filename>
     <member kind="function">
+      <type>CommandLineBlockID</type>
+      <name>AddCommandLineBlock</name>
+      <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
+      <anchor>a08f00d27756845e97fc201c306a99315</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>AddCommandLineOption</name>
       <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
-      <anchor>acaaaa6d46dd39f8391681aa44e539b5c</anchor>
-      <arglist>(const char *option, const char *description)</arglist>
+      <anchor>afe6bae2a04d514639e6d51289108912f</anchor>
+      <arglist>(const char *option, const char *description, CommandLineBlockID block=0)</arglist>
     </member>
     <member kind="function">
       <type></type>
