@@ -28053,6 +28053,7 @@
     <name>typetraits.h</name>
     <path>/tmp/tmp5/trunk/include/csutil/</path>
     <filename>typetraits_8h</filename>
+    <class kind="struct">CS::Meta::IsBaseOf</class>
     <class kind="struct">CS::Meta::IsReference</class>
     <class kind="struct">CS::Meta::IsSame</class>
     <class kind="struct">CS::Meta::Implementation::NoType</class>
@@ -121868,6 +121869,7 @@
     <class kind="struct">CS::Meta::AlignmentOf</class>
     <class kind="struct">CS::Meta::AlignSize</class>
     <class kind="struct">CS::Meta::EBOptHelper</class>
+    <class kind="struct">CS::Meta::IsBaseOf</class>
     <class kind="struct">CS::Meta::IsLog2</class>
     <class kind="struct">CS::Meta::IsReference</class>
     <class kind="struct">CS::Meta::IsSame</class>
@@ -121890,6 +121892,12 @@
     <name>CS::Meta::EBOptHelper</name>
     <filename>structCS_1_1Meta_1_1EBOptHelper.html</filename>
     <templarg>T</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Meta::IsBaseOf</name>
+    <filename>structCS_1_1Meta_1_1IsBaseOf.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
     <name>CS::Meta::IsLog2</name>
