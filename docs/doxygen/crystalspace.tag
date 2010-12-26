@@ -62997,6 +62997,20 @@
       <arglist>(int id, csVariant *value)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetWindowTransparent</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a343668178525bd8418d2d4881c358321</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsWindowTransparencyAvailable</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a363ef016eed9b2f231874a26dfb440d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>SetIcon</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
@@ -63016,6 +63030,13 @@
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>ad7253c856a1d71f426d9417c84966593</anchor>
       <arglist>(const char *title)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetWindowTransparent</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a8c98dd166162710dc19ffaadc43d70e9</anchor>
+      <arglist>(bool transparent)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>int</type>
@@ -96680,6 +96701,27 @@
       <anchorfile>structiNativeWindow.html</anchorfile>
       <anchor>adca3a8eab6088628f51d68e6487f8092</anchor>
       <arglist>(const char *title)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetWindowTransparent</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a43cf50f1c305c832d12f83a1ce842875</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsWindowTransparencyAvailable</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a19b89d060147f4b565d4667e329aa5b8</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetWindowTransparent</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>af792325559e63b0a65e4d88317818551</anchor>
+      <arglist>(bool transparent)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
