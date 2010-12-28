@@ -118084,6 +118084,13 @@
       <anchor>a202eb57fac973975b302134cab34f299</anchor>
       <arglist>(size_t frame)=0</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MocapParser</name>
+      <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
+      <anchor>aa7a87dc4c2865adc675398e6910d199f</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::MocapParserResult</name>
