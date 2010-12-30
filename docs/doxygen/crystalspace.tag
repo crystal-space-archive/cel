@@ -24395,8 +24395,9 @@
     <filename>vertexcompress_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
+    <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
-    <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
+    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <class kind="struct">csCompressVertexInfo</class>
     <class kind="class">csVertexCompressor</class>
   </compound>
@@ -50513,17 +50514,17 @@
       <arglist>(csHandlerID id)</arglist>
     </member>
     <member kind="function">
-      <type>bool const</type>
+      <type>bool</type>
       <name>IsInstance</name>
       <anchorfile>classcsEventHandlerRegistry.html</anchorfile>
-      <anchor>a989bbe3abaedec3af0563a262b66de38</anchor>
+      <anchor>a09c4c15ce61dc4e88aefffff19e50441</anchor>
       <arglist>(csHandlerID id)</arglist>
     </member>
     <member kind="function">
-      <type>bool const</type>
+      <type>bool</type>
       <name>IsInstanceOf</name>
       <anchorfile>classcsEventHandlerRegistry.html</anchorfile>
-      <anchor>ab702c3d93cea03a437c8249e1b2eb891</anchor>
+      <anchor>abb4257fca42cb8f63c0a3bb7d8372844</anchor>
       <arglist>(csHandlerID instanceid, csHandlerID genericid)</arglist>
     </member>
     <member kind="function">
@@ -82920,6 +82921,13 @@
     <name>csVertexCompressor</name>
     <filename>classcsVertexCompressor.html</filename>
     <member kind="function" static="yes">
+      <type>static size_t *</type>
+      <name>Compress</name>
+      <anchorfile>classcsVertexCompressor.html</anchorfile>
+      <anchor>a58f4e9f179c120f98801f9a26659bd05</anchor>
+      <arglist>(csRef&lt; iRenderBuffer &gt; *buffers, size_t numBuffers, size_t &amp;newCount)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static csCompressVertexInfo *</type>
       <name>Compress</name>
       <anchorfile>classcsVertexCompressor.html</anchorfile>
@@ -90049,17 +90057,17 @@
       <arglist>(csHandlerID id)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool const</type>
+      <type>virtual bool</type>
       <name>IsInstance</name>
       <anchorfile>structiEventHandlerRegistry.html</anchorfile>
-      <anchor>a809449b16476a08f1a979af2dee46f5f</anchor>
+      <anchor>aecbc2a1ce4aea21531ab775a80434723</anchor>
       <arglist>(csHandlerID id)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool const</type>
+      <type>virtual bool</type>
       <name>IsInstanceOf</name>
       <anchorfile>structiEventHandlerRegistry.html</anchorfile>
-      <anchor>aa9ba543b263b24842e4741e676c292bf</anchor>
+      <anchor>ab4fb7985fe206680520e4929e2c701dd</anchor>
       <arglist>(csHandlerID instanceid, csHandlerID genericid)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
