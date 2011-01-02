@@ -22868,6 +22868,8 @@
     <filename>customcursor_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">csutil/refcount.h</includes>
+    <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
     <class kind="class">csWin32CustomCursors</class>
   </compound>
@@ -32690,6 +32692,7 @@
     <filename>xwindow_8h</filename>
     <includes id="cursor_8h" name="cursor.h" local="yes" imported="no">ivideo/cursor.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
+    <includes id="csplugincommon_2canvas_2graph2d_8h" name="graph2d.h" local="yes" imported="no">csplugincommon/canvas/graph2d.h</includes>
     <class kind="struct">iXWindow</class>
   </compound>
   <compound kind="file">
@@ -62507,6 +62510,30 @@
     <name>csGraphics2D</name>
     <filename>classcsGraphics2D.html</filename>
     <base>scfImplementation7&lt; csGraphics2D, iGraphics2D, iComponent, iNativeWindow, iNativeWindowManager, iPluginConfig, iDebugHelper, iEventHandler &gt;</base>
+    <member kind="enumeration">
+      <name>HWMouseMode</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab0e320b8834cd8dc6b196225fc83df87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>hwmcOff</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab0e320b8834cd8dc6b196225fc83df87a60ed328877728ab7dec17483cba85916</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>hwmcOn</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab0e320b8834cd8dc6b196225fc83df87a49fe42dbd845026026127cda942ff561</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>hwmcRGBAOnly</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab0e320b8834cd8dc6b196225fc83df87ab35d20a49013ac3e4e7c98d145894693</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>AllowResize</name>
@@ -62999,6 +63026,13 @@
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
+      <name>GetWindowDecoration</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a583220865aa4eb16e4ea720a52e998e5</anchor>
+      <arglist>(WindowDecoration decoration)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
       <name>GetWindowTransparent</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>a343668178525bd8418d2d4881c358321</anchor>
@@ -63031,6 +63065,13 @@
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>ad7253c856a1d71f426d9417c84966593</anchor>
       <arglist>(const char *title)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetWindowDecoration</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ab0e614349f27dd391d82bb339327c35b</anchor>
+      <arglist>(WindowDecoration decoration, bool flag)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -83395,6 +83436,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>uint</type>
+      <name>GetHash</name>
+      <anchorfile>classcsWeakRef.html</anchorfile>
+      <anchor>af1f6fe1269a21b6cbbe58461eaf5f1d9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
@@ -96689,6 +96737,31 @@
     <name>iNativeWindow</name>
     <filename>structiNativeWindow.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="enumeration">
+      <name>WindowDecoration</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a960430e15fc4e95128d35ba49af073a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>decoCaption</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a960430e15fc4e95128d35ba49af073a7a32253f04d10ef5c7f54565bbddc3b37b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>decoClientFrame</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a960430e15fc4e95128d35ba49af073a7a59aefede31f37cec5c89b0136c29e7a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetWindowDecoration</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a8fb1d0c44afaf82b6fe35dc5ec5794d7</anchor>
+      <arglist>(WindowDecoration decoration)=0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetIcon</name>
@@ -96709,6 +96782,13 @@
       <anchorfile>structiNativeWindow.html</anchorfile>
       <anchor>adca3a8eab6088628f51d68e6487f8092</anchor>
       <arglist>(const char *title)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetWindowDecoration</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>aece56918511e63688dcbf2a7ed272968</anchor>
+      <arglist>(WindowDecoration decoration, bool flag)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -118158,6 +118238,7 @@
     <class kind="class">CS::Container::RedBlackTreeOrderingPartial</class>
     <class kind="class">CS::Container::RedBlackTreeOrderingStrictWeak</class>
     <class kind="class">CS::Container::RedBlackTreeOrderingTotal</class>
+    <class kind="class">CS::Container::WeakKeyedHash</class>
   </compound>
   <compound kind="struct">
     <name>CS::Container::DefaultRedBlackTreeAllocator</name>
@@ -118195,6 +118276,111 @@
     <filename>classCS_1_1Container_1_1RedBlackTreeOrderingTotal.html</filename>
     <templarg></templarg>
     <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>CS::Container::WeakKeyedHash</name>
+    <filename>classCS_1_1Container_1_1WeakKeyedHash.html</filename>
+    <templarg>T</templarg>
+    <templarg>K</templarg>
+    <templarg>ArrayMemoryAlloc</templarg>
+    <templarg>ArrayElementHandler</templarg>
+    <base protection="protected">csHash</base>
+    <class kind="class">CS::Container::WeakKeyedHash::GlobalIterator</class>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>Get</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>a4f027aba9b550f68d58e93cb0a3674f0</anchor>
+      <arglist>(const K &amp;key, const T &amp;fallback)</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalIterator</type>
+      <name>GetIterator</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>accc994213937ab45daaca997ed52bb24</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>Put</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>aff49f813940fa73001c0972d24371a8a</anchor>
+      <arglist>(const K &amp;key, const T &amp;value)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Container::WeakKeyedHash::GlobalIterator</name>
+    <filename>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Advance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a10275289c3d932308e6295b051709f4c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GlobalIterator</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>ae716c82d0b867124a4364ddc4e3bbacd</anchor>
+      <arglist>(const GlobalIterator &amp;o)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>HasNext</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>ae45ecdac00198113bf7caacb0a86682d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>Next</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a8db0b7fd5f81653863d2717a3522bb8b</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>Next</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>ac14effaed1ede79a8117eed3cbf7ad89</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>NextNoAdvance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a5a88cbae062a0da3353d579dc915f543</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>NextNoAdvance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a8f6e965fa2e95c36f0bc9653c1507a2d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const csTuple2&lt; T, K &gt;</type>
+      <name>NextTuple</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a23fa24915534aa0ec698cdc5269f3aa0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>GlobalIterator &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a4a7676e291a7b6629ec4b19e8fe773be</anchor>
+      <arglist>(const GlobalIterator &amp;o)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a22b721f82dea4d90ff9091c120968490</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Debug</name>
