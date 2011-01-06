@@ -652,6 +652,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsFinite_ext</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a7b8ce1e5080bf71870edf9cd14948e57</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsNaN</name>
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a385295be5f7f1997d1054ba678673dc0</anchor>
@@ -663,6 +670,13 @@
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a680111cfbcf5692e3dbe692d553e0284</anchor>
       <arglist>(float f)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN_ext</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a2bdfd7b878cd520eac8951e38eb72f27</anchor>
+      <arglist>(double d)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -113714,6 +113728,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsFinite_ext</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a7b8ce1e5080bf71870edf9cd14948e57</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsNaN</name>
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a385295be5f7f1997d1054ba678673dc0</anchor>
@@ -113725,6 +113746,13 @@
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a680111cfbcf5692e3dbe692d553e0284</anchor>
       <arglist>(float f)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNaN_ext</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a2bdfd7b878cd520eac8951e38eb72f27</anchor>
+      <arglist>(double d)</arglist>
     </member>
     <member kind="variable">
       <type>ShaderVarStringID const</type>
