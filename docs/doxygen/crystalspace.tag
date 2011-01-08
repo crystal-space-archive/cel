@@ -81916,10 +81916,24 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>InverseNorm</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a59285beb6f81447e9ea21d49bf3168ff</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>IsLeft</name>
       <anchorfile>classcsVector2.html</anchorfile>
       <anchor>accd1660dbfd74db06e899e7e319986ca</anchor>
       <arglist>(const csVector2 &amp;p0, const csVector2 &amp;p1)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsZero</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a628139c0e96b88234d996a8b0ba09d39</anchor>
+      <arglist>(float precision=SMALL_EPSILON) const </arglist>
     </member>
     <member kind="function">
       <type>float</type>
@@ -81927,6 +81941,13 @@
       <anchorfile>classcsVector2.html</anchorfile>
       <anchor>ab1caf357679e56082126fd66bdf15ac4</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Normalize</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a2fd65c1787c680f797e93844d63164b2</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>csVector2 &amp;</type>
@@ -82026,12 +82047,33 @@
       <anchor>a75d5837b69e0c167b22c3f9309ee5177</anchor>
       <arglist>() const </arglist>
     </member>
+    <member kind="function">
+      <type>csVector2</type>
+      <name>Unit</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a8ee9262a13dc0e305b99d6f69157df84</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector2</type>
+      <name>UnitAxisClamped</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>ae1813ed1899ab0b00cebae7c76cca704</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static float</type>
       <name>Norm</name>
       <anchorfile>classcsVector2.html</anchorfile>
       <anchor>a5fd419d758e521c6a94337b85a1ede70</anchor>
       <arglist>(csVector2 const &amp;v)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csVector2</type>
+      <name>Unit</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a62a654e25edfc18eb57d52eb5f6ec256</anchor>
+      <arglist>(const csVector2 &amp;v)</arglist>
     </member>
     <member kind="variable">
       <type>float</type>
@@ -82183,6 +82225,13 @@
       <anchorfile>classcsVector3.html</anchorfile>
       <anchor>ade7ba33200ebce17f6f3d9619ed06ec4</anchor>
       <arglist>(float *v)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>InverseNorm</name>
+      <anchorfile>classcsVector3.html</anchorfile>
+      <anchor>a1f4b1ff99a766110f51ba880426ad4d2</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -82639,6 +82688,13 @@
       <anchorfile>classcsVector4T.html</anchorfile>
       <anchor>a90e16d37e3c9d87468ccc474bd250ecb</anchor>
       <arglist>(T *v)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>InverseNorm</name>
+      <anchorfile>classcsVector4T.html</anchorfile>
+      <anchor>af05eff217addcbbb7867c7bd4be24725</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -108952,6 +109008,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iMaterialWrapper *</type>
+      <name>GetSplatBaseMaterial</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>af316af4acff718436999ed1d1a14fc5e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetTangent</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
@@ -109069,6 +109132,13 @@
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>a00db839d25f9580cdedeb3db4b192dd7</anchor>
       <arglist>(csRefCount *data)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSplatBaseMaterial</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a7e072129ec4db7e69bc29224c41ea75d</anchor>
+      <arglist>(iMaterialWrapper *material)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -109674,6 +109744,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iMaterialWrapper *</type>
+      <name>GetSplatBaseMaterial</name>
+      <anchorfile>structiTerrainFactoryCell.html</anchorfile>
+      <anchor>ad0229adbca8ec3671090653d06ee5279</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAlphaSplatMaterial</name>
       <anchorfile>structiTerrainFactoryCell.html</anchorfile>
@@ -109742,6 +109819,13 @@
       <anchorfile>structiTerrainFactoryCell.html</anchorfile>
       <anchor>a2b031ee767588e478b0ad89f17a7d402</anchor>
       <arglist>(const csVector3 &amp;size)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSplatBaseMaterial</name>
+      <anchorfile>structiTerrainFactoryCell.html</anchorfile>
+      <anchor>a097d655f359d6d472a3cd3d354d64793</anchor>
+      <arglist>(iMaterialWrapper *material)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
