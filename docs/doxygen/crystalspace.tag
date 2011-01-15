@@ -25992,6 +25992,13 @@
       <arglist>(iDocumentNode *node)</arglist>
     </member>
     <member kind="function">
+      <type>csPtr&lt; iDocument &gt;</type>
+      <name>MakeChangeable</name>
+      <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
+      <anchor>a487f04e94c08140f3b092183e9b270eb</anchor>
+      <arglist>(iDocument *doc, iDocumentSystem *docsys)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>RemoveDuplicateChildren</name>
       <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
@@ -26004,6 +26011,13 @@
       <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
       <anchor>a199bcaf1c3633528478ec368130dccfc</anchor>
       <arglist>(iDocumentNode *rootNode, T eq)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetContentsValue</name>
+      <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
+      <anchor>a5ca2a28bf8e61d96c5d13cbaedbc22fc</anchor>
+      <arglist>(iDocumentNode *node, const char *contents)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -119184,6 +119198,13 @@
       <arglist>(iDocumentNode *node)</arglist>
     </member>
     <member kind="function">
+      <type>csPtr&lt; iDocument &gt;</type>
+      <name>MakeChangeable</name>
+      <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
+      <anchor>a487f04e94c08140f3b092183e9b270eb</anchor>
+      <arglist>(iDocument *doc, iDocumentSystem *docsys)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>RemoveDuplicateChildren</name>
       <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
@@ -119196,6 +119217,13 @@
       <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
       <anchor>a199bcaf1c3633528478ec368130dccfc</anchor>
       <arglist>(iDocumentNode *rootNode, T eq)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetContentsValue</name>
+      <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
+      <anchor>a5ca2a28bf8e61d96c5d13cbaedbc22fc</anchor>
+      <arglist>(iDocumentNode *node, const char *contents)</arglist>
     </member>
   </compound>
   <compound kind="struct">
