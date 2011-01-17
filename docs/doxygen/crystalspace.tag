@@ -27750,8 +27750,16 @@
     <name>stringconv.h</name>
     <path>/tmp/tmp5/trunk/include/csutil/</path>
     <filename>stringconv_8h</filename>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
+    <member kind="function">
+      <type>csString</type>
+      <name>ftostr</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>a7bbea843bc424a7c5e182267be65482d</anchor>
+      <arglist>(float f)</arglist>
+    </member>
     <member kind="function">
       <type>float</type>
       <name>strtof</name>
@@ -108875,6 +108883,13 @@
       <arglist>(int x, int y) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csLockedNormalData</type>
+      <name>GetBitangentData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a98303456eedc21179bff6703f294f91f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csRefCount *</type>
       <name>GetCollisionData</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
@@ -109041,6 +109056,13 @@
       <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>a89b68fd320df14e81f906aed8a51cf66</anchor>
       <arglist>(int x, int y) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csLockedNormalData</type>
+      <name>GetTangentData</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>a191df60aad268a61c092ce635be19307</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iTerrainSystem *</type>
@@ -130306,6 +130328,13 @@
     <class kind="class">CS::Utility::StringSet</class>
     <class kind="class">CS::Utility::VfsHierarchicalCache</class>
     <class kind="class">CS::Utility::WeakReferenced</class>
+    <member kind="function">
+      <type>csString</type>
+      <name>ftostr</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>a7bbea843bc424a7c5e182267be65482d</anchor>
+      <arglist>(float f)</arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>setenv</name>
