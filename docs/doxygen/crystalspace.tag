@@ -23392,6 +23392,7 @@
     <path>/tmp/tmp5/trunk/include/</path>
     <filename>cstool_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="animnodetmpl_8h" name="animnodetmpl.h" local="yes" imported="no">cstool/animnodetmpl.h</includes>
     <includes id="basetexfact_8h" name="basetexfact.h" local="yes" imported="no">cstool/basetexfact.h</includes>
     <includes id="bitmasktostr_8h" name="bitmasktostr.h" local="yes" imported="no">cstool/bitmasktostr.h</includes>
     <includes id="cstool_2collider_8h" name="collider.h" local="yes" imported="no">cstool/collider.h</includes>
@@ -23430,6 +23431,49 @@
     <includes id="userrndbuf_8h" name="userrndbuf.h" local="yes" imported="no">cstool/userrndbuf.h</includes>
     <includes id="vertexcompress_8h" name="vertexcompress.h" local="yes" imported="no">cstool/vertexcompress.h</includes>
     <includes id="vfsdirchange_8h" name="vfsdirchange.h" local="yes" imported="no">cstool/vfsdirchange.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>animnodetmpl.h</name>
+    <path>/tmp/tmp5/trunk/include/cstool/</path>
+    <filename>animnodetmpl_8h</filename>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
+    <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
+    <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
+    <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactory</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactoryMulti</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactorySingle</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeSingle</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_DECLARE_ANIMNODE_MANAGER</name>
+      <anchorfile>animnodetmpl_8h.html</anchorfile>
+      <anchor>ad91de43465c2761b825ccea13066cd6f</anchor>
+      <arglist>(nodename, nodeinterface, nodetype)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_IMPLEMENT_ANIMNODE_FACTORY_SINGLE</name>
+      <anchorfile>animnodetmpl_8h.html</anchorfile>
+      <anchor>ae95194d49b227628780e232ee2a34ee7</anchor>
+      <arglist>(nodename)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_IMPLEMENT_ANIMNODE_MANAGER</name>
+      <anchorfile>animnodetmpl_8h.html</anchorfile>
+      <anchor>a1bd72bbc384c6c0878800a72c7477d24</anchor>
+      <arglist>(nodename, nodetype, id)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_IMPLEMENT_ANIMNODE_SINGLE</name>
+      <anchorfile>animnodetmpl_8h.html</anchorfile>
+      <anchor>aac15e06eea8980789b1995a8bf7a82d8</anchor>
+      <arglist>(nodename)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>basetexfact.h</name>
@@ -29801,7 +29845,6 @@
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeManager</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
-    <namespace>CS::Mesh</namespace>
   </compound>
   <compound kind="file">
     <name>ragdoll.h</name>
@@ -35451,6 +35494,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>ClearAnimNodeFactories</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gab6da748e70c3aec8519ed036733daee7</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>ClearAnimPacketFactories</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gae8e777742996a68e5b3611f47921971b</anchor>
@@ -35510,6 +35560,13 @@
       <name>CreateAnimationNode</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga973579b2c31dcda2675230ab9602e35e</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual T *</type>
+      <name>CreateAnimNodeFactory</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga79fd975b847441d2c1858d51fd4cbc83</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -35594,6 +35651,13 @@
       <name>FindAnimation</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga8dad6c0e12304e69d22965cc61728402</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual T *</type>
+      <name>FindAnimNodeFactory</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaa7b4f18466cfe48a08bf1288b428ffb8</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36043,6 +36107,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gae4b1e930649a7059873b8461a94adb36</anchor>
       <arglist>(iSkeletonAnimCallback *callback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveAnimNodeFactory</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga5cc02253fe6fce89d3ad6d345d22604a</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -43438,10 +43509,24 @@
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
-      <name>SetData</name>
+      <name>SetCapacityVeryUnsafe</name>
       <anchorfile>classcsArray.html</anchorfile>
-      <anchor>a30f478d50ec77078ffb5dbe1170bc992</anchor>
+      <anchor>af728d21ba658e30e678a8671314474df</anchor>
+      <arglist>(size_t n)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>SetDataVeryUnsafe</name>
+      <anchorfile>classcsArray.html</anchorfile>
+      <anchor>a217c60e0e0833ba92980f5df3a777d75</anchor>
       <arglist>(T *data)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>SetSizeVeryUnsafe</name>
+      <anchorfile>classcsArray.html</anchorfile>
+      <anchor>aca94a139e75e5038942fa81528f20c20</anchor>
+      <arglist>(size_t n)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -43776,6 +43861,13 @@
       <arglist>(T *mem, size_t dest, size_t src, size_t count)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static void</type>
+      <name>MoveElementsNoOverlap</name>
+      <anchorfile>classcsArrayElementHandler.html</anchorfile>
+      <anchor>a2516f92f1496d1c27df6e5e7447c2d8f</anchor>
+      <arglist>(T *mem, size_t dest, size_t src, size_t count)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static T *</type>
       <name>ResizeRegion</name>
       <anchorfile>classcsArrayElementHandler.html</anchorfile>
@@ -43792,6 +43884,13 @@
       <name>MoveElements</name>
       <anchorfile>classcsArraySafeCopyElementHandler.html</anchorfile>
       <anchor>af0c17e05205e65ce8f2558df260c6fc9</anchor>
+      <arglist>(T *mem, size_t dest, size_t src, size_t count)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>MoveElementsNoOverlap</name>
+      <anchorfile>classcsArraySafeCopyElementHandler.html</anchorfile>
+      <anchor>a10b194fd002bc7a5508e5f6fe0f14b65</anchor>
       <arglist>(T *mem, size_t dest, size_t src, size_t count)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -48793,6 +48892,13 @@
       <anchorfile>classcsDirtyAccessArray.html</anchorfile>
       <anchor>a6514920dbc71bb897766dcea5125843f</anchor>
       <arglist>(size_t in_capacity=0, const CapacityHandler &amp;ch=CapacityHandler())</arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>Detach</name>
+      <anchorfile>classcsDirtyAccessArray.html</anchorfile>
+      <anchor>a710ccd5e77424a7da514e159b0125cce</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>const T *</type>
@@ -64075,13 +64181,6 @@
       <name>material</name>
       <anchorfile>structcsHitBeamResult.html</anchorfile>
       <anchor>a6c21e89b7987ca77ec18cfe60096bcae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRef&lt; iMaterialArray &gt;</type>
-      <name>materials</name>
-      <anchorfile>structcsHitBeamResult.html</anchorfile>
-      <anchor>ab3b8544142204e7f3f752b47ace39226</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -95788,8 +95887,8 @@
       <type>virtual bool</type>
       <name>HitBeamObject</name>
       <anchorfile>structiMeshObject.html</anchorfile>
-      <anchor>a8cd1024f8c6beb49ff66c6f5632843d1</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **material=0, iMaterialArray *materials=0)=0</arglist>
+      <anchor>a11f23a1e8e26b8a48de7d3b991bab5a9</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **material=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -108844,6 +108943,13 @@
       <type>virtual bool</type>
       <name>CollideSegment</name>
       <anchorfile>structiTerrainCell.html</anchorfile>
+      <anchor>aa0b305cac5926552b7065674fcc635c8</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;hitPoint)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>CollideSegment</name>
+      <anchorfile>structiTerrainCell.html</anchorfile>
       <anchor>aef7f142fed27abbf8d1ff287bb36eaa7</anchor>
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool oneHit, iTerrainVector3Array *points)=0</arglist>
     </member>
@@ -109499,6 +109605,13 @@
       <anchorfile>structiTerrainCollider.html</anchorfile>
       <anchor>a39efaceb624a045c1ee078b440efa440</anchor>
       <arglist>(iTerrainCell *cell, const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>CollideSegment</name>
+      <anchorfile>structiTerrainCollider.html</anchorfile>
+      <anchor>a733c71415532f107605063c340ba27a0</anchor>
+      <arglist>(iTerrainCell *cell, const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;hitPoint)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -110160,6 +110273,13 @@
       <anchorfile>structiTerrainSystem.html</anchorfile>
       <anchor>a5f6d14bb30caa2bdcb3f792136cc2661</anchor>
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool use_ray=false)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>CollideSegment</name>
+      <anchorfile>structiTerrainSystem.html</anchorfile>
+      <anchor>af0c78696300ec4c03940c6cdc2d41c37</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;hitPoint, iMaterialWrapper **hitMaterial)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -115196,6 +115316,10 @@
     <class kind="struct">CS::Animation::BoneMapping</class>
     <class kind="class">CS::Animation::BVHMocapParser</class>
     <class kind="class">CS::Animation::csSkeletalState</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactory</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactoryMulti</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeFactorySingle</class>
+    <class kind="class">CS::Animation::csSkeletonAnimNodeSingle</class>
     <class kind="struct">CS::Animation::iBodyBone</class>
     <class kind="struct">CS::Animation::iBodyBoneCollider</class>
     <class kind="struct">CS::Animation::iBodyBoneJoint</class>
@@ -115577,6 +115701,220 @@
       <name>~csSkeletalState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga31317b36295216dd1889f7f29cd975a7</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::csSkeletonAnimNodeFactory</name>
+    <filename>classCS_1_1Animation_1_1csSkeletonAnimNodeFactory.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>csSkeletonAnimNodeFactory</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactory.html</anchorfile>
+      <anchor>a75bed3e766fbea7c9203639421f0ed73</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetNodeName</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactory.html</anchorfile>
+      <anchor>a11da9a17123332ed77690d914066cbe2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletonAnimNodeFactory</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactory.html</anchorfile>
+      <anchor>ac71d2a7e3c58adb36c0f4d07a4e33817</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::csSkeletonAnimNodeFactoryMulti</name>
+    <filename>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</filename>
+    <base>CS::Animation::csSkeletonAnimNodeFactory</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>AddChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>a2506f952338fc3fab4475529e1eff673</anchor>
+      <arglist>(iSkeletonAnimNodeFactory *factory)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>ClearChildNodes</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>a9453b05880d59dee81b34249a6165b94</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csSkeletonAnimNodeFactoryMulti</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>a3a90802d7009385b153acb3fc378e41a</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iSkeletonAnimNodeFactory *</type>
+      <name>GetChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>ad40076b086b1ee0356a9ad4f11c53b39</anchor>
+      <arglist>(size_t index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>a30631923c7e21f77c082c691279bfcfb</anchor>
+      <arglist>(iSkeletonAnimNodeFactory *factory)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletonAnimNodeFactoryMulti</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactoryMulti.html</anchorfile>
+      <anchor>aab448d792dd32d96ab6b1f84e1821e1b</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::csSkeletonAnimNodeFactorySingle</name>
+    <filename>classCS_1_1Animation_1_1csSkeletonAnimNodeFactorySingle.html</filename>
+    <base>CS::Animation::csSkeletonAnimNodeFactory</base>
+    <member kind="function">
+      <type></type>
+      <name>csSkeletonAnimNodeFactorySingle</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactorySingle.html</anchorfile>
+      <anchor>a985a7a5b9b02ec1d35cdd31fcbf0b76b</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iSkeletonAnimNodeFactory *</type>
+      <name>GetChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactorySingle.html</anchorfile>
+      <anchor>a2fbea19736ea593fc3b056f77fb796a1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactorySingle.html</anchorfile>
+      <anchor>a6b41ebf20dcb57922494d1759853de5b</anchor>
+      <arglist>(iSkeletonAnimNodeFactory *factory)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletonAnimNodeFactorySingle</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeFactorySingle.html</anchorfile>
+      <anchor>a14a454ef47d8b95822551b70f5498fa6</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::csSkeletonAnimNodeSingle</name>
+    <filename>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>AddAnimationCallback</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>aaea16fbd916a914e45a60c78d92d5e47</anchor>
+      <arglist>(iSkeletonAnimCallback *callback)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>BlendState</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a95e4ba72acd37900167cc29d722cdfce</anchor>
+      <arglist>(csSkeletalState *state, float baseWeight=1.0f)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csSkeletonAnimNodeSingle</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a8e475e51db940273c2b0bd28b7d34e9d</anchor>
+      <arglist>(CS::Animation::iSkeleton *skeleton)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iSkeletonAnimNode *</type>
+      <name>GetChildNode</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a00ea5e2028d97f6822326309b732aad1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetDuration</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a28ad385b2fb90460c992b914bbe85701</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetPlaybackPosition</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a62838147003ad677e4764c090dfb0447</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetPlaybackSpeed</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a6e24f862b73d25461e561fa8775312ae</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsActive</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a9596f79476131736295388fec309664d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Play</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a8765adf17a095111a0da2b2813e49ef4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>RemoveAnimationCallback</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>aa0cdada400a79b8ede5d6b52f88ed99a</anchor>
+      <arglist>(iSkeletonAnimCallback *callback)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetPlaybackPosition</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>aa358f7ad8df16302c598903f797b0b1d</anchor>
+      <arglist>(float time)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetPlaybackSpeed</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a5b53576c32228f01f2733c1db5750393</anchor>
+      <arglist>(float speed)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Stop</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>ab210a1bb997b1470601caceac53d71f1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>TickAnimation</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>a525be0efb27901bdeaa1f121c16eed42</anchor>
+      <arglist>(float dt)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~csSkeletonAnimNodeSingle</name>
+      <anchorfile>classCS_1_1Animation_1_1csSkeletonAnimNodeSingle.html</anchorfile>
+      <anchor>ac10f2c87d29a0e5e30c1dc2c296709f4</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -117068,28 +117406,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonDebugNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>a3d82497e88e3e2501874c9b1bfefe1fb</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonDebugNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>ad4f0e4be7ca2d007a825eab091f52e00</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonDebugNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeManager.html</anchorfile>
-      <anchor>a187d4a9520b3f0aabdc20fe486e23761</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonFactory</name>
@@ -117483,13 +117799,6 @@
       <arglist>(CS::Animation::iBodyChain *chain, BoneID bone, csOrthoTransform &amp;transform)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
-      <anchor>aa62bad3ec5907c7dbaff8c921d98e47d</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual CS::Animation::iBodySkeleton *</type>
       <name>GetBodySkeleton</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeFactory.html</anchorfile>
@@ -117528,28 +117837,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonIKNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
-      <anchor>a956c8f1897c61b4e6fe3040cb6ef9c13</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonIKNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
-      <anchor>a50accb1f0a1920281d6c526e2f0e8f43</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonIKNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonIKNodeManager.html</anchorfile>
-      <anchor>a382a0bae60b5aa95259b90543f4564e1</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonIKPhysicalNode</name>
@@ -117667,18 +117954,11 @@
     <filename>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</filename>
     <base>CS::Animation::iSkeletonAnimNodeFactory</base>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
-      <anchor>aa1ec388186848ef80ffa1a5f3e6bb809</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimNodeFactory *</type>
       <name>GetChildNode</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
-      <anchor>a893e338c27a08db3708c60a5e01bf462</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a1a4e150aba33211a6bec058babe0d17e</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117726,28 +118006,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonLookAtNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
-      <anchor>a6f21a3fa086da0671ada8f088f71361c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonLookAtNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
-      <anchor>afcec434d414ae12ed7d32606cc3a23f3</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonLookAtNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeManager.html</anchorfile>
-      <anchor>a4175a462fbefccdfe5ebd9f94712d193</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonManager</name>
@@ -117942,13 +118200,6 @@
       <arglist>(iBodyChain *chain, RagdollState state=STATE_INACTIVE)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
-      <anchor>ac9b35d96a33f666183019e65cd56cc3b</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual CS::Animation::iBodySkeleton *</type>
       <name>GetBodySkeleton</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
@@ -117987,28 +118238,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonRagdollNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
-      <anchor>a630e2c63ba238ae8bceaf30326e98f1e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRagdollNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
-      <anchor>a06115ce75f17e32561f949bffb3c11e5</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRagdollNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</anchorfile>
-      <anchor>a780b24c8c03cc81a75b995f305b51105</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonRandomNode</name>
@@ -118138,28 +118367,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonRetargetNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonRetargetNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeManager.html</anchorfile>
-      <anchor>ae486bf18e7ba7f109ec125440924e7e9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRetargetNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeManager.html</anchorfile>
-      <anchor>a9b21e8834852adc8e67f51fbd26ab6f7</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonRetargetNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRetargetNodeManager.html</anchorfile>
-      <anchor>adffc3c394c23b90f9a9dce255a9d6253</anchor>
-      <arglist>(const char *name) const =0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonSpeedNode</name>
@@ -118188,28 +118395,6 @@
   <compound kind="struct">
     <name>CS::Animation::iSkeletonSpeedNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearAnimNodeFactories</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>a6ba2b245e134f39792140b842e305765</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonSpeedNodeFactory *</type>
-      <name>CreateAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>a0562a1389422936a4bae1f02c5efe6d4</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonSpeedNodeFactory *</type>
-      <name>FindAnimNodeFactory</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonSpeedNodeManager.html</anchorfile>
-      <anchor>ae47ed8d6365922b3157621752e0c3ac1</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSoftBodyAnimationControl</name>
