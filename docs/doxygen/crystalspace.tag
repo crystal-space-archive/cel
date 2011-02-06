@@ -91706,6 +91706,13 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
+      <name>AnimatesBBoxRadius</name>
+      <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
+      <anchor>a97b24d1d6c0013e4dd0d6132433cd4dd</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
       <name>AnimatesColors</name>
       <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
       <anchor>ac17cf7ba6aab0afe221b200d8d3c4a97</anchor>
@@ -91740,6 +91747,20 @@
       <arglist>(csTicks current, int num_verts, uint32 version_id)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual const csBox3 &amp;</type>
+      <name>UpdateBoundingBox</name>
+      <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
+      <anchor>aeb7e6f074de5ef33c49fe43a2298e714</anchor>
+      <arglist>(csTicks current, uint32 version_id, const csBox3 &amp;bbox)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csBox3 *</type>
+      <name>UpdateBoundingBoxes</name>
+      <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
+      <anchor>a62b96433a0367ffe1f5f0c12d59c1393</anchor>
+      <arglist>(csTicks current, uint32 version_id)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual const csColor4 *</type>
       <name>UpdateColors</name>
       <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
@@ -91752,6 +91773,13 @@
       <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
       <anchor>ad7902ec8aa14ea7e6e0db138f1306b25</anchor>
       <arglist>(csTicks current, const csVector3 *normals, int num_normals, uint32 version_id)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const float</type>
+      <name>UpdateRadius</name>
+      <anchorfile>structiGenMeshAnimationControl.html</anchorfile>
+      <anchor>a509704231813111723b7f2c02a8db520</anchor>
+      <arglist>(csTicks current, uint32 version_id, const float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const csVector2 *</type>
@@ -96779,6 +96807,13 @@
       <anchorfile>structiMovable.html</anchorfile>
       <anchor>a6f9bfea3cc2015e602ddc4eb073151eb</anchor>
       <arglist>(iMovableListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetFullPosition</name>
+      <anchorfile>structiMovable.html</anchorfile>
+      <anchor>ae86340022b3969b92a3f925da9288ba2</anchor>
+      <arglist>(const csVector3 &amp;v)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
