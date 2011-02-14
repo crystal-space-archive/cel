@@ -53855,6 +53855,13 @@
     </member>
     <member kind="variable">
       <type>bool</type>
+      <name>CS_InstancedDrawFuncs</name>
+      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
+      <anchor>ac391b74412d9c517180d408fcf5558f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
       <name>CS_Queries</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>ad9f35c5a380277a2483b7199b18dc5a3</anchor>
@@ -62065,6 +62072,13 @@
       <name>InitGL_SUN_vertex</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>a138ec3f509c95d9057edf1557061d0b9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitInstancedDrawFuncs</name>
+      <anchorfile>structcsGLExtensionManager.html</anchorfile>
+      <anchor>a2b3aba6209e605b3c68f417c452e3845</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -120374,6 +120388,48 @@
       <name>cullMode</name>
       <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
       <anchor>a730232be90113f02eb60ffd5896171f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>doInstancing</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>a9013c909fdc34a8dd47a71664de7420c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>instanceNum</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>a1e9f383f36968d94e3899b79caf1c14f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>iRenderBuffer **</type>
+      <name>instParamBuffers</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>afb3450e29b56abe1ac909a69defcc6cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>instParamNum</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>adeb4a1eea7164790fc055b559983e209</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csShaderVariable **const *</type>
+      <name>instParams</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>a8de362cf92d562bbffa47f7952e2b329</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const csVertexAttrib *</type>
+      <name>instParamsTargets</name>
+      <anchorfile>structCS_1_1Graphics_1_1RenderMeshModes.html</anchorfile>
+      <anchor>a155b1078052400e3422b360d0964feef</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
