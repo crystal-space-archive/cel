@@ -95534,6 +95534,13 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>AddDensityFactorMap</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a129c0ffce7ee7b26fba805ddefd5b191</anchor>
+      <arglist>(const char *factorMapID, iImage *mapImage, const CS::Math::Matrix4 &amp;worldToMap)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>AddMesh</name>
       <anchorfile>structiMeshGenerator.html</anchorfile>
       <anchor>a3ef73b5717adf95e5442a8a13d1c54b7</anchor>
@@ -95774,6 +95781,13 @@
       <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
       <anchor>ab347b6b03fc52ac5712b4db6100a8675</anchor>
       <arglist>(float speed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>UseDensityFactorMap</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>a73047acd5a1d0a5005dc05f9e78acd00</anchor>
+      <arglist>(const char *factorMapID, float factor)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -108626,6 +108640,13 @@
       <anchorfile>structiSyntaxService.html</anchorfile>
       <anchor>acde9ac22bc766fb65672756d3f7bff00</anchor>
       <arglist>(iDocumentNode *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ParseMatrix</name>
+      <anchorfile>structiSyntaxService.html</anchorfile>
+      <anchor>aeea5ae9eee3b07885b06ee64f2b07782</anchor>
+      <arglist>(iDocumentNode *node, CS::Math::Matrix4 &amp;m)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
