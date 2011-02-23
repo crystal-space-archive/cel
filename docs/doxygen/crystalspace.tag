@@ -23392,6 +23392,7 @@
     <path>/tmp/tmp5/trunk/include/</path>
     <filename>cstool_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="animeshtools_8h" name="animeshtools.h" local="yes" imported="no">cstool/animeshtools.h</includes>
     <includes id="animnodetmpl_8h" name="animnodetmpl.h" local="yes" imported="no">cstool/animnodetmpl.h</includes>
     <includes id="basetexfact_8h" name="basetexfact.h" local="yes" imported="no">cstool/basetexfact.h</includes>
     <includes id="bitmasktostr_8h" name="bitmasktostr.h" local="yes" imported="no">cstool/bitmasktostr.h</includes>
@@ -23431,6 +23432,15 @@
     <includes id="userrndbuf_8h" name="userrndbuf.h" local="yes" imported="no">cstool/userrndbuf.h</includes>
     <includes id="vertexcompress_8h" name="vertexcompress.h" local="yes" imported="no">cstool/vertexcompress.h</includes>
     <includes id="vfsdirchange_8h" name="vfsdirchange.h" local="yes" imported="no">cstool/vfsdirchange.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>animeshtools.h</name>
+    <path>/tmp/tmp5/trunk/include/cstool/</path>
+    <filename>animeshtools_8h</filename>
+    <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
+    <class kind="class">CS::Mesh::AnimatedMeshTools</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Mesh</namespace>
   </compound>
   <compound kind="file">
     <name>animnodetmpl.h</name>
@@ -121430,6 +121440,7 @@
   <compound kind="namespace">
     <name>CS::Mesh</name>
     <filename>namespaceCS_1_1Mesh.html</filename>
+    <class kind="class">CS::Mesh::AnimatedMeshTools</class>
     <class kind="struct">CS::Mesh::csAnimatedMeshBoneInfluence</class>
     <class kind="struct">CS::Mesh::iAnimatedMesh</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshFactory</class>
@@ -121443,6 +121454,24 @@
     <class kind="struct">CS::Mesh::iFurMeshMaterialProperties</class>
     <class kind="struct">CS::Mesh::iFurMeshState</class>
     <class kind="struct">CS::Mesh::iFurMeshType</class>
+  </compound>
+  <compound kind="class">
+    <name>CS::Mesh::AnimatedMeshTools</name>
+    <filename>classCS_1_1Mesh_1_1AnimatedMeshTools.html</filename>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>ImportMorphMesh</name>
+      <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
+      <anchor>ab3e21d34d631c944cb4010481023badb</anchor>
+      <arglist>(iObjectRegistry *object_reg, iAnimatedMeshFactory *baseMesh, iAnimatedMeshFactory *morphMesh, const char *morphName, bool deleteMesh=false)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static iAnimatedMeshFactory *</type>
+      <name>ImportSplittedMesh</name>
+      <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
+      <anchor>aa815d1d1d5488d443938544fc0aed53e</anchor>
+      <arglist>(iObjectRegistry *object_reg, const char *path, const char *baseMesh, const char *meshMask, const char *factoryName)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Mesh::csAnimatedMeshBoneInfluence</name>
