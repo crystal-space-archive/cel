@@ -35454,6 +35454,20 @@
       <arglist>(iSkeletonAnimNodeFactory *node, float weight)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddOrSetKeyFrame</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga5a6ed15242b6797a1f0eead7d8b8a882</anchor>
+      <arglist>(ChannelID channel, float time, const csVector3 &amp;offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddOrSetKeyFrame</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaa85a9d2ec14d551a63c38c371055952f</anchor>
+      <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual StateID</type>
       <name>AddState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -116866,6 +116880,20 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gac8302dcd95266eaddd41baca5322eb80</anchor>
       <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation, const csVector3 &amp;offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddOrSetKeyFrame</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga5a6ed15242b6797a1f0eead7d8b8a882</anchor>
+      <arglist>(ChannelID channel, float time, const csVector3 &amp;offset)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddOrSetKeyFrame</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaa85a9d2ec14d551a63c38c371055952f</anchor>
+      <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
