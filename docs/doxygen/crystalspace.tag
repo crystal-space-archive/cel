@@ -95314,6 +95314,13 @@
     <filename>structiMeshFactoryWrapper.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>AddExtraRenderMesh</name>
+      <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
+      <anchor>a8c3cf88e136732f6d3bb6a1aeda36628</anchor>
+      <arglist>(CS::Graphics::RenderMesh *renderMesh)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddFactoryToStaticLOD</name>
       <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
@@ -95354,6 +95361,20 @@
       <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
       <anchor>a54ffa9f5b41db46eb336a3647e5e7659</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Graphics::RenderMesh *</type>
+      <name>GetExtraRenderMesh</name>
+      <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
+      <anchor>a74a7be859b75256aedd5fb28c2f9bf5f</anchor>
+      <arglist>(size_t idx) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetExtraRenderMeshCount</name>
+      <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
+      <anchor>af845aa2954a0ef7a879b0bbaa14ee472</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csFlags &amp;</type>
@@ -95515,6 +95536,20 @@
       <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
       <anchor>af60b6d624bb79b1e2f6fae6a844b2e81</anchor>
       <arglist>(csZBufMode mode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveExtraRenderMesh</name>
+      <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
+      <anchor>a12ce54af0b117f6d224f6c0459cbd344</anchor>
+      <arglist>(size_t idx)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveExtraRenderMesh</name>
+      <anchorfile>structiMeshFactoryWrapper.html</anchorfile>
+      <anchor>a9cf2e717cb48803630bdd7ab4d67789a</anchor>
+      <arglist>(CS::Graphics::RenderMesh *renderMesh)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -96150,18 +96185,18 @@
     <filename>structiMeshWrapper.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddExtraRenderMesh</name>
-      <anchorfile>structiMeshWrapper.html</anchorfile>
-      <anchor>a14b0c1f0d8a96dc62a437446512b1547</anchor>
-      <arglist>(CS::Graphics::RenderMesh *renderMesh, CS::Graphics::RenderPriority priority, csZBufMode zBufMode)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>AddExtraRenderMesh</name>
       <anchorfile>structiMeshWrapper.html</anchorfile>
       <anchor>adbf079f00e3dae244d434b3f41d2ab2f</anchor>
       <arglist>(CS::Graphics::RenderMesh *renderMesh, csZBufMode zBufMode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>AddExtraRenderMesh</name>
+      <anchorfile>structiMeshWrapper.html</anchorfile>
+      <anchor>aa6a4967311a28335373aac9d5be7f884</anchor>
+      <arglist>(CS::Graphics::RenderMesh *renderMesh)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csShaderVariable *</type>
@@ -96225,13 +96260,6 @@
       <anchorfile>structiMeshWrapper.html</anchorfile>
       <anchor>a271840ec5ca8e3024a6a32045c05ceff</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Graphics::RenderPriority</type>
-      <name>GetExtraRenderMeshPriority</name>
-      <anchorfile>structiMeshWrapper.html</anchorfile>
-      <anchor>a4c27280d04f74ccea27aa672808e0159</anchor>
-      <arglist>(size_t idx) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csZBufMode</type>
