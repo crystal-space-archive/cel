@@ -112038,8 +112038,8 @@
       <type>virtual void</type>
       <name>RenderViscull</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
-      <anchor>ad7a6b252d37891645d6c0ebb7609e226</anchor>
-      <arglist>(iRenderView *rview)=0</arglist>
+      <anchor>a6ef3860d1a4c04551ce6c21564c2c252</anchor>
+      <arglist>(iRenderView *rview, iShaderVariableContext *shadervars)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
