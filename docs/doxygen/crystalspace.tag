@@ -36111,6 +36111,20 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>RemoveAnimation</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga1cf661487481837b865d2793b9bf48a9</anchor>
+      <arglist>(size_t index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveAnimation</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaedd102d1bf5830dac97b349df9071e9a</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>RemoveAnimationCallback</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gae4b1e930649a7059873b8461a94adb36</anchor>
@@ -117252,6 +117266,20 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga6ca40c20edb4a5b24456d11d8eb5bc81</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveAnimation</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga1cf661487481837b865d2793b9bf48a9</anchor>
+      <arglist>(size_t index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveAnimation</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaedd102d1bf5830dac97b349df9071e9a</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
