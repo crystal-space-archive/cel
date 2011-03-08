@@ -32143,6 +32143,8 @@
     <class kind="struct">csFileTime</class>
     <class kind="struct">iFile</class>
     <class kind="struct">iVFS</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Deprecated</namespace>
     <member kind="define">
       <type>#define</type>
       <name>ASSIGN_FILETIME</name>
@@ -41685,6 +41687,7 @@
     <class kind="struct">csFileTime</class>
     <class kind="struct">iFile</class>
     <class kind="struct">iVFS</class>
+    <namespace>CS</namespace>
     <member kind="define">
       <type>#define</type>
       <name>ASSIGN_FILETIME</name>
@@ -51377,6 +51380,20 @@
   <compound kind="struct">
     <name>csFileTime</name>
     <filename>structcsFileTime.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>operator struct tm</name>
+      <anchorfile>structcsFileTime.html</anchorfile>
+      <anchor>a5bf6fd503225c5cd5cee2cee67d0cf1a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator=</name>
+      <anchorfile>structcsFileTime.html</anchorfile>
+      <anchor>a6c20a9f8dd92348e7af4753ee5cbb32c</anchor>
+      <arglist>(const struct tm &amp;time)</arglist>
+    </member>
     <member kind="variable">
       <type>int</type>
       <name>day</name>
