@@ -51382,6 +51382,20 @@
     <filename>structcsFileTime.html</filename>
     <member kind="function">
       <type></type>
+      <name>csFileTime</name>
+      <anchorfile>structcsFileTime.html</anchorfile>
+      <anchor>a455dbd0b49fc30c950a1c21a0efc1e20</anchor>
+      <arglist>(const struct tm &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csFileTime</name>
+      <anchorfile>structcsFileTime.html</anchorfile>
+      <anchor>a5f5276cc00621d6bca4d5d7bcd681ae6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>operator struct tm</name>
       <anchorfile>structcsFileTime.html</anchorfile>
       <anchor>a5bf6fd503225c5cd5cee2cee67d0cf1a</anchor>
@@ -112055,8 +112069,8 @@
       <type>virtual void</type>
       <name>PrecacheCulling</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
-      <anchor>a11b9eafd09f419254a0f20489afc27fe</anchor>
-      <arglist>()=0</arglist>
+      <anchor>ad653d434e15da67547afd62c74c67bc5</anchor>
+      <arglist>(bool state=true)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
