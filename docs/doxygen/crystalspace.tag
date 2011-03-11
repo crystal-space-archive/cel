@@ -29741,7 +29741,7 @@
     <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
-    <class kind="struct">CS::Mesh::csAnimatedMeshBoneInfluence</class>
+    <class kind="struct">CS::Mesh::AnimatedMeshBoneInfluence</class>
     <class kind="struct">CS::Mesh::iAnimatedMesh</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshFactory</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshMorphTarget</class>
@@ -30491,7 +30491,7 @@
     <includes id="bitarray_8h" name="bitarray.h" local="yes" imported="no">csutil/bitarray.h</includes>
     <includes id="quaternion_8h" name="quaternion.h" local="yes" imported="no">csgeom/quaternion.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
-    <class kind="class">CS::Animation::csSkeletalState</class>
+    <class kind="class">CS::Animation::AnimatedMeshState</class>
     <class kind="struct">CS::Animation::iSkeleton</class>
     <class kind="struct">CS::Animation::iSkeletonFactory</class>
     <class kind="struct">CS::Animation::iSkeletonManager</class>
@@ -35264,11 +35264,11 @@
     <name>meshplugins</name>
     <title>Mesh plugins</title>
     <filename>group__meshplugins.html</filename>
+    <class kind="class">CS::Animation::AnimatedMeshState</class>
     <class kind="struct">csParticle</class>
     <class kind="struct">csParticleAux</class>
     <class kind="struct">csParticleBuffer</class>
     <class kind="struct">csParticleParameterSet</class>
-    <class kind="class">CS::Animation::csSkeletalState</class>
     <class kind="struct">csSprite2DVertex</class>
     <class kind="struct">CS::Mesh::iAnimatedMesh</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshFactory</class>
@@ -35479,15 +35479,15 @@
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gafe5e8c39486baec5c5e5102691d82a4f</anchor>
-      <arglist>(csSkeletalState *state, float baseWeight=1.0f)=0</arglist>
+      <anchor>ga456ddd69164e1c4967a8a856e16288ec</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight=1.0f)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gabaa8db007441f85309f980402687ddb3</anchor>
-      <arglist>(csSkeletalState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
+      <anchor>ga89f57851d101c169bbc019ede4d28c27</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -35794,7 +35794,7 @@
       <type>size_t</type>
       <name>GetBoneCount</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga84e4ad6f14b1f5f9a795a3ceb4938b5a</anchor>
+      <anchor>ga4182c36445519040c371082a9aeddf9e</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -35969,14 +35969,14 @@
       <type>csQuaternion &amp;</type>
       <name>GetQuaternion</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga4a4e7e5ddeabe4a138edddba77407fdb</anchor>
+      <anchor>gaf45bbafe683661e3e89a60eb98b299ec</anchor>
       <arglist>(size_t i)</arglist>
     </member>
     <member kind="function">
       <type>const csQuaternion &amp;</type>
       <name>GetQuaternion</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga5d26e68ace67c74af98dcafa485cd86c</anchor>
+      <anchor>gaf22ad100b0bad80945a243eb3a56201b</anchor>
       <arglist>(size_t i) const </arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36046,14 +36046,14 @@
       <type>csVector3 &amp;</type>
       <name>GetVector</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga1d2ba46554b2c686cabeb9fbddc029a4</anchor>
+      <anchor>ga77e8133172dcb8bae116203f1af04e71</anchor>
       <arglist>(size_t i)</arglist>
     </member>
     <member kind="function">
       <type>const csVector3 &amp;</type>
       <name>GetVector</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gae98576a84c095548425dd2aa87afc38b</anchor>
+      <anchor>ga19b37e4599aa0bcc4dbf6d19df6620b2</anchor>
       <arglist>(size_t i) const </arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36067,7 +36067,7 @@
       <type>bool</type>
       <name>IsBoneUsed</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga21451500c43e59656519d9c5f2581147</anchor>
+      <anchor>ga079596c95f9583cd8f0171d5ce76141a</anchor>
       <arglist>(BoneID bone) const </arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36151,7 +36151,7 @@
       <type>void</type>
       <name>Reset</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gab3c2245adb5b83fd9e629dfeb7a3c130</anchor>
+      <anchor>ga7694729a241497f51dce86c01ba2577f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36235,7 +36235,7 @@
       <type>void</type>
       <name>SetBoneUsed</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gaaf29659662c97ddc625c203888cf04bc</anchor>
+      <anchor>gae9078e4d80ff9b53a1d092667262d4bc</anchor>
       <arglist>(BoneID bone)</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36368,7 +36368,7 @@
       <type>void</type>
       <name>Setup</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga71e5e907de896e4f3bbe9ef32196f9fc</anchor>
+      <anchor>ga05d29225a22881e1991c969be58b77e2</anchor>
       <arglist>(size_t numBones)</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -36408,9 +36408,9 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
-      <name>~csSkeletalState</name>
+      <name>~AnimatedMeshState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga31317b36295216dd1889f7f29cd975a7</anchor>
+      <anchor>ga52780d781b5d2fc70acf7d4e43fa7ebe</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="enumeration">
@@ -36807,24 +36807,24 @@
       <arglist>(BoneID bone, const csQuaternion &amp;rot, const csVector3 &amp;offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateAbsSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga30e6ee0cca10a82f96e6cf4f7f40cf8b</anchor>
+      <anchor>gaac44f4c748d59808b18ea00dfbd0775f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateBindSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga600ef7fce9adfefbfa9d48f72939383f</anchor>
+      <anchor>ga61101b84658b9e8a19b7d74dd6790c75</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateBoneSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gadfbc8996e16f3137cf4c6ebf135c8085</anchor>
+      <anchor>ga069de64973de1e3a28fd259abf98bf29</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -115486,10 +115486,10 @@
   <compound kind="namespace">
     <name>CS::Animation</name>
     <filename>namespaceCS_1_1Animation.html</filename>
+    <class kind="class">CS::Animation::AnimatedMeshState</class>
     <class kind="class">CS::Animation::AnimNodeManagerCommon</class>
     <class kind="struct">CS::Animation::BoneMapping</class>
     <class kind="class">CS::Animation::BVHMocapParser</class>
-    <class kind="class">CS::Animation::csSkeletalState</class>
     <class kind="struct">CS::Animation::iBodyBone</class>
     <class kind="struct">CS::Animation::iBodyBoneCollider</class>
     <class kind="struct">CS::Animation::iBodyBoneJoint</class>
@@ -115692,6 +115692,88 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CS::Animation::AnimatedMeshState</name>
+    <filename>classCS_1_1Animation_1_1AnimatedMeshState.html</filename>
+    <base>csRefCount</base>
+    <member kind="function">
+      <type></type>
+      <name>AnimatedMeshState</name>
+      <anchorfile>classCS_1_1Animation_1_1AnimatedMeshState.html</anchorfile>
+      <anchor>a433bf5c7214f9d7753fec2b3f76d800b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetBoneCount</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga4182c36445519040c371082a9aeddf9e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csQuaternion &amp;</type>
+      <name>GetQuaternion</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaf45bbafe683661e3e89a60eb98b299ec</anchor>
+      <arglist>(size_t i)</arglist>
+    </member>
+    <member kind="function">
+      <type>const csQuaternion &amp;</type>
+      <name>GetQuaternion</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaf22ad100b0bad80945a243eb3a56201b</anchor>
+      <arglist>(size_t i) const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector3 &amp;</type>
+      <name>GetVector</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga77e8133172dcb8bae116203f1af04e71</anchor>
+      <arglist>(size_t i)</arglist>
+    </member>
+    <member kind="function">
+      <type>const csVector3 &amp;</type>
+      <name>GetVector</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga19b37e4599aa0bcc4dbf6d19df6620b2</anchor>
+      <arglist>(size_t i) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsBoneUsed</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga079596c95f9583cd8f0171d5ce76141a</anchor>
+      <arglist>(BoneID bone) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga7694729a241497f51dce86c01ba2577f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetBoneUsed</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gae9078e4d80ff9b53a1d092667262d4bc</anchor>
+      <arglist>(BoneID bone)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga05d29225a22881e1991c969be58b77e2</anchor>
+      <arglist>(size_t numBones)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~AnimatedMeshState</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga52780d781b5d2fc70acf7d4e43fa7ebe</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CS::Animation::AnimNodeManagerCommon</name>
     <filename>classCS_1_1Animation_1_1AnimNodeManagerCommon.html</filename>
     <templarg></templarg>
@@ -115811,88 +115893,6 @@
       <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
       <anchor>a75b742cf2e20b5214a16db9dd0067046</anchor>
       <arglist>(size_t frame)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Animation::csSkeletalState</name>
-    <filename>classCS_1_1Animation_1_1csSkeletalState.html</filename>
-    <base>csRefCount</base>
-    <member kind="function">
-      <type></type>
-      <name>csSkeletalState</name>
-      <anchorfile>classCS_1_1Animation_1_1csSkeletalState.html</anchorfile>
-      <anchor>a344cae52c0fa90a89d67cfbc3171ad4c</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>size_t</type>
-      <name>GetBoneCount</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga84e4ad6f14b1f5f9a795a3ceb4938b5a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csQuaternion &amp;</type>
-      <name>GetQuaternion</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga4a4e7e5ddeabe4a138edddba77407fdb</anchor>
-      <arglist>(size_t i)</arglist>
-    </member>
-    <member kind="function">
-      <type>const csQuaternion &amp;</type>
-      <name>GetQuaternion</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga5d26e68ace67c74af98dcafa485cd86c</anchor>
-      <arglist>(size_t i) const </arglist>
-    </member>
-    <member kind="function">
-      <type>csVector3 &amp;</type>
-      <name>GetVector</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga1d2ba46554b2c686cabeb9fbddc029a4</anchor>
-      <arglist>(size_t i)</arglist>
-    </member>
-    <member kind="function">
-      <type>const csVector3 &amp;</type>
-      <name>GetVector</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gae98576a84c095548425dd2aa87afc38b</anchor>
-      <arglist>(size_t i) const </arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>IsBoneUsed</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga21451500c43e59656519d9c5f2581147</anchor>
-      <arglist>(BoneID bone) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Reset</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gab3c2245adb5b83fd9e629dfeb7a3c130</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetBoneUsed</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gaaf29659662c97ddc625c203888cf04bc</anchor>
-      <arglist>(BoneID bone)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Setup</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga71e5e907de896e4f3bbe9ef32196f9fc</anchor>
-      <arglist>(size_t numBones)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~csSkeletalState</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga31317b36295216dd1889f7f29cd975a7</anchor>
-      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -116683,24 +116683,24 @@
       <arglist>(float dt)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateAbsSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga30e6ee0cca10a82f96e6cf4f7f40cf8b</anchor>
+      <anchor>gaac44f4c748d59808b18ea00dfbd0775f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateBindSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>ga600ef7fce9adfefbfa9d48f72939383f</anchor>
+      <anchor>ga61101b84658b9e8a19b7d74dd6790c75</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; csSkeletalState &gt;</type>
+      <type>virtual csPtr&lt; AnimatedMeshState &gt;</type>
       <name>GetStateBoneSpace</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gadfbc8996e16f3137cf4c6ebf135c8085</anchor>
+      <anchor>ga069de64973de1e3a28fd259abf98bf29</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -116782,8 +116782,8 @@
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gabaa8db007441f85309f980402687ddb3</anchor>
-      <arglist>(csSkeletalState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
+      <anchor>ga89f57851d101c169bbc019ede4d28c27</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117012,8 +117012,8 @@
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gafe5e8c39486baec5c5e5102691d82a4f</anchor>
-      <arglist>(csSkeletalState *state, float baseWeight=1.0f)=0</arglist>
+      <anchor>ga456ddd69164e1c4967a8a856e16288ec</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight=1.0f)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimNode *</type>
@@ -118798,8 +118798,8 @@
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>classCS_1_1Animation_1_1SkeletonAnimNodeSingleBase.html</anchorfile>
-      <anchor>a51e7cc14b256a51a621fa01107012e72</anchor>
-      <arglist>(csSkeletalState *state, float baseWeight=1.0f)</arglist>
+      <anchor>a9f6de4bc9519cf3caefc8c1e982ed11b</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight=1.0f)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iSkeletonAnimNode *</type>
@@ -121718,8 +121718,8 @@
   <compound kind="namespace">
     <name>CS::Mesh</name>
     <filename>namespaceCS_1_1Mesh.html</filename>
+    <class kind="struct">CS::Mesh::AnimatedMeshBoneInfluence</class>
     <class kind="class">CS::Mesh::AnimatedMeshTools</class>
-    <class kind="struct">CS::Mesh::csAnimatedMeshBoneInfluence</class>
     <class kind="struct">CS::Mesh::iAnimatedMesh</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshFactory</class>
     <class kind="struct">CS::Mesh::iAnimatedMeshMorphTarget</class>
@@ -121732,6 +121732,24 @@
     <class kind="struct">CS::Mesh::iFurMeshMaterialProperties</class>
     <class kind="struct">CS::Mesh::iFurMeshState</class>
     <class kind="struct">CS::Mesh::iFurMeshType</class>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Mesh::AnimatedMeshBoneInfluence</name>
+    <filename>structCS_1_1Mesh_1_1AnimatedMeshBoneInfluence.html</filename>
+    <member kind="variable">
+      <type>CS::Animation::BoneID</type>
+      <name>bone</name>
+      <anchorfile>structCS_1_1Mesh_1_1AnimatedMeshBoneInfluence.html</anchorfile>
+      <anchor>a5f0f8f6a9398f13ca0e7502537633d02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>influenceWeight</name>
+      <anchorfile>structCS_1_1Mesh_1_1AnimatedMeshBoneInfluence.html</anchorfile>
+      <anchor>a2faf52da8a0d4472a1c09277195b8dd7</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::Mesh::AnimatedMeshTools</name>
@@ -121749,24 +121767,6 @@
       <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
       <anchor>aa815d1d1d5488d443938544fc0aed53e</anchor>
       <arglist>(iObjectRegistry *object_reg, const char *path, const char *baseMesh, const char *meshMask, const char *factoryName)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Mesh::csAnimatedMeshBoneInfluence</name>
-    <filename>structCS_1_1Mesh_1_1csAnimatedMeshBoneInfluence.html</filename>
-    <member kind="variable">
-      <type>CS::Animation::BoneID</type>
-      <name>bone</name>
-      <anchorfile>structCS_1_1Mesh_1_1csAnimatedMeshBoneInfluence.html</anchorfile>
-      <anchor>aa7b36b741e64dae20e5cfced47d18cd2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>influenceWeight</name>
-      <anchorfile>structCS_1_1Mesh_1_1csAnimatedMeshBoneInfluence.html</anchorfile>
-      <anchor>af14cbd6c7cb90fe33b95c7a9b2289bc4</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -122059,10 +122059,10 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csAnimatedMeshBoneInfluence *</type>
+      <type>virtual AnimatedMeshBoneInfluence *</type>
       <name>GetBoneInfluences</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>a19ab1a557775fd50ee27e87ceba5c576</anchor>
+      <anchor>a87f28f044031eafd2ba403d2639e481c</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
