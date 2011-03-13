@@ -23569,11 +23569,10 @@
     <includes id="visualdebug_8h" name="visualdebug.h" local="yes" imported="no">iutil/visualdebug.h</includes>
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
-    <class kind="class">CS::Demo::CameraHelper</class>
     <class kind="class">CS::Demo::CameraManager</class>
     <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
-    <class kind="class">CS::Demo::HUDHelper</class>
+    <class kind="class">CS::Demo::HUDManager</class>
     <namespace>CS</namespace>
     <namespace>CS::Demo</namespace>
     <member kind="typedef">
@@ -23590,27 +23589,27 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_NONE</name>
+      <name>CAMERA_NO_MOVE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189ac064181103f5ce37733e4c0d67d512a8</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a332d89ef375231d7919e1edacf6cd007</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_MOVE_FREE</name>
+      <name>CAMERA_MOVE_FREE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a68cbd1dc779d0da3d0395a4a90e8f448</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a5966d2bc1f074a5c3764ef1bfc8fdda7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_MOVE_LOOKAT</name>
+      <name>CAMERA_MOVE_LOOKAT</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a916ac6479faf5478df7612744630c6a3</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a88e0d71ae35625080baa7c581494cb2f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_ROTATE</name>
+      <name>CAMERA_ROTATE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a2154465fc2e2193142b6b2cc49064f4c</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a39386ea56fced9654549db55398b6abd</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -119236,11 +119235,10 @@
   <compound kind="namespace">
     <name>CS::Demo</name>
     <filename>namespaceCS_1_1Demo.html</filename>
-    <class kind="class">CS::Demo::CameraHelper</class>
     <class kind="class">CS::Demo::CameraManager</class>
     <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
-    <class kind="class">CS::Demo::HUDHelper</class>
+    <class kind="class">CS::Demo::HUDManager</class>
     <member kind="typedef">
       <type>size_t</type>
       <name>CommandLineBlockID</name>
@@ -119255,161 +119253,200 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_NONE</name>
+      <name>CAMERA_NO_MOVE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189ac064181103f5ce37733e4c0d67d512a8</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a332d89ef375231d7919e1edacf6cd007</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_MOVE_FREE</name>
+      <name>CAMERA_MOVE_FREE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a68cbd1dc779d0da3d0395a4a90e8f448</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a5966d2bc1f074a5c3764ef1bfc8fdda7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_MOVE_LOOKAT</name>
+      <name>CAMERA_MOVE_LOOKAT</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a916ac6479faf5478df7612744630c6a3</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a88e0d71ae35625080baa7c581494cb2f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSDEMO_CAMERA_ROTATE</name>
+      <name>CAMERA_ROTATE</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a2154465fc2e2193142b6b2cc49064f4c</anchor>
+      <anchor>ac8d53eccb01c1c2eb6dce406077fb189a39386ea56fced9654549db55398b6abd</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Demo::CameraHelper</name>
-    <filename>classCS_1_1Demo_1_1CameraHelper.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>CameraHelper</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>ae4798b6500cd494fe401b085e68c2161</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Frame</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>af165c70ccd438f1d4b29e09029e9d8b1</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>CameraMode</type>
-      <name>GetCameraMode</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>af493703aea79ccd0f950df96d1f5cef8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>float</type>
-      <name>GetMotionSpeed</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>ac3ec44daa9c2033b0c6af04a942b53ff</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>GetMouseMoveEnabled</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a634015b93cfafcfbf59edcde788c07f3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>float</type>
-      <name>GetRotationSpeed</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a75ea73190966688b408f1c268f0e8f89</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseDown</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a8ff844f5e990102212caf26f9c4c2061</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseMove</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a28165bac21503dc4d3b480a4d3654e95</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseUp</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>ad0cc027e2b7beb1eaa6b7592cbdb911b</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ResetCamera</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>ab65b0a1edea9153d352a048638549a24</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetCameraMode</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>af1803e9fc13bfdfcf1eae70cad2722d5</anchor>
-      <arglist>(CameraMode cameraMode)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>SetContext</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a6d6f631dfe0770b8364f6d5e4017e992</anchor>
-      <arglist>(CameraManager *manager, iKeyboardDriver *kbd, iVirtualClock *vc, iCamera *camera)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetMotionSpeed</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a64a11bc57dea3c0c317136900d71db9d</anchor>
-      <arglist>(float speed)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetMouseMoveEnabled</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a9b4e4eb8d94f8031189aff6e2d21a9b8</anchor>
-      <arglist>(bool enabled)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetRotationSpeed</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraHelper.html</anchorfile>
-      <anchor>a329f8e97342da69e136ddaa3386b8b56</anchor>
-      <arglist>(float speed)</arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>CS::Demo::CameraManager</name>
     <filename>classCS_1_1Demo_1_1CameraManager.html</filename>
-    <member kind="function" virtualness="virtual">
-      <type>virtual float</type>
+    <base>csBaseEventHandler</base>
+    <member kind="function">
+      <type></type>
+      <name>CameraManager</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a7edae418052e19cdaa879bfb41be17da</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Frame</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a6263275551e317e6b026117c447a1321</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>iCamera *</type>
+      <name>GetCamera</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a85099bd56da23c18f7f037d24b1a80a3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>GetCameraMinimumDistance</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a004a532db660c69a36730c13b782b57f</anchor>
+      <anchor>a6244136191b343e857eeeb8c1df03f48</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csVector3</type>
-      <name>GetCameraStart</name>
+    <member kind="function">
+      <type>CameraMode</type>
+      <name>GetCameraMode</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a74c1abb34350b74235658860e166d460</anchor>
+      <anchor>a7d0364153f06bd21bd1216760bc6576e</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csVector3</type>
+    <member kind="function">
+      <type>csVector3</type>
       <name>GetCameraTarget</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a3a9407ba93987a6bd0a95fb8002f89c8</anchor>
+      <anchor>af8007dc46ab1822f59173cc251fba2f1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>GetMotionSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a1c542938c6693af96a8bdd4722c797e9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>GetMouseMoveEnabled</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a76c8f962dfb1a4fffa2b2fa44b1b013e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>GetRotationSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a316bb4987b36f6d0a97df3c527130dee</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>csVector3</type>
+      <name>GetStartPosition</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a7e87263d2216fe78ab507e979ecb8097</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Initialize</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a370c0a8f3c7d9b2e1f640feaa9cdb823</anchor>
+      <arglist>(iObjectRegistry *registry)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>OnMouseDown</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a68e8737a5c0700c0ea48700ea5cf3a40</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>OnMouseMove</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a0a45f7fa8ad8c8dd49ff421a220fe92a</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>OnMouseUp</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>af7173ac72fb74ba2fa497b68575539e6</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ResetCamera</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a0c538143b4857fefb9211e92e1898a84</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCamera</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>ae08e35fb95fb191b1ffaa7994504878c</anchor>
+      <arglist>(iCamera *camera)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCameraMinimumDistance</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>acd7c71d67bd7def9f82ba680d37be6c9</anchor>
+      <arglist>(float distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCameraMode</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a126c7cd12c649428a3fb956d4ee00d89</anchor>
+      <arglist>(CameraMode cameraMode)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCameraTarget</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a756d8b404ecf05c8e71d9ffc2fdbc514</anchor>
+      <arglist>(csVector3 position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetMotionSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a926f8bb3e12b3c1924bc97e795cc4c70</anchor>
+      <arglist>(float speed)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetMouseMoveEnabled</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a74b27331873a077f9f10ec7c8ffab867</anchor>
+      <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetRotationSpeed</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>ab7cbd20a7b52c66d775b58abbaa54e95</anchor>
+      <arglist>(float speed)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetStartPosition</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a789a4eaac439e41208360c7ce360222f</anchor>
+      <arglist>(csVector3 position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>UpdateCamera</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>acf8f9887f29c176665c04fa4b87c7c03</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -119450,7 +119487,6 @@
     <filename>classCS_1_1Demo_1_1DemoApplication.html</filename>
     <base>csApplicationFramework</base>
     <base>csBaseEventHandler</base>
-    <base>CS::Demo::CameraManager</base>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
       <name>Application</name>
@@ -119493,13 +119529,6 @@
       <anchor>a90e035c0989c717e679b03a917091369</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>bool</type>
-      <name>GetHUDDisplayed</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a33eff0e240930a3aa541e4d6e8ea83f9</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
       <name>OnKeyboard</name>
@@ -119509,37 +119538,16 @@
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
-      <name>OnMouseDown</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a7fbe6f34561a0212596a80b65435a1aa</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
       <name>OnMouseMove</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
       <anchor>ab1e3b844906462ed9f4890bf5c29ad1a</anchor>
       <arglist>(iEvent &amp;event)</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
-      <name>OnMouseUp</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>ad717ce2d07940d4c1180c1412595c30c</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>SetHUDDisplayed</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>ae0adea35f83ab70be247b171a2869f3e</anchor>
-      <arglist>(bool displayed)</arglist>
-    </member>
     <member kind="variable" protection="protected">
-      <type>CameraHelper</type>
-      <name>cameraHelper</name>
+      <type>CameraManager</type>
+      <name>cameraManager</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>acb2cd13f592ca94e5fb338877d727c6d</anchor>
+      <anchor>ae1db5a6df3c9ab70c1dd8a3dd08c1400</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -119571,10 +119579,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>HUDHelper</type>
-      <name>hudHelper</name>
+      <type>HUDManager</type>
+      <name>hudManager</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a410b8a0e9e9385716c22edd8d7187bf6</anchor>
+      <anchor>a7dd777e35aec056d3566312ef3bdc488</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -119592,17 +119600,17 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>mouseX</name>
+      <type>csRef&lt; iMouseDriver &gt;</type>
+      <name>mouse</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a4b049963a10461691901cfb4ffa8ef46</anchor>
+      <anchor>a5dd8d53d9b17f1772ca08fc45b5fa473</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>mouseY</name>
+      <type>csVector2</type>
+      <name>previousMouse</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a5d6738fb0a357220883ae6a330d0c0aa</anchor>
+      <anchor>a7c0bbf900bf2af0731531ce501cf800e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -119649,69 +119657,84 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>CS::Demo::HUDHelper</name>
-    <filename>classCS_1_1Demo_1_1HUDHelper.html</filename>
+    <name>CS::Demo::HUDManager</name>
+    <filename>classCS_1_1Demo_1_1HUDManager.html</filename>
+    <base>csBaseEventHandler</base>
     <member kind="function">
       <type>void</type>
-      <name>DisplayHUD</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a57ab954a5a5eec5863fb2f8f1f2f0064</anchor>
+      <name>Frame</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>aa8f80eb1e7a69fb6ad8baaa1b40c025c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>GetEnabled</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>adce7160a26ae7a149c85d70d389997e4</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>HUDHelper</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a5016c7a863019a861a413cfe6820e02f</anchor>
+      <name>HUDManager</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>aebe93fca10ff0ca82a2af4c140e3c4d3</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>OnKeyboard</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a4ef4aef171933453784fede6073a5e78</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
+      <type>void</type>
+      <name>Initialize</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a08f294431f4914cb2516030b6da14682</anchor>
+      <arglist>(iObjectRegistry *registry)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>SetContext</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a13871cd40bdecea172669e864a7e1741</anchor>
-      <arglist>(csApplicationFramework *applicationFramework, iGraphics3D *g3d, iGraphics2D *g2d, iLoader *loader, iVirtualClock *vc)</arglist>
+      <type>void</type>
+      <name>SetEnabled</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a01879afa0341e16ddd7b95db7cf7a9ef</anchor>
+      <arglist>(bool enabled)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SwitchKeysPage</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a1e6ae99cd1f8a20d56637c3cdd89395b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Write</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a499a9c55131d75a53886f781bdb32914</anchor>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a7e963ad10e59fb2d7e9f8a8c1587c1f5</anchor>
       <arglist>(int x, int y, int fg, int color, const char *str,...)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>WriteShadow</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>af0388c53db8fc3c1b0afad7f2975e58a</anchor>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a01c58a79c18853a592240680cf815c29</anchor>
       <arglist>(int x, int y, int color, const char *str,...)</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>~HUDHelper</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>aa1b3f7c52390aa508d8f537ba73cb0e7</anchor>
+      <name>~HUDManager</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a597927816adccfb1a1df2370f7bceb01</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="variable">
       <type>csStringArray</type>
       <name>keyDescriptions</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>af5df426e96de6fc4e870f791fc3e28a6</anchor>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a64f376c91f95ebc06119b1cd13df14da</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csStringArray</type>
       <name>stateDescriptions</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDHelper.html</anchorfile>
-      <anchor>a3a1393eacd71c4767d9f6a031a77e020</anchor>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a58a19f5aa47444c4b0849064df7f39bc</anchor>
       <arglist></arglist>
     </member>
   </compound>
