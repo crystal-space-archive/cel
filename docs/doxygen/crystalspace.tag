@@ -23570,18 +23570,10 @@
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
     <class kind="class">CS::Demo::CameraManager</class>
-    <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
     <class kind="class">CS::Demo::HUDManager</class>
     <namespace>CS</namespace>
     <namespace>CS::Demo</namespace>
-    <member kind="typedef">
-      <type>size_t</type>
-      <name>CommandLineBlockID</name>
-      <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>a90290f0c5fb2ad06d5c53bde0b32ec7b</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <name>CameraMode</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
@@ -25203,6 +25195,8 @@
     <name>cmdhelp.h</name>
     <path>/tmp/tmp5/trunk/include/csutil/</path>
     <filename>cmdhelp_8h</filename>
+    <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
+    <includes id="pluginconfig_8h" name="pluginconfig.h" local="yes" imported="no">iutil/pluginconfig.h</includes>
     <class kind="class">csCommandLineHelper</class>
   </compound>
   <compound kind="file">
@@ -32065,6 +32059,10 @@
     <name>pluginconfig.h</name>
     <path>/tmp/tmp5/trunk/include/iutil/</path>
     <filename>pluginconfig_8h</filename>
+    <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
+    <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
+    <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
+    <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
     <class kind="struct">csOptionDescription</class>
@@ -32104,6 +32102,54 @@
       <name>CSVAR_STRING</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR2</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSPATH</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSFILE</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a392d04193a397de59343a2630dbb495a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSDIR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52afa4f50a4301bffffab988635e72f2356</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -40733,6 +40779,54 @@
       <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR2</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSPATH</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSFILE</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a392d04193a397de59343a2630dbb495a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VFSDIR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52afa4f50a4301bffffab988635e72f2356</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>cs_asprintf</name>
@@ -47180,6 +47274,41 @@
   <compound kind="class">
     <name>csCommandLineHelper</name>
     <filename>classcsCommandLineHelper.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>AddCommandLineExample</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>ad83419d60e442cc4aa3ee431ef2805a6</anchor>
+      <arglist>(const char *example)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>AddCommandLineOption</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>a4fc2d4adb1f1a12805a912f4c7c85df8</anchor>
+      <arglist>(const char *name, const char *description, csVariant value, size_t section=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>AddCommandLineOption</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>a31057b1c55862e6e37f7bf4331c66bf9</anchor>
+      <arglist>(csOptionDescription &amp;description, csVariant &amp;value, size_t section=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>AddCommandLineSection</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>ab55bb20ea3478181a00a7f6b374189bb</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PrintApplicationHelp</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>a63a4714d75cd5e86681a7e4835d33de8</anchor>
+      <arglist>(iObjectRegistry *registry, const char *command, const char *usage, const char *description) const </arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>CheckHelp</name>
@@ -47193,6 +47322,27 @@
       <anchorfile>classcsCommandLineHelper.html</anchorfile>
       <anchor>a8082d602f14ea7f4376e7c811204f737</anchor>
       <arglist>(iObjectRegistry *object_reg, iCommandLineParser *cmdline=0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>PrintOption</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>ad5a1a0e6873717b7bac97c337b688d0d</anchor>
+      <arglist>(const char *name, const char *description, const csVariant &amp;value)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>PrintOption</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>a1adc4717af44e3b7ef8f6e1ce48aaa31</anchor>
+      <arglist>(const csOptionDescription &amp;option, const csVariant &amp;value)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>PrintTitle</name>
+      <anchorfile>classcsCommandLineHelper.html</anchorfile>
+      <anchor>a25004649921a8d8c557325259a014b52</anchor>
+      <arglist>(const char *title, unsigned int level=0)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -70609,6 +70759,27 @@
   <compound kind="struct">
     <name>csOptionDescription</name>
     <filename>structcsOptionDescription.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>csOptionDescription</name>
+      <anchorfile>structcsOptionDescription.html</anchorfile>
+      <anchor>aef9f4fcf0880d419d37423997af91e23</anchor>
+      <arglist>(const char *name, const char *description, csVariantType type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csOptionDescription</name>
+      <anchorfile>structcsOptionDescription.html</anchorfile>
+      <anchor>a55d2ea58cb58c0bfa67d8143c2e639f1</anchor>
+      <arglist>(int id, const char *name, const char *description, csVariantType type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csOptionDescription</name>
+      <anchorfile>structcsOptionDescription.html</anchorfile>
+      <anchor>a914326ce2a09d93bde23c196a2747445</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable">
       <type>const char *</type>
       <name>description</name>
@@ -81994,10 +82165,101 @@
       <arglist>(const csVariant &amp;var)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a421c2645cfae433ee79456d85476c3e8</anchor>
+      <arglist>(csVector4 v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a8b95561a0c3028bc54219e5f26007f1f</anchor>
+      <arglist>(csVector3 v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a78f87d32548f4d2cb98a7dd9c6a6cfbe</anchor>
+      <arglist>(csVector2 v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ab5e11d019c22da4536d11acb37f37c87</anchor>
+      <arglist>(csColor4 c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a9675e63112ec8dd8476fb65f41e3630a</anchor>
+      <arglist>(csColor c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a13f1f95f0ec3bac94130e3a8a9d09532</anchor>
+      <arglist>(const char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a712b6fa2c7b0e10c9178d84ba2302254</anchor>
+      <arglist>(float f)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a87f63a869798edf05a22fd33cb4ea4f3</anchor>
+      <arglist>(bool b)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a27780d0b90a56cc1a359c709959b687e</anchor>
+      <arglist>(long l)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ac94ae6e66528669fa2c586fd6a43075b</anchor>
+      <arglist>(int i)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a6594afe4ffa4a685e030779a9a811975</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>GetBool</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a36fa1d06d3d829ca555a9985a596b43c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csColor</type>
+      <name>GetColor</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ad8afa7c0ac8fa01b9606a89774e73945</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csColor4</type>
+      <name>GetColor4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a06d43b5955467257b4eced886615912f</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -82022,6 +82284,55 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>csVariantType</type>
+      <name>GetType</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a0aa9f6d202cc90e06447f70c238f44c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector2</type>
+      <name>GetVector2</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a4fb3857eec74c1a3475330db599d5d2f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector3</type>
+      <name>GetVector3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a38005416c1e13ee77285729553d5c6f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector4</type>
+      <name>GetVector4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a8d409ad682a1699adbee030ef58de158</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetVFSDir</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a07a5295317b5b5f8f533c1f686f67bef</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetVFSFile</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a7c2e982a4fbaae72caf864ae4079a6ba</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>GetVFSPath</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>aa9836437b34e4f08095a3288882cab0a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>const csVariant &amp;</type>
       <name>operator=</name>
       <anchorfile>structcsVariant.html</anchorfile>
@@ -82034,6 +82345,20 @@
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a6c45850ca04ce0b460a95c4433a584b5</anchor>
       <arglist>(bool b)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetColor</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a65638a8e6f7359fe29cb0a855f27c019</anchor>
+      <arglist>(csColor c)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetColor4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a6e7a4b2b33f1c0431d66749ae9885c51</anchor>
+      <arglist>(csColor4 c)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -82061,6 +82386,48 @@
       <name>SetString</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a70568ffe2ca094b6da29a5264da53fa6</anchor>
+      <arglist>(const char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector2</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a576b6d83922590aa09f2042d9c535b99</anchor>
+      <arglist>(csVector2 v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a4544a3dfc037e32de96ffc11b6a0967c</anchor>
+      <arglist>(csVector3 v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a6265bb8f956e63486f170f8225a120c5</anchor>
+      <arglist>(csVector4 v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVFSDir</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a574601ec33f14ed51a4f26a8cd55a61a</anchor>
+      <arglist>(const char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVFSFile</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ae353ee75b11e6a270a75e9df250b480e</anchor>
+      <arglist>(const char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVFSPath</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>af64b00a055c41230e0c9db904e1e28f1</anchor>
       <arglist>(const char *s)</arglist>
     </member>
   </compound>
@@ -100223,22 +100590,22 @@
       <type>virtual bool</type>
       <name>GetOption</name>
       <anchorfile>structiPluginConfig.html</anchorfile>
-      <anchor>a5b696e4beacd0b33195980b362d720bc</anchor>
-      <arglist>(int id, csVariant *value)=0</arglist>
+      <anchor>a747234da909cead04562b599df53b748</anchor>
+      <arglist>(int index, csVariant *value)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>GetOptionDescription</name>
       <anchorfile>structiPluginConfig.html</anchorfile>
-      <anchor>ac461a6a85570948f2d92d639a2654857</anchor>
-      <arglist>(int idx, csOptionDescription *option)=0</arglist>
+      <anchor>a40905ed69fdcda6ec2c214efe6435394</anchor>
+      <arglist>(int index, csOptionDescription *option)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>SetOption</name>
       <anchorfile>structiPluginConfig.html</anchorfile>
-      <anchor>af80fa679ca28a82f3a8e55a51efc26b0</anchor>
-      <arglist>(int id, csVariant *value)=0</arglist>
+      <anchor>ab0db0cb35eacef7edd89d5fed947fc27</anchor>
+      <arglist>(int index, csVariant *value)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -119236,16 +119603,8 @@
     <name>CS::Demo</name>
     <filename>namespaceCS_1_1Demo.html</filename>
     <class kind="class">CS::Demo::CameraManager</class>
-    <class kind="class">CS::Demo::CommandLineHelper</class>
     <class kind="class">CS::Demo::DemoApplication</class>
     <class kind="class">CS::Demo::HUDManager</class>
-    <member kind="typedef">
-      <type>size_t</type>
-      <name>CommandLineBlockID</name>
-      <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
-      <anchor>a90290f0c5fb2ad06d5c53bde0b32ec7b</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <name>CameraMode</name>
       <anchorfile>namespaceCS_1_1Demo.html</anchorfile>
@@ -119451,38 +119810,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>CS::Demo::CommandLineHelper</name>
-    <filename>classCS_1_1Demo_1_1CommandLineHelper.html</filename>
-    <member kind="function">
-      <type>CommandLineBlockID</type>
-      <name>AddCommandLineBlock</name>
-      <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
-      <anchor>a08f00d27756845e97fc201c306a99315</anchor>
-      <arglist>(const char *name)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>AddCommandLineOption</name>
-      <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
-      <anchor>afe6bae2a04d514639e6d51289108912f</anchor>
-      <arglist>(const char *option, const char *description, CommandLineBlockID block=0)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>CommandLineHelper</name>
-      <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
-      <anchor>a6e5ac1953214db931f62d49897fb6204</anchor>
-      <arglist>(const char *applicationCommand, const char *applicationCommandUsage, const char *applicationDescription)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>WriteHelp</name>
-      <anchorfile>classCS_1_1Demo_1_1CommandLineHelper.html</anchorfile>
-      <anchor>a0563a83886d61f1fffeb3532b8a68f77</anchor>
-      <arglist>(iObjectRegistry *registry) const </arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>CS::Demo::DemoApplication</name>
     <filename>classCS_1_1Demo_1_1DemoApplication.html</filename>
     <base>csApplicationFramework</base>
@@ -119498,8 +119825,8 @@
       <type></type>
       <name>DemoApplication</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>ac742e100415c7669bd534fc5c1d1ea95</anchor>
-      <arglist>(const char *applicationName, const char *applicationCommand, const char *applicationCommandUsage, const char *applicationDescription)</arglist>
+      <anchor>ace5b4630238510877cf9f97e71872f8f</anchor>
+      <arglist>(const char *applicationName)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -119543,18 +119870,18 @@
       <anchor>ab1e3b844906462ed9f4890bf5c29ad1a</anchor>
       <arglist>(iEvent &amp;event)</arglist>
     </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>PrintHelp</name>
+      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
+      <anchor>a6f3a953d95ef4cf7932e75566e489bcc</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>CameraManager</type>
       <name>cameraManager</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
       <anchor>ae1db5a6df3c9ab70c1dd8a3dd08c1400</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>CommandLineHelper</type>
-      <name>commandLineHelper</name>
-      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
-      <anchor>a26a7965c0ba3d3cebab381ba1f6fec64</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
