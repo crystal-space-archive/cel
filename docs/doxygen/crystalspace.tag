@@ -32140,18 +32140,6 @@
       <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSFILE</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a392d04193a397de59343a2630dbb495a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSDIR</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52afa4f50a4301bffffab988635e72f2356</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>reftrack.h</name>
@@ -40813,18 +40801,6 @@
       <name>CSVAR_VFSPATH</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSFILE</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a392d04193a397de59343a2630dbb495a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSDIR</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52afa4f50a4301bffffab988635e72f2356</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -82313,20 +82289,6 @@
     </member>
     <member kind="function">
       <type>const char *</type>
-      <name>GetVFSDir</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a07a5295317b5b5f8f533c1f686f67bef</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>GetVFSFile</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a7c2e982a4fbaae72caf864ae4079a6ba</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
       <name>GetVFSPath</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>aa9836437b34e4f08095a3288882cab0a</anchor>
@@ -82408,20 +82370,6 @@
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a6265bb8f956e63486f170f8225a120c5</anchor>
       <arglist>(csVector4 v)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVFSDir</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a574601ec33f14ed51a4f26a8cd55a61a</anchor>
-      <arglist>(const char *s)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVFSFile</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>ae353ee75b11e6a270a75e9df250b480e</anchor>
-      <arglist>(const char *s)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
