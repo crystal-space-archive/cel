@@ -35519,6 +35519,13 @@
       <type>virtual void</type>
       <name>BlendState</name>
       <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga56a8a519fdb7e5bff2c450079ba07678</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight, float playbackTime) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>BlendState</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga89f57851d101c169bbc019ede4d28c27</anchor>
       <arglist>(AnimatedMeshState *state, float baseWeight, float playbackTime, bool isPlayingCyclic) const =0</arglist>
     </member>
@@ -117091,6 +117098,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaa85a9d2ec14d551a63c38c371055952f</anchor>
       <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>BlendState</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga56a8a519fdb7e5bff2c450079ba07678</anchor>
+      <arglist>(AnimatedMeshState *state, float baseWeight, float playbackTime) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
