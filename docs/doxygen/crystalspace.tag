@@ -23438,6 +23438,7 @@
     <path>/tmp/tmp5/trunk/include/cstool/</path>
     <filename>animeshtools_8h</filename>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
+    <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <class kind="class">CS::Mesh::AnimatedMeshTools</class>
     <namespace>CS</namespace>
     <namespace>CS::Mesh</namespace>
@@ -70764,10 +70765,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="variable">
-      <type>const char *</type>
+      <type>csString</type>
       <name>description</name>
       <anchorfile>structcsOptionDescription.html</anchorfile>
-      <anchor>ac2707be8d678a22bced964de823d0f48</anchor>
+      <anchor>aa695bd0007370878e1a04c4b02c81548</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -70778,10 +70779,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>const char *</type>
+      <type>csString</type>
       <name>name</name>
       <anchorfile>structcsOptionDescription.html</anchorfile>
-      <anchor>ac3240e41e8d1b9d50a39e4d46968da37</anchor>
+      <anchor>aedd9f2b31a3463f7a169c8e4f7939973</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -107797,29 +107798,29 @@
       <type>virtual int</type>
       <name>LoadCoreAnimation</name>
       <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
-      <anchor>ac6a127146394f5b7464990756e818c00</anchor>
-      <arglist>(iVFS *vfs, const char *filename, const char *name, int type, float base_velocity, float min_velocity, float max_velocity, int min_interval, int max_interval, int idle_pct, bool lock)=0</arglist>
+      <anchor>ae1d01a431b0409e1ba0f58f31f162795</anchor>
+      <arglist>(iVFS *vfs, const char *filename, const char *name, int type, float base_velocity, float min_velocity, float max_velocity, int min_interval, int max_interval, int idle_pct, bool lock, int loadFlags=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>
       <name>LoadCoreMesh</name>
       <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
-      <anchor>a54b3f8e103b009861543a3ba219bfe91</anchor>
-      <arglist>(iVFS *vfs, const char *filename, const char *name, bool attach, iMaterialWrapper *defmat)=0</arglist>
+      <anchor>a8335950925b8cfa018284d9c1342e763</anchor>
+      <arglist>(iVFS *vfs, const char *filename, const char *name, bool attach, iMaterialWrapper *defmat, int loadFlags=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>
       <name>LoadCoreMorphTarget</name>
       <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
-      <anchor>a2e7e3f9e8b96ceb188fcfab4f16ecab8</anchor>
-      <arglist>(iVFS *vfs, int mesh_index, const char *filename, const char *name)=0</arglist>
+      <anchor>ad13fb779372b301cb4235e7cd02a1858</anchor>
+      <arglist>(iVFS *vfs, int mesh_index, const char *filename, const char *name, int loadFlags=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>LoadCoreSkeleton</name>
       <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
-      <anchor>ad066e0596f6d36a14e50fe7ad86af22a</anchor>
-      <arglist>(iVFS *vfs, const char *filename)=0</arglist>
+      <anchor>aec5df2b84d47f3f93a957f8a9b393248</anchor>
+      <arglist>(iVFS *vfs, const char *filename, int loadFlags=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -122067,11 +122068,18 @@
     <name>CS::Mesh::AnimatedMeshTools</name>
     <filename>classCS_1_1Mesh_1_1AnimatedMeshTools.html</filename>
     <member kind="function" static="yes">
+      <type>static iAnimatedMeshFactory *</type>
+      <name>ImportGeneralMesh</name>
+      <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
+      <anchor>a014b9f16f4eea87ef49d17de6fd8e176</anchor>
+      <arglist>(iObjectRegistry *object_reg, iGeneralFactoryState *genmesh, bool deleteMesh=true)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static bool</type>
       <name>ImportMorphMesh</name>
       <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
-      <anchor>ab3e21d34d631c944cb4010481023badb</anchor>
-      <arglist>(iObjectRegistry *object_reg, iAnimatedMeshFactory *baseMesh, iAnimatedMeshFactory *morphMesh, const char *morphName, bool deleteMesh=false)</arglist>
+      <anchor>a95bfcc737634ba2c3e8ae01e314dc13e</anchor>
+      <arglist>(iObjectRegistry *object_reg, iAnimatedMeshFactory *baseMesh, iAnimatedMeshFactory *morphMesh, const char *morphName, bool deleteMesh=true)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static iAnimatedMeshFactory *</type>
