@@ -23553,6 +23553,7 @@
     <filename>csdemoapplication_8h</filename>
     <includes id="csapplicationframework_8h" name="csapplicationframework.h" local="yes" imported="no">cstool/csapplicationframework.h</includes>
     <includes id="simplestaticlighter_8h" name="simplestaticlighter.h" local="yes" imported="no">cstool/simplestaticlighter.h</includes>
+    <includes id="cfgacc_8h" name="cfgacc.h" local="yes" imported="no">csutil/cfgacc.h</includes>
     <includes id="cmdhelp_8h" name="cmdhelp.h" local="yes" imported="no">csutil/cmdhelp.h</includes>
     <includes id="common__handlers_8h" name="common_handlers.h" local="yes" imported="no">csutil/common_handlers.h</includes>
     <includes id="csbaseeventh_8h" name="csbaseeventh.h" local="yes" imported="no">csutil/csbaseeventh.h</includes>
@@ -34724,35 +34725,6 @@
       <anchor>gaaa0a3ada833a582e7384868fe8dfcdc5</anchor>
       <arglist></arglist>
     </member>
-  </compound>
-  <compound kind="group">
-    <name>aws</name>
-    <title>AWS</title>
-    <filename>group__aws.html</filename>
-    <subgroup>aws_comp_flags</subgroup>
-    <subgroup>aws_sink_errors</subgroup>
-    <subgroup>aws_sys_flags</subgroup>
-    <subgroup>aws_window_trans</subgroup>
-  </compound>
-  <compound kind="group">
-    <name>aws_comp_flags</name>
-    <title>Component flags</title>
-    <filename>group__aws__comp__flags.html</filename>
-  </compound>
-  <compound kind="group">
-    <name>aws_sink_errors</name>
-    <title>Sink error codes</title>
-    <filename>group__aws__sink__errors.html</filename>
-  </compound>
-  <compound kind="group">
-    <name>aws_sys_flags</name>
-    <title>Window manager flags</title>
-    <filename>group__aws__sys__flags.html</filename>
-  </compound>
-  <compound kind="group">
-    <name>aws_window_trans</name>
-    <title>Window transitions</title>
-    <filename>group__aws__window__trans.html</filename>
   </compound>
   <compound kind="group">
     <name>plugincommon</name>
@@ -119845,6 +119817,13 @@
       <name>cameraManager</name>
       <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
       <anchor>ae1db5a6df3c9ab70c1dd8a3dd08c1400</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>csConfigAccess</type>
+      <name>config</name>
+      <anchorfile>classCS_1_1Demo_1_1DemoApplication.html</anchorfile>
+      <anchor>a9af1117c99e2a1ec9babe92b7a6564e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
