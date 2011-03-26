@@ -6,10 +6,17 @@
     <filename>index</filename>
   </compound>
   <compound kind="file">
+    <name>animation.h</name>
+    <path>/tmp/tmp5/trunk/include/</path>
+    <filename>animation_8h</filename>
+    <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+  </compound>
+  <compound kind="file">
     <name>crystalspace.h</name>
     <path>/tmp/tmp5/trunk/include/</path>
     <filename>crystalspace_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="animation_8h" name="animation.h" local="yes" imported="no">animation.h</includes>
     <includes id="csgeom_8h" name="csgeom.h" local="yes" imported="no">csgeom.h</includes>
     <includes id="csgfx_8h" name="csgfx.h" local="yes" imported="no">csgfx.h</includes>
     <includes id="csplugincommon_8h" name="csplugincommon.h" local="yes" imported="no">csplugincommon.h</includes>
