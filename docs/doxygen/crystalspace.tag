@@ -6,17 +6,10 @@
     <filename>index</filename>
   </compound>
   <compound kind="file">
-    <name>animation.h</name>
-    <path>/tmp/tmp5/trunk/include/</path>
-    <filename>animation_8h</filename>
-    <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
-  </compound>
-  <compound kind="file">
     <name>crystalspace.h</name>
     <path>/tmp/tmp5/trunk/include/</path>
     <filename>crystalspace_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
-    <includes id="animation_8h" name="animation.h" local="yes" imported="no">animation.h</includes>
     <includes id="csgeom_8h" name="csgeom.h" local="yes" imported="no">csgeom.h</includes>
     <includes id="csgfx_8h" name="csgfx.h" local="yes" imported="no">csgfx.h</includes>
     <includes id="csplugincommon_8h" name="csplugincommon.h" local="yes" imported="no">csplugincommon.h</includes>
@@ -85505,8 +85498,8 @@
       <type>virtual bool</type>
       <name>Load</name>
       <anchorfile>structiCameraPosition.html</anchorfile>
-      <anchor>a15f694525af59eb5501e511caaf08b20</anchor>
-      <arglist>(iCamera *, iEngine *)=0</arglist>
+      <anchor>acbe87c05cffe092e4c981a59230fc3d4</anchor>
+      <arglist>(iCamera *camera, iEngine *engine)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
@@ -85514,6 +85507,13 @@
       <anchorfile>structiCameraPosition.html</anchorfile>
       <anchor>a5258cfb5d9061117888c00b5b208e2a0</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Save</name>
+      <anchorfile>structiCameraPosition.html</anchorfile>
+      <anchor>a92ae126fa96b08b82013303dc6a4fb6d</anchor>
+      <arglist>(iCamera *camera)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -102511,6 +102511,13 @@
       <anchorfile>structiSaver.html</anchorfile>
       <anchor>a2978bb4c6d11ac2e80f731c09ff0b6bd</anchor>
       <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SaveCameraPosition</name>
+      <anchorfile>structiSaver.html</anchorfile>
+      <anchor>ad97035e118cc2ffbb99ace33ec6cbd59</anchor>
+      <arglist>(iCameraPosition *position, iDocumentNode *parent)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -119591,6 +119598,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>ClearStartPosition</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>adea2600e1a7be12a3e398a5a25cca67d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>Frame</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>a6263275551e317e6b026117c447a1321</anchor>
@@ -119650,6 +119664,13 @@
       <name>GetStartPosition</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>a7e87263d2216fe78ab507e979ecb8097</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>HasStartPosition</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>ae39b5ff4edf4ee5ab6bd3e34abd71be6</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -119742,6 +119763,13 @@
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>a789a4eaac439e41208360c7ce360222f</anchor>
       <arglist>(csVector3 position)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SwitchCameraPosition</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>a3bd10e5591ec1fae611a4529db2f8947</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
