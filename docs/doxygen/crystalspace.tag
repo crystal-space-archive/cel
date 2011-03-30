@@ -119588,7 +119588,7 @@
   <compound kind="class">
     <name>CS::Demo::CameraManager</name>
     <filename>classCS_1_1Demo_1_1CameraManager.html</filename>
-    <base>csBaseEventHandler</base>
+    <base>scfImplementation1&lt; CameraManager, iEventHandler &gt;</base>
     <member kind="function">
       <type></type>
       <name>CameraManager</name>
@@ -119601,13 +119601,6 @@
       <name>ClearStartPosition</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>adea2600e1a7be12a3e398a5a25cca67d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Frame</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a6263275551e317e6b026117c447a1321</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -119668,6 +119661,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
+      <anchor>ae5bce5f157b13f46215b36919ad3ce4f</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>HasStartPosition</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>ae39b5ff4edf4ee5ab6bd3e34abd71be6</anchor>
@@ -119679,27 +119679,6 @@
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>a370c0a8f3c7d9b2e1f640feaa9cdb823</anchor>
       <arglist>(iObjectRegistry *registry)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseDown</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a68e8737a5c0700c0ea48700ea5cf3a40</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseMove</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>a0a45f7fa8ad8c8dd49ff421a220fe92a</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>OnMouseUp</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>af7173ac72fb74ba2fa497b68575539e6</anchor>
-      <arglist>(iEvent &amp;event)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -119769,13 +119748,6 @@
       <name>SwitchCameraPosition</name>
       <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
       <anchor>a3bd10e5591ec1fae611a4529db2f8947</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>UpdateCamera</name>
-      <anchorfile>classCS_1_1Demo_1_1CameraManager.html</anchorfile>
-      <anchor>acf8f9887f29c176665c04fa4b87c7c03</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -119963,20 +119935,20 @@
   <compound kind="class">
     <name>CS::Demo::HUDManager</name>
     <filename>classCS_1_1Demo_1_1HUDManager.html</filename>
-    <base>csBaseEventHandler</base>
-    <member kind="function">
-      <type>void</type>
-      <name>Frame</name>
-      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
-      <anchor>aa8f80eb1e7a69fb6ad8baaa1b40c025c</anchor>
-      <arglist>()</arglist>
-    </member>
+    <base>scfImplementation1&lt; HUDManager, iEventHandler &gt;</base>
     <member kind="function">
       <type>bool</type>
       <name>GetEnabled</name>
       <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
       <anchor>adce7160a26ae7a149c85d70d389997e4</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>HandleEvent</name>
+      <anchorfile>classCS_1_1Demo_1_1HUDManager.html</anchorfile>
+      <anchor>a361528b2aee260280dd9c574a1b42ef1</anchor>
+      <arglist>(iEvent &amp;event)</arglist>
     </member>
     <member kind="function">
       <type></type>
