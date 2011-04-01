@@ -122054,10 +122054,10 @@
     <name>CS::Mesh::AnimatedMeshTools</name>
     <filename>classCS_1_1Mesh_1_1AnimatedMeshTools.html</filename>
     <member kind="function" static="yes">
-      <type>static iAnimatedMeshFactory *</type>
+      <type>static csPtr&lt; iAnimatedMeshFactory &gt;</type>
       <name>ImportGeneralMesh</name>
       <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
-      <anchor>a014b9f16f4eea87ef49d17de6fd8e176</anchor>
+      <anchor>aa6dd09357b1938217ef51cb95f76bc91</anchor>
       <arglist>(iObjectRegistry *object_reg, iGeneralFactoryState *genmesh, bool deleteMesh=true)</arglist>
     </member>
     <member kind="function" static="yes">
@@ -122068,11 +122068,11 @@
       <arglist>(iObjectRegistry *object_reg, iAnimatedMeshFactory *baseMesh, iAnimatedMeshFactory *morphMesh, const char *morphName, bool deleteMesh=true)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static iAnimatedMeshFactory *</type>
-      <name>ImportSplittedMesh</name>
+      <type>static csPtr&lt; iAnimatedMeshFactory &gt;</type>
+      <name>ImportSplitMorphMesh</name>
       <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
-      <anchor>aa815d1d1d5488d443938544fc0aed53e</anchor>
-      <arglist>(iObjectRegistry *object_reg, const char *path, const char *baseMesh, const char *meshMask, const char *factoryName)</arglist>
+      <anchor>a0fbc29ebd4af751b9f904b01522d8567</anchor>
+      <arglist>(iObjectRegistry *object_reg, const char *path, const char *baseMesh, const char *factoryName, const char *meshMask=&quot;&quot;)</arglist>
     </member>
   </compound>
   <compound kind="struct">
