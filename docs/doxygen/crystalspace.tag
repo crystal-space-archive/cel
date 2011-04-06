@@ -27751,6 +27751,13 @@
     <class kind="class">CS::Utility::StringHash</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
+    <member kind="typedef">
+      <type>CS::Utility::StringHash&lt; CS::StringSetTag::General &gt;</type>
+      <name>csStringHash</name>
+      <anchorfile>strhash_8h.html</anchorfile>
+      <anchor>a896d398328ddfbba79e8108e94dc9ac0</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>stringarray.h</name>
@@ -101681,6 +101688,11 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>iRenderManagerPostEffects</name>
+    <filename>structiRenderManagerPostEffects.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
     <name>iRenderManagerTargets</name>
     <filename>structiRenderManagerTargets.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -128478,6 +128490,7 @@
   <compound kind="class">
     <name>CS::RenderManager::PostEffectsSupport</name>
     <filename>classCS_1_1RenderManager_1_1PostEffectsSupport.html</filename>
+    <base virtualness="virtual">iRenderManagerPostEffects</base>
     <member kind="function">
       <type>void</type>
       <name>Initialize</name>
