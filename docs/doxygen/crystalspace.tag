@@ -32040,10 +32040,6 @@
     <name>pluginconfig.h</name>
     <path>/tmp/tmp5/trunk/include/iutil/</path>
     <filename>pluginconfig_8h</filename>
-    <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
-    <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
-    <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
-    <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
     <class kind="struct">csOptionDescription</class>
@@ -32083,42 +32079,6 @@
       <name>CSVAR_STRING</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_COLOR</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_COLOR4</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR2</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR3</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR4</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSPATH</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -34598,12 +34558,12 @@
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Math</namespace>
+    <namespace>CS::Math::Noise</namespace>
+    <namespace>CS::Math::Noise::Model</namespace>
+    <namespace>CS::Math::Noise::Module</namespace>
     <namespace>CS::Memory</namespace>
     <namespace>CS::Mesh</namespace>
     <namespace>CS::Meta</namespace>
-    <namespace>CS::Noise</namespace>
-    <namespace>CS::Noise::Model</namespace>
-    <namespace>CS::Noise::Module</namespace>
     <namespace>CS::Physics</namespace>
     <namespace>CS::Physics::Bullet</namespace>
     <namespace>CS::Platform</namespace>
@@ -40777,42 +40737,6 @@
       <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>CSVAR_COLOR</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_COLOR4</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR2</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR3</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VECTOR4</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_VFSPATH</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a6b1d02cbfe6522ed068c2c9c4f5f35dd</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>int</type>
       <name>cs_asprintf</name>
@@ -41878,157 +41802,157 @@
     <name>libnoise</name>
     <title>libnoise</title>
     <filename>group__libnoise.html</filename>
-    <class kind="struct">CS::Noise::Module::ControlPoint</class>
+    <class kind="struct">CS::Math::Noise::Module::ControlPoint</class>
     <subgroup>models</subgroup>
     <subgroup>modules</subgroup>
     <member kind="enumeration">
       <name>NoiseQuality</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga444ecceaff9c55a0224afde6245314d0</anchor>
+      <anchor>ga5ccf1a46d8e2de8499e7cead31819100</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>QUALITY_FAST</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0ab35d8f5f56637f6032c526544dfbec6a</anchor>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a2d19bec0bfe0022b6e61c738eb61c5e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>QUALITY_STD</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0a34d643235ba2a849a2b188dc6cdf533c</anchor>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a2055a037268b4f6f5beef8a835dd05d7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>QUALITY_BEST</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0ae7cc908e7e412796d995dc9235335e72</anchor>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a920915b7c093d464c0192782d50c0288</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>CubicInterp</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaff58f8a2a8de7409538393ce0158b67c</anchor>
+      <anchor>gaf96930a75e86ff783dda186c9f2313bd</anchor>
       <arglist>(double n0, double n1, double n2, double n3, double a)</arglist>
     </member>
     <member kind="function">
       <type>T</type>
       <name>GetMax</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga9af7a377db1ace5e0f2cddc505b2a64f</anchor>
+      <anchor>gac35d5cda57a58bb3a724c417edaa4a92</anchor>
       <arglist>(const T &amp;a, const T &amp;b)</arglist>
     </member>
     <member kind="function">
       <type>T</type>
       <name>GetMin</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaaa18991c3b220195092f236b0642fa96</anchor>
+      <anchor>gaeaf1bac4c852b3de3b2412675c5ef30f</anchor>
       <arglist>(const T &amp;a, const T &amp;b)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>GradientCoherentNoise3D</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga610f7940042a5601a97395bda9fb4960</anchor>
+      <anchor>ga0ab7320ff2004b7d49771301831111c1</anchor>
       <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>GradientNoise3D</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaa1d1caca507b886ebd145272a7736f8f</anchor>
+      <anchor>gacbf19fcc5da8ca6c41b35f8fe193f5eb</anchor>
       <arglist>(double fx, double fy, double fz, int ix, int iy, int iz, int seed=0)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>IntValueNoise3D</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gac9f0ce631132c2f800c72e7de0515309</anchor>
+      <anchor>gaa98354cb209a79d2d69a55de6e4f4679</anchor>
       <arglist>(int x, int y, int z, int seed=0)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>LatLonToXYZ</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaaa667e428f969beb1f10fd3730b3e790</anchor>
+      <anchor>ga55920f7d66b72881f883b294ba1c2b1c</anchor>
       <arglist>(double lat, double lon, double &amp;x, double &amp;y, double &amp;z)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>LinearInterp</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga9fadb78ae77ac27a14a514b7c2da0f1e</anchor>
+      <anchor>ga0b1d25c87df455fe97bdb0210d013f34</anchor>
       <arglist>(double n0, double n1, double a)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>MakeInt32Range</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga0ddbc9e7db6d8d3c91a8019fec0eeabd</anchor>
+      <anchor>ga62eec2db0f484fb8a14723148e301008</anchor>
       <arglist>(double n)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>SCurve3</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga0b0693153b43f945b023a87f7c785da5</anchor>
+      <anchor>ga23d64576698fa5604d2025a1000429ec</anchor>
       <arglist>(double a)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>SCurve5</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga98f1c1ee2c3fd84b692886a566ade61a</anchor>
+      <anchor>gabe32013a6dbf470d8123e4f34e6951fa</anchor>
       <arglist>(double a)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>SwapValues</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga412f0645160e534370429638c4734d52</anchor>
+      <anchor>ga565a3da7ab0b915c4b713ed2e176c9e0</anchor>
       <arglist>(T &amp;a, T &amp;b)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>ValueCoherentNoise3D</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaae8468bc93ddbde72594acaf00c00e7e</anchor>
+      <anchor>ga5d242f1fda26b5bcfe61c32b2af134e6</anchor>
       <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>ValueNoise3D</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga7b1b30b06679b93815d20a833e27cd27</anchor>
+      <anchor>gabd78667dfcba29358fef79e79f1fa934</anchor>
       <arglist>(int x, int y, int z, int seed=0)</arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEG_TO_RAD</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga83f544d8d41d83cb04ddd8d973230199</anchor>
+      <anchor>ga29e8c2b6a1d098f010c65b39013856fa</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>RAD_TO_DEG</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gad79307c82891436d3da15db70360ab49</anchor>
+      <anchor>ga0563bc348cf53028559d150c27357734</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>SQRT_2</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga15616be661d418f525156ab6659aeba3</anchor>
+      <anchor>ga14b03403db779939e5443afda20ee9bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>SQRT_3</name>
       <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gabb4ca3594dd76787a788670678677913</anchor>
+      <anchor>ga3f3c1c1ddb964d62b13a3c84cfbc0abb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -42036,16 +41960,16 @@
     <name>models</name>
     <title>Models</title>
     <filename>group__models.html</filename>
-    <class kind="class">CS::Noise::Model::Cylinder</class>
-    <class kind="class">CS::Noise::Model::Line</class>
-    <class kind="class">CS::Noise::Model::Plane</class>
-    <class kind="class">CS::Noise::Model::Sphere</class>
+    <class kind="class">CS::Math::Noise::Model::Cylinder</class>
+    <class kind="class">CS::Math::Noise::Model::Line</class>
+    <class kind="class">CS::Math::Noise::Model::Plane</class>
+    <class kind="class">CS::Math::Noise::Model::Sphere</class>
   </compound>
   <compound kind="group">
     <name>modules</name>
     <title>Noise Modules</title>
     <filename>group__modules.html</filename>
-    <class kind="class">CS::Noise::Module::Module</class>
+    <class kind="class">CS::Math::Noise::Module::Module</class>
     <subgroup>modifiermodules</subgroup>
     <subgroup>combinermodules</subgroup>
     <subgroup>generatormodules</subgroup>
@@ -42057,46 +41981,46 @@
     <name>modifiermodules</name>
     <title>Modifier Modules</title>
     <filename>group__modifiermodules.html</filename>
-    <class kind="class">CS::Noise::Module::Abs</class>
-    <class kind="class">CS::Noise::Module::Clamp</class>
-    <class kind="class">CS::Noise::Module::Curve</class>
-    <class kind="class">CS::Noise::Module::Exponent</class>
-    <class kind="class">CS::Noise::Module::Invert</class>
-    <class kind="class">CS::Noise::Module::ScaleBias</class>
-    <class kind="class">CS::Noise::Module::Terrace</class>
+    <class kind="class">CS::Math::Noise::Module::Abs</class>
+    <class kind="class">CS::Math::Noise::Module::Clamp</class>
+    <class kind="class">CS::Math::Noise::Module::Curve</class>
+    <class kind="class">CS::Math::Noise::Module::Exponent</class>
+    <class kind="class">CS::Math::Noise::Module::Invert</class>
+    <class kind="class">CS::Math::Noise::Module::ScaleBias</class>
+    <class kind="class">CS::Math::Noise::Module::Terrace</class>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_BIAS</name>
       <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga55d34238cb26a8790adc3a39859d57bf</anchor>
+      <anchor>gac64ffd58d28035772660746d9ea62c85</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_CLAMP_LOWER_BOUND</name>
       <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga4c63c75556dcb988c62aab7b7e844034</anchor>
+      <anchor>ga4d6befeca08ded058735fcc897361a9e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_CLAMP_UPPER_BOUND</name>
       <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga8f20f1b1ba354fc50f33a2371897fd87</anchor>
+      <anchor>gadc814c78d118746464656f3089f926b3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_EXPONENT</name>
       <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>gac0a722bcb5359c5109846538f3d43dcc</anchor>
+      <anchor>ga364954a20e21f25a365b4f61870e5941</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SCALE</name>
       <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga85448185f98c273f6c3bc97a438598fc</anchor>
+      <anchor>ga48cc32c12e0a820301da9c66502a9934</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -42104,204 +42028,204 @@
     <name>combinermodules</name>
     <title>Combiner Modules</title>
     <filename>group__combinermodules.html</filename>
-    <class kind="class">CS::Noise::Module::Add</class>
-    <class kind="class">CS::Noise::Module::Max</class>
-    <class kind="class">CS::Noise::Module::Min</class>
-    <class kind="class">CS::Noise::Module::Multiply</class>
-    <class kind="class">CS::Noise::Module::Power</class>
+    <class kind="class">CS::Math::Noise::Module::Add</class>
+    <class kind="class">CS::Math::Noise::Module::Max</class>
+    <class kind="class">CS::Math::Noise::Module::Min</class>
+    <class kind="class">CS::Math::Noise::Module::Multiply</class>
+    <class kind="class">CS::Math::Noise::Module::Power</class>
   </compound>
   <compound kind="group">
     <name>generatormodules</name>
     <title>Generator Modules</title>
     <filename>group__generatormodules.html</filename>
-    <class kind="class">CS::Noise::Module::Billow</class>
-    <class kind="class">CS::Noise::Module::Checkerboard</class>
-    <class kind="class">CS::Noise::Module::Const</class>
-    <class kind="class">CS::Noise::Module::Cylinders</class>
-    <class kind="class">CS::Noise::Module::Perlin</class>
-    <class kind="class">CS::Noise::Module::RidgedMulti</class>
-    <class kind="class">CS::Noise::Module::Spheres</class>
-    <class kind="class">CS::Noise::Module::Voronoi</class>
+    <class kind="class">CS::Math::Noise::Module::Billow</class>
+    <class kind="class">CS::Math::Noise::Module::Checkerboard</class>
+    <class kind="class">CS::Math::Noise::Module::Const</class>
+    <class kind="class">CS::Math::Noise::Module::Cylinders</class>
+    <class kind="class">CS::Math::Noise::Module::Perlin</class>
+    <class kind="class">CS::Math::Noise::Module::RidgedMulti</class>
+    <class kind="class">CS::Math::Noise::Module::Spheres</class>
+    <class kind="class">CS::Math::Noise::Module::Voronoi</class>
     <member kind="variable">
       <type>const int</type>
       <name>BILLOW_MAX_OCTAVE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga5e61014c489caa76d7ea5367547ab8dd</anchor>
+      <anchor>gaf1af2e135dfaf21ba326e8f3666dea11</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_BILLOW_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gac9e00bb272a686f3a1a9cdf3de995f05</anchor>
+      <anchor>ga3643f6b42e6dca8c9fd520af26d031ab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_BILLOW_LACUNARITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gab95c8353e41cecdc30694f310fcc854d</anchor>
+      <anchor>ga6ef805242796b72adb9c13166c1bd7c4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_BILLOW_OCTAVE_COUNT</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gae10892d525014248110a29e23a43fcb8</anchor>
+      <anchor>ga41b15c9c92153706ee3e18803193998f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_BILLOW_PERSISTENCE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga028defd2f883939701c9b07b25c2d852</anchor>
+      <anchor>ga133e694b209aa0abf2993013fa30de79</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
+      <type>const CS::Math::Noise::NoiseQuality</type>
       <name>DEFAULT_BILLOW_QUALITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga022b05a17a0ea6f15ba629037307655f</anchor>
+      <anchor>ga373f8f8e0b954fa0d4106a95d35423d3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_BILLOW_SEED</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga5ce05b9331f9bc9897b3638ef7fa0a52</anchor>
+      <anchor>ga7ed2667c822647de5fa5a2f4aec1cab6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_CONST_VALUE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaeab9b11fc42c7d07819769b868ad61f8</anchor>
+      <anchor>ga1fc3e7726669b27f4cac2b0c59d1361e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_CYLINDERS_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga8425afc3232241100457a62e16af7e62</anchor>
+      <anchor>gaed0a03034ff596b152a12bbef0a718ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_PERLIN_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga223dc6e76033a0e1e528ef35bf200c76</anchor>
+      <anchor>ga9dacc40e8e9b6df92ac3daa35ae43eba</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_PERLIN_LACUNARITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gad188edd1d1df4fc151730091b7612492</anchor>
+      <anchor>ga4a6fd74d71711cad8cf7c86a600c3596</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_PERLIN_OCTAVE_COUNT</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga206c37f463d6c8eec4203a851592db0f</anchor>
+      <anchor>ga24837889f7cb3b3003715aeef58af267</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_PERLIN_PERSISTENCE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga4fd2c0a44e7637f51c14a19df39b6309</anchor>
+      <anchor>ga230b07de35a6dc569926c34fafba8c8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
+      <type>const CS::Math::Noise::NoiseQuality</type>
       <name>DEFAULT_PERLIN_QUALITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga0e3e64e560be49bde80890315f48d3bc</anchor>
+      <anchor>gaa0549b6a9ae7ae80c38d5c3003945898</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_PERLIN_SEED</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gabc9c321fd354eb897a362927bb2d09ec</anchor>
+      <anchor>ga37683befa7f63c0336fa0ba04cf00634</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_RIDGED_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaea348b7ce9590219a76748a852c1e43f</anchor>
+      <anchor>ga58ee8b1033a45a13f9026c8ab5c5f3da</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_RIDGED_LACUNARITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaff40c238fd35bdecd37418d2afc93ae0</anchor>
+      <anchor>gae63c45934248fdcbe57aad3630757aa2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_RIDGED_OCTAVE_COUNT</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga44c88740480b09509f73a486545cb6c4</anchor>
+      <anchor>ga3cf737b7c42cf9ccc43675e666f0529f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
+      <type>const CS::Math::Noise::NoiseQuality</type>
       <name>DEFAULT_RIDGED_QUALITY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga1b57c2be82702c7a88fe0891949dc8cd</anchor>
+      <anchor>ga9e73d78a38e00f344b31b551f5572150</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_RIDGED_SEED</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga31c03f286f757108e2a903af442dcfbd</anchor>
+      <anchor>ga5e450c016f0934589436ef757369118f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SPHERES_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga3bc1a7aecaac120ac723849a3a941995</anchor>
+      <anchor>gad2329431bcaa48fe799c48c7deac5f04</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_VORONOI_DISPLACEMENT</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga0e705f20e1bee415bf5669443bf530cd</anchor>
+      <anchor>gaae1d717f09a2a7920ea2327bd7aef071</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_VORONOI_FREQUENCY</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gae3db529d169c3964950f1cadb2713c77</anchor>
+      <anchor>gaef5a804afd4670bbf4c158b412713015</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_VORONOI_SEED</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga6d1e2eaa8c8c03d2f1ba8d408e7ed31c</anchor>
+      <anchor>ga7b9d25d0ae463320c91cdc83b1d2790d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>PERLIN_MAX_OCTAVE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga47f6b3119faebcf69d154a35902e98c4</anchor>
+      <anchor>gaabde2f8225cf3b2daadcf29f6a174224</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>RIDGED_MAX_OCTAVE</name>
       <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaabe1dcf1ec5c26ff042593265fd531c2</anchor>
+      <anchor>ga8134aa51f81488f8924445cc4e167559</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -42309,27 +42233,27 @@
     <name>selectormodules</name>
     <title>Selector Modules</title>
     <filename>group__selectormodules.html</filename>
-    <class kind="class">CS::Noise::Module::Blend</class>
-    <class kind="class">CS::Noise::Module::Select</class>
+    <class kind="class">CS::Math::Noise::Module::Blend</class>
+    <class kind="class">CS::Math::Noise::Module::Select</class>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SELECT_EDGE_FALLOFF</name>
       <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>ga16cbc2cc995f1d1b709b7cdd92aba52c</anchor>
+      <anchor>ga1ce39f6cbf9cc26de9074ef087f838cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SELECT_LOWER_BOUND</name>
       <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>ga00132f3ee4985317e86a871a0d364854</anchor>
+      <anchor>ga8118ace4cd58e5f5670452f37aad657a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SELECT_UPPER_BOUND</name>
       <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>gaf9cded251851d3f6c6d6fb2d3af8e726</anchor>
+      <anchor>gafc3b9df35ae0cbf29e805a2c0e18e87b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -42337,106 +42261,106 @@
     <name>miscmodules</name>
     <title>Miscellaneous Modules</title>
     <filename>group__miscmodules.html</filename>
-    <class kind="class">CS::Noise::Module::Cache</class>
+    <class kind="class">CS::Math::Noise::Module::Cache</class>
   </compound>
   <compound kind="group">
     <name>transformermodules</name>
     <title>Transformer Modules</title>
     <filename>group__transformermodules.html</filename>
-    <class kind="class">CS::Noise::Module::Displace</class>
-    <class kind="class">CS::Noise::Module::RotatePoint</class>
-    <class kind="class">CS::Noise::Module::ScalePoint</class>
-    <class kind="class">CS::Noise::Module::TranslatePoint</class>
-    <class kind="class">CS::Noise::Module::Turbulence</class>
+    <class kind="class">CS::Math::Noise::Module::Displace</class>
+    <class kind="class">CS::Math::Noise::Module::RotatePoint</class>
+    <class kind="class">CS::Math::Noise::Module::ScalePoint</class>
+    <class kind="class">CS::Math::Noise::Module::TranslatePoint</class>
+    <class kind="class">CS::Math::Noise::Module::Turbulence</class>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_ROTATE_X</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaf5a51975406c590d8efc795f8b2db531</anchor>
+      <anchor>ga87dfdf03e7178e2eaf19a0801c1a8bc8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_ROTATE_Y</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga001d947d698d27d53ddd56ede573bdb9</anchor>
+      <anchor>gaea3fe1740a1a0209307e7a8e73ac4460</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_ROTATE_Z</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gabd542ccb6c66cb9b8645029268a719b0</anchor>
+      <anchor>gac638c2e6ca7e14789644d52bdc5bf52f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SCALE_POINT_X</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga903b3a8bd8283a0e0aa7402624bae7e3</anchor>
+      <anchor>ga01a3180955e02e706e157dcd9e85aeef</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SCALE_POINT_Y</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gae9acd3bff2a760828cb86163e853ca45</anchor>
+      <anchor>ga68673d1a87bffd7089e1f92c1fd32e71</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_SCALE_POINT_Z</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga8b7e96bea5e4b5853d76897d5377bff9</anchor>
+      <anchor>gace386983c61bf3542f72d888cab3dcfd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_TRANSLATE_POINT_X</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga6cafa37fb72594378d16d5fb727efd13</anchor>
+      <anchor>gab3453a54683c3f83b273a9bc5ab4434f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_TRANSLATE_POINT_Y</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga5290c996e8d3e9174d42b1be699eb1ab</anchor>
+      <anchor>ga2c6442248899b57b4396148568033486</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_TRANSLATE_POINT_Z</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gace99684b36219029c51faf541d6a3149</anchor>
+      <anchor>ga95edbb7a3138c5036da5936a34538c75</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_TURBULENCE_FREQUENCY</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gac95254e91badadcf100e2c859c56d052</anchor>
+      <anchor>gafe15f697027dcc2ca8d7b119db5732ff</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const double</type>
       <name>DEFAULT_TURBULENCE_POWER</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaa90af75e579bff138283d3c488065389</anchor>
+      <anchor>ga996a1f0b4d2afba1ebc35f90472d6681</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_TURBULENCE_ROUGHNESS</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gac3b21cbd11260ea087b530001384fdbe</anchor>
+      <anchor>ga912f783c9ca3bedbf75d50147d2c3993</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const int</type>
       <name>DEFAULT_TURBULENCE_SEED</name>
       <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaa55c00f07398526cca33c37b123b79eb</anchor>
+      <anchor>gafe2fc925a7967b1a86abf6406b2b3de4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -82154,41 +82078,6 @@
       <type></type>
       <name>csVariant</name>
       <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a421c2645cfae433ee79456d85476c3e8</anchor>
-      <arglist>(csVector4 v)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csVariant</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a8b95561a0c3028bc54219e5f26007f1f</anchor>
-      <arglist>(csVector3 v)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csVariant</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a78f87d32548f4d2cb98a7dd9c6a6cfbe</anchor>
-      <arglist>(csVector2 v)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csVariant</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>ab5e11d019c22da4536d11acb37f37c87</anchor>
-      <arglist>(csColor4 c)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csVariant</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a9675e63112ec8dd8476fb65f41e3630a</anchor>
-      <arglist>(csColor c)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csVariant</name>
-      <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a13f1f95f0ec3bac94130e3a8a9d09532</anchor>
       <arglist>(const char *s)</arglist>
     </member>
@@ -82235,20 +82124,6 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>csColor</type>
-      <name>GetColor</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>ad8afa7c0ac8fa01b9606a89774e73945</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csColor4</type>
-      <name>GetColor4</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a06d43b5955467257b4eced886615912f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
       <type>float</type>
       <name>GetFloat</name>
       <anchorfile>structcsVariant.html</anchorfile>
@@ -82277,34 +82152,6 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>csVector2</type>
-      <name>GetVector2</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a4fb3857eec74c1a3475330db599d5d2f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csVector3</type>
-      <name>GetVector3</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a38005416c1e13ee77285729553d5c6f4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csVector4</type>
-      <name>GetVector4</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a8d409ad682a1699adbee030ef58de158</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>GetVFSPath</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>aa9836437b34e4f08095a3288882cab0a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
       <type>const csVariant &amp;</type>
       <name>operator=</name>
       <anchorfile>structcsVariant.html</anchorfile>
@@ -82317,20 +82164,6 @@
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a6c45850ca04ce0b460a95c4433a584b5</anchor>
       <arglist>(bool b)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetColor</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a65638a8e6f7359fe29cb0a855f27c019</anchor>
-      <arglist>(csColor c)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetColor4</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a6e7a4b2b33f1c0431d66749ae9885c51</anchor>
-      <arglist>(csColor4 c)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -82358,34 +82191,6 @@
       <name>SetString</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a70568ffe2ca094b6da29a5264da53fa6</anchor>
-      <arglist>(const char *s)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVector2</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a576b6d83922590aa09f2042d9c535b99</anchor>
-      <arglist>(csVector2 v)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVector3</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a4544a3dfc037e32de96ffc11b6a0967c</anchor>
-      <arglist>(csVector3 v)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVector4</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a6265bb8f956e63486f170f8225a120c5</anchor>
-      <arglist>(csVector4 v)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetVFSPath</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>af64b00a055c41230e0c9db904e1e28f1</anchor>
       <arglist>(const char *s)</arglist>
     </member>
   </compound>
@@ -114322,7 +114127,6 @@
     <namespace>CS::Memory</namespace>
     <namespace>CS::Mesh</namespace>
     <namespace>CS::Meta</namespace>
-    <namespace>CS::Noise</namespace>
     <namespace>CS::Physics</namespace>
     <namespace>CS::Platform</namespace>
     <namespace>CS::Plugin</namespace>
@@ -120863,6 +120667,7 @@
   <compound kind="namespace">
     <name>CS::Math</name>
     <filename>namespaceCS_1_1Math.html</filename>
+    <namespace>CS::Math::Noise</namespace>
     <class kind="class">CS::Math::Matrix4</class>
     <class kind="class">CS::Math::Ode45</class>
     <class kind="struct">CS::Math::Projections</class>
@@ -121115,6 +120920,2832 @@
       <anchorfile>structCS_1_1Math_1_1Projections.html</anchorfile>
       <anchor>a867496e855b602a26a7270befd3395e9</anchor>
       <arglist>(float left, float right, float bottom, float top, float nearz, float farz)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Math::Noise</name>
+    <filename>namespaceCS_1_1Math_1_1Noise.html</filename>
+    <namespace>CS::Math::Noise::Model</namespace>
+    <namespace>CS::Math::Noise::Module</namespace>
+    <member kind="enumeration">
+      <name>NoiseQuality</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga5ccf1a46d8e2de8499e7cead31819100</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>QUALITY_FAST</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a2d19bec0bfe0022b6e61c738eb61c5e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>QUALITY_STD</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a2055a037268b4f6f5beef8a835dd05d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>QUALITY_BEST</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gga5ccf1a46d8e2de8499e7cead31819100a920915b7c093d464c0192782d50c0288</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>ClampValue</name>
+      <anchorfile>namespaceCS_1_1Math_1_1Noise.html</anchorfile>
+      <anchor>ab7c1ef5038c32538e533eebd203dbbce</anchor>
+      <arglist>(int value, int lowerBound, int upperBound)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>CubicInterp</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gaf96930a75e86ff783dda186c9f2313bd</anchor>
+      <arglist>(double n0, double n1, double n2, double n3, double a)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>GetMax</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gac35d5cda57a58bb3a724c417edaa4a92</anchor>
+      <arglist>(const T &amp;a, const T &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>GetMin</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gaeaf1bac4c852b3de3b2412675c5ef30f</anchor>
+      <arglist>(const T &amp;a, const T &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GradientCoherentNoise3D</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga0ab7320ff2004b7d49771301831111c1</anchor>
+      <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GradientNoise3D</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gacbf19fcc5da8ca6c41b35f8fe193f5eb</anchor>
+      <arglist>(double fx, double fy, double fz, int ix, int iy, int iz, int seed=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>IntValueNoise3D</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gaa98354cb209a79d2d69a55de6e4f4679</anchor>
+      <arglist>(int x, int y, int z, int seed=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>LatLonToXYZ</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga55920f7d66b72881f883b294ba1c2b1c</anchor>
+      <arglist>(double lat, double lon, double &amp;x, double &amp;y, double &amp;z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>LinearInterp</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga0b1d25c87df455fe97bdb0210d013f34</anchor>
+      <arglist>(double n0, double n1, double a)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>MakeInt32Range</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga62eec2db0f484fb8a14723148e301008</anchor>
+      <arglist>(double n)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>SCurve3</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga23d64576698fa5604d2025a1000429ec</anchor>
+      <arglist>(double a)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>SCurve5</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gabe32013a6dbf470d8123e4f34e6951fa</anchor>
+      <arglist>(double a)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SwapValues</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga565a3da7ab0b915c4b713ed2e176c9e0</anchor>
+      <arglist>(T &amp;a, T &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ValueCoherentNoise3D</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga5d242f1fda26b5bcfe61c32b2af134e6</anchor>
+      <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ValueNoise3D</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>gabd78667dfcba29358fef79e79f1fa934</anchor>
+      <arglist>(int x, int y, int z, int seed=0)</arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEG_TO_RAD</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga29e8c2b6a1d098f010c65b39013856fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>RAD_TO_DEG</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga0563bc348cf53028559d150c27357734</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>SQRT_2</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga14b03403db779939e5443afda20ee9bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>SQRT_3</name>
+      <anchorfile>group__libnoise.html</anchorfile>
+      <anchor>ga3f3c1c1ddb964d62b13a3c84cfbc0abb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Math::Noise::Model</name>
+    <filename>namespaceCS_1_1Math_1_1Noise_1_1Model.html</filename>
+    <class kind="class">CS::Math::Noise::Model::Cylinder</class>
+    <class kind="class">CS::Math::Noise::Model::Line</class>
+    <class kind="class">CS::Math::Noise::Model::Plane</class>
+    <class kind="class">CS::Math::Noise::Model::Sphere</class>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Model::Cylinder</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Cylinder</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
+      <anchor>a7b8cbb1b2fc325b04c2aacd244c5d18e</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Cylinder</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
+      <anchor>af380f336bc04aa48ad79ee4d15e0bae3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const CS::Math::Noise::Module::Module &amp;</type>
+      <name>GetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
+      <anchor>ac20b33cf658f4e628bb5f05ce42e469b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
+      <anchor>a62ad9d8ddd0cba03fa052f16a003fde6</anchor>
+      <arglist>(double angle, double height) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
+      <anchor>ab4afd0d7a811f82dbba8f44389041a83</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Model::Line</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>GetAttenuate</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a73772a58eb98b835db5400fdc252381b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const CS::Math::Noise::Module::Module &amp;</type>
+      <name>GetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a4cbf90f23bbbb6e19d8be77cfaf63384</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a51e85430e0ba40aefda58092861e1e24</anchor>
+      <arglist>(double p) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Line</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a3cfe516f59fab31bdc3fe5ad89ceace6</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Line</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>aedf95cba4373e652e687a3b11629205a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetAttenuate</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>abb3132a1e9ad1599dcdad4ea66d00101</anchor>
+      <arglist>(bool att)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetEndPoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a4499f795a8ac4046241662b6c3425036</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a9d2fda53dc8bfb8dce9b7beaa67111e5</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetStartPoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Line.html</anchorfile>
+      <anchor>a2a2b7a03d8bcd3b403ae9ee4341f2622</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Model::Plane</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</filename>
+    <member kind="function">
+      <type>const CS::Math::Noise::Module::Module &amp;</type>
+      <name>GetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
+      <anchor>a04396a79e16265a2cfcdeac30624abdd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
+      <anchor>a8c4fac5adfad2b956d6ac8f7c73faed5</anchor>
+      <arglist>(double x, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Plane</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
+      <anchor>a53437c3829de93081f95cabbc55930ff</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Plane</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
+      <anchor>ab06c2f88f020999cf45d83518192ee51</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
+      <anchor>a7d5182dde354e0008dc43a61a5e19789</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Model::Sphere</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</filename>
+    <member kind="function">
+      <type>const CS::Math::Noise::Module::Module &amp;</type>
+      <name>GetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
+      <anchor>a79a2fe5d7032c98a5a4865457ebee3fb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
+      <anchor>a340f8449a2a8573002417c95d9179827</anchor>
+      <arglist>(double lat, double lon) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
+      <anchor>aa8b91b7e0ba1766e5666d2bb38e447d5</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Sphere</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
+      <anchor>a495d131c2787c8de7a8d30068d003d43</anchor>
+      <arglist>(const CS::Math::Noise::Module::Module &amp;module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Sphere</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
+      <anchor>a08fc89257578d71dd518b7575ffddb72</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Math::Noise::Module</name>
+    <filename>namespaceCS_1_1Math_1_1Noise_1_1Module.html</filename>
+    <class kind="class">CS::Math::Noise::Module::Abs</class>
+    <class kind="class">CS::Math::Noise::Module::Add</class>
+    <class kind="class">CS::Math::Noise::Module::Billow</class>
+    <class kind="class">CS::Math::Noise::Module::Blend</class>
+    <class kind="class">CS::Math::Noise::Module::Cache</class>
+    <class kind="class">CS::Math::Noise::Module::Checkerboard</class>
+    <class kind="class">CS::Math::Noise::Module::Clamp</class>
+    <class kind="class">CS::Math::Noise::Module::Const</class>
+    <class kind="struct">CS::Math::Noise::Module::ControlPoint</class>
+    <class kind="class">CS::Math::Noise::Module::Curve</class>
+    <class kind="class">CS::Math::Noise::Module::Cylinders</class>
+    <class kind="class">CS::Math::Noise::Module::Displace</class>
+    <class kind="class">CS::Math::Noise::Module::Exponent</class>
+    <class kind="class">CS::Math::Noise::Module::Invert</class>
+    <class kind="class">CS::Math::Noise::Module::Max</class>
+    <class kind="class">CS::Math::Noise::Module::Min</class>
+    <class kind="class">CS::Math::Noise::Module::Module</class>
+    <class kind="class">CS::Math::Noise::Module::Multiply</class>
+    <class kind="class">CS::Math::Noise::Module::Perlin</class>
+    <class kind="class">CS::Math::Noise::Module::Power</class>
+    <class kind="class">CS::Math::Noise::Module::RidgedMulti</class>
+    <class kind="class">CS::Math::Noise::Module::RotatePoint</class>
+    <class kind="class">CS::Math::Noise::Module::ScaleBias</class>
+    <class kind="class">CS::Math::Noise::Module::ScalePoint</class>
+    <class kind="class">CS::Math::Noise::Module::Select</class>
+    <class kind="class">CS::Math::Noise::Module::Spheres</class>
+    <class kind="class">CS::Math::Noise::Module::Terrace</class>
+    <class kind="class">CS::Math::Noise::Module::TranslatePoint</class>
+    <class kind="class">CS::Math::Noise::Module::Turbulence</class>
+    <class kind="class">CS::Math::Noise::Module::Voronoi</class>
+    <member kind="variable">
+      <type>const int</type>
+      <name>BILLOW_MAX_OCTAVE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaf1af2e135dfaf21ba326e8f3666dea11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_BIAS</name>
+      <anchorfile>group__modifiermodules.html</anchorfile>
+      <anchor>gac64ffd58d28035772660746d9ea62c85</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_BILLOW_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga3643f6b42e6dca8c9fd520af26d031ab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_BILLOW_LACUNARITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga6ef805242796b72adb9c13166c1bd7c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_BILLOW_OCTAVE_COUNT</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga41b15c9c92153706ee3e18803193998f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_BILLOW_PERSISTENCE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga133e694b209aa0abf2993013fa30de79</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const CS::Math::Noise::NoiseQuality</type>
+      <name>DEFAULT_BILLOW_QUALITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga373f8f8e0b954fa0d4106a95d35423d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_BILLOW_SEED</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga7ed2667c822647de5fa5a2f4aec1cab6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_CLAMP_LOWER_BOUND</name>
+      <anchorfile>group__modifiermodules.html</anchorfile>
+      <anchor>ga4d6befeca08ded058735fcc897361a9e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_CLAMP_UPPER_BOUND</name>
+      <anchorfile>group__modifiermodules.html</anchorfile>
+      <anchor>gadc814c78d118746464656f3089f926b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_CONST_VALUE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga1fc3e7726669b27f4cac2b0c59d1361e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_CYLINDERS_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaed0a03034ff596b152a12bbef0a718ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_EXPONENT</name>
+      <anchorfile>group__modifiermodules.html</anchorfile>
+      <anchor>ga364954a20e21f25a365b4f61870e5941</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_PERLIN_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga9dacc40e8e9b6df92ac3daa35ae43eba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_PERLIN_LACUNARITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga4a6fd74d71711cad8cf7c86a600c3596</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_PERLIN_OCTAVE_COUNT</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga24837889f7cb3b3003715aeef58af267</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_PERLIN_PERSISTENCE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga230b07de35a6dc569926c34fafba8c8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const CS::Math::Noise::NoiseQuality</type>
+      <name>DEFAULT_PERLIN_QUALITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaa0549b6a9ae7ae80c38d5c3003945898</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_PERLIN_SEED</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga37683befa7f63c0336fa0ba04cf00634</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_RIDGED_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga58ee8b1033a45a13f9026c8ab5c5f3da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_RIDGED_LACUNARITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gae63c45934248fdcbe57aad3630757aa2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_RIDGED_OCTAVE_COUNT</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga3cf737b7c42cf9ccc43675e666f0529f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const CS::Math::Noise::NoiseQuality</type>
+      <name>DEFAULT_RIDGED_QUALITY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga9e73d78a38e00f344b31b551f5572150</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_RIDGED_SEED</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga5e450c016f0934589436ef757369118f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_ROTATE_X</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga87dfdf03e7178e2eaf19a0801c1a8bc8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_ROTATE_Y</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gaea3fe1740a1a0209307e7a8e73ac4460</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_ROTATE_Z</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gac638c2e6ca7e14789644d52bdc5bf52f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SCALE</name>
+      <anchorfile>group__modifiermodules.html</anchorfile>
+      <anchor>ga48cc32c12e0a820301da9c66502a9934</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SCALE_POINT_X</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga01a3180955e02e706e157dcd9e85aeef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SCALE_POINT_Y</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga68673d1a87bffd7089e1f92c1fd32e71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SCALE_POINT_Z</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gace386983c61bf3542f72d888cab3dcfd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SELECT_EDGE_FALLOFF</name>
+      <anchorfile>group__selectormodules.html</anchorfile>
+      <anchor>ga1ce39f6cbf9cc26de9074ef087f838cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SELECT_LOWER_BOUND</name>
+      <anchorfile>group__selectormodules.html</anchorfile>
+      <anchor>ga8118ace4cd58e5f5670452f37aad657a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SELECT_UPPER_BOUND</name>
+      <anchorfile>group__selectormodules.html</anchorfile>
+      <anchor>gafc3b9df35ae0cbf29e805a2c0e18e87b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_SPHERES_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gad2329431bcaa48fe799c48c7deac5f04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_TRANSLATE_POINT_X</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gab3453a54683c3f83b273a9bc5ab4434f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_TRANSLATE_POINT_Y</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga2c6442248899b57b4396148568033486</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_TRANSLATE_POINT_Z</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga95edbb7a3138c5036da5936a34538c75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_TURBULENCE_FREQUENCY</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gafe15f697027dcc2ca8d7b119db5732ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_TURBULENCE_POWER</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga996a1f0b4d2afba1ebc35f90472d6681</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_TURBULENCE_ROUGHNESS</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>ga912f783c9ca3bedbf75d50147d2c3993</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_TURBULENCE_SEED</name>
+      <anchorfile>group__transformermodules.html</anchorfile>
+      <anchor>gafe2fc925a7967b1a86abf6406b2b3de4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_VORONOI_DISPLACEMENT</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaae1d717f09a2a7920ea2327bd7aef071</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const double</type>
+      <name>DEFAULT_VORONOI_FREQUENCY</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaef5a804afd4670bbf4c158b412713015</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>DEFAULT_VORONOI_SEED</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga7b9d25d0ae463320c91cdc83b1d2790d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>PERLIN_MAX_OCTAVE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>gaabde2f8225cf3b2daadcf29f6a174224</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const int</type>
+      <name>RIDGED_MAX_OCTAVE</name>
+      <anchorfile>group__generatormodules.html</anchorfile>
+      <anchor>ga8134aa51f81488f8924445cc4e167559</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Abs</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Abs.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Abs</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
+      <anchor>ada881307500a1039af50898b6ae29a67</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
+      <anchor>af15c8c4b142545b123b2efeaea97b637</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
+      <anchor>a7abe82ecb82b98577a9b0e29208a7a7e</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Add</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Add.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Add</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Add.html</anchorfile>
+      <anchor>a1795583b911e8dd9ed32d434b9ed2705</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Add.html</anchorfile>
+      <anchor>a0fa8d08a4d8d36a2ccba69a6ed8363b2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Add.html</anchorfile>
+      <anchor>aa3add62edb7c781464fb857bca975941</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Billow</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Billow</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a8e29812d3f86073ee5d0ec8e0fc53746</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a5d50715c74dd56cb579d65ff58abc92e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>adcf6eb9cc92aa5645889ca601483cc20</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>GetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>aca528f534583c61ffe63b004502405cd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>ab5e8479a3071a1df85a5ff43961a6256</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetPersistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a3300d91d1b423c9997de9fce89dcc1dd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>abbe67b4ab30e6483076d9122d168ccaf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>ad6a1b51b97717a6ccbde074ca3477007</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>aee2b5f22340a20c5308f6e09244a1201</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>af5d840843d5560ca3ad4606ad3db36b7</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a0591e52b13d9a6675acc7a21c7513ec5</anchor>
+      <arglist>(double lacunarity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>afc16603c491bccf6345555adcf5a3340</anchor>
+      <arglist>(CS::Math::Noise::NoiseQuality noiseQuality)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a74206a47338ef441af44637e5fb1dff0</anchor>
+      <arglist>(int octaveCount)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetPersistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>acc519123c0638cdef5efae99ca2e3a1c</anchor>
+      <arglist>(double persistence)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a5a6a06576050772d75961be6309e4c26</anchor>
+      <arglist>(int seed)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a61f0e36d3ed036106b37cda4380d9a12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_lacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>ad34c4a17bade7f40855c09ad1c065325</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>m_noiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a8f9b84e1b435a9246ef02159da198d61</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_octaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a16fa34c93be6f938cda2e3708970d887</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_persistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>a5f36d7a3eb3ed4b666d24a9f7832350d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_seed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
+      <anchor>afa6caeafbd526e0116c7085633cdcfc1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Blend</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Blend</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
+      <anchor>a34cd433180063b554b8ee62c541f1f9c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const Module &amp;</type>
+      <name>GetControlModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
+      <anchor>a5ae4ef433805076aea68080b708ddaec</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
+      <anchor>aa5063665863cea66bcfffc432f2f65e9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
+      <anchor>a61dae1f74a8a084e2661e21530313c20</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetControlModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
+      <anchor>a9dfffebdae90635e3977c1b22cd5ec53</anchor>
+      <arglist>(const Module &amp;controlModule)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Cache</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Cache</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>ab6aa0cf10e580f2926b99c259b9cc35c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>a7c7fed36bf196a9d807c9ffbdab5d747</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>a5141ee9e9e4d0bdc866278c3f9f44c6c</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_cachedValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>ab54e324781092198fa1ed9fd75bacb90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_isCached</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>a2f142c102124574c11cfcc3cfffe1195</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_xCache</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>a1184125767eb07ca073f3fc21ead21e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_yCache</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>ad6f33143d444df71b8ce4bd659bdf7b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_zCache</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
+      <anchor>a806c4dc3a76dca5a47df5bdd3d32c696</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Checkerboard</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Checkerboard.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Checkerboard</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
+      <anchor>a7abb5f3f70a70696208c06c9df5e8f36</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
+      <anchor>a77ad501b7952c5936cc6f04aa142eef9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
+      <anchor>a48df2d853ea26e47aa8dd9a15e25eb75</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Clamp</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Clamp</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a6b74fe11c9587c5edb35b6304fe691dd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLowerBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a3754eaeb064969fa8f13feb5ef10c5cc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a87891454bb5a0e3c514c97d1da707cda</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetUpperBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a71b4c34ce73ea3565d1dfae70dd243d9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a8b3f4be5d8399dc4b1ce26c111e09fed</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetBounds</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>acd21ffad28aa6f2e387824b787dfcca7</anchor>
+      <arglist>(double lowerBound, double upperBound)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_lowerBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a10bc854b74f5b43c272b2feed26577a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_upperBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
+      <anchor>a8d9ce78b7d4299bf5a07419c865a00ae</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Const</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Const</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a9ebddd074aa6f92159fb20b919b4c4db</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetConstValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a2a647c843e391e421898c9d1af02b871</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a80ed2f878edbd9aa6dc456d838420c8b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a8c0634db0dec92b80fcd1af8ed5ba574</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetConstValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a44d72bd802ea13339a72a52be7964d66</anchor>
+      <arglist>(double constValue)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_constValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Const.html</anchorfile>
+      <anchor>a6e3c77acec540a5e14dd2bfe00b2936d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Math::Noise::Module::ControlPoint</name>
+    <filename>structCS_1_1Math_1_1Noise_1_1Module_1_1ControlPoint.html</filename>
+    <member kind="variable">
+      <type>double</type>
+      <name>inputValue</name>
+      <anchorfile>structCS_1_1Math_1_1Noise_1_1Module_1_1ControlPoint.html</anchorfile>
+      <anchor>a4a2b1f128734b78434ee883f8e0a6a2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>outputValue</name>
+      <anchorfile>structCS_1_1Math_1_1Noise_1_1Module_1_1ControlPoint.html</anchorfile>
+      <anchor>a792838746b59c64a6fcb7ca4675bde4c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Curve</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>void</type>
+      <name>AddControlPoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a8d52a4a66d6facf2fad467606578f538</anchor>
+      <arglist>(double inputValue, double outputValue)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClearAllControlPoints</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>aa9493be87a0512edb54abc73eb6a6f28</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Curve</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a8b619113d709c619ecd90cd99195288f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const ControlPoint *</type>
+      <name>GetControlPointArray</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a9500cc5766773bcd6f1505bc573fe174</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetControlPointCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a834e52f7c0de86b7a9e371ef1dc4775e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>ad896f64c842ea79b0cd763ea5830c869</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a6bad7f453618b174ab4a0c7a4cd2d854</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Curve</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>ad613dbedafa26c87074c2d9cd29bdca5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>FindInsertionPos</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>afca0e4c10e286a5027236b565d7528de</anchor>
+      <arglist>(double inputValue)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>InsertAtPos</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>ac7ad979ebe4cff449354c3ad774957f8</anchor>
+      <arglist>(int insertionPos, double inputValue, double outputValue)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_controlPointCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a47112a5ad93b19c6717d3a2092f1c0a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>ControlPoint *</type>
+      <name>m_pControlPoints</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
+      <anchor>a4445cc37de82bd77d4fbe43953c1d8e6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Cylinders</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Cylinders</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>ac28e7b5391d60878fd180cbfb8b7b35a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>a0f9badaa17e73e6debc42599a87e9bf5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>a70272dce646d5e951dc151bd5f67a78e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>a05fc7674231cc0d07c55ebedccbffcff</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>a5ce298fade943e1a7c585f987527dd67</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
+      <anchor>af9de09b840d1c8d00bcdf50036b1e7b7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Displace</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Displace</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a54de9006aa4d3e3fb5a554a2dcc68d61</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a75ba330d81ef768e127b69984a53f62d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a2f562ee5509140ba047d6ba8964544e4</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Module &amp;</type>
+      <name>GetXDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>affbc25cf599528c8c0be2d29e5446fc4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Module &amp;</type>
+      <name>GetYDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a883df6718eaf56063a52ccd6d99ae35d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Module &amp;</type>
+      <name>GetZDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a508f38facd92c237bccac534bd4ed1dc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetDisplaceModules</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a19317aab836322d92ba17a64c7419e98</anchor>
+      <arglist>(const Module &amp;xDisplaceModule, const Module &amp;yDisplaceModule, const Module &amp;zDisplaceModule)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetXDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a59d5ae35f602481bfffaf0db91493e25</anchor>
+      <arglist>(const Module &amp;xDisplaceModule)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetYDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a563377e7f023842122c7c4b598ab2a62</anchor>
+      <arglist>(const Module &amp;yDisplaceModule)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetZDisplaceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
+      <anchor>a336150164e08e020a2f70f0141f3dce8</anchor>
+      <arglist>(const Module &amp;zDisplaceModule)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Exponent</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type></type>
+      <name>Exponent</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>a77ddd671098fff9abbe410445c6a8b91</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetExponent</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>adce69aed3c4dc6f7965102869bd20683</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>aa3dea71711ebf4f3a0e398f1c1b71170</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>a25268c719abbc5e55b446939e0e2c927</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetExponent</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>a9e5ceb73f64601c1c5abdff92b09f6d1</anchor>
+      <arglist>(double exponent)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_exponent</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
+      <anchor>aedebfd565b4608a7b1d1150d3bf758dd</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Invert</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Invert.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
+      <anchor>a3d3156e7d0632b9c1078f602f5156391</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
+      <anchor>ae6f0547782d38eff3f19a62bd3adb4c8</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Invert</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
+      <anchor>a03d4933a1482c47098b7aa06d6947b93</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Max</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Max.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Max.html</anchorfile>
+      <anchor>a6cceda0c5880e35f8fbe0ea778175453</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Max.html</anchorfile>
+      <anchor>a0c32867e81984c1ef6cf040346c175c0</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Max</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Max.html</anchorfile>
+      <anchor>a14b88447fdc5ef6cd1a2cc5c3c454d08</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Min</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Min.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Min.html</anchorfile>
+      <anchor>ab68b063dd11f58e9e93dfe41bcdd4ea0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Min.html</anchorfile>
+      <anchor>a20b635f4d8d42ce974ea49e44e1cbe53</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Min</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Min.html</anchorfile>
+      <anchor>a85bfdeaaac39c07b9e3bc58cb68d0297</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Module</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const Module &amp;</type>
+      <name>GetSourceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>a5fa33a56bac4be30fff0be831f0225eb</anchor>
+      <arglist>(int index) const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>a54c286d2c723541538f4a834dba0a81e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>a34335ad96da8d0764f9ceab288590f4c</anchor>
+      <arglist>(double x, double y, double z) const =0</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Module</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>ad9bbafaa383808edd7b341b9d2d1d1cc</anchor>
+      <arglist>(int sourceModuleCount)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetSourceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>adfdf096512bac004ccd9cb33507f639e</anchor>
+      <arglist>(int index, const Module &amp;sourceModule)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Module</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>a545a2c16dbc8175d754f8ea3a94e1d97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>const Module **</type>
+      <name>m_pSourceModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Module.html</anchorfile>
+      <anchor>ae4af213073401b60d0995de31482b0d0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Multiply</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Multiply.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
+      <anchor>a26e4275e4bf6810663283fb4580cacc9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
+      <anchor>a6b8b9feafca98b4b21cfafe1db093577</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Multiply</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
+      <anchor>ac996c8085fefe2b42ea8889e74b5bc67</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Perlin</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>aecfa6e8dae5a3972df0555a8d68e0d9e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>adc6859b8dadd568ecd73197fa8e76d4b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>GetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a1d5e305bf25e482b23659a442c36ada5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a3fd1a00908a008d2923e450e7c53a00e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetPersistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a4f0ec64de32f486c3eca1ae84d05695f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>ac01125f871ce854694a61fdfd2d45ae0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a90be276017ad6fc91c3a54985fbec717</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a9675537608fdf2e9e0d5575d0dd91b44</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Perlin</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>ae20fe6b8015a898d1840a04232ecf2a1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a37cde5f8c196cccdcebd88e01e351b02</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a5f44bc56d473cf23ec899788f5d26b7a</anchor>
+      <arglist>(double lacunarity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>af7d19162ba99d3ff260744e11a7c351e</anchor>
+      <arglist>(CS::Math::Noise::NoiseQuality noiseQuality)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>aae63a5269c3882a22556ebc274c2c738</anchor>
+      <arglist>(int octaveCount)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetPersistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a5e3db30b5d04176d633118e3b13efbe1</anchor>
+      <arglist>(double persistence)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>aa7dccff2df1ab10036de569a147c4659</anchor>
+      <arglist>(int seed)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a852fd55520a695bac53b3806c803158f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_lacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a3e1d4b824181a39a75d7aecc3e4852f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>m_noiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>aa9d2a718aff4a2e3c9029a2966938e5b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_octaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a4058d25cb5fb655c75e36393d9c0551f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_persistence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a9bb4598e61cd840afb1223fc2aed43e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_seed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
+      <anchor>a539f7337b9b6a0454d8e7c494116cc4a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Power</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Power.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Power.html</anchorfile>
+      <anchor>a52be5bd5059bcba0b509e91e8b6c4bff</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Power.html</anchorfile>
+      <anchor>a54defec912b80aacf0ba32568f49e6b3</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Power</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Power.html</anchorfile>
+      <anchor>ad64a9fecb5771c1a621e608b9111eb00</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::RidgedMulti</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ab24a778dfc477212ab186873daffc7e7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>adc45fbe97263b472453cef85c7bfa4de</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>GetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>adbfb160f15a6081e8973a814f4c9aa2a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>aca1621b8bb1d8cad67a740647ce888e4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ac6597650f11603983b4c85b56e4e9b85</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ad5e73f9bc6af928d27867cac90a5ee33</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>aa803d89e7196f1cd445c17ce56870f0d</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RidgedMulti</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>aa5fa9288cba0da1bf44477bd1500a550</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a66b706e0add8443f3b5298495559ff8a</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetLacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a1f3e2d4217f49aeb6e040ae306ec36d4</anchor>
+      <arglist>(double lacunarity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetNoiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ad8a7a93c3437964eb26a1f94f0c7395b</anchor>
+      <arglist>(CS::Math::Noise::NoiseQuality noiseQuality)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetOctaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>aa219a635bab81c1bd54973f34ee46868</anchor>
+      <arglist>(int octaveCount)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a8282c1ebe88924f9bcbcdaa936bba81c</anchor>
+      <arglist>(int seed)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>CalcSpectralWeights</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ac154bd8b952cddd75d9f2557fd085184</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a417fafc01e0e3bcc87e3e228bc6fd345</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_lacunarity</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a8bbf8a42a46aec504ceccb44ed027550</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CS::Math::Noise::NoiseQuality</type>
+      <name>m_noiseQuality</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>afc44095102c9c0b8db1d5aed3a489c43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_octaveCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ab6d531cb4a8dff422a41bda2096cd118</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_pSpectralWeights</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>a78a6554332b04d11944fdd15bf1a351f</anchor>
+      <arglist>[RIDGED_MAX_OCTAVE]</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_seed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
+      <anchor>ab7e115fa13a8aee4b3c82266be1f10cb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::RotatePoint</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a629b262a9eae2be940e5c0ff64a7d036</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>aff013aef92af6d3f357f93c72f171889</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetXAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>ac2e614c83bdb73fbf4ef0b1855579336</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetYAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a8e2a51d5de10946a46ff0d2e13bfad38</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetZAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a5e9e63e1904101199b2dd9a7331d6d4c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RotatePoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>adda5eb9605b570c14fb9b2879330cb91</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetAngles</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>ad4a08bae85f4f55c88da471181fb9ad3</anchor>
+      <arglist>(double xAngle, double yAngle, double zAngle)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetXAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>abcec4f6a79fa41324ca8f1828b641524</anchor>
+      <arglist>(double xAngle)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetYAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a78bbb2e74e662eed60b4b9f2b9db7769</anchor>
+      <arglist>(double yAngle)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetZAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>aaf5b5ab87f8659d2e9d7cf649ab0a84b</anchor>
+      <arglist>(double zAngle)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_x1Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a724169d5b56e426cb057cada20a7f0d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_x2Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>adee612e8c94efb99c5c1188f28bdc8df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_x3Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a72bc4faa9be9508b1a725cee9c8befc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_xAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>adad61f3dd53b3af05c9cb357848883fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_y1Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a1c93cee3fbb4a024caa931c9d742e9f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_y2Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>aac89979dc0dcc55f0bb39c0a40af037f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_y3Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a759c5ccc9ae61376579a8556ac6a046d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_yAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>af6cdb1e0e965722dae41d1807bd970cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_z1Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a852cea2ddcc033636061f1a30372cb89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_z2Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a42d1cb4f4c697ef6519011f17aee846d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_z3Matrix</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a2bd95748ee60cbdf0fd34a9537bafe76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_zAngle</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
+      <anchor>a0f33adf3b9a27f437ab360e43d9b48a1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::ScaleBias</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>double</type>
+      <name>GetBias</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a502486b0816799623f16c7a8401ffd3f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a3e5c8adf8cfd2110160ecddf1028e19d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a66d0a0e7b3dd3fc16b72899780468552</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a80a9dc62f0ced28336b89d7048669884</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ScaleBias</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a737243422a081fcc6c9061f7789c7337</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetBias</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>acafd52626376e38162a90b21939ad9dc</anchor>
+      <arglist>(double bias)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>a13176ed07eef5dbb4e709097495f8828</anchor>
+      <arglist>(double scale)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_bias</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>abc8e1e6c000fe321a7e82c37d2fea7a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_scale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
+      <anchor>ae257cc92e9d604efddbb906aaed32220</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::ScalePoint</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a067d342a97bceb9c467c7762407a268d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a81f4faed890b181575d8ea8a93d4c8b7</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetXScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a0e26478e87422bbc3f3cccb95e97e99b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetYScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a02af0999356e39cd63a4ef523ac4773f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetZScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a3ce5060f2a2420a9ea399831d0c1a4eb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ScalePoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a4640851c15eabbb211696e250fb4215f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>ab3ed462b19134c6787ed183d4d5a5fc6</anchor>
+      <arglist>(double xScale, double yScale, double zScale)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a0629934145fe6cd62414f49d814e73d3</anchor>
+      <arglist>(double scale)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetXScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>ad94050f392c2100cefa0144b1d1e7ace</anchor>
+      <arglist>(double xScale)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetYScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a53c0225fc5467a5a4e3a577fe168f6c5</anchor>
+      <arglist>(double yScale)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetZScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a973b5246887e3f30a073b481849a2ad5</anchor>
+      <arglist>(double zScale)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_xScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a90360042f22763ae9cc26f6c59195b51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_yScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a4a17c1c246f70cea4f8394ff38376498</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_zScale</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
+      <anchor>a120764b6bff619cee7ce2ff3c1553720</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Select</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>const Module &amp;</type>
+      <name>GetControlModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a727b3de9bba05f51cb8706d73f926c22</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetEdgeFalloff</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>acedaf9e29bcbf7dbd0bd2ca920203889</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLowerBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a617fe10c9d787a589bfa84fa6c1f2b00</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a6d065a95b6e581c3dd2dce0c90368481</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetUpperBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a6b37a4a02ef753c8d8e8f769abbdae4e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>aae39e7957cbd5e9cbf302f5554811abf</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Select</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>afe3c9bcd352d33d1cb12d1c27f9a36ae</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetBounds</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>af55f83fda93d7612ca125e203353e7a1</anchor>
+      <arglist>(double lowerBound, double upperBound)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetControlModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a1f6c5490504c8d61088ec62882574fd4</anchor>
+      <arglist>(const Module &amp;controlModule)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetEdgeFalloff</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a44c8f538c923e4c75104f1361696082e</anchor>
+      <arglist>(double edgeFalloff)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_edgeFalloff</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>af8a9dbbf8c46e078997878db0d9b3665</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_lowerBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>acea0fda07c71b7e187e66264d77e6f31</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_upperBound</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Select.html</anchorfile>
+      <anchor>a8247791234572619c3d4c58d7e344512</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Spheres</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>a9d6bbc5a66e5f09a76b98862ec3e7a18</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>a141c1a3f626e2023631e2a845fa3bed2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>a47975652b588a722b769da0d2da5734c</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>a9d83a672a371e7e55fe5a8e087ee8a98</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Spheres</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>a53aafb4329c80b4a36bab742b78e7053</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
+      <anchor>aaa8153238d551cb07cb90ea6e5d51ae6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Terrace</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>void</type>
+      <name>AddControlPoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a9b4a6228cb582cf510c19832ae7d6b90</anchor>
+      <arglist>(double value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ClearAllControlPoints</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>af7e84f2e68fd21ba7dcf67579f3c6801</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const double *</type>
+      <name>GetControlPointArray</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a5a9cae70c1cba1600c2771a579fe369c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetControlPointCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>ad11177903a696367fc8126f22cd5dfb3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>af46933970537ef5ed271733a84c3ac23</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a9a43140bf05b12853ca79f345b2b7846</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InvertTerraces</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a5cbac00b1c50281e633f8a1eaf32e05a</anchor>
+      <arglist>(bool invert=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsTerracesInverted</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a91a86bb9b41744a62fbe1b52cdef82a6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>MakeControlPoints</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a75300cb9b15f865bd0676650a9a754df</anchor>
+      <arglist>(int controlPointCount)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Terrace</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a4458a4b0a64bb18623c29e177ca2d20c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Terrace</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a53dea33da6338ba3f6787b35fe5d6422</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>FindInsertionPos</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>aab1abcc5b2cf070a0f034b072fbf64a7</anchor>
+      <arglist>(double value)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>InsertAtPos</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>ac8871aef1a1c7cbe36d2b01eba5ba293</anchor>
+      <arglist>(int insertionPos, double value)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_controlPointCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a3e17965908a5e0d3f5b7ac20dc3e215e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>m_invertTerraces</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a710f9cf8fe24564c5610f909cd27d425</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double *</type>
+      <name>m_pControlPoints</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
+      <anchor>a4743abc9dd2730e5e3689506391efd5e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::TranslatePoint</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>af3cdb91d4a423768fa7826fad8883239</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>aea2af7ec314e013c622dca88873fe06e</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetXTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a28c900ced92e4b53e5143fb53aa02c9f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetYTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a342ed2b3a76837712ba6b0d3efe36430</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetZTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a729a2150f9e47cb5f3ba7dc3e26515d3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a6698357c3ec033539477bc5ec6578d05</anchor>
+      <arglist>(double xTranslation, double yTranslation, double zTranslation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a6cd8bbc246bbcf3f604e27b07c93afc5</anchor>
+      <arglist>(double translation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetXTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a40bc407f9071bc32d011f90db07c4646</anchor>
+      <arglist>(double xTranslation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetYTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>ac1c37ec60cd395ed34f8b39c648976ee</anchor>
+      <arglist>(double yTranslation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetZTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a989199e83764deccb6670ddcd69e4607</anchor>
+      <arglist>(double zTranslation)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TranslatePoint</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a011efeb754bdae981136e169fdd12473</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_xTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a43c1ad8f604b2b673b0950751057035e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_yTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>af16476172cfe8cde35542c8a61e3191c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_zTranslation</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
+      <anchor>a416c5f758cd7f8a29eb292518c4d17d2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Turbulence</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a2c8149eecdde38e5a4379e382b81b3f8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetPower</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a0addcba4e86ed99cf168c862f34d106a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetRoughnessCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a5c54a914658dc0c7ff603c03e4e414c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a91842193ad8474219d33301541c4c1c7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>abd6fa45ab26335dba514b2ae0cfc92d3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>ae46e913424e90f653499da63b782325f</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>ab60e829d612c2470927b1c86335235b6</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetPower</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a1a4c293e8b59237b3e3154aa8ebe16af</anchor>
+      <arglist>(double power)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetRoughness</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a3353d7e4e562c13f2b7956a5c7a51756</anchor>
+      <arglist>(int roughness)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a874f642096052d871989399bf7f538b4</anchor>
+      <arglist>(int seed)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Turbulence</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>ac9ea5724efa17d6fecf8107945c6bfde</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_power</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a500db945233b599da9fa2140fc444159</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Perlin</type>
+      <name>m_xDistortModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a3683c0e0a8a68d2b73d9e73fd2bdf6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Perlin</type>
+      <name>m_yDistortModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a26734f4075dad4e114ed42fabea515f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Perlin</type>
+      <name>m_zDistortModule</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
+      <anchor>a63f333b6098675f9b7b9b2bb8332a28c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Math::Noise::Module::Voronoi</name>
+    <filename>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</filename>
+    <base>CS::Math::Noise::Module::Module</base>
+    <member kind="function">
+      <type>void</type>
+      <name>EnableDistance</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a514493e547577204858acfb7dedd2738</anchor>
+      <arglist>(bool enable=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetDisplacement</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a10f24fafa85ffdd45d87b8987243462c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>aed611ab5fbdb89ffb6a853a25e8953da</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>GetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a8c34c7e5b36a76cfe8e1aafa5e85c027</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetSourceModuleCount</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>ab313c6b63aadb2d2184ae31f390e9ab5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>GetValue</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a86c48bb40f1c451126541c108880f724</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsDistanceEnabled</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a45cf39853bf0359a665ede77c29155ae</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetDisplacement</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a4ca6102538b623efc1a556416a2496a8</anchor>
+      <arglist>(double displacement)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFrequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a16f09de7451e827182d1f2aae3477840</anchor>
+      <arglist>(double frequency)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetSeed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a1cf1363c4342c128099dd98561e38dc5</anchor>
+      <arglist>(int seed)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Voronoi</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a943cad3a78784b80f770f40340b3b4ea</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_displacement</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a408b67d29968b02d1cdfe5cad3a7a957</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>m_enableDistance</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a75ee3141f80f36a3ee611e718d26c9cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>m_frequency</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a49a3df8356f25372cfefddbc1301ed10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>m_seed</name>
+      <anchorfile>classCS_1_1Math_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
+      <anchor>a0ccdf031df331b349644c97d31876a8b</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -122851,2832 +125482,6 @@
     <name>CS::Meta::Implementation::Wrap</name>
     <filename>structCS_1_1Meta_1_1Implementation_1_1Wrap.html</filename>
     <templarg></templarg>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Noise</name>
-    <filename>namespaceCS_1_1Noise.html</filename>
-    <namespace>CS::Noise::Model</namespace>
-    <namespace>CS::Noise::Module</namespace>
-    <member kind="enumeration">
-      <name>NoiseQuality</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga444ecceaff9c55a0224afde6245314d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>QUALITY_FAST</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0ab35d8f5f56637f6032c526544dfbec6a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>QUALITY_STD</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0a34d643235ba2a849a2b188dc6cdf533c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>QUALITY_BEST</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gga444ecceaff9c55a0224afde6245314d0ae7cc908e7e412796d995dc9235335e72</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>ClampValue</name>
-      <anchorfile>namespaceCS_1_1Noise.html</anchorfile>
-      <anchor>a6f6b91b79cb9a934d9801bf47461a78c</anchor>
-      <arglist>(int value, int lowerBound, int upperBound)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>CubicInterp</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaff58f8a2a8de7409538393ce0158b67c</anchor>
-      <arglist>(double n0, double n1, double n2, double n3, double a)</arglist>
-    </member>
-    <member kind="function">
-      <type>T</type>
-      <name>GetMax</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga9af7a377db1ace5e0f2cddc505b2a64f</anchor>
-      <arglist>(const T &amp;a, const T &amp;b)</arglist>
-    </member>
-    <member kind="function">
-      <type>T</type>
-      <name>GetMin</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaaa18991c3b220195092f236b0642fa96</anchor>
-      <arglist>(const T &amp;a, const T &amp;b)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GradientCoherentNoise3D</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga610f7940042a5601a97395bda9fb4960</anchor>
-      <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GradientNoise3D</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaa1d1caca507b886ebd145272a7736f8f</anchor>
-      <arglist>(double fx, double fy, double fz, int ix, int iy, int iz, int seed=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>IntValueNoise3D</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gac9f0ce631132c2f800c72e7de0515309</anchor>
-      <arglist>(int x, int y, int z, int seed=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>LatLonToXYZ</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaaa667e428f969beb1f10fd3730b3e790</anchor>
-      <arglist>(double lat, double lon, double &amp;x, double &amp;y, double &amp;z)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>LinearInterp</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga9fadb78ae77ac27a14a514b7c2da0f1e</anchor>
-      <arglist>(double n0, double n1, double a)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>MakeInt32Range</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga0ddbc9e7db6d8d3c91a8019fec0eeabd</anchor>
-      <arglist>(double n)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>SCurve3</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga0b0693153b43f945b023a87f7c785da5</anchor>
-      <arglist>(double a)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>SCurve5</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga98f1c1ee2c3fd84b692886a566ade61a</anchor>
-      <arglist>(double a)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SwapValues</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga412f0645160e534370429638c4734d52</anchor>
-      <arglist>(T &amp;a, T &amp;b)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>ValueCoherentNoise3D</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gaae8468bc93ddbde72594acaf00c00e7e</anchor>
-      <arglist>(double x, double y, double z, int seed=0, NoiseQuality noiseQuality=QUALITY_STD)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>ValueNoise3D</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga7b1b30b06679b93815d20a833e27cd27</anchor>
-      <arglist>(int x, int y, int z, int seed=0)</arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEG_TO_RAD</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga83f544d8d41d83cb04ddd8d973230199</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>RAD_TO_DEG</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gad79307c82891436d3da15db70360ab49</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>SQRT_2</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>ga15616be661d418f525156ab6659aeba3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>SQRT_3</name>
-      <anchorfile>group__libnoise.html</anchorfile>
-      <anchor>gabb4ca3594dd76787a788670678677913</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Noise::Model</name>
-    <filename>namespaceCS_1_1Noise_1_1Model.html</filename>
-    <class kind="class">CS::Noise::Model::Cylinder</class>
-    <class kind="class">CS::Noise::Model::Line</class>
-    <class kind="class">CS::Noise::Model::Plane</class>
-    <class kind="class">CS::Noise::Model::Sphere</class>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Model::Cylinder</name>
-    <filename>classCS_1_1Noise_1_1Model_1_1Cylinder.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Cylinder</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
-      <anchor>aa5aac3f2e34ad63956519ca8693c9b2b</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Cylinder</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
-      <anchor>ae6efa9bdcd84fbcb98b622fa88e07797</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const CS::Noise::Module::Module &amp;</type>
-      <name>GetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
-      <anchor>a2286cd3228b37120acf0ff1ef23bdc9a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
-      <anchor>a4042793d998d840f31c9d39f52722d26</anchor>
-      <arglist>(double angle, double height) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Cylinder.html</anchorfile>
-      <anchor>af8de1655a197c65c05b4f952d16eb94c</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Model::Line</name>
-    <filename>classCS_1_1Noise_1_1Model_1_1Line.html</filename>
-    <member kind="function">
-      <type>bool</type>
-      <name>GetAttenuate</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>ab571023b9e2ed0dde286fe3ceb816784</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const CS::Noise::Module::Module &amp;</type>
-      <name>GetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>a1cfa29a0fe6025499051f18fc743fb57</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>aa08361f272c0945fa44a632e9b3be3db</anchor>
-      <arglist>(double p) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Line</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>a94e34d5082c24c082149fca2a88aadb6</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Line</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>a0838033c72d3598d48b3a559eb4ec8a5</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetAttenuate</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>a356b7dfe367d3d0485fe6d2691629580</anchor>
-      <arglist>(bool att)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetEndPoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>ae30256b31e22faf2378d80dad1205566</anchor>
-      <arglist>(double x, double y, double z)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>acb792d57f53deba969989dd8eff9ec1f</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetStartPoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Line.html</anchorfile>
-      <anchor>a0a51ce65031776f2a3a86b2db4aa7b11</anchor>
-      <arglist>(double x, double y, double z)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Model::Plane</name>
-    <filename>classCS_1_1Noise_1_1Model_1_1Plane.html</filename>
-    <member kind="function">
-      <type>const CS::Noise::Module::Module &amp;</type>
-      <name>GetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
-      <anchor>ad232ce2950731ab025f07d7b30bde475</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
-      <anchor>a5d1cdda42fe47abd2d5e0e632b082253</anchor>
-      <arglist>(double x, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Plane</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
-      <anchor>a2a7db34db38a715e70d32579dc8ddbcf</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Plane</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
-      <anchor>a175d7d91be03a19facfb8cf2461672a3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Plane.html</anchorfile>
-      <anchor>a9c122d2914bf631d50c4f84a08443d0b</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Model::Sphere</name>
-    <filename>classCS_1_1Noise_1_1Model_1_1Sphere.html</filename>
-    <member kind="function">
-      <type>const CS::Noise::Module::Module &amp;</type>
-      <name>GetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
-      <anchor>a26749decb656d4292fae40104cd6c44a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
-      <anchor>a06e0b52fc23a9682e97cd37160de41ad</anchor>
-      <arglist>(double lat, double lon) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
-      <anchor>a422cb7cb8c1ac682ee82fe8f8438d76d</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Sphere</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
-      <anchor>a1fbc3fe053d4ba8597484e2a49c73386</anchor>
-      <arglist>(const CS::Noise::Module::Module &amp;module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Sphere</name>
-      <anchorfile>classCS_1_1Noise_1_1Model_1_1Sphere.html</anchorfile>
-      <anchor>a9bdf6ca68a3a46bbca20875dc784a937</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Noise::Module</name>
-    <filename>namespaceCS_1_1Noise_1_1Module.html</filename>
-    <class kind="class">CS::Noise::Module::Abs</class>
-    <class kind="class">CS::Noise::Module::Add</class>
-    <class kind="class">CS::Noise::Module::Billow</class>
-    <class kind="class">CS::Noise::Module::Blend</class>
-    <class kind="class">CS::Noise::Module::Cache</class>
-    <class kind="class">CS::Noise::Module::Checkerboard</class>
-    <class kind="class">CS::Noise::Module::Clamp</class>
-    <class kind="class">CS::Noise::Module::Const</class>
-    <class kind="struct">CS::Noise::Module::ControlPoint</class>
-    <class kind="class">CS::Noise::Module::Curve</class>
-    <class kind="class">CS::Noise::Module::Cylinders</class>
-    <class kind="class">CS::Noise::Module::Displace</class>
-    <class kind="class">CS::Noise::Module::Exponent</class>
-    <class kind="class">CS::Noise::Module::Invert</class>
-    <class kind="class">CS::Noise::Module::Max</class>
-    <class kind="class">CS::Noise::Module::Min</class>
-    <class kind="class">CS::Noise::Module::Module</class>
-    <class kind="class">CS::Noise::Module::Multiply</class>
-    <class kind="class">CS::Noise::Module::Perlin</class>
-    <class kind="class">CS::Noise::Module::Power</class>
-    <class kind="class">CS::Noise::Module::RidgedMulti</class>
-    <class kind="class">CS::Noise::Module::RotatePoint</class>
-    <class kind="class">CS::Noise::Module::ScaleBias</class>
-    <class kind="class">CS::Noise::Module::ScalePoint</class>
-    <class kind="class">CS::Noise::Module::Select</class>
-    <class kind="class">CS::Noise::Module::Spheres</class>
-    <class kind="class">CS::Noise::Module::Terrace</class>
-    <class kind="class">CS::Noise::Module::TranslatePoint</class>
-    <class kind="class">CS::Noise::Module::Turbulence</class>
-    <class kind="class">CS::Noise::Module::Voronoi</class>
-    <member kind="variable">
-      <type>const int</type>
-      <name>BILLOW_MAX_OCTAVE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga5e61014c489caa76d7ea5367547ab8dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_BIAS</name>
-      <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga55d34238cb26a8790adc3a39859d57bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_BILLOW_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gac9e00bb272a686f3a1a9cdf3de995f05</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_BILLOW_LACUNARITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gab95c8353e41cecdc30694f310fcc854d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_BILLOW_OCTAVE_COUNT</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gae10892d525014248110a29e23a43fcb8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_BILLOW_PERSISTENCE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga028defd2f883939701c9b07b25c2d852</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
-      <name>DEFAULT_BILLOW_QUALITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga022b05a17a0ea6f15ba629037307655f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_BILLOW_SEED</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga5ce05b9331f9bc9897b3638ef7fa0a52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_CLAMP_LOWER_BOUND</name>
-      <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga4c63c75556dcb988c62aab7b7e844034</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_CLAMP_UPPER_BOUND</name>
-      <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga8f20f1b1ba354fc50f33a2371897fd87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_CONST_VALUE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaeab9b11fc42c7d07819769b868ad61f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_CYLINDERS_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga8425afc3232241100457a62e16af7e62</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_EXPONENT</name>
-      <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>gac0a722bcb5359c5109846538f3d43dcc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_PERLIN_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga223dc6e76033a0e1e528ef35bf200c76</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_PERLIN_LACUNARITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gad188edd1d1df4fc151730091b7612492</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_PERLIN_OCTAVE_COUNT</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga206c37f463d6c8eec4203a851592db0f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_PERLIN_PERSISTENCE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga4fd2c0a44e7637f51c14a19df39b6309</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
-      <name>DEFAULT_PERLIN_QUALITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga0e3e64e560be49bde80890315f48d3bc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_PERLIN_SEED</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gabc9c321fd354eb897a362927bb2d09ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_RIDGED_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaea348b7ce9590219a76748a852c1e43f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_RIDGED_LACUNARITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaff40c238fd35bdecd37418d2afc93ae0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_RIDGED_OCTAVE_COUNT</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga44c88740480b09509f73a486545cb6c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const CS::Noise::NoiseQuality</type>
-      <name>DEFAULT_RIDGED_QUALITY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga1b57c2be82702c7a88fe0891949dc8cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_RIDGED_SEED</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga31c03f286f757108e2a903af442dcfbd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_ROTATE_X</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaf5a51975406c590d8efc795f8b2db531</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_ROTATE_Y</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga001d947d698d27d53ddd56ede573bdb9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_ROTATE_Z</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gabd542ccb6c66cb9b8645029268a719b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SCALE</name>
-      <anchorfile>group__modifiermodules.html</anchorfile>
-      <anchor>ga85448185f98c273f6c3bc97a438598fc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SCALE_POINT_X</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga903b3a8bd8283a0e0aa7402624bae7e3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SCALE_POINT_Y</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gae9acd3bff2a760828cb86163e853ca45</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SCALE_POINT_Z</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga8b7e96bea5e4b5853d76897d5377bff9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SELECT_EDGE_FALLOFF</name>
-      <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>ga16cbc2cc995f1d1b709b7cdd92aba52c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SELECT_LOWER_BOUND</name>
-      <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>ga00132f3ee4985317e86a871a0d364854</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SELECT_UPPER_BOUND</name>
-      <anchorfile>group__selectormodules.html</anchorfile>
-      <anchor>gaf9cded251851d3f6c6d6fb2d3af8e726</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_SPHERES_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga3bc1a7aecaac120ac723849a3a941995</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_TRANSLATE_POINT_X</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga6cafa37fb72594378d16d5fb727efd13</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_TRANSLATE_POINT_Y</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>ga5290c996e8d3e9174d42b1be699eb1ab</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_TRANSLATE_POINT_Z</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gace99684b36219029c51faf541d6a3149</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_TURBULENCE_FREQUENCY</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gac95254e91badadcf100e2c859c56d052</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_TURBULENCE_POWER</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaa90af75e579bff138283d3c488065389</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_TURBULENCE_ROUGHNESS</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gac3b21cbd11260ea087b530001384fdbe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_TURBULENCE_SEED</name>
-      <anchorfile>group__transformermodules.html</anchorfile>
-      <anchor>gaa55c00f07398526cca33c37b123b79eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_VORONOI_DISPLACEMENT</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga0e705f20e1bee415bf5669443bf530cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>DEFAULT_VORONOI_FREQUENCY</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gae3db529d169c3964950f1cadb2713c77</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>DEFAULT_VORONOI_SEED</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga6d1e2eaa8c8c03d2f1ba8d408e7ed31c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>PERLIN_MAX_OCTAVE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>ga47f6b3119faebcf69d154a35902e98c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const int</type>
-      <name>RIDGED_MAX_OCTAVE</name>
-      <anchorfile>group__generatormodules.html</anchorfile>
-      <anchor>gaabe1dcf1ec5c26ff042593265fd531c2</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Abs</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Abs.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Abs</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
-      <anchor>a0d2318520a88d97353df2e534284dd22</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
-      <anchor>ae0604fb3b9deb37f18e85ef5efea4149</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Abs.html</anchorfile>
-      <anchor>adec57787a43069910dbd678f79eb1c08</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Add</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Add.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Add</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Add.html</anchorfile>
-      <anchor>a30e8d89f512ff2f1729a9e83d68cc884</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Add.html</anchorfile>
-      <anchor>a13c1645c8b2c5af899804a1439e6df49</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Add.html</anchorfile>
-      <anchor>a010b715be4155a08efc5de83e6454000</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Billow</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Billow.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Billow</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a50f83ee9afa889ee76b4c17ff5da575d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>aab49d30e6afd2d409e1b904043dc41f5</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a6c7b62bee5f0fb92a173857db844dce6</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>GetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>abc8c78662039b944dad8f1b20cf18f74</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a89a67d6d56a9f4e0030121c6e729b526</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetPersistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>ac1781a1f0b61e6ae99f3f1f82ddf83e9</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a2c3f07bc05505f2cf9b9d00b80ab5be9</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a84ddd61f2b6943df7c0d38f3b6a77e45</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>ab631c8773cf35272d2253019f16e4031</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a0201c69d56b6394dad6ee0f6d3a23b26</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a0a7af6e29edbf979b9a812667d1d6b7a</anchor>
-      <arglist>(double lacunarity)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a9a08335e491853bdbe658851ec3ab1f6</anchor>
-      <arglist>(CS::Noise::NoiseQuality noiseQuality)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a3a6be13a8dd580c5ef992dcf310de79c</anchor>
-      <arglist>(int octaveCount)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetPersistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>ab5102962d339f8f560491fb910f3d01b</anchor>
-      <arglist>(double persistence)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a6b7a044c564d077c4f0cc4708f708ccf</anchor>
-      <arglist>(int seed)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a1fa651758fb534a6c277611240d2cb69</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_lacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a93d242670826b3c882d9c1c672d5a40f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>m_noiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a779d6ecd1008c9accf6e29d7c47ce379</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_octaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>ae2c507900ce5a91624d6b689a7458e90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_persistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a68528cd6fc8d5f92852214a6cef5d460</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_seed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Billow.html</anchorfile>
-      <anchor>a3f7e41b21d8f4f3942c429b5c5e476df</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Blend</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Blend.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Blend</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
-      <anchor>a404138a5c3f1db415edbed0a5cae6410</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const Module &amp;</type>
-      <name>GetControlModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
-      <anchor>a214b18780753881c3b7bb1fa15861493</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
-      <anchor>a66b1f7eb84b5a012df2b72387519de4f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
-      <anchor>a8ec0986c9cc680df55a687086e3c62cf</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetControlModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Blend.html</anchorfile>
-      <anchor>a79b9333f1573307de5adb04260061276</anchor>
-      <arglist>(const Module &amp;controlModule)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Cache</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Cache.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Cache</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>ab4ea1ac2cbf6b303d5a9eda17d7b02a7</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>a11f777ebc7de3b6532e05651f75e86ba</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>a4e1a4d058ea07afb989cec671c884a2f</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_cachedValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>a5598f863e8d1c796ef8480635336ab55</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_isCached</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>a000cf26b88ce8fc46cb1becda33bea3c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_xCache</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>a53815d21adf7dab718c448ff052941a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_yCache</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>ab0a180372177b522c4cad1e245fc0f58</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_zCache</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cache.html</anchorfile>
-      <anchor>abcfd8f99ec784d7dfdf042c4a780964a</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Checkerboard</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Checkerboard.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Checkerboard</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
-      <anchor>a7722f4c1e8d6dc85956772858ecc76e5</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
-      <anchor>adbb37b8d4709daad833366c4538e3b8f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Checkerboard.html</anchorfile>
-      <anchor>a784f1248d6c29c134b7ce0067cb4b836</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Clamp</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Clamp.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Clamp</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a57350ee41565a152bc5807db2e449526</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetLowerBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a100a816809d564932f1ed02c28663dd2</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a877dcdaa332a54a36215b3d776c39ceb</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetUpperBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>abf6663126ed2111d3177c6555f2aa8bd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>aa96baac53a9aa58ad3bbc058684fb263</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetBounds</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a0e4cb7b4d09976c3d5c41433df6109ea</anchor>
-      <arglist>(double lowerBound, double upperBound)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_lowerBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a010dc40354081af23bcfe5f28e1ab523</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_upperBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Clamp.html</anchorfile>
-      <anchor>a635f6e4751ac79e7206cf1035881fe35</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Const</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Const.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Const</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>aa83758ae563ea468b6536d63c5d9dbe0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetConstValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>a1591fd3e38e4e7cdf658be62f40d1d95</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>a7b5308c818766a9d6ce7307ee3b85dbd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>a6182132c171f995706647f98fb63b008</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetConstValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>a12bef4827cc3c16bf4a459562dfda9cf</anchor>
-      <arglist>(double constValue)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_constValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Const.html</anchorfile>
-      <anchor>a36234992bc2f6eac1d1bda51426ac15c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Noise::Module::ControlPoint</name>
-    <filename>structCS_1_1Noise_1_1Module_1_1ControlPoint.html</filename>
-    <member kind="variable">
-      <type>double</type>
-      <name>inputValue</name>
-      <anchorfile>structCS_1_1Noise_1_1Module_1_1ControlPoint.html</anchorfile>
-      <anchor>afa19ab52e283d3f80f724c0b0fb8f2c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>outputValue</name>
-      <anchorfile>structCS_1_1Noise_1_1Module_1_1ControlPoint.html</anchorfile>
-      <anchor>a8cd41116936685dc2a9733093d9a464e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Curve</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Curve.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>void</type>
-      <name>AddControlPoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a7c9a1a0d170f6db6e9eb582179f40e0c</anchor>
-      <arglist>(double inputValue, double outputValue)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ClearAllControlPoints</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a7f95ded87615a24a37e2562f8320ccb6</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Curve</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a427603de40eadba3243b00d07366e94a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const ControlPoint *</type>
-      <name>GetControlPointArray</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>aaf0bc94a3360a3063f7b44a01031d116</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetControlPointCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a8d6ded13c6932b095447ebe0cc157d44</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>aa94fd509cced36f9cd4702f4deb073de</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>ac3f25dd40aaefe07f1b37d037c6a7c03</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Curve</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>acd83aec9c1695d44752bf6ee05811d85</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>int</type>
-      <name>FindInsertionPos</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>ad9e1a326ff2ed426d48b8c97a5e6ed7f</anchor>
-      <arglist>(double inputValue)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>InsertAtPos</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a1bca2915d3c3b989865ee700aceafb96</anchor>
-      <arglist>(int insertionPos, double inputValue, double outputValue)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_controlPointCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a69c10140dac1bfb43c15325f9960092f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>ControlPoint *</type>
-      <name>m_pControlPoints</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Curve.html</anchorfile>
-      <anchor>a342dcb51227bdfb8e35b5481a86cec1a</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Cylinders</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Cylinders.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Cylinders</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a79cc7d02b33be78ab3513a627c27a0bf</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a6460507407bb4a9c0cbc5a7bf32fca11</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a1f152ffc3d68187cc7e2122598ef9d91</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a65ad1f6cec628e6dfe11b5529c8efdc5</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a5e948382b448ba388ba710f59a15c3c3</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Cylinders.html</anchorfile>
-      <anchor>a588f8edff084881b63c48ff3d5fbd9e4</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Displace</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Displace.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Displace</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>a2ac816b41b8079e14cebd161fc90c3ca</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>aedc8f3a7e86177eed4024ff3533c6d68</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>a1a7374305b6977a8880c4d9c529e1476</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>const Module &amp;</type>
-      <name>GetXDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>ad4209cc689723dd0405b0f48f5a7e69a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const Module &amp;</type>
-      <name>GetYDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>a7ccdf78f2769f354a9410ae5d2d966bd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const Module &amp;</type>
-      <name>GetZDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>aceda4e1905a025c241deb1c642c57260</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetDisplaceModules</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>ab0ba430ab356e963408702e2ff5a0cbe</anchor>
-      <arglist>(const Module &amp;xDisplaceModule, const Module &amp;yDisplaceModule, const Module &amp;zDisplaceModule)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetXDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>a737ca5e09703c90a377a7c0210628f84</anchor>
-      <arglist>(const Module &amp;xDisplaceModule)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetYDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>a792d5bf99dd08086d3539fd70184a230</anchor>
-      <arglist>(const Module &amp;yDisplaceModule)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetZDisplaceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Displace.html</anchorfile>
-      <anchor>aca41418b2066c37431c728b274c6e984</anchor>
-      <arglist>(const Module &amp;zDisplaceModule)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Exponent</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Exponent.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type></type>
-      <name>Exponent</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>a915cf67bace094025ad1891c13482ba0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetExponent</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>ab15c6a21bb6d4fc81eee4412697874cd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>acd2a21c76a2a648c4efbf4d396b13374</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>a5b2952e4b1d328411fce0f205596cbdd</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetExponent</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>a547175f5c87881b0b5eb1cae38777ea7</anchor>
-      <arglist>(double exponent)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_exponent</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Exponent.html</anchorfile>
-      <anchor>a734a3acc6014f1bdb41246355af1abc2</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Invert</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Invert.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
-      <anchor>ad68f76fc9eed82f33562807d3ae4a25f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
-      <anchor>a17cc776ccef195cdc9ea60863ef28cc1</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Invert</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Invert.html</anchorfile>
-      <anchor>a53513fc28a8a9b5b3aeb50732a4258e3</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Max</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Max.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Max.html</anchorfile>
-      <anchor>a171bb12ed0111ec370105fa289fe43c3</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Max.html</anchorfile>
-      <anchor>a0fb3c516f8e09f411ba50f172aa170ef</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Max</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Max.html</anchorfile>
-      <anchor>a9a6f803ddcfc162351c1b01199e2284d</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Min</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Min.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Min.html</anchorfile>
-      <anchor>abf5e024abcf8d4752de050df27b92ec2</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Min.html</anchorfile>
-      <anchor>ab8da309b0bdcaac900bac80d6d5595bc</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Min</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Min.html</anchorfile>
-      <anchor>a155a1e4b8cccfe8212b6af7955c0e639</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Module</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Module.html</filename>
-    <member kind="function" virtualness="virtual">
-      <type>virtual const Module &amp;</type>
-      <name>GetSourceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>a2a497ef675fc3805fba896aa37a86050</anchor>
-      <arglist>(int index) const </arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>a6381b868a467d50e3ae723e0b4a4b0fb</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>a28b51a8bab022fb7dec0c9adb91d885b</anchor>
-      <arglist>(double x, double y, double z) const =0</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Module</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>a08dd8645bc2386999af39b4c82bd9acc</anchor>
-      <arglist>(int sourceModuleCount)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>SetSourceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>a96d843e9f17c6faaf7c99fa1c201b289</anchor>
-      <arglist>(int index, const Module &amp;sourceModule)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Module</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>aa45075f06d5abc02262d034196149ed3</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>const Module **</type>
-      <name>m_pSourceModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Module.html</anchorfile>
-      <anchor>adec4d5115ce1d18dc84381f0f3f9b1ce</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Multiply</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Multiply.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
-      <anchor>a95f47dfc2145a326c1d36911a8a9c809</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
-      <anchor>afd2fa725eab7dbefae2bcf593635a471</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Multiply</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Multiply.html</anchorfile>
-      <anchor>a141d6d8a84dd40ffc680c3fcafe0fed6</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Perlin</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Perlin.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>afb665574b4e6b3e0010b12d9d951d08f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>aae9317c304411846c45f0b8bed676382</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>GetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>ab0d37ef542ea6519ce131379dfcf1dc1</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a4b94af0c5abe503a9b15cdc27e6f57d4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetPersistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a6c3b0d635a4d3aee98019cdb126680c2</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>abed3fa803dc27034d185ee8e901e05e0</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a74414e0e4c75a603dff328ff5fffc7c1</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a9b62c863033e1c37606f712f5faed410</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Perlin</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a40b41d40bd7d451414090b205d183c34</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a36a94a111b1181f380a2e9aec5d76915</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>add1d5474190fbe9acf337f9d7d103aee</anchor>
-      <arglist>(double lacunarity)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a06ab7bee0c4d1889178804780b36055c</anchor>
-      <arglist>(CS::Noise::NoiseQuality noiseQuality)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>ad4c8164524715d79b03525a35ff7e6a0</anchor>
-      <arglist>(int octaveCount)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetPersistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a0b62737696c58b9941c44af6f1cc846c</anchor>
-      <arglist>(double persistence)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a02ea59b57c8085b8d6277f00d5e519ea</anchor>
-      <arglist>(int seed)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>aa3d4477ff9651b30b02acdaa042ae225</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_lacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>ae2ec373764228fe5a922da7c1825df33</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>m_noiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>add5345dba6c700b406c2f7a2652e3de9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_octaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a5d4881efa1a28b89347dd3e0b9c0b44c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_persistence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a672358afa69048e5565fe40df22f74c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_seed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Perlin.html</anchorfile>
-      <anchor>a1a2e9155507a5651bd2d6768bbb9420f</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Power</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Power.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Power.html</anchorfile>
-      <anchor>a6c0f96e37888f44559bcdd001d439be2</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Power.html</anchorfile>
-      <anchor>ad42a058e827181b511b72384ce66012f</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Power</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Power.html</anchorfile>
-      <anchor>a02cc61d69633d295d525bb54c90b848e</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::RidgedMulti</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>abe5710cce05491ecded43271cf0715f4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>aa9cec5a2b3041c56bd9d141584b2799c</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>GetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a368106dfecd43d3ddda29373919abb27</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a67f988a58145cd48cd7106ebac8be4c8</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a571669b056d5576f6efc84561a91b93a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>adedaa6f44e5a21a982c0aee4912a5b12</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>ac37aaf7b492d2e4e75642de45bb07f45</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RidgedMulti</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a8b294b431ee299cf3fafe49837884d82</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a2429866d694290ebae280cac07854d3f</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetLacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>ae393ac772469cdf0ed2a49d5041c23fd</anchor>
-      <arglist>(double lacunarity)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetNoiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a4eaf42bfa83ccd4c7869037856e1421d</anchor>
-      <arglist>(CS::Noise::NoiseQuality noiseQuality)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetOctaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a6ff2c5b4e7c6b8d4182dc4bbb8ac1315</anchor>
-      <arglist>(int octaveCount)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a2b1816340433036cd219a0ca918ca0cc</anchor>
-      <arglist>(int seed)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>CalcSpectralWeights</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a1de1bd2dd8c270167fcb01ff4db82ca2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a4d59c9e894ef6137498608f40043017b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_lacunarity</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a8219bb167872510bffc3e9043fd8faeb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>CS::Noise::NoiseQuality</type>
-      <name>m_noiseQuality</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a748379f23eda001df1ea0d8dff61b25f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_octaveCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a50499083cd31bae0e9c4022af34f2d47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_pSpectralWeights</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a2b0133eb12a532cd3d5856e3b9e5cf7c</anchor>
-      <arglist>[RIDGED_MAX_OCTAVE]</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_seed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RidgedMulti.html</anchorfile>
-      <anchor>a926b5a0d224120c94be1d5bfbc695a1e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::RotatePoint</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>af689570209b0765ae1c1532240139686</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>abbfba62ef95dbb05fd559d18b617753b</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetXAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a2671473af2e7fb4a2afd1b50fdbec5bb</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetYAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a2d760f8ebe181717c4b7981e2be5cebd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetZAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a64262bd6b03133c9ddbb7aa20ca3c308</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RotatePoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>ad79086410eee95676cd8131a863e2041</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetAngles</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a9d867287277d9b62b058a1765cfef70b</anchor>
-      <arglist>(double xAngle, double yAngle, double zAngle)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetXAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>af553d6b6b458b5a92ae4949562cef31e</anchor>
-      <arglist>(double xAngle)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetYAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a2c52a36bc8cccedec15801ac9d32efa7</anchor>
-      <arglist>(double yAngle)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetZAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a25c1cb33a57268f303ab5d118f762880</anchor>
-      <arglist>(double zAngle)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_x1Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>af9938c09deda66500f123bed8ed3950f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_x2Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a8808e5c2d976c56a323bebfe8c9f6a8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_x3Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a94ccc9335e0d20eedcfde90c7a6262ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_xAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a891d7aa28e773f105055b5d71be0bc2b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_y1Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>ac7717ce084c43d4b41b83b096af14c1d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_y2Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a17dbaae20dcdce4e01d85a28c5a868a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_y3Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>ab1b8d349cdf06a35cf729874a38a366f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_yAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a5c41d26b82ae6f42065a599731b1180e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_z1Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a1392b92ffe7ea9ae11d4b7aa1012fd58</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_z2Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a5d649b7b53814655e258924d96091bd2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_z3Matrix</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a1c5d1590b2f2d20177170a32ce7f01c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_zAngle</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1RotatePoint.html</anchorfile>
-      <anchor>a7a3b3ccc00670042b6a77b2ba9fdf9ff</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::ScaleBias</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>double</type>
-      <name>GetBias</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a534fdcc4e4dfa9018e3160d4eb4e4c41</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a1b0dde99519a2c020963b1c82d50dd8e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a858e1b4268b00d662e7ec16c7184567a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>ad9833a876dc33d82588d80f3fd07d29a</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>ScaleBias</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>af32e9b8b23a5cbf59f3d3af280caf110</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetBias</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a0185146895e633423d06f63e914924d7</anchor>
-      <arglist>(double bias)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a809654bfc5e9a5c7bd1cfb3100d6d8d3</anchor>
-      <arglist>(double scale)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_bias</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>a808ed642dc7613d4f6b2db0aec204bab</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_scale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScaleBias.html</anchorfile>
-      <anchor>ac89b4beb47893e7b9e8ad7c8f56c7b9a</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::ScalePoint</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>aaf08d2b425027c8e8dec1482c77d30b4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>abd2e95c245c7f2e8bc1fb8708b38697f</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetXScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a166f90e8254641115106b9ee5d3b19de</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetYScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>aeb90be68204bc178e5657deac7df23f8</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetZScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a4df979dc1a6739640956225f16623bce</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>ScalePoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a96d8d8eaeeb417baf056c73c668b0841</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a94194627089963e5f0c0d291aab6a016</anchor>
-      <arglist>(double xScale, double yScale, double zScale)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>aa74549a3005a10ec440a5e97dca03259</anchor>
-      <arglist>(double scale)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetXScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>ab458f81222fd7bc135886491a6170eff</anchor>
-      <arglist>(double xScale)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetYScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>abe555aae690181508768f6b0362ad0fa</anchor>
-      <arglist>(double yScale)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetZScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a4cbe29ff528968fcacc6ffad04702f02</anchor>
-      <arglist>(double zScale)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_xScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a38797bfce327e2b9a5cd076af57f6fb9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_yScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>a786a17ee9ac5e1c11bdcfa565520be38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_zScale</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1ScalePoint.html</anchorfile>
-      <anchor>ab43bb337f2f6fab2ae0b4e25df49483e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Select</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Select.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>const Module &amp;</type>
-      <name>GetControlModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a15deb1aa0ac4e89420c8c8b8ec5f1510</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetEdgeFalloff</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a57967b3edb618ebbd0638f98a85bbfca</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetLowerBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>acaa984a796c12786648d7ca69b6ea81f</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a416124a95ea6e96941bd08e2f906c4a6</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetUpperBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>adfc4268e05ddb4d8c7145e811f6ee42e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>af85f1ef2893e658923fa57c9279ef48e</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Select</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a9276e382bcac80c1d4c89d6f4a644a85</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetBounds</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a31789b9b282a7f148b10d81b32c36f46</anchor>
-      <arglist>(double lowerBound, double upperBound)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetControlModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a26101f6f76743088629c0d7b65433b69</anchor>
-      <arglist>(const Module &amp;controlModule)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetEdgeFalloff</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>acc9a8c7b6e2790be085a9b5b46f47ee9</anchor>
-      <arglist>(double edgeFalloff)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_edgeFalloff</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>ad81b2509da286f46fcabefc7af81cc52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_lowerBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>a3dffaa4a0b6ed2a2bd67d74e0f14fdae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_upperBound</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Select.html</anchorfile>
-      <anchor>ac4b6be826da526c68860eb62e6ab79cd</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Spheres</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Spheres.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>ab69d7aef1ca7c231b47dc6af6b18210b</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>a559a2573a7dd4b900909b4fafda5af63</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>ac08d6047938de99fe522e7ef7d397820</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>a001642c5e8e6b0bef2a03ffa4f7452fd</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Spheres</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>a890f87e2f86c765e6cd48c307018701e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Spheres.html</anchorfile>
-      <anchor>a0b2f0373b0507871cadf3cd660aaf5a0</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Terrace</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Terrace.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>void</type>
-      <name>AddControlPoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>afabb641d7a98d94b71d265f8d8aed2b4</anchor>
-      <arglist>(double value)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ClearAllControlPoints</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>ae5ca2980d6e1741e616d90eb9faaa61c</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const double *</type>
-      <name>GetControlPointArray</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>aac22560dfd15fc7bf92f3baeb0cdf6c4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetControlPointCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a531c4265a4105c7ad31b227c214a36fc</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>aebae73f65541768b7f05fcf3945ddea5</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>aa6874b3d6f5a492f462a4023aba3e7ab</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>InvertTerraces</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a82defa0ae663045c66055fe4aa0e2988</anchor>
-      <arglist>(bool invert=true)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>IsTerracesInverted</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a4be95ec497e3c69da3e5a4413f3e8d44</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>MakeControlPoints</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a3814c59275c265dff001807667757142</anchor>
-      <arglist>(int controlPointCount)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Terrace</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a81009f73fa47e4ec557d0c4ec6ebbc1b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Terrace</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>abca7df8ae6eefbf70097e0943761bc14</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>int</type>
-      <name>FindInsertionPos</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a96f5a3d25c96be78af39db7d1a528c8f</anchor>
-      <arglist>(double value)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>InsertAtPos</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a8b3178b123d8cbb8726c1e5e1ae24dec</anchor>
-      <arglist>(int insertionPos, double value)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_controlPointCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a5975a3ff84c69a2b77339adc54eac606</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>bool</type>
-      <name>m_invertTerraces</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a33f3b2da7db6c8ac0e67c330c5619ecf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double *</type>
-      <name>m_pControlPoints</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Terrace.html</anchorfile>
-      <anchor>a51aa05f3f418ebaedaeaa61e1deeb842</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::TranslatePoint</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a513863f254879604bb87d434d9dbda17</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a44949345b6070cad7974d3415a842fa0</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetXTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a6123dea150f18698b93236cf18d05f9b</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetYTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>aec5ae8a2feb0a70d4fe19ed8b8d773bc</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetZTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>aae216e22c9c972666f5fbd5aa89ef6b1</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a0e2dcb40f4e342f48cb959446181d630</anchor>
-      <arglist>(double xTranslation, double yTranslation, double zTranslation)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a20483fdc501c89c1ffe381bfb6b5498a</anchor>
-      <arglist>(double translation)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetXTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a531b8bec7bd6e858231c535a6b095632</anchor>
-      <arglist>(double xTranslation)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetYTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a3d071f3356f5834455396308e2aba39a</anchor>
-      <arglist>(double yTranslation)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetZTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a5701253eaea1d1b9db0883e55bc8e86c</anchor>
-      <arglist>(double zTranslation)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>TranslatePoint</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>af0ee3b65ff13226d67915f381f40f0db</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_xTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>abb6848ad925b701161adb063cde3c19c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_yTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a071d0deda47dd1895d99c17941cdd6f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_zTranslation</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1TranslatePoint.html</anchorfile>
-      <anchor>a8891ca9be8bdc35090d5bb810f4553c5</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Turbulence</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Turbulence.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a7ba2a116a89dd34b61f2657a66eca6db</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetPower</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a741a033cab2b88a5e65210ecdee2e6dc</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetRoughnessCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a72d83ae037fee56246a763348ef96ded</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a04f4a7a4425075f2d09934f47972dc11</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a4ec6797e221f9c422ac2b6f00add5b70</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a439c407edc6559bedc3105c7288a858c</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a1da784ca6e593f37f9222fa21b8655c0</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetPower</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>adbcc9942930d512ce1ed694057a045fd</anchor>
-      <arglist>(double power)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetRoughness</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>ad8168fd20994b8fd39fc90a6096d4f68</anchor>
-      <arglist>(int roughness)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a7ab161f06bc88c709894d0804f645636</anchor>
-      <arglist>(int seed)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Turbulence</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a626b520fdd7dcc5e01237613691fd94f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_power</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>af1f9fc5252070dda6db04cee285e7a46</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>Perlin</type>
-      <name>m_xDistortModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a693b56fe58607865643588363b77acf1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>Perlin</type>
-      <name>m_yDistortModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a38188836490f7e7cbbcab1ae14b67527</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>Perlin</type>
-      <name>m_zDistortModule</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Turbulence.html</anchorfile>
-      <anchor>a698b5a3804b1f3c05895ba46434dfd91</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Noise::Module::Voronoi</name>
-    <filename>classCS_1_1Noise_1_1Module_1_1Voronoi.html</filename>
-    <base>CS::Noise::Module::Module</base>
-    <member kind="function">
-      <type>void</type>
-      <name>EnableDistance</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>aa9c45b855954226a2a557fd65c484bbf</anchor>
-      <arglist>(bool enable=true)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetDisplacement</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a9362a80506e47e8f82ebd453903b788e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>GetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a2d2277f11a39b7e6d7537d31e7dd4fa5</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>af3679a08be5e0700e2717fe2d88e6593</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSourceModuleCount</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a9f893f42846061fbdbc427f277ac8214</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual double</type>
-      <name>GetValue</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a2e2ab21c3e565480c1108a809deb9858</anchor>
-      <arglist>(double x, double y, double z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>IsDistanceEnabled</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>ac0e3ffedbc7afc66cec8cbd28632a319</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetDisplacement</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a4764f34f746c6570f3d57359d468799f</anchor>
-      <arglist>(double displacement)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetFrequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a2e73f80c6c72f73a2779060101e7e026</anchor>
-      <arglist>(double frequency)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetSeed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a8f076f16ace9efa620337e25828dec72</anchor>
-      <arglist>(int seed)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Voronoi</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>ae7bead95557e69d57e9b4a5d52bb71db</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_displacement</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a4e757e7d95ed6b8566d0dea66fc6d502</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>bool</type>
-      <name>m_enableDistance</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>aedeaec69447aec15a1e67f1da185fd53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>double</type>
-      <name>m_frequency</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a5cca0e6aef3204433056b3f3a2b40224</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>int</type>
-      <name>m_seed</name>
-      <anchorfile>classCS_1_1Noise_1_1Module_1_1Voronoi.html</anchorfile>
-      <anchor>a82b2b252475ca3ea8b8bc3504e1e38d2</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Physics</name>
