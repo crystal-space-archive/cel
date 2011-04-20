@@ -126017,6 +126017,13 @@
       <arglist>(iView *rview)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GenerateBendingConstraints</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iSoftBody.html</anchorfile>
+      <anchor>a0d31faf9c26222129b8dcde50169f535</anchor>
+      <arglist>(size_t distance)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetLinearVelocity</name>
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iSoftBody.html</anchorfile>
