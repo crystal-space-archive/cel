@@ -34555,6 +34555,8 @@
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
+    <namespace>CS::Editor</namespace>
+    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Math</namespace>
@@ -114121,6 +114123,8 @@
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
+    <namespace>CS::Editor</namespace>
+    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Math</namespace>
@@ -119528,6 +119532,526 @@
       <anchorfile>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</anchorfile>
       <anchor>ae978ae3b6d75499ef725c64fc925df04</anchor>
       <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Editor</name>
+    <filename>namespaceCS_1_1Editor.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::EditorApp</name>
+    <filename>namespaceCS_1_1EditorApp.html</filename>
+    <class kind="struct">CS::EditorApp::iAction</class>
+    <class kind="struct">CS::EditorApp::iActionListener</class>
+    <class kind="struct">CS::EditorApp::iActionManager</class>
+    <class kind="struct">CS::EditorApp::iBaseIterator</class>
+    <class kind="struct">CS::EditorApp::iEditor</class>
+    <class kind="struct">CS::EditorApp::iEditorObject</class>
+    <class kind="struct">CS::EditorApp::iEditorObjectChangeListener</class>
+    <class kind="struct">CS::EditorApp::iEditorObjectIterator</class>
+    <class kind="struct">CS::EditorApp::iInterfaceWrapper</class>
+    <class kind="struct">CS::EditorApp::iInterfaceWrapperFactory</class>
+    <class kind="struct">CS::EditorApp::iInterfaceWrapperManager</class>
+    <class kind="struct">CS::EditorApp::iMapListener</class>
+    <class kind="struct">CS::EditorApp::iObjectList</class>
+    <class kind="struct">CS::EditorApp::iObjectListListener</class>
+    <class kind="struct">CS::EditorApp::iPanel</class>
+    <class kind="struct">CS::EditorApp::iPanelManager</class>
+    <member kind="enumeration">
+      <name>EditorObjectType</name>
+      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
+      <anchor>a7866ac8fb9343093d4c50d6c28820f27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EditorObjectTypeFactory</name>
+      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
+      <anchor>a7866ac8fb9343093d4c50d6c28820f27accfe6d917a9b5384d2e21379ee7025f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EditorObjectTypeInstance</name>
+      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
+      <anchor>a7866ac8fb9343093d4c50d6c28820f27aec2ee3346f42b55c029b4f065429ed44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EditorObjectTypeUnknown</name>
+      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
+      <anchor>a7866ac8fb9343093d4c50d6c28820f27abd75cfba08ff9f58fd03609becb4d6ff</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iAction</name>
+    <filename>structCS_1_1EditorApp_1_1iAction.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iAction &gt;</type>
+      <name>Do</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
+      <anchor>a01f05edb89bd23210aea001d29f44bb2</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const wxChar *</type>
+      <name>GetDescription</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
+      <anchor>a68c4a24a610a9a293020d8220b4e5725</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iActionListener</name>
+    <filename>structCS_1_1EditorApp_1_1iActionListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnActionDone</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionListener.html</anchorfile>
+      <anchor>a8c4a7241dc3d27ac0789ae61f0f5cb26</anchor>
+      <arglist>(iAction *action)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iActionManager</name>
+    <filename>structCS_1_1EditorApp_1_1iActionManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Do</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
+      <anchor>a1d81fddbc803e7bf7de0f24a816b8dc9</anchor>
+      <arglist>(iAction *action)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const iAction *</type>
+      <name>PeekRedo</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
+      <anchor>a66dd81aac3635c6f0649565e32499675</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const iAction *</type>
+      <name>PeekUndo</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
+      <anchor>ad0cebf34f5fb431628b0e28bcbda8635</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Redo</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
+      <anchor>a276bd8858a7812eda3a6cd902e96e608</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Undo</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
+      <anchor>ac5d835df3bc67d309c46dc16d537b1e9</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iBaseIterator</name>
+    <filename>structCS_1_1EditorApp_1_1iBaseIterator.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iEditor</name>
+    <filename>structCS_1_1EditorApp_1_1iEditor.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddMapListener</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a1415f497e894ee7e4ad42e68eee30a58</anchor>
+      <arglist>(iMapListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iEditorObject &gt;</type>
+      <name>CreateEditorObject</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a080f3856bd6af9e5a726ad65f1639a26</anchor>
+      <arglist>(iBase *object, wxBitmap *icon)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iObjectList *</type>
+      <name>GetObjects</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>aad16fbe14cd087dcd61d2ef3cc0849fd</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iObjectList *</type>
+      <name>GetSelection</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a5eab7ca5feda9f271225f96e9e3e7efb</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadLibraryFile</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a8486e34ab646e18a66824c53d279e788</anchor>
+      <arglist>(const char *path, const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadMapFile</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a9b25fc618bcc49efec3d9aa2a54f9ca1</anchor>
+      <arglist>(const char *path, const char *filename, iProgressMeter *meter=0, bool clearEngine=true)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveMapListener</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a37af98210d42c6d7f9b0a4c020821381</anchor>
+      <arglist>(iMapListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SaveMapFile</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>a4b90bcda0859a3db6d2b4902336d3f47</anchor>
+      <arglist>(const char *path, const char *filename)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iEditorObject</name>
+    <filename>structCS_1_1EditorApp_1_1iEditorObject.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddListener</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>abc11c61f6cb98dc7d6bfed0e465efcd0</anchor>
+      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBase *</type>
+      <name>GetIBase</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a348a2c92131b5bd6d8c79f54720b1677</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxBitmap *</type>
+      <name>GetIcon</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a5c52c3ae7362fd7089ea50bd24192475</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
+      <name>GetIterator</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a8f4ae9a286b96830ad32fa513f6e61b9</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a1381f627ed6bf477804209a610412b46</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBase *</type>
+      <name>GetParent</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a7df63ae8cdf3701a7b40fa19deebc4fa</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual EditorObjectType</type>
+      <name>GetType</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a33c778ac0fe75dec78ad578fdf8f02f5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasInterface</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a77986d311ceb5992145660dc71b8fb46</anchor>
+      <arglist>(scfInterfaceID id)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveListener</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>a6e5c773923591c4bbb426efb1817998d</anchor>
+      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetName</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>abf05f4e888b27ed2d521724a11e40c0c</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetParent</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
+      <anchor>ac3d3af8770906923824ec0cb3c0150d5</anchor>
+      <arglist>(iBase *parent)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iEditorObjectChangeListener</name>
+    <filename>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnObjectChanged</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</anchorfile>
+      <anchor>aff01f152209e8e859b9fd7887d88c6eb</anchor>
+      <arglist>(iEditorObject *obj)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iEditorObjectIterator</name>
+    <filename>structCS_1_1EditorApp_1_1iEditorObjectIterator.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iInterfaceWrapper</name>
+    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iInterfaceWrapperFactory *</type>
+      <name>GetFactory</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>a52cece60b0327fa84e5e01ee15b0c720</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
+      <name>GetIterator</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>ac02666be677309c9b0e4d55de2929183</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetObjectName</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>aa5df298c0a563c46e64eb222757eeb56</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBase *</type>
+      <name>GetObjectParent</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>a703af97cd1bf4f5d6e8bff9a245d7245</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetObjectName</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>a46ba4a3c0c879fe3102d91b6567d1eb7</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetObjectParent</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
+      <anchor>a435be0db1bed2c95f1fe1dda474675bc</anchor>
+      <arglist>(iBase *parent)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iInterfaceWrapperFactory</name>
+    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iInterfaceWrapper &gt;</type>
+      <name>CreateInstance</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
+      <anchor>a227b95ce09669db417fd51045b65ac29</anchor>
+      <arglist>(iBase *object)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual scfInterfaceID</type>
+      <name>GetInterfaceID</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
+      <anchor>af5e6b211b53fa7b1829913c6b6f935fa</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual EditorObjectType</type>
+      <name>GetInterfaceType</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
+      <anchor>acd972abf3cbdd064f64d257973d0d5ba</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasNameAttribute</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
+      <anchor>a6bc2d7ebb2c4a29ffee78c24d1ea221e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasParentAttribute</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
+      <anchor>a899e4cf9b59cc1dbb35d1c5c06133c9d</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iInterfaceWrapperManager</name>
+    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iInterfaceWrapperFactory *</type>
+      <name>GetFactory</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
+      <anchor>ae715a0000cec0bb41557e56baeeeff07</anchor>
+      <arglist>(scfInterfaceID interface_id)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Register</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
+      <anchor>a4683a48259717748fe11f59ca8fb8fa3</anchor>
+      <arglist>(iInterfaceWrapperFactory *wrapper)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMapListener</name>
+    <filename>structCS_1_1EditorApp_1_1iMapListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnLibraryLoaded</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
+      <anchor>abf6eb98824305423a0f186726767a972</anchor>
+      <arglist>(const char *path, const char *filename, iCollection *collection)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnMapLoaded</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
+      <anchor>a6616e2c8c271a67fc23c7b6beabd9c51</anchor>
+      <arglist>(const char *path, const char *filename)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iObjectList</name>
+    <filename>structCS_1_1EditorApp_1_1iObjectList.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iEditorObject *</type>
+      <name>FindObject</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iObjectList.html</anchorfile>
+      <anchor>a003153187233c6c6b0302cdd5c7c14e3</anchor>
+      <arglist>(iBase *obj)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iObjectListListener</name>
+    <filename>structCS_1_1EditorApp_1_1iObjectListListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnObjectAdded</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
+      <anchor>a5a7f4987ea82baa675985f36c3b2ccf8</anchor>
+      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnObjectRemoved</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
+      <anchor>a9fff57d10178a844111992e5910f1210</anchor>
+      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnObjectsCleared</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
+      <anchor>ab24ca982b4c768682f5d2859bce42ed6</anchor>
+      <arglist>(iObjectList *list)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iPanel</name>
+    <filename>structCS_1_1EditorApp_1_1iPanel.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const wxChar *</type>
+      <name>GetCaption</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
+      <anchor>ad83c8effc6895dff062f26af47817656</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetDefaultDockPosition</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
+      <anchor>ade9c7769974a5ee59b9b2ae74eeeb29e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxWindow *</type>
+      <name>GetWindow</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
+      <anchor>a196f4db338439e9db69b2940ef8210f2</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iPanelManager</name>
+    <filename>structCS_1_1EditorApp_1_1iPanelManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddPanel</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>aa4f019c66cd79b3546708918ba599c76</anchor>
+      <arglist>(iPanel *panel)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxWindow *</type>
+      <name>GetManagedWindow</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>ae4b7ae35803a8c2d7500e4a3af370e96</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemovePanel</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>a69d8bd24bf744e2a2471bd5d4ab95433</anchor>
+      <arglist>(iPanel *panel)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetManagedWindow</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>ab3281b5f2e6766e2bf749088a2f7be2d</anchor>
+      <arglist>(wxWindow *managedWindow)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPanelVisible</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>a61919610b45b0e70f7f5808c134a2f9c</anchor>
+      <arglist>(iPanel *panel, bool visible)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Uninitialize</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
+      <anchor>ad827f02d2e0dd1b525950af0d92ee4ea</anchor>
+      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -132527,477 +133051,5 @@
   <compound kind="class">
     <name>CS::Utility::ResourceCache::SortingNone</name>
     <filename>classCS_1_1Utility_1_1ResourceCache_1_1SortingNone.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iAction</name>
-    <filename>structCSE_1_1iAction.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iAction &gt;</type>
-      <name>Do</name>
-      <anchorfile>structCSE_1_1iAction.html</anchorfile>
-      <anchor>a0c18872ab6acee071c8ebc398b354b2b</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetDescription</name>
-      <anchorfile>structCSE_1_1iAction.html</anchorfile>
-      <anchor>a6dddbfb7830fe4d7b3df4a7b21089438</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iActionListener</name>
-    <filename>structCSE_1_1iActionListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnActionDone</name>
-      <anchorfile>structCSE_1_1iActionListener.html</anchorfile>
-      <anchor>a386fe67618d3da8694e85a4a3853b609</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iActionManager</name>
-    <filename>structCSE_1_1iActionManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Do</name>
-      <anchorfile>structCSE_1_1iActionManager.html</anchorfile>
-      <anchor>a90cfa56074fae37ab1d8b86752d7b461</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekRedo</name>
-      <anchorfile>structCSE_1_1iActionManager.html</anchorfile>
-      <anchor>a4c4610b57e6470ff2be707f8b7221a13</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekUndo</name>
-      <anchorfile>structCSE_1_1iActionManager.html</anchorfile>
-      <anchor>aca609e36dfee694fa8184762b1ebe8c2</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Redo</name>
-      <anchorfile>structCSE_1_1iActionManager.html</anchorfile>
-      <anchor>a1c25c9bcdd44fe1a8e2911a206bc7905</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Undo</name>
-      <anchorfile>structCSE_1_1iActionManager.html</anchorfile>
-      <anchor>a6390f6df1b152ea115d1d6ca5fee2c23</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iBaseIterator</name>
-    <filename>structCSE_1_1iBaseIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iEditor</name>
-    <filename>structCSE_1_1iEditor.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddMapListener</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>a4dd07f345e0f75a9b88bdc665b369d1e</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iEditorObject &gt;</type>
-      <name>CreateEditorObject</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>a37cd4a3f26678ec7cf6434a09d2093a3</anchor>
-      <arglist>(iBase *object, wxBitmap *icon)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetObjects</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>a594c7f51552ad0ca17df8abbe67acfb9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetSelection</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>abc0e115e22a3031112c8191f9024290a</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>LoadLibraryFile</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>abc26fe3411eba215b125f88dcd422a78</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>LoadMapFile</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>a70e2395b885b03ae8b770c00fe9c95b6</anchor>
-      <arglist>(const char *path, const char *filename, iProgressMeter *meter=0, bool clearEngine=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveMapListener</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>aebcf2ff5d78edb608e45bffda9c1d47e</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SaveMapFile</name>
-      <anchorfile>structCSE_1_1iEditor.html</anchorfile>
-      <anchor>a88dc347b4f01e443e845454a8a843d56</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iEditorObject</name>
-    <filename>structCSE_1_1iEditorObject.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddListener</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>ab31011826d54263828f2101f08088638</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetIBase</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a351eaab969e0820ea220f022b8b80755</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxBitmap *</type>
-      <name>GetIcon</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a8383e4fac5a267107bfd83146e14ca2f</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a67d0649b9eae627ed411bf2948d0092d</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetName</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>ada8b1a7315716600b72ecf318fc9de8e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetParent</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>aeb18e802fdf251c8b9bd949f7d3154c3</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetType</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>af304397df5e15af067284080c8cbd2e6</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasInterface</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>afe77980a2e494f3abd48a4ad518ece20</anchor>
-      <arglist>(scfInterfaceID id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveListener</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a4feed2c676d61c7476b38ad7eec6018c</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetName</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a0572ff3de5d5b6edcbd3b345a91b0437</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetParent</name>
-      <anchorfile>structCSE_1_1iEditorObject.html</anchorfile>
-      <anchor>a3f4ce21c946c1371aff37996ffef55c4</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iEditorObjectChangeListener</name>
-    <filename>structCSE_1_1iEditorObjectChangeListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectChanged</name>
-      <anchorfile>structCSE_1_1iEditorObjectChangeListener.html</anchorfile>
-      <anchor>acfcd4c941e613908997aa2718c2e9d06</anchor>
-      <arglist>(iEditorObject *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iEditorObjectIterator</name>
-    <filename>structCSE_1_1iEditorObjectIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iInterfaceWrapper</name>
-    <filename>structCSE_1_1iInterfaceWrapper.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a95aeac311477012d253b2752cf5a3d34</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a90b8f9758fbbfc65a8a94f25ae4fe760</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetObjectName</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a3ee17bd35afc2a8b241dc6a037c8a3c8</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetObjectParent</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a5115546f7f9d4cfec3da6afe95ad0c91</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetObjectName</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a9ae8e5855223bd4f2f3e284a63a186cd</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SetObjectParent</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a40dfe99cb722fd0aef9dab0357a538b9</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iInterfaceWrapperFactory</name>
-    <filename>structCSE_1_1iInterfaceWrapperFactory.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iInterfaceWrapper &gt;</type>
-      <name>CreateInstance</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a2a61f45c95bb90c3ee143e00785be9ff</anchor>
-      <arglist>(iBase *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual scfInterfaceID</type>
-      <name>GetInterfaceID</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a74dd8cc5c9a5f0f16e44cff7432e6ab2</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetInterfaceType</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a33c94a74c00356c65f6bc3e7fb8e4589</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasNameAttribute</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a551061069a6ba644dda2c3dfd7c4cd40</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasParentAttribute</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a4db129d71db57c1eda57dd8bf69af106</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iInterfaceWrapperManager</name>
-    <filename>structCSE_1_1iInterfaceWrapperManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>aae46da97cbdb11974666d3de23017970</anchor>
-      <arglist>(scfInterfaceID interface_id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Register</name>
-      <anchorfile>structCSE_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>aad1e4b41e95250f77ea113002ecfb70a</anchor>
-      <arglist>(iInterfaceWrapperFactory *wrapper)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iMapListener</name>
-    <filename>structCSE_1_1iMapListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnLibraryLoaded</name>
-      <anchorfile>structCSE_1_1iMapListener.html</anchorfile>
-      <anchor>aee4c801dfa288d4a5825424cf07d92e3</anchor>
-      <arglist>(const char *path, const char *filename, iCollection *collection)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnMapLoaded</name>
-      <anchorfile>structCSE_1_1iMapListener.html</anchorfile>
-      <anchor>a6eb78554ffbf5c1322e138df72060a04</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iObjectList</name>
-    <filename>structCSE_1_1iObjectList.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iEditorObject *</type>
-      <name>FindObject</name>
-      <anchorfile>structCSE_1_1iObjectList.html</anchorfile>
-      <anchor>a0c3e4dc19f31e91fb5390c8922ac4e70</anchor>
-      <arglist>(iBase *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iObjectListListener</name>
-    <filename>structCSE_1_1iObjectListListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectAdded</name>
-      <anchorfile>structCSE_1_1iObjectListListener.html</anchorfile>
-      <anchor>a0412b60314b6bff667df861e34e18f1c</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectRemoved</name>
-      <anchorfile>structCSE_1_1iObjectListListener.html</anchorfile>
-      <anchor>a8099a5a923b46c14ea222632f23e5716</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectsCleared</name>
-      <anchorfile>structCSE_1_1iObjectListListener.html</anchorfile>
-      <anchor>a8f3c206335f145a764d8cb09af0c00be</anchor>
-      <arglist>(iObjectList *list)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iPanel</name>
-    <filename>structCSE_1_1iPanel.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetCaption</name>
-      <anchorfile>structCSE_1_1iPanel.html</anchorfile>
-      <anchor>ae1632b9f713b97f1dc359bd7993073c5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual int</type>
-      <name>GetDefaultDockPosition</name>
-      <anchorfile>structCSE_1_1iPanel.html</anchorfile>
-      <anchor>a263bdb09b8607f4b39ef1b5f540108d3</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetWindow</name>
-      <anchorfile>structCSE_1_1iPanel.html</anchorfile>
-      <anchor>a7f4a1bd327ff647701d96ee09fe5b67e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CSE::iPanelManager</name>
-    <filename>structCSE_1_1iPanelManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddPanel</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>ab6cff465d03caeb4b4aa00c250758242</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetManagedWindow</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>ab46b5c859142826ff518dfca95bb5d6f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemovePanel</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>a10a4980834d15aa8bc115875cfae78c3</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetManagedWindow</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>a8ff46834837e28ddf7c0c97a71414cfc</anchor>
-      <arglist>(wxWindow *managedWindow)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPanelVisible</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>ab21a5cf7cf72284e5620c09ca7d9ae0b</anchor>
-      <arglist>(iPanel *panel, bool visible)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Uninitialize</name>
-      <anchorfile>structCSE_1_1iPanelManager.html</anchorfile>
-      <anchor>aea3597188123c9ac0c5202c0c2382bdd</anchor>
-      <arglist>()=0</arglist>
-    </member>
   </compound>
 </tagfile>
