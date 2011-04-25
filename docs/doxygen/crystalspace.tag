@@ -119684,6 +119684,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iProgressMeter &gt;</type>
+      <name>GetProgressMeter</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>aacb8ee2a09b030d81e2ea2bb13ffadcd</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iObjectList *</type>
       <name>GetSelection</name>
       <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
@@ -119691,18 +119698,18 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
+      <type>virtual iThreadReturn *</type>
       <name>LoadLibraryFile</name>
       <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a8486e34ab646e18a66824c53d279e788</anchor>
+      <anchor>a10c0b536d3f7a9e32cc433d5ac02f929</anchor>
       <arglist>(const char *path, const char *filename)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
+      <type>virtual iThreadReturn *</type>
       <name>LoadMapFile</name>
       <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a9b25fc618bcc49efec3d9aa2a54f9ca1</anchor>
-      <arglist>(const char *path, const char *filename, iProgressMeter *meter=0, bool clearEngine=true)=0</arglist>
+      <anchor>a65843ab535c997bd470ec834bd85cd65</anchor>
+      <arglist>(const char *path, const char *filename, bool clearEngine=true)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
