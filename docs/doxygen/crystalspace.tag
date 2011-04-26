@@ -89014,13 +89014,6 @@
       <anchor>a7fb2d06edb8be40dd2c0d2c663b1fa7c</anchor>
       <arglist>()=0</arglist>
     </member>
-    <member kind="function">
-      <type></type>
-      <name>THREADED_INTERFACE1</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a5e119d9c44a68a82bc8cd873ecf6975c</anchor>
-      <arglist>(SyncEngineLists, csRef&lt; iThreadedLoader &gt; loader)</arglist>
-    </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddEngineFrameCallback</name>
@@ -89750,6 +89743,20 @@
       <arglist>(const char *vfspath=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetDefaultNearClipDistance</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>ab27a80df17082abbe934109d3f394255</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDefaultNearClipDistance</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a58eda572ed307fb3773e91d32890619d</anchor>
+      <arglist>(float dist)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iRenderManager *</type>
       <name>GetRenderManager</name>
       <anchorfile>structiEngine.html</anchorfile>
@@ -89818,6 +89825,20 @@
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>a9ddb3dfb7bef13649d0f56056942a567</anchor>
       <arglist>(const char *name, uint priority, csRenderPrioritySorting rendsort=CS_RENDPRI_SORT_NONE, CS::RenderPriorityGrouping grouping=CS::rpgByLayer)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SyncEngineListsNow</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a308e7a2095aa2f4994eae2102eac83c4</anchor>
+      <arglist>(csRef&lt; iThreadedLoader &gt; loader)=0</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>THREADED_INTERFACE1</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a5e119d9c44a68a82bc8cd873ecf6975c</anchor>
+      <arglist>(SyncEngineLists, csRef&lt; iThreadedLoader &gt; loader)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -100320,6 +100341,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
+      <name>GetNearClipDistance</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a30e3d1b859db6eae59bab87c8f0f1f7c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
       <name>GetShiftX</name>
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
       <anchor>ad4bf5f06294751b18fd7f8508e69d7d6</anchor>
@@ -100345,6 +100373,13 @@
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
       <anchor>ae09c83aa203e744b2b179cddcb7e2469</anchor>
       <arglist>(float fov, float width)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetNearClipDistance</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>af00df65046b904a0c17e664b47558bfe</anchor>
+      <arglist>(float dist)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -121435,8 +121470,8 @@
       <type>static Matrix4</type>
       <name>CSPerspective</name>
       <anchorfile>structCS_1_1Math_1_1Projections.html</anchorfile>
-      <anchor>a8cc8b2b7e0f3c4f74e48d8de856fb73c</anchor>
-      <arglist>(float viewWidth, float viewHeight, float shiftX, float shiftY, float invAspect)</arglist>
+      <anchor>a9813be8043342212c40bd406c4f243a2</anchor>
+      <arglist>(float viewWidth, float viewHeight, float shiftX, float shiftY, float invAspect, float nearClip=0.1f)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Matrix4</type>
@@ -131398,6 +131433,13 @@
       <name>Frame</name>
       <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
       <anchor>a587a94769eb265a3fd43d4b66f54cd5e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetApplicationConfigFile</name>
+      <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
+      <anchor>acf6fe3002865fa139af3a78b71de75df</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
