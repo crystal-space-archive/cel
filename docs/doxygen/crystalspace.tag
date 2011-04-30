@@ -119588,6 +119588,11 @@
     <class kind="struct">CS::EditorApp::iInterfaceWrapperFactory</class>
     <class kind="struct">CS::EditorApp::iInterfaceWrapperManager</class>
     <class kind="struct">CS::EditorApp::iMapListener</class>
+    <class kind="struct">CS::EditorApp::iMenu</class>
+    <class kind="struct">CS::EditorApp::iMenuBar</class>
+    <class kind="struct">CS::EditorApp::iMenuCheckItem</class>
+    <class kind="struct">CS::EditorApp::iMenuItem</class>
+    <class kind="struct">CS::EditorApp::iMenuItemEventListener</class>
     <class kind="struct">CS::EditorApp::iObjectList</class>
     <class kind="struct">CS::EditorApp::iObjectListListener</class>
     <class kind="struct">CS::EditorApp::iPanel</class>
@@ -119983,6 +119988,59 @@
       <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
       <anchor>a6616e2c8c271a67fc23c7b6beabd9c51</anchor>
       <arglist>(const char *path, const char *filename)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMenu</name>
+    <filename>structCS_1_1EditorApp_1_1iMenu.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxMenu *</type>
+      <name>GetwxMenu</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMenu.html</anchorfile>
+      <anchor>a5659bed359fb0fec40cd5e15d5731f96</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMenuBar</name>
+    <filename>structCS_1_1EditorApp_1_1iMenuBar.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxMenuBar *</type>
+      <name>GetwxMenuBar</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMenuBar.html</anchorfile>
+      <anchor>a2570f2fe11e6f5a3ab7275ff006a4baa</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMenuCheckItem</name>
+    <filename>structCS_1_1EditorApp_1_1iMenuCheckItem.html</filename>
+    <base>CS::EditorApp::iMenuItem</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMenuItem</name>
+    <filename>structCS_1_1EditorApp_1_1iMenuItem.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxMenuItem *</type>
+      <name>GetwxMenuItem</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMenuItem.html</anchorfile>
+      <anchor>aaab054511124a39df4aabaa09b4a63df</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::EditorApp::iMenuItemEventListener</name>
+    <filename>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnClick</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</anchorfile>
+      <anchor>a69a0d515f847b2e6fb3525ab7da2daae</anchor>
+      <arglist>(iMenuItem *)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
