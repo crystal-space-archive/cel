@@ -35670,6 +35670,13 @@
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>FindAnimationIndex</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga6ce80bc43d6835d0ca79f96330017a7a</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual FactoryInterface *</type>
       <name>FindAnimNodeFactory</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -48830,6 +48837,13 @@
       <anchorfile>classcsCubicSpline.html</anchorfile>
       <anchor>ae0605c81131bf113bc2505dc9c4e5bc8</anchor>
       <arglist>(int dim) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Setup</name>
+      <anchorfile>classcsCubicSpline.html</anchorfile>
+      <anchor>a74bc2f2ff4c746d23fb7761f8da28c21</anchor>
+      <arglist>(int d, int p)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -71390,6 +71404,13 @@
       <anchor>a5ca6b626b710410bfdbfd7e6bc22cc3b</anchor>
       <arglist>(float const *t)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classcsPath.html</anchorfile>
+      <anchor>acda5eb4236a0c44069d63ff237a6d851</anchor>
+      <arglist>(int p)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>SetUpVector</name>
@@ -79029,6 +79050,13 @@
       <anchorfile>classcsSpline.html</anchorfile>
       <anchor>abb1edbf43a02d8c5bb0f22a1475066ef</anchor>
       <arglist>(float const *t)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Setup</name>
+      <anchorfile>classcsSpline.html</anchorfile>
+      <anchor>ac51738d2daf28e8d46f21ee149696f62</anchor>
+      <arglist>(int d, int p)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -117453,6 +117481,13 @@
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>FindAnimationIndex</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga6ce80bc43d6835d0ca79f96330017a7a</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimation *</type>
       <name>GetAnimation</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -119717,11 +119752,25 @@
       <arglist>(iBase *object, wxBitmap *icon)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iMenuBar *</type>
+      <name>GetMenuBar</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>aa7688958e2cf7ab3537de9d18795fca5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iObjectList *</type>
       <name>GetObjects</name>
       <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
       <anchor>aad16fbe14cd087dcd61d2ef3cc0849fd</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iPanelManager *</type>
+      <name>GetPanelManager</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>ac600a3de2f29534e6b6155560831e006</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iProgressMeter &gt;</type>
@@ -119735,6 +119784,13 @@
       <name>GetSelection</name>
       <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
       <anchor>a5eab7ca5feda9f271225f96e9e3e7efb</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual wxWindow *</type>
+      <name>GetWindow</name>
+      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
+      <anchor>ae460dc8244a4e98d6874d67a4b97e88c</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -120093,10 +120149,10 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual int</type>
+      <type>virtual PanelDockPosition</type>
       <name>GetDefaultDockPosition</name>
       <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>ade9c7769974a5ee59b9b2ae74eeeb29e</anchor>
+      <anchor>ad01fb52c12c4c97b2f83e3adc27e5e80</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -120119,13 +120175,6 @@
       <arglist>(iPanel *panel)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetManagedWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>ae4b7ae35803a8c2d7500e4a3af370e96</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemovePanel</name>
       <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
@@ -120134,24 +120183,10 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetManagedWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>ab3281b5f2e6766e2bf749088a2f7be2d</anchor>
-      <arglist>(wxWindow *managedWindow)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetPanelVisible</name>
       <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
       <anchor>a61919610b45b0e70f7f5808c134a2f9c</anchor>
       <arglist>(iPanel *panel, bool visible)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Uninitialize</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>ad827f02d2e0dd1b525950af0d92ee4ea</anchor>
-      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
