@@ -34551,6 +34551,7 @@
     <filename>namespacedocs_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
+    <namespace>CS::Checksum</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
@@ -77739,63 +77740,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>csSHA256::Context</name>
-    <filename>classcsSHA256_1_1Context.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>sha256_finish</name>
-      <anchorfile>classcsSHA256_1_1Context.html</anchorfile>
-      <anchor>a9d02a9bbc7610209631717403bdd1ba5</anchor>
-      <arglist>(Digest &amp;digest)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sha256_finish</name>
-      <anchorfile>classcsSHA256_1_1Context.html</anchorfile>
-      <anchor>a22c82b58267ae40127828c08f86ad6bd</anchor>
-      <arglist>(uint8_t digest[32])</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sha256_starts</name>
-      <anchorfile>classcsSHA256_1_1Context.html</anchorfile>
-      <anchor>ad1d9e28a7c73d8be4f81dbcefccac273</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sha256_update</name>
-      <anchorfile>classcsSHA256_1_1Context.html</anchorfile>
-      <anchor>a717a000f5735f0fb874891cad0695044</anchor>
-      <arglist>(uint8_t *input, uint32_t length)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>csSHA256::Digest</name>
-    <filename>structcsSHA256_1_1Digest.html</filename>
-    <member kind="function">
-      <type>csString</type>
-      <name>HEXString</name>
-      <anchorfile>structcsSHA256_1_1Digest.html</anchorfile>
-      <anchor>a3d200832d3680071ba16be3e10846b9c</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csString</type>
-      <name>HexString</name>
-      <anchorfile>structcsSHA256_1_1Digest.html</anchorfile>
-      <anchor>ad94a10a391947fc4f5d35172d91adf2d</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>data</name>
-      <anchorfile>structcsSHA256_1_1Digest.html</anchorfile>
-      <anchor>a51d790e38f277ac69fab02de430c1476</anchor>
-      <arglist>[DigestLen]</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>csShaderExpression</name>
     <filename>classcsShaderExpression.html</filename>
     <member kind="function">
@@ -114239,6 +114183,7 @@
     <name>CS</name>
     <filename>namespaceCS.html</filename>
     <namespace>CS::Animation</namespace>
+    <namespace>CS::Checksum</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
@@ -119218,6 +119163,10 @@
       <anchor>a231f56424851f30c6592d61fa1b25028</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Checksum</name>
+    <filename>namespaceCS_1_1Checksum.html</filename>
   </compound>
   <compound kind="namespace">
     <name>CS::Container</name>
@@ -131331,7 +131280,6 @@
     <namespace>CS::Utility::BitOps</namespace>
     <namespace>CS::Utility::ResourceCache</namespace>
     <class kind="class">CS::Utility::AtomicRefCount</class>
-    <class kind="struct">CS::Utility::Checksum</class>
     <class kind="class">CS::Utility::DemoApplication</class>
     <class kind="class">CS::Utility::FastRefCount</class>
     <class kind="class">CS::Utility::FixedSizeBestChoiceLRUPolicy</class>
@@ -131476,66 +131424,6 @@
       <anchorfile>classCS_1_1Utility_1_1AtomicRefCount.html</anchorfile>
       <anchor>a26c10867ca9d3adea99eb215d9daa478</anchor>
       <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Utility::Checksum</name>
-    <filename>structCS_1_1Utility_1_1Checksum.html</filename>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>Adler32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a57c1ad8990d3486f1bee0b066975580b</anchor>
-      <arglist>(uint32 prevCheckSum, iDataBuffer *data)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>Adler32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a4a62ea1c6617be70cc07454dd5bcc017</anchor>
-      <arglist>(uint32 prevCheckSum, void *data, size_t size)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>Adler32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a5f08cc071ad81317684b1af6d9cdcb45</anchor>
-      <arglist>(iDataBuffer *data)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>Adler32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a910beedb8ec27e6422d59611cafd521c</anchor>
-      <arglist>(void *data, size_t size)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>CRC32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>ab8afd66d59166a550d26cb86de48814b</anchor>
-      <arglist>(uint32 prevCheckSum, iDataBuffer *data)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>CRC32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a1e41c0c8db02550a05d8f0a6cc2bd45a</anchor>
-      <arglist>(uint32 prevCheckSum, void *data, size_t size)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>CRC32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>a0cceab48e5426e6292e0d6c3f543a238</anchor>
-      <arglist>(iDataBuffer *data)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static uint32</type>
-      <name>CRC32</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum.html</anchorfile>
-      <anchor>ad02fc7245753c2f240041abd246e54f5</anchor>
-      <arglist>(void *data, size_t size)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -132929,6 +132817,63 @@
       <anchorfile>namespaceCS_1_1Utility_1_1BitOps.html</anchorfile>
       <anchor>ad3c3bd1b06432d075f7fa89d91f34b7f</anchor>
       <arglist>(uint32 value, unsigned long &amp;index)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Checksum::SHA256::Context</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>sha256_finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
+      <anchor>a0f2b260aab7d87cf101b7921dc8d1475</anchor>
+      <arglist>(Digest &amp;digest)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sha256_finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
+      <anchor>a65ddb9f3404e382e15dff0ac82e21e0b</anchor>
+      <arglist>(uint8_t digest[32])</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sha256_starts</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
+      <anchor>a116bab768225b3b75aedf156b8218084</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sha256_update</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
+      <anchor>a18ff44fd49526e86111f46b88212d344</anchor>
+      <arglist>(uint8_t *input, uint32_t length)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::Checksum::SHA256::Digest</name>
+    <filename>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</filename>
+    <member kind="function">
+      <type>csString</type>
+      <name>HEXString</name>
+      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
+      <anchor>ab91db0c335059080ab901db1b2c00aa6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csString</type>
+      <name>HexString</name>
+      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
+      <anchor>a7c9b800f908a7193378aacdde39edbc1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>data</name>
+      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
+      <anchor>aad74d22bb74507e3078224f11f6ac337</anchor>
+      <arglist>[DigestLen]</arglist>
     </member>
   </compound>
   <compound kind="struct">
