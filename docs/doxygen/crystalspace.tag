@@ -29733,6 +29733,7 @@
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <class kind="struct">CS::Animation::iSkeletonDebugNode</class>
     <class kind="struct">CS::Animation::iSkeletonDebugNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonDebugNodeManager</class>
@@ -29766,6 +29767,12 @@
       <name>DEBUG_IMAGES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066af777405c1616067670f4e01be0cd4992</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DEBUG_BBOXES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -35900,6 +35907,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga6ec78802f528bd9c76e9241b1a6c3b6d</anchor>
       <arglist>(ChannelID channel) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gabce9506f1104e1dfd1b05ceb3a8e1fe7</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
@@ -115845,6 +115859,12 @@
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066af777405c1616067670f4e01be0cd4992</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>DEBUG_BBOXES</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>SynchronizationMode</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -117643,6 +117663,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetRandomColor</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a22b89df15ee08f5cae329b859dd581da</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetBoneMask</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
@@ -117676,6 +117703,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
       <anchor>a8a618231df180ba6903b37ea7fbe79e6</anchor>
       <arglist>(bool displayed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRandomColor</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>ab3ab7be6779472c7a88772e3c0561b69</anchor>
+      <arglist>(bool random)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -117728,6 +117762,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gacac885322251372635a4b16a3da639aa</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gabce9506f1104e1dfd1b05ceb3a8e1fe7</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -124965,6 +125006,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual const csBox3 &amp;</type>
+      <name>GetBoneBoundingBox</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
+      <anchor>a1ff4906b3471668ababf43dab8ce17df</anchor>
+      <arglist>(CS::Animation::BoneID bone) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMorphTargetWeight</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
@@ -125001,6 +125049,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>SetBoneBoundingBox</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
+      <anchor>a249c4101f6d3246269468a738731b7ef</anchor>
+      <arglist>(CS::Animation::BoneID bone, const csBox3 &amp;box)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetMorphTargetWeight</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
       <anchor>a640f714fe8f6598c623e6b019bff0008</anchor>
@@ -125012,6 +125067,13 @@
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
       <anchor>a86bcbf6f1d0cde2642de7fadaada5f39</anchor>
       <arglist>(CS::Animation::iSkeleton *skeleton)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>UnsetObjectBoundingBox</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
+      <anchor>a5743216d694307b3670f578fd44aee9f</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iAnimatedMeshSocket *</type>
@@ -125241,6 +125303,20 @@
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
       <anchor>aef62ade9be6a5c51fc35c26979cae280</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csBox3 &amp;</type>
+      <name>GetBoneBoundingBox</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
+      <anchor>ae9fb042a74cb7fb30c6f07dce0c8b5cf</anchor>
+      <arglist>(CS::Animation::BoneID bone) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBoneBoundingBox</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
+      <anchor>a2f90cc4b7fb0bce4a5943a656b7737ef</anchor>
+      <arglist>(CS::Animation::BoneID bone, const csBox3 &amp;box)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual AnimatedMeshBoneInfluence *</type>
