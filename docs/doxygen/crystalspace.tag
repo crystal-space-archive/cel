@@ -990,31 +990,31 @@
     <member kind="enumvalue">
       <name>CS_TRIMESH_CLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26ae79eee97416d39f451607fc2c94b01dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a03fce5c7db65c3182ec683ff006698a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_CONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26aeb9ea0bd96761361e39a61c17d65a256</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a3d71f9603c9ea6f85b041230d365c984</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_DEFORMABLE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1591,13 +1591,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -22716,8 +22716,8 @@
     <path>/tmp/tmp0/trunk/include/csplugincommon/shader/</path>
     <filename>shadercachehelper_8h</filename>
     <includes id="hiercache_8h" name="hiercache.h" local="yes" imported="no">iutil/hiercache.h</includes>
-    <includes id="csmd5_8h" name="csmd5.h" local="yes" imported="no">csutil/csmd5.h</includes>
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">csutil/fifo.h</includes>
+    <includes id="md5_8h" name="md5.h" local="yes" imported="no">csutil/md5.h</includes>
     <includes id="memfile_8h" name="memfile.h" local="yes" imported="no">csutil/memfile.h</includes>
     <includes id="mempool_8h" name="mempool.h" local="yes" imported="no">csutil/mempool.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -24187,25 +24187,25 @@
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_WORLD</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a83e2005fe6301861439ac56abb9ddf85</anchor>
+      <anchor>a73c53bacb25588538843a1dcfe5f382ba83e2005fe6301861439ac56abb9ddf85</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_LIBRARY</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a04aa157fdde5f7ec507f082ac947c643</anchor>
+      <anchor>a73c53bacb25588538843a1dcfe5f382ba04aa157fdde5f7ec507f082ac947c643</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_MESHFACT</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549ac2eabfdace938604cf1b14127064cc3a</anchor>
+      <anchor>a73c53bacb25588538843a1dcfe5f382bac2eabfdace938604cf1b14127064cc3a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_PARAMS</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a7b201792a220f5f30d589b62e7ad26f2</anchor>
+      <anchor>a73c53bacb25588538843a1dcfe5f382ba7b201792a220f5f30d589b62e7ad26f2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -24556,7 +24556,6 @@
     <includes id="cseventflattener_8h" name="cseventflattener.h" local="yes" imported="no">csutil/cseventflattener.h</includes>
     <includes id="cseventq_8h" name="cseventq.h" local="yes" imported="no">csutil/cseventq.h</includes>
     <includes id="csutil_2csinput_8h" name="csinput.h" local="yes" imported="no">csutil/csinput.h</includes>
-    <includes id="csmd5_8h" name="csmd5.h" local="yes" imported="no">csutil/csmd5.h</includes>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
     <includes id="cspmeter_8h" name="cspmeter.h" local="yes" imported="no">csutil/cspmeter.h</includes>
     <includes id="csppulse_8h" name="csppulse.h" local="yes" imported="no">csutil/csppulse.h</includes>
@@ -24566,6 +24565,7 @@
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
     <includes id="databuf_8h" name="databuf.h" local="yes" imported="no">csutil/databuf.h</includes>
+    <includes id="digest_8h" name="digest.h" local="yes" imported="no">csutil/digest.h</includes>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <includes id="documentcommon_8h" name="documentcommon.h" local="yes" imported="no">csutil/documentcommon.h</includes>
     <includes id="documenthelper_8h" name="documenthelper.h" local="yes" imported="no">csutil/documenthelper.h</includes>
@@ -24583,6 +24583,7 @@
     <includes id="hashr_8h" name="hashr.h" local="yes" imported="no">csutil/hashr.h</includes>
     <includes id="inputdef_8h" name="inputdef.h" local="yes" imported="no">csutil/inputdef.h</includes>
     <includes id="list_8h" name="list.h" local="yes" imported="no">csutil/list.h</includes>
+    <includes id="md5_8h" name="md5.h" local="yes" imported="no">csutil/md5.h</includes>
     <includes id="measuretime_8h" name="measuretime.h" local="yes" imported="no">csutil/measuretime.h</includes>
     <includes id="csutil_2memdebug_8h" name="memdebug.h" local="yes" imported="no">csutil/memdebug.h</includes>
     <includes id="memfile_8h" name="memfile.h" local="yes" imported="no">csutil/memfile.h</includes>
@@ -25542,15 +25543,6 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>csmd5.h</name>
-    <path>/tmp/tmp0/trunk/include/csutil/</path>
-    <filename>csmd5_8h</filename>
-    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
-    <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
-    <class kind="class">csMD5</class>
-    <class kind="struct">csMD5::Digest</class>
-  </compound>
-  <compound kind="file">
     <name>csobject.h</name>
     <path>/tmp/tmp0/trunk/include/csutil/</path>
     <filename>csobject_8h</filename>
@@ -25752,7 +25744,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga7859c0a3efa8b1c360f5c2376baf051ea502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>ggaa618c4d8c29ef4efe6f10c741fb1f47aa502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -25914,6 +25906,17 @@
     <name>deprecated_warn_on.h</name>
     <path>/tmp/tmp0/trunk/include/csutil/</path>
     <filename>deprecated__warn__on_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>digest.h</name>
+    <path>/tmp/tmp0/trunk/include/csutil/</path>
+    <filename>digest_8h</filename>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
+    <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <class kind="class">CS::Utility::Checksum::Digest</class>
+    <class kind="struct">CS::Utility::Checksum::DigestFormat</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Utility</namespace>
   </compound>
   <compound kind="file">
     <name>dirtyaccessarray.h</name>
@@ -26842,6 +26845,17 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>md5.h</name>
+    <path>/tmp/tmp0/trunk/include/csutil/</path>
+    <filename>md5_8h</filename>
+    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
+    <includes id="digest_8h" name="digest.h" local="yes" imported="no">csutil/digest.h</includes>
+    <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <class kind="class">CS::Utility::Checksum::MD5</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Utility</namespace>
+  </compound>
+  <compound kind="file">
     <name>measuretime.h</name>
     <path>/tmp/tmp0/trunk/include/csutil/</path>
     <filename>measuretime_8h</filename>
@@ -27405,37 +27419,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -29388,37 +29402,37 @@
     <member kind="enumvalue">
       <name>CS_CLIP_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a327d20023b6a973b24df4878ac1ca2a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_CLIPPED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a5545e595302e89c3de51ec06a09ad73f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ORIGINAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5ab2c5f01a5c75c95a126f9352fecc63db</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ONEDGE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a38ad988c5e359fec3a8328c9965a691c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -30015,8 +30029,8 @@
     <name>furmesh.h</name>
     <path>/tmp/tmp0/trunk/include/imesh/</path>
     <filename>furmesh_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="no" imported="no">csutil/scf.h</includes>
-    <includes id="crystalspace_8h" name="crystalspace.h" local="yes" imported="no">crystalspace.h</includes>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
     <class kind="struct">CS::Animation::iFurAnimatedMeshControl</class>
     <class kind="struct">CS::Animation::iFurAnimationControl</class>
     <class kind="struct">CS::Mesh::iFurMesh</class>
@@ -30741,19 +30755,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fcab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -30871,25 +30885,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -32541,12 +32555,11 @@
     <path>/tmp/tmp0/trunk/include/ivaria/</path>
     <filename>dynamicsdebug_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
     <class kind="struct">CS::Debug::iDynamicsDebuggerManager</class>
     <class kind="struct">CS::Debug::iDynamicSystemDebugger</class>
     <namespace>CS</namespace>
     <namespace>CS::Debug</namespace>
-    <namespace>CS::Physics</namespace>
-    <namespace>CS::Physics::Bullet</namespace>
   </compound>
   <compound kind="file">
     <name>engseq.h</name>
@@ -32562,19 +32575,19 @@
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_NONE</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a47b796e7b1f919fd36cc960eb591bc55</anchor>
+      <anchor>a1b7b7893d940926615b39239ac05829da47b796e7b1f919fd36cc960eb591bc55</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_LESS</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a003628ad03747b08e6bf75545e799e3f</anchor>
+      <anchor>a1b7b7893d940926615b39239ac05829da003628ad03747b08e6bf75545e799e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_GREATER</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a29a7194001b550e811008129dc92aaeb</anchor>
+      <anchor>a1b7b7893d940926615b39239ac05829da29a7194001b550e811008129dc92aaeb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -33354,73 +33367,73 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfaba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -38016,36 +38029,6 @@
       <arglist>(const T &amp;x)</arglist>
     </member>
     <member kind="enumvalue">
-      <name>CS_TRIMESH_CLOSED</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_NOTCLOSED</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_CONVEX</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_NOTCONVEX</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_DEFORMABLE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
       <name>CS_BOX_CORNER_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
       <anchor>ggabc6126af1d45847bc59afa0aa3216b04a86d75fcdcc57f10b7e00afa9571b2d56</anchor>
@@ -38390,37 +38373,67 @@
     <member kind="enumvalue">
       <name>CS_CLIP_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a327d20023b6a973b24df4878ac1ca2a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_CLIPPED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a5545e595302e89c3de51ec06a09ad73f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
+      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ORIGINAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5ab2c5f01a5c75c95a126f9352fecc63db</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ONEDGE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_CLOSED</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26ae79eee97416d39f451607fc2c94b01dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_NOTCLOSED</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a03fce5c7db65c3182ec683ff006698a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_CONVEX</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26aeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_NOTCONVEX</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a3d71f9603c9ea6f85b041230d365c984</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_DEFORMABLE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -38590,13 +38603,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -38839,73 +38852,73 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfaba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -40312,37 +40325,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>ggae33c78feb670de33d2abf21ec0624531a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -40489,19 +40502,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fcab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -40680,7 +40693,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga7859c0a3efa8b1c360f5c2376baf051ea502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>ggaa618c4d8c29ef4efe6f10c741fb1f47aa502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -40981,25 +40994,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected" static="yes">
@@ -68687,92 +68700,6 @@
       <anchorfile>classcsMatrix3.html</anchorfile>
       <anchor>a72eb8fb14377b25cc558731610d32e1a</anchor>
       <arglist>(float f, const csMatrix3 &amp;m)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>csMD5</name>
-    <filename>classcsMD5.html</filename>
-    <class kind="struct">csMD5::Digest</class>
-    <member kind="typedef">
-      <type>uint8</type>
-      <name>md5_byte_t</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a804f37972d0afc626be0e6a2f57df6bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>uint32</type>
-      <name>md5_word_t</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a769ff8689e54f469b0ca3dd181eb79f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Digest</type>
-      <name>Encode</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>afe9b89029dfc63c087e9fe956c4c2fe3</anchor>
-      <arglist>(const void *, size_t nbytes)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Digest</type>
-      <name>Encode</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a1746751f47fc8d44e21f6eb54174c4cf</anchor>
-      <arglist>(const char *)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Digest</type>
-      <name>Encode</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a3be9f6bab0c16d0d5e4c06bacac4dae0</anchor>
-      <arglist>(csString const &amp;)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>md5_append</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a2a043156ebd8205d52e70b9d69af2a1c</anchor>
-      <arglist>(md5_state_t *, const md5_byte_t *data, size_t nbytes)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>md5_finish</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a34708efa15a5a161d02fca63cf08f00c</anchor>
-      <arglist>(md5_state_t *, md5_byte_t digest[16])</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>md5_init</name>
-      <anchorfile>classcsMD5.html</anchorfile>
-      <anchor>a04afb6fb334551ba7f1a1707a133d034</anchor>
-      <arglist>(md5_state_t *)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>csMD5::Digest</name>
-    <filename>structcsMD5_1_1Digest.html</filename>
-    <member kind="function">
-      <type>csString</type>
-      <name>HEXString</name>
-      <anchorfile>structcsMD5_1_1Digest.html</anchorfile>
-      <anchor>a9fee51db16128e70df920439c9ad9c9e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csString</type>
-      <name>HexString</name>
-      <anchorfile>structcsMD5_1_1Digest.html</anchorfile>
-      <anchor>a1a222c3e51945167135b19a5d70d4585</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="variable">
-      <type>md5_byte_t</type>
-      <name>data</name>
-      <anchorfile>structcsMD5_1_1Digest.html</anchorfile>
-      <anchor>a8897cd0c04dd363afcd46d5cc34ca465</anchor>
-      <arglist>[DigestLen]</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -100484,25 +100411,25 @@
     <member kind="enumvalue">
       <name>lpiInitialize</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
+      <anchor>a20b3085a885dc98d013d359629800fa1aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReportErrors</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371afea2fe7c6628ed1c6b62caa10187fb80</anchor>
+      <anchor>a20b3085a885dc98d013d359629800fa1afea2fe7c6628ed1c6b62caa10187fb80</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiLoadDependencies</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371a27d76f7ebccca23d0296c4ee98e829d4</anchor>
+      <anchor>a20b3085a885dc98d013d359629800fa1a27d76f7ebccca23d0296c4ee98e829d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReturnLoadedInstance</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371a132f07d961c1733a0603788498274cd4</anchor>
+      <anchor>a20b3085a885dc98d013d359629800fa1a132f07d961c1733a0603788498274cd4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -110962,13 +110889,13 @@
     <member kind="enumvalue">
       <name>blitbufReadable</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>a6e04e680caf17a4ba5edccd3528aea4ea932bb081f300bc89772998296459cd75</anchor>
+      <anchor>ac34e65b1f0a1984b8cee534e1b8d6a89a932bb081f300bc89772998296459cd75</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>blitbufRetainArea</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>a6e04e680caf17a4ba5edccd3528aea4eab9303d14862a3ebfcc71099c5c0a2c53</anchor>
+      <anchor>ac34e65b1f0a1984b8cee534e1b8d6a89ab9303d14862a3ebfcc71099c5c0a2c53</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -132896,60 +132823,323 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>CS::Utility::Checksum::SHA256::Context</name>
-    <filename>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</filename>
+    <name>CS::Utility::Checksum::Adler32</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</filename>
     <member kind="function">
       <type>void</type>
-      <name>sha256_finish</name>
-      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
-      <anchor>a0f2b260aab7d87cf101b7921dc8d1475</anchor>
-      <arglist>(Digest &amp;digest)</arglist>
+      <name>Append</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>a7175b1528025deec1c7e040e1b76de69</anchor>
+      <arglist>(const uint8 *data, size_t size)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>sha256_finish</name>
-      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
-      <anchor>a65ddb9f3404e382e15dff0ac82e21e0b</anchor>
-      <arglist>(uint8_t digest[32])</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sha256_starts</name>
-      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
-      <anchor>a116bab768225b3b75aedf156b8218084</anchor>
+      <type>uint32</type>
+      <name>Finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>ab8a39ba51a0a2c510f51ee5d398d33d8</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>sha256_update</name>
-      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Context.html</anchorfile>
-      <anchor>a18ff44fd49526e86111f46b88212d344</anchor>
-      <arglist>(uint8_t *input, uint32_t length)</arglist>
+      <type></type>
+      <name>operator uint32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>ab5b48c14d70a4f238a096cc781b697a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Adler32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>a02b4116f0de405315b34ac9c2be82b49</anchor>
+      <arglist>(uint32 prevCheckSum, iDataBuffer *data)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Adler32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>a9108196a29d61546853a32c04f5c062d</anchor>
+      <arglist>(uint32 prevCheckSum, const void *data, size_t size)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Adler32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>aaaaed3adcc539a1af615eca27ed9f429</anchor>
+      <arglist>(iDataBuffer *data)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Adler32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Adler32.html</anchorfile>
+      <anchor>a5a800ebc22b6bed9b166a3880492e7f2</anchor>
+      <arglist>(const void *data, size_t size)</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>CS::Utility::Checksum::SHA256::Digest</name>
-    <filename>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</filename>
+  <compound kind="class">
+    <name>CS::Utility::Checksum::CRC32</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Append</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>aefa16341d4979a7955eed3e5b57d4a24</anchor>
+      <arglist>(const uint8 *data, size_t size)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32</type>
+      <name>Finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>ae4e957f57a4bab715a9e9cb71f2f4789</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator uint32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a9a957c8a9ed483be6fcaffca44bb0dad</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>__pad0__</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a90331188b45da75ebac173a4e91c18e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>__pad1__</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>aef0f0c653837ab61345c20ea6bb4515a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size</type>
+      <name>__pad2__</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>abb967b67243be1e47acc622e8235a6e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>data</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a0b5f7f4809c0ba5e7bfb407d10f33a13</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CRC32</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>ae9f689b0e612d9c1c47d8f91532aaed3</anchor>
+      <arglist>(const void *data, size_t size)</arglist>
+    </member>
+    <member kind="function">
+      <type>size data</type>
+      <name>GetData</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>ac9eda77ddbeca2ca3b3d9d34770cc07a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>data</type>
+      <name>GetData</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a15178bcf58699e0d95b3aa296ff50970</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>size data data</type>
+      <name>GetSize</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a148b5a11a710017150108abeaae099b8</anchor>
+      <arglist>()))</arglist>
+    </member>
+    <member kind="function">
+      <type>data data</type>
+      <name>GetSize</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1CRC32.html</anchorfile>
+      <anchor>a58e5d5cba454279fa8b6a5f496e5aca1</anchor>
+      <arglist>()))</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Checksum::Digest</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1Digest.html</filename>
+    <templarg>Size</templarg>
+    <base protection="protected">CS::Utility::Checksum::DigestFormat</base>
     <member kind="function">
       <type>csString</type>
       <name>HEXString</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
-      <anchor>ab91db0c335059080ab901db1b2c00aa6</anchor>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Digest.html</anchorfile>
+      <anchor>a809374cf8edbc5d8b60d1c6e7aeda1d8</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>csString</type>
       <name>HexString</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
-      <anchor>a7c9b800f908a7193378aacdde39edbc1</anchor>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Digest.html</anchorfile>
+      <anchor>aa8ff0e760f9a13c06dec482ad4de3bdb</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>uint8</type>
       <name>data</name>
-      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1SHA256_1_1Digest.html</anchorfile>
-      <anchor>aad74d22bb74507e3078224f11f6ac337</anchor>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1Digest.html</anchorfile>
+      <anchor>abf7f7996d74e0aaac5e1885e89a12f8c</anchor>
       <arglist>[DigestLen]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::Checksum::DigestFormat</name>
+    <filename>structCS_1_1Utility_1_1Checksum_1_1DigestFormat.html</filename>
+    <member kind="function" static="yes">
+      <type>static csString</type>
+      <name>HEXString</name>
+      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1DigestFormat.html</anchorfile>
+      <anchor>a3cf636941f0b9bf570e66d97fd398a53</anchor>
+      <arglist>(const uint8 *data, uint size)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csString</type>
+      <name>HexString</name>
+      <anchorfile>structCS_1_1Utility_1_1Checksum_1_1DigestFormat.html</anchorfile>
+      <anchor>aecda2a3a4b7c96573f90778e5ee424f8</anchor>
+      <arglist>(const uint8 *data, uint size)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Checksum::MD5</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1MD5.html</filename>
+    <member kind="typedef">
+      <type>CS::Utility::Checksum::Digest&lt; 16 &gt;</type>
+      <name>Digest</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a9de083eecdfb42f1e67319651ec4237a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Append</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a0c472d88b15f6c56d25412b67ef494c0</anchor>
+      <arglist>(const uint8 *input, size_t length)</arglist>
+    </member>
+    <member kind="function">
+      <type>Digest</type>
+      <name>Finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a02b21df4e169ce0f1ff36ef01f0a80ef</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a3f789996ec7587b57b3412eadd1529a9</anchor>
+      <arglist>(const void *, size_t nbytes)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>af0973e738538a097a46be2a0d0ef3613</anchor>
+      <arglist>(const char *)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a2657b9afbdcce15fd366b124a2e1042c</anchor>
+      <arglist>(csString const &amp;)</arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>uint8</type>
+      <name>md5_byte_t</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a02bfe6646e56a00e3259bc5a93a18d4c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>uint32</type>
+      <name>md5_word_t</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>af36d7bcb1db6140782027d36accc2805</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>AppendInternal</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>af6bafb63164643b8fb49d74d57740a2a</anchor>
+      <arglist>(const uint8 *input, uint32 length)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>md5_word_t</type>
+      <name>abcd</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a610721097f16aa9c224c61061370798f</anchor>
+      <arglist>[4]</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>md5_byte_t</type>
+      <name>buf</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>aa80203e785a9c8e98558565245e891ba</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>size_t</type>
+      <name>count</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1MD5.html</anchorfile>
+      <anchor>a6e5ec8fba10787f78020524d12a07ff6</anchor>
+      <arglist>[2]</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Checksum::SHA256</name>
+    <filename>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</filename>
+    <member kind="typedef">
+      <type>CS::Utility::Checksum::Digest&lt; 32 &gt;</type>
+      <name>Digest</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>a8c0c36d22a23ac86b689568001a3f0db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Append</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>a6407efa39af7ea5d155eb0fec1f47500</anchor>
+      <arglist>(const uint8 *input, size_t length)</arglist>
+    </member>
+    <member kind="function">
+      <type>Digest</type>
+      <name>Finish</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>acc8e343c201926ed275d0e7af0c670f3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>ac53952adcc381e5261f48bc29ea6ddb2</anchor>
+      <arglist>(const void *, size_t nbytes)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>a63e9fed35627ede1374d8cf1099c00f6</anchor>
+      <arglist>(const char *)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Digest</type>
+      <name>Encode</name>
+      <anchorfile>classCS_1_1Utility_1_1Checksum_1_1SHA256.html</anchorfile>
+      <anchor>a400baada5f354d93ba80dcd29a569bc3</anchor>
+      <arglist>(csString const &amp;)</arglist>
     </member>
   </compound>
   <compound kind="struct">
