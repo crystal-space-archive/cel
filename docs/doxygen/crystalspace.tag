@@ -24425,6 +24425,13 @@
     <path>/tmp/tmp1/trunk/include/</path>
     <filename>cstypes_8h</filename>
     <member kind="typedef">
+      <type>int64</type>
+      <name>csMicroTicks</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gae6e8e6610e96d29de3bc299f3d419e7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>unsigned int</type>
       <name>csTicks</name>
       <anchorfile>group__util.html</anchorfile>
@@ -27869,10 +27876,10 @@
       <arglist>(FILE *file, const char *str, va_list arg)</arglist>
     </member>
     <member kind="function">
-      <type>int64</type>
+      <type>csMicroTicks</type>
       <name>csGetMicroTicks</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gadbdc1c0f010b84953b0e22b836c2a147</anchor>
+      <anchor>gae8837bf1b1254be534d180bb8ce30729</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -41247,6 +41254,13 @@
       <arglist>(csLibraryHandle Handle)</arglist>
     </member>
     <member kind="typedef">
+      <type>int64</type>
+      <name>csMicroTicks</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gae6e8e6610e96d29de3bc299f3d419e7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>unsigned int</type>
       <name>csTicks</name>
       <anchorfile>group__util.html</anchorfile>
@@ -41366,10 +41380,10 @@
       <arglist>(FILE *file, const char *str, va_list arg)</arglist>
     </member>
     <member kind="function">
-      <type>int64</type>
+      <type>csMicroTicks</type>
       <name>csGetMicroTicks</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gadbdc1c0f010b84953b0e22b836c2a147</anchor>
+      <anchor>gae8837bf1b1254be534d180bb8ce30729</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -83735,11 +83749,32 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual csMicroTicks</type>
+      <name>GetCurrentMicroTicks</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>ac6b102c20e6bfd8b7acd82383d1fd7eb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csTicks</type>
       <name>GetCurrentTicks</name>
       <anchorfile>classcsVirtualClock.html</anchorfile>
       <anchor>a6857d06127ee64b06bd97b663a936303</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csMicroTicks</type>
+      <name>GetElapsedMicroTicks</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>a511b8e7cd4a5c587751e8835e3446e66</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>GetElapsedSeconds</name>
+      <anchorfile>classcsVirtualClock.html</anchorfile>
+      <anchor>aa9a6b8cd089de71b7e02db45bde64f21</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual csTicks</type>
@@ -112168,11 +112203,32 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csMicroTicks</type>
+      <name>GetCurrentMicroTicks</name>
+      <anchorfile>structiVirtualClock.html</anchorfile>
+      <anchor>aaf05401c41fdfd156aaae0fc1965121e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csTicks</type>
       <name>GetCurrentTicks</name>
       <anchorfile>structiVirtualClock.html</anchorfile>
       <anchor>ae88f428c90216917a6067308e9e14543</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csMicroTicks</type>
+      <name>GetElapsedMicroTicks</name>
+      <anchorfile>structiVirtualClock.html</anchorfile>
+      <anchor>a2248faaca478653b618189de5fb84d25</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetElapsedSeconds</name>
+      <anchorfile>structiVirtualClock.html</anchorfile>
+      <anchor>a022d18b81bc01132544e58fa78f769a1</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csTicks</type>
