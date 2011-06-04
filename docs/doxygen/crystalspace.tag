@@ -83667,11 +83667,25 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual csVector2</type>
+      <name>NormalizedToScreen</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a59dc3a35b0ed27f2e064c554f886f42c</anchor>
+      <arglist>(const csVector2 &amp;pos)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>RestrictClipperToScreen</name>
       <anchorfile>classcsView.html</anchorfile>
       <anchor>a7895b9bc0ba9a2b9d790d2ffa61079cb</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector2</type>
+      <name>ScreenToNormalized</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>aecc0bbb293a08ee4f10e21784b071bb5</anchor>
+      <arglist>(const csVector2 &amp;pos)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -112128,11 +112142,25 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csVector2</type>
+      <name>NormalizedToScreen</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>af23d1c46dcbd1a864fe7f008a94f5e85</anchor>
+      <arglist>(const csVector2 &amp;pos)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RestrictClipperToScreen</name>
       <anchorfile>structiView.html</anchorfile>
       <anchor>a5340f3e10c24d18c3c88d4a512ea479f</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVector2</type>
+      <name>ScreenToNormalized</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a2d4a0c33b604bb6345fa1e499d07fa86</anchor>
+      <arglist>(const csVector2 &amp;pos)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -132530,6 +132558,13 @@
       <anchorfile>classCS_1_1Utility_1_1StringArray.html</anchorfile>
       <anchor>a779dc32ea5d0002b8ab607d3009d2310</anchor>
       <arglist>(const char *str, const char *delimiters, ConsecutiveDelimiterMode delimMode=delimSplitEach)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StringArray</name>
+      <anchorfile>classCS_1_1Utility_1_1StringArray.html</anchorfile>
+      <anchor>af3f68be6117b5ef310923cf92baf80de</anchor>
+      <arglist>(const char *str, const char *delimiters, ConsecutiveDelimiterMode delimMode=delimSplitEach, size_t limit=0, const CapacityHandler &amp;ch=CapacityHandler())</arglist>
     </member>
     <member kind="function">
       <type></type>
