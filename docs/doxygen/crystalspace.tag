@@ -76724,10 +76724,52 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>bool</type>
       <name>LookAt</name>
       <anchorfile>classcsReversibleTransform.html</anchorfile>
-      <anchor>a10ce5361544cb5cb59f259f677879769</anchor>
+      <anchor>a6b7a4d27ff8423a05f290e482a22f9c5</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtXUpY</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>a755dd694dc5cda5ee3141954407ad735</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtXUpZ</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>afae203044adf61dfaf36aade4c8095c4</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtYUpX</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>a53d0019fe51eaf9d9f67a75d334d7759</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtYUpZ</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>aede36b41edca3160b5f0e421f35fa768</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtZUpX</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>a1ee52c1a8e0ffb9ba21db96b8be28b59</anchor>
+      <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LookAtZUpY</name>
+      <anchorfile>classcsReversibleTransform.html</anchorfile>
+      <anchor>a0a8ebc16aead0fbb132af8a2cba61cd5</anchor>
       <arglist>(const csVector3 &amp;v, const csVector3 &amp;up)</arglist>
     </member>
     <member kind="function">
