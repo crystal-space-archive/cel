@@ -95891,6 +95891,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetDefaultDensityFactor</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a6af8cfe79ad0f802fafe71099eca07c0</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iMeshGeneratorGeometry *</type>
       <name>GetGeometry</name>
       <anchorfile>structiMeshGenerator.html</anchorfile>
@@ -95966,6 +95973,13 @@
       <anchorfile>structiMeshGenerator.html</anchorfile>
       <anchor>a95ff89cfcd865000cb491f081b1aefdb</anchor>
       <arglist>(int number)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDefaultDensityFactor</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>ae6a28a29b944f74fb3f4cb2278eaf7e9</anchor>
+      <arglist>(float factor)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
