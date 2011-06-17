@@ -95933,6 +95933,20 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual const CS::Math::Matrix4 &amp;</type>
+      <name>GetWorldToMapTransform</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a9b6e6d81d165b072f9ef745b3551d552</anchor>
+      <arglist>(const char *factorMapID) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsValidDensityFactorMap</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>aeba2101be27c2b47490a3a216d18e8f9</anchor>
+      <arglist>(const char *factorMapID) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
       <name>QueryObject</name>
       <anchorfile>structiMeshGenerator.html</anchorfile>
