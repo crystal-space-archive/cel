@@ -95898,6 +95898,20 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetDensityFactorMapHeight</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a71f970cc9b179f6a612bbb3cb54708c1</anchor>
+      <arglist>(const char *factorMapID) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetDensityFactorMapWidth</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a08c3784cc5f932972bad920a9c059b24</anchor>
+      <arglist>(const char *factorMapID) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iMeshGeneratorGeometry *</type>
       <name>GetGeometry</name>
       <anchorfile>structiMeshGenerator.html</anchorfile>
@@ -96008,6 +96022,13 @@
       <anchorfile>structiMeshGenerator.html</anchorfile>
       <anchor>a41fdae6703574a482ece996e6436fa6c</anchor>
       <arglist>(const csBox3 &amp;box)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>UpdateDensityFactorMap</name>
+      <anchorfile>structiMeshGenerator.html</anchorfile>
+      <anchor>a631d34b51f71804810c25c192f9f6f9e</anchor>
+      <arglist>(const char *factorMapID, iImage *mapImage)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
