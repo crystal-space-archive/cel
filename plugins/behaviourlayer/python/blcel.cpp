@@ -123681,7 +123681,7 @@ static swig_type_info _swigt__p_scfImplementation3T_celPcCommon_iCelPropertyClas
 static swig_type_info _swigt__p_scfImplementationExt0T_PcCommon_celPcCommon_t = {"_p_scfImplementationExt0T_PcCommon_celPcCommon_t", "scfImplementationExt0< PcCommon,celPcCommon > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_scfImplementationExt1T_pyPcCommon_PcCommon_iPcPython_t = {"_p_scfImplementationExt1T_pyPcCommon_PcCommon_iPcPython_t", "scfImplementationExt1< pyPcCommon,PcCommon,iPcPython > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_scfInterfaceMetadataList = {"_p_scfInterfaceMetadataList", "scfInterfaceMetadataList *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_size_t = {"_p_size_t", "size_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_size_t = {"_p_size_t", "size_t *|CS::Mesh::SubsetID *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint16_t = {"_p_uint16_t", "uint16 *|uint16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint32_t = {"_p_uint32_t", "uint32_t *|uint32 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint64_t = {"_p_uint64_t", "uint64_t *|uint64 *|uintmax_t *", 0, 0, (void*)0, 0};
