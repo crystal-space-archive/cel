@@ -29746,20 +29746,6 @@
     <class kind="struct">CS::Mesh::iAnimatedMeshSubMeshFactory</class>
     <namespace>CS</namespace>
     <namespace>CS::Mesh</namespace>
-    <member kind="typedef">
-      <type>size_t</type>
-      <name>SubsetID</name>
-      <anchorfile>namespaceCS_1_1Mesh.html</anchorfile>
-      <anchor>a52004b4cfeb70bd8dbb5e29087346df8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static const SubsetID</type>
-      <name>InvalidSubsetID</name>
-      <anchorfile>namespaceCS_1_1Mesh.html</anchorfile>
-      <anchor>a07700109a42336f374c57ada2a9c9f55</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>debug.h</name>
@@ -125066,20 +125052,6 @@
     <class kind="struct">CS::Mesh::iFurMeshMaterialProperties</class>
     <class kind="struct">CS::Mesh::iFurMeshState</class>
     <class kind="struct">CS::Mesh::iFurMeshType</class>
-    <member kind="typedef">
-      <type>size_t</type>
-      <name>SubsetID</name>
-      <anchorfile>namespaceCS_1_1Mesh.html</anchorfile>
-      <anchor>a52004b4cfeb70bd8dbb5e29087346df8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static const SubsetID</type>
-      <name>InvalidSubsetID</name>
-      <anchorfile>namespaceCS_1_1Mesh.html</anchorfile>
-      <anchor>a07700109a42336f374c57ada2a9c9f55</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Mesh::AnimatedMeshBoneInfluence</name>
@@ -125225,18 +125197,18 @@
     <filename>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
-      <type>virtual SubsetID</type>
+      <type>virtual size_t</type>
       <name>AddSubset</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>a02c92959a21a6e5646970e0ed372c1ea</anchor>
+      <anchor>a5cd295f6b3572cf50f2bfea5a2d837d6</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddSubsetVertex</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>ab50bca5473c22a16284f4e9e60bb804a</anchor>
-      <arglist>(const SubsetID subset, const size_t vertexIndex)=0</arglist>
+      <anchor>aa86551cf55d2451b733e54430981dbb1</anchor>
+      <arglist>(const size_t subset, const size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -125247,31 +125219,24 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
+      <name>GetSubsetCount</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
+      <anchor>ab6cc5361147c83975b32e45e56631d42</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
       <name>GetSubsetVertex</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>a56bd0ba5937ef46e1b6b5da8f9f9beab</anchor>
-      <arglist>(const SubsetID subset, const size_t vertexIndex) const =0</arglist>
+      <anchor>ac3ed3c17e11d0a0a739a2bc1193f528a</anchor>
+      <arglist>(const size_t subset, const size_t vertexIndex) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetSubsetVertexCount</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>a3be52fb0970111ae6af099d338eded1b</anchor>
-      <arglist>(const SubsetID subset) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual SubsetID</type>
-      <name>GetTopSubsetID</name>
-      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>abb88506f08e883e65c5c606e0bb52b62</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasSubset</name>
-      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>a8270f15bbe9896f627e17783132cc826</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>ac47c5b39b6afee82d7f5906b822cdc7e</anchor>
+      <arglist>(const size_t subset) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -125541,8 +125506,8 @@
       <type>virtual void</type>
       <name>AddSubset</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshMorphTarget.html</anchorfile>
-      <anchor>adcf34dbfe4bdc9df1637550955479bc3</anchor>
-      <arglist>(const SubsetID subset)=0</arglist>
+      <anchor>aec945ae5a021ff7f0f58ec76c3f306a5</anchor>
+      <arglist>(const size_t subset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
@@ -125552,10 +125517,10 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual SubsetID</type>
+      <type>virtual size_t</type>
       <name>GetSubset</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshMorphTarget.html</anchorfile>
-      <anchor>a93f01786cba255b98086bf684fcac2f4</anchor>
+      <anchor>ab0f817dec768f80d478d56bc4eebcc12</anchor>
       <arglist>(const size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
