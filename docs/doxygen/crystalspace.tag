@@ -637,6 +637,13 @@
       <arglist>(float f)</arglist>
     </member>
     <member kind="function">
+      <type>float</type>
+      <name>Infinity</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a741b049e33afd603997509f4dda6c6dc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>IsFinite</name>
       <anchorfile>namespaceCS.html</anchorfile>
@@ -96086,6 +96093,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
+      <name>GetMaximumOpaqueDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>ab4bd02001fe03c858d03a179313bd736</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetMinimumDrawDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>a7772ca81ef929a78850f1f9734eb2f0c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetMinimumOpaqueDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>a6aaa08686f513486555c5c747cd02cca</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
       <name>GetRadius</name>
       <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
       <anchor>a760a52e5b206c1ef08bbffaa018bf684</anchor>
@@ -96118,6 +96146,27 @@
       <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
       <anchor>a98ed2b83fc83a236737143cad1a5412d</anchor>
       <arglist>(iTerraFormer *map, float factor, const csStringID &amp;type)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMaximumOpaqueDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>abb4738c6ed0048ad26c158da95c8ae05</anchor>
+      <arglist>(float dist)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMinimumDrawDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>aa04ffd51644c5a9f535b98efdb2d00a7</anchor>
+      <arglist>(float dist)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMinimumOpaqueDistance</name>
+      <anchorfile>structiMeshGeneratorGeometry.html</anchorfile>
+      <anchor>afff190c054b272fbcf548398126ab904</anchor>
+      <arglist>(float dist)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -114469,6 +114518,13 @@
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a13c0bf5c66dc07cb3c8109c64832fb48</anchor>
       <arglist>(T &amp;a, T &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>Infinity</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>a741b049e33afd603997509f4dda6c6dc</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
