@@ -103171,8 +103171,8 @@
       <type>virtual iSector *</type>
       <name>FollowSegment</name>
       <anchorfile>structiSector.html</anchorfile>
-      <anchor>a88e4fee56c70ed6d79b0b51b7b31b8d7</anchor>
-      <arglist>(csReversibleTransform &amp;t, csVector3 &amp;new_position, bool &amp;mirror, bool only_portals=false, iPortal **transversed_portals=0, iMeshWrapper **portal_meshes=0, int firstIndex=0, int *lastIndex=0)=0</arglist>
+      <anchor>aa3a0d0fdb9edf65ea8cdfb945d176510</anchor>
+      <arglist>(csReversibleTransform &amp;t, csVector3 &amp;new_position, bool &amp;mirror, bool only_portals=false, iPortal **crossed_portals=0, iMeshWrapper **portal_meshes=0, int firstIndex=0, int *lastIndex=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iVisibilityCuller *</type>
