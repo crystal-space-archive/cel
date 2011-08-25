@@ -23982,6 +23982,7 @@
     <filename>materialbuilder_8h</filename>
     <class kind="class">CS::Material::MaterialBuilder</class>
     <namespace>CS</namespace>
+    <namespace>CS::Material</namespace>
   </compound>
   <compound kind="file">
     <name>meshobjtmpl.h</name>
@@ -30237,10 +30238,16 @@
     <class kind="struct">csParticleParameterSet</class>
     <class kind="struct">iParticleBuiltinEffectorFactory</class>
     <class kind="struct">iParticleBuiltinEffectorForce</class>
+    <class kind="struct">iParticleBuiltinEffectorLight</class>
     <class kind="struct">iParticleBuiltinEffectorLinColor</class>
     <class kind="struct">iParticleBuiltinEffectorLinear</class>
     <class kind="struct">iParticleBuiltinEffectorVelocityField</class>
+    <class kind="struct">iParticleBuiltinEmitterBase</class>
+    <class kind="struct">iParticleBuiltinEmitterBox</class>
+    <class kind="struct">iParticleBuiltinEmitterCone</class>
+    <class kind="struct">iParticleBuiltinEmitterCylinder</class>
     <class kind="struct">iParticleBuiltinEmitterFactory</class>
+    <class kind="struct">iParticleBuiltinEmitterSphere</class>
     <class kind="struct">iParticleEffector</class>
     <class kind="struct">iParticleEmitter</class>
     <class kind="struct">iParticleSystem</class>
@@ -34594,6 +34601,7 @@
     <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
+    <namespace>CS::Material</namespace>
     <namespace>CS::Math</namespace>
     <namespace>CS::Math::Noise</namespace>
     <namespace>CS::Math::Noise::Model</namespace>
@@ -35340,10 +35348,16 @@
     <class kind="struct">iParticle</class>
     <class kind="struct">iParticleBuiltinEffectorFactory</class>
     <class kind="struct">iParticleBuiltinEffectorForce</class>
+    <class kind="struct">iParticleBuiltinEffectorLight</class>
     <class kind="struct">iParticleBuiltinEffectorLinColor</class>
     <class kind="struct">iParticleBuiltinEffectorLinear</class>
     <class kind="struct">iParticleBuiltinEffectorVelocityField</class>
+    <class kind="struct">iParticleBuiltinEmitterBase</class>
+    <class kind="struct">iParticleBuiltinEmitterBox</class>
+    <class kind="struct">iParticleBuiltinEmitterCone</class>
+    <class kind="struct">iParticleBuiltinEmitterCylinder</class>
     <class kind="struct">iParticleBuiltinEmitterFactory</class>
+    <class kind="struct">iParticleBuiltinEmitterSphere</class>
     <class kind="struct">iParticleEffector</class>
     <class kind="struct">iParticleEmitter</class>
     <class kind="struct">iParticleState</class>
@@ -99372,6 +99386,41 @@
     <name>iParticleBuiltinEffectorFactory</name>
     <filename>structiParticleBuiltinEffectorFactory.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEffectorForce &gt;</type>
+      <name>CreateForce</name>
+      <anchorfile>structiParticleBuiltinEffectorFactory.html</anchorfile>
+      <anchor>a4837ad62985b1f3e0ed3379a75ffb965</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEffectorLight &gt;</type>
+      <name>CreateLight</name>
+      <anchorfile>structiParticleBuiltinEffectorFactory.html</anchorfile>
+      <anchor>a4e6f95381855a3f0f52081dff81eec38</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEffectorLinColor &gt;</type>
+      <name>CreateLinColor</name>
+      <anchorfile>structiParticleBuiltinEffectorFactory.html</anchorfile>
+      <anchor>a0ee06f3ea721151a9bfbf5873ef52d9f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEffectorLinear &gt;</type>
+      <name>CreateLinear</name>
+      <anchorfile>structiParticleBuiltinEffectorFactory.html</anchorfile>
+      <anchor>a7225b4487dd8065385affca54493f44f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEffectorVelocityField &gt;</type>
+      <name>CreateVelocityField</name>
+      <anchorfile>structiParticleBuiltinEffectorFactory.html</anchorfile>
+      <anchor>aac441a9fe226bcce5fabfba57f5d163a</anchor>
+      <arglist>() const =0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iParticleBuiltinEffectorForce</name>
@@ -99418,6 +99467,25 @@
       <anchorfile>structiParticleBuiltinEffectorForce.html</anchorfile>
       <anchor>a9e595938c85b783e78a10933c2f712e6</anchor>
       <arglist>(const csVector3 &amp;magnitude)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iParticleBuiltinEffectorLight</name>
+    <filename>structiParticleBuiltinEffectorLight.html</filename>
+    <base>iParticleEffector</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetInitialCutoffDistance</name>
+      <anchorfile>structiParticleBuiltinEffectorLight.html</anchorfile>
+      <anchor>aa697009c91642e9826769907a94b6e55</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetInitialCutoffDistance</name>
+      <anchorfile>structiParticleBuiltinEffectorLight.html</anchorfile>
+      <anchor>a851866af6aa0d4dfab4ab7382c517e03</anchor>
+      <arglist>(float distance)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -99660,9 +99728,202 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>iParticleBuiltinEmitterBase</name>
+    <filename>structiParticleBuiltinEmitterBase.html</filename>
+    <base>iParticleEmitter</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetInitialVelocity</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a3578e553ecdfa6aa74e7e99c88fd6eba</anchor>
+      <arglist>(csVector3 &amp;linear, csVector3 &amp;angular) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csParticleBuiltinEmitterPlacement</type>
+      <name>GetParticlePlacement</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>aa27357301e1f2538cd351201bceb83c0</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetPosition</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a51d3156917ef177e47803cc52c20e09f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetUniformVelocity</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a95899105882eaa0c1a357ddef01dd249</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetInitialVelocity</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a04891451231a333b28163269c5de2562</anchor>
+      <arglist>(const csVector3 &amp;linear, const csVector3 &amp;angular)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetParticlePlacement</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a0b341dffe471dd08d53cd76c8aab187f</anchor>
+      <arglist>(csParticleBuiltinEmitterPlacement place)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPosition</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>a626ab6780b0327bfc0772c69c41e5d93</anchor>
+      <arglist>(const csVector3 &amp;position)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetUniformVelocity</name>
+      <anchorfile>structiParticleBuiltinEmitterBase.html</anchorfile>
+      <anchor>ab2fe190717ce29dbe5af3621be5af40d</anchor>
+      <arglist>(bool uniform)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iParticleBuiltinEmitterBox</name>
+    <filename>structiParticleBuiltinEmitterBox.html</filename>
+    <base>iParticleBuiltinEmitterBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csOBB &amp;</type>
+      <name>GetBox</name>
+      <anchorfile>structiParticleBuiltinEmitterBox.html</anchorfile>
+      <anchor>a52521113356eb39270347860bccfa7a4</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBox</name>
+      <anchorfile>structiParticleBuiltinEmitterBox.html</anchorfile>
+      <anchor>a4a30ed57bba8bee6b4afb6a7024e05c3</anchor>
+      <arglist>(const csOBB &amp;box)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iParticleBuiltinEmitterCone</name>
+    <filename>structiParticleBuiltinEmitterCone.html</filename>
+    <base>iParticleBuiltinEmitterBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetConeAngle</name>
+      <anchorfile>structiParticleBuiltinEmitterCone.html</anchorfile>
+      <anchor>a3e7099ccb5536fac465fd1893ce8dc35</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetExtent</name>
+      <anchorfile>structiParticleBuiltinEmitterCone.html</anchorfile>
+      <anchor>af4b933f91b2e9e8da2b59852048a1536</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetConeAngle</name>
+      <anchorfile>structiParticleBuiltinEmitterCone.html</anchorfile>
+      <anchor>abdcf13333608620d53fafddd84694952</anchor>
+      <arglist>(float angle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetExtent</name>
+      <anchorfile>structiParticleBuiltinEmitterCone.html</anchorfile>
+      <anchor>a5cc310d9b4c8189564c2713ee26c2c44</anchor>
+      <arglist>(const csVector3 &amp;extent)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iParticleBuiltinEmitterCylinder</name>
+    <filename>structiParticleBuiltinEmitterCylinder.html</filename>
+    <base>iParticleBuiltinEmitterBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csVector3 &amp;</type>
+      <name>GetExtent</name>
+      <anchorfile>structiParticleBuiltinEmitterCylinder.html</anchorfile>
+      <anchor>a266eacccf75bb271db18ee543722a32f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetRadius</name>
+      <anchorfile>structiParticleBuiltinEmitterCylinder.html</anchorfile>
+      <anchor>adfcc15555b7d2f8a3b0d4e43f81500f8</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetExtent</name>
+      <anchorfile>structiParticleBuiltinEmitterCylinder.html</anchorfile>
+      <anchor>a610b8ac5aaf089999722c120732fe986</anchor>
+      <arglist>(const csVector3 &amp;extent)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRadius</name>
+      <anchorfile>structiParticleBuiltinEmitterCylinder.html</anchorfile>
+      <anchor>af3f6829214bb745deaf12f498579460c</anchor>
+      <arglist>(float radius)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>iParticleBuiltinEmitterFactory</name>
     <filename>structiParticleBuiltinEmitterFactory.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEmitterBox &gt;</type>
+      <name>CreateBox</name>
+      <anchorfile>structiParticleBuiltinEmitterFactory.html</anchorfile>
+      <anchor>ae46e8bf0b913a5992ab6c40b5687d072</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEmitterCone &gt;</type>
+      <name>CreateCone</name>
+      <anchorfile>structiParticleBuiltinEmitterFactory.html</anchorfile>
+      <anchor>ae01dad79542dfd3d2e23115384979551</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEmitterCylinder &gt;</type>
+      <name>CreateCylinder</name>
+      <anchorfile>structiParticleBuiltinEmitterFactory.html</anchorfile>
+      <anchor>aaff9a7dd473d2f9a161dea3e6ed1178e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iParticleBuiltinEmitterSphere &gt;</type>
+      <name>CreateSphere</name>
+      <anchorfile>structiParticleBuiltinEmitterFactory.html</anchorfile>
+      <anchor>a8bd46a39d996e58abfb06bd13116a252</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iParticleBuiltinEmitterSphere</name>
+    <filename>structiParticleBuiltinEmitterSphere.html</filename>
+    <base>iParticleBuiltinEmitterBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetRadius</name>
+      <anchorfile>structiParticleBuiltinEmitterSphere.html</anchorfile>
+      <anchor>ad94573ccc4f657bca48a861dc8eb4dcf</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRadius</name>
+      <anchorfile>structiParticleBuiltinEmitterSphere.html</anchorfile>
+      <anchor>af28bd57be37e0890e6f931d03f7568f3</anchor>
+      <arglist>(float radius)=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iParticleEffector</name>
@@ -114357,6 +114618,7 @@
     <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
+    <namespace>CS::Material</namespace>
     <namespace>CS::Math</namespace>
     <namespace>CS::Memory</namespace>
     <namespace>CS::Mesh</namespace>
@@ -121502,6 +121764,11 @@
       <anchor>af72b2e23e0c6b4ae8f52c90b55f937a6</anchor>
       <arglist>(iMeshWrapper *mesh, iEngine *engine, int maxlights, ShadowType shadow_type=CS_SHADOW_NONE)</arglist>
     </member>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Material</name>
+    <filename>namespaceCS_1_1Material.html</filename>
+    <class kind="class">CS::Material::MaterialBuilder</class>
   </compound>
   <compound kind="class">
     <name>CS::Material::MaterialBuilder</name>
