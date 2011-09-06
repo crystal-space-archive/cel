@@ -77685,6 +77685,41 @@
       <anchor>a2eb53f1b6dfeb25eb847161457a17f6b</anchor>
       <arglist>() const </arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Subtract</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>a675577307bc122a453992d9dda5293c9</anchor>
+      <arglist>(const csSet &amp;otherSet)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Union</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>adcb89835110450aaa892c8adada5a543</anchor>
+      <arglist>(const csSet &amp;otherSet)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend csSet</type>
+      <name>Intersect</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>a806536e1140367af81c7579cfd5cc84b</anchor>
+      <arglist>(const csSet &amp;s1, const csSet &amp;s2)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend csSet</type>
+      <name>Subtract</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>a1cd0322339a1ebc419fde9d3a78b51ee</anchor>
+      <arglist>(const csSet &amp;s1, const csSet &amp;s2)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend csSet</type>
+      <name>Union</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>a4b96437b3b1ae81ec391809586ffae3a</anchor>
+      <arglist>(const csSet &amp;s1, const csSet &amp;s2)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csSet::GlobalIterator</name>
