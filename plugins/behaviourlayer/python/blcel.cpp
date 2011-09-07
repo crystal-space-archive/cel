@@ -5175,9 +5175,11 @@ iPcMechanicsSystem * celGetSetMechanicsSystem (iCelPlLayer *pl, iCelEntity *enti
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsSystem> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsSystem> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsSystem, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsSystem> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsSystem);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5196,9 +5198,11 @@ iPcMechanicsSystem * celGetMechanicsSystem (iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsSystem> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsSystem> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsSystem, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsSystem> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsSystem);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5240,9 +5244,11 @@ iPcMechanicsObject * celGetSetMechanicsObject (iCelPlLayer *pl, iCelEntity *enti
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsObject> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsObject> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsObject, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsObject> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsObject);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5261,9 +5267,11 @@ iPcMechanicsObject * celGetMechanicsObject (iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsObject> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsObject> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsObject, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsObject> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsObject);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5313,9 +5321,11 @@ iPcMechanicsJoint * celGetSetMechanicsJoint (iCelPlLayer *pl, iCelEntity *entity
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsJoint> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsJoint> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsJoint, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsJoint> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsJoint);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5334,9 +5344,11 @@ iPcMechanicsJoint * celGetMechanicsJoint (iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsJoint> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsJoint> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsJoint, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsJoint> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsJoint);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5388,9 +5400,11 @@ iPcMechanicsThruster * celGetSetMechanicsThrusterReactionary (iCelPlLayer *pl, i
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThruster> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsThruster> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsThruster, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsThruster> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsThruster);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5409,9 +5423,11 @@ iPcMechanicsThruster * celGetMechanicsThrusterReactionary (iCelEntity *entity, c
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThruster> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsThruster> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsThruster, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsThruster> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsThruster);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5453,9 +5469,11 @@ iPcMechanicsBalancedGroup * celGetSetMechanicsBalancedGroup (iCelPlLayer *pl, iC
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsBalancedGroup> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsBalancedGroup, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsBalancedGroup);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5474,9 +5492,11 @@ iPcMechanicsBalancedGroup * celGetMechanicsBalancedGroup (iCelEntity *entity, co
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsBalancedGroup> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsBalancedGroup, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsBalancedGroup> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsBalancedGroup);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5518,9 +5538,11 @@ iPcMechanicsThrusterController * celGetSetMechanicsThrusterController (iCelPlLay
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThrusterController> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMechanicsThrusterController> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsThrusterController, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMechanicsThrusterController> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsThrusterController);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5539,9 +5561,11 @@ iPcMechanicsThrusterController * celGetMechanicsThrusterController (iCelEntity *
   CS_ASSERT (entity != 0);
   csRef<iPcMechanicsThrusterController> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMechanicsThrusterController> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMechanicsThrusterController, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMechanicsThrusterController> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMechanicsThrusterController);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5624,9 +5648,11 @@ iPcBillboard * celGetSetBillboard (iCelPlLayer *pl, iCelEntity *entity, const ch
   CS_ASSERT (entity != 0);
   csRef<iPcBillboard> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcBillboard> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcBillboard, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcBillboard> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcBillboard);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5645,9 +5671,11 @@ iPcBillboard * celGetBillboard (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcBillboard> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcBillboard> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcBillboard, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcBillboard> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcBillboard);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5698,9 +5726,11 @@ iPcRegion * celGetSetRegion (iCelPlLayer *pl, iCelEntity *entity, const char* ta
   CS_ASSERT (entity != 0);
   csRef<iPcRegion> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcRegion> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcRegion, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcRegion> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcRegion);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5719,9 +5749,11 @@ iPcRegion * celGetRegion (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcRegion> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcRegion> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcRegion, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcRegion> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcRegion);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5778,9 +5810,11 @@ iPcZoneManager * celGetSetZoneManager (iCelPlLayer *pl, iCelEntity *entity, cons
   CS_ASSERT (entity != 0);
   csRef<iPcZoneManager> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcZoneManager> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcZoneManager, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcZoneManager> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcZoneManager);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5799,9 +5833,11 @@ iPcZoneManager * celGetZoneManager (iCelEntity *entity, const char* tagname = 0 
   CS_ASSERT (entity != 0);
   csRef<iPcZoneManager> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcZoneManager> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcZoneManager, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcZoneManager> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcZoneManager);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5841,9 +5877,11 @@ iPcCommandInput * celGetSetCommandInput (iCelPlLayer *pl, iCelEntity *entity, co
   CS_ASSERT (entity != 0);
   csRef<iPcCommandInput> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcCommandInput> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCommandInput, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcCommandInput> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCommandInput);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5862,9 +5900,11 @@ iPcCommandInput * celGetCommandInput (iCelEntity *entity, const char* tagname = 
   CS_ASSERT (entity != 0);
   csRef<iPcCommandInput> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcCommandInput> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCommandInput, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcCommandInput> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCommandInput);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -5924,9 +5964,11 @@ iPcLinearMovement * celGetSetLinearMovement (iCelPlLayer *pl, iCelEntity *entity
   CS_ASSERT (entity != 0);
   csRef<iPcLinearMovement> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcLinearMovement> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcLinearMovement, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcLinearMovement> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcLinearMovement);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -5945,9 +5987,11 @@ iPcLinearMovement * celGetLinearMovement (iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcLinearMovement> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcLinearMovement> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcLinearMovement, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcLinearMovement> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcLinearMovement);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6015,9 +6059,11 @@ iPcActorMove * celGetSetActorMove (iCelPlLayer *pl, iCelEntity *entity, const ch
   CS_ASSERT (entity != 0);
   csRef<iPcActorMove> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcActorMove> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcActorMove, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcActorMove> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcActorMove);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6036,9 +6082,11 @@ iPcActorMove * celGetActorMove (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcActorMove> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcActorMove> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcActorMove, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcActorMove> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcActorMove);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6072,9 +6120,11 @@ iPcActorAnalog * celGetSetActorAnalog (iCelPlLayer *pl, iCelEntity *entity, cons
   CS_ASSERT (entity != 0);
   csRef<iPcActorAnalog> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcActorAnalog> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcActorAnalog, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcActorAnalog> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcActorAnalog);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6093,9 +6143,11 @@ iPcActorAnalog * celGetActorAnalog (iCelEntity *entity, const char* tagname = 0 
   CS_ASSERT (entity != 0);
   csRef<iPcActorAnalog> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcActorAnalog> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcActorAnalog, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcActorAnalog> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcActorAnalog);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6131,9 +6183,11 @@ iPcAnalogMotion * celGetSetAnalogMotion (iCelPlLayer *pl, iCelEntity *entity, co
   CS_ASSERT (entity != 0);
   csRef<iPcAnalogMotion> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcAnalogMotion> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcAnalogMotion, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcAnalogMotion> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcAnalogMotion);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6152,9 +6206,11 @@ iPcAnalogMotion * celGetAnalogMotion (iCelEntity *entity, const char* tagname = 
   CS_ASSERT (entity != 0);
   csRef<iPcAnalogMotion> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcAnalogMotion> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcAnalogMotion, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcAnalogMotion> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcAnalogMotion);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6190,9 +6246,11 @@ iPcJump * celGetSetJump (iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcJump> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcJump> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcJump, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcJump> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcJump);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6211,9 +6269,11 @@ iPcJump * celGetJump (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcJump> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcJump> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcJump, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcJump> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcJump);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6279,9 +6339,11 @@ iPcDefaultCamera * celGetSetDefaultCamera (iCelPlLayer *pl, iCelEntity *entity, 
   CS_ASSERT (entity != 0);
   csRef<iPcDefaultCamera> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcDefaultCamera> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDefaultCamera, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcDefaultCamera> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDefaultCamera);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6300,9 +6362,11 @@ iPcDefaultCamera * celGetDefaultCamera (iCelEntity *entity, const char* tagname 
   CS_ASSERT (entity != 0);
   csRef<iPcDefaultCamera> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcDefaultCamera> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDefaultCamera, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcDefaultCamera> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDefaultCamera);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6341,9 +6405,11 @@ iPcSimpleCamera * celGetSetSimpleCamera (iCelPlLayer *pl, iCelEntity *entity, co
   CS_ASSERT (entity != 0);
   csRef<iPcSimpleCamera> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSimpleCamera> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSimpleCamera, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSimpleCamera> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSimpleCamera);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6362,9 +6428,11 @@ iPcSimpleCamera * celGetSimpleCamera (iCelEntity *entity, const char* tagname = 
   CS_ASSERT (entity != 0);
   csRef<iPcSimpleCamera> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSimpleCamera> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSimpleCamera, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSimpleCamera> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSimpleCamera);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6426,9 +6494,11 @@ iPcNewCamera * celGetSetNewCamera (iCelPlLayer *pl, iCelEntity *entity, const ch
   CS_ASSERT (entity != 0);
   csRef<iPcNewCamera> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcNewCamera> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcNewCamera, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcNewCamera> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcNewCamera);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6447,9 +6517,11 @@ iPcNewCamera * celGetNewCamera (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcNewCamera> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcNewCamera> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcNewCamera, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcNewCamera> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcNewCamera);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6485,9 +6557,11 @@ iPcDelegateCamera * celGetSetDelegateCamera (iCelPlLayer *pl, iCelEntity *entity
   CS_ASSERT (entity != 0);
   csRef<iPcDelegateCamera> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcDelegateCamera> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDelegateCamera, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcDelegateCamera> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDelegateCamera);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6506,9 +6580,11 @@ iPcDelegateCamera * celGetDelegateCamera (iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcDelegateCamera> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcDelegateCamera> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDelegateCamera, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcDelegateCamera> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDelegateCamera);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6544,9 +6620,11 @@ iPcTrackingCamera * celGetSetTrackingCamera (iCelPlLayer *pl, iCelEntity *entity
   CS_ASSERT (entity != 0);
   csRef<iPcTrackingCamera> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcTrackingCamera> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTrackingCamera, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcTrackingCamera> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTrackingCamera);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6565,9 +6643,11 @@ iPcTrackingCamera * celGetTrackingCamera (iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcTrackingCamera> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcTrackingCamera> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTrackingCamera, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcTrackingCamera> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTrackingCamera);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6620,9 +6700,11 @@ iPcMeshSelect * celGetSetMeshSelect (iCelPlLayer *pl, iCelEntity *entity, const 
   CS_ASSERT (entity != 0);
   csRef<iPcMeshSelect> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMeshSelect> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMeshSelect, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMeshSelect> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMeshSelect);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6641,9 +6723,11 @@ iPcMeshSelect * celGetMeshSelect (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcMeshSelect> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMeshSelect> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMeshSelect, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMeshSelect> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMeshSelect);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6688,9 +6772,11 @@ iPcMesh * celGetSetMesh (iCelPlLayer *pl, iCelEntity *entity, const char* tagnam
   CS_ASSERT (entity != 0);
   csRef<iPcMesh> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMesh> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMesh, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMesh> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMesh);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6709,9 +6795,11 @@ iPcMesh * celGetMesh (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcMesh> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMesh> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMesh, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMesh> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMesh);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6747,9 +6835,11 @@ iPcTimer * celGetSetTimer (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcTimer> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcTimer> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTimer, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcTimer> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTimer);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6768,9 +6858,11 @@ iPcTimer * celGetTimer (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcTimer> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcTimer> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTimer, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcTimer> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTimer);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6808,9 +6900,11 @@ iPcTrigger * celGetSetTrigger (iCelPlLayer *pl, iCelEntity *entity, const char* 
   CS_ASSERT (entity != 0);
   csRef<iPcTrigger> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcTrigger> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTrigger, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcTrigger> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTrigger);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6829,9 +6923,11 @@ iPcTrigger * celGetTrigger (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcTrigger> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcTrigger> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTrigger, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcTrigger> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTrigger);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6871,9 +6967,11 @@ iPcSteer * celGetSetSteer (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcSteer> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSteer> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSteer, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSteer> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSteer);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6892,9 +6990,11 @@ iPcSteer * celGetSteer (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcSteer> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSteer> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSteer, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSteer> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSteer);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6935,9 +7035,11 @@ iPcPathFinder * celGetSetPathFinder (iCelPlLayer *pl, iCelEntity *entity, const 
   CS_ASSERT (entity != 0);
   csRef<iPcPathFinder> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcPathFinder> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcPathFinder, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcPathFinder> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcPathFinder);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -6956,9 +7058,11 @@ iPcPathFinder * celGetPathFinder (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcPathFinder> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcPathFinder> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcPathFinder, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcPathFinder> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcPathFinder);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -6999,9 +7103,11 @@ iPcSpawn * celGetSetSpawn (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcSpawn> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSpawn> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSpawn, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSpawn> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSpawn);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7020,9 +7126,11 @@ iPcSpawn * celGetSpawn (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcSpawn> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSpawn> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSpawn, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSpawn> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSpawn);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7059,9 +7167,11 @@ iPcProjectile * celGetSetProjectile (iCelPlLayer *pl, iCelEntity *entity, const 
   CS_ASSERT (entity != 0);
   csRef<iPcProjectile> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcProjectile> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcProjectile, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcProjectile> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcProjectile);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7080,9 +7190,11 @@ iPcProjectile * celGetProjectile (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcProjectile> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcProjectile> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcProjectile, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcProjectile> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcProjectile);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7121,9 +7233,11 @@ iPcSolid * celGetSetSolid (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcSolid> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSolid> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSolid, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSolid> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSolid);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7142,9 +7256,11 @@ iPcSolid * celGetSolid (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcSolid> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSolid> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSolid, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSolid> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSolid);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7190,9 +7306,11 @@ iPcGravity * celGetSetGravity (iCelPlLayer *pl, iCelEntity *entity, const char* 
   CS_ASSERT (entity != 0);
   csRef<iPcGravity> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcGravity> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcGravity, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcGravity> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcGravity);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7211,9 +7329,11 @@ iPcGravity * celGetGravity (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcGravity> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcGravity> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcGravity, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcGravity> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcGravity);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7251,9 +7371,11 @@ iPcMovable * celGetSetMovable (iCelPlLayer *pl, iCelEntity *entity, const char* 
   CS_ASSERT (entity != 0);
   csRef<iPcMovable> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMovable> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMovable, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMovable> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMovable);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7272,9 +7394,11 @@ iPcMovable * celGetMovable (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcMovable> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMovable> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMovable, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMovable> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMovable);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7318,9 +7442,11 @@ iPcInventory * celGetSetInventory (iCelPlLayer *pl, iCelEntity *entity, const ch
   CS_ASSERT (entity != 0);
   csRef<iPcInventory> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcInventory> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcInventory, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcInventory> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcInventory);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7339,9 +7465,11 @@ iPcInventory * celGetInventory (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcInventory> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcInventory> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcInventory, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcInventory> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcInventory);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7377,9 +7505,11 @@ iPcCharacteristics * celGetSetCharacteristics (iCelPlLayer *pl, iCelEntity *enti
   CS_ASSERT (entity != 0);
   csRef<iPcCharacteristics> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcCharacteristics> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCharacteristics, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcCharacteristics> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCharacteristics);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7398,9 +7528,11 @@ iPcCharacteristics * celGetCharacteristics (iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcCharacteristics> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcCharacteristics> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCharacteristics, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcCharacteristics> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCharacteristics);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7440,9 +7572,11 @@ iPcTooltip * celGetSetToolTip (iCelPlLayer *pl, iCelEntity *entity, const char* 
   CS_ASSERT (entity != 0);
   csRef<iPcTooltip> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcTooltip> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTooltip, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcTooltip> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTooltip);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7461,9 +7595,11 @@ iPcTooltip * celGetToolTip (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcTooltip> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcTooltip> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcTooltip, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcTooltip> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcTooltip);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7507,9 +7643,11 @@ iPcSoundSource * celGetSetSoundSource (iCelPlLayer *pl, iCelEntity *entity, cons
   CS_ASSERT (entity != 0);
   csRef<iPcSoundSource> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSoundSource> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSoundSource, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSoundSource> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSoundSource);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7528,9 +7666,11 @@ iPcSoundSource * celGetSoundSource (iCelEntity *entity, const char* tagname = 0 
   CS_ASSERT (entity != 0);
   csRef<iPcSoundSource> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSoundSource> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSoundSource, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSoundSource> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSoundSource);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7564,9 +7704,11 @@ iPcSoundListener * celGetSetSoundListener (iCelPlLayer *pl, iCelEntity *entity, 
   CS_ASSERT (entity != 0);
   csRef<iPcSoundListener> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcSoundListener> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSoundListener, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcSoundListener> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSoundListener);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7585,9 +7727,11 @@ iPcSoundListener * celGetSoundListener (iCelEntity *entity, const char* tagname 
   CS_ASSERT (entity != 0);
   csRef<iPcSoundListener> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcSoundListener> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcSoundListener, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcSoundListener> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcSoundListener);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7697,9 +7841,11 @@ iPcProperties * celGetSetProperties (iCelPlLayer *pl, iCelEntity *entity, const 
   CS_ASSERT (entity != 0);
   csRef<iPcProperties> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcProperties> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcProperties, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcProperties> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcProperties);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7718,9 +7864,11 @@ iPcProperties * celGetProperties (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcProperties> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcProperties> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcProperties, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcProperties> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcProperties);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7761,9 +7909,11 @@ iPcMover * celGetSetMover (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcMover> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMover> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMover, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMover> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMover);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7782,9 +7932,11 @@ iPcMover * celGetMover (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcMover> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMover> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMover, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMover> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMover);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7826,9 +7978,11 @@ iPcHover * celGetSetHover (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcHover> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcHover> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcHover, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcHover> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcHover);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7847,9 +8001,11 @@ iPcHover * celGetHover (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcHover> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcHover> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcHover, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcHover> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcHover);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7897,9 +8053,11 @@ iPcCraftController * celGetSetCraftController (iCelPlLayer *pl, iCelEntity *enti
   CS_ASSERT (entity != 0);
   csRef<iPcCraftController> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcCraftController> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCraftController, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcCraftController> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCraftController);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -7918,9 +8076,11 @@ iPcCraftController * celGetCraftController (iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcCraftController> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcCraftController> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcCraftController, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcCraftController> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcCraftController);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -7987,9 +8147,11 @@ iPcWheeled * celGetSetWheeled (iCelPlLayer *pl, iCelEntity *entity, const char* 
   CS_ASSERT (entity != 0);
   csRef<iPcWheeled> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcWheeled> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcWheeled, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcWheeled> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcWheeled);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -8008,9 +8170,11 @@ iPcWheeled * celGetWheeled (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcWheeled> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcWheeled> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcWheeled, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcWheeled> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcWheeled);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -8058,9 +8222,11 @@ iPcMeshDeform * celGetSetMeshDeform (iCelPlLayer *pl, iCelEntity *entity, const 
   CS_ASSERT (entity != 0);
   csRef<iPcMeshDeform> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcMeshDeform> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMeshDeform, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcMeshDeform> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMeshDeform);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -8079,9 +8245,11 @@ iPcMeshDeform * celGetMeshDeform (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcMeshDeform> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcMeshDeform> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcMeshDeform, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcMeshDeform> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcMeshDeform);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -8127,9 +8295,11 @@ iPcDamage * celGetSetDamage (iCelPlLayer *pl, iCelEntity *entity, const char* ta
   CS_ASSERT (entity != 0);
   csRef<iPcDamage> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcDamage> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDamage, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcDamage> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDamage);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -8148,9 +8318,11 @@ iPcDamage * celGetDamage (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcDamage> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcDamage> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcDamage, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcDamage> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcDamage);
   if (!pc.IsValid()) return 0;
   return pc;
 }
@@ -8197,9 +8369,11 @@ iPcQuest * celGetSetQuest (iCelPlLayer *pl, iCelEntity *entity, const char* tagn
   CS_ASSERT (entity != 0);
   csRef<iPcQuest> pclm;
   if (tagname)
-    pclm =    (celQueryPropertyClassTag<iPcQuest> (entity->GetPropertyClassList (),tagname));
+    pclm = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcQuest, tagname);
   else
-    pclm =    (celQueryPropertyClass<iPcQuest> (entity->GetPropertyClassList ()));
+    pclm = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcQuest);
   if (pclm.IsValid()) return pclm;
   csRef<iCelPropertyClass> pc;
   if (tagname)
@@ -8218,9 +8392,11 @@ iPcQuest * celGetQuest (iCelEntity *entity, const char* tagname = 0 )
   CS_ASSERT (entity != 0);
   csRef<iPcQuest> pc;
   if (tagname)
-    pc =    (celQueryPropertyClassTag<iPcQuest> (entity->GetPropertyClassList (),tagname));
+    pc = CEL_QUERY_PROPCLASS_TAG (
+      entity->GetPropertyClassList (), iPcQuest, tagname);
   else
-    pc =    (celQueryPropertyClass<iPcQuest> (entity->GetPropertyClassList ()));
+    pc = CEL_QUERY_PROPCLASS (
+      entity->GetPropertyClassList (), iPcQuest);
   if (!pc.IsValid()) return 0;
   return pc;
 }

@@ -29457,6 +29457,7 @@
     <filename>igraphic_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="animimg_8h" name="animimg.h" local="yes" imported="no">igraphic/animimg.h</includes>
+    <includes id="dxtcompress_8h" name="dxtcompress.h" local="yes" imported="no">igraphic/dxtcompress.h</includes>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
     <includes id="imageio_8h" name="imageio.h" local="yes" imported="no">igraphic/imageio.h</includes>
   </compound>
@@ -29466,6 +29467,23 @@
     <filename>animimg_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iAnimatedImage</class>
+  </compound>
+  <compound kind="file">
+    <name>dxtcompress.h</name>
+    <path>/tmp/tmp2/trunk/include/igraphic/</path>
+    <filename>dxtcompress_8h</filename>
+    <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <class kind="struct">CS::Graphics::UncompressedDXTDataLayout</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Graphics</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_DXTDECOMPRESSOR_DEFAULT</name>
+      <anchorfile>dxtcompress_8h.html</anchorfile>
+      <anchor>a11226fae7ba8073dc925c867ee713213</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>image.h</name>
@@ -38607,6 +38625,7 @@
     <class kind="struct">iImageIO</class>
     <class kind="struct">iNativeWindow</class>
     <class kind="struct">iNativeWindowManager</class>
+    <namespace>CS</namespace>
     <member kind="define">
       <type>#define</type>
       <name>CS_FONT_DEFAULT_GLYPH</name>
@@ -121205,6 +121224,7 @@
     <class kind="class">CS::Graphics::RenderPriority</class>
     <class kind="class">CS::Graphics::ShaderVariableContextImpl</class>
     <class kind="class">CS::Graphics::ShaderVarNameParser</class>
+    <class kind="struct">CS::Graphics::UncompressedDXTDataLayout</class>
     <member kind="enumeration">
       <name>AlphaTestFunction</name>
       <anchorfile>namespaceCS_1_1Graphics.html</anchorfile>
@@ -121732,6 +121752,45 @@
       <anchorfile>classCS_1_1Graphics_1_1ShaderVarNameParser.html</anchorfile>
       <anchor>a43a94fe55b2945d42dddb6ad0d51e5ba</anchor>
       <arglist>(const char *identifier)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Graphics::UncompressedDXTDataLayout</name>
+    <filename>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Fix</name>
+      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
+      <anchor>a4783914d535899f87758c98f12c73ece</anchor>
+      <arglist>(size_t uncompressedSize)</arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>blocksPerRow</name>
+      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
+      <anchor>afa6a4c068f471b1934fd5f3bdcd6477b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>bytesToNextBlock</name>
+      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
+      <anchor>af4cdce2d1407c2b37db88af6a01cf37c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>bytesToNextPixel</name>
+      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
+      <anchor>a780b4e515ccf2abd44c5eb20169a1558</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>bytesToNextRow</name>
+      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
+      <anchor>ac3e46fcee9d3234b34883d99aaaa2914</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
