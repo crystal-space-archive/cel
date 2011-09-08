@@ -4725,6 +4725,13 @@ SWIG_AsVal_unsigned_SS_int (PyObject * obj, unsigned int *val)
   return res;
 }
 
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_unsigned_SS_int  (unsigned int value)
+{    
+  return SWIG_From_unsigned_SS_long  (value);
+}
+
 SWIGINTERN size_t iCelPlLayer_EntityTemplateCount_get(iCelPlLayer *self){ return (size_t)(self->GetEntityTemplateCount()); }
 SWIGINTERN size_t iCelPlLayer_EntityCount_get(iCelPlLayer *self){ return (size_t)(self->GetEntityCount()); }
 SWIGINTERN void iCelPlLayer_EntityAddonAllowed_set(iCelPlLayer *self,bool _val){ self->SetEntityAddonAllowed(_val); }
@@ -5915,13 +5922,6 @@ iPcCommandInput *scfQuery_iPcCommandInput (iCelPropertyClass *pc)
   csRef<iPcCommandInput> iface = scfQueryInterface<iPcCommandInput>(pc);
   if (iface) iface->IncRef ();
   return iface;
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_unsigned_SS_int  (unsigned int value)
-{    
-  return SWIG_From_unsigned_SS_long  (value);
 }
 
 SWIGINTERN void iPcLinearMovement_Anchor_set(iPcLinearMovement *self,iPcMesh *_val){ self->SetAnchor(_val); }
@@ -21458,6 +21458,46 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelPlLayer_GetTicksLeft(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iCelTimerListener *arg2 = (iCelTimerListener *) 0 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  csTicks result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_GetTicksLeft",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_GetTicksLeft" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelTimerListener, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_GetTicksLeft" "', argument " "2"" of type '" "iCelTimerListener *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelTimerListener * >(argp2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "iCelPlLayer_GetTicksLeft" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  result = (csTicks)(arg1)->GetTicksLeft(arg2,arg3);
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelPlLayer_AddScope(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
@@ -35557,6 +35597,36 @@ SWIGINTERN PyObject *_wrap_iPcMechanicsObject_GetBody(PyObject *SWIGUNUSEDPARM(s
   arg1 = reinterpret_cast< iPcMechanicsObject * >(argp1);
   result = (iRigidBody *)(arg1)->GetBody();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iRigidBody, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcMechanicsObject_SetBody(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcMechanicsObject *arg1 = (iPcMechanicsObject *) 0 ;
+  iRigidBody *arg2 = (iRigidBody *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcMechanicsObject_SetBody",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcMechanicsObject, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcMechanicsObject_SetBody" "', argument " "1"" of type '" "iPcMechanicsObject *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcMechanicsObject * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iRigidBody, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iPcMechanicsObject_SetBody" "', argument " "2"" of type '" "iRigidBody *""'"); 
+  }
+  arg2 = reinterpret_cast< iRigidBody * >(argp2);
+  (arg1)->SetBody(arg2);
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
@@ -117581,6 +117651,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPlLayer_CallbackOnce", _wrap_iCelPlLayer_CallbackOnce, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_RemoveCallbackEveryFrame", _wrap_iCelPlLayer_RemoveCallbackEveryFrame, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_RemoveCallbackOnce", _wrap_iCelPlLayer_RemoveCallbackOnce, METH_VARARGS, NULL},
+	 { (char *)"iCelPlLayer_GetTicksLeft", _wrap_iCelPlLayer_GetTicksLeft, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_AddScope", _wrap_iCelPlLayer_AddScope, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_GetClassEntitiesList", _wrap_iCelPlLayer_GetClassEntitiesList, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_SendMessage", _wrap_iCelPlLayer_SendMessage, METH_VARARGS, NULL},
@@ -117924,6 +117995,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcMechanicsObject_SetMechanicsSystem", _wrap_iPcMechanicsObject_SetMechanicsSystem, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_GetMechanicsSystem", _wrap_iPcMechanicsObject_GetMechanicsSystem, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_GetBody", _wrap_iPcMechanicsObject_GetBody, METH_VARARGS, NULL},
+	 { (char *)"iPcMechanicsObject_SetBody", _wrap_iPcMechanicsObject_SetBody, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_SetFriction", _wrap_iPcMechanicsObject_SetFriction, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_SetMass", _wrap_iPcMechanicsObject_SetMass, METH_VARARGS, NULL},
 	 { (char *)"iPcMechanicsObject_SetElasticity", _wrap_iPcMechanicsObject_SetElasticity, METH_VARARGS, NULL},
