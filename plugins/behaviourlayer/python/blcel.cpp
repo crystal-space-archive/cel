@@ -10215,12 +10215,64 @@ iCelPositionInfo *SwigDirector_pyPcCommon::QueryPositionInfo() {
 }
 
 
-void SwigDirector_pyPcCommon::TickEveryFrame() {
+void SwigDirector_pyPcCommon::Activate() {
   if (!swig_get_self()) {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 39;
+  const char * const swig_method_name = "Activate";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::PyObject_var args = PyTuple_New(0);
+  swig::PyObject_var result = PyObject_Call(method, (PyObject*) args, NULL);
+#else
+  swig::PyObject_var swig_method_name = PyString_FromString((char *)"Activate");
+  swig::PyObject_var result = PyObject_CallMethodObjArgs(swig_get_self(), (PyObject *) swig_method_name, NULL);
+#endif
+  if (result == NULL) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if (error != NULL) {
+        PyErr_Print ();
+        //throw Swig::DirectorMethodException();
+      }
+    }
+  }
+}
+
+
+void SwigDirector_pyPcCommon::Deactivate() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 40;
+  const char * const swig_method_name = "Deactivate";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::PyObject_var args = PyTuple_New(0);
+  swig::PyObject_var result = PyObject_Call(method, (PyObject*) args, NULL);
+#else
+  swig::PyObject_var swig_method_name = PyString_FromString((char *)"Deactivate");
+  swig::PyObject_var result = PyObject_CallMethodObjArgs(swig_get_self(), (PyObject *) swig_method_name, NULL);
+#endif
+  if (result == NULL) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if (error != NULL) {
+        PyErr_Print ();
+        //throw Swig::DirectorMethodException();
+      }
+    }
+  }
+}
+
+
+void SwigDirector_pyPcCommon::TickEveryFrame() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 41;
   const char * const swig_method_name = "TickEveryFrame";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var args = PyTuple_New(0);
@@ -10246,7 +10298,7 @@ void SwigDirector_pyPcCommon::TickOnce() {
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 40;
+  const size_t swig_method_index = 42;
   const char * const swig_method_name = "TickOnce";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var args = PyTuple_New(0);
@@ -10274,7 +10326,7 @@ void SwigDirector_pyPcCommon::MessageDispatcherRemoved(iMessageDispatcher *dispa
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 41;
+  const size_t swig_method_index = 43;
   const char * const swig_method_name = "MessageDispatcherRemoved";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0, NULL);
@@ -10308,7 +10360,7 @@ bool SwigDirector_pyPcCommon::ReceiveMessage(csStringID msg_id, iMessageSender *
     Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call pyPcCommon.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
-  const size_t swig_method_index = 42;
+  const size_t swig_method_index = 44;
   const char * const swig_method_name = "ReceiveMessage";
   PyObject* method = swig_get_method(swig_method_index, swig_method_name);
   swig::PyObject_var result = PyObject_CallFunctionObjArgs(method ,(PyObject *)obj0,(PyObject *)obj1,(PyObject *)obj2,(PyObject *)obj3, NULL);
@@ -22867,6 +22919,70 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelEntity_Activate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntity *arg1 = (iCelEntity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntity_Activate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntity_Activate" "', argument " "1"" of type '" "iCelEntity *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntity * >(argp1);
+  (arg1)->Activate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntity_Deactivate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntity *arg1 = (iCelEntity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntity_Deactivate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntity_Deactivate" "', argument " "1"" of type '" "iCelEntity *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntity * >(argp1);
+  (arg1)->Deactivate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntity_IsActive(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntity *arg1 = (iCelEntity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntity_IsActive",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntity_IsActive" "', argument " "1"" of type '" "iCelEntity const *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntity * >(argp1);
+  result = (bool)((iCelEntity const *)arg1)->IsActive();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelEntity_Object_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelEntity *arg1 = (iCelEntity *) 0 ;
@@ -32741,6 +32857,48 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClass_QueryPositionInfo(PyObject *SWIGUNU
   arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
   result = (iCelPositionInfo *)(arg1)->QueryPositionInfo();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelPositionInfo, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPropertyClass_Activate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_Activate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_Activate" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
+  (arg1)->Activate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPropertyClass_Deactivate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_Deactivate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_Deactivate" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
+  (arg1)->Deactivate();
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
@@ -103315,6 +103473,48 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuest_Activate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_Activate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_Activate" "', argument " "1"" of type '" "iQuest *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  (arg1)->Activate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuest_Deactivate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_Deactivate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_Deactivate" "', argument " "1"" of type '" "iQuest *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  (arg1)->Deactivate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuest_CurrentState_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuest *arg1 = (iQuest *) 0 ;
@@ -113155,6 +113355,48 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celPcCommon_Activate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Activate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Activate" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  (arg1)->Activate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Deactivate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Deactivate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Deactivate" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  (arg1)->Deactivate();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_celPcCommon_TickEveryFrame(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
@@ -117422,6 +117664,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelEntity_QueryMessageChannel", _wrap_iCelEntity_QueryMessageChannel, METH_VARARGS, NULL},
 	 { (char *)"iCelEntity_CreateTaggedMessageDispatcher", _wrap_iCelEntity_CreateTaggedMessageDispatcher, METH_VARARGS, NULL},
 	 { (char *)"iCelEntity_IsPositional", _wrap_iCelEntity_IsPositional, METH_VARARGS, NULL},
+	 { (char *)"iCelEntity_Activate", _wrap_iCelEntity_Activate, METH_VARARGS, NULL},
+	 { (char *)"iCelEntity_Deactivate", _wrap_iCelEntity_Deactivate, METH_VARARGS, NULL},
+	 { (char *)"iCelEntity_IsActive", _wrap_iCelEntity_IsActive, METH_VARARGS, NULL},
 	 { (char *)"iCelEntity_Object_get", _wrap_iCelEntity_Object_get, METH_VARARGS, NULL},
 	 { (char *)"iCelEntity_Name_set", _wrap_iCelEntity_Name_set, METH_VARARGS, NULL},
 	 { (char *)"iCelEntity_Name_get", _wrap_iCelEntity_Name_get, METH_VARARGS, NULL},
@@ -117645,6 +117890,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPropertyClass_GetPersistentData", _wrap_iCelPropertyClass_GetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_SetPersistentData", _wrap_iCelPropertyClass_SetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_QueryPositionInfo", _wrap_iCelPropertyClass_QueryPositionInfo, METH_VARARGS, NULL},
+	 { (char *)"iCelPropertyClass_Activate", _wrap_iCelPropertyClass_Activate, METH_VARARGS, NULL},
+	 { (char *)"iCelPropertyClass_Deactivate", _wrap_iCelPropertyClass_Deactivate, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_Name_set", _wrap_iCelPropertyClass_Name_set, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_Name_get", _wrap_iCelPropertyClass_Name_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_Tag_set", _wrap_iCelPropertyClass_Tag_set, METH_VARARGS, NULL},
@@ -119421,6 +119668,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuest_LoadState", _wrap_iQuest_LoadState, METH_VARARGS, NULL},
 	 { (char *)"iQuest_SaveState", _wrap_iQuest_SaveState, METH_VARARGS, NULL},
 	 { (char *)"iQuest_FindSequence", _wrap_iQuest_FindSequence, METH_VARARGS, NULL},
+	 { (char *)"iQuest_Activate", _wrap_iQuest_Activate, METH_VARARGS, NULL},
+	 { (char *)"iQuest_Deactivate", _wrap_iQuest_Deactivate, METH_VARARGS, NULL},
 	 { (char *)"iQuest_CurrentState_get", _wrap_iQuest_CurrentState_get, METH_VARARGS, NULL},
 	 { (char *)"delete_iQuest", _wrap_delete_iQuest, METH_VARARGS, NULL},
 	 { (char *)"iQuest_swigregister", iQuest_swigregister, METH_VARARGS, NULL},
@@ -119675,6 +119924,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celPcCommon_GetPersistentData", _wrap_celPcCommon_GetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_SetPersistentData", _wrap_celPcCommon_SetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_QueryPositionInfo", _wrap_celPcCommon_QueryPositionInfo, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Activate", _wrap_celPcCommon_Activate, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Deactivate", _wrap_celPcCommon_Deactivate, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_TickEveryFrame", _wrap_celPcCommon_TickEveryFrame, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_TickOnce", _wrap_celPcCommon_TickOnce, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_MessageDispatcherRemoved", _wrap_celPcCommon_MessageDispatcherRemoved, METH_VARARGS, NULL},
