@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="appelcmtest"
-	ProjectGUID="{3C4474A3-EA0F-9B52-C9B1-775FCCBC9F04}"
+	Name="plgui_inventory"
+	ProjectGUID="{6A9636D6-512D-EBEB-12D1-D1A0CF2C9AC8}"
 	SccProjectName=""
 	SccLocalPath="">
 	<Platforms>
@@ -13,10 +13,9 @@
 	<Configurations>
             		<Configuration
 			Name="ReleaseWithStaticLibs|Win32"
-			OutputDirectory="..\..\out\release8\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\release8\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release8\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\release8\build\plgui_inventory\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -27,14 +26,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release8\build\appelcmtest\Win32\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\release8\build\plgui_inventory\Win32\ui_inventory.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release8\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\release8\build\appelcmtest\"
-				ObjectFile="..\..\out\release8\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\release8\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\release8\build\plgui_inventory\"
+				ObjectFile="..\..\out\release8\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -51,11 +50,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\release8\build\appelcmtest\Win32\elcmtest.pdb"
-				SubSystem="2"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\release8\build\plgui_inventory\Win32\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release8\build\plgui_inventory\Win32\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\release8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -69,7 +70,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release8\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\release8\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release8\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release8\bin\&#x0D;&#x0A;"
@@ -81,7 +82,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -90,10 +91,9 @@
 		</Configuration>
       		<Configuration
 			Name="ReleaseWithDlls|Win32"
-			OutputDirectory="..\..\out\release8\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\release8\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release8\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\release8\build\plgui_inventory\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -104,14 +104,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release8\build\appelcmtest\Win32\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\release8\build\plgui_inventory\Win32\ui_inventory.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release8\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\release8\build\appelcmtest\"
-				ObjectFile="..\..\out\release8\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\release8\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\release8\build\plgui_inventory\"
+				ObjectFile="..\..\out\release8\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -128,11 +128,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\release8\build\appelcmtest\Win32\elcmtest.pdb"
-				SubSystem="2"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\release8\build\plgui_inventory\Win32\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release8\build\plgui_inventory\Win32\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\release8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -146,7 +148,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release8\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\release8\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release8\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release8\bin\&#x0D;&#x0A;"
@@ -158,7 +160,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -167,10 +169,9 @@
 		</Configuration>
                 		<Configuration
 			Name="DebugWithStaticLibs|Win32"
-			OutputDirectory="..\..\out\debug8\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\debug8\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug8\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\debug8\build\plgui_inventory\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -180,14 +181,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug8\build\appelcmtest\Win32\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\debug8\build\plgui_inventory\Win32\ui_inventory.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug8\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\debug8\build\appelcmtest\"
-				ObjectFile="..\..\out\debug8\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\debug8\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\debug8\build\plgui_inventory\"
+				ObjectFile="..\..\out\debug8\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -202,11 +203,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\debug8\build\appelcmtest\Win32\elcmtest.pdb"
-				SubSystem="1"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\debug8\build\plgui_inventory\Win32\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug8\build\plgui_inventory\Win32\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace_d.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\debug8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -220,7 +223,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug8\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\debug8\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug8\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug8\bin\&#x0D;&#x0A;"
@@ -232,7 +235,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -241,10 +244,9 @@
 		</Configuration>
       		<Configuration
 			Name="DebugWithDlls|Win32"
-			OutputDirectory="..\..\out\debug8\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\debug8\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug8\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\debug8\build\plgui_inventory\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -254,14 +256,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug8\build\appelcmtest\Win32\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\debug8\build\plgui_inventory\Win32\ui_inventory.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug8\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\debug8\build\appelcmtest\"
-				ObjectFile="..\..\out\debug8\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\debug8\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\debug8\build\plgui_inventory\"
+				ObjectFile="..\..\out\debug8\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -276,11 +278,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\debug8\build\appelcmtest\Win32\elcmtest.pdb"
-				SubSystem="1"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\debug8\build\plgui_inventory\Win32\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug8\build\plgui_inventory\Win32\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace_d.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\debug8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -294,7 +298,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug8\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\debug8\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug8\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug8\bin\&#x0D;&#x0A;"
@@ -306,7 +310,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -315,10 +319,9 @@
 		</Configuration>
                         		<Configuration
 			Name="ReleaseWithStaticLibs|x64"
-			OutputDirectory="..\..\out\release8-x64\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\release8-x64\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release8-x64\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\release8-x64\build\plgui_inventory\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -329,14 +332,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release8-x64\build\appelcmtest\x64\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\release8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release8-x64\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\release8-x64\build\appelcmtest\"
-				ObjectFile="..\..\out\release8-x64\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\release8-x64\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\release8-x64\build\plgui_inventory\"
+				ObjectFile="..\..\out\release8-x64\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -353,11 +356,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\release8-x64\build\appelcmtest\x64\elcmtest.pdb"
-				SubSystem="2"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\release8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release8-x64\build\plgui_inventory\x64\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\release8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -371,7 +376,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release8-x64\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\release8-x64\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release8-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release8-x64\bin\&#x0D;&#x0A;"
@@ -383,7 +388,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -392,10 +397,9 @@
 		</Configuration>
       		<Configuration
 			Name="ReleaseWithDlls|x64"
-			OutputDirectory="..\..\out\release8-x64\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\release8-x64\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release8-x64\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\release8-x64\build\plgui_inventory\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -406,14 +410,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release8-x64\build\appelcmtest\x64\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\release8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\release8-x64\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\release8-x64\build\appelcmtest\"
-				ObjectFile="..\..\out\release8-x64\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\release8-x64\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\release8-x64\build\plgui_inventory\"
+				ObjectFile="..\..\out\release8-x64\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -430,11 +434,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\release8-x64\build\appelcmtest\x64\elcmtest.pdb"
-				SubSystem="2"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\release8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release8-x64\build\plgui_inventory\x64\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\release8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -448,7 +454,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release8-x64\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\release8-x64\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release8-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release8-x64\bin\&#x0D;&#x0A;"
@@ -460,7 +466,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -469,10 +475,9 @@
 		</Configuration>
                 		<Configuration
 			Name="DebugWithStaticLibs|x64"
-			OutputDirectory="..\..\out\debug8-x64\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\debug8-x64\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug8-x64\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\debug8-x64\build\plgui_inventory\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -482,14 +487,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug8-x64\build\appelcmtest\x64\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\debug8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug8-x64\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\debug8-x64\build\appelcmtest\"
-				ObjectFile="..\..\out\debug8-x64\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\debug8-x64\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\debug8-x64\build\plgui_inventory\"
+				ObjectFile="..\..\out\debug8-x64\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -504,11 +509,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\debug8-x64\build\appelcmtest\x64\elcmtest.pdb"
-				SubSystem="1"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\debug8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug8-x64\build\plgui_inventory\x64\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace_d.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\debug8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -522,7 +529,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug8-x64\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\debug8-x64\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug8-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug8-x64\bin\&#x0D;&#x0A;"
@@ -534,7 +541,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -543,10 +550,9 @@
 		</Configuration>
       		<Configuration
 			Name="DebugWithDlls|x64"
-			OutputDirectory="..\..\out\debug8-x64\build\appelcmtest\"
-			IntermediateDirectory="..\..\out\debug8-x64\build\appelcmtest\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug8-x64\build\plgui_inventory\"
+			IntermediateDirectory="..\..\out\debug8-x64\build\plgui_inventory\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -556,14 +562,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug8-x64\build\appelcmtest\x64\elcmtest.pdb"
+				ProgramDataBaseFileName="..\..\out\debug8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
 				AdditionalOptions="-I\usr\local\include -I\usr\local\include\CEGUI "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
-				PrecompiledHeaderFile="..\..\out\debug8-x64\build\appelcmtest\appelcmtest.pch"
-				AssemblerListingLocation="..\..\out\debug8-x64\build\appelcmtest\"
-				ObjectFile="..\..\out\debug8-x64\build\appelcmtest\"
+				PrecompiledHeaderFile="..\..\out\debug8-x64\build\plgui_inventory\plgui_inventory.pch"
+				AssemblerListingLocation="..\..\out\debug8-x64\build\plgui_inventory\"
+				ObjectFile="..\..\out\debug8-x64\build\plgui_inventory\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -578,11 +584,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\elcmtest.exe"
-				ProgramDatabaseFile="..\..\out\debug8-x64\build\appelcmtest\x64\elcmtest.pdb"
-				SubSystem="1"
+				OutputFile="..\..\ui_inventory.dll"
+				ProgramDatabaseFile="..\..\out\debug8-x64\build\plgui_inventory\x64\ui_inventory.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug8-x64\build\plgui_inventory\x64\plgui_inventory.lib"
 				AdditionalOptions="-L\usr\local\lib -lCEGUIBase "
-				AdditionalDependencies="libcrystalspace_d.lib"
+				AdditionalDependencies="delayimp.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug8\libs;..\..\..\CS\libs\csutil\win32\libs;$(CRYSTAL)\out\debug8\libs;$(CRYSTAL)\libs\csutil\win32\libs"
 				LargeAddressAware="2"
@@ -596,7 +604,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug8-x64\build\appelcmtest\appelcmtest.tlb"/>
+				TypeLibraryName="..\..\out\debug8-x64\build\plgui_inventory\plgui_inventory.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug8-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug8-x64\bin\&#x0D;&#x0A;"
@@ -608,7 +616,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=8"
-				AdditionalIncludeDirectories=".;..\..\apps\elcmtest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
+				AdditionalIncludeDirectories=".;..\..\plugins\tools\uitools\inventory;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\include\csutil\win32;$(CRYSTAL)\include;$(CRYSTAL)\include\csutil\win32"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -621,31 +629,31 @@
 			Name="Source Files"
 			Filter="">
 			<File
-				RelativePath="..\..\apps\elcmtest\elcmtest.cpp">
+				RelativePath="..\..\msvc\plugin_impl.cpp">
 			</File>
 			<File
-				RelativePath="..\..\apps\elcmtest\main.cpp">
+				RelativePath="..\..\plugins\tools\uitools\inventory\inventory.cpp">
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="">
 			<File
-				RelativePath="..\..\apps\elcmtest\elcmtest.h">
+				RelativePath="..\..\plugins\tools\uitools\inventory\inventory.h">
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="">
 			<File
-				RelativePath="..\..\msvc\appelcmtest.rc">
+				RelativePath="..\..\msvc\plgui_inventory.rc">
 			</File>
 		</Filter>
 		<Filter
-			Name="Manifest Files"
+			Name="Other Files"
 			Filter="">
 			<File
-				RelativePath="..\..\msvc\appelcmtest.manifest">
+				RelativePath="..\..\plugins\tools\uitools\inventory\ui_inventory.csplugin">
 			</File>
 		</Filter>
 	</Files>

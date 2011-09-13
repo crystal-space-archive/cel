@@ -25056,6 +25056,36 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelEntityTemplate_Merge(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
+  iCelEntityTemplate *arg2 = (iCelEntityTemplate *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntityTemplate_Merge",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntityTemplate_Merge" "', argument " "1"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntityTemplate * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelEntityTemplate_Merge" "', argument " "2"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelEntityTemplate * >(argp2);
+  (arg1)->Merge(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelEntityTemplate_Object_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
@@ -117719,6 +117749,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelEntityTemplate_RemoveClass", _wrap_iCelEntityTemplate_RemoveClass, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_HasClass", _wrap_iCelEntityTemplate_HasClass, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetClasses", _wrap_iCelEntityTemplate_GetClasses, METH_VARARGS, NULL},
+	 { (char *)"iCelEntityTemplate_Merge", _wrap_iCelEntityTemplate_Merge, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_Object_get", _wrap_iCelEntityTemplate_Object_get, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_Name_set", _wrap_iCelEntityTemplate_Name_set, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_Name_get", _wrap_iCelEntityTemplate_Name_get, METH_VARARGS, NULL},
