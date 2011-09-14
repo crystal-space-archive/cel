@@ -12377,6 +12377,40 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celData___eq__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celData *arg1 = (celData *) 0 ;
+  celData *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celData___eq__",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celData___eq__" "', argument " "1"" of type '" "celData const *""'"); 
+  }
+  arg1 = reinterpret_cast< celData * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_celData,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celData___eq__" "', argument " "2"" of type '" "celData const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celData___eq__" "', argument " "2"" of type '" "celData const &""'"); 
+  }
+  arg2 = reinterpret_cast< celData * >(argp2);
+  result = (bool)((celData const *)arg1)->operator ==((celData const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_celData_Clear(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celData *arg1 = (celData *) 0 ;
@@ -24817,6 +24851,52 @@ SWIGINTERN PyObject *_wrap_iCelEntityTemplate_CreatePropertyClassTemplate(PyObje
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntityTemplate_FindPropertyClassTemplate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  int res3 ;
+  char *buf3 = 0 ;
+  int alloc3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  iCelPropertyClassTemplate *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntityTemplate_FindPropertyClassTemplate",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntityTemplate_FindPropertyClassTemplate" "', argument " "1"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntityTemplate * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelEntityTemplate_FindPropertyClassTemplate" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelEntityTemplate_FindPropertyClassTemplate" "', argument " "3"" of type '" "char const *""'");
+  }
+  arg3 = reinterpret_cast< char * >(buf3);
+  result = (iCelPropertyClassTemplate *)(arg1)->FindPropertyClassTemplate((char const *)arg2,(char const *)arg3);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
   return NULL;
 }
 
@@ -117455,6 +117535,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_celData", _wrap_new_celData, METH_VARARGS, NULL},
 	 { (char *)"celData_assign", _wrap_celData_assign, METH_VARARGS, NULL},
 	 { (char *)"delete_celData", _wrap_delete_celData, METH_VARARGS, NULL},
+	 { (char *)"celData___eq__", _wrap_celData___eq__, METH_VARARGS, NULL},
 	 { (char *)"celData_Clear", _wrap_celData_Clear, METH_VARARGS, NULL},
 	 { (char *)"celData_Set", _wrap_celData_Set, METH_VARARGS, NULL},
 	 { (char *)"celData_SetAction", _wrap_celData_SetAction, METH_VARARGS, NULL},
@@ -117741,6 +117822,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelEntityTemplate_GetName", _wrap_iCelEntityTemplate_GetName, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_SetName", _wrap_iCelEntityTemplate_SetName, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_CreatePropertyClassTemplate", _wrap_iCelEntityTemplate_CreatePropertyClassTemplate, METH_VARARGS, NULL},
+	 { (char *)"iCelEntityTemplate_FindPropertyClassTemplate", _wrap_iCelEntityTemplate_FindPropertyClassTemplate, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_SetBehaviour", _wrap_iCelEntityTemplate_SetBehaviour, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetBehaviourLayer", _wrap_iCelEntityTemplate_GetBehaviourLayer, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetBehaviour", _wrap_iCelEntityTemplate_GetBehaviour, METH_VARARGS, NULL},
