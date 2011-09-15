@@ -77738,6 +77738,13 @@
       <arglist>(const csSet &amp;otherSet)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>TestIntersect</name>
+      <anchorfile>classcsSet.html</anchorfile>
+      <anchor>a8549dfa25231e58996a997d5bdfbabf6</anchor>
+      <arglist>(const csSet &amp;other) const </arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>Union</name>
       <anchorfile>classcsSet.html</anchorfile>
