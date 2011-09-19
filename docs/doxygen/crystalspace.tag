@@ -46557,13 +46557,6 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>CheckRevertMove</name>
-      <anchorfile>classcsColliderActor.html</anchorfile>
-      <anchor>ae592ea8ebe979c4c70ccdc9dab35013d</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
       <type></type>
       <name>csColliderActor</name>
       <anchorfile>classcsColliderActor.html</anchorfile>
