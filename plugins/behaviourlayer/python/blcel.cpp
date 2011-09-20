@@ -86560,6 +86560,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcInventory_GenerateLoot(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcInventory *arg1 = (iPcInventory *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcInventory_GenerateLoot",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcInventory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcInventory_GenerateLoot" "', argument " "1"" of type '" "iPcInventory *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcInventory * >(argp1);
+  result = (bool)(arg1)->GenerateLoot();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcInventory_EntityCount_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcInventory *arg1 = (iPcInventory *) 0 ;
@@ -120992,6 +121014,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcInventory_IsClassAllowed", _wrap_iPcInventory_IsClassAllowed, METH_VARARGS, NULL},
 	 { (char *)"iPcInventory_SetLootGenerator", _wrap_iPcInventory_SetLootGenerator, METH_VARARGS, NULL},
 	 { (char *)"iPcInventory_GetLootGenerator", _wrap_iPcInventory_GetLootGenerator, METH_VARARGS, NULL},
+	 { (char *)"iPcInventory_GenerateLoot", _wrap_iPcInventory_GenerateLoot, METH_VARARGS, NULL},
 	 { (char *)"iPcInventory_EntityCount_get", _wrap_iPcInventory_EntityCount_get, METH_VARARGS, NULL},
 	 { (char *)"iPcInventory_Space_set", _wrap_iPcInventory_Space_set, METH_VARARGS, NULL},
 	 { (char *)"iPcInventory_Space_get", _wrap_iPcInventory_Space_get, METH_VARARGS, NULL},
