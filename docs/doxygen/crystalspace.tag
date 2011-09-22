@@ -115393,6 +115393,13 @@
       <anchor>ab57351d6ff274753ea10de866b48db35</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>Utility::StringSet&lt; typename IF::TagType, true &gt;::GlobalIterator</type>
+      <name>GetIterator</name>
+      <anchorfile>classCS_1_1ScfStringSet.html</anchorfile>
+      <anchor>a7023f11b8851284f72ce96bfdea56bad</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>GetSize</name>
