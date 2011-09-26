@@ -121125,6 +121125,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetMinimumSplitAmount</name>
+      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
+      <anchor>a465fd8ebd5d7703de6acf79edac87e17</anchor>
+      <arglist>(int m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetObjectDescriptor</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
       <anchor>ad843921b35bbfc8afdefd7d8ed2eca9f</anchor>
