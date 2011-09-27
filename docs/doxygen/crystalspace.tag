@@ -23022,6 +23022,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>CS_ALLOC_STACK_ARRAY_FALLBACK</name>
+      <anchorfile>cssysdef_8h.html</anchorfile>
+      <anchor>aa5d74ad461a4e3313ba484ae63cc1de4</anchor>
+      <arglist>(Type, Name, Size, Thresshold)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>CS_ASSERT</name>
       <anchorfile>cssysdef_8h.html</anchorfile>
       <anchor>ac380bd47888ecfe73e7b7a40b6f827a1</anchor>
@@ -66766,6 +66773,13 @@
       <anchorfile>classcsKDTree.html</anchorfile>
       <anchor>a8c52cdeb657cbe42a7352f298819a757</anchor>
       <arglist>(csKDTreeChild *object)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetMinimumSplitAmount</name>
+      <anchorfile>classcsKDTree.html</anchorfile>
+      <anchor>a6a446ca595ff9b4fd9c737d6e28cc785</anchor>
+      <arglist>(int m)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
