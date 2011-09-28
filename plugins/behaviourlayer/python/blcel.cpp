@@ -74083,6 +74083,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iPcMesh_GetFactoryName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcMesh *arg1 = (iPcMesh *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  char *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcMesh_GetFactoryName",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcMesh, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcMesh_GetFactoryName" "', argument " "1"" of type '" "iPcMesh const *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcMesh * >(argp1);
+  result = (char *)((iPcMesh const *)arg1)->GetFactoryName();
+  resultobj = SWIG_FromCharPtr((const char *)result);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iPcMesh_CreateEmptyThing(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iPcMesh *arg1 = (iPcMesh *) 0 ;
@@ -121327,6 +121349,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"scfQuery_iPcMeshSelect", _wrap_scfQuery_iPcMeshSelect, METH_VARARGS, NULL},
 	 { (char *)"iPcMesh_SetPath", _wrap_iPcMesh_SetPath, METH_VARARGS, NULL},
 	 { (char *)"iPcMesh_SetMesh", _wrap_iPcMesh_SetMesh, METH_VARARGS, NULL},
+	 { (char *)"iPcMesh_GetFactoryName", _wrap_iPcMesh_GetFactoryName, METH_VARARGS, NULL},
 	 { (char *)"iPcMesh_CreateEmptyThing", _wrap_iPcMesh_CreateEmptyThing, METH_VARARGS, NULL},
 	 { (char *)"iPcMesh_CreateEmptyGenmesh", _wrap_iPcMesh_CreateEmptyGenmesh, METH_VARARGS, NULL},
 	 { (char *)"iPcMesh_CreateNullMesh", _wrap_iPcMesh_CreateNullMesh, METH_VARARGS, NULL},
