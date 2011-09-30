@@ -19126,6 +19126,55 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelPlLayer_ApplyTemplate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iCelEntity *arg2 = (iCelEntity *) 0 ;
+  iCelEntityTemplate *arg3 = (iCelEntityTemplate *) 0 ;
+  iCelParameterBlock *arg4 = (iCelParameterBlock *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_ApplyTemplate",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_ApplyTemplate" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelEntity, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_ApplyTemplate" "', argument " "2"" of type '" "iCelEntity *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelEntity * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPlLayer_ApplyTemplate" "', argument " "3"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg3 = reinterpret_cast< iCelEntityTemplate * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iCelPlLayer_ApplyTemplate" "', argument " "4"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg4 = reinterpret_cast< iCelParameterBlock * >(argp4);
+  result = (bool)(arg1)->ApplyTemplate(arg2,arg3,arg4);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelPlLayer_CreateDataBuffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
@@ -119944,6 +119993,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPlLayer_GetEntityTemplateCount", _wrap_iCelPlLayer_GetEntityTemplateCount, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_GetEntityTemplate", _wrap_iCelPlLayer_GetEntityTemplate, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateEntity", _wrap_iCelPlLayer_CreateEntity, METH_VARARGS, NULL},
+	 { (char *)"iCelPlLayer_ApplyTemplate", _wrap_iCelPlLayer_ApplyTemplate, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateDataBuffer", _wrap_iCelPlLayer_CreateDataBuffer, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateCompactDataBufferWriter", _wrap_iCelPlLayer_CreateCompactDataBufferWriter, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateCompactDataBufferReader", _wrap_iCelPlLayer_CreateCompactDataBufferReader, METH_VARARGS, NULL},
