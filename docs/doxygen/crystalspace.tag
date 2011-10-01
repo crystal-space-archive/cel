@@ -12230,6 +12230,230 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>GL_FRACTIONAL_EVEN_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ad68474545c90a310f7111ff6853a509a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FRACTIONAL_ODD_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a82af58d838d5c30108e32a37160050dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_ISOLINES_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a8d39618143be9ae5d1316a53ae3972f9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a49a3d8ed6a727c7a528b800fc8ac13af</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ac3ad7cc876f744c733c6840944d32fac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_PATCH_VERTICES_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ab6497aaec5256a2b079b88cecdc590a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ac689bb405c938e9e23091166b67b317b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aca4ee269f91825aaf18a5c74476a2d78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a93872847893d1cbb7d4322c2fddc0a90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a8f93e5fb6a5aaf055afe77248dc418ab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a25437f39a9316f15d9aeb6cbccff4208</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>abdfaa16541534c3916fdaa0760845225</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a092ed47bc11fef48bdd4787dcaa49ba1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a6f7cd0cd0fbce938a24c1bf373740f85</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a3b0e85aafc878eb1db193cca923a5344</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aaa90371c1b3eda75574a49b9391dbc5d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>af0be5381cf0f69a4b473f6bd25f19ee4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_GEN_LEVEL_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ab3f2c6dae631ab57043adbe85659b011</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_TESS_PATCH_COMPONENTS_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>add2004b41c00f1715090827991582d0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_PATCH_DEFAULT_INNER_LEVEL_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a67a9fc03bf7a13367e698842493b6d50</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_PATCH_DEFAULT_OUTER_LEVEL_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>afbea85d1f6f0478a1449dec055837b8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_PATCH_VERTICES_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a57e2d7ed4ebbfe14916f021be3d05664</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_PATCHES_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a907bbcf3d1a136ab33c83a157398f572</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_CONTROL_OUTPUT_VERTICES_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a541dd27e44705295482a81b6adbe01f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_CONTROL_SHADER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aa1041576fbabb457bc197df2adbbc69b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_EVALUATION_SHADER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a4a78025ffefc658559f13d85f0629652</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_GEN_MODE_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a82f5bfe6ed19ed91e5a3a0e56655e5a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_GEN_POINT_MODE_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ab927b3993942ed28716efe7e14362da3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_GEN_SPACING_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a18d18d1e5ca258b37944fbc0f0a1449f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TESS_GEN_VERTEX_ORDER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ac69bf6815cfcf12726f1e48e10e71a1b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a7c2af831cf82f75f451e4215cfa12b39</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ac4d526a937db8fb85cefb57d4c0a790d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>GL_FRAGMENT_PROGRAM_ARB</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>a3752d06345bf9b7cd556c8c18f1af1df</anchor>
@@ -12387,6 +12611,146 @@
       <name>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>aaf52509949799afbaee793e9678f9e80</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aa3a24661fa41cf585c1c5e129fb485de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a3af31179d0ad3edc60810b7dead15d52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a0de07eea53f8e376ea5d48af10f667af</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a2a4be548400212fd78b3a6982ab1d166</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_GEOMETRY_INPUT_TYPE_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ae1c5b29401f9fa8eb96b72771aabc4f9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_GEOMETRY_OUTPUT_TYPE_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a528b80a5156331b7dd89043a74a5ad10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_GEOMETRY_SHADER_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a75cdb827fbf3fe7cca71d119361a1251</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_GEOMETRY_VERTICES_OUT_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>afd49157305750d98245f3dde22578683</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_LINE_STRIP_ADJACENCY_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a421e339618dcf7e151efd2ee751d6513</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_LINES_ADJACENCY_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ac064545115e146b516ed51cc411300c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>af3af230e62aaee4c6d4e379e689932f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a253cc16b390ee2c49bcb29bdb60a4df5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a97465ff3b83f579e9484ac4bbd5fbcd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a8683eeb03bc72edf125b5dd0f52e7622</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ade964daae6999158b45ce08e92e7a9a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_VARYING_COMPONENTS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a1f470a6b9e8b1dccc5892b177323b176</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_MAX_VERTEX_VARYING_COMPONENTS_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>af77df3217625a0fd57222a43b8941bd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_PROGRAM_POINT_SIZE_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a04f58cb68aca5ebe3bb412234075cd4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TRIANGLE_STRIP_ADJACENCY_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a4463eda1607862972c5a9b8a99353e99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_TRIANGLES_ADJACENCY_EXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a3ad07dac8428e557a4b326ff02eb0747</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -20917,6 +21281,20 @@
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
+      <name>csGLPATCHPARAMETERFV</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ae8ae7c751484d603ad7444a2dd653737</anchor>
+      <arglist>)(GLenum pname, const GLfloat *values)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>GLvoid(*</type>
+      <name>csGLPATCHPARAMETERI</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a776d9e4a31761c61d0c9ec9749c406ca</anchor>
+      <arglist>)(GLenum pname, GLint value)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>GLvoid(*</type>
       <name>csGLPNTRIANGLESFATI</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>abc0182db2d07faf4a3d53846309b5d6a</anchor>
@@ -21005,6 +21383,13 @@
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>aaa2f62a13eb605ac15d169930051f086</anchor>
       <arglist>)(GLenum target, GLuint index, GLsizei count, const GLfloat *params)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>GLvoid(*</type>
+      <name>csGLPROGRAMPARAMETERIEXT</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a641b83a06e46ca183f75c207c2cc9ea0</anchor>
+      <arglist>)(GLuint program, GLenum pname, GLint value)</arglist>
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
@@ -53119,6 +53504,13 @@
     </member>
     <member kind="variable">
       <type>bool</type>
+      <name>CS_GL_ARB_tessellation_shader</name>
+      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
+      <anchor>adcc04ebc40f67fbff6919b0f242c865b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
       <name>CS_GL_ARB_texture_border_clamp</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>a869d03ee68507f838f4b356a8263570e</anchor>
@@ -53430,6 +53822,13 @@
       <name>CS_GL_EXT_framebuffer_object</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>a62a36553b42a4322988b2ebbe294b77e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>CS_GL_EXT_geometry_shader4</name>
+      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
+      <anchor>ae2cc1da0d1dc4b5d37ee80fe89eb0e74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -60010,6 +60409,20 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>csGLPATCHPARAMETERFV</type>
+      <name>glPatchParameterfv</name>
+      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
+      <anchor>a54f5776285e13b6ef2a254c75b54932e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csGLPATCHPARAMETERI</type>
+      <name>glPatchParameteri</name>
+      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
+      <anchor>a81e158172c26f9746ebf4ab9c1f4a8b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>csGLPNTRIANGLESFATI</type>
       <name>glPNTrianglesfATI</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
@@ -60098,6 +60511,13 @@
       <name>glProgramLocalParameters4fvEXT</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
       <anchor>ac302129115af28a80ee7ff5bcc785d3c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csGLPROGRAMPARAMETERIEXT</type>
+      <name>glProgramParameteriEXT</name>
+      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
+      <anchor>a80099fb7ebcbba5901d57c9da708c07a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -61396,6 +61816,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>InitGL_ARB_tessellation_shader</name>
+      <anchorfile>structcsGLExtensionManager.html</anchorfile>
+      <anchor>aca68313fc82d33cb41ac843885b440ce</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>InitGL_ARB_texture_border_clamp</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>a03fa01c7d5b832bb5c825cf4a6cf7843</anchor>
@@ -61707,6 +62134,13 @@
       <name>InitGL_EXT_framebuffer_object</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>af8a4021b367344594e3ca8fca05adfab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitGL_EXT_geometry_shader4</name>
+      <anchorfile>structcsGLExtensionManager.html</anchorfile>
+      <anchor>aad9846c28fc8282c8c1e9024486becde</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -92911,6 +93345,13 @@
       <arglist>(csRenderTargetAttachment attachment=rtaColor0, int *subtexture=0) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetTessellation</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a4daa67a96d63943dee3725ae0a14dd44</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iTextureManager *</type>
       <name>GetTextureManager</name>
       <anchorfile>structiGraphics3D.html</anchorfile>
@@ -93077,6 +93518,13 @@
       <anchorfile>structiGraphics3D.html</anchorfile>
       <anchor>af24e6c40722647326a657d1d44fa2b7b</anchor>
       <arglist>(int state)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetTessellation</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a51c080d8f32210657e233936d0ff7d3c</anchor>
+      <arglist>(bool flag)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
