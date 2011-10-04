@@ -8284,15 +8284,6 @@ struct PcCommon : public scfImplementationExt0<PcCommon, celPcCommon>
 {
     PcCommon(iObjectRegistry* object_reg) : scfImplementationType (this, object_reg) {}
     virtual ~PcCommon (){}
-    virtual csPtr<iCelDataBuffer> Save()
-    {
-        return pl->CreateDataBuffer(0);
-    }
-    virtual bool Load(iCelDataBuffer*)
-    {
-        PcCommon *x= new PcCommon(object_reg); 
-        return false;
-    }
 };
 
 /*
@@ -32836,112 +32827,6 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClass_SetEntity(PyObject *SWIGUNUSEDPARM(
   arg2 = reinterpret_cast< iCelEntity * >(argp2);
   (arg1)->SetEntity(arg2);
   resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iCelPropertyClass_SaveFirstPass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_SaveFirstPass",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_SaveFirstPass" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
-  }
-  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
-  result = (arg1)->SaveFirstPass();
-  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iCelPropertyClass_LoadFirstPass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_LoadFirstPass",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_LoadFirstPass" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
-  }
-  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPropertyClass_LoadFirstPass" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  result = (bool)(arg1)->LoadFirstPass(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iCelPropertyClass_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_Save",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_Save" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
-  }
-  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
-  result = (arg1)->Save();
-  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iCelPropertyClass_Load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iCelPropertyClass *arg1 = (iCelPropertyClass *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClass_Load",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClass_Load" "', argument " "1"" of type '" "iCelPropertyClass *""'"); 
-  }
-  arg1 = reinterpret_cast< iCelPropertyClass * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPropertyClass_Load" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  result = (bool)(arg1)->Load(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
   return NULL;
@@ -58200,6 +58085,27 @@ SWIGINTERN PyObject *_wrap_iPcActorMove_SetAnimationMapping(PyObject *SWIGUNUSED
   return resultobj;
 fail:
   if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iPcActorMove_SubscribeMessages(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iPcActorMove *arg1 = (iPcActorMove *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iPcActorMove_SubscribeMessages",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iPcActorMove, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iPcActorMove_SubscribeMessages" "', argument " "1"" of type '" "iPcActorMove *""'"); 
+  }
+  arg1 = reinterpret_cast< iPcActorMove * >(argp1);
+  (arg1)->SubscribeMessages();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
   return NULL;
 }
 
@@ -105696,79 +105602,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iQuest_LoadState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iQuest *arg1 = (iQuest *) 0 ;
-  char *arg2 = (char *) 0 ;
-  iCelDataBuffer *arg3 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 ;
-  char *buf2 = 0 ;
-  int alloc2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iQuest_LoadState",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_LoadState" "', argument " "1"" of type '" "iQuest *""'"); 
-  }
-  arg1 = reinterpret_cast< iQuest * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuest_LoadState" "', argument " "2"" of type '" "char const *""'");
-  }
-  arg2 = reinterpret_cast< char * >(buf2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuest_LoadState" "', argument " "3"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg3 = reinterpret_cast< iCelDataBuffer * >(argp3);
-  result = (bool)(arg1)->LoadState((char const *)arg2,arg3);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  return resultobj;
-fail:
-  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_iQuest_SaveState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  iQuest *arg1 = (iQuest *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"iQuest_SaveState",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_SaveState" "', argument " "1"" of type '" "iQuest *""'"); 
-  }
-  arg1 = reinterpret_cast< iQuest * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuest_SaveState" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  (arg1)->SaveState(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_iQuest_FindSequence(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuest *arg1 = (iQuest *) 0 ;
@@ -115418,112 +115251,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_SaveFirstPass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  celPcCommon *arg1 = (celPcCommon *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_SaveFirstPass",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_SaveFirstPass" "', argument " "1"" of type '" "celPcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< celPcCommon * >(argp1);
-  result = (arg1)->SaveFirstPass();
-  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_celPcCommon_LoadFirstPass(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  celPcCommon *arg1 = (celPcCommon *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_LoadFirstPass",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_LoadFirstPass" "', argument " "1"" of type '" "celPcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< celPcCommon * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_LoadFirstPass" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  result = (bool)(arg1)->LoadFirstPass(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_celPcCommon_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  celPcCommon *arg1 = (celPcCommon *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Save",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Save" "', argument " "1"" of type '" "celPcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< celPcCommon * >(argp1);
-  result = (arg1)->Save();
-  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_celPcCommon_Load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  celPcCommon *arg1 = (celPcCommon *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Load",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Load" "', argument " "1"" of type '" "celPcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< celPcCommon * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Load" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  result = (bool)(arg1)->Load(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_celPcCommon_GetPersistentData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
@@ -116367,59 +116094,6 @@ SWIGINTERN PyObject *_wrap_delete_PcCommon(PyObject *SWIGUNUSEDPARM(self), PyObj
   arg1 = reinterpret_cast< PcCommon * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_PcCommon_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  PcCommon *arg1 = (PcCommon *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  SwigValueWrapper< csPtr< iCelDataBuffer > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"PcCommon_Save",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_PcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PcCommon_Save" "', argument " "1"" of type '" "PcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< PcCommon * >(argp1);
-  result = (arg1)->Save();
-  resultobj = SWIG_NewPointerObj((new csPtr< iCelDataBuffer >(static_cast< const csPtr< iCelDataBuffer >& >(result))), SWIGTYPE_p_csPtrT_iCelDataBuffer_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_PcCommon_Load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  PcCommon *arg1 = (PcCommon *) 0 ;
-  iCelDataBuffer *arg2 = (iCelDataBuffer *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"PcCommon_Load",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_PcCommon, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PcCommon_Load" "', argument " "1"" of type '" "PcCommon *""'"); 
-  }
-  arg1 = reinterpret_cast< PcCommon * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelDataBuffer, 0 |  0 );
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PcCommon_Load" "', argument " "2"" of type '" "iCelDataBuffer *""'"); 
-  }
-  arg2 = reinterpret_cast< iCelDataBuffer * >(argp2);
-  result = (bool)(arg1)->Load(arg2);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
   return NULL;
@@ -120308,10 +119982,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPropertyClass_GetTag", _wrap_iCelPropertyClass_GetTag, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_GetEntity", _wrap_iCelPropertyClass_GetEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_SetEntity", _wrap_iCelPropertyClass_SetEntity, METH_VARARGS, NULL},
-	 { (char *)"iCelPropertyClass_SaveFirstPass", _wrap_iCelPropertyClass_SaveFirstPass, METH_VARARGS, NULL},
-	 { (char *)"iCelPropertyClass_LoadFirstPass", _wrap_iCelPropertyClass_LoadFirstPass, METH_VARARGS, NULL},
-	 { (char *)"iCelPropertyClass_Save", _wrap_iCelPropertyClass_Save, METH_VARARGS, NULL},
-	 { (char *)"iCelPropertyClass_Load", _wrap_iCelPropertyClass_Load, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_AddPropertyChangeCallback", _wrap_iCelPropertyClass_AddPropertyChangeCallback, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_RemovePropertyChangeCallback", _wrap_iCelPropertyClass_RemovePropertyChangeCallback, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClass_SetProperty", _wrap_iCelPropertyClass_SetProperty, METH_VARARGS, NULL},
@@ -120990,6 +120660,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iPcActorMove_GetJumpingVelocity", _wrap_iPcActorMove_GetJumpingVelocity, METH_VARARGS, NULL},
 	 { (char *)"iPcActorMove_SetAnimation", _wrap_iPcActorMove_SetAnimation, METH_VARARGS, NULL},
 	 { (char *)"iPcActorMove_SetAnimationMapping", _wrap_iPcActorMove_SetAnimationMapping, METH_VARARGS, NULL},
+	 { (char *)"iPcActorMove_SubscribeMessages", _wrap_iPcActorMove_SubscribeMessages, METH_VARARGS, NULL},
 	 { (char *)"iPcActorMove_MovingForward_set", _wrap_iPcActorMove_MovingForward_set, METH_VARARGS, NULL},
 	 { (char *)"iPcActorMove_MovingForward_get", _wrap_iPcActorMove_MovingForward_get, METH_VARARGS, NULL},
 	 { (char *)"iPcActorMove_MovingBackward_set", _wrap_iPcActorMove_MovingBackward_set, METH_VARARGS, NULL},
@@ -122137,8 +121808,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"scfQuery_iPcDamage", _wrap_scfQuery_iPcDamage, METH_VARARGS, NULL},
 	 { (char *)"iQuest_SwitchState", _wrap_iQuest_SwitchState, METH_VARARGS, NULL},
 	 { (char *)"iQuest_GetCurrentState", _wrap_iQuest_GetCurrentState, METH_VARARGS, NULL},
-	 { (char *)"iQuest_LoadState", _wrap_iQuest_LoadState, METH_VARARGS, NULL},
-	 { (char *)"iQuest_SaveState", _wrap_iQuest_SaveState, METH_VARARGS, NULL},
 	 { (char *)"iQuest_FindSequence", _wrap_iQuest_FindSequence, METH_VARARGS, NULL},
 	 { (char *)"iQuest_Activate", _wrap_iQuest_Activate, METH_VARARGS, NULL},
 	 { (char *)"iQuest_Deactivate", _wrap_iQuest_Deactivate, METH_VARARGS, NULL},
@@ -122388,10 +122057,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celPcCommon_PropertyClassesHaveChanged", _wrap_celPcCommon_PropertyClassesHaveChanged, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_GetPropertyOrActionType", _wrap_celPcCommon_GetPropertyOrActionType, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_IsPropertyReadOnly", _wrap_celPcCommon_IsPropertyReadOnly, METH_VARARGS, NULL},
-	 { (char *)"celPcCommon_SaveFirstPass", _wrap_celPcCommon_SaveFirstPass, METH_VARARGS, NULL},
-	 { (char *)"celPcCommon_LoadFirstPass", _wrap_celPcCommon_LoadFirstPass, METH_VARARGS, NULL},
-	 { (char *)"celPcCommon_Save", _wrap_celPcCommon_Save, METH_VARARGS, NULL},
-	 { (char *)"celPcCommon_Load", _wrap_celPcCommon_Load, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_GetPersistentData", _wrap_celPcCommon_GetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_SetPersistentData", _wrap_celPcCommon_SetPersistentData, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_QueryPositionInfo", _wrap_celPcCommon_QueryPositionInfo, METH_VARARGS, NULL},
@@ -122424,8 +122089,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"swigPcCommon_swigregister", swigPcCommon_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_PcCommon", _wrap_new_PcCommon, METH_VARARGS, NULL},
 	 { (char *)"delete_PcCommon", _wrap_delete_PcCommon, METH_VARARGS, NULL},
-	 { (char *)"PcCommon_Save", _wrap_PcCommon_Save, METH_VARARGS, NULL},
-	 { (char *)"PcCommon_Load", _wrap_PcCommon_Load, METH_VARARGS, NULL},
 	 { (char *)"PcCommon_swigregister", PcCommon_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_PcCommonFactory", _wrap_new_PcCommonFactory, METH_VARARGS, NULL},
 	 { (char *)"delete_PcCommonFactory", _wrap_delete_PcCommonFactory, METH_VARARGS, NULL},
