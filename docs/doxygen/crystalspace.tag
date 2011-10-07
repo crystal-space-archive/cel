@@ -126310,6 +126310,13 @@
     <filename>structCS_1_1Mesh_1_1iAnimatedMesh.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearMorphTargetWeights</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
+      <anchor>ad9098823c6c8014cdc7a6bc5f3eb3187</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iAnimatedMeshFactory *</type>
       <name>GetAnimatedMeshFactory</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMesh.html</anchorfile>
