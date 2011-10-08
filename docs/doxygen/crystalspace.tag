@@ -47096,6 +47096,13 @@
       <type>static void</type>
       <name>InitializeCollisionWrappers</name>
       <anchorfile>classcsColliderHelper.html</anchorfile>
+      <anchor>a9ff7d400c2190dd25fa76dda283992a3</anchor>
+      <arglist>(iCollideSystem *colsys, iSector *sector, iCollection *collection=0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>InitializeCollisionWrappers</name>
+      <anchorfile>classcsColliderHelper.html</anchorfile>
       <anchor>a70aff1e26debe51cc7af4355be7bf436</anchor>
       <arglist>(iCollideSystem *colsys, iEngine *engine, iCollection *collection=0)</arglist>
     </member>
