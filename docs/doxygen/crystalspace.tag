@@ -23208,6 +23208,7 @@
     <name>weavercombiner.h</name>
     <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
     <filename>weavercombiner_8h</filename>
+    <includes id="document_8h" name="document.h" local="yes" imported="no">iutil/document.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
@@ -27948,9 +27949,11 @@
     <filename>scf__implementation_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
+    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="reftrackeraccess_8h" name="reftrackeraccess.h" local="yes" imported="no">csutil/reftrackeraccess.h</includes>
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
+    <includes id="weakreferenced_8h" name="weakreferenced.h" local="yes" imported="no">csutil/weakreferenced.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="scf__implgen_8h" name="scf_implgen.h" local="yes" imported="no">scf_implgen.h</includes>
     <class kind="class">scfFakeInterface</class>
@@ -28780,6 +28783,7 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>weakref_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
+    <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
     <class kind="class">csWeakRef</class>
   </compound>
   <compound kind="file">
@@ -28795,7 +28799,10 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>weakreferenced_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
+    <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">refcount.h</includes>
+    <class kind="class">CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</class>
     <class kind="class">CS::Utility::WeakReferenced</class>
+    <class kind="class">CS::Utility::Implementation::WeakReferenced</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
   </compound>
@@ -84457,31 +84464,31 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>CS_WEAKREF_METHOD_UNSAFE bool</type>
       <name>IsValid</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>ab2bc16f5ef7b1cae5ba0302cc5058c9b</anchor>
+      <anchor>a86206ebe1e890bb3b9d27ab7daa05903</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>CS_WEAKREF_METHOD_UNSAFE</type>
       <name>operator T *</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>aa6466d1c980018ba8f16605c53a6d63d</anchor>
+      <anchor>a2fd2e7b869e873d5ed62d29af946c792</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>T &amp;</type>
+      <type>CS_WEAKREF_METHOD_UNSAFE T &amp;</type>
       <name>operator*</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>acc458b601130290c4f97ab2abe252728</anchor>
+      <anchor>ab0ece622c5d00d23301f08968b20e16f</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>T *</type>
+      <type>CS_WEAKREF_METHOD_UNSAFE T *</type>
       <name>operator-&gt;</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>a7d17b009ac82d545ce093552e68706a3</anchor>
+      <anchor>afff8d077aa34ec5b5dcad883db56f119</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -84518,6 +84525,20 @@
       <anchorfile>classcsWeakRef.html</anchorfile>
       <anchor>abb80dae24d92a7528667caadf493e244</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Get</name>
+      <anchorfile>classcsWeakRef.html</anchorfile>
+      <anchor>aa1051dae06bc88eea143618ea9547b26</anchor>
+      <arglist>(U &amp;ref) const </arglist>
+    </member>
+    <member kind="function">
+      <type>U</type>
+      <name>Get</name>
+      <anchorfile>classcsWeakRef.html</anchorfile>
+      <anchor>ad125413a1a39afe238f040531b815f7b</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="friend">
       <type>friend bool</type>
@@ -85223,8 +85244,8 @@
       <type>virtual void</type>
       <name>AddRefOwner</name>
       <anchorfile>structiBase.html</anchorfile>
-      <anchor>a5d0ec17cc4948f7bdcf668fcb52b9eb1</anchor>
-      <arglist>(void **ref_owner)=0</arglist>
+      <anchor>a133c836fc9d56cf0456291f4427a48fd</anchor>
+      <arglist>(void **ref_owner, CS::Threading::Mutex *mutex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -114222,8 +114243,8 @@
       <type>virtual void</type>
       <name>AddRefOwner</name>
       <anchorfile>classscfImplementation.html</anchorfile>
-      <anchor>a240bcf10a91bd4b235fabe701469dfdd</anchor>
-      <arglist>(void **ref_owner)</arglist>
+      <anchor>a7fc0ea9e5e6214f308cc162d8d689b74</anchor>
+      <arglist>(void **ref_owner, CS::Threading::Mutex *mutex)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -134867,6 +134888,29 @@
   <compound kind="struct">
     <name>CS::Utility::Implementation::SetNumberComputer&lt; 0 &gt;</name>
     <filename>structCS_1_1Utility_1_1Implementation_1_1SetNumberComputer_3_010_01_4.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Implementation::WeakReferenced</name>
+    <filename>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</filename>
+    <class kind="class">CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</class>
+    <member kind="function">
+      <type>void</type>
+      <name>ClearRefOwners</name>
+      <anchorfile>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</anchorfile>
+      <anchor>aebe7fa5995eeaae29c455a09210f01f5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DeleteAllOwners</name>
+      <anchorfile>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</anchorfile>
+      <anchor>a3a334345127b126c265fa3d97297de1e</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</name>
+    <filename>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced_1_1ScopedWeakRefOwnersLock.html</filename>
   </compound>
   <compound kind="namespace">
     <name>CS::Utility::ResourceCache</name>
