@@ -63775,6 +63775,20 @@
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>AddWindowFrameDimensions</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>afa388e732b8646ee16421b4b76842fef</anchor>
+      <arglist>(int &amp;width, int &amp;height)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetWorkspaceDimensions</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>ae246c3715bc2aa56c9d6cf32b1aa2544</anchor>
+      <arglist>(int &amp;width, int &amp;height)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>Alert</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
@@ -63853,24 +63867,10 @@
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
-      <name>GetOption</name>
+      <name>FitSizeToWorkingArea</name>
       <anchorfile>classcsGraphics2D.html</anchorfile>
-      <anchor>a8b3b1c9d101e3d8a8dc788e95c9597e2</anchor>
-      <arglist>(int id, csVariant *value)</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
-      <name>GetOptionDescription</name>
-      <anchorfile>classcsGraphics2D.html</anchorfile>
-      <anchor>af65097f9a0629fad249a835e3a4e5e02</anchor>
-      <arglist>(int idx, csOptionDescription *)</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
-      <name>SetOption</name>
-      <anchorfile>classcsGraphics2D.html</anchorfile>
-      <anchor>a68741c009ecdcd9b0dc209881ebfd9d3</anchor>
-      <arglist>(int id, csVariant *value)</arglist>
+      <anchor>afa0e9462aae8957dfbcf44beebd07053</anchor>
+      <arglist>(int &amp;desiredWidth, int &amp;desiredHeight)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -63927,6 +63927,34 @@
       <anchorfile>classcsGraphics2D.html</anchorfile>
       <anchor>a8c98dd166162710dc19ffaadc43d70e9</anchor>
       <arglist>(bool transparent)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetOption</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a8b3b1c9d101e3d8a8dc788e95c9597e2</anchor>
+      <arglist>(int id, csVariant *value)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>GetOptionDescription</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>af65097f9a0629fad249a835e3a4e5e02</anchor>
+      <arglist>(int idx, csOptionDescription *)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>SetOption</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a68741c009ecdcd9b0dc209881ebfd9d3</anchor>
+      <arglist>(int id, csVariant *value)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>fitToWorkingArea</name>
+      <anchorfile>classcsGraphics2D.html</anchorfile>
+      <anchor>a81e9071453e8296f8d7088f51b60c261</anchor>
+      <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>int</type>
@@ -98013,6 +98041,13 @@
       <anchorfile>structiNativeWindow.html</anchorfile>
       <anchor>a960430e15fc4e95128d35ba49af073a7a59aefede31f37cec5c89b0136c29e7a0</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>FitSizeToWorkingArea</name>
+      <anchorfile>structiNativeWindow.html</anchorfile>
+      <anchor>a62458df5188c1510c51505ba68953ae0</anchor>
+      <arglist>(int &amp;desiredWidth, int &amp;desiredHeight)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
