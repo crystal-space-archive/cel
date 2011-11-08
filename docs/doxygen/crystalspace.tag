@@ -64242,6 +64242,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>openComplete</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a030a1e89d14b892a52f961254c9426e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>csGLStateCache *</type>
       <name>statecache</name>
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
