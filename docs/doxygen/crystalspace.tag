@@ -72401,15 +72401,15 @@
       <type>virtual void</type>
       <name>Write</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a8caba09193b92ad4a60167da4c9156a8</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, char *text)</arglist>
+      <anchor>ae6e007fe21b09c22e48b6dba9bb8cc4c</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const char *text)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>WriteBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a6670e02a59d3ffa99408f75040327924</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, char *text)</arglist>
+      <anchor>a1055d40f5f1de680261ed6cfe58e5fcb</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -101342,15 +101342,15 @@
       <type>virtual void</type>
       <name>Write</name>
       <anchorfile>structiPen.html</anchorfile>
-      <anchor>ad2afb470cf2554246bb5e44f2d746897</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, char *text)=0</arglist>
+      <anchor>a3c7e627a1d5f388b61ecf0698a5ee8a2</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const char *text)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>WriteBoxed</name>
       <anchorfile>structiPen.html</anchorfile>
-      <anchor>a6d668febbe33e724c7adc5c0a5fbcb65</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, char *text)=0</arglist>
+      <anchor>aa379badaff4fb8218e49bc6be463e277</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
