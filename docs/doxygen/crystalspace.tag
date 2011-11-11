@@ -82560,6 +82560,13 @@
       <arglist>(const utf32_char ch, utf8_char *buf, size_t bufsize, bool allowNonchars=false)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static utf32_char</type>
+      <name>MapToFold</name>
+      <anchorfile>classcsUnicodeTransform.html</anchorfile>
+      <anchor>a9459a6dc4e095c0e28bd28baac38c81d</anchor>
+      <arglist>(const utf32_char ch)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static size_t</type>
       <name>MapToFold</name>
       <anchorfile>classcsUnicodeTransform.html</anchorfile>
@@ -82567,11 +82574,25 @@
       <arglist>(const utf32_char ch, utf32_char *dest, size_t destSize, uint flags=0)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static utf32_char</type>
+      <name>MapToLower</name>
+      <anchorfile>classcsUnicodeTransform.html</anchorfile>
+      <anchor>a8b85f575811f14f454e3c188f0f414e5</anchor>
+      <arglist>(const utf32_char ch)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static size_t</type>
       <name>MapToLower</name>
       <anchorfile>classcsUnicodeTransform.html</anchorfile>
       <anchor>a68b49c8dbeb3970733ba455f33e6e61c</anchor>
       <arglist>(const utf32_char ch, utf32_char *dest, size_t destSize, uint flags=0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static utf32_char</type>
+      <name>MapToUpper</name>
+      <anchorfile>classcsUnicodeTransform.html</anchorfile>
+      <anchor>a55aabac27a6ed9dd0b448270b7d5f876</anchor>
+      <arglist>(const utf32_char ch)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static size_t</type>
