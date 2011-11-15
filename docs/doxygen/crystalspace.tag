@@ -25032,6 +25032,7 @@
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
     <includes id="partialorder_8h" name="partialorder.h" local="yes" imported="no">csutil/partialorder.h</includes>
     <includes id="physfile_8h" name="physfile.h" local="yes" imported="no">csutil/physfile.h</includes>
+    <includes id="platformfile_8h" name="platformfile.h" local="yes" imported="no">csutil/platformfile.h</includes>
     <includes id="plugldr_8h" name="plugldr.h" local="yes" imported="no">csutil/plugldr.h</includes>
     <includes id="plugmgr_8h" name="plugmgr.h" local="yes" imported="no">csutil/plugmgr.h</includes>
     <includes id="pooledscfclass_8h" name="pooledscfclass.h" local="yes" imported="no">csutil/pooledscfclass.h</includes>
@@ -25391,6 +25392,7 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>archive_8h</filename>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
+    <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="databuf_8h" name="databuf.h" local="yes" imported="no">csutil/databuf.h</includes>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
@@ -27479,6 +27481,15 @@
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
     <class kind="class">csPhysicalFile</class>
+  </compound>
+  <compound kind="file">
+    <name>platformfile.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>platformfile_8h</filename>
+    <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <class kind="struct">CS::Platform::File</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Platform</namespace>
   </compound>
   <compound kind="file">
     <name>plugldr.h</name>
@@ -69382,6 +69393,13 @@
       <anchor>aa4bf78fccb504a3c9d938b2950ee8d34</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetPartialData</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>aadef2da76fccfdf744a0791823ad17bb</anchor>
+      <arglist>(size_t offset, size_t size=(size_t)~0)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>GetPos</name>
@@ -72506,6 +72524,13 @@
       <anchorfile>classcsPhysicalFile.html</anchorfile>
       <anchor>a47042151625f5adf1fb93fc5d6103d46</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetPartialData</name>
+      <anchorfile>classcsPhysicalFile.html</anchorfile>
+      <anchor>aeda0cb8ec9f87a956bd7e89a88c76204</anchor>
+      <arglist>(size_t offset, size_t size=(size_t)~0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
@@ -91656,6 +91681,13 @@
       <anchorfile>structiFile.html</anchorfile>
       <anchor>a0d39996448ca1794faa2bdf58d6b186b</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetPartialData</name>
+      <anchorfile>structiFile.html</anchorfile>
+      <anchor>a43731c65e851f200a9c0a9955326be77</anchor>
+      <arglist>(size_t offset, size_t size=(size_t)~0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
@@ -128355,6 +128387,7 @@
     <name>CS::Platform</name>
     <filename>namespaceCS_1_1Platform.html</filename>
     <namespace>CS::Platform::Win32</namespace>
+    <class kind="struct">CS::Platform::File</class>
     <class kind="class">CS::Platform::ProcessorSpecDetection</class>
     <member kind="function">
       <type>size_t</type>
@@ -128390,6 +128423,17 @@
       <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
       <anchor>ae2a5a384bcc38a660c0de1092a506283</anchor>
       <arglist>(const char *path)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Platform::File</name>
+    <filename>structCS_1_1Platform_1_1File.html</filename>
+    <member kind="function" static="yes">
+      <type>static FILE *</type>
+      <name>Open</name>
+      <anchorfile>structCS_1_1Platform_1_1File.html</anchorfile>
+      <anchor>aa6daadecdf6c4d2fe9d3b60b83c9ec55</anchor>
+      <arglist>(const char *filename, const char *mode)</arglist>
     </member>
   </compound>
   <compound kind="class">
