@@ -25059,6 +25059,7 @@
     <includes id="schedule_8h" name="schedule.h" local="yes" imported="no">csutil/schedule.h</includes>
     <includes id="scopeddelete_8h" name="scopeddelete.h" local="yes" imported="no">csutil/scopeddelete.h</includes>
     <includes id="scopedlock_8h" name="scopedlock.h" local="yes" imported="no">csutil/scopedlock.h</includes>
+    <includes id="scopedpointer_8h" name="scopedpointer.h" local="yes" imported="no">csutil/scopedpointer.h</includes>
     <includes id="set_8h" name="set.h" local="yes" imported="no">csutil/set.h</includes>
     <includes id="simplejobqueue_8h" name="simplejobqueue.h" local="yes" imported="no">csutil/simplejobqueue.h</includes>
     <includes id="snprintf_8h" name="snprintf.h" local="yes" imported="no">csutil/snprintf.h</includes>
@@ -28102,6 +28103,7 @@
     <name>scopeddelete.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>scopeddelete_8h</filename>
+    <includes id="scopedpointer_8h" name="scopedpointer.h" local="yes" imported="no">csutil/scopedpointer.h</includes>
     <class kind="class">CS::Utility::ScopedDelete</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
@@ -28110,6 +28112,14 @@
     <name>scopedlock.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>scopedlock_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>scopedpointer.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>scopedpointer_8h</filename>
+    <class kind="class">CS::Utility::ScopedPointer</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Utility</namespace>
   </compound>
   <compound kind="file">
     <name>set.h</name>
@@ -132887,6 +132897,7 @@
     <class kind="class">CS::Utility::PriorityQueue</class>
     <class kind="class">CS::Utility::RootedHierarchicalCache</class>
     <class kind="class">CS::Utility::ScopedDelete</class>
+    <class kind="class">CS::Utility::ScopedPointer</class>
     <class kind="class">CS::Utility::StringArray</class>
     <class kind="class">CS::Utility::StringHash</class>
     <class kind="class">CS::Utility::StringSet</class>
@@ -133927,28 +133938,7 @@
     <name>CS::Utility::ScopedDelete</name>
     <filename>classCS_1_1Utility_1_1ScopedDelete.html</filename>
     <templarg></templarg>
-    <base protection="private">CS::Implementation::NonCopyable_</base>
-    <member kind="function">
-      <type></type>
-      <name>operator T *</name>
-      <anchorfile>classCS_1_1Utility_1_1ScopedDelete.html</anchorfile>
-      <anchor>a2b864a9ff832086b51a68c80b44290d8</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>T &amp;</type>
-      <name>operator*</name>
-      <anchorfile>classCS_1_1Utility_1_1ScopedDelete.html</anchorfile>
-      <anchor>a8e1ef6970e7782eee70dc16f247ff4f4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>T *</type>
-      <name>operator-&gt;</name>
-      <anchorfile>classCS_1_1Utility_1_1ScopedDelete.html</anchorfile>
-      <anchor>a2db49edbaa49511724221782fc1b9eb6</anchor>
-      <arglist>() const </arglist>
-    </member>
+    <base>CS::Utility::ScopedPointer</base>
     <member kind="function">
       <type></type>
       <name>ScopedDelete</name>
@@ -133956,11 +133946,66 @@
       <anchor>a927447ba3baf4d6e6cb0573fa502f6b2</anchor>
       <arglist>(T *ptr)</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ScopedPointer</name>
+    <filename>classCS_1_1Utility_1_1ScopedPointer.html</filename>
+    <templarg></templarg>
+    <base protection="private">CS::Implementation::NonCopyable_</base>
+    <member kind="function">
+      <type>void</type>
+      <name>Invalidate</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a458db68ab4d81c59fc41a40f42e5f1b8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsValid</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>adcd0761871b4241ee8e4dc87224f7239</anchor>
+      <arglist>() const </arglist>
+    </member>
     <member kind="function">
       <type></type>
-      <name>~ScopedDelete</name>
-      <anchorfile>classCS_1_1Utility_1_1ScopedDelete.html</anchorfile>
-      <anchor>a47788634526c878b5ae7cfb81b244f43</anchor>
+      <name>operator T *</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a184e81eb24e45a17f44056006f754a29</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>operator*</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a01afa856efe809a66e3d74d1b9290ac6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>operator-&gt;</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a2e53509a99e4f27ffc4320c32ad7e4ea</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a63f6d9d63317b17dec7354c1a9ec7ff6</anchor>
+      <arglist>(T *ptr=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ScopedPointer</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>aceac8881870961fc476af30df1aa3a42</anchor>
+      <arglist>(T *ptr=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ScopedPointer</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>ac566c19d2143d8c737a799da8edf98fd</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
