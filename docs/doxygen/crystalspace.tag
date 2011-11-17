@@ -24964,7 +24964,8 @@
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="algorithms_8h" name="algorithms.h" local="yes" imported="no">csutil/algorithms.h</includes>
     <includes id="alignedalloc_8h" name="alignedalloc.h" local="yes" imported="no">csutil/alignedalloc.h</includes>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="allocatorimpl_8h" name="allocatorimpl.h" local="yes" imported="no">csutil/allocatorimpl.h</includes>
     <includes id="ansicommand_8h" name="ansicommand.h" local="yes" imported="no">csutil/ansicommand.h</includes>
     <includes id="ansiparse_8h" name="ansiparse.h" local="yes" imported="no">csutil/ansiparse.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -25177,11 +25178,14 @@
   <compound kind="file">
     <name>allocator.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
-    <filename>allocator_8h</filename>
+    <filename>csutil_2allocator_8h</filename>
     <includes id="alignedalloc_8h" name="alignedalloc.h" local="yes" imported="no">csutil/alignedalloc.h</includes>
     <includes id="csutil_2memdebug_8h" name="memdebug.h" local="yes" imported="no">csutil/memdebug.h</includes>
+    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
+    <includes id="iutil_2allocator_8h" name="allocator.h" local="yes" imported="no">iutil/allocator.h</includes>
     <class kind="class">CS::Memory::AllocatorAlign</class>
+    <class kind="class">CS::Memory::AllocatorInterface</class>
     <class kind="class">CS::Memory::AllocatorMalloc</class>
     <class kind="class">CS::Memory::AllocatorMallocPlatform</class>
     <class kind="class">CS::Memory::AllocatorNew</class>
@@ -25191,6 +25195,25 @@
     <class kind="class">CS::Memory::AllocatorSafe</class>
     <class kind="class">CS::Memory::LocalBufferAllocator</class>
     <class kind="class">CS::Memory::LocalBufferAllocatorUnchecked</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Memory</namespace>
+  </compound>
+  <compound kind="file">
+    <name>allocator.h</name>
+    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <filename>iutil_2allocator_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <class kind="struct">CS::Memory::iAllocator</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Memory</namespace>
+  </compound>
+  <compound kind="file">
+    <name>allocatorimpl.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>allocatorimpl_8h</filename>
+    <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
+    <includes id="iutil_2allocator_8h" name="allocator.h" local="yes" imported="no">iutil/allocator.h</includes>
+    <class kind="class">CS::Memory::AllocatorImplementation</class>
     <namespace>CS</namespace>
     <namespace>CS::Memory</namespace>
   </compound>
@@ -25408,7 +25431,7 @@
     <filename>csutil_2array_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -25490,7 +25513,7 @@
     <name>bitarray.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>bitarray_8h</filename>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="compileassert_8h" name="compileassert.h" local="yes" imported="no">csutil/compileassert.h</includes>
@@ -25667,7 +25690,7 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>cowwrapper_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
     <class kind="class">CS::CowWrapper</class>
     <namespace>CS</namespace>
@@ -26321,7 +26344,7 @@
     <name>databuf.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>databuf_8h</filename>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
     <class kind="class">CS::DataBuffer</class>
@@ -27253,7 +27276,7 @@
     <name>list.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>list_8h</filename>
-    <includes id="allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
+    <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
     <class kind="class">csList</class>
@@ -31307,6 +31330,7 @@
     <path>/tmp/tmp2/trunk/include/</path>
     <filename>iutil_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="iutil_2allocator_8h" name="allocator.h" local="yes" imported="no">iutil/allocator.h</includes>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
     <includes id="iutil_2binder_8h" name="binder.h" local="yes" imported="no">iutil/binder.h</includes>
     <includes id="iutil_2cache_8h" name="cache.h" local="yes" imported="no">iutil/cache.h</includes>
@@ -32626,6 +32650,7 @@
     <class kind="struct">iVFS</class>
     <namespace>CS</namespace>
     <namespace>CS::Deprecated</namespace>
+    <namespace>CS::Memory</namespace>
     <member kind="define">
       <type>#define</type>
       <name>ASSIGN_FILETIME</name>
@@ -69382,6 +69407,13 @@
       <anchor>ab4851e941844524a07eafb8c0b93c779</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetAllData</name>
+      <anchorfile>classcsMemFile.html</anchorfile>
+      <anchor>ac8518ddee8c0383bc1e0d53f7ff3ad6a</anchor>
+      <arglist>(CS::Memory::iAllocator *)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual csPtr&lt; iDataBuffer &gt;</type>
       <name>GetAllData</name>
@@ -69404,10 +69436,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetPartialData</name>
+      <type>csPtr&lt; iFile &gt;</type>
+      <name>GetPartialView</name>
       <anchorfile>classcsMemFile.html</anchorfile>
-      <anchor>aadef2da76fccfdf744a0791823ad17bb</anchor>
+      <anchor>aa85d930c707aa8f41d82e734aed81cf4</anchor>
       <arglist>(size_t offset, size_t size=(size_t)~0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -72525,6 +72557,13 @@
       <type>virtual csPtr&lt; iDataBuffer &gt;</type>
       <name>GetAllData</name>
       <anchorfile>classcsPhysicalFile.html</anchorfile>
+      <anchor>a79a553dae3d679cb53f93e953b90ff9a</anchor>
+      <arglist>(CS::Memory::iAllocator *allocator)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetAllData</name>
+      <anchorfile>classcsPhysicalFile.html</anchorfile>
       <anchor>a354114912f66ca387233678eed9230f3</anchor>
       <arglist>(bool nullterm=false)</arglist>
     </member>
@@ -72536,10 +72575,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetPartialData</name>
+      <type>csPtr&lt; iFile &gt;</type>
+      <name>GetPartialView</name>
       <anchorfile>classcsPhysicalFile.html</anchorfile>
-      <anchor>aeda0cb8ec9f87a956bd7e89a88c76204</anchor>
+      <anchor>a801bd35d4315c7975499970604cb7afa</anchor>
       <arglist>(size_t offset, size_t size=(size_t)~0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -91682,6 +91721,13 @@
       <type>virtual csPtr&lt; iDataBuffer &gt;</type>
       <name>GetAllData</name>
       <anchorfile>structiFile.html</anchorfile>
+      <anchor>a418f1871674a38f09e48b771c97f7269</anchor>
+      <arglist>(CS::Memory::iAllocator *allocator)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetAllData</name>
+      <anchorfile>structiFile.html</anchorfile>
       <anchor>a8b4612b4492382cf2d4f17dd4bbf364e</anchor>
       <arglist>(bool nullterm=false)=0</arglist>
     </member>
@@ -91693,10 +91739,10 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetPartialData</name>
+      <type>virtual csPtr&lt; iFile &gt;</type>
+      <name>GetPartialView</name>
       <anchorfile>structiFile.html</anchorfile>
-      <anchor>a43731c65e851f200a9c0a9955326be77</anchor>
+      <anchor>ac5a7724f99fd3dcd11458be49facbb00</anchor>
       <arglist>(size_t offset, size_t size=(size_t)~0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -125904,6 +125950,8 @@
     <class kind="class">CS::Memory::AllocatorAlign</class>
     <class kind="class">CS::Memory::AllocatorHeap</class>
     <class kind="class">CS::Memory::AllocatorHeapBase</class>
+    <class kind="class">CS::Memory::AllocatorImplementation</class>
+    <class kind="class">CS::Memory::AllocatorInterface</class>
     <class kind="class">CS::Memory::AllocatorMalloc</class>
     <class kind="class">CS::Memory::AllocatorMallocPlatform</class>
     <class kind="class">CS::Memory::AllocatorNew</class>
@@ -125917,6 +125965,7 @@
     <class kind="class">CS::Memory::FixedSizeAllocatorSafe</class>
     <class kind="class">CS::Memory::Heap</class>
     <class kind="struct">CS::Memory::HeapAccessPointer</class>
+    <class kind="struct">CS::Memory::iAllocator</class>
     <class kind="class">CS::Memory::LocalBufferAllocator</class>
     <class kind="class">CS::Memory::LocalBufferAllocatorUnchecked</class>
     <member kind="function">
@@ -125998,6 +126047,16 @@
       <anchor>ab0c98707372ec37938f584843c2561ba</anchor>
       <arglist>(const char *info)</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Memory::AllocatorImplementation</name>
+    <filename>classCS_1_1Memory_1_1AllocatorImplementation.html</filename>
+    <templarg></templarg>
+    <base>scfImplementation1&lt; AllocatorImplementation&lt; Allocator &gt;, iAllocator &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Memory::AllocatorInterface</name>
+    <filename>classCS_1_1Memory_1_1AllocatorInterface.html</filename>
   </compound>
   <compound kind="class">
     <name>CS::Memory::AllocatorMalloc</name>
@@ -126360,6 +126419,39 @@
     <name>CS::Memory::HeapAccessPointer</name>
     <filename>structCS_1_1Memory_1_1HeapAccessPointer.html</filename>
     <templarg>HeapContainer</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Memory::iAllocator</name>
+    <filename>structCS_1_1Memory_1_1iAllocator.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void *</type>
+      <name>Alloc</name>
+      <anchorfile>structCS_1_1Memory_1_1iAllocator.html</anchorfile>
+      <anchor>a6094f1887da36c6849c69633a669b692</anchor>
+      <arglist>(const size_t n)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Free</name>
+      <anchorfile>structCS_1_1Memory_1_1iAllocator.html</anchorfile>
+      <anchor>a7ce3b4d70aa4840355d11137235df4c0</anchor>
+      <arglist>(void *p)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void *</type>
+      <name>Realloc</name>
+      <anchorfile>structCS_1_1Memory_1_1iAllocator.html</anchorfile>
+      <anchor>ab9f9113189b133978e15ae3107763373</anchor>
+      <arglist>(void *p, size_t newSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMemTrackerInfo</name>
+      <anchorfile>structCS_1_1Memory_1_1iAllocator.html</anchorfile>
+      <anchor>a89d4afcb0b2a8045a88938a10cabf49b</anchor>
+      <arglist>(const char *info)=0</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::Memory::LocalBufferAllocator</name>
