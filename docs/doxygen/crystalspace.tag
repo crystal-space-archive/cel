@@ -79799,6 +79799,20 @@
       <type></type>
       <name>csString</name>
       <anchorfile>classcsString.html</anchorfile>
+      <anchor>a4c4c7a9d72732bc49d0ad19c7b124a5f</anchor>
+      <arglist>(const wchar_t *src, size_t _length)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csString</name>
+      <anchorfile>classcsString.html</anchorfile>
+      <anchor>a914bf5f98c41d479aa5ba879a8391fd6</anchor>
+      <arglist>(const wchar_t *src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csString</name>
+      <anchorfile>classcsString.html</anchorfile>
       <anchor>a302e652ded98052ce79cb74539a5815f</anchor>
       <arglist>(const char *src, size_t _length)</arglist>
     </member>
@@ -80712,6 +80726,20 @@
       <anchorfile>classcsStringFast.html</anchorfile>
       <anchor>a45911ea190a2c9cd34c9f0805664c732</anchor>
       <arglist>(char c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csStringFast</name>
+      <anchorfile>classcsStringFast.html</anchorfile>
+      <anchor>ae4db7135203745e0141b78554133bd72</anchor>
+      <arglist>(const wchar_t *src, size_t _length)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csStringFast</name>
+      <anchorfile>classcsStringFast.html</anchorfile>
+      <anchor>ada2ab1518e316c3f8f8e7375d19d8535</anchor>
+      <arglist>(const wchar_t *src)</arglist>
     </member>
     <member kind="function">
       <type></type>
