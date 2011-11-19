@@ -28449,6 +28449,13 @@
     <namespace>CS</namespace>
     <namespace>CS::Platform</namespace>
     <member kind="function">
+      <type>int</type>
+      <name>CreateDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a8ce8d0dd2f1be04a8b9b5a5ee98b1dad</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
       <type>csString</type>
       <name>GetTempDirectory</name>
       <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
@@ -128519,6 +128526,13 @@
     <namespace>CS::Platform::Win32</namespace>
     <class kind="struct">CS::Platform::File</class>
     <class kind="class">CS::Platform::ProcessorSpecDetection</class>
+    <member kind="function">
+      <type>int</type>
+      <name>CreateDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a8ce8d0dd2f1be04a8b9b5a5ee98b1dad</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
     <member kind="function">
       <type>size_t</type>
       <name>GetMaxVirtualSize</name>
