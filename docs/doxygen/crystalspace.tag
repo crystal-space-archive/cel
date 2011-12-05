@@ -64587,6 +64587,13 @@
       <arglist>(const ConstGlobalIterator &amp;o)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>ConstGlobalIterator</name>
+      <anchorfile>classcsHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a249c09e89dbf78669be10b9154b7d464</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>HasNext</name>
       <anchorfile>classcsHash_1_1ConstGlobalIterator.html</anchorfile>
@@ -64712,6 +64719,13 @@
       <anchorfile>classcsHash_1_1GlobalIterator.html</anchorfile>
       <anchor>a6e2cfda9033b4afa9c3102f105f35dec</anchor>
       <arglist>(const GlobalIterator &amp;o)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GlobalIterator</name>
+      <anchorfile>classcsHash_1_1GlobalIterator.html</anchorfile>
+      <anchor>a0804936a738f4518d4956fb05408b7f6</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>bool</type>

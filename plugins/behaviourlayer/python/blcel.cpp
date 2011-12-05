@@ -27070,6 +27070,32 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_RemoveProperty(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPropertyClassTemplate *arg1 = (iCelPropertyClassTemplate *) 0 ;
+  SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClassTemplate_RemoveProperty",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClassTemplate_RemoveProperty" "', argument " "1"" of type '" "iCelPropertyClassTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPropertyClassTemplate * >(argp1);
+  {
+    arg2 = (csStringID)PyLong_AsUnsignedLong(obj1);
+  }
+  (arg1)->RemoveProperty(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_Name_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPropertyClassTemplate *arg1 = (iCelPropertyClassTemplate *) 0 ;
@@ -121670,6 +121696,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPropertyClassTemplate_GetProperty", _wrap_iCelPropertyClassTemplate_GetProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_FindProperty", _wrap_iCelPropertyClassTemplate_FindProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_RemoveAllProperties", _wrap_iCelPropertyClassTemplate_RemoveAllProperties, METH_VARARGS, NULL},
+	 { (char *)"iCelPropertyClassTemplate_RemoveProperty", _wrap_iCelPropertyClassTemplate_RemoveProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Name_set", _wrap_iCelPropertyClassTemplate_Name_set, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Name_get", _wrap_iCelPropertyClassTemplate_Name_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Tag_set", _wrap_iCelPropertyClassTemplate_Tag_set, METH_VARARGS, NULL},
