@@ -26945,6 +26945,48 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_ReplaceActionParameters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPropertyClassTemplate *arg1 = (iCelPropertyClassTemplate *) 0 ;
+  size_t arg2 ;
+  csHash< csRef< iParameter >,csStringID > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClassTemplate_ReplaceActionParameters",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClassTemplate_ReplaceActionParameters" "', argument " "1"" of type '" "iCelPropertyClassTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPropertyClassTemplate * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iCelPropertyClassTemplate_ReplaceActionParameters" "', argument " "2"" of type '" "size_t""'");
+  } 
+  arg2 = static_cast< size_t >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csHashT_csRefT_iParameter_t_CS__StringIDT_CS__StringSetTag__General_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerT_CS__Container__HashElementT_csRefT_iParameter_t_CS__StringIDT_CS__StringSetTag__General_t_t_t_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iCelPropertyClassTemplate_ReplaceActionParameters" "', argument " "3"" of type '" "csHash< csRef< iParameter >,csStringID > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iCelPropertyClassTemplate_ReplaceActionParameters" "', argument " "3"" of type '" "csHash< csRef< iParameter >,csStringID > const &""'"); 
+  }
+  arg3 = reinterpret_cast< csHash< csRef< iParameter >,csStringID > * >(argp3);
+  (arg1)->ReplaceActionParameters(arg2,(csHash< csRef< iParameter >,csStringID > const &)*arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_GetPropertyCount(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPropertyClassTemplate *arg1 = (iCelPropertyClassTemplate *) 0 ;
@@ -27089,6 +27131,36 @@ SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_RemoveProperty(PyObject *SW
     arg2 = (csStringID)PyLong_AsUnsignedLong(obj1);
   }
   (arg1)->RemoveProperty(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPropertyClassTemplate_RemovePropertyByIndex(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPropertyClassTemplate *arg1 = (iCelPropertyClassTemplate *) 0 ;
+  size_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPropertyClassTemplate_RemovePropertyByIndex",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPropertyClassTemplate_RemovePropertyByIndex" "', argument " "1"" of type '" "iCelPropertyClassTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPropertyClassTemplate * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iCelPropertyClassTemplate_RemovePropertyByIndex" "', argument " "2"" of type '" "size_t""'");
+  } 
+  arg2 = static_cast< size_t >(val2);
+  (arg1)->RemovePropertyByIndex(arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -121692,11 +121764,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPropertyClassTemplate_SetPropertyVariable", _wrap_iCelPropertyClassTemplate_SetPropertyVariable, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_SetProperty", _wrap_iCelPropertyClassTemplate_SetProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_PerformAction", _wrap_iCelPropertyClassTemplate_PerformAction, METH_VARARGS, NULL},
+	 { (char *)"iCelPropertyClassTemplate_ReplaceActionParameters", _wrap_iCelPropertyClassTemplate_ReplaceActionParameters, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_GetPropertyCount", _wrap_iCelPropertyClassTemplate_GetPropertyCount, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_GetProperty", _wrap_iCelPropertyClassTemplate_GetProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_FindProperty", _wrap_iCelPropertyClassTemplate_FindProperty, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_RemoveAllProperties", _wrap_iCelPropertyClassTemplate_RemoveAllProperties, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_RemoveProperty", _wrap_iCelPropertyClassTemplate_RemoveProperty, METH_VARARGS, NULL},
+	 { (char *)"iCelPropertyClassTemplate_RemovePropertyByIndex", _wrap_iCelPropertyClassTemplate_RemovePropertyByIndex, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Name_set", _wrap_iCelPropertyClassTemplate_Name_set, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Name_get", _wrap_iCelPropertyClassTemplate_Name_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPropertyClassTemplate_Tag_set", _wrap_iCelPropertyClassTemplate_Tag_set, METH_VARARGS, NULL},
