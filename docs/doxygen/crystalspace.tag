@@ -24509,7 +24509,9 @@
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="ivideo_2texture_8h" name="texture.h" local="yes" imported="no">ivideo/texture.h</includes>
     <class kind="class">csPen</class>
-    <class kind="struct">iPen</class>
+    <class kind="class">csPenCache</class>
+    <class kind="struct">csPenCoordinate</class>
+    <class kind="struct">csPenCoordinatePair</class>
   </compound>
   <compound kind="file">
     <name>primitives.h</name>
@@ -72142,180 +72144,193 @@
   <compound kind="class">
     <name>csPen</name>
     <filename>classcsPen.html</filename>
-    <base>iPen</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>ClearFlag</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>afb048f3e04476fc9288e946f6bef4507</anchor>
+      <anchor>a2d2f68526e15cda2ef5fd209592edab2</anchor>
       <arglist>(uint flag)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>ClearTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a67a508b4e2c20f4a3b91acef4201bc0e</anchor>
+      <anchor>acf3765461605f475cb5d1c69376f0e66</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawArc</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a68a9ba22a4df1a084d265bb357c781fe</anchor>
+      <anchor>a23bb83b8c9dee06238a3c0de115606a6</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2, float start_angle=0, float end_angle=6.2831853)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawLine</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a5c6c1a4d2efc245ee9bda743b9ce844e</anchor>
+      <anchor>a9421a9af548b24cea660a78ed3642ba6</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawLines</name>
+      <anchorfile>classcsPen.html</anchorfile>
+      <anchor>a1b29a409cfd8b4b90012fbc2086f1858</anchor>
+      <arglist>(const csArray&lt; csPenCoordinatePair &gt; &amp;pairs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>DrawMiteredRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ae2d01e51bcc3dd1ba9a739d812715da9</anchor>
+      <anchor>adc2bbba07b2c1ee665ac6e30af287e1e</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2, uint miter)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawPoint</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a86e00fb2731022eb4c98ca448a646f2c</anchor>
+      <anchor>af63794b88a2e9f9f94392a2996ddabf8</anchor>
       <arglist>(uint x1, uint y2)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a535ee1b9bc8ca5eba8ae2a10f1a901bc</anchor>
+      <anchor>ac6f94b783f64a45b58ef102955d570c8</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawRoundedRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a3ea4ed653ec9f85f7cc0230465323d81</anchor>
+      <anchor>afa05aee6fd6051029e32fbc6e7ca978e</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2, uint roundness)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>DrawTriangle</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ada90b951b2f6a5a740c37ecb235566dc</anchor>
+      <anchor>a9c8de41c5bebde88f6f44fad073ccb00</anchor>
       <arglist>(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>PopTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ab909c3003b068aef62558c42021e437e</anchor>
+      <anchor>adb5f3ce3702032eedc26ac19c180a653</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>PushTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a4e92d48077ae54d3e8a694652b1d9026</anchor>
+      <anchor>af6131f2620fface6e7fc2576e756a8ab</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>Rotate</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a03c25d06d4aae17cf9ca970068d6e3bd</anchor>
+      <anchor>af468f2eb66fc9c030c4bf10097fe938d</anchor>
       <arglist>(const float &amp;a)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>SetColor</name>
+    <member kind="function">
+      <type>void</type>
+      <name>SetActiveCache</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a848a217fab578ceb9bf26de8fae44a89</anchor>
-      <arglist>(const csColor4 &amp;color)</arglist>
+      <anchor>a6fc6cce4828b563c7a30e3ebbbf64d76</anchor>
+      <arglist>(csPenCache *cache)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetColor</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aec3ec70cb4e1be4a38f78f138320a8bb</anchor>
+      <anchor>aeb75fa442eab2cc8acd327b5364c6023</anchor>
       <arglist>(float r, float g, float b, float a)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetFlag</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a4d8befbbaefef36c84dbcd5ad2ee9e9c</anchor>
+      <anchor>a8b211536d04f0f5b4e13ffd410fb0ec5</anchor>
       <arglist>(uint flag)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetMixMode</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>af81a262836e560950bccf0e0f565c437</anchor>
+      <anchor>a83f5e5bfb310b24c928c23e0fc6926f1</anchor>
       <arglist>(uint mode)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetOrigin</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aa65e30728dd4a8d7bda77fd4a2d7b6ef</anchor>
+      <anchor>a7ea582a49d7a7f42b31451767adb63de</anchor>
       <arglist>(const csVector3 &amp;o)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetPenWidth</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ab1a46490c4984bf2d0ccb6207d400daa</anchor>
+      <anchor>a3d4124acf8db6b334fc07b8b9a5518f5</anchor>
       <arglist>(float width)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>SetTexture</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a3edbc794107682d3241760d8f5a6598a</anchor>
-      <arglist>(csRef&lt; iTextureHandle &gt; tex)</arglist>
+      <anchor>a6ac652da148c7c816cf6718a7ba4c600</anchor>
+      <arglist>(iTextureHandle *tex)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTransform</name>
+      <anchorfile>classcsPen.html</anchorfile>
+      <anchor>aac3510208b36f3bd4df8456fba5f12c3</anchor>
+      <arglist>(const csReversibleTransform &amp;trans)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SwapColors</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a296b4e5b8c9f32cb716909648de96d8a</anchor>
+      <anchor>ae121cd252610e779fdfb124a46664809</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>Translate</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a02352d26acf17a3edeb425a0a238c44d</anchor>
+      <anchor>a19f6410ec9ca63885decc5c6262210c8</anchor>
       <arglist>(const csVector3 &amp;t)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>Write</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ae6e007fe21b09c22e48b6dba9bb8cc4c</anchor>
+      <anchor>a2657315ca0daf754534d63453b6c9ebd</anchor>
       <arglist>(iFont *font, uint x1, uint y1, const char *text)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>WriteBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a1055d40f5f1de680261ed6cfe58e5fcb</anchor>
+      <anchor>a9647099efbecc373ae587340ca584bd6</anchor>
       <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>WriteLines</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a166922ed240d54820956bc98bc28df40</anchor>
+      <anchor>a225453571d36d00fe026a2f89f4b9272</anchor>
       <arglist>(iFont *font, uint x1, uint y1, const csStringArray &amp;lines)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>WriteLinesBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ab1f7a3fbd9b0e6a1ebfb7f74c2ea4810</anchor>
+      <anchor>af851f50c5457524c4d01c754631979eb</anchor>
       <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const csStringArray &amp;lines)</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -72367,6 +72382,39 @@
       <anchor>a33ba3592754cededac73f0c4590db2b8</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>csPenCache</name>
+    <filename>classcsPenCache.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>classcsPenCache.html</anchorfile>
+      <anchor>aba3eb6e4a94da4e83fbd48966e45d23d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PushMesh</name>
+      <anchorfile>classcsPenCache.html</anchorfile>
+      <anchor>a0a9c5ff72be9ad7268ded770636581fb</anchor>
+      <arglist>(csSimpleRenderMesh *mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Render</name>
+      <anchorfile>classcsPenCache.html</anchorfile>
+      <anchor>a29baedd14a59d078c9133944333a7c87</anchor>
+      <arglist>(iGraphics3D *g3d)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>csPenCoordinate</name>
+    <filename>structcsPenCoordinate.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>csPenCoordinatePair</name>
+    <filename>structcsPenCoordinatePair.html</filename>
   </compound>
   <compound kind="class">
     <name>csPhysicalFile</name>
@@ -101170,185 +101218,6 @@
       <anchorfile>structiPath.html</anchorfile>
       <anchor>ab1c80e39f9d0556cc06fd627ed442c9d</anchor>
       <arglist>(csVector3 *v)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>iPen</name>
-    <filename>structiPen.html</filename>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearFlag</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a596b9b2ce7775466cf4980429b438922</anchor>
-      <arglist>(uint flag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ClearTransform</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>ade3ad6d218de12e8fad4a53a59a7a17a</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawArc</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a0b226cfc0f3a049d5c6827f92fb89b92</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, float start_angle, float end_angle)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawLine</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a1df52467753f44bf9de33d9ea4ea899d</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawMiteredRect</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>ae3f8d2ad4e79d2041db81bb743dd6f11</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint miter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawPoint</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>aec4d5f50a5e8b5211fccc629d21e0c34</anchor>
-      <arglist>(uint x1, uint y2)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawRect</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a2a022e9a6e372867216dec0c31cd05a7</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawRoundedRect</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a5ca36afe421610f6d607400bed283488</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint roundness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawTriangle</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>aef4ce56b1e7411ca5d0cf6065fc8e4a3</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>PopTransform</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>ae332eba7dbea04c84fcc639d6992f582</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>PushTransform</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a3c71401fe20d0fdd1ccb69df82923394</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Rotate</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a4b4f24f9b020f9840e8088d151843cba</anchor>
-      <arglist>(const float &amp;a)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetColor</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>af5ee30a2b1750af01bc74491931bd785</anchor>
-      <arglist>(const csColor4 &amp;color)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetColor</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a19e44ed243759a1571e25c94715fadf9</anchor>
-      <arglist>(float r, float g, float b, float a)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetFlag</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a49078e4f749d24a64c98c0577116acc1</anchor>
-      <arglist>(uint flag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMixMode</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a1207d19d0b798154630f9ea789fdb892</anchor>
-      <arglist>(uint mode)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetOrigin</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a15c59cec22f8c6f1cd5b3172caf67545</anchor>
-      <arglist>(const csVector3 &amp;o)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPenWidth</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a9113eb8dda4d64879fe948fcbf42992f</anchor>
-      <arglist>(float width)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetTexture</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a9288e79058aa9e2a2d7e243ad22c7530</anchor>
-      <arglist>(csRef&lt; iTextureHandle &gt; tex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SwapColors</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a40ec4da86abc0c3d9f0f69c3577a4883</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Translate</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>ae17cefbab4c9f0aab0b376a76db440e7</anchor>
-      <arglist>(const csVector3 &amp;t)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Write</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a3c7e627a1d5f388b61ecf0698a5ee8a2</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, const char *text)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>WriteBoxed</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>aa379badaff4fb8218e49bc6be463e277</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>WriteLines</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a5c43619506167b756eee430989fee3df</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, const csStringArray &amp;lines)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>WriteLinesBoxed</name>
-      <anchorfile>structiPen.html</anchorfile>
-      <anchor>a55bc59de351ccf31331ee8a577fcdec2</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const csStringArray &amp;lines)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
