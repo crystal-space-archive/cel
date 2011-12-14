@@ -24509,6 +24509,8 @@
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="ivideo_2texture_8h" name="texture.h" local="yes" imported="no">ivideo/texture.h</includes>
     <class kind="class">csPen</class>
+    <class kind="class">csPen3D</class>
+    <class kind="struct">csPen3DCoordinatePair</class>
     <class kind="class">csPenCache</class>
     <class kind="struct">csPenCoordinate</class>
     <class kind="struct">csPenCoordinatePair</class>
@@ -46225,15 +46227,15 @@
       <type>float</type>
       <name>GetMax</name>
       <anchorfile>classcsBox3.html</anchorfile>
-      <anchor>a76bf8a9c554cf277d949352426771117</anchor>
-      <arglist>(size_t idx)</arglist>
+      <anchor>af8dc4bfa0fcfa2db772d247588878c3c</anchor>
+      <arglist>(size_t idx) const </arglist>
     </member>
     <member kind="function">
       <type>float</type>
       <name>GetMin</name>
       <anchorfile>classcsBox3.html</anchorfile>
-      <anchor>a14e7b7a8f332412a9405dd4eb59960d1</anchor>
-      <arglist>(size_t idx)</arglist>
+      <anchor>a1a9717fda23239efe7766dc6ff5ee18d</anchor>
+      <arglist>(size_t idx) const </arglist>
     </member>
     <member kind="function">
       <type>csBox2</type>
@@ -72384,6 +72386,105 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>csPen3D</name>
+    <filename>classcsPen3D.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawArc</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a2710d61e8e72a9628181be588bf53f68</anchor>
+      <arglist>(const csVector3 &amp;c1, const csVector3 &amp;c2, int axis, float start_angle=0, float end_angle=6.2831853)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawBox</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a37ede5dfb6cf26ec478be086dc580c05</anchor>
+      <arglist>(const csBox3 &amp;box)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawCylinder</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a28eed9198984b591acd4494721d4fc03</anchor>
+      <arglist>(const csBox3 &amp;box, int axis)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawLine</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>aa43a9b11475fccad97895267276285fc</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DrawLines</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ab7c251b097c9061d65e4433659b74342</anchor>
+      <arglist>(const csArray&lt; csPen3DCoordinatePair &gt; &amp;pairs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetActiveCache</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ae0b819f1f397a729961291ad284a3cbf</anchor>
+      <arglist>(csPenCache *cache)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetColor</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a4a1230945c4b5169ffbc1681669a2189</anchor>
+      <arglist>(float r, float g, float b, float a)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetMixMode</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ad65e7db880b39706b329922f8818a029</anchor>
+      <arglist>(uint mode)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTransform</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>af945bc8fdfc4564a015c219e45671991</anchor>
+      <arglist>(const csReversibleTransform &amp;trans)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>AddVertex</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ab706204be05dc79f1d4dd2251c663a77</anchor>
+      <arglist>(const csVector3 &amp;v)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>DrawMesh</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ab36653d7a29761b9418e094368d51082</anchor>
+      <arglist>(csRenderMeshType mesh_type)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>SetupMesh</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a408d56c0455b73ccc981611fee1ac13a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Start</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>a607fd3503dd8069e2785ab4a85a4176c</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>csPen3DCoordinatePair</name>
+    <filename>structcsPen3DCoordinatePair.html</filename>
+  </compound>
+  <compound kind="class">
     <name>csPenCache</name>
     <filename>classcsPenCache.html</filename>
     <member kind="function">
@@ -72397,8 +72498,8 @@
       <type>void</type>
       <name>PushMesh</name>
       <anchorfile>classcsPenCache.html</anchorfile>
-      <anchor>a0a9c5ff72be9ad7268ded770636581fb</anchor>
-      <arglist>(csSimpleRenderMesh *mesh)</arglist>
+      <anchor>a9ad078c07277f3dc9efa8b04fcffdd2f</anchor>
+      <arglist>(csSimpleRenderMesh *mesh, csSimpleMeshFlags flags)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -72406,6 +72507,13 @@
       <anchorfile>classcsPenCache.html</anchorfile>
       <anchor>a29baedd14a59d078c9133944333a7c87</anchor>
       <arglist>(iGraphics3D *g3d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTransform</name>
+      <anchorfile>classcsPenCache.html</anchorfile>
+      <anchor>a0081b86bb3b7b6af8fc0cd8c2ee2c6ac</anchor>
+      <arglist>(const csReversibleTransform &amp;trans)</arglist>
     </member>
   </compound>
   <compound kind="struct">
