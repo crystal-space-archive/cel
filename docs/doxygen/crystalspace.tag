@@ -119315,6 +119315,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>GetDirection</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>a0e750dc7fa236952a9ecd242d1f68200</anchor>
+      <arglist>(csMatrix3 &amp;direction) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetAlwaysRotate</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
       <anchor>a345813e40f1358e96f701099093c79a8</anchor>
@@ -119340,6 +119347,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
       <anchor>aa1b9122dbe8108d2db082d7d39499547</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDirection</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonLookAtNodeFactory.html</anchorfile>
+      <anchor>aedc03b1b6a33f6f7a3f6001120cbc2a4</anchor>
+      <arglist>(const csMatrix3 &amp;direction)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
