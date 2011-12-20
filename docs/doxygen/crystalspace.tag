@@ -22597,6 +22597,7 @@
     <name>dependenttarget.h</name>
     <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
     <filename>dependenttarget_8h</filename>
+    <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="shadersetup_8h" name="shadersetup.h" local="yes" imported="no">csplugincommon/rendermanager/shadersetup.h</includes>
@@ -22798,6 +22799,7 @@
     <name>posteffectssupport.h</name>
     <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
     <filename>posteffectssupport_8h</filename>
+    <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
     <class kind="class">CS::RenderManager::PostEffectsSupport</class>
     <namespace>CS</namespace>
@@ -23090,6 +23092,7 @@
     <name>viscullcommon.h</name>
     <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
     <filename>viscullcommon_8h</filename>
+    <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
@@ -29114,6 +29117,7 @@
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
     <includes id="campos_8h" name="campos.h" local="yes" imported="no">iengine/campos.h</includes>
+    <includes id="collection_8h" name="collection.h" local="yes" imported="no">iengine/collection.h</includes>
     <includes id="engine_8h" name="engine.h" local="yes" imported="no">iengine/engine.h</includes>
     <includes id="iengine_2halo_8h" name="halo.h" local="yes" imported="no">iengine/halo.h</includes>
     <includes id="impman_8h" name="impman.h" local="yes" imported="no">iengine/impman.h</includes>
@@ -29129,6 +29133,7 @@
     <includes id="portal_8h" name="portal.h" local="yes" imported="no">iengine/portal.h</includes>
     <includes id="portalcontainer_8h" name="portalcontainer.h" local="yes" imported="no">iengine/portalcontainer.h</includes>
     <includes id="renderloop_8h" name="renderloop.h" local="yes" imported="no">iengine/renderloop.h</includes>
+    <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="icontainer_8h" name="icontainer.h" local="yes" imported="no">iengine/rendersteps/icontainer.h</includes>
     <includes id="igeneric_8h" name="igeneric.h" local="yes" imported="no">iengine/rendersteps/igeneric.h</includes>
     <includes id="ilightiter_8h" name="ilightiter.h" local="yes" imported="no">iengine/rendersteps/ilightiter.h</includes>
@@ -29164,11 +29169,21 @@
     <class kind="struct">iCameraPositionList</class>
   </compound>
   <compound kind="file">
+    <name>collection.h</name>
+    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <filename>collection_8h</filename>
+    <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <class kind="struct">iCollection</class>
+    <class kind="struct">iCollectionArray</class>
+  </compound>
+  <compound kind="file">
     <name>engine.h</name>
     <path>/tmp/tmp2/trunk/include/iengine/</path>
     <filename>engine_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
+    <includes id="collection_8h" name="collection.h" local="yes" imported="no">iengine/collection.h</includes>
     <includes id="light_8h" name="light.h" local="yes" imported="no">iengine/light.h</includes>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
     <class kind="struct">iEngine</class>
@@ -29762,6 +29777,17 @@
       <anchor>ga569c1d8f97e1d478de101695aafc9af9</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>rendermanager.h</name>
+    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <filename>rendermanager_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
+    <class kind="struct">iRenderManager</class>
+    <class kind="struct">iRenderManagerPostEffects</class>
+    <class kind="struct">iRenderManagerTargets</class>
+    <class kind="struct">iRenderManagerVisCull</class>
   </compound>
   <compound kind="file">
     <name>icontainer.h</name>
@@ -31170,6 +31196,7 @@
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="ss__data_8h" name="ss_data.h" local="yes" imported="no">isndsys/ss_data.h</includes>
     <includes id="ss__driver_8h" name="ss_driver.h" local="yes" imported="no">isndsys/ss_driver.h</includes>
+    <includes id="ss__eventrecorder_8h" name="ss_eventrecorder.h" local="yes" imported="no">isndsys/ss_eventrecorder.h</includes>
     <includes id="ss__filter_8h" name="ss_filter.h" local="yes" imported="no">isndsys/ss_filter.h</includes>
     <includes id="ss__listener_8h" name="ss_listener.h" local="yes" imported="no">isndsys/ss_listener.h</includes>
     <includes id="ss__loader_8h" name="ss_loader.h" local="yes" imported="no">isndsys/ss_loader.h</includes>
@@ -31192,6 +31219,24 @@
     <filename>ss__driver_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSndSysSoftwareDriver</class>
+  </compound>
+  <compound kind="file">
+    <name>ss_eventrecorder.h</name>
+    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <filename>ss__eventrecorder_8h</filename>
+    <class kind="struct">iSndSysEventRecorder</class>
+    <member kind="enumeration">
+      <name>SndSysEventCategory</name>
+      <anchorfile>group__sndsys.html</anchorfile>
+      <anchor>ga4834fc9e16d74a2e4cc7d48a33e87684</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>SndSysEventLevel</name>
+      <anchorfile>group__sndsys.html</anchorfile>
+      <anchor>gaec1cd435ddff72d6082f458313d1c182</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>ss_filter.h</name>
@@ -36463,6 +36508,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga15291c7caa442ecb044e0ae11503b16a</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimNodeFactory *</type>
       <name>GetNode</name>
       <anchorfile>group__meshplugins.html</anchorfile>
@@ -41006,6 +41058,7 @@
     <filename>group__sndsys.html</filename>
     <class kind="struct">csSndSysSoundFormat</class>
     <class kind="struct">iSndSysData</class>
+    <class kind="struct">iSndSysEventRecorder</class>
     <class kind="struct">iSndSysListener</class>
     <class kind="struct">iSndSysListenerDoppler</class>
     <class kind="struct">iSndSysLoader</class>
@@ -41043,6 +41096,18 @@
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
       <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>SndSysEventCategory</name>
+      <anchorfile>group__sndsys.html</anchorfile>
+      <anchor>ga4834fc9e16d74a2e4cc7d48a33e87684</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>SndSysEventLevel</name>
+      <anchorfile>group__sndsys.html</anchorfile>
+      <anchor>gaec1cd435ddff72d6082f458313d1c182</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -118556,6 +118621,13 @@
       <name>GetAnimationRoot</name>
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga6ca40c20edb4a5b24456d11d8eb5bc81</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>ga15291c7caa442ecb044e0ae11503b16a</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
