@@ -24462,6 +24462,40 @@
     <class kind="struct">iCacheManager</class>
   </compound>
   <compound kind="file">
+    <name>noise.h</name>
+    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <filename>imesh_2animnode_2noise_8h</filename>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNode</class>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNodeManager</class>
+    <class kind="class">CS::Animation::SkeletonNoise</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Animation</namespace>
+    <namespace>CS::Math</namespace>
+    <namespace>CS::Math::Noise</namespace>
+    <namespace>CS::Math::Noise::Module</namespace>
+    <member kind="enumeration">
+      <name>SkeletonNoiseChannel</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NOISE_ROTATION</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4a18e6f6f5044dd1d49ff17de472127ca5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NOISE_POSITION</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4ab4eabaebe899bef34ad1f85e0ea660a8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>normalcalc.h</name>
     <path>/tmp/tmp2/trunk/include/cstool/</path>
     <filename>normalcalc_8h</filename>
@@ -30231,6 +30265,7 @@
     <includes id="debug_8h" name="debug.h" local="yes" imported="no">imesh/animnode/debug.h</includes>
     <includes id="ik_8h" name="ik.h" local="yes" imported="no">imesh/animnode/ik.h</includes>
     <includes id="lookat_8h" name="lookat.h" local="yes" imported="no">imesh/animnode/lookat.h</includes>
+    <includes id="imesh_2animnode_2noise_8h" name="noise.h" local="yes" imported="no">imesh/animnode/noise.h</includes>
     <includes id="ragdoll_8h" name="ragdoll.h" local="yes" imported="no">imesh/animnode/ragdoll.h</includes>
     <includes id="retarget_8h" name="retarget.h" local="yes" imported="no">imesh/animnode/retarget.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -36065,6 +36100,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga102ac614db902d5cdde28716e6bc605e</anchor>
       <arglist>(iSkeletonAnimNode *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyTimeShift</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaebc0f785a4d404829be01b8cdf8e0158</anchor>
+      <arglist>(ChannelID channel, float offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -116867,6 +116909,9 @@
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonManager</class>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNode</class>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNodeFactory</class>
+    <class kind="struct">CS::Animation::iSkeletonNoiseNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNode</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNode</class>
@@ -116891,6 +116936,7 @@
     <class kind="class">CS::Animation::SkeletonAnimNodeFactorySingle</class>
     <class kind="class">CS::Animation::SkeletonAnimNodeSingle</class>
     <class kind="class">CS::Animation::SkeletonAnimNodeSingleBase</class>
+    <class kind="class">CS::Animation::SkeletonNoise</class>
     <member kind="typedef">
       <type>unsigned int</type>
       <name>EffectorID</name>
@@ -116956,6 +117002,24 @@
       <name>DEBUG_BBOXES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>SkeletonNoiseChannel</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NOISE_ROTATION</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4a18e6f6f5044dd1d49ff17de472127ca5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NOISE_POSITION</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>af1cc741c9921161e8e4980ed8ec211c4ab4eabaebe899bef34ad1f85e0ea660a8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -118119,6 +118183,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaa85a9d2ec14d551a63c38c371055952f</anchor>
       <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyTimeShift</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaebc0f785a4d404829be01b8cdf8e0158</anchor>
+      <arglist>(ChannelID channel, float offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -119502,6 +119573,49 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>CS::Animation::iSkeletonNoiseNode</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNode.html</filename>
+    <base virtualness="virtual">CS::Animation::iSkeletonAnimNode</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonNoiseNodeFactory</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</filename>
+    <base virtualness="virtual">CS::Animation::iSkeletonAnimNodeFactory</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddBoneNoise</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
+      <anchor>a1e6fbafea8aae228db580b2a3ea12ee1</anchor>
+      <arglist>(BoneID bone, size_t noiseIndex, SkeletonNoiseChannel channel, float x, float y, csVector3 weight=csVector3(1.0f))=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>AddSkeletonNoise</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
+      <anchor>a64c3d1d9e0018aedff45826f8c00700f</anchor>
+      <arglist>(SkeletonNoise *noise)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSkeletonAnimNodeFactory *</type>
+      <name>GetChildNode</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
+      <anchor>abf112a1b50424a23569bf9021d5a038f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetChildNode</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
+      <anchor>afece4ee311dba0896320917e001a86d6</anchor>
+      <arglist>(CS::Animation::iSkeletonAnimNodeFactory *factory)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iSkeletonNoiseNodeManager</name>
+    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNodeManager.html</filename>
+    <base virtualness="virtual">iSkeletonAnimNodeManager&lt; CS::Animation::iSkeletonNoiseNodeFactory &gt;</base>
+  </compound>
+  <compound kind="struct">
     <name>CS::Animation::iSkeletonPriorityNode</name>
     <filename>structCS_1_1Animation_1_1iSkeletonPriorityNode.html</filename>
     <base>CS::Animation::iSkeletonAnimNode</base>
@@ -120317,6 +120431,39 @@
       <anchorfile>classCS_1_1Animation_1_1SkeletonAnimNodeSingleBase.html</anchorfile>
       <anchor>a231f56424851f30c6592d61fa1b25028</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Animation::SkeletonNoise</name>
+    <filename>classCS_1_1Animation_1_1SkeletonNoise.html</filename>
+    <base>csRefCount</base>
+    <member kind="function">
+      <type>CS::Math::Noise::Module::Module *</type>
+      <name>GetComponent</name>
+      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
+      <anchor>a64effbbc6e4bb0bc84d1ac726c831aba</anchor>
+      <arglist>(size_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetComponent</name>
+      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
+      <anchor>a84147b3b31ae44d419e458e6fd16dc7d</anchor>
+      <arglist>(size_t index, CS::Math::Noise::Module::Module *module)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SkeletonNoise</name>
+      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
+      <anchor>af6a944908406a23db6bea5e315f6948c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~SkeletonNoise</name>
+      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
+      <anchor>a9aa18e8fb90fedaca568e0ddfddcf96e</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="namespace">
