@@ -102684,6 +102684,27 @@
     <name>iRenderManagerPostEffects</name>
     <filename>structiRenderManagerPostEffects.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>AddLayersFromDocument</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a26b5581aad11b7972115c14972486256</anchor>
+      <arglist>(iDocumentNode *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>AddLayersFromFile</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>aeb942676cedfa1a11d3cedee381562b4</anchor>
+      <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearLayers</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>ac9405895359102a63a5c6fa23872d112</anchor>
+      <arglist>()=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iRenderManagerTargets</name>
@@ -102739,6 +102760,13 @@
     <name>iRenderManagerVisCull</name>
     <filename>structiRenderManagerVisCull.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iVisibilityCuller &gt;</type>
+      <name>GetVisCuller</name>
+      <anchorfile>structiRenderManagerVisCull.html</anchorfile>
+      <anchor>acfe844bb1b2f185fa2d85814ff6b3398</anchor>
+      <arglist>()=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iRenderStep</name>
