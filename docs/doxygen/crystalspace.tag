@@ -134273,6 +134273,13 @@
       <arglist>(const char *str, bool case_sensitive=true) const </arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>Delete</name>
+      <anchorfile>classCS_1_1Utility_1_1StringArray.html</anchorfile>
+      <anchor>a514436fa97af0977dfff5b74b0c8d185</anchor>
+      <arglist>(const char *item)</arglist>
+    </member>
+    <member kind="function">
       <type>size_t</type>
       <name>Find</name>
       <anchorfile>classCS_1_1Utility_1_1StringArray.html</anchorfile>
