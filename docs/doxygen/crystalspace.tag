@@ -29489,13 +29489,6 @@
       <anchor>gadeda0074d73bd0bcef9aed23ace12314</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>CS_MATERIAL_VARNAME_FLATCOLOR</name>
-      <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga663ebe12fbc69f07b34462cdccfa2c73</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>mesh.h</name>
@@ -39462,13 +39455,6 @@
       <name>CS_MATERIAL_TEXTURE_DIFFUSE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>gadeda0074d73bd0bcef9aed23ace12314</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>CS_MATERIAL_VARNAME_FLATCOLOR</name>
-      <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga663ebe12fbc69f07b34462cdccfa2c73</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
