@@ -26184,6 +26184,7 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>csuctransform_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csunicode.h</includes>
+    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <class kind="class">csUnicodeTransform</class>
     <member kind="define">
       <type>#define</type>
@@ -27276,6 +27277,7 @@
     <name>hash.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>hash_8h</filename>
+    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -27511,6 +27513,7 @@
     <name>parasiticdatabuffer.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>parasiticdatabuffer_8h</filename>
+    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="pooledscfclass_8h" name="pooledscfclass.h" local="yes" imported="no">csutil/pooledscfclass.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
