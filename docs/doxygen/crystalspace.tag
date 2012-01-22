@@ -23198,6 +23198,7 @@
     <includes id="tokenlist_8h" name="tokenlist.h" local="yes" imported="no">cstool/tokenlist.h</includes>
     <class kind="class">csShaderProgram</class>
     <class kind="struct">csShaderProgram::ProgramParam</class>
+    <class kind="struct">csShaderProgram::ProgramSource</class>
     <class kind="struct">csShaderProgram::VariableMapEntry</class>
     <member kind="define">
       <type>#define</type>
@@ -78588,6 +78589,7 @@
     <filename>classcsShaderProgram.html</filename>
     <base>scfImplementation2&lt; csShaderProgram, iShaderProgram, iShaderDestinationResolver &gt;</base>
     <class kind="struct">csShaderProgram::ProgramParam</class>
+    <class kind="struct">csShaderProgram::ProgramSource</class>
     <class kind="struct">csShaderProgram::VariableMapEntry</class>
     <member kind="enumeration">
       <name>ProgramParamType</name>
@@ -78638,25 +78640,18 @@
       <arglist>(const csShaderVariableStack &amp;stack, const ProgramParam &amp;param)</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetProgramData</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a5b0bb25a03d4a0d73f95c20f64d69b99</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>iDocumentNode *</type>
-      <name>GetProgramNode</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>aea3be52cdc4fae0d690b1051104f96c0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
       <type>bool</type>
       <name>ParseCommon</name>
       <anchorfile>classcsShaderProgram.html</anchorfile>
       <anchor>a571e33a0a06c9bd5d5c5d0148df70c21</anchor>
       <arglist>(iDocumentNode *child)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>ParseProgramNode</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a426f3fcc3269cf0a02138062d5bca151</anchor>
+      <arglist>(iDocumentNode *child, ProgramSource &amp;parsedSource)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>bool</type>
@@ -78707,6 +78702,34 @@
       <anchor>a70fb2d62d280d8cf0b76b5179d191bef</anchor>
       <arglist>(const csShaderVariableStack &amp;stack, const ProgramParam &amp;param, csVector4 *result)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetProgramData</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a5b0bb25a03d4a0d73f95c20f64d69b99</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetProgramData</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a7cfe6101541a1d950674c0d4322264ec</anchor>
+      <arglist>(ProgramSource &amp;programSource)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>iDocumentNode *</type>
+      <name>GetProgramNode</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>aea3be52cdc4fae0d690b1051104f96c0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>iDocumentNode *</type>
+      <name>GetProgramNode</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a522dff9e7da920daaa7e92900bef5687</anchor>
+      <arglist>(ProgramSource &amp;programSource)</arglist>
+    </member>
     <member kind="variable" protection="protected">
       <type>csString</type>
       <name>description</name>
@@ -78722,24 +78745,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>csRef&lt; iFile &gt;</type>
-      <name>programFile</name>
+      <type>ProgramSource</type>
+      <name>programSource</name>
       <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>ace68f2732ffbfcc20d9700766ba703be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>csString</type>
-      <name>programFileName</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a27ccf20058acba0d79f29963bae7ec1e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>csRef&lt; iDocumentNode &gt;</type>
-      <name>programNode</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a5c491699e31684a647fe00e05be55819</anchor>
+      <anchor>a09cd2fee9ad2c2c9c964c409cf812181</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -78780,6 +78789,31 @@
       <anchorfile>structcsShaderProgram_1_1ProgramParam.html</anchorfile>
       <anchor>abba7597c88c0a905cca7ff3852040606</anchor>
       <arglist>(float val)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>csShaderProgram::ProgramSource</name>
+    <filename>structcsShaderProgram_1_1ProgramSource.html</filename>
+    <member kind="variable">
+      <type>csRef&lt; iFile &gt;</type>
+      <name>programFile</name>
+      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
+      <anchor>a5fa27e12287901cacd3bcc79553fcf42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csString</type>
+      <name>programFileName</name>
+      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
+      <anchor>a491488fb1bfb7bd4b398444c7d793659</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRef&lt; iDocumentNode &gt;</type>
+      <name>programNode</name>
+      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
+      <anchor>a4076cb81eeb0e8bbacb3929db5b60f4c</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
