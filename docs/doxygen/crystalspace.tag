@@ -30514,7 +30514,7 @@
     <path>/tmp/tmp1/trunk/include/imesh/animnode/</path>
     <filename>ragdoll2_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <includes id="physical2_8h" name="physical2.h" local="yes" imported="no">ivaria/physical2.h</includes>
+    <includes id="physics_8h" name="physics.h" local="yes" imported="no">ivaria/physics.h</includes>
     <includes id="bodymesh_8h" name="bodymesh.h" local="yes" imported="no">imesh/bodymesh.h</includes>
     <class kind="struct">CS::Animation::iSkeletonRagdollNode2</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory2</class>
@@ -30522,6 +30522,7 @@
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
+    <namespace>CS::Physics</namespace>
     <member kind="enumeration">
       <name>RagdollState</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
@@ -32996,7 +32997,7 @@
     <includes id="bullet2_8h" name="bullet2.h" local="yes" imported="no">ivaria/bullet2.h</includes>
     <includes id="cameramanager_8h" name="cameramanager.h" local="yes" imported="no">ivaria/cameramanager.h</includes>
     <includes id="ivaria_2collider_8h" name="collider.h" local="yes" imported="no">ivaria/collider.h</includes>
-    <includes id="collision2_8h" name="collision2.h" local="yes" imported="no">ivaria/collision2.h</includes>
+    <includes id="collisions_8h" name="collisions.h" local="yes" imported="no">ivaria/collisions.h</includes>
     <includes id="conin_8h" name="conin.h" local="yes" imported="no">ivaria/conin.h</includes>
     <includes id="conout_8h" name="conout.h" local="yes" imported="no">ivaria/conout.h</includes>
     <includes id="decal_8h" name="decal.h" local="yes" imported="no">ivaria/decal.h</includes>
@@ -33010,7 +33011,7 @@
     <includes id="movierecorder_8h" name="movierecorder.h" local="yes" imported="no">ivaria/movierecorder.h</includes>
     <includes id="ode_8h" name="ode.h" local="yes" imported="no">ivaria/ode.h</includes>
     <includes id="pagingformer_8h" name="pagingformer.h" local="yes" imported="no">ivaria/pagingformer.h</includes>
-    <includes id="physical2_8h" name="physical2.h" local="yes" imported="no">ivaria/physical2.h</includes>
+    <includes id="physics_8h" name="physics.h" local="yes" imported="no">ivaria/physics.h</includes>
     <includes id="pmeter_8h" name="pmeter.h" local="yes" imported="no">ivaria/pmeter.h</includes>
     <includes id="profile_8h" name="profile.h" local="yes" imported="no">ivaria/profile.h</includes>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
@@ -33152,31 +33153,32 @@
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
     <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
     <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
-    <class kind="struct">CS::Physics2::Bullet2::iPhysicalSector</class>
-    <class kind="struct">CS::Physics2::Bullet2::iSoftBody</class>
+    <class kind="struct">CS::Physics::Bullet2::iPhysicalSector</class>
+    <class kind="struct">CS::Physics::Bullet2::iSoftBody</class>
     <namespace>CS</namespace>
+    <namespace>CS::Physics</namespace>
     <member kind="enumvalue">
       <name>DEBUG_NOTHING</name>
-      <anchorfile>namespaceCS_1_1Physics2_1_1Bullet2.html</anchorfile>
-      <anchor>a2734a4f8b3b8a9fbf61e1d93617ebe55a62f8b38cebea2fe34337d7a605d9d305</anchor>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
+      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5aeeebfd588848a0616a5bfee14e165330</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_COLLIDERS</name>
-      <anchorfile>namespaceCS_1_1Physics2_1_1Bullet2.html</anchorfile>
-      <anchor>a2734a4f8b3b8a9fbf61e1d93617ebe55a791c362541a1b3ed3ffec3ae533f355d</anchor>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
+      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5a457f32f126a57869431f728322c92177</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_AABB</name>
-      <anchorfile>namespaceCS_1_1Physics2_1_1Bullet2.html</anchorfile>
-      <anchor>a2734a4f8b3b8a9fbf61e1d93617ebe55af80162f1273a1ac999473f168ba17c02</anchor>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
+      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5ace4c1a68569c22ce2c6570b5a86aa0a8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DEBUG_JOINTS</name>
-      <anchorfile>namespaceCS_1_1Physics2_1_1Bullet2.html</anchorfile>
-      <anchor>a2734a4f8b3b8a9fbf61e1d93617ebe55a1241830804723a8cda165d32f052d6e6</anchor>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
+      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5ac09eb55a0633acb1b87a4258a4d7e9e7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -33221,35 +33223,49 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>collision2.h</name>
+    <name>collisions.h</name>
     <path>/tmp/tmp1/trunk/include/ivaria/</path>
-    <filename>collision2_8h</filename>
+    <filename>collisions_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
     <includes id="transfrm_8h" name="transfrm.h" local="yes" imported="no">csgeom/transfrm.h</includes>
     <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
-    <class kind="struct">CS::Collision2::CollisionData</class>
-    <class kind="struct">CS::Collision2::CollisionGroup</class>
-    <class kind="struct">CS::Collision2::HitBeamResult</class>
-    <class kind="struct">CS::Collision2::iCollider</class>
-    <class kind="struct">CS::Collision2::iColliderBox</class>
-    <class kind="struct">CS::Collision2::iColliderCapsule</class>
-    <class kind="struct">CS::Collision2::iColliderConcaveMesh</class>
-    <class kind="struct">CS::Collision2::iColliderConcaveMeshScaled</class>
-    <class kind="struct">CS::Collision2::iColliderCone</class>
-    <class kind="struct">CS::Collision2::iColliderConvexMesh</class>
-    <class kind="struct">CS::Collision2::iColliderCylinder</class>
-    <class kind="struct">CS::Collision2::iColliderPlane</class>
-    <class kind="struct">CS::Collision2::iColliderSphere</class>
-    <class kind="struct">CS::Collision2::iColliderTerrain</class>
-    <class kind="struct">CS::Collision2::iCollisionActor</class>
-    <class kind="struct">CS::Collision2::iCollisionCallback</class>
-    <class kind="struct">CS::Collision2::iCollisionObject</class>
-    <class kind="struct">CS::Collision2::iCollisionSector</class>
-    <class kind="struct">CS::Collision2::iCollisionSystem</class>
+    <class kind="struct">CS::Collisions::CollisionData</class>
+    <class kind="struct">CS::Collisions::CollisionGroup</class>
+    <class kind="struct">CS::Collisions::HitBeamResult</class>
+    <class kind="struct">CS::Collisions::iCollider</class>
+    <class kind="struct">CS::Collisions::iColliderBox</class>
+    <class kind="struct">CS::Collisions::iColliderCapsule</class>
+    <class kind="struct">CS::Collisions::iColliderConcaveMesh</class>
+    <class kind="struct">CS::Collisions::iColliderConcaveMeshScaled</class>
+    <class kind="struct">CS::Collisions::iColliderCone</class>
+    <class kind="struct">CS::Collisions::iColliderConvexMesh</class>
+    <class kind="struct">CS::Collisions::iColliderCylinder</class>
+    <class kind="struct">CS::Collisions::iColliderPlane</class>
+    <class kind="struct">CS::Collisions::iColliderSphere</class>
+    <class kind="struct">CS::Collisions::iColliderTerrain</class>
+    <class kind="struct">CS::Collisions::iCollisionActor</class>
+    <class kind="struct">CS::Collisions::iCollisionCallback</class>
+    <class kind="struct">CS::Collisions::iCollisionObject</class>
+    <class kind="struct">CS::Collisions::iCollisionSector</class>
+    <class kind="struct">CS::Collisions::iCollisionSystem</class>
     <namespace>CS</namespace>
+    <namespace>CS::Collisions</namespace>
+    <namespace>CS::Physics</namespace>
+    <member kind="enumeration">
+      <name>ColliderType</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a8686c4be649cf25e965ce175ae69a5c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>CollisionObjectType</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a96cafc1a39189fde1c16b413ecc6d021</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>conin.h</name>
@@ -33450,9 +33466,9 @@
     <class kind="struct">iPagingFormerState</class>
   </compound>
   <compound kind="file">
-    <name>physical2.h</name>
+    <name>physics.h</name>
     <path>/tmp/tmp1/trunk/include/ivaria/</path>
-    <filename>physical2_8h</filename>
+    <filename>physics_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
@@ -33461,21 +33477,35 @@
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
     <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
     <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
-    <includes id="collision2_8h" name="collision2.h" local="yes" imported="no">ivaria/collision2.h</includes>
-    <class kind="struct">CS::Physics2::iAnchorAnimationControl</class>
-    <class kind="struct">CS::Physics2::iJoint</class>
-    <class kind="struct">CS::Physics2::iKinematicCallback</class>
-    <class kind="struct">CS::Physics2::iPhysicalBody</class>
-    <class kind="struct">CS::Physics2::iPhysicalSector</class>
-    <class kind="struct">CS::Physics2::iPhysicalSystem</class>
-    <class kind="struct">CS::Physics2::iRigidBody</class>
-    <class kind="struct">CS::Physics2::iSoftBody</class>
-    <class kind="struct">CS::Physics2::iSoftBodyAnimationControl</class>
-    <class kind="struct">CS::Physics2::iSoftBodyAnimationControlFactory</class>
-    <class kind="struct">CS::Physics2::iSoftBodyAnimationControlType</class>
-    <class kind="struct">CS::Physics2::SoftBodyHelper</class>
+    <includes id="collisions_8h" name="collisions.h" local="yes" imported="no">ivaria/collisions.h</includes>
+    <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
+    <class kind="struct">CS::Physics::iJoint</class>
+    <class kind="struct">CS::Physics::iKinematicCallback</class>
+    <class kind="struct">CS::Physics::iPhysicalBody</class>
+    <class kind="struct">CS::Physics::iPhysicalSector</class>
+    <class kind="struct">CS::Physics::iPhysicalSystem</class>
+    <class kind="struct">CS::Physics::iRigidBody</class>
+    <class kind="struct">CS::Physics::iSoftBody</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControl</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControlFactory</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControlType</class>
+    <class kind="struct">CS::Physics::SoftBodyHelper</class>
     <namespace>CS</namespace>
+    <namespace>CS::Collisions</namespace>
     <namespace>CS::Mesh</namespace>
+    <namespace>CS::Physics</namespace>
+    <member kind="enumeration">
+      <name>PhysicalBodyType</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>ae6b3616e3886d066a1b76a6e2f4213cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>RigidBodyState</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a03aab0e0279a9c4ca04150d405a1439b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>pmeter.h</name>
@@ -35401,6 +35431,7 @@
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Checksum</namespace>
+    <namespace>CS::Collisions</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
@@ -115601,6 +115632,7 @@
     <filename>namespaceCS.html</filename>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Checksum</namespace>
+    <namespace>CS::Collisions</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
@@ -120114,39 +120146,39 @@
       <arglist>(RagdollState state) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics2::iJoint *</type>
+      <type>virtual CS::Physics::iJoint *</type>
       <name>GetBoneJoint</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a09210484656c0cf7d51040eb548500f7</anchor>
+      <anchor>a32fdbc6a4cdd1739777e725db27abf39</anchor>
       <arglist>(const BoneID bone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics2::iRigidBody *</type>
+      <type>virtual CS::Physics::iRigidBody *</type>
       <name>GetBoneRigidBody</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>af7786a418773b412d2459c2648f71982</anchor>
+      <anchor>a28e6b4c3e75cb0b370fe49a48eb208fd</anchor>
       <arglist>(BoneID bone)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics2::iPhysicalSector *</type>
+      <type>virtual CS::Physics::iPhysicalSector *</type>
       <name>GetPhysicalSector</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>afe50d8dbc23f686c6308169010d7a355</anchor>
+      <anchor>a0ebc44ca41ccdff70cc4abf12349322f</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics2::iPhysicalSystem *</type>
+      <type>virtual CS::Physics::iPhysicalSystem *</type>
       <name>GetPhysicalSystem</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>af6fae70f632cedaa63ab875803ed8d1e</anchor>
+      <anchor>a97c558165027762521ad42e0eb0ca1ee</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual BoneID</type>
       <name>GetRigidBodyBone</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a89f60d72766115b1395594466023ef12</anchor>
-      <arglist>(CS::Physics2::iRigidBody *body) const =0</arglist>
+      <anchor>ab7c96f8cadbe1e9dbccca9b24d2d2948</anchor>
+      <arglist>(CS::Physics::iRigidBody *body) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -120166,15 +120198,15 @@
       <type>virtual void</type>
       <name>SetPhysicalSector</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>aeeee9b2c921031ff0349ebe451a7e8d2</anchor>
-      <arglist>(CS::Physics2::iPhysicalSector *sector)=0</arglist>
+      <anchor>aae9b95b5085cc44c388611de0e232b6a</anchor>
+      <arglist>(CS::Physics::iPhysicalSector *sector)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetPhysicalSystem</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>ab4a1be744e52784cbf351ffdc2f2429b</anchor>
-      <arglist>(CS::Physics2::iPhysicalSystem *system)=0</arglist>
+      <anchor>a16b75ccfa13e80dd3e42cc608a6ecccd</anchor>
+      <arglist>(CS::Physics::iPhysicalSystem *system)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -120957,851 +120989,886 @@
     <name>CS::Checksum</name>
     <filename>namespaceCS_1_1Checksum.html</filename>
   </compound>
+  <compound kind="namespace">
+    <name>CS::Collisions</name>
+    <filename>namespaceCS_1_1Collisions.html</filename>
+    <class kind="struct">CS::Collisions::CollisionData</class>
+    <class kind="struct">CS::Collisions::CollisionGroup</class>
+    <class kind="struct">CS::Collisions::HitBeamResult</class>
+    <class kind="struct">CS::Collisions::iCollider</class>
+    <class kind="struct">CS::Collisions::iColliderBox</class>
+    <class kind="struct">CS::Collisions::iColliderCapsule</class>
+    <class kind="struct">CS::Collisions::iColliderConcaveMesh</class>
+    <class kind="struct">CS::Collisions::iColliderConcaveMeshScaled</class>
+    <class kind="struct">CS::Collisions::iColliderCone</class>
+    <class kind="struct">CS::Collisions::iColliderConvexMesh</class>
+    <class kind="struct">CS::Collisions::iColliderCylinder</class>
+    <class kind="struct">CS::Collisions::iColliderPlane</class>
+    <class kind="struct">CS::Collisions::iColliderSphere</class>
+    <class kind="struct">CS::Collisions::iColliderTerrain</class>
+    <class kind="struct">CS::Collisions::iCollisionActor</class>
+    <class kind="struct">CS::Collisions::iCollisionCallback</class>
+    <class kind="struct">CS::Collisions::iCollisionObject</class>
+    <class kind="struct">CS::Collisions::iCollisionSector</class>
+    <class kind="struct">CS::Collisions::iCollisionSystem</class>
+    <member kind="enumeration">
+      <name>ColliderType</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a8686c4be649cf25e965ce175ae69a5c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>CollisionObjectType</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a96cafc1a39189fde1c16b413ecc6d021</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="struct">
-    <name>CS::Collision2::CollisionData</name>
-    <filename>structCS_1_1Collision2_1_1CollisionData.html</filename>
+    <name>CS::Collisions::CollisionData</name>
+    <filename>structCS_1_1Collisions_1_1CollisionData.html</filename>
     <member kind="variable">
       <type>csVector3</type>
       <name>normalWorldOnB</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>ad9cddc8d251e6534d2549a43637ec176</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a639e82e79f1dd8c20f37c4d8bdfa6dca</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>iCollisionObject *</type>
       <name>objectA</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>a34aec66fb0973ee367bcdd1b5e3768ea</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a399c2030f4ac4aaf574e3c3ffcda9a48</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>iCollisionObject *</type>
       <name>objectB</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>ae52c8b291d706e3b2c6b0cdb8fdad30a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a244c2d27fceec7a83ee2804b2a1b8cd8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>float</type>
       <name>penetration</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>aa12ea725e702c4395fd3700a6c9df16b</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a05909a61c3823909e58e0e289b5b8493</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csVector3</type>
       <name>positionWorldOnA</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>a3a2a82286a0bce4b49367da589af160d</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a52bb11d791c9dab2b86d3adde22ff72f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csVector3</type>
       <name>positionWorldOnB</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionData.html</anchorfile>
-      <anchor>a0a02f2ec670a3db3291fa34526f376aa</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
+      <anchor>a205fe1b00ba30cedc08dc336a1ed4768</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::CollisionGroup</name>
-    <filename>structCS_1_1Collision2_1_1CollisionGroup.html</filename>
+    <name>CS::Collisions::CollisionGroup</name>
+    <filename>structCS_1_1Collisions_1_1CollisionGroup.html</filename>
     <member kind="variable">
       <type>CollisionGroupMask</type>
       <name>mask</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionGroup.html</anchorfile>
-      <anchor>afa69cce5d4b99ee7648cbb0a99fa34a1</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
+      <anchor>a73222d3d9d9924253b980dd6608bf99e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csString</type>
       <name>name</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionGroup.html</anchorfile>
-      <anchor>ae0c2d0805a91de9c736b0230063facd0</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
+      <anchor>a91ae7578a1d03215dc3c88eb181d5d79</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>CollisionGroupMask</type>
       <name>value</name>
-      <anchorfile>structCS_1_1Collision2_1_1CollisionGroup.html</anchorfile>
-      <anchor>a58f881e3e0c93bb5c40096bd0ce34e40</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
+      <anchor>ab7c159c0d25c3192ce859cc648f00992</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::HitBeamResult</name>
-    <filename>structCS_1_1Collision2_1_1HitBeamResult.html</filename>
+    <name>CS::Collisions::HitBeamResult</name>
+    <filename>structCS_1_1Collisions_1_1HitBeamResult.html</filename>
     <member kind="variable">
       <type>bool</type>
       <name>hasHit</name>
-      <anchorfile>structCS_1_1Collision2_1_1HitBeamResult.html</anchorfile>
-      <anchor>a6ee5c69355574e582402bee6e4ba7de4</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
+      <anchor>a279724a3a4ec24229978db20419da29b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csVector3</type>
       <name>isect</name>
-      <anchorfile>structCS_1_1Collision2_1_1HitBeamResult.html</anchorfile>
-      <anchor>a0afc6ce369e0bb5ad2ec916f74f5b828</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
+      <anchor>ae47357c8a111153249db6082b547460a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>csVector3</type>
       <name>normal</name>
-      <anchorfile>structCS_1_1Collision2_1_1HitBeamResult.html</anchorfile>
-      <anchor>a1363d4eefc9669bd908ea792ca486104</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
+      <anchor>a1f21a5faa572b4d658f4f3c67d10418e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>iCollisionObject *</type>
       <name>object</name>
-      <anchorfile>structCS_1_1Collision2_1_1HitBeamResult.html</anchorfile>
-      <anchor>a0dfef7b7244cc5fac4d0af450353527d</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
+      <anchor>a71e95098d9ccfa607f64d7b9d4b2a6d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>vertexIndex</name>
-      <anchorfile>structCS_1_1Collision2_1_1HitBeamResult.html</anchorfile>
-      <anchor>a4b2f00627c7174929abedae1fc902af4</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
+      <anchor>a70ba9c9099d08c179868407ddafa396e</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollider</name>
-    <filename>structCS_1_1Collision2_1_1iCollider.html</filename>
+    <name>CS::Collisions::iCollider</name>
+    <filename>structCS_1_1Collisions_1_1iCollider.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual ColliderType</type>
       <name>GetGeometryType</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollider.html</anchorfile>
-      <anchor>abb0507ebc48b006e79780d24a51fc194</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
+      <anchor>ad82181be745120bacf44edcff819daa5</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const csVector3 &amp;</type>
       <name>GetLocalScale</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollider.html</anchorfile>
-      <anchor>a88be3ffee9ff5f8dba2f096fbc316698</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
+      <anchor>a3123034035893c72c0b97cd5fbaa532e</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMargin</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollider.html</anchorfile>
-      <anchor>a47cef42754fca0cf97789147ea4d90f9</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
+      <anchor>af809fc75ae3712e9450bb81e19808448</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLocalScale</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollider.html</anchorfile>
-      <anchor>a2e63388f0930c580ad296a34e01be0bc</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
+      <anchor>af9f6adfefb2e080d82180f8731448b30</anchor>
       <arglist>(const csVector3 &amp;scale)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMargin</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollider.html</anchorfile>
-      <anchor>a729b883eec5603c4a8d00f997c7940e3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
+      <anchor>a39b236f5c745d28f04dd69b71c564d0a</anchor>
       <arglist>(float margin)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderBox</name>
-    <filename>structCS_1_1Collision2_1_1iColliderBox.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderBox</name>
+    <filename>structCS_1_1Collisions_1_1iColliderBox.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetBoxGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderBox.html</anchorfile>
-      <anchor>a56c07844cbf903607b0f0062a037e067</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderBox.html</anchorfile>
+      <anchor>abb36314296c87632f8c2716cf6299ea7</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderCapsule</name>
-    <filename>structCS_1_1Collision2_1_1iColliderCapsule.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderCapsule</name>
+    <filename>structCS_1_1Collisions_1_1iColliderCapsule.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>GetCapsuleGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderCapsule.html</anchorfile>
-      <anchor>a8412b22ba2ca5fe9e9b9e5d7fa936fde</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderCapsule.html</anchorfile>
+      <anchor>aa2c9f52466fd5a759df6b0a2846f73fb</anchor>
       <arglist>(float &amp;length, float &amp;radius)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderConcaveMesh</name>
-    <filename>structCS_1_1Collision2_1_1iColliderConcaveMesh.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderConcaveMesh</name>
+    <filename>structCS_1_1Collisions_1_1iColliderConcaveMesh.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual iMeshWrapper *</type>
       <name>GetMesh</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderConcaveMesh.html</anchorfile>
-      <anchor>a06a55630bb966eba12646093f5e5091f</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderConcaveMesh.html</anchorfile>
+      <anchor>ae354b4d46a2714281c3e0adb754e93af</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderConcaveMeshScaled</name>
-    <filename>structCS_1_1Collision2_1_1iColliderConcaveMeshScaled.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderConcaveMeshScaled</name>
+    <filename>structCS_1_1Collisions_1_1iColliderConcaveMeshScaled.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual iColliderConcaveMesh *</type>
       <name>GetCollider</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderConcaveMeshScaled.html</anchorfile>
-      <anchor>a5cacf204d9cb253833c29a17631692b1</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderConcaveMeshScaled.html</anchorfile>
+      <anchor>aaaffa772ce429991693ebe1cd5c833cc</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderCone</name>
-    <filename>structCS_1_1Collision2_1_1iColliderCone.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderCone</name>
+    <filename>structCS_1_1Collisions_1_1iColliderCone.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>GetConeGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderCone.html</anchorfile>
-      <anchor>a6f2c7d4e5a1ef77a4c92c958bb547bb3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderCone.html</anchorfile>
+      <anchor>a6d189a5e2d40d2b09cdcd580cc9117fa</anchor>
       <arglist>(float &amp;length, float &amp;radius)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderConvexMesh</name>
-    <filename>structCS_1_1Collision2_1_1iColliderConvexMesh.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderConvexMesh</name>
+    <filename>structCS_1_1Collisions_1_1iColliderConvexMesh.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual iMeshWrapper *</type>
       <name>GetMesh</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderConvexMesh.html</anchorfile>
-      <anchor>ac9d17ee820dbaa4574a83aff994157c3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderConvexMesh.html</anchorfile>
+      <anchor>a5c39c62e2b7d1046cfde416df849af31</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderCylinder</name>
-    <filename>structCS_1_1Collision2_1_1iColliderCylinder.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderCylinder</name>
+    <filename>structCS_1_1Collisions_1_1iColliderCylinder.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>GetCylinderGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderCylinder.html</anchorfile>
-      <anchor>a87b3ea9afc193bd33ec570f2c49efa6a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderCylinder.html</anchorfile>
+      <anchor>a49e230347d474087089a7013b44fa40b</anchor>
       <arglist>(float &amp;length, float &amp;radius)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderPlane</name>
-    <filename>structCS_1_1Collision2_1_1iColliderPlane.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderPlane</name>
+    <filename>structCS_1_1Collisions_1_1iColliderPlane.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual csPlane3</type>
       <name>GetPlaneGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderPlane.html</anchorfile>
-      <anchor>ac5f590073ebe71eda2db1ab3dfe60a42</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderPlane.html</anchorfile>
+      <anchor>a6ede4471f23c84d05a8a40c52ed58524</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderSphere</name>
-    <filename>structCS_1_1Collision2_1_1iColliderSphere.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderSphere</name>
+    <filename>structCS_1_1Collisions_1_1iColliderSphere.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetSphereGeometry</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderSphere.html</anchorfile>
-      <anchor>a7c96c91e08ca8631cbe6e2d2bdc11db3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderSphere.html</anchorfile>
+      <anchor>afdd3f320d4e57065fc708024883f1089</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iColliderTerrain</name>
-    <filename>structCS_1_1Collision2_1_1iColliderTerrain.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollider</base>
+    <name>CS::Collisions::iColliderTerrain</name>
+    <filename>structCS_1_1Collisions_1_1iColliderTerrain.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual iTerrainSystem *</type>
       <name>GetTerrain</name>
-      <anchorfile>structCS_1_1Collision2_1_1iColliderTerrain.html</anchorfile>
-      <anchor>a5367014108a43a82f304d59578101139</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderTerrain.html</anchorfile>
+      <anchor>a11ccd0a3b07392f9724da05cd3da3609</anchor>
       <arglist>() const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollisionActor</name>
-    <filename>structCS_1_1Collision2_1_1iCollisionActor.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollisionObject</base>
+    <name>CS::Collisions::iCollisionActor</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionActor.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMaxSlope</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a02f59ef12828ac42c2e461463a7ace1a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a23f38c13cff067ca9b621fbe848444dc</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsOnGround</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a3dce85f40075d70abb06abde4dbafdfb</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a46c393a62c3a75a0c9a25f5a8e08809f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Jump</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>afead92ca77f22a3c685eb9a7dd04833b</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a2210d43ee1a41dc37b29fd1f8f44bf12</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>PlayerStep</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a85d54e557fa986e29be0236032ec10ba</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a01ae68c76280185e3b1dadd092327a96</anchor>
       <arglist>(float delta)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>PreStep</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a4aa9ab55adeb294e7e6bca4579fb4896</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a1e63fe47b6f95e05dc5397ffd4937024</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Rotate</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>aa19efbaed6d52998630a48b51422fc5a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>afba507a0bdd601ac900090de7eb41f4a</anchor>
       <arglist>(const csVector3 &amp;v, float angle)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetCamera</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a08455ebf4306b10541b1e056bc0aefd6</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a2f7c8f89959f328b8e33d71cc854652e</anchor>
       <arglist>(iCamera *camera)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetFallSpeed</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a0413af605281a7cd7d1303e4e161a70d</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a126f7eeeafb26fb60198c28636ffacf6</anchor>
       <arglist>(float fallSpeed)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a37dead67f586d64e2e96420d94c13786</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a6d56a44517006704a8cad2bc0a045fb6</anchor>
       <arglist>(float jumpSpeed)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaxJumpHeight</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a50fb93d945b1b8711b3e451b6327705a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>af30f3bc78efbf477981f17c54606581f</anchor>
       <arglist>(float maxJumpHeight)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaxSlope</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a497a2e7547b9f691eeaaf2ebffdf717b</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a7162ec5593f95e76ad935a5770bd223e</anchor>
       <arglist>(float slopeRadians)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetRotation</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a03342a8523355803644355cebbbfbca2</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>aa84e69f6fe59e52d3d1459a68354e0fa</anchor>
       <arglist>(const csMatrix3 &amp;rot)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetVelocity</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>ab2c8350f85b49312db940e936b8a5921</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>af9afeb9463322408dd65f80b255ab241</anchor>
       <arglist>(float speed)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>StepHeight</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a3ebdf48192a9a4faafebde89aaa52f6e</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a2cfb3c99a883a0b4742ece37a2a7b6fa</anchor>
       <arglist>(float stepHeight)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>UpdateAction</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionActor.html</anchorfile>
-      <anchor>a8d11815234a0053a5befa4cce02a6d93</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a9844c40d8d12d44a686656ba23bc1504</anchor>
       <arglist>(float delta)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollisionCallback</name>
-    <filename>structCS_1_1Collision2_1_1iCollisionCallback.html</filename>
+    <name>CS::Collisions::iCollisionCallback</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionCallback.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>OnCollision</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionCallback.html</anchorfile>
-      <anchor>a3cc18e9666ac0d5ed405c8a28b370ac8</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionCallback.html</anchorfile>
+      <anchor>a9610f5edec1900a5bfb35498b324115c</anchor>
       <arglist>(iCollisionObject *thisbody, iCollisionObject *otherbody, const csArray&lt; CollisionData &gt; &amp;collisions)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollisionObject</name>
-    <filename>structCS_1_1Collision2_1_1iCollisionObject.html</filename>
+    <name>CS::Collisions::iCollisionObject</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionObject.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddCollider</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>ae2be94becea6cf11cc958e2d41933165</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a0f6424eee09dd5dfe849b7b6df6f3999</anchor>
       <arglist>(iCollider *collider, const csOrthoTransform &amp;relaTrans=csOrthoTransform(csMatrix3(), csVector3(0)))=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>Collide</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>ab55153a20f4a4996c51d3809c02e518e</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>af211bef2f21d65f52a48604dea502049</anchor>
       <arglist>(iCollisionObject *otherObject)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCamera *</type>
       <name>GetAttachedCamera</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a99b614e9c988850a01530fb111076c27</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>ab58d66df9e176ff4ca7b886805856c0c</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iMovable *</type>
       <name>GetAttachedMovable</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a7224e39e1c2dc11a8dbca253e220a14f</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a3760d6ee6276ea790d0769865ebdf195</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollider *</type>
       <name>GetCollider</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a2e39fdce204c7adaf65e12c894a0f48f</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a5129e72b53ecf6a065b3ee0a6c071292</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetColliderCount</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>afc486514adc7c76a7765ad2c93db3301</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>ac2cca50d075af83eb96b17f59ccc449e</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionCallback *</type>
       <name>GetCollisionCallback</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a86fc1a8bca93e2a183697e8453cd081a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a25b8beb3e1ad7eaec7c45ea8543cc6ea</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
       <name>GetCollisionGroup</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>ae43edc2f07c5f62bb3ec6cf10a8b063a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>ac4af9f4b9a28aa5f8a377b0dc31dad62</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionObject *</type>
       <name>GetContactObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a0ccc5d1c7d82e800af955ce484ed33a8</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a7b4258b17cf4a9fd3466329e230c80c4</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetContactObjectsCount</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>aef89d9fcfbedadab14d2d72135ca3246</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a015f5bd6144b1e811e07dabb384275cb</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual CollisionObjectType</type>
       <name>GetObjectType</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a2a24598ca4a9def0d8a22998db8370c4</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>abeb38f178ea304a2870c77f57ec59356</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csOrthoTransform</type>
       <name>GetTransform</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a03caf63dba94f610c94a936f26609e9e</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>acdd94f8aba368a9d445f7681ff9ef16e</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual HitBeamResult</type>
       <name>HitBeam</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>aeb3463e305c51db0ddfab99a6bed6d66</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a057f76d8609f361c63a35a042a54c53e</anchor>
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionObject *</type>
       <name>QueryCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a9b985e72e3756cc9f14d836e894a0cb3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>ae5e5e38e49a66e80dc529514b8dc5932</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
       <name>QueryObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a53dbf4a1d1ee5f411a118b50b7e38540</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a97d19ec07d801fe56a7171aa1e1c55a4</anchor>
       <arglist>(void)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics2::iPhysicalBody *</type>
+      <type>virtual CS::Physics::iPhysicalBody *</type>
       <name>QueryPhysicalBody</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>ae949bed6213cc7506d65c73fcdb6de21</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a2a1f3096c40bfac14b2f0b843265567a</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RebuildObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>acabedcbd5379901bc06825e3821930f5</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a1cc99ccfe4e21b2d0f636513f8f6d91f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveCollider</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>acce092911911ca5bddb99b724d0e309d</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a25b6731ea6f5f12191b6893ec714e9c0</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveCollider</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a1114d27e87608ed45f0e85f9363f46a9</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a0168faa6ed83944d2c8b54adc3bf5da6</anchor>
       <arglist>(iCollider *collider)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAttachedCamera</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>ac150058445afcec0165ef91a575bfbfb</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a993b6b27b9251af96738dbf71a89aee3</anchor>
       <arglist>(iCamera *camera)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAttachedMovable</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a4fa047c22628ff5e7991b8a2db537a0f</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a978313ec71a0429eb9e186efe910ebf9</anchor>
       <arglist>(iMovable *movable)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetCollisionCallback</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>acefd866d8c35aa6e1c6b487bbdad521c</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a2f1b24ce972e86bdbb573f6b112d6218</anchor>
       <arglist>(iCollisionCallback *cb)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetCollisionGroup</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>acad0e407bc61438e5fdd21f1abaa5e00</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>afa26059cafe980f35c31a41d6261cccd</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetObjectType</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a06a6f913bda9722716ac840b65844a47</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a051ab952079b0ad0aa516763e9932552</anchor>
       <arglist>(CollisionObjectType type, bool forceRebuild=true)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetTransform</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionObject.html</anchorfile>
-      <anchor>a5efb9e2ccef6e4915980c1144295364e</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
+      <anchor>a36dc4c4fe7d1cea3eaa5616aa570f6b0</anchor>
       <arglist>(const csOrthoTransform &amp;trans)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollisionSector</name>
-    <filename>structCS_1_1Collision2_1_1iCollisionSector.html</filename>
+    <name>CS::Collisions::iCollisionSector</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionSector.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddCollisionActor</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>aa5f23a530e0b7fbb8a8f12faab596a98</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>ad3bc5491360971cd4e9e7973ad8d9cc3</anchor>
       <arglist>(iCollisionActor *actor)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a8a3dae9dd17b439d11f9a93ae1e169d1</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a451b4d16743a5ebe05135e99ba23d911</anchor>
       <arglist>(iCollisionObject *object)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddPortal</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a639bed2ec289bb3faab7c1d2cb593869</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>aad58ba1e28d3f9fb715887bf43162afd</anchor>
       <arglist>(iPortal *portal, const csOrthoTransform &amp;meshTrans)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>CollisionTest</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a2a77ca74e4b49d4d1bd19d3123c7be47</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a75664b8ea45a5b1701f76f71c0676c38</anchor>
       <arglist>(iCollisionObject *object, csArray&lt; CollisionData &gt; &amp;collisions)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual CollisionGroup &amp;</type>
       <name>CreateCollisionGroup</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a916ba71955db305db2da390734cc2d8e</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a045aae2d2a4bd4485f8290feb268143e</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual CollisionGroup &amp;</type>
       <name>FindCollisionGroup</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a38ee1027015eae3cb845539c95738c30</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>abf7332e54fc0402557d8873b6b946a13</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionObject *</type>
       <name>FindCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a1e415533570fc84a9f8b92f9afdafa59</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a05e544cfaaed59e59bc7128673bcac07</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionActor *</type>
       <name>GetCollisionActor</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a260da5d73e1c2ac08c1c76d234e46774</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>abb1022f947b4e2db5d7ed8a83e7e5224</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionObject *</type>
       <name>GetCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a63b093594693c07d4359891da3255a1c</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a14cc3c96d2e7fdfabe4ed085491037fc</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetCollisionObjectCount</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a1ea0659f9edbff75ffa7f594316ddd30</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>aa83ea6271d81cdae6eda6127ec9004bc</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetGravity</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a01cb68e269e250a08a0cca5340ed5f40</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>abf346fb4cf91881d6317ac3d57399078</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>GetGroupCollision</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>ab75d8f84c797ffcbf876c669e2d4a02c</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a2f99687de69562d850a4e2e73ccd2e8b</anchor>
       <arglist>(const char *name1, const char *name2)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSector *</type>
       <name>GetSector</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a261bd5ec3e328d1a2500ae1c6644f4c7</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a1696007256b5d4c7a7a7dc84ddbc84eb</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual HitBeamResult</type>
       <name>HitBeam</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a5dbcd1248e11351e58415e96889b233f</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a5a50912c829850ab2e9bc0dbc1761375</anchor>
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual HitBeamResult</type>
       <name>HitBeamPortal</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a7a883e3f448c575a7bc25f3756f612d4</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a1b1bf5eb2de61b6d4bde6ad14ec1fb25</anchor>
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
       <name>QueryObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a885f5e008cd958110127a3413f195d48</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>ad5a6111c055a95665660e57da2f01d8e</anchor>
       <arglist>(void)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveCollisionActor</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a5c6b0d39706b82dcf20887a3539067c3</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a4a75628e3ad8cad5ae450f428655cea4</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a9e77b059b622413f01c7f92e023bb386</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a07dc1c305dd042389772be2d1e617d8f</anchor>
       <arglist>(iCollisionObject *object)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemovePortal</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a298d88d84a8bde3fd24202cefbeda868</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a6197f1ab8cff4b0f48b5a24f76bef90b</anchor>
       <arglist>(iPortal *portal)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetGravity</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a50a364e48616b3ea74b46879d90b7c57</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>abf8c1349db5a0c8b2c039a65def7fcb0</anchor>
       <arglist>(const csVector3 &amp;v)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetGroupCollision</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>aeb94c149d06d70f1adf87a69ee1ae560</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>ab151f0426e949c40e7b11928821a91d3</anchor>
       <arglist>(const char *name1, const char *name2, bool collide)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetSector</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSector.html</anchorfile>
-      <anchor>a34ce6288fbce79e70122eb264084ba15</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a2f6b3644e21f5a9570ef1bd0940636b8</anchor>
       <arglist>(iSector *sector)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collision2::iCollisionSystem</name>
-    <filename>structCS_1_1Collision2_1_1iCollisionSystem.html</filename>
+    <name>CS::Collisions::iCollisionSystem</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionSystem.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderBox &gt;</type>
       <name>CreateColliderBox</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a9e466c9f38fdeb0b42e0be162a620c3b</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>af5104a9ce89d644d10a803a29e9b00c8</anchor>
       <arglist>(const csVector3 &amp;size)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderCapsule &gt;</type>
       <name>CreateColliderCapsule</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a442d42cebd386827c389c63788147c93</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a9bbbbaf209ec89dad21715bfd804b27f</anchor>
       <arglist>(float length, float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderConcaveMesh &gt;</type>
       <name>CreateColliderConcaveMesh</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a1edd7763f43254e26ceefdbc9834fe87</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>af12467f3935aebbd31ec3426e4f8a86a</anchor>
       <arglist>(iMeshWrapper *mesh)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderConcaveMeshScaled &gt;</type>
       <name>CreateColliderConcaveMeshScaled</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a63f4cbeaaffbc66298c1fb959a615167</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a2fdb1302b35ce6387ebd4913abd35e28</anchor>
       <arglist>(iColliderConcaveMesh *collider, csVector3 scale)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderCone &gt;</type>
       <name>CreateColliderCone</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a7049b78bc2f771a1356f5dc24c8cdc4a</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>aabbd7d0284ae8067ca7cffe911a2f0a9</anchor>
       <arglist>(float length, float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderConvexMesh &gt;</type>
       <name>CreateColliderConvexMesh</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a5d4bac869f4680291e3dd671638f1f7c</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a79e247a2e37dd67ab0f31c5fdca42ba6</anchor>
       <arglist>(iMeshWrapper *mesh, bool simplify=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderCylinder &gt;</type>
       <name>CreateColliderCylinder</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a3a1726a126243f01211ce826594960ae</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a71773e7fbed084a8ac475f52fa5a3af8</anchor>
       <arglist>(float length, float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderPlane &gt;</type>
       <name>CreateColliderPlane</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>abcbc0400e1670ae8c925dc677b5b4545</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a3e2f22ec67297394c22de420df3db569</anchor>
       <arglist>(const csPlane3 &amp;plane)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderSphere &gt;</type>
       <name>CreateColliderSphere</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a619e07d59c78870a64ae99c5843e1361</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a7613accd9f646a3c2df2a1926da403ee</anchor>
       <arglist>(float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iColliderTerrain &gt;</type>
       <name>CreateColliderTerrain</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a26521aa16e68553f05ca554f139b8fd1</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a4e873cb8e6137c2e5f910f7565053f73</anchor>
       <arglist>(iTerrainSystem *terrain, float minHeight=0, float maxHeight=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iCollisionActor &gt;</type>
       <name>CreateCollisionActor</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a80a8d4a8335e0ed96209c118c7fca224</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a8deab8a13c58bd2caabb68d9c00fb3fc</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iCollisionObject &gt;</type>
       <name>CreateCollisionObject</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a7f6a148e94c6947850abbfb9c6dea9ea</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a382e98020800b0ee0c6963127e603813</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iCollisionSector &gt;</type>
       <name>CreateCollisionSector</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a7cc54d680071cf3ad85ff6f22ddf1874</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>ab84aeb212601196243141a824a68dd6c</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>DecomposeConcaveMesh</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>ad247d3757dfd1f8668276a2135e42b97</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>ac671aed497a9072f942677ae700ea587</anchor>
       <arglist>(iCollisionObject *object, iMeshWrapper *mesh, bool simplify=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionSector *</type>
       <name>FindCollisionSector</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a1bd297cef020d56ee86a69e8b21e42b5</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>af21972f5925de22a86d83e1ec245cf81</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetInternalScale</name>
-      <anchorfile>structCS_1_1Collision2_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a45c499fe46103ddc72c81860de984134</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a3a7e03ef0cfd9d35f18336f7143063f0</anchor>
       <arglist>(float scale)=0</arglist>
     </member>
   </compound>
@@ -129268,1299 +129335,1033 @@
     <name>CS::Physics</name>
     <filename>namespaceCS_1_1Physics.html</filename>
     <namespace>CS::Physics::Bullet</namespace>
+    <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
+    <class kind="struct">CS::Physics::iJoint</class>
+    <class kind="struct">CS::Physics::iKinematicCallback</class>
+    <class kind="struct">CS::Physics::iPhysicalBody</class>
+    <class kind="struct">CS::Physics::iPhysicalSector</class>
+    <class kind="struct">CS::Physics::iPhysicalSystem</class>
+    <class kind="struct">CS::Physics::iRigidBody</class>
+    <class kind="struct">CS::Physics::iSoftBody</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControl</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControlFactory</class>
+    <class kind="struct">CS::Physics::iSoftBodyAnimationControlType</class>
+    <class kind="struct">CS::Physics::SoftBodyHelper</class>
+    <member kind="enumeration">
+      <name>PhysicalBodyType</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>ae6b3616e3886d066a1b76a6e2f4213cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>RigidBodyState</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a03aab0e0279a9c4ca04150d405a1439b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iAnchorAnimationControl</name>
-    <filename>structCS_1_1Physics2_1_1iAnchorAnimationControl.html</filename>
+    <name>CS::Physics::iAnchorAnimationControl</name>
+    <filename>structCS_1_1Physics_1_1iAnchorAnimationControl.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetAnchorPosition</name>
-      <anchorfile>structCS_1_1Physics2_1_1iAnchorAnimationControl.html</anchorfile>
-      <anchor>a6e32cfdd325e610d174910664f3428d3</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iAnchorAnimationControl.html</anchorfile>
+      <anchor>a462624809aaedb5bd98078272e883b5e</anchor>
       <arglist>() const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iJoint</name>
-    <filename>structCS_1_1Physics2_1_1iJoint.html</filename>
+    <name>CS::Physics::iJoint</name>
+    <filename>structCS_1_1Physics_1_1iJoint.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Attach</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a7830380692b837ab5e6424fd7382548e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a3fce93b99b09a3eb823613a7e14d438a</anchor>
       <arglist>(iPhysicalBody *body1, iPhysicalBody *body2, bool forceUpdate=true)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetAngularDamping</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a4aa746192cbfb30f84710f1a69f447d2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a6d8aa04ce3cc131435e561a5342b62e4</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetAngularStiffness</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a810ced8988e94339d40ca59a2a7fd315</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a5a415d8d77ce3e27ded89f45423c411d</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iPhysicalBody *</type>
       <name>GetAttachedBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a0e002e0ef6ae992d439f3b89a39292bb</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a7214db5f3114336e95c960b43ef34cdf</anchor>
       <arglist>(int index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetBounce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a23589b5aa936a500b4465b93ab8f0bd5</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a54daf715db6a74d3ec2dbcae4a7c0125</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetBreakingImpulseThreshold</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ad279aa07394439873e94e9cdadbfa5dd</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a3425edc6d24aa39121c748a0b2cd0974</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetDesiredVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a2e545422bd83f7e0a2a51b60f3ce4d98</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a8ece398223be5c98f738f40173c6d512</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetLinearDamping</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a5bfa908559fdab95190f259185768c6b</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>aa8b0c9eeab43fc46dbea5290c1889e99</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetLinearStiffness</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ab2f44c2fbf189dd8e44a07333d52baad</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a2947e9a3b0e8e97cbbeee3e57e993765</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetMaxForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a841a2eb82a067b2e35069f84841da8c3</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ab58008c97ad103a651828a01d6458001</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetMaximumAngle</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a5ed8fecfac499fcacd87f759e4949b55</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ada520af97056ee77d92e69366c5302a0</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetMaximumDistance</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a98d37ef28c6a3d6162437a8ec1d67654</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a477e55961c02269fd174154cc9da3362</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetMinimumAngle</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a659e90433978d57e72d0bcee380cdb5f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a8819fa049ff31c5aa9d698736594aec1</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetMinimumDistance</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ad60244851fa0fe241b68621daccfe9ae</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a8b4e6d6f8a71c6d794174ff8eff70924</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetPosition</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a58d88336bab8556e7333b1b82e22597d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>afe933cd190ea6dcda43ca27d661b8a19</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csOrthoTransform</type>
       <name>GetTransform</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a36f212d052d879b00ab155abcd32d6f5</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ab139f3e281bffd62cc94affd4dad1595</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsXRotConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ae9fad4f642cdda83fabdca5e38fdf9ba</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>aa744216ea6a7e8088ed29b24524d8b66</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsXTransConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ac4611c31e2b9945325ad123b90f7a0bf</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a8fc3d245ddb754edc763d932e0a08af8</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsYRotConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a696a90525370d9042f065d13c8d0e500</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a512dab82d5069da352ddc11f0f12499c</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsYTransConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a675bbc63bd18d8f6933855f526dbe5da</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ad37fa22d6461f65b9d827674b39e4f38</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsZRotConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ace45aff1ea3dc1b25f5c6e3a20957c65</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a5453f2809f19f7998df1e2bf9b123bb9</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsZTransConstrained</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a01892af4c1d9b6151230e748d711928c</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a1c83cbd101cebfd01a93a53a1a3442ea</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>RebuildJoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>aecd366761cee28ad4b228ad16f35536d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>af8e9f45dbfb4643062df45a37ad118ea</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAngularDamping</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a69aa369f7b186ad09885238fd28b5e5e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ae965b8c431eabdaa45a740ef15417706</anchor>
       <arglist>(csVector3 damp, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAngularEquilibriumPoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>aa7b8fd0276b9261a7c2109351ca2b122</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ada75b5fded4ec5777058ce2786c317da</anchor>
       <arglist>(csVector3 point, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAngularStiffness</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a1bb28733a47163e1d77a2fa8fbe2119f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ac7df64070299108c7278ab6a71547d3c</anchor>
       <arglist>(csVector3 stiff, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetBounce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a99a8b69028ca6207cbcbc62941788e16</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a8790b401b1ab3a89d232a52c57116e7c</anchor>
       <arglist>(const csVector3 &amp;bounce, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetBreakingImpulseThreshold</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>af8dae365e94e9163c2b2b79763bc4242</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>af46261f15726b26842da4c050c6a143a</anchor>
       <arglist>(float threshold, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetDesiredVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a9ef2c532fc7537f9695349bcc6819356</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ade3c865e1204018c5380721833ac09fc</anchor>
       <arglist>(const csVector3 &amp;velo, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearDamping</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a84abadf9ab511389858e699804bb61ba</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a1e63520e20255d0fdd2cdce1cf6b6eef</anchor>
       <arglist>(csVector3 damp, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearEquilibriumPoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a9d450189bda2959f816db416b63dacf3</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a3c441efe30cfea6dd517a40b325eac09</anchor>
       <arglist>(csVector3 point, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearStiffness</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a5d50f10f4d97063b995d60776475451f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ac8d5fc4f62f4c18379309d564666b8c7</anchor>
       <arglist>(csVector3 stiff, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaxForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ae601e27bcaf1b385f773e116656616f4</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>afc32dcf915489949732bd2754e9250b2</anchor>
       <arglist>(const csVector3 &amp;force, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaximumAngle</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ad7b19bfa97a23d5c43b920d0d44db317</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a6a5c964ffe427261f8dcde3d8df599aa</anchor>
       <arglist>(const csVector3 &amp;angle, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaximumDistance</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>aee27c477976508319e8970781f7ca572</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a2bcb98921a24169af8e8e508f0c6bc70</anchor>
       <arglist>(const csVector3 &amp;dist, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMinimumAngle</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a336f7861de48017a31224ddd1b57660d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a42f892d17eb566b25d2180804495ee4e</anchor>
       <arglist>(const csVector3 &amp;angle, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMinimumDistance</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a23e65bedb3ee9f1913d7868c7ef6579e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a4c61b7dbcaa3ffaa825b1f404be1c3ec</anchor>
       <arglist>(const csVector3 &amp;dist, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetPosition</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a7e191a2d34765ae45ece205eeac0813e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a49a0c620055351ae5d0378fb990533a3</anchor>
       <arglist>(const csVector3 &amp;position, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetRotConstraints</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>adb6deb8d7e6104d9274abdb2dce73935</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a3d37dfc72f466324dbdfc45f95b9172d</anchor>
       <arglist>(bool X, bool Y, bool Z, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetSpring</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>a7096bd613d6c2f0c23c708bc81bea9c7</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a7e81b583f694b3efed2c361d083bea3c</anchor>
       <arglist>(bool isSpring, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetTransConstraints</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>adbba32070ff019439db4206776b2add6</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a238d4940ebf227c08e8c1d0c288c34a2</anchor>
       <arglist>(bool X, bool Y, bool Z, bool forceUpdate=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetTransform</name>
-      <anchorfile>structCS_1_1Physics2_1_1iJoint.html</anchorfile>
-      <anchor>ab10a0553d9bb6310049f35b10b0cff08</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a4ff610a03bb970d0ad6b7010d291687f</anchor>
       <arglist>(const csOrthoTransform &amp;trans, bool forceUpdate=false)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iKinematicCallback</name>
-    <filename>structCS_1_1Physics2_1_1iKinematicCallback.html</filename>
+    <name>CS::Physics::iKinematicCallback</name>
+    <filename>structCS_1_1Physics_1_1iKinematicCallback.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>GetBodyTransform</name>
-      <anchorfile>structCS_1_1Physics2_1_1iKinematicCallback.html</anchorfile>
-      <anchor>abc176bfa6fc44f8187ef6d08f934d6e1</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iKinematicCallback.html</anchorfile>
+      <anchor>aea8c43deaf7f2981dca9dec8cf721629</anchor>
       <arglist>(iRigidBody *body, csOrthoTransform &amp;transform) const =0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iPhysicalBody</name>
-    <filename>structCS_1_1Physics2_1_1iPhysicalBody.html</filename>
-    <base virtualness="virtual">CS::Collision2::iCollisionObject</base>
+    <name>CS::Physics::iPhysicalBody</name>
+    <filename>structCS_1_1Physics_1_1iPhysicalBody.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a93ed769d96e4459a87167d29a883a569</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a305dbf79025148b5845b3cd338334b80</anchor>
       <arglist>(const csVector3 &amp;force)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>Disable</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a2925c6aa94e0328f3cd9cd0e31a80e52</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>aa4a2d94db1d802d99c12ebfe9d1e74e6</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>Enable</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a434c751a48380dc3aaa2d8ec4d6911a3</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a1cacb4861445e3cdb86481f41c1f1d15</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual PhysicalBodyType</type>
       <name>GetBodyType</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>ad1dd7a12fcea0b1aa583109aaa980170</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a0745e558def5ba759df83a6bf14e702e</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetDensity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a4c738f6f35994b13e7cf92f406bd8a22</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a68d50c269a30af3cf416324892afd44c</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetFriction</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a8b5782c18a4b6853f514abf5ae562ff5</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a7bf3ae6f90a9fc1c0503cbae0d768226</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a24375b17108bb664c0f12722fe2466d4</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a1cced6adbc5ce4737ba102fe513a0e53</anchor>
       <arglist>(size_t index=0) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMass</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a15952860076d60f9f4eba783320aac6e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>ab2627af8b9f50a0eebedcb6c9c0593af</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetVolume</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a2ec220f122f00647d44ce4048cc2c990</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a3e5fc08a9994c53ab1b1deabb524a3be</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsEnabled</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>aba3b5dae0ac034611c2adb79ca6d3fdb</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a55c0d9478f04c7bc1536c119cb6d2629</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iRigidBody *</type>
       <name>QueryRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a8c0abc0fd3f27fc5b7200370b804e330</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>ae5cfb3279a2aaf6a8d175f77b4722227</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSoftBody *</type>
       <name>QuerySoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a2455222337582f45ec39a45a1ac29601</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>ab9752be99d26e6c89bcfc82be10e3068</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetDensity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a002903314bb8bfc85928428a5b0370e0</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a0ddecfe1a2cd730553afa9d4e42b765d</anchor>
       <arglist>(float density)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetFriction</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a36c212bd25f80e95a5b8047ee53687bc</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a521dcf5b46152a98282689d4cd351289</anchor>
       <arglist>(float friction)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMass</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a754508647f6f26cd146cd48ca7795b51</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a3fae9d7b46912a12c8a6659bc7350ce9</anchor>
       <arglist>(float mass)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iPhysicalSector</name>
-    <filename>structCS_1_1Physics2_1_1iPhysicalSector.html</filename>
+    <name>CS::Physics::iPhysicalSector</name>
+    <filename>structCS_1_1Physics_1_1iPhysicalSector.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddJoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a99a8da433660eef4bd65edc4c48ed11f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>ab171f5fc8f259e959a2d318a21ed54ce</anchor>
       <arglist>(iJoint *joint)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>acb87362b7421fa9a3cb277e6db3d0d3e</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a70d0894d30f83d3c9eca4d94441e41d8</anchor>
       <arglist>(iRigidBody *body)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa76e0c91c6ae235ee2bd36563a566716</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>ab1050bb035e1b04394973e645b8c1a9b</anchor>
       <arglist>(iSoftBody *body)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iRigidBody *</type>
       <name>FindRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ad790302cc36c9ed4cf82dbaf8dec87e1</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a74ab11c9a2eee17318e4fc739bfad752</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSoftBody *</type>
       <name>FindSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ac42801e34f6a7c5c8381972404c5057f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a40706ea3cc460cb37f1d298638147145</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a178c8632c3adb1130903b9b5ab428c37</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a3d1da0ab4706cac47b2f256a88fdd9a7</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iRigidBody *</type>
       <name>GetRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>adf5be1ddf4e8ea6b857026bc6ed17caa</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a0dc88cb0247bd2db40772979c7a05c7f</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetRigidBodyCount</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ac7d0cadb17ec099b08168d6fd2ebf51a</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>ac72d0a19a005a64da49c0c39411f9770</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ab649721a49a00157213618dd985c531d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a56398e1ac0a901c7f5b19206acf61abd</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSoftBody *</type>
       <name>GetSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a79cf41aed82a8fc9618ab6a4de38a1a7</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>abaa05e334d8555e1db97209756f5b46f</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetSoftBodyCount</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a68fbe1c5f34ef55975fa4e10216139f7</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a851ad772f5bc63f1f7e58ee53a06f63d</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>GetSoftBodyEnabled</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ada8c79e78b77f9a70dc51c6f724ae756</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>aad83283832731357a5ce6110e8f7f124</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveJoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>af5ec9b2a19087ba6080f3b46c549df33</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a19f0e59a496bef994fef8b81e0867bd4</anchor>
       <arglist>(iJoint *joint)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa493c444c143713ffbe9ac26b6ed3efc</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>af78f3f035b3883871476757893664f8f</anchor>
       <arglist>(iRigidBody *body)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa603721e48896083c30e8c0598139111</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>aebf1c4fec42b8ac0baca9ebfa92d61b0</anchor>
       <arglist>(iSoftBody *body)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAutoDisableParams</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a0f13a0c77bc5b3b065fbf13b58c9c0c3</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>ad56caa3f5e931da1598b261bb8a16a8a</anchor>
       <arglist>(float linear, float angular, float time)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a7b20a1a88fb1e6c66ead0f0ec8d909ae</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a9c6400abca8ac866f67e9bf2d4e40ef1</anchor>
       <arglist>(float d)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a5afb91e15db8cb32142f325eb73ee013</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>aa2d70111aac942191515bc79b24e9833</anchor>
       <arglist>(float d)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetSimulationSpeed</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a61262f8b4fde4355326cd4c2f19f9bb4</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a0d66b5e70512186d405c7154f2b69486</anchor>
       <arglist>(float speed)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetSoftBodyEnabled</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ae41a8d8355f9badf75ed8c7e45187354</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>af3e371839e5a051d8b640460f41d9034</anchor>
       <arglist>(bool enabled)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetStepParameters</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>af74534b1f4980d64a7c6b978af77e26c</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a0a03f6b613f40eb1b719685a99e87e03</anchor>
       <arglist>(float timeStep, size_t maxSteps, size_t iterations)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Step</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a312337096d3f855bd078925583148400</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a03fedb2509825e2d05bae0aaae1dfb50</anchor>
       <arglist>(float duration)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iPhysicalSystem</name>
-    <filename>structCS_1_1Physics2_1_1iPhysicalSystem.html</filename>
+    <name>CS::Physics::iPhysicalSystem</name>
+    <filename>structCS_1_1Physics_1_1iPhysicalSystem.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSoftBody &gt;</type>
       <name>CreateCloth</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a803a6a7043bacf4a1531a16e2b2dcff2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>af223b4f5610d6b34df6bf5f2485390c1</anchor>
       <arglist>(csVector3 corner1, csVector3 corner2, csVector3 corner3, csVector3 corner4, size_t segmentCount1, size_t segmentCount2, bool withDiagonals=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iJoint &gt;</type>
       <name>CreateJoint</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>ad84535b43e8d96a098a9b85793bed012</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a6199e7e273c807cf670ba67072a5706f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iRigidBody &gt;</type>
       <name>CreateRigidBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a70d75158343e4a52ff85d62a49d1dd1c</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a01f006789683d9d8262bd0ea5d436d59</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSoftBody &gt;</type>
       <name>CreateRope</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a47399455b724f2dc118721ada9d19ff2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>abb6cefea81cb571b6a48066770d23512</anchor>
       <arglist>(csVector3 *vertices, size_t vertexCount)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSoftBody &gt;</type>
       <name>CreateRope</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>aeea952ee132c76ca08f8a9d6e66ee1c9</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a6d3341e92f8e9535123bcbcc1ea6b64d</anchor>
       <arglist>(csVector3 start, csVector3 end, size_t segmentCount)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSoftBody &gt;</type>
       <name>CreateSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>af42eb3d64d9bc02b64043b2f47658ab0</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a4a1142f7be1d57bb4322ec23497bf35f</anchor>
       <arglist>(csVector3 *vertices, size_t vertexCount, csTriangle *triangles, size_t triangleCount, const csOrthoTransform &amp;bodyTransform)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSoftBody &gt;</type>
       <name>CreateSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a0cf65880daeeaab9484d40ef9e47e283</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a65e8b5e8fd0bf436d07e42825a2cb682</anchor>
       <arglist>(iGeneralFactoryState *genmeshFactory, const csOrthoTransform &amp;bodyTransform)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iRigidBody</name>
-    <filename>structCS_1_1Physics2_1_1iRigidBody.html</filename>
-    <base virtualness="virtual">CS::Physics2::iPhysicalBody</base>
+    <name>CS::Physics::iRigidBody</name>
+    <filename>structCS_1_1Physics_1_1iRigidBody.html</filename>
+    <base virtualness="virtual">CS::Physics::iPhysicalBody</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddForceAtPos</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a4f71b6756d56b5f9df2154bd71b6a90d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a326b9eb222da808f1d71693d094d92e1</anchor>
       <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddForceAtRelPos</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a31ad02bac7ac9e2535dd4f539249dd3d</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a0795d1b1235a21620d8516fbc74a9829</anchor>
       <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddRelForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a20ff98ad70b6b8d09cc0a1020a4bc861</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a41a4351c66bd02a1d1992f657f61778e</anchor>
       <arglist>(const csVector3 &amp;force)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddRelForceAtPos</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a46c54b9afa065e25b95b99632271d976</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a4cc38aea2340cd12781741cb8dc45bc0</anchor>
       <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddRelForceAtRelPos</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a686f765c9565dd13a69ded0888973e4f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a05d224bc5acb4a28c15e862d3ca10303</anchor>
       <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddRelTorque</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a19e242a872670ef8e60317a702e83dfc</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>ab62d3b64eae1c0bc495874d366ce9bbf</anchor>
       <arglist>(const csVector3 &amp;torque)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddTorque</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>ab9bfb10e118c68f443f6fae211e8032f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a3a83c7f7ec5a11049562a96a58121a22</anchor>
       <arglist>(const csVector3 &amp;torque)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetAngularVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a0f53f23bc019ffdd7499b9bcab35c8e1</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a4fc18ae4684f67b7943fff2493bd5b96</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetElasticity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a7dc71d1b45e81d5cff2493f03a356699</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a9ba9371a496e4c86e879874b9b3e1d08</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>aba6dd824f24e46ee8debcbd8d24ad3be</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a5f5f4c22dee1ca46b04e9bda05ad3440</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iKinematicCallback *</type>
       <name>GetKinematicCallback</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a6e53cabbf37385369b8ca62e7c09995c</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a1af83e39a3a7183c85435bd1c914fa68</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a2c845516e28b7f7254db75f3eef90e43</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a83743717b62322170c19254b6ace2e8f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a75fba27b847af287d66cf4ea36829999</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>aed9bf4542de6aa0604793ce5aa98287a</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual RigidBodyState</type>
       <name>GetState</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a7d7ad3f85f0af0b3af296dd1e00ad268</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a75fc718bd4e316b27f6991cf01461f3f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetTorque</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>aa2f3104de774160994e018b3640a9e59</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a2d39df2072fa3c5b2b80ddd2a6637b2a</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetAngularVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a994c80094d7640a55d402991455819d0</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>ab04be3fdf363d929980c25c6bcc94f4d</anchor>
       <arglist>(const csVector3 &amp;vel)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetElasticity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a651a54aa1837d43609bb75c3272fb616</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>ad68629b03b37034671b0d948b6e1115c</anchor>
       <arglist>(float elasticity)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetKinematicCallback</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a46bfac0f81d8bdb540717dd9b3a4ebc6</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a457e1e7e556036b2ba0b82e5f8eb1d00</anchor>
       <arglist>(iKinematicCallback *cb)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a7c28fb46aa73911a5e3d84df9b855065</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>af40f5f89a10a08645cd33127f7f0cb9a</anchor>
       <arglist>(float d)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a41b3844a3d20780859a3abfbc3f5c01b</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a9688d139312c9164e56e059fa7888480</anchor>
       <arglist>(const csVector3 &amp;vel)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a34becd1ccee949a7f62df7c314db2332</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>ad7beaf8f2da782b8c438db3e2377a27e</anchor>
       <arglist>(float d)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>SetState</name>
-      <anchorfile>structCS_1_1Physics2_1_1iRigidBody.html</anchorfile>
-      <anchor>a433b0275f5edb2db7f9a16db93b8b174</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a45f5abce89fa70a0ea5a1424c367e276</anchor>
       <arglist>(RigidBodyState state)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iSoftBody</name>
-    <filename>structCS_1_1Physics2_1_1iSoftBody.html</filename>
-    <base virtualness="virtual">CS::Physics2::iPhysicalBody</base>
+    <name>CS::Physics::iSoftBody</name>
+    <filename>structCS_1_1Physics_1_1iSoftBody.html</filename>
+    <base virtualness="virtual">CS::Physics::iPhysicalBody</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AddForce</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>aafb8753d72f9f47f14173d3adb9ca4ce</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>ad0b7b521c2d1ee00bf85939f040d1315</anchor>
       <arglist>(const csVector3 &amp;force, size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a95a31b49696b02456446c28484bcbb73</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a6c8f08cc37470b1b45be2900b03ae0b9</anchor>
       <arglist>(size_t vertexIndex, iAnchorAnimationControl *controller)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a4a0a896b0ccc725581030d06b755bdb1</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a9c6171cca8cd73752d95ed7aaed6eab4</anchor>
       <arglist>(size_t vertexIndex, iRigidBody *body)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>af086224e26a014e28eea5106098b411b</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>afb9899c57ca096897274cd8c482f4081</anchor>
       <arglist>(size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRigidity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>aeb3c1ca99902a49b529cd14689092373</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>afd4e837fdc69a21f7e54177c5ae52c69</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csTriangle</type>
       <name>GetTriangle</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>adcbae3b22a701ef741c916af2b5c4679</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>aa3df548fdb20165d4db43780cb3b69fd</anchor>
       <arglist>(size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetTriangleCount</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3ee2dc290d624873ef4b251eb97e5bae</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a005a2419c15d5b8a8c29c3218de99669</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetVertexCount</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>aff143af5d666df71eb636670a567ad9b</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a6599ec02ce94047e416e5e4dc8f72909</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetVertexMass</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>ad5e9a75d076591b56fd0fa10cea28cac</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>af83a2803524974ee0f3838d58567bbe0</anchor>
       <arglist>(size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetVertexNormal</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a0b406c72b74e270b4ce9f033f9033adc</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>acdb1d68e4ad913bafcf63fb7ade453b8</anchor>
       <arglist>(size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetVertexPosition</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>aa3704c0b8b72efa73f1fc2f847a6b914</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>aac3aa78dcb56417d436f80e8c86c914f</anchor>
       <arglist>(size_t index) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const csVector3</type>
       <name>GetWindVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a618a476421078b6ac33c90d65add949f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a377eac7c3a0ec5c4131f4a6a7f55e75a</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveAnchor</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a7d26842d736f5351f5c099a04a513bb0</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a150e76d904fa892ca04a755265625205</anchor>
       <arglist>(size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3d66d660472aa6ca85c59ee4fbdabede</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a0ca9bd5cf5a4717af65d533e1046ad4d</anchor>
       <arglist>(const csVector3 &amp;velocity, size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a8b19716d4694b2c87ee521a4ab478eae</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a0873d420962208731f9348a60389ea2a</anchor>
       <arglist>(const csVector3 &amp;vel)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetRigidity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a195ce471558e0a8b11698de917d3e85f</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>af272d36b6b61943eb11914d84087cfbf</anchor>
       <arglist>(float rigidity)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetVertexMass</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>ac89f3796e0ddbb0f220a3a6b7c9c95e2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a5a9fe8f207063dcf38a674d7a2bdec65</anchor>
       <arglist>(float mass, size_t index)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetWindVelocity</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a5158885efce4c2c752241e9fdc6524b7</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a3539103df6fb61043048fb663d52dab1</anchor>
       <arglist>(const csVector3 &amp;velocity)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>UpdateAnchor</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBody.html</anchorfile>
-      <anchor>a1b933a6d608f277fb287a8fcc9804e52</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>af6a19f1420c956af781e8eb0a8719bb2</anchor>
       <arglist>(size_t vertexIndex, csVector3 &amp;position)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iSoftBodyAnimationControl</name>
-    <filename>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</filename>
+    <name>CS::Physics::iSoftBodyAnimationControl</name>
+    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</filename>
     <base>iGenMeshAnimationControl</base>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>CreateAnimatedMeshAnchor</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a914ba3b8025444a8e2558b6cb42e9ec4</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
+      <anchor>ae14536b48fb659770f2bd92c4508fc11</anchor>
       <arglist>(CS::Mesh::iAnimatedMesh *animesh, iRigidBody *body, size_t bodyVertexIndex, size_t animeshVertexIndex=(size_t)~0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetAnimatedMeshAnchorVertex</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>ada2fa97b5894bd2401b1f3b1b81c4c6c</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
+      <anchor>adb3cc4daec1f39da223f488c133b84d2</anchor>
       <arglist>(size_t bodyVertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSoftBody *</type>
       <name>GetSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>adbb32e8ae7e59ff5214e68ac05add8c2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
+      <anchor>a341f3f9b69963a18e7631ddfb6a4e29f</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveAnimatedMeshAnchor</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>ab1308b8a01fd7cfb4c1f3bf8cc0d0287</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
+      <anchor>a44bdfe2816ba1456fcefb61e4f4668fd</anchor>
       <arglist>(size_t bodyVertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetSoftBody</name>
-      <anchorfile>structCS_1_1Physics2_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a36e5381d8c20556663ae8fe079f6e387</anchor>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
+      <anchor>a8312c52c4e1fe365efa1dd97c8834c9d</anchor>
       <arglist>(iSoftBody *body, bool doubleSided=false)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iSoftBodyAnimationControlFactory</name>
-    <filename>structCS_1_1Physics2_1_1iSoftBodyAnimationControlFactory.html</filename>
+    <name>CS::Physics::iSoftBodyAnimationControlFactory</name>
+    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControlFactory.html</filename>
     <base>iGenMeshAnimationControlFactory</base>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::iSoftBodyAnimationControlType</name>
-    <filename>structCS_1_1Physics2_1_1iSoftBodyAnimationControlType.html</filename>
+    <name>CS::Physics::iSoftBodyAnimationControlType</name>
+    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControlType.html</filename>
     <base>iGenMeshAnimationControlType</base>
   </compound>
   <compound kind="struct">
-    <name>CS::Physics2::SoftBodyHelper</name>
-    <filename>structCS_1_1Physics2_1_1SoftBodyHelper.html</filename>
+    <name>CS::Physics::SoftBodyHelper</name>
+    <filename>structCS_1_1Physics_1_1SoftBodyHelper.html</filename>
     <member kind="function" static="yes">
       <type>static csPtr&lt; iMeshFactoryWrapper &gt;</type>
       <name>CreateClothGenMeshFactory</name>
-      <anchorfile>structCS_1_1Physics2_1_1SoftBodyHelper.html</anchorfile>
-      <anchor>a8b2094d4eb073a08b2b7fb73b3eefdc2</anchor>
+      <anchorfile>structCS_1_1Physics_1_1SoftBodyHelper.html</anchorfile>
+      <anchor>afd27393d2cf6bb0a1a0c30db4968a18b</anchor>
       <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics2::Bullet2::iPhysicalSector</name>
-    <filename>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DebugDraw</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>adcab55a102b42001c05d5a5a8b127982</anchor>
-      <arglist>(iView *rview)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DumpProfile</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa74e39e4033a4c96260d4f40a1defd41</anchor>
-      <arglist>(bool resetProfile=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual DebugMode</type>
-      <name>GetDebugMode</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a5c637b64a3f71f83bd15d32d96de96e0</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SaveWorld</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa72672d2a1c5630e69618bb61e1f5b47</anchor>
-      <arglist>(const char *filename)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDebugMode</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa1432e2d09d407dd178fbf3edb8d9b1b</anchor>
-      <arglist>(DebugMode mode)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StartProfile</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ac38665594e5d6dc941691850327c0bc5</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StopProfile</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ad360c49834aa3c8d3f50c20db53327a8</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics2::Bullet2::iSoftBody</name>
-    <filename>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DebugDraw</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ac69f3b2078c11c70e5f47e44951e9c6d</anchor>
-      <arglist>(iView *rView)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GenerateCluster</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>af9ed0394d38c091d8496daee0e2e9426</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetClusterCollisionRS</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>adca9787670e2d57883edc60be63f35f0</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetClusterCollisionSS</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a1a6d7f68e798567d66e2e0da569e89ed</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ResetCollisionFlag</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ab597e1cf423b9c7bdd76efcfb65b6093</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAnchorsHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a9776e6a8a9bdf86051da8f98cadd67aa</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularStiff</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a2d3f36ef40f02f2ae92dcfa41ccb23ba</anchor>
-      <arglist>(float stiff)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBendingConstraint</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aab8ed6c75ee4a4b71a262d78abfffec5</anchor>
-      <arglist>(bool bending)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterCollisionRS</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a19c91984851aad39b6b51e42d2923ee7</anchor>
-      <arglist>(bool cluster)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterCollisionSS</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ab0708c4518b07f45e5627cac06618ded</anchor>
-      <arglist>(bool cluster)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterIterations</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ae6afa30c470ed3eeaa62ce881a53f50e</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDamping</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a49d38121a6c9335ce7055a998daaa873</anchor>
-      <arglist>(float damping)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDrag</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3b84e685b337ed664088641636c083e7</anchor>
-      <arglist>(float drag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDriftIterations</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3ffd2bc018f5ce1579c912c8d4e2992d</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKContactsHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a59d50cfe76bbce49b7c1b9c610d4546f</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLift</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a658bfe6c3f0dbd07dd9094d21d8eb69b</anchor>
-      <arglist>(float lift)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearStiff</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aec8f371b79ed15122606fc3e3a0588e9</anchor>
-      <arglist>(float stiff)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPositionIterations</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>abd3497f873e48dc68b1bce58f400d635</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPressure</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ab110f94cf60046f692708545671ac248</anchor>
-      <arglist>(float pressure)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRContactsHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>af580854500fd931220f573f19533b147</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSContactsHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aec5173fd4434845d556cfaa45a8d2ba2</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetShapeMatching</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a59b48eeee96fe579a0e1b2da70b17d6d</anchor>
-      <arglist>(bool match)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetShapeMatchThreshold</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ae3861cc2839e35557acab7ceb66e6cc4</anchor>
-      <arglist>(float matching)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aef595b1153f925426218d2b08dfa18bb</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKImpulse</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a520a702789397e26f4f998f6e4edd613</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a9a2f628b00fcb2b91b04a9b4f8097436</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRImpulse</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a2c8ed1d559aa66a8db8864b1e695889d</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSHardness</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a9074a727a8244d0eacca1b2ec1f84b88</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSImpulse</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ae41496941ecebac8d4c9869eafcb7a07</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVeloCorrectionFactor</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aeb637362dba5e41b66437bffd53aedec</anchor>
-      <arglist>(float factor)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVeloSolverIterations</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ab4bcf575a6a635ed30620d4de9fe9243</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVolumeConversationCoefficient</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a00aeb0a44c8e462437787eeb046e87f0</anchor>
-      <arglist>(float conversation)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVolumeStiff</name>
-      <anchorfile>structCS_1_1Physics2_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a00bad132cdf5ae6f70fd81e5c7a3ebdb</anchor>
-      <arglist>(float stiff)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -131211,6 +131012,296 @@
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1SoftBodyHelper.html</anchorfile>
       <anchor>a3328935c726bd782e960f7a5e6ef3560</anchor>
       <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Physics::Bullet2::iPhysicalSector</name>
+    <filename>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DebugDraw</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a43966a5f1943e54b77822db9266b5b65</anchor>
+      <arglist>(iView *rview)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DumpProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>aca8a8e260fe6700731e6c20776323416</anchor>
+      <arglist>(bool resetProfile=true)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DebugMode</type>
+      <name>GetDebugMode</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>a6ad095269097be839da305afc9decacf</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SaveWorld</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>af09f40e10f420b39f17a75429932446d</anchor>
+      <arglist>(const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDebugMode</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>ab83f674417cc928c969149aed4a3d0c5</anchor>
+      <arglist>(DebugMode mode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>StartProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>abf18b307306c00d70d697ce3a80aa93f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>StopProfile</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
+      <anchor>adbcce71e62361a26af8f7a13300feafd</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Physics::Bullet2::iSoftBody</name>
+    <filename>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DebugDraw</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a2f78df50ea3f52d8c2b4fdf37a7e98f4</anchor>
+      <arglist>(iView *rView)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GenerateCluster</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>afd366d73db644181be7ff006a0997738</anchor>
+      <arglist>(int iter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetClusterCollisionRS</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a0c09cc42e8e33cb4d0f9c065b0c521e0</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetClusterCollisionSS</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a88c3e4f15b1f40ff9f08c1224b00145c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ResetCollisionFlag</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>ac6a712495d7d9bb429e0d8a074ebe022</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAnchorsHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>ad88e67f65eaf7b776080b93820b12685</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAngularStiff</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a630921f5b5a6f7e1815bb634b3942ccb</anchor>
+      <arglist>(float stiff)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBendingConstraint</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a330f348538a6aa6909260d94e729a435</anchor>
+      <arglist>(bool bending)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetClusterCollisionRS</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a407a39e69ee42b4bac05ec5abf9524ea</anchor>
+      <arglist>(bool cluster)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetClusterCollisionSS</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a406c6f1f171d08acefb68cdda10ac8fa</anchor>
+      <arglist>(bool cluster)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetClusterIterations</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>aa0e2654c47e2bb97a1d03fb2ac7cab49</anchor>
+      <arglist>(int iter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDamping</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a866c98b9ddead8cc6ac1e2544f404d17</anchor>
+      <arglist>(float damping)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDrag</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a3e48f05d7683913f329a660850cf22ec</anchor>
+      <arglist>(float drag)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDriftIterations</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>ab95885546864f7d2a11e0745851e97ff</anchor>
+      <arglist>(int iter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetKContactsHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a3e7e5d94677a8fa9d10ab76870e84f0f</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLift</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a99b0478968519752201d5f205469caac</anchor>
+      <arglist>(float lift)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLinearStiff</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a2cff30fd97fc67de309b01fd290d8e28</anchor>
+      <arglist>(float stiff)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPositionIterations</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>af8dfce99876c486017f641a9d6cad47f</anchor>
+      <arglist>(int iter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPressure</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a2ef1edfd794739a511dd59c4b8cb5321</anchor>
+      <arglist>(float pressure)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRContactsHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>acdde505a89b15db033684908e3442474</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSContactsHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a4ccabaa9d662d1504f820cd73f10ff69</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetShapeMatching</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a611d531b1c36e6a29d13f6900080d0d9</anchor>
+      <arglist>(bool match)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetShapeMatchThreshold</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a591613fec9fd12ac862e2385c94ea724</anchor>
+      <arglist>(float matching)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSKHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>acc832491f7945040b4d52eb06d0f4a5c</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSKImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a14d67be2a860ae1bc2fb822dcd9e80b6</anchor>
+      <arglist>(float impulse)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSRHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a63d72723589378dc8b48799a15cebc47</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSRImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a4059aa8e3975ab86e7c08723d83bbdb9</anchor>
+      <arglist>(float impulse)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSSHardness</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a7095dfa5c816f54b3621340fa4935fe6</anchor>
+      <arglist>(float hardness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSSImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a9a51efe0f2723f06788d94ac6661c28a</anchor>
+      <arglist>(float impulse)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVeloCorrectionFactor</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>ac06d759a07804bbbae7b377e18371be3</anchor>
+      <arglist>(float factor)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVeloSolverIterations</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>abb2984ffa2b6c58e09ed6d9d075968a7</anchor>
+      <arglist>(int iter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVolumeConversationCoefficient</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a03e78ca6931e68083a1c3adcdd516364</anchor>
+      <arglist>(float conversation)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVolumeStiff</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
+      <anchor>a79d214668ad381ad3d05f54f960371fb</anchor>
+      <arglist>(float stiff)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
