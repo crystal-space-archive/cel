@@ -72521,18 +72521,25 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>ClipLine</name>
+      <anchorfile>classcsPen.html</anchorfile>
+      <anchor>a33e676db95afc950742b34094a68478c</anchor>
+      <arglist>(int &amp;x1, int &amp;y1, int &amp;x2, int &amp;y2)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>DrawArc</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a23bb83b8c9dee06238a3c0de115606a6</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, float start_angle=0, float end_angle=6.2831853)</arglist>
+      <anchor>a09deaa594e0e8f942ee1069a97b19ce8</anchor>
+      <arglist>(int x1, int y1, int x2, int y2, float start_angle=0, float end_angle=6.2831853)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>DrawLine</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a9421a9af548b24cea660a78ed3642ba6</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
+      <anchor>adb79023b74f8164c4d830a25c106ab2d</anchor>
+      <arglist>(int x1, int y1, int x2, int y2)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -72545,36 +72552,36 @@
       <type>void</type>
       <name>DrawMiteredRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>adc2bbba07b2c1ee665ac6e30af287e1e</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint miter)</arglist>
+      <anchor>ab79c6f023511c87c59246b17551afb59</anchor>
+      <arglist>(int x1, int y1, int x2, int y2, uint miter)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>DrawPoint</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>af63794b88a2e9f9f94392a2996ddabf8</anchor>
-      <arglist>(uint x1, uint y2)</arglist>
+      <anchor>aa03e2d85c541301a2eec326ebb186f7e</anchor>
+      <arglist>(int x1, int y2)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>DrawRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ac6f94b783f64a45b58ef102955d570c8</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
+      <anchor>a41e7bd6cb5446257ec0d6bc4c39bceb5</anchor>
+      <arglist>(int x1, int y1, int x2, int y2)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>DrawRoundedRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>afa05aee6fd6051029e32fbc6e7ca978e</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint roundness)</arglist>
+      <anchor>a6915a4fbb7644375c79d436ab471b2d7</anchor>
+      <arglist>(int x1, int y1, int x2, int y2, uint roundness)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>DrawTriangle</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a9c8de41c5bebde88f6f44fad073ccb00</anchor>
-      <arglist>(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3)</arglist>
+      <anchor>a98eb950ae4cba47fc721cabc79587319</anchor>
+      <arglist>(int x1, int y1, int x2, int y2, int x3, int y3)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -72671,29 +72678,29 @@
       <type>void</type>
       <name>Write</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a2657315ca0daf754534d63453b6c9ebd</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, const char *text)</arglist>
+      <anchor>a4e23a9adead97017318a874891b26b3c</anchor>
+      <arglist>(iFont *font, int x1, int y1, const char *text)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>WriteBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a9647099efbecc373ae587340ca584bd6</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)</arglist>
+      <anchor>a747c5541dfbfddba5cc9544b208acfe4</anchor>
+      <arglist>(iFont *font, int x1, int y1, int x2, int y2, uint h_align, uint v_align, const char *text)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>WriteLines</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a225453571d36d00fe026a2f89f4b9272</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, const csStringArray &amp;lines)</arglist>
+      <anchor>ae4cad6ed6e72ec45549dd99474ad7193</anchor>
+      <arglist>(iFont *font, int x1, int y1, const csStringArray &amp;lines)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>WriteLinesBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>af851f50c5457524c4d01c754631979eb</anchor>
-      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const csStringArray &amp;lines)</arglist>
+      <anchor>aca918e4c862d48edf5d9d3909b70c059</anchor>
+      <arglist>(iFont *font, int x1, int y1, int x2, int y2, uint h_align, uint v_align, const csStringArray &amp;lines)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
