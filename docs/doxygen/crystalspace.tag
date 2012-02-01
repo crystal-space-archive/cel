@@ -116099,6 +116099,34 @@
     </member>
     <member kind="function" static="yes">
       <type>static const char *</type>
+      <name>DoubleLeft</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a33075ed31bd279dd874eed4ae20b4a54</anchor>
+      <arglist>(const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>DoubleLeft</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>af047f0d2625ff2f9662f204e16517cf8</anchor>
+      <arglist>(csStringBase &amp;out, const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>DoubleRight</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a842e3de2107c6ea8cf210e01148a62d5</anchor>
+      <arglist>(const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>DoubleRight</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>aad7f2d665a585b7d2f595e2fbb94fab9</anchor>
+      <arglist>(csStringBase &amp;out, const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
       <name>Single</name>
       <anchorfile>structCS_1_1Quote.html</anchorfile>
       <anchor>acba4c56db91d2f73b1779d19c8597311</anchor>
@@ -116110,6 +116138,34 @@
       <anchorfile>structCS_1_1Quote.html</anchorfile>
       <anchor>ad8fcd8ff1caf6f72da60714220fe3825</anchor>
       <arglist>(csStringBase &amp;out, const char *str)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>SingleLeft</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a2b8d497dbfdd3e5848b509bf705f44e0</anchor>
+      <arglist>(const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>SingleLeft</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a511fb9f7646c664cea772b73c893b74d</anchor>
+      <arglist>(csStringBase &amp;out, const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char *</type>
+      <name>SingleRight</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>ad699c672dbe1a77d4a7f1fee701c9db0</anchor>
+      <arglist>(const char *str=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>SingleRight</name>
+      <anchorfile>structCS_1_1Quote.html</anchorfile>
+      <anchor>a1e6b341ca76d6bec2b3f96722f31d9e2</anchor>
+      <arglist>(csStringBase &amp;out, const char *str=&quot;&quot;)</arglist>
     </member>
   </compound>
   <compound kind="class">
