@@ -130827,11 +130827,39 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetDamping</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
+      <anchor>aa42e3af6fbe951dbcf049cb38a03d02c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetImpulseClamp</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
+      <anchor>a313dc5c06d059d3f5ac36cd666c20ea3</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetPosition</name>
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
       <anchor>a2db9e670ae169092636a580b6b0a6f36</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetTau</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
+      <anchor>a5227211a32c9ec333cd55737ed3ba7f2</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetParameters</name>
+      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
+      <anchor>ac3d38e68d2420f62fa61d56111491174</anchor>
+      <arglist>(float impulseClamp, float tau, float damping)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
