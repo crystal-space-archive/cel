@@ -30500,6 +30500,49 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celParameterTools_WriteParSpecBlock(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iObjectRegistry *arg1 = (iObjectRegistry *) 0 ;
+  iDocumentNode *arg2 = (iDocumentNode *) 0 ;
+  csArray< celParSpec > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celParameterTools_WriteParSpecBlock",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iObjectRegistry, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celParameterTools_WriteParSpecBlock" "', argument " "1"" of type '" "iObjectRegistry *""'"); 
+  }
+  arg1 = reinterpret_cast< iObjectRegistry * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iDocumentNode, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celParameterTools_WriteParSpecBlock" "', argument " "2"" of type '" "iDocumentNode *""'"); 
+  }
+  arg2 = reinterpret_cast< iDocumentNode * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csArrayT_celParSpec_csArrayElementHandlerT_celParSpec_t_CS__Memory__AllocatorMalloc_csArrayCapacityFixedGrowT_16_t_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celParameterTools_WriteParSpecBlock" "', argument " "3"" of type '" "csArray< celParSpec > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celParameterTools_WriteParSpecBlock" "', argument " "3"" of type '" "csArray< celParSpec > const &""'"); 
+  }
+  arg3 = reinterpret_cast< csArray< celParSpec > * >(argp3);
+  result = (bool)celParameterTools::WriteParSpecBlock(arg1,arg2,(csArray< celParSpec > const &)*arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_celParameterTools_GetParameterBlock(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iParameterManager *arg1 = (iParameterManager *) 0 ;
@@ -107815,6 +107858,37 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestFactory_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestFactory *arg1 = (iQuestFactory *) 0 ;
+  iDocumentNode *arg2 = (iDocumentNode *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestFactory_Save",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestFactory_Save" "', argument " "1"" of type '" "iQuestFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestFactory * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iDocumentNode, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestFactory_Save" "', argument " "2"" of type '" "iDocumentNode *""'"); 
+  }
+  arg2 = reinterpret_cast< iDocumentNode * >(argp2);
+  result = (bool)(arg1)->Save(arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestFactory_GetState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestFactory *arg1 = (iQuestFactory *) 0 ;
@@ -108055,6 +108129,28 @@ SWIGINTERN PyObject *_wrap_iQuestFactory_ClearDefaultParameters(PyObject *SWIGUN
   arg1 = reinterpret_cast< iQuestFactory * >(argp1);
   (arg1)->ClearDefaultParameters();
   resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestFactory_GetDefaultParameters(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestFactory *arg1 = (iQuestFactory *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  iCelParameterBlock *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestFactory_GetDefaultParameters",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestFactory_GetDefaultParameters" "', argument " "1"" of type '" "iQuestFactory const *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestFactory * >(argp1);
+  result = (iCelParameterBlock *)((iQuestFactory const *)arg1)->GetDefaultParameters();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -108452,6 +108548,37 @@ SWIGINTERN PyObject *_wrap_iQuestManager_Load(PyObject *SWIGUNUSEDPARM(self), Py
   }
   arg2 = reinterpret_cast< iDocumentNode * >(argp2);
   result = (bool)(arg1)->Load(arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestManager_Save(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestManager *arg1 = (iQuestManager *) 0 ;
+  iDocumentNode *arg2 = (iDocumentNode *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_Save",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_Save" "', argument " "1"" of type '" "iQuestManager *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iDocumentNode, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_Save" "', argument " "2"" of type '" "iDocumentNode *""'"); 
+  }
+  arg2 = reinterpret_cast< iDocumentNode * >(argp2);
+  result = (bool)(arg1)->Save(arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
@@ -121848,6 +121975,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"celParameterTools_ToColor4", _wrap_celParameterTools_ToColor4, METH_VARARGS, NULL},
 	 { (char *)"celParameterTools_Convert", _wrap_celParameterTools_Convert, METH_VARARGS, NULL},
 	 { (char *)"celParameterTools_ParseParSpecBlock", _wrap_celParameterTools_ParseParSpecBlock, METH_VARARGS, NULL},
+	 { (char *)"celParameterTools_WriteParSpecBlock", _wrap_celParameterTools_WriteParSpecBlock, METH_VARARGS, NULL},
 	 { (char *)"celParameterTools_GetParameterBlock", _wrap_celParameterTools_GetParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"celParameterTools_FillParameterBlock", _wrap_celParameterTools_FillParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"celParameterTools_GetDebugData", _wrap_celParameterTools_GetDebugData, METH_VARARGS, NULL},
@@ -123803,6 +123931,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestFactory_GetName", _wrap_iQuestFactory_GetName, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_CreateQuest", _wrap_iQuestFactory_CreateQuest, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_Load", _wrap_iQuestFactory_Load, METH_VARARGS, NULL},
+	 { (char *)"iQuestFactory_Save", _wrap_iQuestFactory_Save, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetState", _wrap_iQuestFactory_GetState, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_CreateState", _wrap_iQuestFactory_CreateState, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetStates", _wrap_iQuestFactory_GetStates, METH_VARARGS, NULL},
@@ -123811,6 +123940,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestFactory_GetSequences", _wrap_iQuestFactory_GetSequences, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_SetDefaultParameter", _wrap_iQuestFactory_SetDefaultParameter, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_ClearDefaultParameters", _wrap_iQuestFactory_ClearDefaultParameters, METH_VARARGS, NULL},
+	 { (char *)"iQuestFactory_GetDefaultParameters", _wrap_iQuestFactory_GetDefaultParameters, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_Name_get", _wrap_iQuestFactory_Name_get, METH_VARARGS, NULL},
 	 { (char *)"delete_iQuestFactory", _wrap_delete_iQuestFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_swigregister", iQuestFactory_swigregister, METH_VARARGS, NULL},
@@ -123825,6 +123955,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestManager_RemoveQuestFactories", _wrap_iQuestManager_RemoveQuestFactories, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_CreateQuestFactory", _wrap_iQuestManager_CreateQuestFactory, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_Load", _wrap_iQuestManager_Load, METH_VARARGS, NULL},
+	 { (char *)"iQuestManager_Save", _wrap_iQuestManager_Save, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddNewStateReward", _wrap_iQuestManager_AddNewStateReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddDebugPrintReward", _wrap_iQuestManager_AddDebugPrintReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddInventoryReward", _wrap_iQuestManager_AddInventoryReward, METH_VARARGS, NULL},
