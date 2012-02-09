@@ -31246,6 +31246,32 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celVariableParameterBlock_RemoveParameter(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celVariableParameterBlock *arg1 = (celVariableParameterBlock *) 0 ;
+  SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celVariableParameterBlock_RemoveParameter",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celVariableParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celVariableParameterBlock_RemoveParameter" "', argument " "1"" of type '" "celVariableParameterBlock *""'"); 
+  }
+  arg1 = reinterpret_cast< celVariableParameterBlock * >(argp1);
+  {
+    arg2 = (csStringID)PyLong_AsUnsignedLong(obj1);
+  }
+  (arg1)->RemoveParameter(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_celVariableParameterBlock_AddParameter__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celVariableParameterBlock *arg1 = (celVariableParameterBlock *) 0 ;
@@ -121993,6 +122019,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_celVariableParameterBlock", _wrap_new_celVariableParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"delete_celVariableParameterBlock", _wrap_delete_celVariableParameterBlock, METH_VARARGS, NULL},
 	 { (char *)"celVariableParameterBlock_Clear", _wrap_celVariableParameterBlock_Clear, METH_VARARGS, NULL},
+	 { (char *)"celVariableParameterBlock_RemoveParameter", _wrap_celVariableParameterBlock_RemoveParameter, METH_VARARGS, NULL},
 	 { (char *)"celVariableParameterBlock_AddParameter", _wrap_celVariableParameterBlock_AddParameter, METH_VARARGS, NULL},
 	 { (char *)"celVariableParameterBlock_SetParameterDef", _wrap_celVariableParameterBlock_SetParameterDef, METH_VARARGS, NULL},
 	 { (char *)"celVariableParameterBlock_GetParameterCount", _wrap_celVariableParameterBlock_GetParameterCount, METH_VARARGS, NULL},
