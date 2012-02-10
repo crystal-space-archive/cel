@@ -7,7 +7,7 @@
   </compound>
   <compound kind="file">
     <name>crystalspace.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>crystalspace_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="csgeom_8h" name="csgeom.h" local="yes" imported="no">csgeom.h</includes>
@@ -31,7 +31,7 @@
   </compound>
   <compound kind="file">
     <name>csgeom.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csgeom_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
@@ -80,7 +80,7 @@
   </compound>
   <compound kind="file">
     <name>box.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>box_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <includes id="csrect_8h" name="csrect.h" local="yes" imported="no">csgeom/csrect.h</includes>
@@ -421,7 +421,7 @@
   </compound>
   <compound kind="file">
     <name>bsptree.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>bsptree_8h</filename>
     <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
     <includes id="trianglestream_8h" name="trianglestream.h" local="yes" imported="no">csgfx/trianglestream.h</includes>
@@ -433,19 +433,19 @@
   </compound>
   <compound kind="file">
     <name>chainhull2d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>chainhull2d_8h</filename>
     <class kind="class">csChainHull2D</class>
   </compound>
   <compound kind="file">
     <name>csrect.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>csrect_8h</filename>
     <class kind="class">csRect</class>
   </compound>
   <compound kind="file">
     <name>csrectrg.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>csrectrg_8h</filename>
     <includes id="csrect_8h" name="csrect.h" local="yes" imported="no">csgeom/csrect.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -453,7 +453,7 @@
   </compound>
   <compound kind="file">
     <name>dualquaternion.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>dualquaternion_8h</filename>
     <includes id="csqsqrt_8h" name="csqsqrt.h" local="yes" imported="no">csqsqrt.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -463,7 +463,7 @@
   </compound>
   <compound kind="file">
     <name>fixed.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>fixed_8h</filename>
     <includes id="csqint_8h" name="csqint.h" local="yes" imported="no">csqint.h</includes>
     <class kind="class">csFixed16</class>
@@ -471,7 +471,7 @@
   </compound>
   <compound kind="file">
     <name>frustum.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>frustum_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">csutil/refcount.h</includes>
@@ -505,7 +505,7 @@
   </compound>
   <compound kind="file">
     <name>kdtree.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>kdtree_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
@@ -527,7 +527,7 @@
   </compound>
   <compound kind="file">
     <name>kdtreex.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>kdtreex_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="csgeom_2sphere_8h" name="sphere.h" local="yes" imported="no">csgeom/sphere.h</includes>
@@ -552,7 +552,7 @@
   </compound>
   <compound kind="file">
     <name>math.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>math_8h</filename>
     <includes id="algorithms_8h" name="algorithms.h" local="yes" imported="no">csutil/algorithms.h</includes>
     <namespace>CS</namespace>
@@ -714,7 +714,7 @@
   </compound>
   <compound kind="file">
     <name>math2d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>math2d_8h</filename>
     <includes id="plane2_8h" name="plane2.h" local="yes" imported="no">csgeom/plane2.h</includes>
     <includes id="segment_8h" name="segment.h" local="yes" imported="no">csgeom/segment.h</includes>
@@ -724,7 +724,7 @@
   </compound>
   <compound kind="file">
     <name>math3d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>math3d_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="frustum_8h" name="frustum.h" local="yes" imported="no">csgeom/frustum.h</includes>
@@ -740,7 +740,7 @@
   </compound>
   <compound kind="file">
     <name>math3d_d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>math3d__d_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <class kind="class">csDIntersect3</class>
@@ -752,14 +752,14 @@
   </compound>
   <compound kind="file">
     <name>matrix2.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>matrix2_8h</filename>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
     <class kind="class">csMatrix2</class>
   </compound>
   <compound kind="file">
     <name>matrix3.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>matrix3_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <class kind="class">csMatrix3</class>
@@ -772,7 +772,7 @@
   </compound>
   <compound kind="file">
     <name>matrix4.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>matrix4_8h</filename>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="transfrm_8h" name="transfrm.h" local="yes" imported="no">csgeom/transfrm.h</includes>
@@ -784,7 +784,7 @@
   </compound>
   <compound kind="file">
     <name>obb.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>obb_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
@@ -793,7 +793,7 @@
   </compound>
   <compound kind="file">
     <name>odesolver.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>odesolver_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <class kind="class">CS::Math::Ode45</class>
@@ -802,7 +802,7 @@
   </compound>
   <compound kind="file">
     <name>path.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>csgeom_2path_8h</filename>
     <includes id="spline_8h" name="spline.h" local="yes" imported="no">csgeom/spline.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -813,14 +813,14 @@
   </compound>
   <compound kind="file">
     <name>path.h</name>
-    <path>/tmp/tmp2/trunk/include/igeom/</path>
+    <path>/tmp/tmp1/V2.0/include/igeom/</path>
     <filename>igeom_2path_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <class kind="struct">iPath</class>
   </compound>
   <compound kind="file">
     <name>plane2.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>plane2_8h</filename>
     <includes id="segment_8h" name="segment.h" local="yes" imported="no">csgeom/segment.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
@@ -828,7 +828,7 @@
   </compound>
   <compound kind="file">
     <name>plane3.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>plane3_8h</filename>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -836,7 +836,7 @@
   </compound>
   <compound kind="file">
     <name>poly2d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>poly2d_8h</filename>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
     <class kind="class">csPoly2D</class>
@@ -844,7 +844,7 @@
   </compound>
   <compound kind="file">
     <name>poly3d.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>poly3d_8h</filename>
     <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -879,7 +879,7 @@
   </compound>
   <compound kind="file">
     <name>polyclip.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>polyclip_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="clip2d_8h" name="clip2d.h" local="yes" imported="no">igeom/clip2d.h</includes>
@@ -890,20 +890,20 @@
   </compound>
   <compound kind="file">
     <name>polyidx.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>polyidx_8h</filename>
     <class kind="class">csPolyIndexed</class>
   </compound>
   <compound kind="file">
     <name>polypool.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>polypool_8h</filename>
     <includes id="poly2d_8h" name="poly2d.h" local="yes" imported="no">csgeom/poly2d.h</includes>
     <class kind="class">csPoly2DPool</class>
   </compound>
   <compound kind="file">
     <name>projections.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>projections_8h</filename>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
     <class kind="struct">CS::Math::Projections</class>
@@ -912,7 +912,7 @@
   </compound>
   <compound kind="file">
     <name>quaternion.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>quaternion_8h</filename>
     <includes id="csqsqrt_8h" name="csqsqrt.h" local="yes" imported="no">csqsqrt.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -920,7 +920,7 @@
   </compound>
   <compound kind="file">
     <name>segment.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>segment_8h</filename>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -929,7 +929,7 @@
   </compound>
   <compound kind="file">
     <name>solidspace.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>solidspace_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="trimeshtools_8h" name="trimeshtools.h" local="yes" imported="no">csgeom/trimeshtools.h</includes>
@@ -937,7 +937,7 @@
   </compound>
   <compound kind="file">
     <name>sphere.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>csgeom_2sphere_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <includes id="math3d_8h" name="math3d.h" local="yes" imported="no">csgeom/math3d.h</includes>
@@ -947,7 +947,7 @@
   </compound>
   <compound kind="file">
     <name>spline.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>spline_8h</filename>
     <class kind="class">csBSpline</class>
     <class kind="class">csCatmullRomSpline</class>
@@ -956,7 +956,7 @@
   </compound>
   <compound kind="file">
     <name>subrec.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>subrec_8h</filename>
     <includes id="csrect_8h" name="csrect.h" local="yes" imported="no">csgeom/csrect.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -968,7 +968,7 @@
   </compound>
   <compound kind="file">
     <name>tcovbuf.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>tcovbuf_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="dbghelp_8h" name="dbghelp.h" local="yes" imported="no">iutil/dbghelp.h</includes>
@@ -980,7 +980,7 @@
   </compound>
   <compound kind="file">
     <name>transfrm.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>transfrm_8h</filename>
     <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -990,7 +990,7 @@
   </compound>
   <compound kind="file">
     <name>tri.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>tri_8h</filename>
     <class kind="struct">csTriangle</class>
     <class kind="struct">CS::TriangleT</class>
@@ -998,7 +998,7 @@
   </compound>
   <compound kind="file">
     <name>trimesh.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>csgeom_2trimesh_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
@@ -1016,7 +1016,7 @@
   </compound>
   <compound kind="file">
     <name>trimesh.h</name>
-    <path>/tmp/tmp2/trunk/include/igeom/</path>
+    <path>/tmp/tmp1/V2.0/include/igeom/</path>
     <filename>igeom_2trimesh_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iTriangleMesh</class>
@@ -1053,7 +1053,7 @@
   </compound>
   <compound kind="file">
     <name>trimeshlod.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>trimeshlod_8h</filename>
     <includes id="csgeom_2trimesh_8h" name="trimesh.h" local="yes" imported="no">csgeom/trimesh.h</includes>
     <includes id="list_8h" name="list.h" local="yes" imported="no">csutil/list.h</includes>
@@ -1066,7 +1066,7 @@
   </compound>
   <compound kind="file">
     <name>trimeshtools.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>trimeshtools_8h</filename>
     <includes id="csgeom_2trimesh_8h" name="trimesh.h" local="yes" imported="no">csgeom/trimesh.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -1076,14 +1076,14 @@
   </compound>
   <compound kind="file">
     <name>vector2.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>vector2_8h</filename>
     <includes id="csqsqrt_8h" name="csqsqrt.h" local="yes" imported="no">csqsqrt.h</includes>
     <class kind="class">csVector2</class>
   </compound>
   <compound kind="file">
     <name>vector3.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>vector3_8h</filename>
     <includes id="math3d__d_8h" name="math3d_d.h" local="yes" imported="no">csgeom/math3d_d.h</includes>
     <includes id="csqsqrt_8h" name="csqsqrt.h" local="yes" imported="no">csqsqrt.h</includes>
@@ -1121,7 +1121,7 @@
   </compound>
   <compound kind="file">
     <name>vector4.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <path>/tmp/tmp1/V2.0/include/csgeom/</path>
     <filename>vector4_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -1130,7 +1130,7 @@
   </compound>
   <compound kind="file">
     <name>csgfx.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csgfx_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="bakekeycolor_8h" name="bakekeycolor.h" local="yes" imported="no">csgfx/bakekeycolor.h</includes>
@@ -1165,14 +1165,14 @@
   </compound>
   <compound kind="file">
     <name>bakekeycolor.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>bakekeycolor_8h</filename>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
     <class kind="class">csBakeKeyColor</class>
   </compound>
   <compound kind="file">
     <name>gradient.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>csgfx_2gradient_8h</filename>
     <includes id="ivaria_2gradient_8h" name="gradient.h" local="yes" imported="no">ivaria/gradient.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -1184,7 +1184,7 @@
   </compound>
   <compound kind="file">
     <name>gradient.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>ivaria_2gradient_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
@@ -1195,7 +1195,7 @@
   </compound>
   <compound kind="file">
     <name>imageautoconvert.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imageautoconvert_8h</filename>
     <includes id="imagememory_8h" name="imagememory.h" local="yes" imported="no">csgfx/imagememory.h</includes>
     <class kind="class">CS::ImageAutoConvert</class>
@@ -1203,7 +1203,7 @@
   </compound>
   <compound kind="file">
     <name>imagebase.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagebase_8h</filename>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
     <includes id="databuf_8h" name="databuf.h" local="yes" imported="no">csutil/databuf.h</includes>
@@ -1213,14 +1213,14 @@
   </compound>
   <compound kind="file">
     <name>imagecubemapmaker.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagecubemapmaker_8h</filename>
     <includes id="imagebase_8h" name="imagebase.h" local="yes" imported="no">imagebase.h</includes>
     <class kind="class">csImageCubeMapMaker</class>
   </compound>
   <compound kind="file">
     <name>imagemanipulate.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagemanipulate_8h</filename>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
@@ -1228,7 +1228,7 @@
   </compound>
   <compound kind="file">
     <name>imagememory.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagememory_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="imagebase_8h" name="imagebase.h" local="yes" imported="no">csgfx/imagebase.h</includes>
@@ -1238,7 +1238,7 @@
   </compound>
   <compound kind="file">
     <name>imagetools.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagetools_8h</filename>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
@@ -1246,7 +1246,7 @@
   </compound>
   <compound kind="file">
     <name>imagevolumemaker.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>imagevolumemaker_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="imagebase_8h" name="imagebase.h" local="yes" imported="no">imagebase.h</includes>
@@ -1254,7 +1254,7 @@
   </compound>
   <compound kind="file">
     <name>inv_cmap.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>inv__cmap_8h</filename>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">rgbpixel.h</includes>
     <member kind="function">
@@ -1267,7 +1267,7 @@
   </compound>
   <compound kind="file">
     <name>lightsvcache.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>lightsvcache_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -1277,13 +1277,13 @@
   </compound>
   <compound kind="file">
     <name>normalmaptools.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>normalmaptools_8h</filename>
     <class kind="class">csNormalMappingTools</class>
   </compound>
   <compound kind="file">
     <name>packrgb.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>packrgb_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
@@ -1292,14 +1292,14 @@
   </compound>
   <compound kind="file">
     <name>quantize.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>quantize_8h</filename>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
     <class kind="class">csColorQuantizer</class>
   </compound>
   <compound kind="file">
     <name>renderbuffer.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>renderbuffer_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -1314,7 +1314,7 @@
   </compound>
   <compound kind="file">
     <name>rgbpixel.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>rgbpixel_8h</filename>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <class kind="class">csComparator&lt; csRGBcolor *, csRGBcolor * &gt;</class>
@@ -1366,7 +1366,7 @@
   </compound>
   <compound kind="file">
     <name>shaderexp.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shaderexp_8h</filename>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -1377,7 +1377,7 @@
   </compound>
   <compound kind="file">
     <name>shaderexpaccessor.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shaderexpaccessor_8h</filename>
     <includes id="shadervar_8h" name="shadervar.h" local="yes" imported="no">csgfx/shadervar.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -1389,7 +1389,7 @@
   </compound>
   <compound kind="file">
     <name>shadervar.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervar_8h</filename>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="quaternion_8h" name="quaternion.h" local="yes" imported="no">csgeom/quaternion.h</includes>
@@ -1428,7 +1428,7 @@
   </compound>
   <compound kind="file">
     <name>shadervararrayhelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervararrayhelper_8h</filename>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
     <includes id="shadervarnameparser_8h" name="shadervarnameparser.h" local="yes" imported="no">csgfx/shadervarnameparser.h</includes>
@@ -1437,7 +1437,7 @@
   </compound>
   <compound kind="file">
     <name>shadervarblockalloc.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervarblockalloc_8h</filename>
     <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -1446,7 +1446,7 @@
   </compound>
   <compound kind="file">
     <name>shadervarcontext.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervarcontext_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
@@ -1459,7 +1459,7 @@
   </compound>
   <compound kind="file">
     <name>shadervarframeholder.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervarframeholder_8h</filename>
     <includes id="framedataholder_8h" name="framedataholder.h" local="yes" imported="no">cstool/framedataholder.h</includes>
     <includes id="shadervarblockalloc_8h" name="shadervarblockalloc.h" local="yes" imported="no">shadervarblockalloc.h</includes>
@@ -1467,7 +1467,7 @@
   </compound>
   <compound kind="file">
     <name>shadervarnameparser.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>shadervarnameparser_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -1477,7 +1477,7 @@
   </compound>
   <compound kind="file">
     <name>textureformatstrings.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>textureformatstrings_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <class kind="class">CS::StructuredTextureFormat</class>
@@ -1486,7 +1486,7 @@
   </compound>
   <compound kind="file">
     <name>trianglestream.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>trianglestream_8h</filename>
     <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
@@ -1497,7 +1497,7 @@
   </compound>
   <compound kind="file">
     <name>vertexlight.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>vertexlight_8h</filename>
     <includes id="csqsqrt_8h" name="csqsqrt.h" local="yes" imported="no">csqsqrt.h</includes>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
@@ -1526,7 +1526,7 @@
   </compound>
   <compound kind="file">
     <name>vertexlistwalker.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>vertexlistwalker_8h</filename>
     <includes id="csendian_8h" name="csendian.h" local="yes" imported="no">csutil/csendian.h</includes>
     <includes id="rbuflock_8h" name="rbuflock.h" local="yes" imported="no">cstool/rbuflock.h</includes>
@@ -1534,7 +1534,7 @@
   </compound>
   <compound kind="file">
     <name>xorpat.h</name>
-    <path>/tmp/tmp2/trunk/include/csgfx/</path>
+    <path>/tmp/tmp1/V2.0/include/csgfx/</path>
     <filename>xorpat_8h</filename>
     <member kind="function">
       <type>csPtr&lt; iImage &gt;</type>
@@ -1546,7 +1546,7 @@
   </compound>
   <compound kind="file">
     <name>csplugincommon.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csplugincommon_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="cursorconvert_8h" name="cursorconvert.h" local="yes" imported="no">csplugincommon/canvas/cursorconvert.h</includes>
@@ -1571,13 +1571,13 @@
   </compound>
   <compound kind="file">
     <name>cursorconvert.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/canvas/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/canvas/</path>
     <filename>cursorconvert_8h</filename>
     <class kind="class">csCursorConverter</class>
   </compound>
   <compound kind="file">
     <name>fontcache.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/canvas/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/canvas/</path>
     <filename>fontcache_8h</filename>
     <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
@@ -1593,7 +1593,7 @@
   </compound>
   <compound kind="file">
     <name>graph2d.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/canvas/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/canvas/</path>
     <filename>csplugincommon_2canvas_2graph2d_8h</filename>
     <includes id="cfgacc_8h" name="cfgacc.h" local="yes" imported="no">csutil/cfgacc.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -1614,7 +1614,7 @@
   </compound>
   <compound kind="file">
     <name>graph2d.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>ivideo_2graph2d_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
@@ -1636,13 +1636,13 @@
   </compound>
   <compound kind="file">
     <name>error.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/directx/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/directx/</path>
     <filename>error_8h</filename>
     <class kind="class">csDirectXError</class>
   </compound>
   <compound kind="file">
     <name>commonimagefile.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/imageloader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/imageloader/</path>
     <filename>commonimagefile_8h</filename>
     <includes id="imagememory_8h" name="imagememory.h" local="yes" imported="no">csgfx/imagememory.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -1687,7 +1687,7 @@
   </compound>
   <compound kind="file">
     <name>optionsparser.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/imageloader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/imageloader/</path>
     <filename>optionsparser_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -1695,14 +1695,14 @@
   </compound>
   <compound kind="file">
     <name>driverdb.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/iopengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/iopengl/</path>
     <filename>iopengl_2driverdb_8h</filename>
     <includes id="iutil_2cfgmgr_8h" name="cfgmgr.h" local="yes" imported="no">iutil/cfgmgr.h</includes>
     <class kind="struct">iOpenGLDriverDatabase</class>
   </compound>
   <compound kind="file">
     <name>driverdb.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>opengl_2driverdb_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
@@ -1710,14 +1710,14 @@
   </compound>
   <compound kind="file">
     <name>openglinterface.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/iopengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/iopengl/</path>
     <filename>openglinterface_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iOpenGLInterface</class>
   </compound>
   <compound kind="file">
     <name>assumedstate.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>assumedstate_8h</filename>
     <includes id="glstates_8h" name="glstates.h" local="yes" imported="no">glstates.h</includes>
     <namespace>CS</namespace>
@@ -1733,7 +1733,7 @@
   </compound>
   <compound kind="file">
     <name>glcommon2d.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glcommon2d_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csplugincommon_2canvas_2graph2d_8h" name="graph2d.h" local="yes" imported="no">csplugincommon/canvas/graph2d.h</includes>
@@ -1748,7 +1748,7 @@
   </compound>
   <compound kind="file">
     <name>glenum_identstrs.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glenum__identstrs_8h</filename>
     <includes id="identstrings_8h" name="identstrings.h" local="yes" imported="no">cstool/identstrings.h</includes>
     <namespace>CS</namespace>
@@ -1756,7 +1756,7 @@
   </compound>
   <compound kind="file">
     <name>glextmanager.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glextmanager_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="iutil_2cmdline_8h" name="cmdline.h" local="yes" imported="no">iutil/cmdline.h</includes>
@@ -7015,16 +7015,16 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH</name>
+      <name>GL_OBJECT_ACTIVE_UNIFORMS</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a8af31a205dec718bf1b2da9d14ebfe7d</anchor>
+      <anchor>ab5ffb9b05253784cd2c147c85d53ee4c</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>GL_OBJECT_ACTIVE_UNIFORMS</name>
+      <name>GL_OBJECT_ACTIVE_UNIFORMS_MAX_LENGTH</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ab5ffb9b05253784cd2c147c85d53ee4c</anchor>
+      <anchor>a0e86dd25b4da22d9954a81f33facd796</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -7109,62 +7109,6 @@
       <name>GL_PROGRAM_OBJECT</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>ad23474d5b9f69e723740279f19668a0b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_1D</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a2d29ae66c897d44f3da8b8384a097d04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_1D_SHADOW</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a457fd2d13b374061ad772e310fb7d04a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_2D</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a166645e482b60d35b1d31c2f6f378238</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_2D_RECT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a62cbe4c8fa833203759310f80998c7bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_2D_RECT_SHADOW</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a60e8076f94e887855748fb2a889cb775</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_2D_SHADOW</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ae021158f10f94bab8f7d9349f90891e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_3D</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>acbaf67c05cdb5290f748c28ca878e537</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_SAMPLER_CUBE</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aefd2fef024ff66a2823dfdc1639fb6ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -12286,230 +12230,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>GL_FRACTIONAL_EVEN_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ad68474545c90a310f7111ff6853a509a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_FRACTIONAL_ODD_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a82af58d838d5c30108e32a37160050dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_ISOLINES_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a8d39618143be9ae5d1316a53ae3972f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a49a3d8ed6a727c7a528b800fc8ac13af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ac3ad7cc876f744c733c6840944d32fac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_PATCH_VERTICES_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ab6497aaec5256a2b079b88cecdc590a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ac689bb405c938e9e23091166b67b317b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aca4ee269f91825aaf18a5c74476a2d78</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a93872847893d1cbb7d4322c2fddc0a90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a8f93e5fb6a5aaf055afe77248dc418ab</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a25437f39a9316f15d9aeb6cbccff4208</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>abdfaa16541534c3916fdaa0760845225</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a092ed47bc11fef48bdd4787dcaa49ba1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a6f7cd0cd0fbce938a24c1bf373740f85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a3b0e85aafc878eb1db193cca923a5344</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aaa90371c1b3eda75574a49b9391dbc5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>af0be5381cf0f69a4b473f6bd25f19ee4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_GEN_LEVEL_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ab3f2c6dae631ab57043adbe85659b011</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_TESS_PATCH_COMPONENTS_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>add2004b41c00f1715090827991582d0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_PATCH_DEFAULT_INNER_LEVEL_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a67a9fc03bf7a13367e698842493b6d50</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_PATCH_DEFAULT_OUTER_LEVEL_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>afbea85d1f6f0478a1449dec055837b8a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_PATCH_VERTICES_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a57e2d7ed4ebbfe14916f021be3d05664</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_PATCHES_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a907bbcf3d1a136ab33c83a157398f572</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_CONTROL_OUTPUT_VERTICES_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a541dd27e44705295482a81b6adbe01f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_CONTROL_SHADER_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aa1041576fbabb457bc197df2adbbc69b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_EVALUATION_SHADER_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a4a78025ffefc658559f13d85f0629652</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_GEN_MODE_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a82f5bfe6ed19ed91e5a3a0e56655e5a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_GEN_POINT_MODE_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ab927b3993942ed28716efe7e14362da3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_GEN_SPACING_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a18d18d1e5ca258b37944fbc0f0a1449f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TESS_GEN_VERTEX_ORDER_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ac69bf6815cfcf12726f1e48e10e71a1b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a7c2af831cf82f75f451e4215cfa12b39</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER_ARB</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ac4d526a937db8fb85cefb57d4c0a790d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>GL_FRAGMENT_PROGRAM_ARB</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>a3752d06345bf9b7cd556c8c18f1af1df</anchor>
@@ -12667,146 +12387,6 @@
       <name>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>aaf52509949799afbaee793e9678f9e80</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aa3a24661fa41cf585c1c5e129fb485de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a3af31179d0ad3edc60810b7dead15d52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a0de07eea53f8e376ea5d48af10f667af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a2a4be548400212fd78b3a6982ab1d166</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_GEOMETRY_INPUT_TYPE_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ae1c5b29401f9fa8eb96b72771aabc4f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_GEOMETRY_OUTPUT_TYPE_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a528b80a5156331b7dd89043a74a5ad10</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_GEOMETRY_SHADER_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a75cdb827fbf3fe7cca71d119361a1251</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_GEOMETRY_VERTICES_OUT_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>afd49157305750d98245f3dde22578683</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_LINE_STRIP_ADJACENCY_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a421e339618dcf7e151efd2ee751d6513</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_LINES_ADJACENCY_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ac064545115e146b516ed51cc411300c2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>af3af230e62aaee4c6d4e379e689932f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a253cc16b390ee2c49bcb29bdb60a4df5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a97465ff3b83f579e9484ac4bbd5fbcd9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a8683eeb03bc72edf125b5dd0f52e7622</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ade964daae6999158b45ce08e92e7a9a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_VARYING_COMPONENTS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a1f470a6b9e8b1dccc5892b177323b176</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_MAX_VERTEX_VARYING_COMPONENTS_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>af77df3217625a0fd57222a43b8941bd6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_PROGRAM_POINT_SIZE_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a04f58cb68aca5ebe3bb412234075cd4e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TRIANGLE_STRIP_ADJACENCY_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a4463eda1607862972c5a9b8a99353e99</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>GL_TRIANGLES_ADJACENCY_EXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a3ad07dac8428e557a4b326ff02eb0747</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -21337,20 +20917,6 @@
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
-      <name>csGLPATCHPARAMETERFV</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ae8ae7c751484d603ad7444a2dd653737</anchor>
-      <arglist>)(GLenum pname, const GLfloat *values)</arglist>
-    </member>
-    <member kind="typedef">
-      <type>GLvoid(*</type>
-      <name>csGLPATCHPARAMETERI</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a776d9e4a31761c61d0c9ec9749c406ca</anchor>
-      <arglist>)(GLenum pname, GLint value)</arglist>
-    </member>
-    <member kind="typedef">
-      <type>GLvoid(*</type>
       <name>csGLPNTRIANGLESFATI</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>abc0182db2d07faf4a3d53846309b5d6a</anchor>
@@ -21439,13 +21005,6 @@
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>aaa2f62a13eb605ac15d169930051f086</anchor>
       <arglist>)(GLenum target, GLuint index, GLsizei count, const GLfloat *params)</arglist>
-    </member>
-    <member kind="typedef">
-      <type>GLvoid(*</type>
-      <name>csGLPROGRAMPARAMETERIEXT</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a641b83a06e46ca183f75c207c2cc9ea0</anchor>
-      <arglist>)(GLuint program, GLenum pname, GLint value)</arglist>
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
@@ -22507,7 +22066,7 @@
   </compound>
   <compound kind="file">
     <name>glfontcache.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glfontcache_8h</filename>
     <includes id="subrec_8h" name="subrec.h" local="yes" imported="no">csgeom/subrec.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
@@ -22518,7 +22077,7 @@
   </compound>
   <compound kind="file">
     <name>glhelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glhelper_8h</filename>
     <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
@@ -22557,7 +22116,7 @@
   </compound>
   <compound kind="file">
     <name>glss.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glss_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="imagebase_8h" name="imagebase.h" local="yes" imported="no">csgfx/imagebase.h</includes>
@@ -22565,7 +22124,7 @@
   </compound>
   <compound kind="file">
     <name>glstates.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>glstates_8h</filename>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="glextmanager_8h" name="glextmanager.h" local="yes" imported="no">glextmanager.h</includes>
@@ -22573,7 +22132,7 @@
   </compound>
   <compound kind="file">
     <name>shaderplugin.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/opengl/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/opengl/</path>
     <filename>opengl_2shaderplugin_8h</filename>
     <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
     <includes id="shader_2shaderplugin_8h" name="shaderplugin.h" local="yes" imported="no">csplugincommon/shader/shaderplugin.h</includes>
@@ -22585,7 +22144,7 @@
   </compound>
   <compound kind="file">
     <name>shaderplugin.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/shader/</path>
     <filename>shader_2shaderplugin_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
@@ -22597,7 +22156,7 @@
   </compound>
   <compound kind="file">
     <name>normalizationcube.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/render3d/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/render3d/</path>
     <filename>normalizationcube_8h</filename>
     <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -22607,7 +22166,7 @@
   </compound>
   <compound kind="file">
     <name>autofx_framebuffertex.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>autofx__framebuffertex_8h</filename>
     <includes id="shadervarblockalloc_8h" name="shadervarblockalloc.h" local="yes" imported="no">csgfx/shadervarblockalloc.h</includes>
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
@@ -22622,7 +22181,7 @@
   </compound>
   <compound kind="file">
     <name>autofx_reflrefr.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>autofx__reflrefr_8h</filename>
     <includes id="mesh_8h" name="mesh.h" local="yes" imported="no">iengine/mesh.h</includes>
     <includes id="imesh_2object_8h" name="object.h" local="yes" imported="no">imesh/object.h</includes>
@@ -22640,7 +22199,7 @@
   </compound>
   <compound kind="file">
     <name>debugcommon.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>debugcommon_8h</filename>
     <includes id="dbghelp_8h" name="dbghelp.h" local="yes" imported="no">iutil/dbghelp.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
@@ -22651,7 +22210,7 @@
   </compound>
   <compound kind="file">
     <name>dependenttarget.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>dependenttarget_8h</filename>
     <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
@@ -22667,7 +22226,7 @@
   </compound>
   <compound kind="file">
     <name>hdrexposure.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>hdrexposure_8h</filename>
     <includes id="textureformatstrings_8h" name="textureformatstrings.h" local="yes" imported="no">csgfx/textureformatstrings.h</includes>
     <includes id="hdrhelper_8h" name="hdrhelper.h" local="yes" imported="no">csplugincommon/rendermanager/hdrhelper.h</includes>
@@ -22682,7 +22241,7 @@
   </compound>
   <compound kind="file">
     <name>hdrhelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>hdrhelper_8h</filename>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="loader_8h" name="loader.h" local="yes" imported="no">imap/loader.h</includes>
@@ -22694,7 +22253,7 @@
   </compound>
   <compound kind="file">
     <name>lightsetup.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>lightsetup_8h</filename>
     <includes id="lightmgr_8h" name="lightmgr.h" local="yes" imported="no">iengine/lightmgr.h</includes>
     <includes id="iutil_2object_8h" name="object.h" local="yes" imported="no">iutil/object.h</includes>
@@ -22723,7 +22282,7 @@
   </compound>
   <compound kind="file">
     <name>operations.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>operations_8h</filename>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="set_8h" name="set.h" local="yes" imported="no">csutil/set.h</includes>
@@ -22804,7 +22363,7 @@
   </compound>
   <compound kind="file">
     <name>portalsetup.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>portalsetup_8h</filename>
     <includes id="movable_8h" name="movable.h" local="yes" imported="no">iengine/movable.h</includes>
     <includes id="portal_8h" name="portal.h" local="yes" imported="no">iengine/portal.h</includes>
@@ -22832,7 +22391,7 @@
   </compound>
   <compound kind="file">
     <name>posteffects.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>posteffects_8h</filename>
     <includes id="shadervarcontext_8h" name="shadervarcontext.h" local="yes" imported="no">csgfx/shadervarcontext.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
@@ -22853,7 +22412,7 @@
   </compound>
   <compound kind="file">
     <name>posteffectssupport.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>posteffectssupport_8h</filename>
     <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
@@ -22863,7 +22422,7 @@
   </compound>
   <compound kind="file">
     <name>render.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>render_8h</filename>
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
@@ -22882,14 +22441,14 @@
   </compound>
   <compound kind="file">
     <name>rendergroupinghandler.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>rendergroupinghandler_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
   <compound kind="file">
     <name>renderlayers.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>renderlayers_8h</filename>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -22915,7 +22474,7 @@
   </compound>
   <compound kind="file">
     <name>rendertree.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>rendertree_8h</filename>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
     <includes id="standardtreetraits_8h" name="standardtreetraits.h" local="yes" imported="no">csplugincommon/rendermanager/standardtreetraits.h</includes>
@@ -22935,7 +22494,7 @@
   </compound>
   <compound kind="file">
     <name>renderview.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>renderview_8h</filename>
     <includes id="pooledscfclass_8h" name="pooledscfclass.h" local="yes" imported="no">csutil/pooledscfclass.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -22952,7 +22511,7 @@
   </compound>
   <compound kind="file">
     <name>shadersetup.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>shadersetup_8h</filename>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
@@ -22978,7 +22537,7 @@
   </compound>
   <compound kind="file">
     <name>shadow_common.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>shadow__common_8h</filename>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
@@ -22992,7 +22551,7 @@
   </compound>
   <compound kind="file">
     <name>shadow_pssm.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>shadow__pssm_8h</filename>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
     <includes id="cfgacc_8h" name="cfgacc.h" local="yes" imported="no">csutil/cfgacc.h</includes>
@@ -23011,7 +22570,7 @@
   </compound>
   <compound kind="file">
     <name>standardsorter.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>standardsorter_8h</filename>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
@@ -23023,7 +22582,7 @@
   </compound>
   <compound kind="file">
     <name>standardtreetraits.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>standardtreetraits_8h</filename>
     <includes id="mesh_8h" name="mesh.h" local="yes" imported="no">iengine/mesh.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
@@ -23043,7 +22602,7 @@
   </compound>
   <compound kind="file">
     <name>svarrayholder.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>svarrayholder_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
@@ -23053,7 +22612,7 @@
   </compound>
   <compound kind="file">
     <name>svsetup.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>svsetup_8h</filename>
     <includes id="portal_8h" name="portal.h" local="yes" imported="no">iengine/portal.h</includes>
     <includes id="sector_8h" name="sector.h" local="yes" imported="no">iengine/sector.h</includes>
@@ -23074,7 +22633,7 @@
   </compound>
   <compound kind="file">
     <name>svtraverse.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>svtraverse_8h</filename>
     <includes id="operations_8h" name="operations.h" local="yes" imported="no">csplugincommon/rendermanager/operations.h</includes>
     <includes id="bitarray_8h" name="bitarray.h" local="yes" imported="no">csutil/bitarray.h</includes>
@@ -23085,7 +22644,7 @@
   </compound>
   <compound kind="file">
     <name>texturecache.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>texturecache_8h</filename>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
     <includes id="ivideo_2texture_8h" name="texture.h" local="yes" imported="no">ivideo/texture.h</includes>
@@ -23104,7 +22663,7 @@
   </compound>
   <compound kind="file">
     <name>viscull.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>csplugincommon_2rendermanager_2viscull_8h</filename>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="renderview_8h" name="renderview.h" local="yes" imported="no">csplugincommon/rendermanager/renderview.h</includes>
@@ -23122,7 +22681,7 @@
   </compound>
   <compound kind="file">
     <name>viscull.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>iengine_2viscull_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iVisibilityCuller</class>
@@ -23146,7 +22705,7 @@
   </compound>
   <compound kind="file">
     <name>viscullcommon.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/rendermanager/</path>
     <filename>viscullcommon_8h</filename>
     <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <namespace>CS</namespace>
@@ -23154,7 +22713,7 @@
   </compound>
   <compound kind="file">
     <name>basesteploader.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/renderstep/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/renderstep/</path>
     <filename>basesteploader_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -23166,7 +22725,7 @@
   </compound>
   <compound kind="file">
     <name>basesteptype.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/renderstep/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/renderstep/</path>
     <filename>basesteptype_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="irsfact_8h" name="irsfact.h" local="yes" imported="no">iengine/rendersteps/irsfact.h</includes>
@@ -23176,7 +22735,7 @@
   </compound>
   <compound kind="file">
     <name>parserenderstep.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/renderstep/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/renderstep/</path>
     <filename>parserenderstep_8h</filename>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
     <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
@@ -23190,7 +22749,7 @@
   </compound>
   <compound kind="file">
     <name>shadercachehelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/shader/</path>
     <filename>shadercachehelper_8h</filename>
     <includes id="hiercache_8h" name="hiercache.h" local="yes" imported="no">iutil/hiercache.h</includes>
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">csutil/fifo.h</includes>
@@ -23238,7 +22797,7 @@
   </compound>
   <compound kind="file">
     <name>shaderprogram.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/shader/</path>
     <filename>shaderprogram_8h</filename>
     <includes id="shadervararrayhelper_8h" name="shadervararrayhelper.h" local="yes" imported="no">csgfx/shadervararrayhelper.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -23254,7 +22813,6 @@
     <includes id="tokenlist_8h" name="tokenlist.h" local="yes" imported="no">cstool/tokenlist.h</includes>
     <class kind="class">csShaderProgram</class>
     <class kind="struct">csShaderProgram::ProgramParam</class>
-    <class kind="struct">csShaderProgram::ProgramSource</class>
     <class kind="struct">csShaderProgram::VariableMapEntry</class>
     <member kind="define">
       <type>#define</type>
@@ -23266,7 +22824,7 @@
   </compound>
   <compound kind="file">
     <name>weavercombiner.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/shader/</path>
     <filename>weavercombiner_8h</filename>
     <includes id="document_8h" name="document.h" local="yes" imported="no">iutil/document.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
@@ -23278,7 +22836,7 @@
   </compound>
   <compound kind="file">
     <name>weavertypes.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/shader/</path>
     <filename>weavertypes_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <namespace>CS</namespace>
@@ -23287,7 +22845,7 @@
   </compound>
   <compound kind="file">
     <name>convert.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/sndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/sndsys/</path>
     <filename>convert_8h</filename>
     <class kind="class">CS::SndSys::PCMSampleConverter</class>
     <namespace>CS</namespace>
@@ -23309,7 +22867,7 @@
   </compound>
   <compound kind="file">
     <name>cyclicbuf.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/sndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/sndsys/</path>
     <filename>cyclicbuf_8h</filename>
     <class kind="class">CS::SndSys::SoundCyclicBuffer</class>
     <namespace>CS</namespace>
@@ -23317,7 +22875,7 @@
   </compound>
   <compound kind="file">
     <name>queue.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/sndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/sndsys/</path>
     <filename>queue_8h</filename>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
     <class kind="class">CS::SndSys::Queue</class>
@@ -23357,7 +22915,7 @@
   </compound>
   <compound kind="file">
     <name>customcursor.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/win32/</path>
     <filename>customcursor_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -23368,7 +22926,7 @@
   </compound>
   <compound kind="file">
     <name>icontools.h</name>
-    <path>/tmp/tmp2/trunk/include/csplugincommon/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csplugincommon/win32/</path>
     <filename>icontools_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <class kind="class">CS::Platform::Win32::IconTools</class>
@@ -23378,7 +22936,7 @@
   </compound>
   <compound kind="file">
     <name>csqint.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csqint_8h</filename>
     <member kind="function" static="yes">
       <type>static long</type>
@@ -23418,7 +22976,7 @@
   </compound>
   <compound kind="file">
     <name>csqsqrt.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csqsqrt_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="math_8h" name="math.h" local="no" imported="no">math.h</includes>
@@ -23439,7 +22997,7 @@
   </compound>
   <compound kind="file">
     <name>cssysdef.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>cssysdef_8h</filename>
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
@@ -23875,7 +23433,7 @@
   </compound>
   <compound kind="file">
     <name>cstool.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>cstool_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="animeshtools_8h" name="animeshtools.h" local="yes" imported="no">cstool/animeshtools.h</includes>
@@ -23921,7 +23479,7 @@
   </compound>
   <compound kind="file">
     <name>animeshtools.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>animeshtools_8h</filename>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
@@ -23931,7 +23489,7 @@
   </compound>
   <compound kind="file">
     <name>animnodetmpl.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>animnodetmpl_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
@@ -23950,7 +23508,7 @@
   </compound>
   <compound kind="file">
     <name>basetexfact.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>basetexfact_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="itexfact_8h" name="itexfact.h" local="yes" imported="no">itexture/itexfact.h</includes>
@@ -23958,7 +23516,7 @@
   </compound>
   <compound kind="file">
     <name>bitmasktostr.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>bitmasktostr_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <class kind="class">csBitmaskToString</class>
@@ -23987,7 +23545,7 @@
   </compound>
   <compound kind="file">
     <name>collider.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2collider_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
@@ -24002,7 +23560,7 @@
   </compound>
   <compound kind="file">
     <name>collider.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>ivaria_2collider_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -24016,7 +23574,7 @@
   </compound>
   <compound kind="file">
     <name>csanim2d.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>csanim2d_8h</filename>
     <includes id="cspixmap_8h" name="cspixmap.h" local="yes" imported="no">cstool/cspixmap.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -24026,7 +23584,7 @@
   </compound>
   <compound kind="file">
     <name>csapplicationframework.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>csapplicationframework_8h</filename>
     <includes id="initapp_8h" name="initapp.h" local="yes" imported="no">cstool/initapp.h</includes>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
@@ -24035,7 +23593,7 @@
   </compound>
   <compound kind="file">
     <name>csfxscr.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>csfxscr_8h</filename>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <member kind="function">
@@ -24118,7 +23676,7 @@
   </compound>
   <compound kind="file">
     <name>cspixmap.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cspixmap_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="ivideo_2texture_8h" name="texture.h" local="yes" imported="no">ivideo/texture.h</includes>
@@ -24127,7 +23685,7 @@
   </compound>
   <compound kind="file">
     <name>csview.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>csview_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -24139,7 +23697,7 @@
   </compound>
   <compound kind="file">
     <name>debugimagewriter.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>debugimagewriter_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -24151,7 +23709,7 @@
   </compound>
   <compound kind="file">
     <name>demoapplication.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>demoapplication_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="csapplicationframework_8h" name="csapplicationframework.h" local="yes" imported="no">cstool/csapplicationframework.h</includes>
@@ -24183,7 +23741,7 @@
   </compound>
   <compound kind="file">
     <name>enginetools.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>enginetools_8h</filename>
     <includes id="set_8h" name="set.h" local="yes" imported="no">csutil/set.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -24194,13 +23752,13 @@
   </compound>
   <compound kind="file">
     <name>fogmath.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>fogmath_8h</filename>
     <class kind="class">csFogMath</class>
   </compound>
   <compound kind="file">
     <name>framedataholder.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>framedataholder_8h</filename>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -24208,7 +23766,7 @@
   </compound>
   <compound kind="file">
     <name>genmeshbuilder.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>genmeshbuilder_8h</filename>
     <includes id="csgeom_2sphere_8h" name="sphere.h" local="yes" imported="no">csgeom/sphere.h</includes>
     <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
@@ -24228,7 +23786,7 @@
   </compound>
   <compound kind="file">
     <name>identstrings.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>identstrings_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <class kind="class">csIdentStrings</class>
@@ -24263,7 +23821,7 @@
   </compound>
   <compound kind="file">
     <name>importkit.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>importkit_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -24277,7 +23835,7 @@
   </compound>
   <compound kind="file">
     <name>initapp.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>initapp_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="csutil_2eventnames_8h" name="eventnames.h" local="yes" imported="no">csutil/eventnames.h</includes>
@@ -24420,7 +23978,7 @@
   </compound>
   <compound kind="file">
     <name>keyval.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2keyval_8h</filename>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -24432,14 +23990,14 @@
   </compound>
   <compound kind="file">
     <name>keyval.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>ivaria_2keyval_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iKeyValuePair</class>
   </compound>
   <compound kind="file">
     <name>mapnode.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2mapnode_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
@@ -24450,14 +24008,14 @@
   </compound>
   <compound kind="file">
     <name>mapnode.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>ivaria_2mapnode_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iMapNode</class>
   </compound>
   <compound kind="file">
     <name>materialbuilder.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>materialbuilder_8h</filename>
     <class kind="class">CS::Material::MaterialBuilder</class>
     <namespace>CS</namespace>
@@ -24465,7 +24023,7 @@
   </compound>
   <compound kind="file">
     <name>meshobjtmpl.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>meshobjtmpl_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="cstool_2objmodel_8h" name="objmodel.h" local="yes" imported="no">cstool/objmodel.h</includes>
@@ -24495,7 +24053,7 @@
   </compound>
   <compound kind="file">
     <name>mocapparser.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>mocapparser_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -24512,49 +24070,15 @@
   </compound>
   <compound kind="file">
     <name>cache.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2cache_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iCacheManager</class>
   </compound>
   <compound kind="file">
-    <name>noise.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
-    <filename>imesh_2animnode_2noise_8h</filename>
-    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNode</class>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNodeManager</class>
-    <class kind="class">CS::Animation::SkeletonNoise</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Animation</namespace>
-    <namespace>CS::Math</namespace>
-    <namespace>CS::Math::Noise</namespace>
-    <namespace>CS::Math::Noise::Module</namespace>
-    <member kind="enumeration">
-      <name>SkeletonNoiseChannel</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NOISE_ROTATION</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4a18e6f6f5044dd1d49ff17de472127ca5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NOISE_POSITION</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4ab4eabaebe899bef34ad1f85e0ea660a8</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>normalcalc.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>normalcalc_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
@@ -24564,7 +24088,7 @@
   </compound>
   <compound kind="file">
     <name>objmodel.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2objmodel_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -24577,7 +24101,7 @@
   </compound>
   <compound kind="file">
     <name>objmodel.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>imesh_2objmodel_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -24588,7 +24112,7 @@
   </compound>
   <compound kind="file">
     <name>pen.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>pen_8h</filename>
     <includes id="poly3d_8h" name="poly3d.h" local="yes" imported="no">csgeom/poly3d.h</includes>
     <includes id="polyidx_8h" name="polyidx.h" local="yes" imported="no">csgeom/polyidx.h</includes>
@@ -24603,15 +24127,11 @@
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
     <includes id="ivideo_2texture_8h" name="texture.h" local="yes" imported="no">ivideo/texture.h</includes>
     <class kind="class">csPen</class>
-    <class kind="class">csPen3D</class>
-    <class kind="struct">csPen3DCoordinatePair</class>
-    <class kind="class">csPenCache</class>
-    <class kind="struct">csPenCoordinate</class>
-    <class kind="struct">csPenCoordinatePair</class>
+    <class kind="struct">iPen</class>
   </compound>
   <compound kind="file">
     <name>primitives.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>primitives_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
@@ -24628,7 +24148,7 @@
   </compound>
   <compound kind="file">
     <name>procmesh.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>procmesh_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -24638,7 +24158,7 @@
   </compound>
   <compound kind="file">
     <name>proctex.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>proctex_8h</filename>
     <includes id="sysfunc_8h" name="sysfunc.h" local="yes" imported="no">csutil/sysfunc.h</includes>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
@@ -24658,7 +24178,7 @@
   </compound>
   <compound kind="file">
     <name>proctxtanim.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>proctxtanim_8h</filename>
     <includes id="proctex_8h" name="proctex.h" local="yes" imported="no">cstool/proctex.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -24667,7 +24187,7 @@
   </compound>
   <compound kind="file">
     <name>rbuflock.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>rbuflock_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="rndbuf_8h" name="rndbuf.h" local="yes" imported="no">ivideo/rndbuf.h</includes>
@@ -24675,7 +24195,7 @@
   </compound>
   <compound kind="file">
     <name>rendermeshholder.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>rendermeshholder_8h</filename>
     <includes id="framedataholder_8h" name="framedataholder.h" local="yes" imported="no">cstool/framedataholder.h</includes>
     <class kind="class">csRenderMeshHolder</class>
@@ -24684,7 +24204,7 @@
   </compound>
   <compound kind="file">
     <name>rendermeshlist.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>rendermeshlist_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
@@ -24694,7 +24214,7 @@
   </compound>
   <compound kind="file">
     <name>saverfile.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2saverfile_8h</filename>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -24704,7 +24224,7 @@
   </compound>
   <compound kind="file">
     <name>saverfile.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>imap_2saverfile_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSaverFile</class>
@@ -24735,7 +24255,7 @@
   </compound>
   <compound kind="file">
     <name>saverref.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>cstool_2saverref_8h</filename>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -24748,7 +24268,7 @@
   </compound>
   <compound kind="file">
     <name>saverref.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>imap_2saverref_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iAddonReference</class>
@@ -24757,14 +24277,14 @@
   </compound>
   <compound kind="file">
     <name>simplestaticlighter.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>simplestaticlighter_8h</filename>
     <class kind="class">CS::Lighting::SimpleStaticLighter</class>
     <namespace>CS</namespace>
   </compound>
   <compound kind="file">
     <name>tokenlist.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>tokenlist_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -24916,7 +24436,7 @@
   </compound>
   <compound kind="file">
     <name>userrndbuf.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>userrndbuf_8h</filename>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -24926,7 +24446,7 @@
   </compound>
   <compound kind="file">
     <name>vertexcompress.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>vertexcompress_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
@@ -24938,7 +24458,7 @@
   </compound>
   <compound kind="file">
     <name>vfsdirchange.h</name>
-    <path>/tmp/tmp2/trunk/include/cstool/</path>
+    <path>/tmp/tmp1/V2.0/include/cstool/</path>
     <filename>vfsdirchange_8h</filename>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -24946,15 +24466,8 @@
   </compound>
   <compound kind="file">
     <name>cstypes.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>cstypes_8h</filename>
-    <member kind="typedef">
-      <type>int64</type>
-      <name>csMicroTicks</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gae6e8e6610e96d29de3bc299f3d419e7c</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>unsigned int</type>
       <name>csTicks</name>
@@ -25056,7 +24569,7 @@
   </compound>
   <compound kind="file">
     <name>csutil.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csutil_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="algorithms_8h" name="algorithms.h" local="yes" imported="no">csutil/algorithms.h</includes>
@@ -25198,7 +24711,7 @@
   </compound>
   <compound kind="file">
     <name>algorithms.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>algorithms_8h</filename>
     <namespace>CS</namespace>
     <member kind="function">
@@ -25246,7 +24759,7 @@
   </compound>
   <compound kind="file">
     <name>alignedalloc.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>alignedalloc_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::Memory</namespace>
@@ -25274,7 +24787,7 @@
   </compound>
   <compound kind="file">
     <name>allocator.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2allocator_8h</filename>
     <includes id="alignedalloc_8h" name="alignedalloc.h" local="yes" imported="no">csutil/alignedalloc.h</includes>
     <includes id="csutil_2memdebug_8h" name="memdebug.h" local="yes" imported="no">csutil/memdebug.h</includes>
@@ -25297,7 +24810,7 @@
   </compound>
   <compound kind="file">
     <name>allocator.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2allocator_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">CS::Memory::iAllocator</class>
@@ -25306,7 +24819,7 @@
   </compound>
   <compound kind="file">
     <name>allocatorimpl.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>allocatorimpl_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="iutil_2allocator_8h" name="allocator.h" local="yes" imported="no">iutil/allocator.h</includes>
@@ -25316,7 +24829,7 @@
   </compound>
   <compound kind="file">
     <name>ansicommand.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>ansicommand_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -25503,14 +25016,14 @@
   </compound>
   <compound kind="file">
     <name>ansiparse.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>ansiparse_8h</filename>
     <class kind="struct">csAnsiParser::CommandParams</class>
     <class kind="class">csAnsiParser</class>
   </compound>
   <compound kind="file">
     <name>archive.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>archive_8h</filename>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
@@ -25524,7 +25037,7 @@
   </compound>
   <compound kind="file">
     <name>array.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2array_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
@@ -25557,7 +25070,7 @@
   </compound>
   <compound kind="file">
     <name>array.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2array_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iArrayChangeAll</class>
@@ -25587,7 +25100,7 @@
   </compound>
   <compound kind="file">
     <name>binder.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2binder_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -25601,14 +25114,14 @@
   </compound>
   <compound kind="file">
     <name>binder.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2binder_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iInputBinder</class>
   </compound>
   <compound kind="file">
     <name>bitarray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>bitarray_8h</filename>
     <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
@@ -25630,7 +25143,7 @@
   </compound>
   <compound kind="file">
     <name>blockallocator.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>blockallocator_8h</filename>
     <includes id="fixedsizeallocator_8h" name="fixedsizeallocator.h" local="yes" imported="no">csutil/fixedsizeallocator.h</includes>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
@@ -25644,7 +25157,7 @@
   </compound>
   <compound kind="file">
     <name>callstack.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>callstack_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <class kind="class">csCallStack</class>
@@ -25652,14 +25165,14 @@
   </compound>
   <compound kind="file">
     <name>callstack.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>win32_2callstack_8h</filename>
     <includes id="callstack_8h" name="callstack.h" local="yes" imported="no">csutil/callstack.h</includes>
     <class kind="class">cswinCallStackHelper</class>
   </compound>
   <compound kind="file">
     <name>cfgacc.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cfgacc_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="iutil_2cfgmgr_8h" name="cfgmgr.h" local="yes" imported="no">iutil/cfgmgr.h</includes>
@@ -25667,7 +25180,7 @@
   </compound>
   <compound kind="file">
     <name>cfgdoc.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cfgdoc_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -25678,7 +25191,7 @@
   </compound>
   <compound kind="file">
     <name>cfgfile.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2cfgfile_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -25688,7 +25201,7 @@
   </compound>
   <compound kind="file">
     <name>cfgfile.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2cfgfile_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -25697,7 +25210,7 @@
   </compound>
   <compound kind="file">
     <name>cfgmgr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2cfgmgr_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
@@ -25708,7 +25221,7 @@
   </compound>
   <compound kind="file">
     <name>cfgmgr.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2cfgmgr_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2cfgfile_8h" name="cfgfile.h" local="yes" imported="no">iutil/cfgfile.h</includes>
@@ -25716,7 +25229,7 @@
   </compound>
   <compound kind="file">
     <name>cfgnotifier.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2cfgnotifier_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -25725,7 +25238,7 @@
   </compound>
   <compound kind="file">
     <name>cmdhelp.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cmdhelp_8h</filename>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
     <includes id="pluginconfig_8h" name="pluginconfig.h" local="yes" imported="no">iutil/pluginconfig.h</includes>
@@ -25733,7 +25246,7 @@
   </compound>
   <compound kind="file">
     <name>cmdline.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2cmdline_8h</filename>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -25745,14 +25258,14 @@
   </compound>
   <compound kind="file">
     <name>cmdline.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2cmdline_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iCommandLineParser</class>
   </compound>
   <compound kind="file">
     <name>common_handlers.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>common__handlers_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -25767,7 +25280,7 @@
   </compound>
   <compound kind="file">
     <name>comparator.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>comparator_8h</filename>
     <class kind="class">csComparator</class>
     <class kind="class">csComparator&lt; const char *, const char * &gt;</class>
@@ -25777,14 +25290,14 @@
   </compound>
   <compound kind="file">
     <name>compileassert.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>compileassert_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
   </compound>
   <compound kind="file">
     <name>cowwrapper.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cowwrapper_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
@@ -25794,7 +25307,7 @@
   </compound>
   <compound kind="file">
     <name>csbaseeventh.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csbaseeventh_8h</filename>
     <includes id="csutil_2eventhandlers_8h" name="eventhandlers.h" local="yes" imported="no">csutil/eventhandlers.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -25807,7 +25320,7 @@
   </compound>
   <compound kind="file">
     <name>cscolor.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cscolor_8h</filename>
     <class kind="class">csColor</class>
     <class kind="class">csColor4</class>
@@ -25898,7 +25411,7 @@
   </compound>
   <compound kind="file">
     <name>csendian.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csendian_8h</filename>
     <includes id="math_8h" name="math.h" local="no" imported="no">math.h</includes>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
@@ -25953,7 +25466,7 @@
   </compound>
   <compound kind="file">
     <name>csevcord.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csevcord_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="iutil_2event_8h" name="event.h" local="yes" imported="no">iutil/event.h</includes>
@@ -25961,7 +25474,7 @@
   </compound>
   <compound kind="file">
     <name>csevent.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csevent_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -25992,7 +25505,7 @@
   </compound>
   <compound kind="file">
     <name>cseventflattener.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cseventflattener_8h</filename>
     <class kind="class">csEventFlattener</class>
     <member kind="enumeration">
@@ -26028,7 +25541,7 @@
   </compound>
   <compound kind="file">
     <name>cseventq.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cseventq_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -26043,7 +25556,7 @@
   </compound>
   <compound kind="file">
     <name>csinput.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2csinput_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -26059,7 +25572,7 @@
   </compound>
   <compound kind="file">
     <name>csinput.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2csinput_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2event_8h" name="event.h" local="yes" imported="no">iutil/event.h</includes>
@@ -26101,7 +25614,7 @@
   </compound>
   <compound kind="file">
     <name>csobject.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csobject_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">csutil/refcount.h</includes>
@@ -26113,7 +25626,7 @@
   </compound>
   <compound kind="file">
     <name>cspmeter.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>cspmeter_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="pmeter_8h" name="pmeter.h" local="yes" imported="no">ivaria/pmeter.h</includes>
@@ -26121,13 +25634,13 @@
   </compound>
   <compound kind="file">
     <name>csppulse.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csppulse_8h</filename>
     <class kind="class">csProgressPulse</class>
   </compound>
   <compound kind="file">
     <name>csshlib.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csshlib_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
@@ -26206,7 +25719,7 @@
   </compound>
   <compound kind="file">
     <name>csstring.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csstring_8h</filename>
     <includes id="csuctransform_8h" name="csuctransform.h" local="yes" imported="no">csutil/csuctransform.h</includes>
     <includes id="snprintf_8h" name="snprintf.h" local="yes" imported="no">csutil/snprintf.h</includes>
@@ -26238,10 +25751,9 @@
   </compound>
   <compound kind="file">
     <name>csuctransform.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csuctransform_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csunicode.h</includes>
-    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <class kind="class">csUnicodeTransform</class>
     <member kind="define">
       <type>#define</type>
@@ -26308,7 +25820,7 @@
   </compound>
   <compound kind="file">
     <name>csunicode.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csunicode_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <member kind="define">
@@ -26419,17 +25931,17 @@
   </compound>
   <compound kind="file">
     <name>custom_new_disable.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>custom__new__disable_8h</filename>
   </compound>
   <compound kind="file">
     <name>custom_new_enable.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>custom__new__enable_8h</filename>
   </compound>
   <compound kind="file">
     <name>customallocated.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>customallocated_8h</filename>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
@@ -26440,7 +25952,7 @@
   </compound>
   <compound kind="file">
     <name>databuf.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>databuf_8h</filename>
     <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -26457,17 +25969,17 @@
   </compound>
   <compound kind="file">
     <name>deprecated_warn_off.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>deprecated__warn__off_8h</filename>
   </compound>
   <compound kind="file">
     <name>deprecated_warn_on.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>deprecated__warn__on_8h</filename>
   </compound>
   <compound kind="file">
     <name>digest.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>digest_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -26478,7 +25990,7 @@
   </compound>
   <compound kind="file">
     <name>dirtyaccessarray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>dirtyaccessarray_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
     <class kind="class">csDirtyAccessArray</class>
@@ -26486,7 +25998,7 @@
   </compound>
   <compound kind="file">
     <name>documentcommon.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>documentcommon_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="document_8h" name="document.h" local="yes" imported="no">iutil/document.h</includes>
@@ -26498,7 +26010,7 @@
   </compound>
   <compound kind="file">
     <name>documenthelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>documenthelper_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
@@ -26580,7 +26092,7 @@
   </compound>
   <compound kind="file">
     <name>event.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2event_8h</filename>
     <includes id="iutil_2event_8h" name="event.h" local="yes" imported="no">iutil/event.h</includes>
     <includes id="iutil_2eventhandlers_8h" name="eventhandlers.h" local="yes" imported="no">iutil/eventhandlers.h</includes>
@@ -26607,7 +26119,7 @@
   </compound>
   <compound kind="file">
     <name>event.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2event_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -26789,7 +26301,7 @@
   </compound>
   <compound kind="file">
     <name>eventhandlers.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2eventhandlers_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="iutil_2eventnames_8h" name="eventnames.h" local="yes" imported="no">iutil/eventnames.h</includes>
@@ -26847,14 +26359,14 @@
   </compound>
   <compound kind="file">
     <name>eventhandlers.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2eventhandlers_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <class kind="struct">iEventHandlerRegistry</class>
   </compound>
   <compound kind="file">
     <name>eventnames.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2eventnames_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -27210,7 +26722,7 @@
   </compound>
   <compound kind="file">
     <name>eventnames.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2eventnames_8h</filename>
     <includes id="iutil_2strset_8h" name="strset.h" local="yes" imported="no">iutil/strset.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -27225,7 +26737,7 @@
   </compound>
   <compound kind="file">
     <name>evoutlet.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>evoutlet_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -27236,14 +26748,14 @@
   </compound>
   <compound kind="file">
     <name>fifo.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>fifo_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <class kind="class">csFIFO</class>
   </compound>
   <compound kind="file">
     <name>filereadhelper.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>filereadhelper_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
@@ -27251,7 +26763,7 @@
   </compound>
   <compound kind="file">
     <name>fixedsizeallocator.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>fixedsizeallocator_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="bitarray_8h" name="bitarray.h" local="yes" imported="no">csutil/bitarray.h</includes>
@@ -27264,13 +26776,13 @@
   </compound>
   <compound kind="file">
     <name>flags.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>flags_8h</filename>
     <class kind="class">csFlags</class>
   </compound>
   <compound kind="file">
     <name>floatrand.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>floatrand_8h</filename>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
     <class kind="class">csRandomFloatGen</class>
@@ -27278,7 +26790,7 @@
   </compound>
   <compound kind="file">
     <name>formatter.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>formatter_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
@@ -27291,7 +26803,7 @@
   </compound>
   <compound kind="file">
     <name>getopt.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>getopt_8h</filename>
     <class kind="struct">getopt_option</class>
     <member kind="define">
@@ -27332,9 +26844,8 @@
   </compound>
   <compound kind="file">
     <name>hash.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>hash_8h</filename>
-    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -27352,14 +26863,14 @@
   </compound>
   <compound kind="file">
     <name>hashr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>hashr_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <class kind="class">csHashReversible</class>
   </compound>
   <compound kind="file">
     <name>inputdef.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>inputdef_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
@@ -27373,7 +26884,7 @@
   </compound>
   <compound kind="file">
     <name>list.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>list_8h</filename>
     <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
@@ -27384,7 +26895,7 @@
   </compound>
   <compound kind="file">
     <name>OSXAssistant.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/macosx/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/macosx/</path>
     <filename>OSXAssistant_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iOSXAssistant</class>
@@ -27405,7 +26916,7 @@
   </compound>
   <compound kind="file">
     <name>md5.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>md5_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="digest_8h" name="digest.h" local="yes" imported="no">csutil/digest.h</includes>
@@ -27416,7 +26927,7 @@
   </compound>
   <compound kind="file">
     <name>measuretime.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>measuretime_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -27426,19 +26937,19 @@
   </compound>
   <compound kind="file">
     <name>memdebug.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2memdebug_8h</filename>
   </compound>
   <compound kind="file">
     <name>memdebug.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2memdebug_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iMemoryTracker</class>
   </compound>
   <compound kind="file">
     <name>memfile.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>memfile_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
@@ -27446,7 +26957,7 @@
   </compound>
   <compound kind="file">
     <name>memheap.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>memheap_8h</filename>
     <includes id="spinlock_8h" name="spinlock.h" local="yes" imported="no">csutil/spinlock.h</includes>
     <class kind="class">CS::Memory::AllocatorHeap</class>
@@ -27458,7 +26969,7 @@
   </compound>
   <compound kind="file">
     <name>mempool.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>mempool_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -27475,19 +26986,19 @@
   </compound>
   <compound kind="file">
     <name>mmap_dummy.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>mmap__dummy_8h</filename>
     <class kind="class">csPlatformMemoryMappingDummy</class>
   </compound>
   <compound kind="file">
     <name>mmap_posix.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>mmap__posix_8h</filename>
     <class kind="class">csPlatformMemoryMappingPosix</class>
   </compound>
   <compound kind="file">
     <name>mmapio.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>mmapio_8h</filename>
     <includes id="bitarray_8h" name="bitarray.h" local="yes" imported="no">bitarray.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">ref.h</includes>
@@ -27498,7 +27009,7 @@
   </compound>
   <compound kind="file">
     <name>nobjvec.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>nobjvec_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="weakrefarr_8h" name="weakrefarr.h" local="yes" imported="no">csutil/weakrefarr.h</includes>
@@ -27510,7 +27021,7 @@
   </compound>
   <compound kind="file">
     <name>nulcache.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>nulcache_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="iutil_2cache_8h" name="cache.h" local="yes" imported="no">iutil/cache.h</includes>
@@ -27518,7 +27029,7 @@
   </compound>
   <compound kind="file">
     <name>objiter.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>objiter_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -27527,7 +27038,7 @@
   </compound>
   <compound kind="file">
     <name>objreg.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2objreg_8h</filename>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -27538,7 +27049,7 @@
   </compound>
   <compound kind="file">
     <name>objreg.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2objreg_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -27568,9 +27079,8 @@
   </compound>
   <compound kind="file">
     <name>parasiticdatabuffer.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>parasiticdatabuffer_8h</filename>
-    <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="pooledscfclass_8h" name="pooledscfclass.h" local="yes" imported="no">csutil/pooledscfclass.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
@@ -27580,14 +27090,14 @@
   </compound>
   <compound kind="file">
     <name>parray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>parray_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <class kind="class">csPDelArray</class>
   </compound>
   <compound kind="file">
     <name>partialorder.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>partialorder_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
@@ -27599,7 +27109,7 @@
   </compound>
   <compound kind="file">
     <name>physfile.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>physfile_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -27608,7 +27118,7 @@
   </compound>
   <compound kind="file">
     <name>platformfile.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>platformfile_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <class kind="struct">CS::Platform::File</class>
@@ -27617,7 +27127,7 @@
   </compound>
   <compound kind="file">
     <name>plugldr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>plugldr_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
@@ -27628,7 +27138,7 @@
   </compound>
   <compound kind="file">
     <name>plugmgr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>plugmgr_8h</filename>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
@@ -27642,7 +27152,7 @@
   </compound>
   <compound kind="file">
     <name>pooledscfclass.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>pooledscfclass_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
@@ -27653,14 +27163,14 @@
   </compound>
   <compound kind="file">
     <name>prfxcfg.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>prfxcfg_8h</filename>
     <includes id="csutil_2cfgfile_8h" name="cfgfile.h" local="yes" imported="no">csutil/cfgfile.h</includes>
     <class kind="class">csPrefixConfig</class>
   </compound>
   <compound kind="file">
     <name>priorityqueue.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>priorityqueue_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
     <class kind="class">CS::Utility::PriorityQueue</class>
@@ -27669,7 +27179,7 @@
   </compound>
   <compound kind="file">
     <name>processorspecdetection.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>processorspecdetection_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <class kind="class">CS::Platform::ProcessorSpecDetection</class>
@@ -27678,26 +27188,26 @@
   </compound>
   <compound kind="file">
     <name>ptrwrap.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>ptrwrap_8h</filename>
     <class kind="class">csPtrWrap</class>
   </compound>
   <compound kind="file">
     <name>radixsort.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>radixsort_8h</filename>
     <class kind="class">csRadixSorter</class>
   </compound>
   <compound kind="file">
     <name>randomgen.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>randomgen_8h</filename>
     <includes id="cstypes_8h" name="cstypes.h" local="yes" imported="no">cstypes.h</includes>
     <class kind="class">csRandomGen</class>
   </compound>
   <compound kind="file">
     <name>redblacktree.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>redblacktree_8h</filename>
     <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
     <class kind="class">csRedBlackTreeMap::ConstIterator</class>
@@ -27720,7 +27230,7 @@
   </compound>
   <compound kind="file">
     <name>ref.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>ref_8h</filename>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
     <class kind="class">csPtr</class>
@@ -27728,7 +27238,7 @@
   </compound>
   <compound kind="file">
     <name>refarr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>refarr_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -27736,7 +27246,7 @@
   </compound>
   <compound kind="file">
     <name>refcount.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>refcount_8h</filename>
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <includes id="reftrackeraccess_8h" name="reftrackeraccess.h" local="yes" imported="no">csutil/reftrackeraccess.h</includes>
@@ -27749,13 +27259,13 @@
   </compound>
   <compound kind="file">
     <name>reftrackeraccess.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>reftrackeraccess_8h</filename>
     <class kind="class">csRefTrackerAccess</class>
   </compound>
   <compound kind="file">
     <name>regexp.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>regexp_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <class kind="struct">csRegExpMatch</class>
@@ -27889,7 +27399,7 @@
   </compound>
   <compound kind="file">
     <name>scanstr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scanstr_8h</filename>
     <member kind="function">
       <type>int</type>
@@ -27901,7 +27411,7 @@
   </compound>
   <compound kind="file">
     <name>scf.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scf_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -28080,15 +27590,13 @@
   </compound>
   <compound kind="file">
     <name>scf_implementation.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scf__implementation_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
-    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="reftrackeraccess_8h" name="reftrackeraccess.h" local="yes" imported="no">csutil/reftrackeraccess.h</includes>
     <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
-    <includes id="weakreferenced_8h" name="weakreferenced.h" local="yes" imported="no">csutil/weakreferenced.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="scf__implgen_8h" name="scf_implgen.h" local="yes" imported="no">scf_implgen.h</includes>
     <class kind="class">scfFakeInterface</class>
@@ -28097,7 +27605,7 @@
   </compound>
   <compound kind="file">
     <name>scf_implgen.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scf__implgen_8h</filename>
     <class kind="class">scfImplementation0</class>
     <class kind="class">scfImplementation1</class>
@@ -28118,7 +27626,7 @@
   </compound>
   <compound kind="file">
     <name>scf_interface.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scf__interface_8h</filename>
     <class kind="struct">iBase</class>
     <class kind="struct">iSCF</class>
@@ -28177,7 +27685,7 @@
   </compound>
   <compound kind="file">
     <name>scfarray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scfarray_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -28188,7 +27696,7 @@
   </compound>
   <compound kind="file">
     <name>scfstr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scfstr_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -28197,7 +27705,7 @@
   </compound>
   <compound kind="file">
     <name>scfstringarray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scfstringarray_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
@@ -28206,7 +27714,7 @@
   </compound>
   <compound kind="file">
     <name>scfstrset.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scfstrset_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -28218,13 +27726,13 @@
   </compound>
   <compound kind="file">
     <name>schedule.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>schedule_8h</filename>
     <class kind="class">csSchedule</class>
   </compound>
   <compound kind="file">
     <name>scopeddelete.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scopeddelete_8h</filename>
     <includes id="scopedpointer_8h" name="scopedpointer.h" local="yes" imported="no">csutil/scopedpointer.h</includes>
     <class kind="class">CS::Utility::ScopedDelete</class>
@@ -28233,12 +27741,12 @@
   </compound>
   <compound kind="file">
     <name>scopedlock.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scopedlock_8h</filename>
   </compound>
   <compound kind="file">
     <name>scopedpointer.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>scopedpointer_8h</filename>
     <class kind="class">CS::Utility::ScopedPointer</class>
     <namespace>CS</namespace>
@@ -28246,7 +27754,7 @@
   </compound>
   <compound kind="file">
     <name>set.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>set_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <class kind="class">csSet</class>
@@ -28254,7 +27762,7 @@
   </compound>
   <compound kind="file">
     <name>simplejobqueue.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>simplejobqueue_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="job_8h" name="job.h" local="yes" imported="no">iutil/job.h</includes>
@@ -28263,7 +27771,7 @@
   </compound>
   <compound kind="file">
     <name>snprintf.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>snprintf_8h</filename>
     <member kind="function">
       <type>int</type>
@@ -28296,20 +27804,20 @@
   </compound>
   <compound kind="file">
     <name>sparse3d.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>sparse3d_8h</filename>
     <class kind="class">csSparse3D</class>
     <class kind="class">csWideSparse3D</class>
   </compound>
   <compound kind="file">
     <name>spinlock.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>spinlock_8h</filename>
     <namespace>CS</namespace>
   </compound>
   <compound kind="file">
     <name>strhash.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>strhash_8h</filename>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="mempool_8h" name="mempool.h" local="yes" imported="no">csutil/mempool.h</includes>
@@ -28327,7 +27835,7 @@
   </compound>
   <compound kind="file">
     <name>stringarray.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2stringarray_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -28339,14 +27847,14 @@
   </compound>
   <compound kind="file">
     <name>stringarray.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2stringarray_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iStringArray</class>
   </compound>
   <compound kind="file">
     <name>stringconv.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>stringconv_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <namespace>CS</namespace>
@@ -28368,7 +27876,7 @@
   </compound>
   <compound kind="file">
     <name>stringquote.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>stringquote_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csstring.h</includes>
     <class kind="struct">CS::Quote</class>
@@ -28376,14 +27884,14 @@
   </compound>
   <compound kind="file">
     <name>stringreader.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>stringreader_8h</filename>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
     <class kind="class">csStringReader</class>
   </compound>
   <compound kind="file">
     <name>strset.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2strset_8h</filename>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
     <class kind="class">CS::Utility::StringSet</class>
@@ -28392,7 +27900,7 @@
   </compound>
   <compound kind="file">
     <name>strset.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2strset_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">CS::InvalidStringID</class>
@@ -28424,7 +27932,7 @@
   </compound>
   <compound kind="file">
     <name>sysfunc.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>sysfunc_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <member kind="function">
@@ -28449,10 +27957,10 @@
       <arglist>(FILE *file, const char *str, va_list arg)</arglist>
     </member>
     <member kind="function">
-      <type>csMicroTicks</type>
+      <type>int64</type>
       <name>csGetMicroTicks</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gae8837bf1b1254be534d180bb8ce30729</anchor>
+      <anchor>gadbdc1c0f010b84953b0e22b836c2a147</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -28535,7 +28043,7 @@
   </compound>
   <compound kind="file">
     <name>syspath.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>syspath_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csstring.h</includes>
@@ -28586,7 +28094,7 @@
   </compound>
   <compound kind="file">
     <name>systemopenmanager.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2systemopenmanager_8h</filename>
     <includes id="eventq_8h" name="eventq.h" local="yes" imported="no">iutil/eventq.h</includes>
     <includes id="iutil_2systemopenmanager_8h" name="systemopenmanager.h" local="yes" imported="no">iutil/systemopenmanager.h</includes>
@@ -28595,7 +28103,7 @@
   </compound>
   <compound kind="file">
     <name>systemopenmanager.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2systemopenmanager_8h</filename>
     <includes id="eventh_8h" name="eventh.h" local="yes" imported="no">iutil/eventh.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -28603,7 +28111,7 @@
   </compound>
   <compound kind="file">
     <name>atomicops.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/threading/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/threading/</path>
     <filename>atomicops_8h</filename>
     <class kind="class">CS::Threading::AtomicOperationsBase</class>
     <namespace>CS</namespace>
@@ -28611,7 +28119,7 @@
   </compound>
   <compound kind="file">
     <name>mutex.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/threading/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/threading/</path>
     <filename>mutex_8h</filename>
     <class kind="class">CS::Threading::MutexImpl</class>
     <class kind="class">CS::Threading::OptionalMutex</class>
@@ -28635,7 +28143,7 @@
   </compound>
   <compound kind="file">
     <name>tls.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/threading/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/threading/</path>
     <filename>tls_8h</filename>
     <class kind="class">CS::Threading::ThreadLocal</class>
     <class kind="class">CS::Threading::ThreadLocalBase</class>
@@ -28644,7 +28152,7 @@
   </compound>
   <compound kind="file">
     <name>threadjobqueue.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>threadjobqueue_8h</filename>
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">csutil/fifo.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -28656,7 +28164,7 @@
   </compound>
   <compound kind="file">
     <name>timer.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2timer_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -28667,7 +28175,7 @@
   </compound>
   <compound kind="file">
     <name>timer.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2timer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iEventTimer</class>
@@ -28675,14 +28183,14 @@
   </compound>
   <compound kind="file">
     <name>tree.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>tree_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
     <class kind="class">csTreeNode</class>
   </compound>
   <compound kind="file">
     <name>tuple.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>tuple_8h</filename>
     <class kind="class">csTuple2</class>
     <member kind="function">
@@ -28695,7 +28203,7 @@
   </compound>
   <compound kind="file">
     <name>typetraits.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>typetraits_8h</filename>
     <class kind="struct">CS::Meta::IsBaseOf</class>
     <class kind="struct">CS::Meta::IsReference</class>
@@ -28714,7 +28222,7 @@
   </compound>
   <compound kind="file">
     <name>util.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>util_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
     <class kind="struct">csCtoW</class>
@@ -28842,7 +28350,7 @@
   </compound>
   <compound kind="file">
     <name>verbosity.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>verbosity_8h</filename>
     <includes id="verbositymanager_8h" name="verbositymanager.h" local="yes" imported="no">iutil/verbositymanager.h</includes>
     <includes id="strhash_8h" name="strhash.h" local="yes" imported="no">csutil/strhash.h</includes>
@@ -28876,7 +28384,7 @@
   </compound>
   <compound kind="file">
     <name>vfscache.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>vfscache_8h</filename>
     <includes id="iutil_2cache_8h" name="cache.h" local="yes" imported="no">iutil/cache.h</includes>
     <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
@@ -28885,7 +28393,7 @@
   </compound>
   <compound kind="file">
     <name>vfshiercache.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>vfshiercache_8h</filename>
     <includes id="iutil_2cache_8h" name="cache.h" local="yes" imported="no">iutil/cache.h</includes>
     <includes id="hiercache_8h" name="hiercache.h" local="yes" imported="no">iutil/hiercache.h</includes>
@@ -28897,7 +28405,7 @@
   </compound>
   <compound kind="file">
     <name>vfsplat.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>vfsplat_8h</filename>
     <member kind="function">
       <type>const char *</type>
@@ -28916,7 +28424,7 @@
   </compound>
   <compound kind="file">
     <name>virtclk.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>csutil_2virtclk_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="iutil_2virtclk_8h" name="virtclk.h" local="yes" imported="no">iutil/virtclk.h</includes>
@@ -28924,22 +28432,21 @@
   </compound>
   <compound kind="file">
     <name>virtclk.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2virtclk_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iVirtualClock</class>
   </compound>
   <compound kind="file">
     <name>weakref.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>weakref_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
-    <includes id="mutex_8h" name="mutex.h" local="yes" imported="no">csutil/threading/mutex.h</includes>
     <class kind="class">csWeakRef</class>
   </compound>
   <compound kind="file">
     <name>weakrefarr.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>weakrefarr_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
@@ -28947,19 +28454,16 @@
   </compound>
   <compound kind="file">
     <name>weakreferenced.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>weakreferenced_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">array.h</includes>
-    <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">refcount.h</includes>
-    <class kind="class">CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</class>
     <class kind="class">CS::Utility::WeakReferenced</class>
-    <class kind="class">CS::Utility::Implementation::WeakReferenced</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
   </compound>
   <compound kind="file">
     <name>cachedll.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>cachedll_8h</filename>
     <class kind="class">CS::Platform::Win32::CacheDLL</class>
     <namespace>CS</namespace>
@@ -28968,18 +28472,18 @@
   </compound>
   <compound kind="file">
     <name>mmap.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>mmap_8h</filename>
     <class kind="class">csPlatformMemoryMappingWin32</class>
   </compound>
   <compound kind="file">
     <name>psdk-compat.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>psdk-compat_8h</filename>
   </compound>
   <compound kind="file">
     <name>registrycfg.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>registrycfg_8h</filename>
     <includes id="iutil_2cfgfile_8h" name="cfgfile.h" local="yes" imported="no">iutil/cfgfile.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -28989,7 +28493,7 @@
   </compound>
   <compound kind="file">
     <name>win32.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>win32_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iWin32Assistant</class>
@@ -28997,7 +28501,7 @@
   </compound>
   <compound kind="file">
     <name>wintools.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/win32/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/win32/</path>
     <filename>wintools_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
@@ -29083,7 +28587,7 @@
   </compound>
   <compound kind="file">
     <name>xmltiny.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>xmltiny_8h</filename>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="document_8h" name="document.h" local="yes" imported="no">iutil/document.h</includes>
@@ -29091,12 +28595,12 @@
   </compound>
   <compound kind="file">
     <name>zip.h</name>
-    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <path>/tmp/tmp1/V2.0/include/csutil/</path>
     <filename>zip_8h</filename>
   </compound>
   <compound kind="file">
     <name>csver.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>csver_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -29206,7 +28710,7 @@
   </compound>
   <compound kind="file">
     <name>iengine.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>iengine_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
@@ -29242,7 +28746,7 @@
   </compound>
   <compound kind="file">
     <name>camera.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>camera_8h</filename>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -29256,7 +28760,7 @@
   </compound>
   <compound kind="file">
     <name>campos.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>campos_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iCameraPosition</class>
@@ -29264,7 +28768,7 @@
   </compound>
   <compound kind="file">
     <name>collection.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>collection_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -29273,7 +28777,7 @@
   </compound>
   <compound kind="file">
     <name>engine.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>engine_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -29329,7 +28833,7 @@
   </compound>
   <compound kind="file">
     <name>halo.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>iengine_2halo_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
@@ -29364,27 +28868,27 @@
   </compound>
   <compound kind="file">
     <name>halo.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>ivideo_2halo_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iHalo</class>
   </compound>
   <compound kind="file">
     <name>impman.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>impman_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
   </compound>
   <compound kind="file">
     <name>imposter.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>imposter_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iImposterFactory</class>
   </compound>
   <compound kind="file">
     <name>light.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>light_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iLight</class>
@@ -29506,7 +29010,7 @@
   </compound>
   <compound kind="file">
     <name>lightmgr.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>lightmgr_8h</filename>
     <includes id="flags_8h" name="flags.h" local="yes" imported="no">csutil/flags.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -29518,14 +29022,14 @@
   </compound>
   <compound kind="file">
     <name>lod.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>lod_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iLODControl</class>
   </compound>
   <compound kind="file">
     <name>material.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>iengine_2material_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2strset_8h" name="strset.h" local="yes" imported="no">iutil/strset.h</includes>
@@ -29536,7 +29040,7 @@
   </compound>
   <compound kind="file">
     <name>material.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>ivideo_2material_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -29552,7 +29056,7 @@
   </compound>
   <compound kind="file">
     <name>mesh.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>mesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
@@ -29670,7 +29174,7 @@
   </compound>
   <compound kind="file">
     <name>meshgen.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>meshgen_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iMeshGenerator</class>
@@ -29678,7 +29182,7 @@
   </compound>
   <compound kind="file">
     <name>movable.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>movable_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
@@ -29687,7 +29191,7 @@
   </compound>
   <compound kind="file">
     <name>objwatch.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>objwatch_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iObjectWatcher</class>
@@ -29772,7 +29276,7 @@
   </compound>
   <compound kind="file">
     <name>portal.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>portal_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2object_8h" name="object.h" local="yes" imported="no">iutil/object.h</includes>
@@ -29844,14 +29348,14 @@
   </compound>
   <compound kind="file">
     <name>portalcontainer.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>portalcontainer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iPortalContainer</class>
   </compound>
   <compound kind="file">
     <name>renderloop.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>renderloop_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="icontainer_8h" name="icontainer.h" local="yes" imported="no">iengine/rendersteps/icontainer.h</includes>
@@ -29867,7 +29371,7 @@
   </compound>
   <compound kind="file">
     <name>rendermanager.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>rendermanager_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
@@ -29878,14 +29382,14 @@
   </compound>
   <compound kind="file">
     <name>icontainer.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/rendersteps/</path>
     <filename>icontainer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iRenderStepContainer</class>
   </compound>
   <compound kind="file">
     <name>igeneric.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/rendersteps/</path>
     <filename>igeneric_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
@@ -29893,7 +29397,7 @@
   </compound>
   <compound kind="file">
     <name>ilightiter.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/rendersteps/</path>
     <filename>ilightiter_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
@@ -29902,7 +29406,7 @@
   </compound>
   <compound kind="file">
     <name>irenderstep.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/rendersteps/</path>
     <filename>irenderstep_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
@@ -29910,7 +29414,7 @@
   </compound>
   <compound kind="file">
     <name>irsfact.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/rendersteps/</path>
     <filename>irsfact_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iRenderStepFactory</class>
@@ -29918,7 +29422,7 @@
   </compound>
   <compound kind="file">
     <name>rview.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>rview_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
@@ -29928,7 +29432,7 @@
   </compound>
   <compound kind="file">
     <name>scenenode.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>scenenode_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
@@ -29938,7 +29442,7 @@
   </compound>
   <compound kind="file">
     <name>sector.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>sector_8h</filename>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
@@ -29957,7 +29461,7 @@
   </compound>
   <compound kind="file">
     <name>sharevar.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>sharevar_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSharedVariable</class>
@@ -29966,7 +29470,7 @@
   </compound>
   <compound kind="file">
     <name>texture.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
+    <path>/tmp/tmp1/V2.0/include/iengine/</path>
     <filename>iengine_2texture_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iTextureCallback</class>
@@ -29975,7 +29479,7 @@
   </compound>
   <compound kind="file">
     <name>texture.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>ivideo_2texture_8h</filename>
     <includes id="textureformatstrings_8h" name="textureformatstrings.h" local="yes" imported="no">csgfx/textureformatstrings.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -29985,7 +29489,7 @@
   </compound>
   <compound kind="file">
     <name>igeom.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>igeom_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="clip2d_8h" name="clip2d.h" local="yes" imported="no">igeom/clip2d.h</includes>
@@ -29994,7 +29498,7 @@
   </compound>
   <compound kind="file">
     <name>clip2d.h</name>
-    <path>/tmp/tmp2/trunk/include/igeom/</path>
+    <path>/tmp/tmp1/V2.0/include/igeom/</path>
     <filename>clip2d_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">csVertexStatus</class>
@@ -30045,41 +29549,23 @@
   </compound>
   <compound kind="file">
     <name>igraphic.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>igraphic_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="animimg_8h" name="animimg.h" local="yes" imported="no">igraphic/animimg.h</includes>
-    <includes id="dxtcompress_8h" name="dxtcompress.h" local="yes" imported="no">igraphic/dxtcompress.h</includes>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
     <includes id="imageio_8h" name="imageio.h" local="yes" imported="no">igraphic/imageio.h</includes>
   </compound>
   <compound kind="file">
     <name>animimg.h</name>
-    <path>/tmp/tmp2/trunk/include/igraphic/</path>
+    <path>/tmp/tmp1/V2.0/include/igraphic/</path>
     <filename>animimg_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iAnimatedImage</class>
   </compound>
   <compound kind="file">
-    <name>dxtcompress.h</name>
-    <path>/tmp/tmp2/trunk/include/igraphic/</path>
-    <filename>dxtcompress_8h</filename>
-    <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
-    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <class kind="struct">CS::Graphics::UncompressedDXTDataLayout</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Graphics</namespace>
-    <member kind="define">
-      <type>#define</type>
-      <name>CS_DXTDECOMPRESSOR_DEFAULT</name>
-      <anchorfile>dxtcompress_8h.html</anchorfile>
-      <anchor>a11226fae7ba8073dc925c867ee713213</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>image.h</name>
-    <path>/tmp/tmp2/trunk/include/igraphic/</path>
+    <path>/tmp/tmp1/V2.0/include/igraphic/</path>
     <filename>image_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iImage</class>
@@ -30159,7 +29645,7 @@
   </compound>
   <compound kind="file">
     <name>imageio.h</name>
-    <path>/tmp/tmp2/trunk/include/igraphic/</path>
+    <path>/tmp/tmp1/V2.0/include/igraphic/</path>
     <filename>imageio_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -30175,7 +29661,7 @@
   </compound>
   <compound kind="file">
     <name>imap.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>imap_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="ldrctxt_8h" name="ldrctxt.h" local="yes" imported="no">imap/ldrctxt.h</includes>
@@ -30192,14 +29678,14 @@
   </compound>
   <compound kind="file">
     <name>ldrctxt.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>ldrctxt_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iLoaderContext</class>
   </compound>
   <compound kind="file">
     <name>loader.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>loader_8h</filename>
     <includes id="refarr_8h" name="refarr.h" local="yes" imported="no">csutil/refarr.h</includes>
     <includes id="refcount_8h" name="refcount.h" local="yes" imported="no">csutil/refcount.h</includes>
@@ -30225,14 +29711,14 @@
   </compound>
   <compound kind="file">
     <name>modelload.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>modelload_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iModelLoader</class>
   </compound>
   <compound kind="file">
     <name>reader.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>reader_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iBinaryLoaderPlugin</class>
@@ -30240,13 +29726,13 @@
   </compound>
   <compound kind="file">
     <name>renderbufferpersistence.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>renderbufferpersistence_8h</filename>
     <class kind="struct">iRenderBufferPersistence</class>
   </compound>
   <compound kind="file">
     <name>saver.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>saver_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="deprecated__warn__off_8h" name="deprecated_warn_off.h" local="yes" imported="no">csutil/deprecated_warn_off.h</includes>
@@ -30255,7 +29741,7 @@
   </compound>
   <compound kind="file">
     <name>services.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>services_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
@@ -30294,7 +29780,7 @@
   </compound>
   <compound kind="file">
     <name>streamsource.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>streamsource_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -30303,7 +29789,7 @@
   </compound>
   <compound kind="file">
     <name>writer.h</name>
-    <path>/tmp/tmp2/trunk/include/imap/</path>
+    <path>/tmp/tmp1/V2.0/include/imap/</path>
     <filename>writer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iBinarySaverPlugin</class>
@@ -30311,16 +29797,14 @@
   </compound>
   <compound kind="file">
     <name>imesh.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>imesh_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="animesh_8h" name="animesh.h" local="yes" imported="no">imesh/animesh.h</includes>
     <includes id="debug_8h" name="debug.h" local="yes" imported="no">imesh/animnode/debug.h</includes>
     <includes id="ik_8h" name="ik.h" local="yes" imported="no">imesh/animnode/ik.h</includes>
     <includes id="lookat_8h" name="lookat.h" local="yes" imported="no">imesh/animnode/lookat.h</includes>
-    <includes id="imesh_2animnode_2noise_8h" name="noise.h" local="yes" imported="no">imesh/animnode/noise.h</includes>
     <includes id="ragdoll_8h" name="ragdoll.h" local="yes" imported="no">imesh/animnode/ragdoll.h</includes>
-    <includes id="ragdoll2_8h" name="ragdoll2.h" local="yes" imported="no">imesh/animnode/ragdoll2.h</includes>
     <includes id="retarget_8h" name="retarget.h" local="yes" imported="no">imesh/animnode/retarget.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
     <includes id="speed_8h" name="speed.h" local="yes" imported="no">imesh/animnode/speed.h</includes>
@@ -30350,7 +29834,7 @@
   </compound>
   <compound kind="file">
     <name>animesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>animesh_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="skeleton2_8h" name="skeleton2.h" local="yes" imported="no">imesh/skeleton2.h</includes>
@@ -30369,7 +29853,7 @@
   </compound>
   <compound kind="file">
     <name>debug.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>debug_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
@@ -30419,7 +29903,7 @@
   </compound>
   <compound kind="file">
     <name>ik.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>ik_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -30443,7 +29927,7 @@
   </compound>
   <compound kind="file">
     <name>lookat.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>lookat_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -30456,7 +29940,7 @@
   </compound>
   <compound kind="file">
     <name>ragdoll.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>ragdoll_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="bodymesh_8h" name="bodymesh.h" local="yes" imported="no">imesh/bodymesh.h</includes>
@@ -30475,100 +29959,25 @@
     <member kind="enumvalue">
       <name>STATE_INACTIVE</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a9920c4370a8998c572df2d54f489ea8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>STATE_DYNAMIC</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a104e049ff344d0beadbe41c3f699aec0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>STATE_KINEMATIC</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>ragdoll2.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
-    <filename>ragdoll2_8h</filename>
-    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <includes id="physics_8h" name="physics.h" local="yes" imported="no">ivaria/physics.h</includes>
-    <includes id="bodymesh_8h" name="bodymesh.h" local="yes" imported="no">imesh/bodymesh.h</includes>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNode2</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory2</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNodeManager2</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Animation</namespace>
-    <namespace>CS::Mesh</namespace>
-    <namespace>CS::Physics</namespace>
-    <member kind="enumeration">
-      <name>RagdollState</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a045270b438ef548bbbd448f74353118b</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>retarget.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>retarget_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -30584,7 +29993,7 @@
   </compound>
   <compound kind="file">
     <name>skeleton2anim.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>animnode_2skeleton2anim_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -30681,7 +30090,7 @@
   </compound>
   <compound kind="file">
     <name>speed.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/animnode/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/animnode/</path>
     <filename>speed_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -30693,7 +30102,7 @@
   </compound>
   <compound kind="file">
     <name>bodymesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>bodymesh_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="animnode_2skeleton2anim_8h" name="skeleton2anim.h" local="yes" imported="no">imesh/animnode/skeleton2anim.h</includes>
@@ -30711,7 +30120,7 @@
   </compound>
   <compound kind="file">
     <name>emit.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>emit_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iEmitBox</class>
@@ -30729,7 +30138,7 @@
   </compound>
   <compound kind="file">
     <name>furmesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>furmesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
@@ -30749,7 +30158,7 @@
   </compound>
   <compound kind="file">
     <name>genmesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>genmesh_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="rendermesh_8h" name="rendermesh.h" local="yes" imported="no">ivideo/rendermesh.h</includes>
@@ -30765,14 +30174,14 @@
   </compound>
   <compound kind="file">
     <name>gmeshanim.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>gmeshanim_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iGenMeshAnimationControlState</class>
   </compound>
   <compound kind="file">
     <name>gmeshskel2.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>gmeshskel2_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
@@ -30780,7 +30189,7 @@
   </compound>
   <compound kind="file">
     <name>haze.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>haze_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iHazeFactoryState</class>
@@ -30792,14 +30201,14 @@
   </compound>
   <compound kind="file">
     <name>lghtng.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>lghtng_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iLightningFactoryState</class>
   </compound>
   <compound kind="file">
     <name>modifiableterrain.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>modifiableterrain_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
@@ -30811,7 +30220,7 @@
   </compound>
   <compound kind="file">
     <name>nullmesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>nullmesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iNullFactoryState</class>
@@ -30819,7 +30228,7 @@
   </compound>
   <compound kind="file">
     <name>object.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>imesh_2object_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
@@ -30854,7 +30263,7 @@
   </compound>
   <compound kind="file">
     <name>object.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>iutil_2object_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -30901,7 +30310,7 @@
   </compound>
   <compound kind="file">
     <name>particle.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>particle_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -30909,7 +30318,7 @@
   </compound>
   <compound kind="file">
     <name>particles.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>particles_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="obb_8h" name="obb.h" local="yes" imported="no">csgeom/obb.h</includes>
@@ -31171,14 +30580,14 @@
   </compound>
   <compound kind="file">
     <name>partsys.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>partsys_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iParticleState</class>
   </compound>
   <compound kind="file">
     <name>protomesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>protomesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iProtoFactoryState</class>
@@ -31186,7 +30595,7 @@
   </compound>
   <compound kind="file">
     <name>skeleton2.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>skeleton2_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -31218,7 +30627,7 @@
   </compound>
   <compound kind="file">
     <name>sprite2d.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>sprite2d_8h</filename>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -31233,7 +30642,7 @@
   </compound>
   <compound kind="file">
     <name>sprite3d.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>sprite3d_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSprite3DFactoryState</class>
@@ -31286,7 +30695,7 @@
   </compound>
   <compound kind="file">
     <name>spritecal3d.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>spritecal3d_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="sprite3d_8h" name="sprite3d.h" local="yes" imported="no">imesh/sprite3d.h</includes>
@@ -31297,7 +30706,7 @@
   </compound>
   <compound kind="file">
     <name>terrain.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>terrain_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -31306,7 +30715,7 @@
   </compound>
   <compound kind="file">
     <name>terrain2.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>terrain2_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
@@ -31340,7 +30749,7 @@
   </compound>
   <compound kind="file">
     <name>watermesh.h</name>
-    <path>/tmp/tmp2/trunk/include/imesh/</path>
+    <path>/tmp/tmp1/V2.0/include/imesh/</path>
     <filename>watermesh_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
@@ -31349,13 +30758,13 @@
   </compound>
   <compound kind="file">
     <name>inetwork.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>inetwork_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
   </compound>
   <compound kind="file">
     <name>isndsys.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>isndsys_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="ss__data_8h" name="ss_data.h" local="yes" imported="no">isndsys/ss_data.h</includes>
@@ -31372,21 +30781,21 @@
   </compound>
   <compound kind="file">
     <name>ss_data.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__data_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSndSysData</class>
   </compound>
   <compound kind="file">
     <name>ss_driver.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__driver_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSndSysSoftwareDriver</class>
   </compound>
   <compound kind="file">
     <name>ss_eventrecorder.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__eventrecorder_8h</filename>
     <class kind="struct">iSndSysEventRecorder</class>
     <member kind="enumeration">
@@ -31404,7 +30813,7 @@
   </compound>
   <compound kind="file">
     <name>ss_filter.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__filter_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="ss__structs_8h" name="ss_structs.h" local="yes" imported="no">isndsys/ss_structs.h</includes>
@@ -31419,7 +30828,7 @@
   </compound>
   <compound kind="file">
     <name>ss_listener.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__listener_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -31428,7 +30837,7 @@
   </compound>
   <compound kind="file">
     <name>ss_loader.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__loader_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -31436,7 +30845,7 @@
   </compound>
   <compound kind="file">
     <name>ss_manager.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__manager_8h</filename>
     <includes id="ss__stream_8h" name="ss_stream.h" local="yes" imported="no">isndsys/ss_stream.h</includes>
     <includes id="ss__data_8h" name="ss_data.h" local="yes" imported="no">isndsys/ss_data.h</includes>
@@ -31447,7 +30856,7 @@
   </compound>
   <compound kind="file">
     <name>ss_renderer.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__renderer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="ss__filter_8h" name="ss_filter.h" local="yes" imported="no">isndsys/ss_filter.h</includes>
@@ -31458,7 +30867,7 @@
   </compound>
   <compound kind="file">
     <name>ss_source.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__source_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
@@ -31474,7 +30883,7 @@
   </compound>
   <compound kind="file">
     <name>ss_stream.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__stream_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iSndSysStream</class>
@@ -31500,14 +30909,14 @@
   </compound>
   <compound kind="file">
     <name>ss_structs.h</name>
-    <path>/tmp/tmp2/trunk/include/isndsys/</path>
+    <path>/tmp/tmp1/V2.0/include/isndsys/</path>
     <filename>ss__structs_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">csSndSysSoundFormat</class>
   </compound>
   <compound kind="file">
     <name>itexture.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>itexture_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="ifire_8h" name="ifire.h" local="yes" imported="no">itexture/ifire.h</includes>
@@ -31517,21 +30926,21 @@
   </compound>
   <compound kind="file">
     <name>ifire.h</name>
-    <path>/tmp/tmp2/trunk/include/itexture/</path>
+    <path>/tmp/tmp1/V2.0/include/itexture/</path>
     <filename>ifire_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iFireTexture</class>
   </compound>
   <compound kind="file">
     <name>iproctex.h</name>
-    <path>/tmp/tmp2/trunk/include/itexture/</path>
+    <path>/tmp/tmp1/V2.0/include/itexture/</path>
     <filename>iproctex_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iProcTexture</class>
   </compound>
   <compound kind="file">
     <name>itexfact.h</name>
-    <path>/tmp/tmp2/trunk/include/itexture/</path>
+    <path>/tmp/tmp1/V2.0/include/itexture/</path>
     <filename>itexfact_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iTextureFactory</class>
@@ -31539,14 +30948,14 @@
   </compound>
   <compound kind="file">
     <name>itexloaderctx.h</name>
-    <path>/tmp/tmp2/trunk/include/itexture/</path>
+    <path>/tmp/tmp1/V2.0/include/itexture/</path>
     <filename>itexloaderctx_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iTextureLoaderContext</class>
   </compound>
   <compound kind="file">
     <name>iutil.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>iutil_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="iutil_2allocator_8h" name="allocator.h" local="yes" imported="no">iutil/allocator.h</includes>
@@ -31590,21 +30999,21 @@
   </compound>
   <compound kind="file">
     <name>comp.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>comp_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iComponent</class>
   </compound>
   <compound kind="file">
     <name>databuff.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>databuff_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iDataBuffer</class>
   </compound>
   <compound kind="file">
     <name>dbghelp.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>dbghelp_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -31637,7 +31046,7 @@
   </compound>
   <compound kind="file">
     <name>document.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>document_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iDocument</class>
@@ -31712,7 +31121,7 @@
   </compound>
   <compound kind="file">
     <name>evdefs.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>evdefs_8h</filename>
     <class kind="struct">_csKeyModifiers</class>
     <member kind="define">
@@ -32650,7 +32059,7 @@
   </compound>
   <compound kind="file">
     <name>eventh.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>eventh_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="iutil_2eventnames_8h" name="eventnames.h" local="yes" imported="no">iutil/eventnames.h</includes>
@@ -32687,7 +32096,7 @@
   </compound>
   <compound kind="file">
     <name>eventq.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>eventq_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2eventnames_8h" name="eventnames.h" local="yes" imported="no">iutil/eventnames.h</includes>
@@ -32696,7 +32105,7 @@
   </compound>
   <compound kind="file">
     <name>hiercache.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>hiercache_8h</filename>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -32704,7 +32113,7 @@
   </compound>
   <compound kind="file">
     <name>job.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>job_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iJob</class>
@@ -32712,14 +32121,14 @@
   </compound>
   <compound kind="file">
     <name>kitchensink.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>kitchensink_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iKitchenSink</class>
   </compound>
   <compound kind="file">
     <name>plugin.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>plugin_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="stringquote_8h" name="stringquote.h" local="yes" imported="no">csutil/stringquote.h</includes>
@@ -32787,7 +32196,7 @@
   </compound>
   <compound kind="file">
     <name>pluginconfig.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>pluginconfig_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
@@ -32833,34 +32242,34 @@
   </compound>
   <compound kind="file">
     <name>reftrack.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>reftrack_8h</filename>
     <class kind="struct">iRefTracker</class>
   </compound>
   <compound kind="file">
     <name>selfdestruct.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>selfdestruct_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iSelfDestruct</class>
   </compound>
   <compound kind="file">
     <name>string.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>string_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iString</class>
   </compound>
   <compound kind="file">
     <name>verbositymanager.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>verbositymanager_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iVerbosityManager</class>
   </compound>
   <compound kind="file">
     <name>vfs.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>vfs_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="databuff_8h" name="databuff.h" local="yes" imported="no">iutil/databuff.h</includes>
@@ -32978,7 +32387,7 @@
   </compound>
   <compound kind="file">
     <name>visualdebug.h</name>
-    <path>/tmp/tmp2/trunk/include/iutil/</path>
+    <path>/tmp/tmp1/V2.0/include/iutil/</path>
     <filename>visualdebug_8h</filename>
     <includes id="plugin_8h" name="plugin.h" local="yes" imported="no">iutil/plugin.h</includes>
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
@@ -32989,15 +32398,13 @@
   </compound>
   <compound kind="file">
     <name>ivaria.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>ivaria_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="bugplug_8h" name="bugplug.h" local="yes" imported="no">ivaria/bugplug.h</includes>
     <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
-    <includes id="bullet2_8h" name="bullet2.h" local="yes" imported="no">ivaria/bullet2.h</includes>
     <includes id="cameramanager_8h" name="cameramanager.h" local="yes" imported="no">ivaria/cameramanager.h</includes>
     <includes id="ivaria_2collider_8h" name="collider.h" local="yes" imported="no">ivaria/collider.h</includes>
-    <includes id="collisions_8h" name="collisions.h" local="yes" imported="no">ivaria/collisions.h</includes>
     <includes id="conin_8h" name="conin.h" local="yes" imported="no">ivaria/conin.h</includes>
     <includes id="conout_8h" name="conout.h" local="yes" imported="no">ivaria/conout.h</includes>
     <includes id="decal_8h" name="decal.h" local="yes" imported="no">ivaria/decal.h</includes>
@@ -33011,7 +32418,6 @@
     <includes id="movierecorder_8h" name="movierecorder.h" local="yes" imported="no">ivaria/movierecorder.h</includes>
     <includes id="ode_8h" name="ode.h" local="yes" imported="no">ivaria/ode.h</includes>
     <includes id="pagingformer_8h" name="pagingformer.h" local="yes" imported="no">ivaria/pagingformer.h</includes>
-    <includes id="physics_8h" name="physics.h" local="yes" imported="no">ivaria/physics.h</includes>
     <includes id="pmeter_8h" name="pmeter.h" local="yes" imported="no">ivaria/pmeter.h</includes>
     <includes id="profile_8h" name="profile.h" local="yes" imported="no">ivaria/profile.h</includes>
     <includes id="reporter_8h" name="reporter.h" local="yes" imported="no">ivaria/reporter.h</includes>
@@ -33026,7 +32432,7 @@
   </compound>
   <compound kind="file">
     <name>bugplug.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>bugplug_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
@@ -33035,7 +32441,7 @@
   </compound>
   <compound kind="file">
     <name>bullet.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>bullet_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
@@ -33143,48 +32549,8 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>bullet2.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
-    <filename>bullet2_8h</filename>
-    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
-    <includes id="mesh_8h" name="mesh.h" local="yes" imported="no">iengine/mesh.h</includes>
-    <includes id="engine_8h" name="engine.h" local="yes" imported="no">iengine/engine.h</includes>
-    <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
-    <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
-    <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
-    <class kind="struct">CS::Physics::Bullet2::iPhysicalSector</class>
-    <class kind="struct">CS::Physics::Bullet2::iSoftBody</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Physics</namespace>
-    <member kind="enumvalue">
-      <name>DEBUG_NOTHING</name>
-      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
-      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5aeeebfd588848a0616a5bfee14e165330</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_COLLIDERS</name>
-      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
-      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5a457f32f126a57869431f728322c92177</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_AABB</name>
-      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
-      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5ace4c1a68569c22ce2c6570b5a86aa0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DEBUG_JOINTS</name>
-      <anchorfile>namespaceCS_1_1Physics_1_1Bullet2.html</anchorfile>
-      <anchor>af8c86e7a2d5a77d7b5c95f2f8237c0c5ac09eb55a0633acb1b87a4258a4d7e9e7</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>cameramanager.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>cameramanager_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -33223,53 +32589,8 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>collisions.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
-    <filename>collisions_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="csstring_8h" name="csstring.h" local="yes" imported="no">csutil/csstring.h</includes>
-    <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
-    <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
-    <includes id="transfrm_8h" name="transfrm.h" local="yes" imported="no">csgeom/transfrm.h</includes>
-    <includes id="plane3_8h" name="plane3.h" local="yes" imported="no">csgeom/plane3.h</includes>
-    <class kind="struct">CS::Collisions::CollisionData</class>
-    <class kind="struct">CS::Collisions::CollisionGroup</class>
-    <class kind="struct">CS::Collisions::HitBeamResult</class>
-    <class kind="struct">CS::Collisions::iCollider</class>
-    <class kind="struct">CS::Collisions::iColliderBox</class>
-    <class kind="struct">CS::Collisions::iColliderCapsule</class>
-    <class kind="struct">CS::Collisions::iColliderConcaveMesh</class>
-    <class kind="struct">CS::Collisions::iColliderConcaveMeshScaled</class>
-    <class kind="struct">CS::Collisions::iColliderCone</class>
-    <class kind="struct">CS::Collisions::iColliderConvexMesh</class>
-    <class kind="struct">CS::Collisions::iColliderCylinder</class>
-    <class kind="struct">CS::Collisions::iColliderPlane</class>
-    <class kind="struct">CS::Collisions::iColliderSphere</class>
-    <class kind="struct">CS::Collisions::iColliderTerrain</class>
-    <class kind="struct">CS::Collisions::iCollisionActor</class>
-    <class kind="struct">CS::Collisions::iCollisionCallback</class>
-    <class kind="struct">CS::Collisions::iCollisionObject</class>
-    <class kind="struct">CS::Collisions::iCollisionSector</class>
-    <class kind="struct">CS::Collisions::iCollisionSystem</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Collisions</namespace>
-    <namespace>CS::Physics</namespace>
-    <member kind="enumeration">
-      <name>ColliderType</name>
-      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
-      <anchor>a8686c4be649cf25e965ce175ae69a5c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>CollisionObjectType</name>
-      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
-      <anchor>a96cafc1a39189fde1c16b413ecc6d021</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>conin.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>conin_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iConsoleExecCallback</class>
@@ -33277,7 +32598,7 @@
   </compound>
   <compound kind="file">
     <name>conout.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>conout_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iConsoleOutput</class>
@@ -33285,7 +32606,7 @@
   </compound>
   <compound kind="file">
     <name>decal.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>decal_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
@@ -33299,7 +32620,7 @@
   </compound>
   <compound kind="file">
     <name>dynamics.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>dynamics_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iBodyGroup</class>
@@ -33369,7 +32690,7 @@
   </compound>
   <compound kind="file">
     <name>dynamicsdebug.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>dynamicsdebug_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
@@ -33380,7 +32701,7 @@
   </compound>
   <compound kind="file">
     <name>engseq.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>engseq_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iEngineSequenceManager</class>
@@ -33410,7 +32731,7 @@
   </compound>
   <compound kind="file">
     <name>hudmanager.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>hudmanager_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
@@ -33420,7 +32741,7 @@
   </compound>
   <compound kind="file">
     <name>icegui.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>icegui_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
@@ -33429,14 +32750,14 @@
   </compound>
   <compound kind="file">
     <name>movierecorder.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>movierecorder_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iMovieRecorder</class>
   </compound>
   <compound kind="file">
     <name>ode.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>ode_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iODEAMotorJoint</class>
@@ -33458,7 +32779,7 @@
   </compound>
   <compound kind="file">
     <name>pagingformer.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>pagingformer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -33466,57 +32787,15 @@
     <class kind="struct">iPagingFormerState</class>
   </compound>
   <compound kind="file">
-    <name>physics.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
-    <filename>physics_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
-    <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
-    <includes id="mesh_8h" name="mesh.h" local="yes" imported="no">iengine/mesh.h</includes>
-    <includes id="engine_8h" name="engine.h" local="yes" imported="no">iengine/engine.h</includes>
-    <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
-    <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
-    <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
-    <includes id="collisions_8h" name="collisions.h" local="yes" imported="no">ivaria/collisions.h</includes>
-    <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
-    <class kind="struct">CS::Physics::iJoint</class>
-    <class kind="struct">CS::Physics::iKinematicCallback</class>
-    <class kind="struct">CS::Physics::iPhysicalBody</class>
-    <class kind="struct">CS::Physics::iPhysicalSector</class>
-    <class kind="struct">CS::Physics::iPhysicalSystem</class>
-    <class kind="struct">CS::Physics::iRigidBody</class>
-    <class kind="struct">CS::Physics::iSoftBody</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControl</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControlFactory</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControlType</class>
-    <class kind="struct">CS::Physics::SoftBodyHelper</class>
-    <namespace>CS</namespace>
-    <namespace>CS::Collisions</namespace>
-    <namespace>CS::Mesh</namespace>
-    <namespace>CS::Physics</namespace>
-    <member kind="enumeration">
-      <name>PhysicalBodyType</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>ae6b3616e3886d066a1b76a6e2f4213cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>RigidBodyState</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>a03aab0e0279a9c4ca04150d405a1439b</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>pmeter.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>pmeter_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iProgressMeter</class>
   </compound>
   <compound kind="file">
     <name>profile.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>profile_8h</filename>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -33529,7 +32808,7 @@
   </compound>
   <compound kind="file">
     <name>reporter.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>reporter_8h</filename>
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="ansicommand_8h" name="ansicommand.h" local="yes" imported="no">csutil/ansicommand.h</includes>
@@ -33592,7 +32871,7 @@
   </compound>
   <compound kind="file">
     <name>script.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>script_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
@@ -33605,7 +32884,7 @@
   </compound>
   <compound kind="file">
     <name>sequence.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>sequence_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iSequence</class>
@@ -33615,7 +32894,7 @@
   </compound>
   <compound kind="file">
     <name>simpleformer.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>simpleformer_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -33623,7 +32902,7 @@
   </compound>
   <compound kind="file">
     <name>softanim.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>softanim_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
@@ -33638,14 +32917,14 @@
   </compound>
   <compound kind="file">
     <name>stdrep.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>stdrep_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iStandardReporterListener</class>
   </compound>
   <compound kind="file">
     <name>terraform.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>terraform_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -33654,21 +32933,21 @@
   </compound>
   <compound kind="file">
     <name>translator.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>translator_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iTranslator</class>
   </compound>
   <compound kind="file">
     <name>view.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>view_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <class kind="struct">iView</class>
   </compound>
   <compound kind="file">
     <name>xwindow.h</name>
-    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <path>/tmp/tmp1/V2.0/include/ivaria/</path>
     <filename>xwindow_8h</filename>
     <includes id="cursor_8h" name="cursor.h" local="yes" imported="no">ivideo/cursor.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
@@ -33677,7 +32956,7 @@
   </compound>
   <compound kind="file">
     <name>ivideo.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>ivideo_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="cursor_8h" name="cursor.h" local="yes" imported="no">ivideo/cursor.h</includes>
@@ -33698,7 +32977,7 @@
   </compound>
   <compound kind="file">
     <name>cursor.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>cursor_8h</filename>
     <member kind="typedef">
       <type>enum _csMouseCursorID</type>
@@ -33788,7 +33067,7 @@
   </compound>
   <compound kind="file">
     <name>custcursor.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>custcursor_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="rgbpixel_8h" name="rgbpixel.h" local="yes" imported="no">csgfx/rgbpixel.h</includes>
@@ -33811,7 +33090,7 @@
   </compound>
   <compound kind="file">
     <name>fontserv.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>fontserv_8h</filename>
     <includes id="csunicode_8h" name="csunicode.h" local="yes" imported="no">csutil/csunicode.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
@@ -33859,14 +33138,14 @@
   </compound>
   <compound kind="file">
     <name>gfxmem.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>gfxmem_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iGraphicsMemory</class>
   </compound>
   <compound kind="file">
     <name>graph3d.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>graph3d_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
@@ -34790,7 +34069,7 @@
   </compound>
   <compound kind="file">
     <name>natwin.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>natwin_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iNativeWindow</class>
@@ -34819,7 +34098,7 @@
   </compound>
   <compound kind="file">
     <name>rendermesh.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>rendermesh_8h</filename>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="transfrm_8h" name="transfrm.h" local="yes" imported="no">csgeom/transfrm.h</includes>
@@ -34899,7 +34178,7 @@
   </compound>
   <compound kind="file">
     <name>rndbuf.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>rndbuf_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="csutil_2strset_8h" name="strset.h" local="yes" imported="no">csutil/strset.h</includes>
@@ -35282,7 +34561,7 @@
   </compound>
   <compound kind="file">
     <name>shader.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/shader/</path>
     <filename>shader_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="iutil_2array_8h" name="array.h" local="yes" imported="no">iutil/array.h</includes>
@@ -35335,13 +34614,13 @@
   </compound>
   <compound kind="file">
     <name>xmlshader.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/shader/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/shader/</path>
     <filename>xmlshader_8h</filename>
     <class kind="struct">iXMLShader</class>
   </compound>
   <compound kind="file">
     <name>txtmgr.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>txtmgr_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
@@ -35419,25 +34698,22 @@
   </compound>
   <compound kind="file">
     <name>wxwin.h</name>
-    <path>/tmp/tmp2/trunk/include/ivideo/</path>
+    <path>/tmp/tmp1/V2.0/include/ivideo/</path>
     <filename>wxwin_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <class kind="struct">iWxWindow</class>
   </compound>
   <compound kind="file">
     <name>namespacedocs.h</name>
-    <path>/tmp/tmp2/trunk/include/</path>
+    <path>/tmp/tmp1/V2.0/include/</path>
     <filename>namespacedocs_8h</filename>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Checksum</namespace>
-    <namespace>CS::Collisions</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
-    <namespace>CS::Editor</namespace>
-    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Material</namespace>
@@ -36360,13 +35636,6 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga102ac614db902d5cdde28716e6bc605e</anchor>
       <arglist>(iSkeletonAnimNode *node)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ApplyTimeShift</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gaebc0f785a4d404829be01b8cdf8e0158</anchor>
-      <arglist>(ChannelID channel, float offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -39460,7 +38729,6 @@
     <class kind="struct">iImageIO</class>
     <class kind="struct">iNativeWindow</class>
     <class kind="struct">iNativeWindowManager</class>
-    <namespace>CS</namespace>
     <member kind="define">
       <type>#define</type>
       <name>CS_FONT_DEFAULT_GLYPH</name>
@@ -42135,13 +41403,6 @@
       <arglist>(csLibraryHandle Handle)</arglist>
     </member>
     <member kind="typedef">
-      <type>int64</type>
-      <name>csMicroTicks</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gae6e8e6610e96d29de3bc299f3d419e7c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
       <type>unsigned int</type>
       <name>csTicks</name>
       <anchorfile>group__util.html</anchorfile>
@@ -42261,10 +41522,10 @@
       <arglist>(FILE *file, const char *str, va_list arg)</arglist>
     </member>
     <member kind="function">
-      <type>csMicroTicks</type>
+      <type>int64</type>
       <name>csGetMicroTicks</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gae8837bf1b1254be534d180bb8ce30729</anchor>
+      <anchor>gadbdc1c0f010b84953b0e22b836c2a147</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -46587,15 +45848,15 @@
       <type>float</type>
       <name>GetMax</name>
       <anchorfile>classcsBox3.html</anchorfile>
-      <anchor>af8dc4bfa0fcfa2db772d247588878c3c</anchor>
-      <arglist>(size_t idx) const </arglist>
+      <anchor>a76bf8a9c554cf277d949352426771117</anchor>
+      <arglist>(size_t idx)</arglist>
     </member>
     <member kind="function">
       <type>float</type>
       <name>GetMin</name>
       <anchorfile>classcsBox3.html</anchorfile>
-      <anchor>a1a9717fda23239efe7766dc6ff5ee18d</anchor>
-      <arglist>(size_t idx) const </arglist>
+      <anchor>a14e7b7a8f332412a9405dd4eb59960d1</anchor>
+      <arglist>(size_t idx)</arglist>
     </member>
     <member kind="function">
       <type>csBox2</type>
@@ -53934,13 +53195,6 @@
     </member>
     <member kind="variable">
       <type>bool</type>
-      <name>CS_GL_ARB_tessellation_shader</name>
-      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
-      <anchor>adcc04ebc40f67fbff6919b0f242c865b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
       <name>CS_GL_ARB_texture_border_clamp</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>a869d03ee68507f838f4b356a8263570e</anchor>
@@ -54252,13 +53506,6 @@
       <name>CS_GL_EXT_framebuffer_object</name>
       <anchorfile>structcsGLExtensionFlags.html</anchorfile>
       <anchor>a62a36553b42a4322988b2ebbe294b77e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>CS_GL_EXT_geometry_shader4</name>
-      <anchorfile>structcsGLExtensionFlags.html</anchorfile>
-      <anchor>ae2cc1da0d1dc4b5d37ee80fe89eb0e74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -60839,20 +60086,6 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLPATCHPARAMETERFV</type>
-      <name>glPatchParameterfv</name>
-      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>a54f5776285e13b6ef2a254c75b54932e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csGLPATCHPARAMETERI</type>
-      <name>glPatchParameteri</name>
-      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>a81e158172c26f9746ebf4ab9c1f4a8b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>csGLPNTRIANGLESFATI</type>
       <name>glPNTrianglesfATI</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
@@ -60941,13 +60174,6 @@
       <name>glProgramLocalParameters4fvEXT</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
       <anchor>ac302129115af28a80ee7ff5bcc785d3c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csGLPROGRAMPARAMETERIEXT</type>
-      <name>glProgramParameteriEXT</name>
-      <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>a80099fb7ebcbba5901d57c9da708c07a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -62246,13 +61472,6 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>InitGL_ARB_tessellation_shader</name>
-      <anchorfile>structcsGLExtensionManager.html</anchorfile>
-      <anchor>aca68313fc82d33cb41ac843885b440ce</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
       <name>InitGL_ARB_texture_border_clamp</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>a03fa01c7d5b832bb5c825cf4a6cf7843</anchor>
@@ -62564,13 +61783,6 @@
       <name>InitGL_EXT_framebuffer_object</name>
       <anchorfile>structcsGLExtensionManager.html</anchorfile>
       <anchor>af8a4021b367344594e3ca8fca05adfab</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>InitGL_EXT_geometry_shader4</name>
-      <anchorfile>structcsGLExtensionManager.html</anchorfile>
-      <anchor>aad9846c28fc8282c8c1e9024486becde</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -72506,201 +71718,181 @@
   <compound kind="class">
     <name>csPen</name>
     <filename>classcsPen.html</filename>
-    <member kind="function">
-      <type>void</type>
+    <base>iPen</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>ClearFlag</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a2d2f68526e15cda2ef5fd209592edab2</anchor>
+      <anchor>afb048f3e04476fc9288e946f6bef4507</anchor>
       <arglist>(uint flag)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>ClearTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>acf3765461605f475cb5d1c69376f0e66</anchor>
+      <anchor>a67a508b4e2c20f4a3b91acef4201bc0e</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>ClipLine</name>
-      <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a33e676db95afc950742b34094a68478c</anchor>
-      <arglist>(int &amp;x1, int &amp;y1, int &amp;x2, int &amp;y2)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawArc</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a09deaa594e0e8f942ee1069a97b19ce8</anchor>
-      <arglist>(int x1, int y1, int x2, int y2, float start_angle=0, float end_angle=6.2831853)</arglist>
+      <anchor>a68a9ba22a4df1a084d265bb357c781fe</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, float start_angle=0, float end_angle=6.2831853)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawLine</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>adb79023b74f8164c4d830a25c106ab2d</anchor>
-      <arglist>(int x1, int y1, int x2, int y2)</arglist>
+      <anchor>a5c6c1a4d2efc245ee9bda743b9ce844e</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawLines</name>
-      <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a1b29a409cfd8b4b90012fbc2086f1858</anchor>
-      <arglist>(const csArray&lt; csPenCoordinatePair &gt; &amp;pairs)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawMiteredRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ab79c6f023511c87c59246b17551afb59</anchor>
-      <arglist>(int x1, int y1, int x2, int y2, uint miter)</arglist>
+      <anchor>ae2d01e51bcc3dd1ba9a739d812715da9</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint miter)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawPoint</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aa03e2d85c541301a2eec326ebb186f7e</anchor>
-      <arglist>(int x1, int y2)</arglist>
+      <anchor>a86e00fb2731022eb4c98ca448a646f2c</anchor>
+      <arglist>(uint x1, uint y2)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a41e7bd6cb5446257ec0d6bc4c39bceb5</anchor>
-      <arglist>(int x1, int y1, int x2, int y2)</arglist>
+      <anchor>a535ee1b9bc8ca5eba8ae2a10f1a901bc</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawRoundedRect</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a6915a4fbb7644375c79d436ab471b2d7</anchor>
-      <arglist>(int x1, int y1, int x2, int y2, uint roundness)</arglist>
+      <anchor>a3ea4ed653ec9f85f7cc0230465323d81</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint roundness)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawTriangle</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a98eb950ae4cba47fc721cabc79587319</anchor>
-      <arglist>(int x1, int y1, int x2, int y2, int x3, int y3)</arglist>
+      <anchor>ada90b951b2f6a5a740c37ecb235566dc</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>PopTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>adb5f3ce3702032eedc26ac19c180a653</anchor>
+      <anchor>ab909c3003b068aef62558c42021e437e</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>PushTransform</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>af6131f2620fface6e7fc2576e756a8ab</anchor>
+      <anchor>a4e92d48077ae54d3e8a694652b1d9026</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>Rotate</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>af468f2eb66fc9c030c4bf10097fe938d</anchor>
+      <anchor>a03c25d06d4aae17cf9ca970068d6e3bd</anchor>
       <arglist>(const float &amp;a)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetActiveCache</name>
-      <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a6fc6cce4828b563c7a30e3ebbbf64d76</anchor>
-      <arglist>(csPenCache *cache)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetColor</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aeb75fa442eab2cc8acd327b5364c6023</anchor>
+      <anchor>a848a217fab578ceb9bf26de8fae44a89</anchor>
+      <arglist>(const csColor4 &amp;color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetColor</name>
+      <anchorfile>classcsPen.html</anchorfile>
+      <anchor>aec3ec70cb4e1be4a38f78f138320a8bb</anchor>
       <arglist>(float r, float g, float b, float a)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetFlag</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a8b211536d04f0f5b4e13ffd410fb0ec5</anchor>
+      <anchor>a4d8befbbaefef36c84dbcd5ad2ee9e9c</anchor>
       <arglist>(uint flag)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetMixMode</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a83f5e5bfb310b24c928c23e0fc6926f1</anchor>
+      <anchor>af81a262836e560950bccf0e0f565c437</anchor>
       <arglist>(uint mode)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetOrigin</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a7ea582a49d7a7f42b31451767adb63de</anchor>
+      <anchor>aa65e30728dd4a8d7bda77fd4a2d7b6ef</anchor>
       <arglist>(const csVector3 &amp;o)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetPenWidth</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a3d4124acf8db6b334fc07b8b9a5518f5</anchor>
+      <anchor>ab1a46490c4984bf2d0ccb6207d400daa</anchor>
       <arglist>(float width)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetTexture</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a6ac652da148c7c816cf6718a7ba4c600</anchor>
-      <arglist>(iTextureHandle *tex)</arglist>
+      <anchor>a3edbc794107682d3241760d8f5a6598a</anchor>
+      <arglist>(csRef&lt; iTextureHandle &gt; tex)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetTransform</name>
-      <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aac3510208b36f3bd4df8456fba5f12c3</anchor>
-      <arglist>(const csReversibleTransform &amp;trans)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SwapColors</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ae121cd252610e779fdfb124a46664809</anchor>
+      <anchor>a296b4e5b8c9f32cb716909648de96d8a</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>Translate</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a19f6410ec9ca63885decc5c6262210c8</anchor>
+      <anchor>a02352d26acf17a3edeb425a0a238c44d</anchor>
       <arglist>(const csVector3 &amp;t)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>Write</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a4e23a9adead97017318a874891b26b3c</anchor>
-      <arglist>(iFont *font, int x1, int y1, const char *text)</arglist>
+      <anchor>ae6e007fe21b09c22e48b6dba9bb8cc4c</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const char *text)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>WriteBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>a747c5541dfbfddba5cc9544b208acfe4</anchor>
-      <arglist>(iFont *font, int x1, int y1, int x2, int y2, uint h_align, uint v_align, const char *text)</arglist>
+      <anchor>a1055d40f5f1de680261ed6cfe58e5fcb</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>WriteLines</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>ae4cad6ed6e72ec45549dd99474ad7193</anchor>
-      <arglist>(iFont *font, int x1, int y1, const csStringArray &amp;lines)</arglist>
+      <anchor>a166922ed240d54820956bc98bc28df40</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const csStringArray &amp;lines)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>WriteLinesBoxed</name>
       <anchorfile>classcsPen.html</anchorfile>
-      <anchor>aca918e4c862d48edf5d9d3909b70c059</anchor>
-      <arglist>(iFont *font, int x1, int y1, int x2, int y2, uint h_align, uint v_align, const csStringArray &amp;lines)</arglist>
+      <anchor>ab1f7a3fbd9b0e6a1ebfb7f74c2ea4810</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const csStringArray &amp;lines)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -72751,145 +71943,6 @@
       <anchor>a33ba3592754cededac73f0c4590db2b8</anchor>
       <arglist>()</arglist>
     </member>
-  </compound>
-  <compound kind="class">
-    <name>csPen3D</name>
-    <filename>classcsPen3D.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawArc</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a2710d61e8e72a9628181be588bf53f68</anchor>
-      <arglist>(const csVector3 &amp;c1, const csVector3 &amp;c2, int axis, float start_angle=0, float end_angle=6.2831853)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawBox</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a37ede5dfb6cf26ec478be086dc580c05</anchor>
-      <arglist>(const csBox3 &amp;box)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawCylinder</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a28eed9198984b591acd4494721d4fc03</anchor>
-      <arglist>(const csBox3 &amp;box, int axis)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawLine</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>aa43a9b11475fccad97895267276285fc</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawLines</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>ab7c251b097c9061d65e4433659b74342</anchor>
-      <arglist>(const csArray&lt; csPen3DCoordinatePair &gt; &amp;pairs)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetActiveCache</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>ae0b819f1f397a729961291ad284a3cbf</anchor>
-      <arglist>(csPenCache *cache)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetColor</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a4a1230945c4b5169ffbc1681669a2189</anchor>
-      <arglist>(float r, float g, float b, float a)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetMixMode</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>ad65e7db880b39706b329922f8818a029</anchor>
-      <arglist>(uint mode)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetTransform</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>af945bc8fdfc4564a015c219e45671991</anchor>
-      <arglist>(const csReversibleTransform &amp;trans)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>AddVertex</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>ab706204be05dc79f1d4dd2251c663a77</anchor>
-      <arglist>(const csVector3 &amp;v)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>DrawMesh</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>ab36653d7a29761b9418e094368d51082</anchor>
-      <arglist>(csRenderMeshType mesh_type)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>SetupMesh</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a408d56c0455b73ccc981611fee1ac13a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>Start</name>
-      <anchorfile>classcsPen3D.html</anchorfile>
-      <anchor>a607fd3503dd8069e2785ab4a85a4176c</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>csPen3DCoordinatePair</name>
-    <filename>structcsPen3DCoordinatePair.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>csPenCache</name>
-    <filename>classcsPenCache.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>Clear</name>
-      <anchorfile>classcsPenCache.html</anchorfile>
-      <anchor>aba3eb6e4a94da4e83fbd48966e45d23d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>PushMesh</name>
-      <anchorfile>classcsPenCache.html</anchorfile>
-      <anchor>a9ad078c07277f3dc9efa8b04fcffdd2f</anchor>
-      <arglist>(csSimpleRenderMesh *mesh, csSimpleMeshFlags flags)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Render</name>
-      <anchorfile>classcsPenCache.html</anchorfile>
-      <anchor>a29baedd14a59d078c9133944333a7c87</anchor>
-      <arglist>(iGraphics3D *g3d)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetTransform</name>
-      <anchorfile>classcsPenCache.html</anchorfile>
-      <anchor>a0081b86bb3b7b6af8fc0cd8c2ee2c6ac</anchor>
-      <arglist>(const csReversibleTransform &amp;trans)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>csPenCoordinate</name>
-    <filename>structcsPenCoordinate.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>csPenCoordinatePair</name>
-    <filename>structcsPenCoordinatePair.html</filename>
   </compound>
   <compound kind="class">
     <name>csPhysicalFile</name>
@@ -78859,7 +77912,6 @@
     <filename>classcsShaderProgram.html</filename>
     <base>scfImplementation2&lt; csShaderProgram, iShaderProgram, iShaderDestinationResolver &gt;</base>
     <class kind="struct">csShaderProgram::ProgramParam</class>
-    <class kind="struct">csShaderProgram::ProgramSource</class>
     <class kind="struct">csShaderProgram::VariableMapEntry</class>
     <member kind="enumeration">
       <name>ProgramParamType</name>
@@ -78910,18 +77962,25 @@
       <arglist>(const csShaderVariableStack &amp;stack, const ProgramParam &amp;param)</arglist>
     </member>
     <member kind="function" protection="protected">
+      <type>csPtr&lt; iDataBuffer &gt;</type>
+      <name>GetProgramData</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a5b0bb25a03d4a0d73f95c20f64d69b99</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>iDocumentNode *</type>
+      <name>GetProgramNode</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>aea3be52cdc4fae0d690b1051104f96c0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
       <type>bool</type>
       <name>ParseCommon</name>
       <anchorfile>classcsShaderProgram.html</anchorfile>
       <anchor>a571e33a0a06c9bd5d5c5d0148df70c21</anchor>
       <arglist>(iDocumentNode *child)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>bool</type>
-      <name>ParseProgramNode</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a426f3fcc3269cf0a02138062d5bca151</anchor>
-      <arglist>(iDocumentNode *child, ProgramSource &amp;parsedSource)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>bool</type>
@@ -78972,34 +78031,6 @@
       <anchor>a70fb2d62d280d8cf0b76b5179d191bef</anchor>
       <arglist>(const csShaderVariableStack &amp;stack, const ProgramParam &amp;param, csVector4 *result)</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetProgramData</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a5b0bb25a03d4a0d73f95c20f64d69b99</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>csPtr&lt; iDataBuffer &gt;</type>
-      <name>GetProgramData</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a7cfe6101541a1d950674c0d4322264ec</anchor>
-      <arglist>(ProgramSource &amp;programSource)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>iDocumentNode *</type>
-      <name>GetProgramNode</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>aea3be52cdc4fae0d690b1051104f96c0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>iDocumentNode *</type>
-      <name>GetProgramNode</name>
-      <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a522dff9e7da920daaa7e92900bef5687</anchor>
-      <arglist>(ProgramSource &amp;programSource)</arglist>
-    </member>
     <member kind="variable" protection="protected">
       <type>csString</type>
       <name>description</name>
@@ -79015,10 +78046,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>ProgramSource</type>
-      <name>programSource</name>
+      <type>csRef&lt; iFile &gt;</type>
+      <name>programFile</name>
       <anchorfile>classcsShaderProgram.html</anchorfile>
-      <anchor>a09cd2fee9ad2c2c9c964c409cf812181</anchor>
+      <anchor>ace68f2732ffbfcc20d9700766ba703be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>csString</type>
+      <name>programFileName</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a27ccf20058acba0d79f29963bae7ec1e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>csRef&lt; iDocumentNode &gt;</type>
+      <name>programNode</name>
+      <anchorfile>classcsShaderProgram.html</anchorfile>
+      <anchor>a5c491699e31684a647fe00e05be55819</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -79059,31 +78104,6 @@
       <anchorfile>structcsShaderProgram_1_1ProgramParam.html</anchorfile>
       <anchor>abba7597c88c0a905cca7ff3852040606</anchor>
       <arglist>(float val)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>csShaderProgram::ProgramSource</name>
-    <filename>structcsShaderProgram_1_1ProgramSource.html</filename>
-    <member kind="variable">
-      <type>csRef&lt; iFile &gt;</type>
-      <name>programFile</name>
-      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
-      <anchor>a5fa27e12287901cacd3bcc79553fcf42</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csString</type>
-      <name>programFileName</name>
-      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
-      <anchor>a491488fb1bfb7bd4b398444c7d793659</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRef&lt; iDocumentNode &gt;</type>
-      <name>programNode</name>
-      <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
-      <anchor>a4076cb81eeb0e8bbacb3929db5b60f4c</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -84929,32 +83949,11 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
-      <type>virtual csMicroTicks</type>
-      <name>GetCurrentMicroTicks</name>
-      <anchorfile>classcsVirtualClock.html</anchorfile>
-      <anchor>ac6b102c20e6bfd8b7acd82383d1fd7eb</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
       <type>virtual csTicks</type>
       <name>GetCurrentTicks</name>
       <anchorfile>classcsVirtualClock.html</anchorfile>
       <anchor>a6857d06127ee64b06bd97b663a936303</anchor>
       <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csMicroTicks</type>
-      <name>GetElapsedMicroTicks</name>
-      <anchorfile>classcsVirtualClock.html</anchorfile>
-      <anchor>a511b8e7cd4a5c587751e8835e3446e66</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual float</type>
-      <name>GetElapsedSeconds</name>
-      <anchorfile>classcsVirtualClock.html</anchorfile>
-      <anchor>aa9a6b8cd089de71b7e02db45bde64f21</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual csTicks</type>
@@ -85025,31 +84024,31 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>CS_WEAKREF_METHOD_UNSAFE bool</type>
+      <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>a86206ebe1e890bb3b9d27ab7daa05903</anchor>
+      <anchor>ab2bc16f5ef7b1cae5ba0302cc5058c9b</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>CS_WEAKREF_METHOD_UNSAFE</type>
+      <type></type>
       <name>operator T *</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>a2fd2e7b869e873d5ed62d29af946c792</anchor>
+      <anchor>aa6466d1c980018ba8f16605c53a6d63d</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>CS_WEAKREF_METHOD_UNSAFE T &amp;</type>
+      <type>T &amp;</type>
       <name>operator*</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>ab0ece622c5d00d23301f08968b20e16f</anchor>
+      <anchor>acc458b601130290c4f97ab2abe252728</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>CS_WEAKREF_METHOD_UNSAFE T *</type>
+      <type>T *</type>
       <name>operator-&gt;</name>
       <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>afff8d077aa34ec5b5dcad883db56f119</anchor>
+      <anchor>a7d17b009ac82d545ce093552e68706a3</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -85086,20 +84085,6 @@
       <anchorfile>classcsWeakRef.html</anchorfile>
       <anchor>abb80dae24d92a7528667caadf493e244</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Get</name>
-      <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>aa1051dae06bc88eea143618ea9547b26</anchor>
-      <arglist>(U &amp;ref) const </arglist>
-    </member>
-    <member kind="function">
-      <type>U</type>
-      <name>Get</name>
-      <anchorfile>classcsWeakRef.html</anchorfile>
-      <anchor>ad125413a1a39afe238f040531b815f7b</anchor>
-      <arglist>() const </arglist>
     </member>
     <member kind="friend">
       <type>friend bool</type>
@@ -85805,8 +84790,8 @@
       <type>virtual void</type>
       <name>AddRefOwner</name>
       <anchorfile>structiBase.html</anchorfile>
-      <anchor>a133c836fc9d56cf0456291f4427a48fd</anchor>
-      <arglist>(void **ref_owner, CS::Threading::Mutex *mutex)=0</arglist>
+      <anchor>a5d0ec17cc4948f7bdcf668fcb52b9eb1</anchor>
+      <arglist>(void **ref_owner)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -89568,13 +88553,6 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual const csVector3 &amp;</type>
-      <name>GetPhysicsOrigin</name>
-      <anchorfile>structiDynamicSystem.html</anchorfile>
-      <anchor>a7f0c04b2bc7448257e90f7c2b127cdfe</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRollingDampener</name>
       <anchorfile>structiDynamicSystem.html</anchorfile>
@@ -89629,13 +88607,6 @@
       <anchorfile>structiDynamicSystem.html</anchorfile>
       <anchor>a04d0000cf75b84fe6352e57386b82d78</anchor>
       <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPhysicsOrigin</name>
-      <anchorfile>structiDynamicSystem.html</anchorfile>
-      <anchor>a271eea5441d7c39608954360eda0d1f0</anchor>
-      <arglist>(const csVector3 &amp;origin)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -93962,13 +92933,6 @@
       <arglist>(csRenderTargetAttachment attachment=rtaColor0, int *subtexture=0) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetTessellation</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>a4daa67a96d63943dee3725ae0a14dd44</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual iTextureManager *</type>
       <name>GetTextureManager</name>
       <anchorfile>structiGraphics3D.html</anchorfile>
@@ -94135,13 +93099,6 @@
       <anchorfile>structiGraphics3D.html</anchorfile>
       <anchor>af24e6c40722647326a657d1d44fa2b7b</anchor>
       <arglist>(int state)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetTessellation</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>a51c080d8f32210657e233936d0ff7d3c</anchor>
-      <arglist>(bool flag)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -101726,6 +100683,185 @@
       <anchorfile>structiPath.html</anchorfile>
       <anchor>ab1c80e39f9d0556cc06fd627ed442c9d</anchor>
       <arglist>(csVector3 *v)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iPen</name>
+    <filename>structiPen.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearFlag</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a596b9b2ce7775466cf4980429b438922</anchor>
+      <arglist>(uint flag)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearTransform</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>ade3ad6d218de12e8fad4a53a59a7a17a</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawArc</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a0b226cfc0f3a049d5c6827f92fb89b92</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, float start_angle, float end_angle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawLine</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a1df52467753f44bf9de33d9ea4ea899d</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawMiteredRect</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>ae3f8d2ad4e79d2041db81bb743dd6f11</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint miter)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawPoint</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>aec4d5f50a5e8b5211fccc629d21e0c34</anchor>
+      <arglist>(uint x1, uint y2)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawRect</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a2a022e9a6e372867216dec0c31cd05a7</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawRoundedRect</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a5ca36afe421610f6d607400bed283488</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint roundness)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawTriangle</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>aef4ce56b1e7411ca5d0cf6065fc8e4a3</anchor>
+      <arglist>(uint x1, uint y1, uint x2, uint y2, uint x3, uint y3)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>PopTransform</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>ae332eba7dbea04c84fcc639d6992f582</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>PushTransform</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a3c71401fe20d0fdd1ccb69df82923394</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Rotate</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a4b4f24f9b020f9840e8088d151843cba</anchor>
+      <arglist>(const float &amp;a)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetColor</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>af5ee30a2b1750af01bc74491931bd785</anchor>
+      <arglist>(const csColor4 &amp;color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetColor</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a19e44ed243759a1571e25c94715fadf9</anchor>
+      <arglist>(float r, float g, float b, float a)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetFlag</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a49078e4f749d24a64c98c0577116acc1</anchor>
+      <arglist>(uint flag)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetMixMode</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a1207d19d0b798154630f9ea789fdb892</anchor>
+      <arglist>(uint mode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetOrigin</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a15c59cec22f8c6f1cd5b3172caf67545</anchor>
+      <arglist>(const csVector3 &amp;o)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPenWidth</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a9113eb8dda4d64879fe948fcbf42992f</anchor>
+      <arglist>(float width)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetTexture</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a9288e79058aa9e2a2d7e243ad22c7530</anchor>
+      <arglist>(csRef&lt; iTextureHandle &gt; tex)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SwapColors</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a40ec4da86abc0c3d9f0f69c3577a4883</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Translate</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>ae17cefbab4c9f0aab0b376a76db440e7</anchor>
+      <arglist>(const csVector3 &amp;t)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Write</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a3c7e627a1d5f388b61ecf0698a5ee8a2</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const char *text)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>WriteBoxed</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>aa379badaff4fb8218e49bc6be463e277</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const char *text)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>WriteLines</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a5c43619506167b756eee430989fee3df</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, const csStringArray &amp;lines)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>WriteLinesBoxed</name>
+      <anchorfile>structiPen.html</anchorfile>
+      <anchor>a55bc59de351ccf31331ee8a577fcdec2</anchor>
+      <arglist>(iFont *font, uint x1, uint y1, uint x2, uint y2, uint h_align, uint v_align, const csStringArray &amp;lines)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -113661,32 +112797,11 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual csMicroTicks</type>
-      <name>GetCurrentMicroTicks</name>
-      <anchorfile>structiVirtualClock.html</anchorfile>
-      <anchor>aaf05401c41fdfd156aaae0fc1965121e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual csTicks</type>
       <name>GetCurrentTicks</name>
       <anchorfile>structiVirtualClock.html</anchorfile>
       <anchor>ae88f428c90216917a6067308e9e14543</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csMicroTicks</type>
-      <name>GetElapsedMicroTicks</name>
-      <anchorfile>structiVirtualClock.html</anchorfile>
-      <anchor>a2248faaca478653b618189de5fb84d25</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetElapsedSeconds</name>
-      <anchorfile>structiVirtualClock.html</anchorfile>
-      <anchor>a022d18b81bc01132544e58fa78f769a1</anchor>
-      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csTicks</type>
@@ -114688,8 +113803,8 @@
       <type>virtual void</type>
       <name>AddRefOwner</name>
       <anchorfile>classscfImplementation.html</anchorfile>
-      <anchor>a7fc0ea9e5e6214f308cc162d8d689b74</anchor>
-      <arglist>(void **ref_owner, CS::Threading::Mutex *mutex)</arglist>
+      <anchor>a240bcf10a91bd4b235fabe701469dfdd</anchor>
+      <arglist>(void **ref_owner)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -115639,13 +114754,10 @@
     <filename>namespaceCS.html</filename>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Checksum</namespace>
-    <namespace>CS::Collisions</namespace>
     <namespace>CS::Container</namespace>
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
-    <namespace>CS::Editor</namespace>
-    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Material</namespace>
@@ -117287,17 +116399,11 @@
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonLookAtNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonManager</class>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNode</class>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonNoiseNodeManager</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNode</class>
     <class kind="struct">CS::Animation::iSkeletonPriorityNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNode</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNode2</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNodeFactory2</class>
     <class kind="struct">CS::Animation::iSkeletonRagdollNodeManager</class>
-    <class kind="struct">CS::Animation::iSkeletonRagdollNodeManager2</class>
     <class kind="struct">CS::Animation::iSkeletonRandomNode</class>
     <class kind="struct">CS::Animation::iSkeletonRandomNodeFactory</class>
     <class kind="struct">CS::Animation::iSkeletonRetargetNode</class>
@@ -117317,7 +116423,6 @@
     <class kind="class">CS::Animation::SkeletonAnimNodeFactorySingle</class>
     <class kind="class">CS::Animation::SkeletonAnimNodeSingle</class>
     <class kind="class">CS::Animation::SkeletonAnimNodeSingleBase</class>
-    <class kind="class">CS::Animation::SkeletonNoise</class>
     <member kind="typedef">
       <type>unsigned int</type>
       <name>EffectorID</name>
@@ -117334,79 +116439,19 @@
     <member kind="enumvalue">
       <name>STATE_INACTIVE</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a9920c4370a8998c572df2d54f489ea8f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>STATE_DYNAMIC</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a104e049ff344d0beadbe41c3f699aec0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>STATE_KINEMATIC</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>RagdollState</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_INACTIVE</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9acecc21e4cda89c0b08a1279d5801ee8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_DYNAMIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a6436c7d6e902bc2066549d19d2a70dc6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>STATE_KINEMATIC</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>a427abb69c514b522c593717fb27634c9a8a1ee8bb584218011a89198cbdfb8fca</anchor>
+      <anchor>a427abb69c514b522c593717fb27634c9a045270b438ef548bbbd448f74353118b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -117443,24 +116488,6 @@
       <name>DEBUG_BBOXES</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>SkeletonNoiseChannel</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NOISE_ROTATION</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4a18e6f6f5044dd1d49ff17de472127ca5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NOISE_POSITION</name>
-      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
-      <anchor>af1cc741c9921161e8e4980ed8ec211c4ab4eabaebe899bef34ad1f85e0ea660a8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -118624,13 +117651,6 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaa85a9d2ec14d551a63c38c371055952f</anchor>
       <arglist>(ChannelID channel, float time, const csQuaternion &amp;rotation)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ApplyTimeShift</name>
-      <anchorfile>group__meshplugins.html</anchorfile>
-      <anchor>gaebc0f785a4d404829be01b8cdf8e0158</anchor>
-      <arglist>(ChannelID channel, float offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -120014,49 +119034,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Animation::iSkeletonNoiseNode</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNode.html</filename>
-    <base virtualness="virtual">CS::Animation::iSkeletonAnimNode</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Animation::iSkeletonNoiseNodeFactory</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</filename>
-    <base virtualness="virtual">CS::Animation::iSkeletonAnimNodeFactory</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddBoneNoise</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
-      <anchor>a1e6fbafea8aae228db580b2a3ea12ee1</anchor>
-      <arglist>(BoneID bone, size_t noiseIndex, SkeletonNoiseChannel channel, float x, float y, csVector3 weight=csVector3(1.0f))=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>AddSkeletonNoise</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
-      <anchor>a64c3d1d9e0018aedff45826f8c00700f</anchor>
-      <arglist>(SkeletonNoise *noise)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonAnimNodeFactory *</type>
-      <name>GetChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
-      <anchor>abf112a1b50424a23569bf9021d5a038f</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonNoiseNodeFactory.html</anchorfile>
-      <anchor>afece4ee311dba0896320917e001a86d6</anchor>
-      <arglist>(CS::Animation::iSkeletonAnimNodeFactory *factory)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Animation::iSkeletonNoiseNodeManager</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonNoiseNodeManager.html</filename>
-    <base virtualness="virtual">iSkeletonAnimNodeManager&lt; CS::Animation::iSkeletonNoiseNodeFactory &gt;</base>
-  </compound>
-  <compound kind="struct">
     <name>CS::Animation::iSkeletonPriorityNode</name>
     <filename>structCS_1_1Animation_1_1iSkeletonPriorityNode.html</filename>
     <base>CS::Animation::iSkeletonAnimNode</base>
@@ -120184,95 +119161,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Animation::iSkeletonRagdollNode2</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</filename>
-    <base virtualness="virtual">CS::Animation::iSkeletonAnimNode</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual RagdollState</type>
-      <name>GetBodyChainState</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a627bd435e127f0c525adedb99f696bb3</anchor>
-      <arglist>(iBodyChain *chain) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual BoneID</type>
-      <name>GetBone</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>ac42165b62a527f4c73872d8407c0058c</anchor>
-      <arglist>(RagdollState state, uint index) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint</type>
-      <name>GetBoneCount</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a68859e4606ae4a1bc29660c99f9fc4ce</anchor>
-      <arglist>(RagdollState state) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics::iJoint *</type>
-      <name>GetBoneJoint</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a32fdbc6a4cdd1739777e725db27abf39</anchor>
-      <arglist>(const BoneID bone)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics::iRigidBody *</type>
-      <name>GetBoneRigidBody</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a28e6b4c3e75cb0b370fe49a48eb208fd</anchor>
-      <arglist>(BoneID bone)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics::iPhysicalSector *</type>
-      <name>GetPhysicalSector</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a0ebc44ca41ccdff70cc4abf12349322f</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics::iPhysicalSystem *</type>
-      <name>GetPhysicalSystem</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a97c558165027762521ad42e0eb0ca1ee</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual BoneID</type>
-      <name>GetRigidBodyBone</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>ab7c96f8cadbe1e9dbccca9b24d2d2948</anchor>
-      <arglist>(CS::Physics::iRigidBody *body) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ResetChainTransform</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a21fa02d40a620f9e293c7a21618508ab</anchor>
-      <arglist>(iBodyChain *chain)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBodyChainState</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a91a79918c7239a1161eb652903350a57</anchor>
-      <arglist>(iBodyChain *chain, RagdollState state)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPhysicalSector</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>aae9b95b5085cc44c388611de0e232b6a</anchor>
-      <arglist>(CS::Physics::iPhysicalSector *sector)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPhysicalSystem</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNode2.html</anchorfile>
-      <anchor>a16b75ccfa13e80dd3e42cc608a6ecccd</anchor>
-      <arglist>(CS::Physics::iPhysicalSystem *system)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Animation::iSkeletonRagdollNodeFactory</name>
     <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</filename>
     <base virtualness="virtual">CS::Animation::iSkeletonAnimNodeFactory</base>
@@ -120320,61 +119208,9 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Animation::iSkeletonRagdollNodeFactory2</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</filename>
-    <base virtualness="virtual">CS::Animation::iSkeletonAnimNodeFactory</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddBodyChain</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>ad607657f4217222e62393a62d46b5da0</anchor>
-      <arglist>(iBodyChain *chain, RagdollState state=STATE_INACTIVE)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Animation::iBodySkeleton *</type>
-      <name>GetBodySkeleton</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>ab5577660652dde9f55324821810619be</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSkeletonAnimNodeFactory *</type>
-      <name>GetChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>ad1986173267b9e15cddba504753aeb89</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveBodyChain</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>af783d46fe78a83736f708e66081198ce</anchor>
-      <arglist>(iBodyChain *chain)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBodySkeleton</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>a8423d7509bc020c9cdfb094fca86bba1</anchor>
-      <arglist>(CS::Animation::iBodySkeleton *skeleton)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetChildNode</name>
-      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory2.html</anchorfile>
-      <anchor>a3a03dca5c75763488ff454f00f56463a</anchor>
-      <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Animation::iSkeletonRagdollNodeManager</name>
     <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager.html</filename>
     <base virtualness="virtual">iSkeletonAnimNodeManager&lt; CS::Animation::iSkeletonRagdollNodeFactory &gt;</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Animation::iSkeletonRagdollNodeManager2</name>
-    <filename>structCS_1_1Animation_1_1iSkeletonRagdollNodeManager2.html</filename>
-    <base virtualness="virtual">iSkeletonAnimNodeManager&lt; CS::Animation::iSkeletonRagdollNodeFactory2 &gt;</base>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonRandomNode</name>
@@ -121015,925 +119851,9 @@
       <arglist></arglist>
     </member>
   </compound>
-  <compound kind="class">
-    <name>CS::Animation::SkeletonNoise</name>
-    <filename>classCS_1_1Animation_1_1SkeletonNoise.html</filename>
-    <base>csRefCount</base>
-    <member kind="function">
-      <type>CS::Math::Noise::Module::Module *</type>
-      <name>GetComponent</name>
-      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
-      <anchor>a64effbbc6e4bb0bc84d1ac726c831aba</anchor>
-      <arglist>(size_t index)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetComponent</name>
-      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
-      <anchor>a84147b3b31ae44d419e458e6fd16dc7d</anchor>
-      <arglist>(size_t index, CS::Math::Noise::Module::Module *module)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>SkeletonNoise</name>
-      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
-      <anchor>af6a944908406a23db6bea5e315f6948c</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~SkeletonNoise</name>
-      <anchorfile>classCS_1_1Animation_1_1SkeletonNoise.html</anchorfile>
-      <anchor>a9aa18e8fb90fedaca568e0ddfddcf96e</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
   <compound kind="namespace">
     <name>CS::Checksum</name>
     <filename>namespaceCS_1_1Checksum.html</filename>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Collisions</name>
-    <filename>namespaceCS_1_1Collisions.html</filename>
-    <class kind="struct">CS::Collisions::CollisionData</class>
-    <class kind="struct">CS::Collisions::CollisionGroup</class>
-    <class kind="struct">CS::Collisions::HitBeamResult</class>
-    <class kind="struct">CS::Collisions::iCollider</class>
-    <class kind="struct">CS::Collisions::iColliderBox</class>
-    <class kind="struct">CS::Collisions::iColliderCapsule</class>
-    <class kind="struct">CS::Collisions::iColliderConcaveMesh</class>
-    <class kind="struct">CS::Collisions::iColliderConcaveMeshScaled</class>
-    <class kind="struct">CS::Collisions::iColliderCone</class>
-    <class kind="struct">CS::Collisions::iColliderConvexMesh</class>
-    <class kind="struct">CS::Collisions::iColliderCylinder</class>
-    <class kind="struct">CS::Collisions::iColliderPlane</class>
-    <class kind="struct">CS::Collisions::iColliderSphere</class>
-    <class kind="struct">CS::Collisions::iColliderTerrain</class>
-    <class kind="struct">CS::Collisions::iCollisionActor</class>
-    <class kind="struct">CS::Collisions::iCollisionCallback</class>
-    <class kind="struct">CS::Collisions::iCollisionObject</class>
-    <class kind="struct">CS::Collisions::iCollisionSector</class>
-    <class kind="struct">CS::Collisions::iCollisionSystem</class>
-    <member kind="enumeration">
-      <name>ColliderType</name>
-      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
-      <anchor>a8686c4be649cf25e965ce175ae69a5c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>CollisionObjectType</name>
-      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
-      <anchor>a96cafc1a39189fde1c16b413ecc6d021</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::CollisionData</name>
-    <filename>structCS_1_1Collisions_1_1CollisionData.html</filename>
-    <member kind="variable">
-      <type>csVector3</type>
-      <name>normalWorldOnB</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a639e82e79f1dd8c20f37c4d8bdfa6dca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>iCollisionObject *</type>
-      <name>objectA</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a399c2030f4ac4aaf574e3c3ffcda9a48</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>iCollisionObject *</type>
-      <name>objectB</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a244c2d27fceec7a83ee2804b2a1b8cd8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>penetration</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a05909a61c3823909e58e0e289b5b8493</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csVector3</type>
-      <name>positionWorldOnA</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a52bb11d791c9dab2b86d3adde22ff72f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csVector3</type>
-      <name>positionWorldOnB</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionData.html</anchorfile>
-      <anchor>a205fe1b00ba30cedc08dc336a1ed4768</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::CollisionGroup</name>
-    <filename>structCS_1_1Collisions_1_1CollisionGroup.html</filename>
-    <member kind="variable">
-      <type>CollisionGroupMask</type>
-      <name>mask</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
-      <anchor>a73222d3d9d9924253b980dd6608bf99e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csString</type>
-      <name>name</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
-      <anchor>a91ae7578a1d03215dc3c88eb181d5d79</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CollisionGroupMask</type>
-      <name>value</name>
-      <anchorfile>structCS_1_1Collisions_1_1CollisionGroup.html</anchorfile>
-      <anchor>ab7c159c0d25c3192ce859cc648f00992</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::HitBeamResult</name>
-    <filename>structCS_1_1Collisions_1_1HitBeamResult.html</filename>
-    <member kind="variable">
-      <type>bool</type>
-      <name>hasHit</name>
-      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
-      <anchor>a279724a3a4ec24229978db20419da29b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csVector3</type>
-      <name>isect</name>
-      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
-      <anchor>ae47357c8a111153249db6082b547460a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csVector3</type>
-      <name>normal</name>
-      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
-      <anchor>a1f21a5faa572b4d658f4f3c67d10418e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>iCollisionObject *</type>
-      <name>object</name>
-      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
-      <anchor>a71e95098d9ccfa607f64d7b9d4b2a6d4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>vertexIndex</name>
-      <anchorfile>structCS_1_1Collisions_1_1HitBeamResult.html</anchorfile>
-      <anchor>a70ba9c9099d08c179868407ddafa396e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollider</name>
-    <filename>structCS_1_1Collisions_1_1iCollider.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual ColliderType</type>
-      <name>GetGeometryType</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
-      <anchor>ad82181be745120bacf44edcff819daa5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const csVector3 &amp;</type>
-      <name>GetLocalScale</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
-      <anchor>a3123034035893c72c0b97cd5fbaa532e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetMargin</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
-      <anchor>af809fc75ae3712e9450bb81e19808448</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLocalScale</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
-      <anchor>af9f6adfefb2e080d82180f8731448b30</anchor>
-      <arglist>(const csVector3 &amp;scale)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMargin</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollider.html</anchorfile>
-      <anchor>a39b236f5c745d28f04dd69b71c564d0a</anchor>
-      <arglist>(float margin)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderBox</name>
-    <filename>structCS_1_1Collisions_1_1iColliderBox.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetBoxGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderBox.html</anchorfile>
-      <anchor>abb36314296c87632f8c2716cf6299ea7</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderCapsule</name>
-    <filename>structCS_1_1Collisions_1_1iColliderCapsule.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GetCapsuleGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderCapsule.html</anchorfile>
-      <anchor>aa2c9f52466fd5a759df6b0a2846f73fb</anchor>
-      <arglist>(float &amp;length, float &amp;radius)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderConcaveMesh</name>
-    <filename>structCS_1_1Collisions_1_1iColliderConcaveMesh.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iMeshWrapper *</type>
-      <name>GetMesh</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderConcaveMesh.html</anchorfile>
-      <anchor>ae354b4d46a2714281c3e0adb754e93af</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderConcaveMeshScaled</name>
-    <filename>structCS_1_1Collisions_1_1iColliderConcaveMeshScaled.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iColliderConcaveMesh *</type>
-      <name>GetCollider</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderConcaveMeshScaled.html</anchorfile>
-      <anchor>aaaffa772ce429991693ebe1cd5c833cc</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderCone</name>
-    <filename>structCS_1_1Collisions_1_1iColliderCone.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GetConeGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderCone.html</anchorfile>
-      <anchor>a6d189a5e2d40d2b09cdcd580cc9117fa</anchor>
-      <arglist>(float &amp;length, float &amp;radius)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderConvexMesh</name>
-    <filename>structCS_1_1Collisions_1_1iColliderConvexMesh.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iMeshWrapper *</type>
-      <name>GetMesh</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderConvexMesh.html</anchorfile>
-      <anchor>a5c39c62e2b7d1046cfde416df849af31</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderCylinder</name>
-    <filename>structCS_1_1Collisions_1_1iColliderCylinder.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GetCylinderGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderCylinder.html</anchorfile>
-      <anchor>a49e230347d474087089a7013b44fa40b</anchor>
-      <arglist>(float &amp;length, float &amp;radius)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderPlane</name>
-    <filename>structCS_1_1Collisions_1_1iColliderPlane.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPlane3</type>
-      <name>GetPlaneGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderPlane.html</anchorfile>
-      <anchor>a6ede4471f23c84d05a8a40c52ed58524</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderSphere</name>
-    <filename>structCS_1_1Collisions_1_1iColliderSphere.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetSphereGeometry</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderSphere.html</anchorfile>
-      <anchor>afdd3f320d4e57065fc708024883f1089</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iColliderTerrain</name>
-    <filename>structCS_1_1Collisions_1_1iColliderTerrain.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollider</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iTerrainSystem *</type>
-      <name>GetTerrain</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderTerrain.html</anchorfile>
-      <anchor>a11ccd0a3b07392f9724da05cd3da3609</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollisionActor</name>
-    <filename>structCS_1_1Collisions_1_1iCollisionActor.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetMaxSlope</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a23f38c13cff067ca9b621fbe848444dc</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsOnGround</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a46c393a62c3a75a0c9a25f5a8e08809f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Jump</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a2210d43ee1a41dc37b29fd1f8f44bf12</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>PlayerStep</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a01ae68c76280185e3b1dadd092327a96</anchor>
-      <arglist>(float delta)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>PreStep</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a1e63fe47b6f95e05dc5397ffd4937024</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Rotate</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>afba507a0bdd601ac900090de7eb41f4a</anchor>
-      <arglist>(const csVector3 &amp;v, float angle)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetCamera</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a2f7c8f89959f328b8e33d71cc854652e</anchor>
-      <arglist>(iCamera *camera)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetFallSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a126f7eeeafb26fb60198c28636ffacf6</anchor>
-      <arglist>(float fallSpeed)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a6d56a44517006704a8cad2bc0a045fb6</anchor>
-      <arglist>(float jumpSpeed)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaxJumpHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>af30f3bc78efbf477981f17c54606581f</anchor>
-      <arglist>(float maxJumpHeight)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaxSlope</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a7162ec5593f95e76ad935a5770bd223e</anchor>
-      <arglist>(float slopeRadians)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRotation</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>aa84e69f6fe59e52d3d1459a68354e0fa</anchor>
-      <arglist>(const csMatrix3 &amp;rot)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVelocity</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>af9afeb9463322408dd65f80b255ab241</anchor>
-      <arglist>(float speed)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StepHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a2cfb3c99a883a0b4742ece37a2a7b6fa</anchor>
-      <arglist>(float stepHeight)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>UpdateAction</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a9844c40d8d12d44a686656ba23bc1504</anchor>
-      <arglist>(float delta)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollisionCallback</name>
-    <filename>structCS_1_1Collisions_1_1iCollisionCallback.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnCollision</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionCallback.html</anchorfile>
-      <anchor>a9610f5edec1900a5bfb35498b324115c</anchor>
-      <arglist>(iCollisionObject *thisbody, iCollisionObject *otherbody, const csArray&lt; CollisionData &gt; &amp;collisions)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollisionObject</name>
-    <filename>structCS_1_1Collisions_1_1iCollisionObject.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddCollider</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a0f6424eee09dd5dfe849b7b6df6f3999</anchor>
-      <arglist>(iCollider *collider, const csOrthoTransform &amp;relaTrans=csOrthoTransform(csMatrix3(), csVector3(0)))=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Collide</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>af211bef2f21d65f52a48604dea502049</anchor>
-      <arglist>(iCollisionObject *otherObject)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCamera *</type>
-      <name>GetAttachedCamera</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>ab58d66df9e176ff4ca7b886805856c0c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iMovable *</type>
-      <name>GetAttachedMovable</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a3760d6ee6276ea790d0769865ebdf195</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollider *</type>
-      <name>GetCollider</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a5129e72b53ecf6a065b3ee0a6c071292</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetColliderCount</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>ac2cca50d075af83eb96b17f59ccc449e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionCallback *</type>
-      <name>GetCollisionCallback</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a25b8beb3e1ad7eaec7c45ea8543cc6ea</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetCollisionGroup</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>ac4af9f4b9a28aa5f8a377b0dc31dad62</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionObject *</type>
-      <name>GetContactObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a7b4258b17cf4a9fd3466329e230c80c4</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetContactObjectsCount</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a015f5bd6144b1e811e07dabb384275cb</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CollisionObjectType</type>
-      <name>GetObjectType</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>abeb38f178ea304a2870c77f57ec59356</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csOrthoTransform</type>
-      <name>GetTransform</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>acdd94f8aba368a9d445f7681ff9ef16e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual HitBeamResult</type>
-      <name>HitBeam</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a057f76d8609f361c63a35a042a54c53e</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionObject *</type>
-      <name>QueryCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>ae5e5e38e49a66e80dc529514b8dc5932</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObject *</type>
-      <name>QueryObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a97d19ec07d801fe56a7171aa1e1c55a4</anchor>
-      <arglist>(void)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CS::Physics::iPhysicalBody *</type>
-      <name>QueryPhysicalBody</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a2a1f3096c40bfac14b2f0b843265567a</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RebuildObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a1cc99ccfe4e21b2d0f636513f8f6d91f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollider</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a25b6731ea6f5f12191b6893ec714e9c0</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollider</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a0168faa6ed83944d2c8b54adc3bf5da6</anchor>
-      <arglist>(iCollider *collider)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAttachedCamera</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a993b6b27b9251af96738dbf71a89aee3</anchor>
-      <arglist>(iCamera *camera)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAttachedMovable</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a978313ec71a0429eb9e186efe910ebf9</anchor>
-      <arglist>(iMovable *movable)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetCollisionCallback</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a2f1b24ce972e86bdbb573f6b112d6218</anchor>
-      <arglist>(iCollisionCallback *cb)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetCollisionGroup</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>afa26059cafe980f35c31a41d6261cccd</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetObjectType</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a051ab952079b0ad0aa516763e9932552</anchor>
-      <arglist>(CollisionObjectType type, bool forceRebuild=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetTransform</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a36dc4c4fe7d1cea3eaa5616aa570f6b0</anchor>
-      <arglist>(const csOrthoTransform &amp;trans)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollisionSector</name>
-    <filename>structCS_1_1Collisions_1_1iCollisionSector.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddCollisionActor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>ad3bc5491360971cd4e9e7973ad8d9cc3</anchor>
-      <arglist>(iCollisionActor *actor)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a451b4d16743a5ebe05135e99ba23d911</anchor>
-      <arglist>(iCollisionObject *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddPortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>aad58ba1e28d3f9fb715887bf43162afd</anchor>
-      <arglist>(iPortal *portal, const csOrthoTransform &amp;meshTrans)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>CollisionTest</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a75664b8ea45a5b1701f76f71c0676c38</anchor>
-      <arglist>(iCollisionObject *object, csArray&lt; CollisionData &gt; &amp;collisions)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CollisionGroup &amp;</type>
-      <name>CreateCollisionGroup</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a045aae2d2a4bd4485f8290feb268143e</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual CollisionGroup &amp;</type>
-      <name>FindCollisionGroup</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>abf7332e54fc0402557d8873b6b946a13</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionObject *</type>
-      <name>FindCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a05e544cfaaed59e59bc7128673bcac07</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionActor *</type>
-      <name>GetCollisionActor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>abb1022f947b4e2db5d7ed8a83e7e5224</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionObject *</type>
-      <name>GetCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a14cc3c96d2e7fdfabe4ed085491037fc</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetCollisionObjectCount</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>aa83ea6271d81cdae6eda6127ec9004bc</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetGravity</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>abf346fb4cf91881d6317ac3d57399078</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetGroupCollision</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a2f99687de69562d850a4e2e73ccd2e8b</anchor>
-      <arglist>(const char *name1, const char *name2)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSector *</type>
-      <name>GetSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a1696007256b5d4c7a7a7dc84ddbc84eb</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual HitBeamResult</type>
-      <name>HitBeam</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a5a50912c829850ab2e9bc0dbc1761375</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual HitBeamResult</type>
-      <name>HitBeamPortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a1b1bf5eb2de61b6d4bde6ad14ec1fb25</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObject *</type>
-      <name>QueryObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>ad5a6111c055a95665660e57da2f01d8e</anchor>
-      <arglist>(void)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollisionActor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a4a75628e3ad8cad5ae450f428655cea4</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a07dc1c305dd042389772be2d1e617d8f</anchor>
-      <arglist>(iCollisionObject *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemovePortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a6197f1ab8cff4b0f48b5a24f76bef90b</anchor>
-      <arglist>(iPortal *portal)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetGravity</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>abf8c1349db5a0c8b2c039a65def7fcb0</anchor>
-      <arglist>(const csVector3 &amp;v)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetGroupCollision</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>ab151f0426e949c40e7b11928821a91d3</anchor>
-      <arglist>(const char *name1, const char *name2, bool collide)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a2f6b3644e21f5a9570ef1bd0940636b8</anchor>
-      <arglist>(iSector *sector)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iCollisionSystem</name>
-    <filename>structCS_1_1Collisions_1_1iCollisionSystem.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderBox &gt;</type>
-      <name>CreateColliderBox</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>af5104a9ce89d644d10a803a29e9b00c8</anchor>
-      <arglist>(const csVector3 &amp;size)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderCapsule &gt;</type>
-      <name>CreateColliderCapsule</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a9bbbbaf209ec89dad21715bfd804b27f</anchor>
-      <arglist>(float length, float radius)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderConcaveMesh &gt;</type>
-      <name>CreateColliderConcaveMesh</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>af12467f3935aebbd31ec3426e4f8a86a</anchor>
-      <arglist>(iMeshWrapper *mesh)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderConcaveMeshScaled &gt;</type>
-      <name>CreateColliderConcaveMeshScaled</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a2fdb1302b35ce6387ebd4913abd35e28</anchor>
-      <arglist>(iColliderConcaveMesh *collider, csVector3 scale)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderCone &gt;</type>
-      <name>CreateColliderCone</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>aabbd7d0284ae8067ca7cffe911a2f0a9</anchor>
-      <arglist>(float length, float radius)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderConvexMesh &gt;</type>
-      <name>CreateColliderConvexMesh</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a79e247a2e37dd67ab0f31c5fdca42ba6</anchor>
-      <arglist>(iMeshWrapper *mesh, bool simplify=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderCylinder &gt;</type>
-      <name>CreateColliderCylinder</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a71773e7fbed084a8ac475f52fa5a3af8</anchor>
-      <arglist>(float length, float radius)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderPlane &gt;</type>
-      <name>CreateColliderPlane</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a3e2f22ec67297394c22de420df3db569</anchor>
-      <arglist>(const csPlane3 &amp;plane)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderSphere &gt;</type>
-      <name>CreateColliderSphere</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a7613accd9f646a3c2df2a1926da403ee</anchor>
-      <arglist>(float radius)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iColliderTerrain &gt;</type>
-      <name>CreateColliderTerrain</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a4e873cb8e6137c2e5f910f7565053f73</anchor>
-      <arglist>(iTerrainSystem *terrain, float minHeight=0, float maxHeight=0)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iCollisionActor &gt;</type>
-      <name>CreateCollisionActor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a8deab8a13c58bd2caabb68d9c00fb3fc</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iCollisionObject &gt;</type>
-      <name>CreateCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a382e98020800b0ee0c6963127e603813</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iCollisionSector &gt;</type>
-      <name>CreateCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>ab84aeb212601196243141a824a68dd6c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DecomposeConcaveMesh</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>ac671aed497a9072f942677ae700ea587</anchor>
-      <arglist>(iCollisionObject *object, iMeshWrapper *mesh, bool simplify=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionSector *</type>
-      <name>FindCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>af21972f5925de22a86d83e1ec245cf81</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetInternalScale</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a3a7e03ef0cfd9d35f18336f7143063f0</anchor>
-      <arglist>(float scale)=0</arglist>
-    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Container</name>
@@ -122375,591 +120295,6 @@
       <anchorfile>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</anchorfile>
       <anchor>ae978ae3b6d75499ef725c64fc925df04</anchor>
       <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Editor</name>
-    <filename>namespaceCS_1_1Editor.html</filename>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::EditorApp</name>
-    <filename>namespaceCS_1_1EditorApp.html</filename>
-    <class kind="struct">CS::EditorApp::iAction</class>
-    <class kind="struct">CS::EditorApp::iActionListener</class>
-    <class kind="struct">CS::EditorApp::iActionManager</class>
-    <class kind="struct">CS::EditorApp::iBaseIterator</class>
-    <class kind="struct">CS::EditorApp::iEditor</class>
-    <class kind="struct">CS::EditorApp::iEditorObject</class>
-    <class kind="struct">CS::EditorApp::iEditorObjectChangeListener</class>
-    <class kind="struct">CS::EditorApp::iEditorObjectIterator</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapper</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapperFactory</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapperManager</class>
-    <class kind="struct">CS::EditorApp::iMapListener</class>
-    <class kind="struct">CS::EditorApp::iMenu</class>
-    <class kind="struct">CS::EditorApp::iMenuBar</class>
-    <class kind="struct">CS::EditorApp::iMenuCheckItem</class>
-    <class kind="struct">CS::EditorApp::iMenuItem</class>
-    <class kind="struct">CS::EditorApp::iMenuItemEventListener</class>
-    <class kind="struct">CS::EditorApp::iObjectList</class>
-    <class kind="struct">CS::EditorApp::iObjectListListener</class>
-    <class kind="struct">CS::EditorApp::iPanel</class>
-    <class kind="struct">CS::EditorApp::iPanelManager</class>
-    <member kind="enumeration">
-      <name>EditorObjectType</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeFactory</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27accfe6d917a9b5384d2e21379ee7025f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeInstance</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27aec2ee3346f42b55c029b4f065429ed44</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeUnknown</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27abd75cfba08ff9f58fd03609becb4d6ff</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iAction</name>
-    <filename>structCS_1_1EditorApp_1_1iAction.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iAction &gt;</type>
-      <name>Do</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
-      <anchor>a01f05edb89bd23210aea001d29f44bb2</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetDescription</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
-      <anchor>a68c4a24a610a9a293020d8220b4e5725</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iActionListener</name>
-    <filename>structCS_1_1EditorApp_1_1iActionListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnActionDone</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionListener.html</anchorfile>
-      <anchor>a8c4a7241dc3d27ac0789ae61f0f5cb26</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iActionManager</name>
-    <filename>structCS_1_1EditorApp_1_1iActionManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Do</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a1d81fddbc803e7bf7de0f24a816b8dc9</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekRedo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a66dd81aac3635c6f0649565e32499675</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekUndo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>ad0cebf34f5fb431628b0e28bcbda8635</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Redo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a276bd8858a7812eda3a6cd902e96e608</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Undo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>ac5d835df3bc67d309c46dc16d537b1e9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iBaseIterator</name>
-    <filename>structCS_1_1EditorApp_1_1iBaseIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditor</name>
-    <filename>structCS_1_1EditorApp_1_1iEditor.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddMapListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a1415f497e894ee7e4ad42e68eee30a58</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iEditorObject &gt;</type>
-      <name>CreateEditorObject</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a080f3856bd6af9e5a726ad65f1639a26</anchor>
-      <arglist>(iBase *object, wxBitmap *icon)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iMenuBar *</type>
-      <name>GetMenuBar</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aa7688958e2cf7ab3537de9d18795fca5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetObjects</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aad16fbe14cd087dcd61d2ef3cc0849fd</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iPanelManager *</type>
-      <name>GetPanelManager</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>ac600a3de2f29534e6b6155560831e006</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iProgressMeter &gt;</type>
-      <name>GetProgressMeter</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aacb8ee2a09b030d81e2ea2bb13ffadcd</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetSelection</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a5eab7ca5feda9f271225f96e9e3e7efb</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>ae460dc8244a4e98d6874d67a4b97e88c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iThreadReturn *</type>
-      <name>LoadLibraryFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a10c0b536d3f7a9e32cc433d5ac02f929</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iThreadReturn *</type>
-      <name>LoadMapFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a65843ab535c997bd470ec834bd85cd65</anchor>
-      <arglist>(const char *path, const char *filename, bool clearEngine=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveMapListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a37af98210d42c6d7f9b0a4c020821381</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SaveMapFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a4b90bcda0859a3db6d2b4902336d3f47</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObject</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObject.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>abc11c61f6cb98dc7d6bfed0e465efcd0</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetIBase</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a348a2c92131b5bd6d8c79f54720b1677</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxBitmap *</type>
-      <name>GetIcon</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a5c52c3ae7362fd7089ea50bd24192475</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a8f4ae9a286b96830ad32fa513f6e61b9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a1381f627ed6bf477804209a610412b46</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a7df63ae8cdf3701a7b40fa19deebc4fa</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetType</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a33c778ac0fe75dec78ad578fdf8f02f5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasInterface</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a77986d311ceb5992145660dc71b8fb46</anchor>
-      <arglist>(scfInterfaceID id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a6e5c773923591c4bbb426efb1817998d</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>abf05f4e888b27ed2d521724a11e40c0c</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>ac3d3af8770906923824ec0cb3c0150d5</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObjectChangeListener</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectChanged</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</anchorfile>
-      <anchor>aff01f152209e8e859b9fd7887d88c6eb</anchor>
-      <arglist>(iEditorObject *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObjectIterator</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObjectIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapper</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a52cece60b0327fa84e5e01ee15b0c720</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>ac02666be677309c9b0e4d55de2929183</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetObjectName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>aa5df298c0a563c46e64eb222757eeb56</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetObjectParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a703af97cd1bf4f5d6e8bff9a245d7245</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetObjectName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a46ba4a3c0c879fe3102d91b6567d1eb7</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SetObjectParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a435be0db1bed2c95f1fe1dda474675bc</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapperFactory</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iInterfaceWrapper &gt;</type>
-      <name>CreateInstance</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a227b95ce09669db417fd51045b65ac29</anchor>
-      <arglist>(iBase *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual scfInterfaceID</type>
-      <name>GetInterfaceID</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>af5e6b211b53fa7b1829913c6b6f935fa</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetInterfaceType</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>acd972abf3cbdd064f64d257973d0d5ba</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasNameAttribute</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a6bc2d7ebb2c4a29ffee78c24d1ea221e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasParentAttribute</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a899e4cf9b59cc1dbb35d1c5c06133c9d</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapperManager</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>ae715a0000cec0bb41557e56baeeeff07</anchor>
-      <arglist>(scfInterfaceID interface_id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Register</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>a4683a48259717748fe11f59ca8fb8fa3</anchor>
-      <arglist>(iInterfaceWrapperFactory *wrapper)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMapListener</name>
-    <filename>structCS_1_1EditorApp_1_1iMapListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnLibraryLoaded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
-      <anchor>abf6eb98824305423a0f186726767a972</anchor>
-      <arglist>(const char *path, const char *filename, iCollection *collection)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnMapLoaded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
-      <anchor>a6616e2c8c271a67fc23c7b6beabd9c51</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenu</name>
-    <filename>structCS_1_1EditorApp_1_1iMenu.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenu *</type>
-      <name>GetwxMenu</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenu.html</anchorfile>
-      <anchor>a5659bed359fb0fec40cd5e15d5731f96</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuBar</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuBar.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenuBar *</type>
-      <name>GetwxMenuBar</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuBar.html</anchorfile>
-      <anchor>a2570f2fe11e6f5a3ab7275ff006a4baa</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuCheckItem</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuCheckItem.html</filename>
-    <base>CS::EditorApp::iMenuItem</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuItem</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuItem.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenuItem *</type>
-      <name>GetwxMenuItem</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuItem.html</anchorfile>
-      <anchor>aaab054511124a39df4aabaa09b4a63df</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuItemEventListener</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnClick</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</anchorfile>
-      <anchor>a69a0d515f847b2e6fb3525ab7da2daae</anchor>
-      <arglist>(iMenuItem *)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iObjectList</name>
-    <filename>structCS_1_1EditorApp_1_1iObjectList.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iEditorObject *</type>
-      <name>FindObject</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectList.html</anchorfile>
-      <anchor>a003153187233c6c6b0302cdd5c7c14e3</anchor>
-      <arglist>(iBase *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iObjectListListener</name>
-    <filename>structCS_1_1EditorApp_1_1iObjectListListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectAdded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>a5a7f4987ea82baa675985f36c3b2ccf8</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectRemoved</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>a9fff57d10178a844111992e5910f1210</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectsCleared</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>ab24ca982b4c768682f5d2859bce42ed6</anchor>
-      <arglist>(iObjectList *list)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iPanel</name>
-    <filename>structCS_1_1EditorApp_1_1iPanel.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetCaption</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>ad83c8effc6895dff062f26af47817656</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual PanelDockPosition</type>
-      <name>GetDefaultDockPosition</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>ad01fb52c12c4c97b2f83e3adc27e5e80</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>a196f4db338439e9db69b2940ef8210f2</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iPanelManager</name>
-    <filename>structCS_1_1EditorApp_1_1iPanelManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddPanel</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>aa4f019c66cd79b3546708918ba599c76</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemovePanel</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>a69d8bd24bf744e2a2471bd5d4ab95433</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPanelVisible</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>a61919610b45b0e70f7f5808c134a2f9c</anchor>
-      <arglist>(iPanel *panel, bool visible)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -123759,7 +121094,6 @@
     <class kind="class">CS::Graphics::RenderPriority</class>
     <class kind="class">CS::Graphics::ShaderVariableContextImpl</class>
     <class kind="class">CS::Graphics::ShaderVarNameParser</class>
-    <class kind="struct">CS::Graphics::UncompressedDXTDataLayout</class>
     <member kind="enumeration">
       <name>AlphaTestFunction</name>
       <anchorfile>namespaceCS_1_1Graphics.html</anchorfile>
@@ -124287,45 +121621,6 @@
       <anchorfile>classCS_1_1Graphics_1_1ShaderVarNameParser.html</anchorfile>
       <anchor>a43a94fe55b2945d42dddb6ad0d51e5ba</anchor>
       <arglist>(const char *identifier)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Graphics::UncompressedDXTDataLayout</name>
-    <filename>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>Fix</name>
-      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
-      <anchor>a4783914d535899f87758c98f12c73ece</anchor>
-      <arglist>(size_t uncompressedSize)</arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>blocksPerRow</name>
-      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
-      <anchor>afa6a4c068f471b1934fd5f3bdcd6477b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>bytesToNextBlock</name>
-      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
-      <anchor>af4cdce2d1407c2b37db88af6a01cf37c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>bytesToNextPixel</name>
-      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
-      <anchor>a780b4e515ccf2abd44c5eb20169a1558</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>bytesToNextRow</name>
-      <anchorfile>structCS_1_1Graphics_1_1UncompressedDXTDataLayout.html</anchorfile>
-      <anchor>ac3e46fcee9d3234b34883d99aaaa2914</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -129398,1034 +126693,6 @@
     <name>CS::Physics</name>
     <filename>namespaceCS_1_1Physics.html</filename>
     <namespace>CS::Physics::Bullet</namespace>
-    <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
-    <class kind="struct">CS::Physics::iJoint</class>
-    <class kind="struct">CS::Physics::iKinematicCallback</class>
-    <class kind="struct">CS::Physics::iPhysicalBody</class>
-    <class kind="struct">CS::Physics::iPhysicalSector</class>
-    <class kind="struct">CS::Physics::iPhysicalSystem</class>
-    <class kind="struct">CS::Physics::iRigidBody</class>
-    <class kind="struct">CS::Physics::iSoftBody</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControl</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControlFactory</class>
-    <class kind="struct">CS::Physics::iSoftBodyAnimationControlType</class>
-    <class kind="struct">CS::Physics::SoftBodyHelper</class>
-    <member kind="enumeration">
-      <name>PhysicalBodyType</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>ae6b3616e3886d066a1b76a6e2f4213cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <name>RigidBodyState</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>a03aab0e0279a9c4ca04150d405a1439b</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iAnchorAnimationControl</name>
-    <filename>structCS_1_1Physics_1_1iAnchorAnimationControl.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetAnchorPosition</name>
-      <anchorfile>structCS_1_1Physics_1_1iAnchorAnimationControl.html</anchorfile>
-      <anchor>a462624809aaedb5bd98078272e883b5e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iJoint</name>
-    <filename>structCS_1_1Physics_1_1iJoint.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Attach</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a3fce93b99b09a3eb823613a7e14d438a</anchor>
-      <arglist>(iPhysicalBody *body1, iPhysicalBody *body2, bool forceUpdate=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetAngularDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a6d8aa04ce3cc131435e561a5342b62e4</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetAngularStiffness</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a5a415d8d77ce3e27ded89f45423c411d</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iPhysicalBody *</type>
-      <name>GetAttachedBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a7214db5f3114336e95c960b43ef34cdf</anchor>
-      <arglist>(int index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetBounce</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a54daf715db6a74d3ec2dbcae4a7c0125</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetBreakingImpulseThreshold</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a3425edc6d24aa39121c748a0b2cd0974</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetDesiredVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a8ece398223be5c98f738f40173c6d512</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetLinearDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>aa8b0c9eeab43fc46dbea5290c1889e99</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetLinearStiffness</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a2947e9a3b0e8e97cbbeee3e57e993765</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetMaxForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ab58008c97ad103a651828a01d6458001</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetMaximumAngle</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ada520af97056ee77d92e69366c5302a0</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetMaximumDistance</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a477e55961c02269fd174154cc9da3362</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetMinimumAngle</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a8819fa049ff31c5aa9d698736594aec1</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetMinimumDistance</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a8b4e6d6f8a71c6d794174ff8eff70924</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetPosition</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>afe933cd190ea6dcda43ca27d661b8a19</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csOrthoTransform</type>
-      <name>GetTransform</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ab139f3e281bffd62cc94affd4dad1595</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>aa744216ea6a7e8088ed29b24524d8b66</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a8fc3d245ddb754edc763d932e0a08af8</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a512dab82d5069da352ddc11f0f12499c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ad37fa22d6461f65b9d827674b39e4f38</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a5453f2809f19f7998df1e2bf9b123bb9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a1c83cbd101cebfd01a93a53a1a3442ea</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>RebuildJoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>af8e9f45dbfb4643062df45a37ad118ea</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ae965b8c431eabdaa45a740ef15417706</anchor>
-      <arglist>(csVector3 damp, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularEquilibriumPoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ada75b5fded4ec5777058ce2786c317da</anchor>
-      <arglist>(csVector3 point, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularStiffness</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ac7df64070299108c7278ab6a71547d3c</anchor>
-      <arglist>(csVector3 stiff, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBounce</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a8790b401b1ab3a89d232a52c57116e7c</anchor>
-      <arglist>(const csVector3 &amp;bounce, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBreakingImpulseThreshold</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>af46261f15726b26842da4c050c6a143a</anchor>
-      <arglist>(float threshold, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDesiredVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ade3c865e1204018c5380721833ac09fc</anchor>
-      <arglist>(const csVector3 &amp;velo, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a1e63520e20255d0fdd2cdce1cf6b6eef</anchor>
-      <arglist>(csVector3 damp, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearEquilibriumPoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a3c441efe30cfea6dd517a40b325eac09</anchor>
-      <arglist>(csVector3 point, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearStiffness</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ac8d5fc4f62f4c18379309d564666b8c7</anchor>
-      <arglist>(csVector3 stiff, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaxForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>afc32dcf915489949732bd2754e9250b2</anchor>
-      <arglist>(const csVector3 &amp;force, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaximumAngle</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a6a5c964ffe427261f8dcde3d8df599aa</anchor>
-      <arglist>(const csVector3 &amp;angle, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMaximumDistance</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a2bcb98921a24169af8e8e508f0c6bc70</anchor>
-      <arglist>(const csVector3 &amp;dist, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMinimumAngle</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a42f892d17eb566b25d2180804495ee4e</anchor>
-      <arglist>(const csVector3 &amp;angle, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMinimumDistance</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a4c61b7dbcaa3ffaa825b1f404be1c3ec</anchor>
-      <arglist>(const csVector3 &amp;dist, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPosition</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a49a0c620055351ae5d0378fb990533a3</anchor>
-      <arglist>(const csVector3 &amp;position, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRotConstraints</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a3d37dfc72f466324dbdfc45f95b9172d</anchor>
-      <arglist>(bool X, bool Y, bool Z, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSpring</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a7e81b583f694b3efed2c361d083bea3c</anchor>
-      <arglist>(bool isSpring, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetTransConstraints</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a238d4940ebf227c08e8c1d0c288c34a2</anchor>
-      <arglist>(bool X, bool Y, bool Z, bool forceUpdate=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetTransform</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a4ff610a03bb970d0ad6b7010d291687f</anchor>
-      <arglist>(const csOrthoTransform &amp;trans, bool forceUpdate=false)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iKinematicCallback</name>
-    <filename>structCS_1_1Physics_1_1iKinematicCallback.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GetBodyTransform</name>
-      <anchorfile>structCS_1_1Physics_1_1iKinematicCallback.html</anchorfile>
-      <anchor>aea8c43deaf7f2981dca9dec8cf721629</anchor>
-      <arglist>(iRigidBody *body, csOrthoTransform &amp;transform) const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iPhysicalBody</name>
-    <filename>structCS_1_1Physics_1_1iPhysicalBody.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a305dbf79025148b5845b3cd338334b80</anchor>
-      <arglist>(const csVector3 &amp;force)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Disable</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>aa4a2d94db1d802d99c12ebfe9d1e74e6</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Enable</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a1cacb4861445e3cdb86481f41c1f1d15</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual PhysicalBodyType</type>
-      <name>GetBodyType</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a0745e558def5ba759df83a6bf14e702e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetDensity</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a68d50c269a30af3cf416324892afd44c</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetFriction</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a7bf3ae6f90a9fc1c0503cbae0d768226</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a1cced6adbc5ce4737ba102fe513a0e53</anchor>
-      <arglist>(size_t index=0) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetMass</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>ab2627af8b9f50a0eebedcb6c9c0593af</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetVolume</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a3e5fc08a9994c53ab1b1deabb524a3be</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a55c0d9478f04c7bc1536c119cb6d2629</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRigidBody *</type>
-      <name>QueryRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>ae5cfb3279a2aaf6a8d175f77b4722227</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSoftBody *</type>
-      <name>QuerySoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>ab9752be99d26e6c89bcfc82be10e3068</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDensity</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a0ddecfe1a2cd730553afa9d4e42b765d</anchor>
-      <arglist>(float density)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetFriction</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a521dcf5b46152a98282689d4cd351289</anchor>
-      <arglist>(float friction)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetMass</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
-      <anchor>a3fae9d7b46912a12c8a6659bc7350ce9</anchor>
-      <arglist>(float mass)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iPhysicalSector</name>
-    <filename>structCS_1_1Physics_1_1iPhysicalSector.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddJoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ab171f5fc8f259e959a2d318a21ed54ce</anchor>
-      <arglist>(iJoint *joint)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a70d0894d30f83d3c9eca4d94441e41d8</anchor>
-      <arglist>(iRigidBody *body)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ab1050bb035e1b04394973e645b8c1a9b</anchor>
-      <arglist>(iSoftBody *body)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRigidBody *</type>
-      <name>FindRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a74ab11c9a2eee17318e4fc739bfad752</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSoftBody *</type>
-      <name>FindSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a40706ea3cc460cb37f1d298638147145</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a3d1da0ab4706cac47b2f256a88fdd9a7</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRigidBody *</type>
-      <name>GetRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a0dc88cb0247bd2db40772979c7a05c7f</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetRigidBodyCount</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ac72d0a19a005a64da49c0c39411f9770</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a56398e1ac0a901c7f5b19206acf61abd</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSoftBody *</type>
-      <name>GetSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>abaa05e334d8555e1db97209756f5b46f</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetSoftBodyCount</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a851ad772f5bc63f1f7e58ee53a06f63d</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetSoftBodyEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aad83283832731357a5ce6110e8f7f124</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveJoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a19f0e59a496bef994fef8b81e0867bd4</anchor>
-      <arglist>(iJoint *joint)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>af78f3f035b3883871476757893664f8f</anchor>
-      <arglist>(iRigidBody *body)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aebf1c4fec42b8ac0baca9ebfa92d61b0</anchor>
-      <arglist>(iSoftBody *body)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAutoDisableParams</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ad56caa3f5e931da1598b261bb8a16a8a</anchor>
-      <arglist>(float linear, float angular, float time)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a9c6400abca8ac866f67e9bf2d4e40ef1</anchor>
-      <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aa2d70111aac942191515bc79b24e9833</anchor>
-      <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSimulationSpeed</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a0d66b5e70512186d405c7154f2b69486</anchor>
-      <arglist>(float speed)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSoftBodyEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>af3e371839e5a051d8b640460f41d9034</anchor>
-      <arglist>(bool enabled)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetStepParameters</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a0a03f6b613f40eb1b719685a99e87e03</anchor>
-      <arglist>(float timeStep, size_t maxSteps, size_t iterations)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Step</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a03fedb2509825e2d05bae0aaae1dfb50</anchor>
-      <arglist>(float duration)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iPhysicalSystem</name>
-    <filename>structCS_1_1Physics_1_1iPhysicalSystem.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iSoftBody &gt;</type>
-      <name>CreateCloth</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>af223b4f5610d6b34df6bf5f2485390c1</anchor>
-      <arglist>(csVector3 corner1, csVector3 corner2, csVector3 corner3, csVector3 corner4, size_t segmentCount1, size_t segmentCount2, bool withDiagonals=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iJoint &gt;</type>
-      <name>CreateJoint</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a6199e7e273c807cf670ba67072a5706f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iRigidBody &gt;</type>
-      <name>CreateRigidBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a01f006789683d9d8262bd0ea5d436d59</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iSoftBody &gt;</type>
-      <name>CreateRope</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>abb6cefea81cb571b6a48066770d23512</anchor>
-      <arglist>(csVector3 *vertices, size_t vertexCount)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iSoftBody &gt;</type>
-      <name>CreateRope</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a6d3341e92f8e9535123bcbcc1ea6b64d</anchor>
-      <arglist>(csVector3 start, csVector3 end, size_t segmentCount)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iSoftBody &gt;</type>
-      <name>CreateSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a4a1142f7be1d57bb4322ec23497bf35f</anchor>
-      <arglist>(csVector3 *vertices, size_t vertexCount, csTriangle *triangles, size_t triangleCount, const csOrthoTransform &amp;bodyTransform)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csRef&lt; iSoftBody &gt;</type>
-      <name>CreateSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a65e8b5e8fd0bf436d07e42825a2cb682</anchor>
-      <arglist>(iGeneralFactoryState *genmeshFactory, const csOrthoTransform &amp;bodyTransform)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iRigidBody</name>
-    <filename>structCS_1_1Physics_1_1iRigidBody.html</filename>
-    <base virtualness="virtual">CS::Physics::iPhysicalBody</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddForceAtPos</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a326b9eb222da808f1d71693d094d92e1</anchor>
-      <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddForceAtRelPos</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a0795d1b1235a21620d8516fbc74a9829</anchor>
-      <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddRelForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a41a4351c66bd02a1d1992f657f61778e</anchor>
-      <arglist>(const csVector3 &amp;force)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddRelForceAtPos</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a4cc38aea2340cd12781741cb8dc45bc0</anchor>
-      <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddRelForceAtRelPos</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a05d224bc5acb4a28c15e862d3ca10303</anchor>
-      <arglist>(const csVector3 &amp;force, const csVector3 &amp;pos)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddRelTorque</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>ab62d3b64eae1c0bc495874d366ce9bbf</anchor>
-      <arglist>(const csVector3 &amp;torque)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddTorque</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a3a83c7f7ec5a11049562a96a58121a22</anchor>
-      <arglist>(const csVector3 &amp;torque)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetAngularVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a4fc18ae4684f67b7943fff2493bd5b96</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetElasticity</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a9ba9371a496e4c86e879874b9b3e1d08</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a5f5f4c22dee1ca46b04e9bda05ad3440</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iKinematicCallback *</type>
-      <name>GetKinematicCallback</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a1af83e39a3a7183c85435bd1c914fa68</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a83743717b62322170c19254b6ace2e8f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>aed9bf4542de6aa0604793ce5aa98287a</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual RigidBodyState</type>
-      <name>GetState</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a75fc718bd4e316b27f6991cf01461f3f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetTorque</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a2d39df2072fa3c5b2b80ddd2a6637b2a</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>ab04be3fdf363d929980c25c6bcc94f4d</anchor>
-      <arglist>(const csVector3 &amp;vel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetElasticity</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>ad68629b03b37034671b0d948b6e1115c</anchor>
-      <arglist>(float elasticity)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKinematicCallback</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a457e1e7e556036b2ba0b82e5f8eb1d00</anchor>
-      <arglist>(iKinematicCallback *cb)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>af40f5f89a10a08645cd33127f7f0cb9a</anchor>
-      <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a9688d139312c9164e56e059fa7888480</anchor>
-      <arglist>(const csVector3 &amp;vel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRollingDampener</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>ad7beaf8f2da782b8c438db3e2377a27e</anchor>
-      <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SetState</name>
-      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
-      <anchor>a45f5abce89fa70a0ea5a1424c367e276</anchor>
-      <arglist>(RigidBodyState state)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iSoftBody</name>
-    <filename>structCS_1_1Physics_1_1iSoftBody.html</filename>
-    <base virtualness="virtual">CS::Physics::iPhysicalBody</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddForce</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>ad0b7b521c2d1ee00bf85939f040d1315</anchor>
-      <arglist>(const csVector3 &amp;force, size_t vertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a6c8f08cc37470b1b45be2900b03ae0b9</anchor>
-      <arglist>(size_t vertexIndex, iAnchorAnimationControl *controller)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a9c6171cca8cd73752d95ed7aaed6eab4</anchor>
-      <arglist>(size_t vertexIndex, iRigidBody *body)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AnchorVertex</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>afb9899c57ca096897274cd8c482f4081</anchor>
-      <arglist>(size_t vertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetRigidity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>afd4e837fdc69a21f7e54177c5ae52c69</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csTriangle</type>
-      <name>GetTriangle</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>aa3df548fdb20165d4db43780cb3b69fd</anchor>
-      <arglist>(size_t index) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetTriangleCount</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a005a2419c15d5b8a8c29c3218de99669</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetVertexCount</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a6599ec02ce94047e416e5e4dc8f72909</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetVertexMass</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>af83a2803524974ee0f3838d58567bbe0</anchor>
-      <arglist>(size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetVertexNormal</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>acdb1d68e4ad913bafcf63fb7ade453b8</anchor>
-      <arglist>(size_t index) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csVector3</type>
-      <name>GetVertexPosition</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>aac3aa78dcb56417d436f80e8c86c914f</anchor>
-      <arglist>(size_t index) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const csVector3</type>
-      <name>GetWindVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a377eac7c3a0ec5c4131f4a6a7f55e75a</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveAnchor</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a150e76d904fa892ca04a755265625205</anchor>
-      <arglist>(size_t vertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a0ca9bd5cf5a4717af65d533e1046ad4d</anchor>
-      <arglist>(const csVector3 &amp;velocity, size_t vertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a0873d420962208731f9348a60389ea2a</anchor>
-      <arglist>(const csVector3 &amp;vel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRigidity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>af272d36b6b61943eb11914d84087cfbf</anchor>
-      <arglist>(float rigidity)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVertexMass</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a5a9fe8f207063dcf38a674d7a2bdec65</anchor>
-      <arglist>(float mass, size_t index)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetWindVelocity</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a3539103df6fb61043048fb663d52dab1</anchor>
-      <arglist>(const csVector3 &amp;velocity)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>UpdateAnchor</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>af6a19f1420c956af781e8eb0a8719bb2</anchor>
-      <arglist>(size_t vertexIndex, csVector3 &amp;position)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iSoftBodyAnimationControl</name>
-    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</filename>
-    <base>iGenMeshAnimationControl</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>CreateAnimatedMeshAnchor</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>ae14536b48fb659770f2bd92c4508fc11</anchor>
-      <arglist>(CS::Mesh::iAnimatedMesh *animesh, iRigidBody *body, size_t bodyVertexIndex, size_t animeshVertexIndex=(size_t)~0)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetAnimatedMeshAnchorVertex</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>adb3cc4daec1f39da223f488c133b84d2</anchor>
-      <arglist>(size_t bodyVertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iSoftBody *</type>
-      <name>GetSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a341f3f9b69963a18e7631ddfb6a4e29f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveAnimatedMeshAnchor</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a44bdfe2816ba1456fcefb61e4f4668fd</anchor>
-      <arglist>(size_t bodyVertexIndex)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSoftBody</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a8312c52c4e1fe365efa1dd97c8834c9d</anchor>
-      <arglist>(iSoftBody *body, bool doubleSided=false)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iSoftBodyAnimationControlFactory</name>
-    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControlFactory.html</filename>
-    <base>iGenMeshAnimationControlFactory</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iSoftBodyAnimationControlType</name>
-    <filename>structCS_1_1Physics_1_1iSoftBodyAnimationControlType.html</filename>
-    <base>iGenMeshAnimationControlType</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::SoftBodyHelper</name>
-    <filename>structCS_1_1Physics_1_1SoftBodyHelper.html</filename>
-    <member kind="function" static="yes">
-      <type>static csPtr&lt; iMeshFactoryWrapper &gt;</type>
-      <name>CreateClothGenMeshFactory</name>
-      <anchorfile>structCS_1_1Physics_1_1SoftBodyHelper.html</anchorfile>
-      <anchor>afd27393d2cf6bb0a1a0c30db4968a18b</anchor>
-      <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth)</arglist>
-    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Physics::Bullet</name>
@@ -130827,39 +127094,11 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
-      <anchor>aa42e3af6fbe951dbcf049cb38a03d02c</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetImpulseClamp</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
-      <anchor>a313dc5c06d059d3f5ac36cd666c20ea3</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetPosition</name>
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
       <anchor>a2db9e670ae169092636a580b6b0a6f36</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetTau</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
-      <anchor>a5227211a32c9ec333cd55737ed3ba7f2</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetParameters</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iPivotJoint.html</anchorfile>
-      <anchor>ac3d38e68d2420f62fa61d56111491174</anchor>
-      <arglist>(float impulseClamp, float tau, float damping)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -131103,296 +127342,6 @@
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1SoftBodyHelper.html</anchorfile>
       <anchor>a3328935c726bd782e960f7a5e6ef3560</anchor>
       <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::Bullet2::iPhysicalSector</name>
-    <filename>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DebugDraw</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a43966a5f1943e54b77822db9266b5b65</anchor>
-      <arglist>(iView *rview)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DumpProfile</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>aca8a8e260fe6700731e6c20776323416</anchor>
-      <arglist>(bool resetProfile=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual DebugMode</type>
-      <name>GetDebugMode</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>a6ad095269097be839da305afc9decacf</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SaveWorld</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>af09f40e10f420b39f17a75429932446d</anchor>
-      <arglist>(const char *filename)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDebugMode</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>ab83f674417cc928c969149aed4a3d0c5</anchor>
-      <arglist>(DebugMode mode)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StartProfile</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>abf18b307306c00d70d697ce3a80aa93f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StopProfile</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iPhysicalSector.html</anchorfile>
-      <anchor>adbcce71e62361a26af8f7a13300feafd</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::Bullet2::iSoftBody</name>
-    <filename>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DebugDraw</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a2f78df50ea3f52d8c2b4fdf37a7e98f4</anchor>
-      <arglist>(iView *rView)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>GenerateCluster</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>afd366d73db644181be7ff006a0997738</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetClusterCollisionRS</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a0c09cc42e8e33cb4d0f9c065b0c521e0</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetClusterCollisionSS</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a88c3e4f15b1f40ff9f08c1224b00145c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>ResetCollisionFlag</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ac6a712495d7d9bb429e0d8a074ebe022</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAnchorsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ad88e67f65eaf7b776080b93820b12685</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAngularStiff</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a630921f5b5a6f7e1815bb634b3942ccb</anchor>
-      <arglist>(float stiff)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetBendingConstraint</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a330f348538a6aa6909260d94e729a435</anchor>
-      <arglist>(bool bending)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterCollisionRS</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a407a39e69ee42b4bac05ec5abf9524ea</anchor>
-      <arglist>(bool cluster)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterCollisionSS</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a406c6f1f171d08acefb68cdda10ac8fa</anchor>
-      <arglist>(bool cluster)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetClusterIterations</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>aa0e2654c47e2bb97a1d03fb2ac7cab49</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDamping</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a866c98b9ddead8cc6ac1e2544f404d17</anchor>
-      <arglist>(float damping)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDrag</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3e48f05d7683913f329a660850cf22ec</anchor>
-      <arglist>(float drag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDriftIterations</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ab95885546864f7d2a11e0745851e97ff</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a3e7e5d94677a8fa9d10ab76870e84f0f</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLift</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a99b0478968519752201d5f205469caac</anchor>
-      <arglist>(float lift)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetLinearStiff</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a2cff30fd97fc67de309b01fd290d8e28</anchor>
-      <arglist>(float stiff)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPositionIterations</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>af8dfce99876c486017f641a9d6cad47f</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPressure</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a2ef1edfd794739a511dd59c4b8cb5321</anchor>
-      <arglist>(float pressure)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>acdde505a89b15db033684908e3442474</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a4ccabaa9d662d1504f820cd73f10ff69</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetShapeMatching</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a611d531b1c36e6a29d13f6900080d0d9</anchor>
-      <arglist>(bool match)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetShapeMatchThreshold</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a591613fec9fd12ac862e2385c94ea724</anchor>
-      <arglist>(float matching)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>acc832491f7945040b4d52eb06d0f4a5c</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a14d67be2a860ae1bc2fb822dcd9e80b6</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a63d72723589378dc8b48799a15cebc47</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a4059aa8e3975ab86e7c08723d83bbdb9</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a7095dfa5c816f54b3621340fa4935fe6</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a9a51efe0f2723f06788d94ac6661c28a</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVeloCorrectionFactor</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>ac06d759a07804bbbae7b377e18371be3</anchor>
-      <arglist>(float factor)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVeloSolverIterations</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>abb2984ffa2b6c58e09ed6d9d075968a7</anchor>
-      <arglist>(int iter)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVolumeConversationCoefficient</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a03e78ca6931e68083a1c3adcdd516364</anchor>
-      <arglist>(float conversation)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetVolumeStiff</name>
-      <anchorfile>structCS_1_1Physics_1_1Bullet2_1_1iSoftBody.html</anchorfile>
-      <anchor>a79d214668ad381ad3d05f54f960371fb</anchor>
-      <arglist>(float stiff)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -138056,29 +134005,6 @@
   <compound kind="struct">
     <name>CS::Utility::Implementation::SetNumberComputer&lt; 0 &gt;</name>
     <filename>structCS_1_1Utility_1_1Implementation_1_1SetNumberComputer_3_010_01_4.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::Implementation::WeakReferenced</name>
-    <filename>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</filename>
-    <class kind="class">CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</class>
-    <member kind="function">
-      <type>void</type>
-      <name>ClearRefOwners</name>
-      <anchorfile>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</anchorfile>
-      <anchor>aebe7fa5995eeaae29c455a09210f01f5</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DeleteAllOwners</name>
-      <anchorfile>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced.html</anchorfile>
-      <anchor>a3a334345127b126c265fa3d97297de1e</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::Implementation::WeakReferenced::ScopedWeakRefOwnersLock</name>
-    <filename>classCS_1_1Utility_1_1Implementation_1_1WeakReferenced_1_1ScopedWeakRefOwnersLock.html</filename>
   </compound>
   <compound kind="namespace">
     <name>CS::Utility::ResourceCache</name>
