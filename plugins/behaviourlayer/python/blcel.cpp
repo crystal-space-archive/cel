@@ -25602,6 +25602,115 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iCelEntityTemplate_RemovePropertyClassTemplate__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
+  size_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntityTemplate_RemovePropertyClassTemplate",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntityTemplate_RemovePropertyClassTemplate" "', argument " "1"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntityTemplate * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "iCelEntityTemplate_RemovePropertyClassTemplate" "', argument " "2"" of type '" "size_t""'");
+  } 
+  arg2 = static_cast< size_t >(val2);
+  (arg1)->RemovePropertyClassTemplate(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntityTemplate_RemovePropertyClassTemplate__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
+  iCelPropertyClassTemplate *arg2 = (iCelPropertyClassTemplate *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelEntityTemplate_RemovePropertyClassTemplate",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelEntityTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelEntityTemplate_RemovePropertyClassTemplate" "', argument " "1"" of type '" "iCelEntityTemplate *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelEntityTemplate * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelPropertyClassTemplate, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelEntityTemplate_RemovePropertyClassTemplate" "', argument " "2"" of type '" "iCelPropertyClassTemplate *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelPropertyClassTemplate * >(argp2);
+  (arg1)->RemovePropertyClassTemplate(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelEntityTemplate_RemovePropertyClassTemplate(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = (int)PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 2); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelEntityTemplate, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iCelPropertyClassTemplate, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_iCelEntityTemplate_RemovePropertyClassTemplate__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelEntityTemplate, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_iCelEntityTemplate_RemovePropertyClassTemplate__SWIG_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelEntityTemplate_RemovePropertyClassTemplate'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    RemovePropertyClassTemplate(iCelEntityTemplate *,size_t)\n"
+    "    RemovePropertyClassTemplate(iCelEntityTemplate *,iCelPropertyClassTemplate *)\n");
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iCelEntityTemplate_SetBehaviour(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelEntityTemplate *arg1 = (iCelEntityTemplate *) 0 ;
@@ -107304,10 +107413,10 @@ SWIGINTERN PyObject *_wrap_iQuestTriggerResponseFactory_GetRewardFactories(PyObj
   if(!PyArg_UnpackTuple(args,(char *)"iQuestTriggerResponseFactory_GetRewardFactories",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestTriggerResponseFactory, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestTriggerResponseFactory_GetRewardFactories" "', argument " "1"" of type '" "iQuestTriggerResponseFactory const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestTriggerResponseFactory_GetRewardFactories" "', argument " "1"" of type '" "iQuestTriggerResponseFactory *""'"); 
   }
   arg1 = reinterpret_cast< iQuestTriggerResponseFactory * >(argp1);
-  result = ((iQuestTriggerResponseFactory const *)arg1)->GetRewardFactories();
+  result = (arg1)->GetRewardFactories();
   resultobj = SWIG_NewPointerObj((new csRef< iRewardFactoryArray >(static_cast< const csRef< iRewardFactoryArray >& >(result))), SWIGTYPE_p_csRefT_iRewardFactoryArray_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
@@ -107469,10 +107578,10 @@ SWIGINTERN PyObject *_wrap_iQuestStateFactory_GetTriggerResponseFactories(PyObje
   if(!PyArg_UnpackTuple(args,(char *)"iQuestStateFactory_GetTriggerResponseFactories",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestStateFactory, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetTriggerResponseFactories" "', argument " "1"" of type '" "iQuestStateFactory const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetTriggerResponseFactories" "', argument " "1"" of type '" "iQuestStateFactory *""'"); 
   }
   arg1 = reinterpret_cast< iQuestStateFactory * >(argp1);
-  result = ((iQuestStateFactory const *)arg1)->GetTriggerResponseFactories();
+  result = (arg1)->GetTriggerResponseFactories();
   resultobj = SWIG_NewPointerObj((new csRef< iQuestTriggerResponseFactoryArray >(static_cast< const csRef< iQuestTriggerResponseFactoryArray >& >(result))), SWIGTYPE_p_csRefT_iQuestTriggerResponseFactoryArray_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
@@ -107521,10 +107630,10 @@ SWIGINTERN PyObject *_wrap_iQuestStateFactory_GetInitRewardFactories(PyObject *S
   if(!PyArg_UnpackTuple(args,(char *)"iQuestStateFactory_GetInitRewardFactories",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestStateFactory, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetInitRewardFactories" "', argument " "1"" of type '" "iQuestStateFactory const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetInitRewardFactories" "', argument " "1"" of type '" "iQuestStateFactory *""'"); 
   }
   arg1 = reinterpret_cast< iQuestStateFactory * >(argp1);
-  result = ((iQuestStateFactory const *)arg1)->GetInitRewardFactories();
+  result = (arg1)->GetInitRewardFactories();
   resultobj = SWIG_NewPointerObj((new csRef< iRewardFactoryArray >(static_cast< const csRef< iRewardFactoryArray >& >(result))), SWIGTYPE_p_csRefT_iRewardFactoryArray_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
@@ -107573,10 +107682,10 @@ SWIGINTERN PyObject *_wrap_iQuestStateFactory_GetExitRewardFactories(PyObject *S
   if(!PyArg_UnpackTuple(args,(char *)"iQuestStateFactory_GetExitRewardFactories",1,1,&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestStateFactory, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetExitRewardFactories" "', argument " "1"" of type '" "iQuestStateFactory const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestStateFactory_GetExitRewardFactories" "', argument " "1"" of type '" "iQuestStateFactory *""'"); 
   }
   arg1 = reinterpret_cast< iQuestStateFactory * >(argp1);
-  result = ((iQuestStateFactory const *)arg1)->GetExitRewardFactories();
+  result = (arg1)->GetExitRewardFactories();
   resultobj = SWIG_NewPointerObj((new csRef< iRewardFactoryArray >(static_cast< const csRef< iRewardFactoryArray >& >(result))), SWIGTYPE_p_csRefT_iRewardFactoryArray_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
@@ -107949,6 +108058,40 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestFactory_RemoveState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestFactory *arg1 = (iQuestFactory *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestFactory_RemoveState",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestFactory_RemoveState" "', argument " "1"" of type '" "iQuestFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestFactory * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestFactory_RemoveState" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)(arg1)->RemoveState((char const *)arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestFactory_CreateState(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestFactory *arg1 = (iQuestFactory *) 0 ;
@@ -108065,6 +108208,40 @@ SWIGINTERN PyObject *_wrap_iQuestFactory_CreateSequence(PyObject *SWIGUNUSEDPARM
   arg2 = reinterpret_cast< char * >(buf2);
   result = (iCelSequenceFactory *)(arg1)->CreateSequence((char const *)arg2);
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelSequenceFactory, 0 |  0 );
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuestFactory_RemoveSequence(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestFactory *arg1 = (iQuestFactory *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestFactory_RemoveSequence",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestFactory, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestFactory_RemoveSequence" "', argument " "1"" of type '" "iQuestFactory *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestFactory * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestFactory_RemoveSequence" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)(arg1)->RemoveSequence((char const *)arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
   return resultobj;
 fail:
@@ -121886,6 +122063,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelEntityTemplate_FindPropertyClassTemplate", _wrap_iCelEntityTemplate_FindPropertyClassTemplate, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetPropertyClassTemplateCount", _wrap_iCelEntityTemplate_GetPropertyClassTemplateCount, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetPropertyClassTemplate", _wrap_iCelEntityTemplate_GetPropertyClassTemplate, METH_VARARGS, NULL},
+	 { (char *)"iCelEntityTemplate_RemovePropertyClassTemplate", _wrap_iCelEntityTemplate_RemovePropertyClassTemplate, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_SetBehaviour", _wrap_iCelEntityTemplate_SetBehaviour, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetBehaviourLayer", _wrap_iCelEntityTemplate_GetBehaviourLayer, METH_VARARGS, NULL},
 	 { (char *)"iCelEntityTemplate_GetBehaviour", _wrap_iCelEntityTemplate_GetBehaviour, METH_VARARGS, NULL},
@@ -123960,10 +124138,12 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestFactory_Load", _wrap_iQuestFactory_Load, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_Save", _wrap_iQuestFactory_Save, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetState", _wrap_iQuestFactory_GetState, METH_VARARGS, NULL},
+	 { (char *)"iQuestFactory_RemoveState", _wrap_iQuestFactory_RemoveState, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_CreateState", _wrap_iQuestFactory_CreateState, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetStates", _wrap_iQuestFactory_GetStates, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetSequence", _wrap_iQuestFactory_GetSequence, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_CreateSequence", _wrap_iQuestFactory_CreateSequence, METH_VARARGS, NULL},
+	 { (char *)"iQuestFactory_RemoveSequence", _wrap_iQuestFactory_RemoveSequence, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_GetSequences", _wrap_iQuestFactory_GetSequences, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_SetDefaultParameter", _wrap_iQuestFactory_SetDefaultParameter, METH_VARARGS, NULL},
 	 { (char *)"iQuestFactory_ClearDefaultParameters", _wrap_iQuestFactory_ClearDefaultParameters, METH_VARARGS, NULL},
