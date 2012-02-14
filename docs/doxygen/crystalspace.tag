@@ -80855,7 +80855,7 @@
       <type>csStringBase &amp;</type>
       <name>Replace</name>
       <anchorfile>classcsStringBase.html</anchorfile>
-      <anchor>ab958068f04f4b40493de423aac9e68d7</anchor>
+      <anchor>a5afea71d5b3f5f85f77f5945f1c6dbbe</anchor>
       <arglist>(T const &amp;val)</arglist>
     </member>
     <member kind="function">
@@ -103238,6 +103238,13 @@
       <anchorfile>structiRenderView.html</anchorfile>
       <anchor>a75c7b9fd0c3d202aeb3f6e587910677b</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetOriginalCamera</name>
+      <anchorfile>structiRenderView.html</anchorfile>
+      <anchor>a8280cd8868daa27d418f56364afc0427</anchor>
+      <arglist>(iCamera *camera)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -134044,11 +134051,11 @@
       <anchor>adc3b811569aaf963ef3f28b0e62c99be</anchor>
       <arglist>(const CS::Utility::MeshFilter &amp;filter)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetOriginalCamera</name>
       <anchorfile>classCS_1_1RenderManager_1_1RenderView.html</anchorfile>
-      <anchor>a926ac52dbe0dcd406ea786904ed0a117</anchor>
+      <anchor>aa10d7c1b8803f119a04fd51508620775</anchor>
       <arglist>(iCamera *camera)</arglist>
     </member>
     <member kind="function">
