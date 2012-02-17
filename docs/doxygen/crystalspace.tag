@@ -22554,6 +22554,13 @@
       <anchor>ab89d43782322865ee3b33ea0a92b7854</anchor>
       <arglist>(const CS::Math::Matrix4 &amp;m, float matrix[16], bool rowMajor=false)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>makeGLMatrixInverted</name>
+      <anchorfile>group__plugincommon.html</anchorfile>
+      <anchor>ga93fd2bff52a816c665b354b63cc61c0a</anchor>
+      <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>glss.h</name>
@@ -35670,6 +35677,13 @@
       <name>makeGLMatrix</name>
       <anchorfile>group__plugincommon.html</anchorfile>
       <anchor>ga092bd65b19184dfa3a3d4d72223ea9e1</anchor>
+      <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>makeGLMatrixInverted</name>
+      <anchorfile>group__plugincommon.html</anchorfile>
+      <anchor>ga93fd2bff52a816c665b354b63cc61c0a</anchor>
       <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
     </member>
   </compound>
@@ -93827,6 +93841,13 @@
       <anchorfile>structiGraphics3D.html</anchorfile>
       <anchor>a49a535f60231f8b5a5c2bdc98b4d3e69</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawLine</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a6d0146a66da5f451c8dfbbf7ab32615e</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
