@@ -1621,6 +1621,8 @@
     <includes id="cursor_8h" name="cursor.h" local="yes" imported="no">ivideo/cursor.h</includes>
     <class kind="struct">csPixelCoord</class>
     <class kind="struct">iGraphics2D</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Math</namespace>
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
@@ -64456,6 +64458,20 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>Draw3DLine</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a892870672857fc6b2d18b5688633985e</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>Draw3DLine</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a6ac0e991e5aad0ca2791c8e207ae5da0</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawBox</name>
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a33e6830f68abd1b0071ff6382b6f1927</anchor>
@@ -64628,6 +64644,13 @@
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a360b9605454e309e4852d739ccb20e5e</anchor>
       <arglist>(int iColor, GLubyte &amp;oR, GLubyte &amp;oG, GLubyte &amp;oB, GLubyte &amp;oA)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>DrawLineNearClip</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>acba567a022331c1a63d428a0e2214169</anchor>
+      <arglist>(csVector3 &amp;v1, csVector3 &amp;v2)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -93496,6 +93519,20 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>Draw3DLine</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>abdf538c04722b7f77f601ea8565cdb2c</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Draw3DLine</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>aa66f315cdc8808c841e7125b71022c24</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>DrawBox</name>
       <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>ad6abb6d4a418ad240d83675d6c3cf6c3</anchor>
@@ -93841,13 +93878,6 @@
       <anchorfile>structiGraphics3D.html</anchorfile>
       <anchor>a49a535f60231f8b5a5c2bdc98b4d3e69</anchor>
       <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DrawLine</name>
-      <anchorfile>structiGraphics3D.html</anchorfile>
-      <anchor>a6d0146a66da5f451c8dfbbf7ab32615e</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
