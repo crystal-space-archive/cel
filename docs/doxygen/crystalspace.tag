@@ -29963,6 +29963,48 @@
     <class kind="struct">iSectorIterator</class>
     <class kind="struct">iSectorList</class>
     <class kind="struct">iSectorMeshCallback</class>
+    <member kind="enumeration">
+      <name>csFogMode</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>ga446563fb6a66addc4e35c18a9d59e4b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_NONE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a3190a28768c65a74f908f4f405a32f92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_LINEAR_CRYSTALSPACE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a1a9a6631542b7c647e2b0a67e8421746</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_CRYSTALSPACE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3ad3b1ee19313ab6461470122ad2c16ff1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_EXP</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3ad1ece3bda2618708759efa2c623460f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_EXP2</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a4c8b5995a766925aaccbdcdeee5c5190</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_LINEAR</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a189ae8f62a93af02dd274c4b5437fe7b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>sharevar.h</name>
@@ -35788,6 +35830,48 @@
       <name>CS_PORTAL_ZFILL</name>
       <anchorfile>group__engine3d.html</anchorfile>
       <anchor>gae7443e0b68ff8e90ac2ae49a79482e44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>csFogMode</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>ga446563fb6a66addc4e35c18a9d59e4b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_NONE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a3190a28768c65a74f908f4f405a32f92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_LINEAR_CRYSTALSPACE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a1a9a6631542b7c647e2b0a67e8421746</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_CRYSTALSPACE</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3ad3b1ee19313ab6461470122ad2c16ff1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_EXP</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3ad1ece3bda2618708759efa2c623460f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_EXP2</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a4c8b5995a766925aaccbdcdeee5c5190</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_FOG_MODE_LINEAR</name>
+      <anchorfile>group__engine3d.html</anchorfile>
+      <anchor>gga446563fb6a66addc4e35c18a9d59e4b3a189ae8f62a93af02dd274c4b5437fe7b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -64458,20 +64542,6 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
-      <name>Draw3DLine</name>
-      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
-      <anchor>a892870672857fc6b2d18b5688633985e</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>Draw3DLine</name>
-      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
-      <anchor>a6ac0e991e5aad0ca2791c8e207ae5da0</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
       <name>DrawBox</name>
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a33e6830f68abd1b0071ff6382b6f1927</anchor>
@@ -64483,6 +64553,20 @@
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a259bb764c5bc5888e08fd7d9a4bdd6d1</anchor>
       <arglist>(float x1, float y1, float x2, float y2, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>ad4e41b4cdeb7fd4eb1b35c32623c6deb</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a2ac9676889c9f6c0be4cd91bcc6bddf6</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -79102,10 +79186,10 @@
     <name>csShaderProgram::ProgramSource</name>
     <filename>structcsShaderProgram_1_1ProgramSource.html</filename>
     <member kind="variable">
-      <type>csRef&lt; iFile &gt;</type>
-      <name>programFile</name>
+      <type>csRef&lt; iDataBuffer &gt;</type>
+      <name>programData</name>
       <anchorfile>structcsShaderProgram_1_1ProgramSource.html</anchorfile>
-      <anchor>a5fa27e12287901cacd3bcc79553fcf42</anchor>
+      <anchor>a5552b4d16e4e7986195964d80eed0892</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -93519,20 +93603,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>Draw3DLine</name>
-      <anchorfile>structiGraphics2D.html</anchorfile>
-      <anchor>abdf538c04722b7f77f601ea8565cdb2c</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Draw3DLine</name>
-      <anchorfile>structiGraphics2D.html</anchorfile>
-      <anchor>aa66f315cdc8808c841e7125b71022c24</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>DrawBox</name>
       <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>ad6abb6d4a418ad240d83675d6c3cf6c3</anchor>
@@ -93544,6 +93614,20 @@
       <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>a3b86658dbcea0a9cfb7e6b19483a4bc7</anchor>
       <arglist>(float x1, float y1, float x2, float y2, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>a28bd5dff28a40671551920769b2d72af</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>a35b66a4606c2dfcb7c323252a5386796</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -105785,8 +105869,8 @@
       <type>virtual bool</type>
       <name>Load</name>
       <anchorfile>structiShaderProgram.html</anchorfile>
-      <anchor>a73d9f47e533a25981ad5977f06da79f0</anchor>
-      <arglist>(iShaderDestinationResolver *resolve, const char *program, csArray&lt; csShaderVarMapping &gt; &amp;mappings)=0</arglist>
+      <anchor>a1c4893bdb469adb5c949567086de0427</anchor>
+      <arglist>(iShaderDestinationResolver *resolve, const char *program, const csArray&lt; csShaderVarMapping &gt; &amp;mappings)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
