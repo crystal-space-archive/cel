@@ -30754,9 +30754,11 @@
     <class kind="struct">CS::Animation::iBodyBoneJoint</class>
     <class kind="struct">CS::Animation::iBodyBoneProperties</class>
     <class kind="struct">CS::Animation::iBodyChain</class>
+    <class kind="struct">CS::Animation::iBodyChainIterator</class>
     <class kind="struct">CS::Animation::iBodyChainNode</class>
     <class kind="struct">CS::Animation::iBodyManager</class>
     <class kind="struct">CS::Animation::iBodySkeleton</class>
+    <class kind="struct">CS::Animation::iBoneIDIterator</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
   </compound>
@@ -117393,9 +117395,11 @@
     <class kind="struct">CS::Animation::iBodyBoneJoint</class>
     <class kind="struct">CS::Animation::iBodyBoneProperties</class>
     <class kind="struct">CS::Animation::iBodyChain</class>
+    <class kind="struct">CS::Animation::iBodyChainIterator</class>
     <class kind="struct">CS::Animation::iBodyChainNode</class>
     <class kind="struct">CS::Animation::iBodyManager</class>
     <class kind="struct">CS::Animation::iBodySkeleton</class>
+    <class kind="struct">CS::Animation::iBoneIDIterator</class>
     <class kind="struct">CS::Animation::iFurAnimatedMeshControl</class>
     <class kind="struct">CS::Animation::iFurAnimationControl</class>
     <class kind="struct">CS::Animation::iFurPhysicsControl</class>
@@ -118372,6 +118376,11 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>CS::Animation::iBodyChainIterator</name>
+    <filename>structCS_1_1Animation_1_1iBodyChainIterator.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
     <name>CS::Animation::iBodyChainNode</name>
     <filename>structCS_1_1Animation_1_1iBodyChainNode.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -118505,6 +118514,20 @@
       <arglist>(const char *name) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iBoneIDIterator &gt;</type>
+      <name>GetBodyBones</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>ad42f8a92d88bd483919b6832a3fccfa4</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iBodyChainIterator &gt;</type>
+      <name>GetBodyChains</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>a02a255c1464233aca6d71c678103fc5b</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
       <name>GetName</name>
       <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
@@ -118518,6 +118541,25 @@
       <anchor>ae7875f8044d91335472d3d33ebb71a36</anchor>
       <arglist>() const =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveBodyBone</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>aeed79ca359fb00f4fac797e0e51c5f4b</anchor>
+      <arglist>(BoneID bone)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveBodyChain</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>a6c396eb9b275f329b88ecfce56583bf8</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Animation::iBoneIDIterator</name>
+    <filename>structCS_1_1Animation_1_1iBoneIDIterator.html</filename>
+    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iFurAnimatedMeshControl</name>
