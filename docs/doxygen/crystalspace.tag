@@ -118034,8 +118034,8 @@
       <type>virtual bool</type>
       <name>GetSphereGeometry</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyBoneCollider.html</anchorfile>
-      <anchor>ac0bb5881aebc696eb6b299c755a7052c</anchor>
-      <arglist>(csSphere &amp;sphere) const =0</arglist>
+      <anchor>a07ad94bece230a91d8c8bd9f98b96437</anchor>
+      <arglist>(float &amp;radius) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csOrthoTransform</type>
@@ -118118,8 +118118,8 @@
       <type>virtual bool</type>
       <name>SetSphereGeometry</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyBoneCollider.html</anchorfile>
-      <anchor>a168570eb70c56db5a72e6de8c74dbf43</anchor>
-      <arglist>(const csSphere &amp;sphere)=0</arglist>
+      <anchor>a7307006c0ca8c235907e135e7913e98b</anchor>
+      <arglist>(float radius)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
