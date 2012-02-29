@@ -115904,6 +115904,20 @@
       <anchor>a0af78d97576e9a8eee9549690783aec0</anchor>
       <arglist>(iObject *object, const char *name)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>HashCombine</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>ae2a5c3f3ec23f5516734cd8ed8b5ce52</anchor>
+      <arglist>(uint &amp;hash, uint nextHash)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint</type>
+      <name>HashCompute</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>ac1313276c15dd97c25345b82be5466a6</anchor>
+      <arglist>(const T &amp;val)</arglist>
+    </member>
     <member kind="function">
       <type>csHandlerID</type>
       <name>RegisterWeakListener</name>
