@@ -30378,7 +30378,6 @@
     <includes id="furmesh_8h" name="furmesh.h" local="yes" imported="no">imesh/furmesh.h</includes>
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
     <includes id="gmeshanim_8h" name="gmeshanim.h" local="yes" imported="no">imesh/gmeshanim.h</includes>
-    <includes id="gmeshskel2_8h" name="gmeshskel2.h" local="yes" imported="no">imesh/gmeshskel2.h</includes>
     <includes id="haze_8h" name="haze.h" local="yes" imported="no">imesh/haze.h</includes>
     <includes id="lghtng_8h" name="lghtng.h" local="yes" imported="no">imesh/lghtng.h</includes>
     <includes id="modifiableterrain_8h" name="modifiableterrain.h" local="yes" imported="no">imesh/modifiableterrain.h</includes>
@@ -37125,6 +37124,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>ga4ab794628cc8ff20013975bfd71b7f17</anchor>
       <arglist>(iSkeletonAnimNode *node, bool isPlaying)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RecreateAnimationTree</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaa611a9fedbdcf1552f0a87b2e3eda2a8</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -72912,6 +72918,13 @@
       <arglist>(const csArray&lt; csPen3DCoordinatePair &gt; &amp;pairs)</arglist>
     </member>
     <member kind="function">
+      <type>const csReversibleTransform &amp;</type>
+      <name>GetLocal2ObjectTransform</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>aa71b064f33f113a56a628d272df09723</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>SetActiveCache</name>
       <anchorfile>classcsPen3D.html</anchorfile>
@@ -72924,6 +72937,13 @@
       <anchorfile>classcsPen3D.html</anchorfile>
       <anchor>a4a1230945c4b5169ffbc1681669a2189</anchor>
       <arglist>(float r, float g, float b, float a)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetLocal2ObjectTransform</name>
+      <anchorfile>classcsPen3D.html</anchorfile>
+      <anchor>ac365ba362b68223e0a4b178d230f64c1</anchor>
+      <arglist>(const csReversibleTransform &amp;trans)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -118689,6 +118709,13 @@
       <anchorfile>group__meshplugins.html</anchorfile>
       <anchor>gaaab0eed5e3beea34bfdd7408516e8310</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RecreateAnimationTree</name>
+      <anchorfile>group__meshplugins.html</anchorfile>
+      <anchor>gaa611a9fedbdcf1552f0a87b2e3eda2a8</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
