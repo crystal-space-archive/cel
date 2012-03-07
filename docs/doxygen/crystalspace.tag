@@ -120521,6 +120521,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iDynamicSystem *</type>
+      <name>GetDynamicSystem</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
+      <anchor>a4003df829ca7c1bb69f035075d2b8d0f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>RemoveBodyChain</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
@@ -120540,6 +120547,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
       <anchor>ac610baccf57fe723ec7d184fb5b47755</anchor>
       <arglist>(iSkeletonAnimNodeFactory *node)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDynamicSystem</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonRagdollNodeFactory.html</anchorfile>
+      <anchor>adc547df395fbf7198e4767874f7c2dcc</anchor>
+      <arglist>(iDynamicSystem *system)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
