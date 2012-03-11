@@ -138366,7 +138366,7 @@
   <compound kind="class">
     <name>CS::Utility::ResourceCache::PurgeConditionAfterTime</name>
     <filename>classCS_1_1Utility_1_1ResourceCache_1_1PurgeConditionAfterTime.html</filename>
-    <templarg></templarg>
+    <templarg>TimeType</templarg>
     <member kind="function">
       <type>void</type>
       <name>MarkActive</name>
