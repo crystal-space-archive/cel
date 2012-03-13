@@ -114571,6 +114571,202 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_celPcCommon_Error__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Error",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Error" "', argument " "1"" of type '" "celPcCommon const *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Error" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)((celPcCommon const *)arg1)->Error((char const *)arg2,arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Error(PyObject *self, PyObject *args) {
+  PyObject *resultobj;
+  PyObject *varargs;
+  PyObject *newargs;
+  
+  newargs = PyTuple_GetSlice(args,0,2);
+  varargs = PyTuple_GetSlice(args,2,PyTuple_Size(args)+1);
+  resultobj = _wrap_celPcCommon_Error__varargs__(self,newargs,varargs);
+  Py_XDECREF(newargs);
+  Py_XDECREF(varargs);
+  return resultobj;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Warning__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Warning",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Warning" "', argument " "1"" of type '" "celPcCommon const *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Warning" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)((celPcCommon const *)arg1)->Warning((char const *)arg2,arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Warning(PyObject *self, PyObject *args) {
+  PyObject *resultobj;
+  PyObject *varargs;
+  PyObject *newargs;
+  
+  newargs = PyTuple_GetSlice(args,0,2);
+  varargs = PyTuple_GetSlice(args,2,PyTuple_Size(args)+1);
+  resultobj = _wrap_celPcCommon_Warning__varargs__(self,newargs,varargs);
+  Py_XDECREF(newargs);
+  Py_XDECREF(varargs);
+  return resultobj;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Bug__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Bug",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Bug" "', argument " "1"" of type '" "celPcCommon const *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Bug" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)((celPcCommon const *)arg1)->Bug((char const *)arg2,arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Bug(PyObject *self, PyObject *args) {
+  PyObject *resultobj;
+  PyObject *varargs;
+  PyObject *newargs;
+  
+  newargs = PyTuple_GetSlice(args,0,2);
+  varargs = PyTuple_GetSlice(args,2,PyTuple_Size(args)+1);
+  resultobj = _wrap_celPcCommon_Bug__varargs__(self,newargs,varargs);
+  Py_XDECREF(newargs);
+  Py_XDECREF(varargs);
+  return resultobj;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Notify__varargs__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *varargs) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  char *arg2 = (char *) 0 ;
+  void *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 ;
+  char *buf2 = 0 ;
+  int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Notify",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Notify" "', argument " "1"" of type '" "celPcCommon const *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Notify" "', argument " "2"" of type '" "char const *""'");
+  }
+  arg2 = reinterpret_cast< char * >(buf2);
+  result = (bool)((celPcCommon const *)arg1)->Notify((char const *)arg2,arg3);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return resultobj;
+fail:
+  if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Notify(PyObject *self, PyObject *args) {
+  PyObject *resultobj;
+  PyObject *varargs;
+  PyObject *newargs;
+  
+  newargs = PyTuple_GetSlice(args,0,2);
+  varargs = PyTuple_GetSlice(args,2,PyTuple_Size(args)+1);
+  resultobj = _wrap_celPcCommon_Notify__varargs__(self,newargs,varargs);
+  Py_XDECREF(newargs);
+  Py_XDECREF(varargs);
+  return resultobj;
+}
+
+
 SWIGINTERN PyObject *_wrap_celPcCommon_GetTypeName(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celDataType arg1 ;
@@ -115449,6 +115645,177 @@ fail:
 SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_12(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
+  iCelPropertyClass **arg2 = 0 ;
+  iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
+  SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg4 ;
+  bool arg5 ;
+  iCelPropertyClass *arg6 = (iCelPropertyClass *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  void *argp6 = 0 ;
+  int res6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Fetch",6,6,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Fetch" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_p_iCelPropertyClass,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  arg2 = reinterpret_cast< iCelPropertyClass ** >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celPcCommon_Fetch" "', argument " "3"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg3 = reinterpret_cast< iCelParameterBlock * >(argp3);
+  {
+    arg4 = (csStringID)PyLong_AsUnsignedLong(obj3);
+  }
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "celPcCommon_Fetch" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
+  res6 = SWIG_ConvertPtr(obj5, &argp6,SWIGTYPE_p_iCelPropertyClass, 0 |  0 );
+  if (!SWIG_IsOK(res6)) {
+    SWIG_exception_fail(SWIG_ArgError(res6), "in method '" "celPcCommon_Fetch" "', argument " "6"" of type '" "iCelPropertyClass *""'"); 
+  }
+  arg6 = reinterpret_cast< iCelPropertyClass * >(argp6);
+  result = (bool)(arg1)->Fetch(*arg2,arg3,arg4,arg5,arg6);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_13(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  iCelPropertyClass **arg2 = 0 ;
+  iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
+  SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg4 ;
+  bool arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Fetch",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Fetch" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_p_iCelPropertyClass,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  arg2 = reinterpret_cast< iCelPropertyClass ** >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celPcCommon_Fetch" "', argument " "3"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg3 = reinterpret_cast< iCelParameterBlock * >(argp3);
+  {
+    arg4 = (csStringID)PyLong_AsUnsignedLong(obj3);
+  }
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "celPcCommon_Fetch" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
+  result = (bool)(arg1)->Fetch(*arg2,arg3,arg4,arg5);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_14(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
+  iCelPropertyClass **arg2 = 0 ;
+  iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
+  SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"celPcCommon_Fetch",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_celPcCommon, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "celPcCommon_Fetch" "', argument " "1"" of type '" "celPcCommon *""'"); 
+  }
+  arg1 = reinterpret_cast< celPcCommon * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_p_iCelPropertyClass,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "celPcCommon_Fetch" "', argument " "2"" of type '" "iCelPropertyClass *&""'"); 
+  }
+  arg2 = reinterpret_cast< iCelPropertyClass ** >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iCelParameterBlock, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "celPcCommon_Fetch" "', argument " "3"" of type '" "iCelParameterBlock *""'"); 
+  }
+  arg3 = reinterpret_cast< iCelParameterBlock * >(argp3);
+  {
+    arg4 = (csStringID)PyLong_AsUnsignedLong(obj3);
+  }
+  result = (bool)(arg1)->Fetch(*arg2,arg3,arg4);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_15(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector2 *arg2 = 0 ;
   iCelParameterBlock *arg3 = (iCelParameterBlock *) 0 ;
   SwigValueWrapper< CS::StringID< CS::StringSetTag::General > > arg4 ;
@@ -115520,7 +115887,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_13(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_16(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector2 *arg2 = 0 ;
@@ -115577,7 +115944,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_14(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_17(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector2 *arg2 = 0 ;
@@ -115625,7 +115992,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_15(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_18(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector3 *arg2 = 0 ;
@@ -115699,7 +116066,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_16(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_19(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector3 *arg2 = 0 ;
@@ -115756,7 +116123,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_17(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_20(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector3 *arg2 = 0 ;
@@ -115804,7 +116171,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_18(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_21(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector4 *arg2 = 0 ;
@@ -115878,7 +116245,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_19(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_22(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector4 *arg2 = 0 ;
@@ -115935,7 +116302,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_20(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_23(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csVector4 *arg2 = 0 ;
@@ -115983,7 +116350,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_21(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_24(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor *arg2 = 0 ;
@@ -116057,7 +116424,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_22(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_25(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor *arg2 = 0 ;
@@ -116114,7 +116481,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_23(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_26(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor *arg2 = 0 ;
@@ -116162,7 +116529,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_24(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_27(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor4 *arg2 = 0 ;
@@ -116236,7 +116603,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_25(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_28(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor4 *arg2 = 0 ;
@@ -116293,7 +116660,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_26(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_celPcCommon_Fetch__SWIG_29(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   celPcCommon *arg1 = (celPcCommon *) 0 ;
   csColor4 *arg2 = 0 ;
@@ -116454,7 +116821,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_p_iCelPropertyClass, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116478,7 +116845,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116502,7 +116869,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116526,6 +116893,30 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
+          }
+          if (_v) {
+            return _wrap_celPcCommon_Fetch__SWIG_23(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
       int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor4, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
@@ -116537,7 +116928,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
             _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
           }
           if (_v) {
-            return _wrap_celPcCommon_Fetch__SWIG_26(self, args);
+            return _wrap_celPcCommon_Fetch__SWIG_29(self, args);
           }
         }
       }
@@ -116561,7 +116952,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
             _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
           }
           if (_v) {
-            return _wrap_celPcCommon_Fetch__SWIG_23(self, args);
+            return _wrap_celPcCommon_Fetch__SWIG_26(self, args);
           }
         }
       }
@@ -116574,37 +116965,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_float, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          {
-            _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
-          }
-          if (_v) {
-            {
-              int res = SWIG_AsVal_bool(argv[4], NULL);
-              _v = SWIG_CheckState(res);
-            }
-            if (_v) {
-              return _wrap_celPcCommon_Fetch__SWIG_7(self, args);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116664,7 +117025,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116724,7 +117085,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor4, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116740,7 +117101,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              return _wrap_celPcCommon_Fetch__SWIG_25(self, args);
+              return _wrap_celPcCommon_Fetch__SWIG_22(self, args);
             }
           }
         }
@@ -116784,7 +117145,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor4, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116800,7 +117161,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              return _wrap_celPcCommon_Fetch__SWIG_22(self, args);
+              return _wrap_celPcCommon_Fetch__SWIG_28(self, args);
             }
           }
         }
@@ -116814,7 +117175,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_p_iCelPropertyClass, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116837,14 +117198,14 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
       }
     }
   }
-  if (argc == 6) {
+  if (argc == 5) {
     int _v;
     void *vptr = 0;
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116860,25 +117221,21 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector4, 0);
-              _v = SWIG_CheckState(res);
-              if (_v) {
-                return _wrap_celPcCommon_Fetch__SWIG_18(self, args);
-              }
+              return _wrap_celPcCommon_Fetch__SWIG_25(self, args);
             }
           }
         }
       }
     }
   }
-  if (argc == 6) {
+  if (argc == 5) {
     int _v;
     void *vptr = 0;
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_float, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116894,11 +117251,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector2, 0);
-              _v = SWIG_CheckState(res);
-              if (_v) {
-                return _wrap_celPcCommon_Fetch__SWIG_12(self, args);
-              }
+              return _wrap_celPcCommon_Fetch__SWIG_7(self, args);
             }
           }
         }
@@ -116948,7 +117301,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor4, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector4, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -116964,10 +117317,10 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csColor4, 0);
+              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector4, 0);
               _v = SWIG_CheckState(res);
               if (_v) {
-                return _wrap_celPcCommon_Fetch__SWIG_24(self, args);
+                return _wrap_celPcCommon_Fetch__SWIG_21(self, args);
               }
             }
           }
@@ -117018,7 +117371,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector2, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -117034,7 +117387,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector3, 0);
+              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector2, 0);
               _v = SWIG_CheckState(res);
               if (_v) {
                 return _wrap_celPcCommon_Fetch__SWIG_15(self, args);
@@ -117052,7 +117405,7 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
     _v = SWIG_CheckState(res);
     if (_v) {
       void *vptr = 0;
-      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor, 0);
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor4, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         void *vptr = 0;
@@ -117068,10 +117421,10 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
               _v = SWIG_CheckState(res);
             }
             if (_v) {
-              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csColor, 0);
+              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csColor4, 0);
               _v = SWIG_CheckState(res);
               if (_v) {
-                return _wrap_celPcCommon_Fetch__SWIG_21(self, args);
+                return _wrap_celPcCommon_Fetch__SWIG_27(self, args);
               }
             }
           }
@@ -117149,6 +117502,109 @@ SWIGINTERN PyObject *_wrap_celPcCommon_Fetch(PyObject *self, PyObject *args) {
       }
     }
   }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csColor, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_bool(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csColor, 0);
+              _v = SWIG_CheckState(res);
+              if (_v) {
+                return _wrap_celPcCommon_Fetch__SWIG_24(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_csVector3, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_bool(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              int res = SWIG_ConvertPtr(argv[5], 0, SWIGTYPE_p_csVector3, 0);
+              _v = SWIG_CheckState(res);
+              if (_v) {
+                return _wrap_celPcCommon_Fetch__SWIG_18(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if (argc == 6) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_celPcCommon, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_p_iCelPropertyClass, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_iCelParameterBlock, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          {
+            _v = (PyLong_Check(argv[3]) || PyInt_Check(argv[3]));
+          }
+          if (_v) {
+            {
+              int res = SWIG_AsVal_bool(argv[4], NULL);
+              _v = SWIG_CheckState(res);
+            }
+            if (_v) {
+              void *vptr = 0;
+              int res = SWIG_ConvertPtr(argv[5], &vptr, SWIGTYPE_p_iCelPropertyClass, 0);
+              _v = SWIG_CheckState(res);
+              if (_v) {
+                return _wrap_celPcCommon_Fetch__SWIG_12(self, args);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'celPcCommon_Fetch'.\n"
@@ -117165,6 +117621,9 @@ fail:
     "    Fetch(celPcCommon *,bool &,iCelParameterBlock *,csStringID,bool,bool)\n"
     "    Fetch(celPcCommon *,bool &,iCelParameterBlock *,csStringID,bool)\n"
     "    Fetch(celPcCommon *,bool &,iCelParameterBlock *,csStringID)\n"
+    "    Fetch(celPcCommon *,iCelPropertyClass *&,iCelParameterBlock *,csStringID,bool,iCelPropertyClass *)\n"
+    "    Fetch(celPcCommon *,iCelPropertyClass *&,iCelParameterBlock *,csStringID,bool)\n"
+    "    Fetch(celPcCommon *,iCelPropertyClass *&,iCelParameterBlock *,csStringID)\n"
     "    Fetch(celPcCommon *,csVector2 &,iCelParameterBlock *,csStringID,bool,csVector2)\n"
     "    Fetch(celPcCommon *,csVector2 &,iCelParameterBlock *,csStringID,bool)\n"
     "    Fetch(celPcCommon *,csVector2 &,iCelParameterBlock *,csStringID)\n"
@@ -126844,6 +127303,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_celPcCommon", _wrap_new_celPcCommon, METH_VARARGS, NULL},
 	 { (char *)"delete_celPcCommon", _wrap_delete_celPcCommon, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_HavePropertyClassesChanged", _wrap_celPcCommon_HavePropertyClassesChanged, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Error", _wrap_celPcCommon_Error, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Warning", _wrap_celPcCommon_Warning, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Bug", _wrap_celPcCommon_Bug, METH_VARARGS, NULL},
+	 { (char *)"celPcCommon_Notify", _wrap_celPcCommon_Notify, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_GetTypeName", _wrap_celPcCommon_GetTypeName, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_IsTypeCompatible", _wrap_celPcCommon_IsTypeCompatible, METH_VARARGS, NULL},
 	 { (char *)"celPcCommon_CheckTypeCompatible", _wrap_celPcCommon_CheckTypeCompatible, METH_VARARGS, NULL},
