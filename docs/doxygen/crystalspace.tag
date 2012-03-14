@@ -30758,6 +30758,37 @@
     <class kind="struct">CS::Animation::iBoneIDIterator</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
+    <namespace>CS::Mesh</namespace>
+    <member kind="enumeration">
+      <name>ColliderType</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_BOX</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba94867139ddfdad1d9ed5c24f6c370c11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_SPHERE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba25860e5c5172b6e12de7c474e85baaa6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_CYLINDER</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69baa98f448297ca107d8bd19c236aba2190</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_CAPSULE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba04701ec2df0012a4ad23a402687d0237</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>emit.h</name>
@@ -117504,6 +117535,36 @@
       <arglist></arglist>
     </member>
     <member kind="enumeration">
+      <name>ColliderType</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_BOX</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba94867139ddfdad1d9ed5c24f6c370c11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_SPHERE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba25860e5c5172b6e12de7c474e85baaa6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_CYLINDER</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69baa98f448297ca107d8bd19c236aba2190</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLIDER_CAPSULE</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a1a36c7749aa72a456c904237a2a7e69ba04701ec2df0012a4ad23a402687d0237</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
       <name>RagdollState</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
       <anchor>a427abb69c514b522c593717fb27634c9</anchor>
@@ -118572,6 +118633,20 @@
       <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
       <anchor>ae7875f8044d91335472d3d33ebb71a36</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>PopulateDefaultBodyChains</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>adc242dbda1b0f843eab2d08506f18175</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>PopulateDefaultColliders</name>
+      <anchorfile>structCS_1_1Animation_1_1iBodySkeleton.html</anchorfile>
+      <anchor>a8bfe3105d26c3e402e48845cabccd134</anchor>
+      <arglist>(const CS::Mesh::iAnimatedMeshFactory *animeshFactory, ColliderType colliderType=COLLIDER_CAPSULE)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
