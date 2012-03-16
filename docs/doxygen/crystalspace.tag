@@ -89740,13 +89740,6 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual const csVector3 &amp;</type>
-      <name>GetPhysicsOrigin</name>
-      <anchorfile>structiDynamicSystem.html</anchorfile>
-      <anchor>a7f0c04b2bc7448257e90f7c2b127cdfe</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRollingDampener</name>
       <anchorfile>structiDynamicSystem.html</anchorfile>
@@ -89801,13 +89794,6 @@
       <anchorfile>structiDynamicSystem.html</anchorfile>
       <anchor>a04d0000cf75b84fe6352e57386b82d78</anchor>
       <arglist>(float d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPhysicsOrigin</name>
-      <anchorfile>structiDynamicSystem.html</anchorfile>
-      <anchor>a271eea5441d7c39608954360eda0d1f0</anchor>
-      <arglist>(const csVector3 &amp;origin)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
