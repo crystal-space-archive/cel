@@ -33222,6 +33222,30 @@
       <anchor>a72da4b9142c3ee0f8429585041df8d41a2aae67a2524fb18a9e9dce70d8dc610a</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <name>MeshDuplicationMode</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_NONE</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fa1199fcd49bc047b5e1f806cbdc896fcc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_INTERLEAVED</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fa616064d5dc7c5ab672c392bed8e19332</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_CONTIGUOUS</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fafd3db3e52b54f493e30414bf34b8bd42</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>bullet2.h</name>
@@ -33708,14 +33732,13 @@
     <filename>softanim_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="genmesh_8h" name="genmesh.h" local="yes" imported="no">imesh/genmesh.h</includes>
+    <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
     <class kind="struct">CS::Animation::iSoftBodyAnimationControl</class>
     <class kind="struct">CS::Animation::iSoftBodyAnimationControlFactory</class>
     <class kind="struct">CS::Animation::iSoftBodyAnimationControlType</class>
     <namespace>CS</namespace>
     <namespace>CS::Animation</namespace>
     <namespace>CS::Mesh</namespace>
-    <namespace>CS::Physics</namespace>
-    <namespace>CS::Physics::Bullet</namespace>
   </compound>
   <compound kind="file">
     <name>stdrep.h</name>
@@ -118429,8 +118452,8 @@
       <type>virtual iBodySkeleton *</type>
       <name>GetBodySkeleton</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
-      <anchor>a01b1bfcd04e89918b4a485a8d73e7ba2</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>a65e5f1cd3ccc9ea16e1ccd98d5b0a37e</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
@@ -118443,8 +118466,8 @@
       <type>virtual iBodyChainNode *</type>
       <name>GetRootNode</name>
       <anchorfile>structCS_1_1Animation_1_1iBodyChain.html</anchorfile>
-      <anchor>a9aba77f999f9cb9ea4ae5f042f5b5a5f</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>ac5108c98aea5a49dfa13c2004b2a296d</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -120869,8 +120892,8 @@
       <type>virtual void</type>
       <name>SetSoftBody</name>
       <anchorfile>structCS_1_1Animation_1_1iSoftBodyAnimationControl.html</anchorfile>
-      <anchor>a938e77e1630c2f27cd59db44fa135429</anchor>
-      <arglist>(CS::Physics::Bullet::iSoftBody *body, bool doubleSided=false)=0</arglist>
+      <anchor>a04c8578838be5c4fb4803e9a9b181045</anchor>
+      <arglist>(CS::Physics::Bullet::iSoftBody *body, CS::Physics::Bullet::MeshDuplicationMode duplicationMode=CS::Physics::Bullet::MESH_DUPLICATION_NONE)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -130822,6 +130845,30 @@
       <anchor>a72da4b9142c3ee0f8429585041df8d41a2aae67a2524fb18a9e9dce70d8dc610a</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <name>MeshDuplicationMode</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_NONE</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fa1199fcd49bc047b5e1f806cbdc896fcc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_INTERLEAVED</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fa616064d5dc7c5ab672c392bed8e19332</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_CONTIGUOUS</name>
+      <anchorfile>namespaceCS_1_1Physics_1_1Bullet.html</anchorfile>
+      <anchor>abb015ebd89bfb5c4dad120df7183532fafd3db3e52b54f493e30414bf34b8bd42</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Physics::Bullet::HitBeamResult</name>
@@ -130971,8 +131018,8 @@
       <type>virtual iSoftBody *</type>
       <name>CreateSoftBody</name>
       <anchorfile>structCS_1_1Physics_1_1Bullet_1_1iDynamicSystem.html</anchorfile>
-      <anchor>a73eecb032191cb812484f3d7cf9de4b0</anchor>
-      <arglist>(iGeneralFactoryState *genmeshFactory, const csOrthoTransform &amp;bodyTransform)=0</arglist>
+      <anchor>accf938b93cd8e125a2cedde18498a3e6</anchor>
+      <arglist>(iGeneralFactoryState *genmeshFactory, const csOrthoTransform &amp;bodyTransform, MeshDuplicationMode duplicationMode=MESH_DUPLICATION_NONE)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
