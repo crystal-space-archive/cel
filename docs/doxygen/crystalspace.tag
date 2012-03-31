@@ -33082,6 +33082,7 @@
     <includes id="conin_8h" name="conin.h" local="yes" imported="no">ivaria/conin.h</includes>
     <includes id="conout_8h" name="conout.h" local="yes" imported="no">ivaria/conout.h</includes>
     <includes id="decal_8h" name="decal.h" local="yes" imported="no">ivaria/decal.h</includes>
+    <includes id="docpreproc_8h" name="docpreproc.h" local="yes" imported="no">ivaria/docpreproc.h</includes>
     <includes id="dynamics_8h" name="dynamics.h" local="yes" imported="no">ivaria/dynamics.h</includes>
     <includes id="dynamicsdebug_8h" name="dynamicsdebug.h" local="yes" imported="no">ivaria/dynamicsdebug.h</includes>
     <includes id="engseq_8h" name="engseq.h" local="yes" imported="no">ivaria/engseq.h</includes>
@@ -33401,6 +33402,14 @@
     <class kind="struct">iDecalBuilder</class>
     <class kind="struct">iDecalManager</class>
     <class kind="struct">iDecalTemplate</class>
+  </compound>
+  <compound kind="file">
+    <name>docpreproc.h</name>
+    <path>/tmp/tmp1/trunk/include/ivaria/</path>
+    <filename>docpreproc_8h</filename>
+    <class kind="struct">CS::DocSystem::iDocumentPreprocessor</class>
+    <namespace>CS</namespace>
+    <namespace>CS::DocSystem</namespace>
   </compound>
   <compound kind="file">
     <name>dynamics.h</name>
@@ -122575,6 +122584,7 @@
   <compound kind="namespace">
     <name>CS::DocSystem</name>
     <filename>namespaceCS_1_1DocSystem.html</filename>
+    <class kind="struct">CS::DocSystem::iDocumentPreprocessor</class>
     <class kind="struct">CS::DocSystem::NodeAttributeCompare</class>
     <class kind="struct">CS::DocSystem::NodeAttributeRegexpTest</class>
     <class kind="struct">CS::DocSystem::NodeAttributeValueTest</class>
@@ -122642,6 +122652,18 @@
       <anchorfile>namespaceCS_1_1DocSystem.html</anchorfile>
       <anchor>a5ca2a28bf8e61d96c5d13cbaedbc22fc</anchor>
       <arglist>(iDocumentNode *node, const char *contents)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::DocSystem::iDocumentPreprocessor</name>
+    <filename>structCS_1_1DocSystem_1_1iDocumentPreprocessor.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iDocumentNode &gt;</type>
+      <name>Process</name>
+      <anchorfile>structCS_1_1DocSystem_1_1iDocumentPreprocessor.html</anchorfile>
+      <anchor>acd27121ab9434b8950abca16767861bc</anchor>
+      <arglist>(iDocumentNode *doc)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
