@@ -33073,6 +33073,7 @@
     <path>/tmp/tmp2/trunk/include/</path>
     <filename>ivaria_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="blobs_8h" name="blobs.h" local="yes" imported="no">ivaria/blobs.h</includes>
     <includes id="bugplug_8h" name="bugplug.h" local="yes" imported="no">ivaria/bugplug.h</includes>
     <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
     <includes id="bullet2_8h" name="bullet2.h" local="yes" imported="no">ivaria/bullet2.h</includes>
@@ -33105,6 +33106,21 @@
     <includes id="terraform_8h" name="terraform.h" local="yes" imported="no">ivaria/terraform.h</includes>
     <includes id="translator_8h" name="translator.h" local="yes" imported="no">ivaria/translator.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>blobs.h</name>
+    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <filename>blobs_8h</filename>
+    <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
+    <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
+    <includes id="image_8h" name="image.h" local="yes" imported="no">igraphic/image.h</includes>
+    <class kind="struct">iBlob</class>
+    <class kind="struct">iBlobImage</class>
+    <class kind="struct">iBlobManager</class>
+    <class kind="struct">iBlobViewPort</class>
+    <class kind="struct">iGeom</class>
+    <class kind="struct">iImageModifier</class>
+    <class kind="struct">iMovingObject</class>
   </compound>
   <compound kind="file">
     <name>bugplug.h</name>
@@ -86113,6 +86129,187 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>iBlob</name>
+    <filename>structiBlob.html</filename>
+    <base virtualness="virtual">iMovingObject</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddAnimationImage</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>af18e864b27ace41684bce834105e857f</anchor>
+      <arglist>(const char *animname, const char *image)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddImage</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>ae626a31864eee0ca69b4a15ff4f6a010</anchor>
+      <arglist>(const char *tag, const char *name, size_t index=100000, int offsetx=0, int offsety=0, int w=0, int h=0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AnimateAlpha</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>aa5cbb6b919b58c4e65ddb7c11632ed26</anchor>
+      <arglist>(float destalpha, csTicks ticks)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csTicks</type>
+      <name>PlayAnimation</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>a613a8f5ed69bf150c3aeb92c4761ae07</anchor>
+      <arglist>(const char *animname, bool loop, bool remain=false, csTicks delay=200)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveSecondaryImages</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>adaa929e4c3a7e886d41aacc8a7f7df2e</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAlpha</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>a8770d0ec9b63a4ab28120514ababc968</anchor>
+      <arglist>(float alpha)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetHorizontalSwap</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>a9c79717e9dac459103d5e59924984835</anchor>
+      <arglist>(bool sw, const char *tag)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetModifier</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>a87889383ce857af04bc6fb7e46cb949c</anchor>
+      <arglist>(iImageModifier *modifier)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>StopAnimations</name>
+      <anchorfile>structiBlob.html</anchorfile>
+      <anchor>aee07464cf470488b57e1395ecee88dad</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iBlobImage</name>
+    <filename>structiBlobImage.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>iBlobManager</name>
+    <filename>structiBlobManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iMovingObject *</type>
+      <name>CheckCollision</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a3e906a652be738cbd8eb24c219c747a6</anchor>
+      <arglist>(iMovingObject *b)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>CheckCollision</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a2d6c75714d26b8cf969fda1537461218</anchor>
+      <arglist>(iMovingObject *b1, iMovingObject *b2)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBlob *</type>
+      <name>CreateBlob</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>af0cd238302daf09ff96bcacbc9371565</anchor>
+      <arglist>(const char *name, int layer, const char *filename, iImageModifier *modifier)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iBlobImage *</type>
+      <name>CreateBlobImage</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>abb75d8cbac6a900221e8c5b50d0d4485</anchor>
+      <arglist>(const char *name, iImageModifier *modifier=0, const char *filename=0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iGeom *</type>
+      <name>CreateGeom</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a592d68f22a764db393668d986f3c88d0</anchor>
+      <arglist>(int layer, int w, int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iMovingObject *</type>
+      <name>FindMovingObject</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>ae71c4741343a8c94be55d40d01bf74f2</anchor>
+      <arglist>(int x, int y)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iImageModifier &gt;</type>
+      <name>GetBlurImageModifier</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a5d595db82d75784a103869a1a4b24d10</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iImageModifier &gt;</type>
+      <name>GetColorizedImageModifier</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a40492690d09115e9653a1e18a0394df9</anchor>
+      <arglist>(const char *name, const csColor4 &amp;mult, const csColor4 &amp;add)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iImageModifier &gt;</type>
+      <name>GetCombinedImageModifier</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>aee8d8a21cecced45fa2a2f4a1732d5a8</anchor>
+      <arglist>(const char *name, iImageModifier *m1, iImageModifier *m2)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iImageModifier &gt;</type>
+      <name>GetGrayScaleImageModifier</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a15e3b6c4dafc24f0fcad18a81469dd43</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>LoadTexture</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a48d8daa90b85e26deb5869a869a799ad</anchor>
+      <arglist>(const char *name, const char *filename)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>MapTexture</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>af44fea05bf1de25c9c82152d025c536c</anchor>
+      <arglist>(const char *big, const char *small, int x, int y, int w, int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>MovingObjectToFront</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>a598454309ebc1f64f6744b79c4fc8c2e</anchor>
+      <arglist>(iMovingObject *b)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Update</name>
+      <anchorfile>structiBlobManager.html</anchorfile>
+      <anchor>acb10bd1af996b457f6380253f55e8770</anchor>
+      <arglist>(csTicks current, csTicks elapsed)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iBlobViewPort</name>
+    <filename>structiBlobViewPort.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
     <name>iBodyGroup</name>
     <filename>structiBodyGroup.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -93559,6 +93756,18 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>iGeom</name>
+    <filename>structiGeom.html</filename>
+    <base virtualness="virtual">iMovingObject</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>Box</name>
+      <anchorfile>structiGeom.html</anchorfile>
+      <anchor>a285d34541ec0d5ee16e0152d5993e702</anchor>
+      <arglist>(int x, int y, int w, int h, int color)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>iGradient</name>
     <filename>structiGradient.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -94988,6 +95197,11 @@
       <anchor>a51941798545ffe384889a16f7cee9c1e</anchor>
       <arglist>(iImage *image, FileFormatDescription *format, const char *extraoptions=0)=0</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>iImageModifier</name>
+    <filename>structiImageModifier.html</filename>
+    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="struct">
     <name>iImposterFactory</name>
@@ -98769,6 +98983,95 @@
       <anchorfile>structiMovieRecorder.html</anchorfile>
       <anchor>a89ef895396758d3b997010459a1b686f</anchor>
       <arglist>(void)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iMovingObject</name>
+    <filename>structiMovingObject.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddPathSegment</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a05f6f77dcf421bcbe8ce542437ddbab9</anchor>
+      <arglist>(int x, int y, csTicks segmenttime)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Draw</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a3fd55ba28bbf28f4e4f41f6ed731658d</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint32</type>
+      <name>GetID</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a62a1a230fd4c2ae92d99951a561bd6cf</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetLayer</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a5f2de3ed34a8eb7f20b32d61592e1e29</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>In</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a6c4eb458f351b5bd92343c9c948ced86</anchor>
+      <arglist>(int x, int y)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Move</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a7e76e1767121f6a0a37922d643abd122</anchor>
+      <arglist>(int x, int y)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Scale</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a0820689811c5fb49e9e0979cc2bfb4be</anchor>
+      <arglist>(int w, int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetClickable</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>ada277aa1338c628e8b7f899ba8d4dc0a</anchor>
+      <arglist>(bool click)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetLineMover</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a126b9c70fa9c62cb98a9176f9224eb8e</anchor>
+      <arglist>(int x1, int y1, int x2, int y2, csTicks totaltime)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPathMover</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a3485711d486d590f45574a004c7fafa6</anchor>
+      <arglist>(int start_x, int start_y)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetViewPort</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a1c2491ec8ea99af49fed7cd0a6917a61</anchor>
+      <arglist>(iBlobViewPort *viewport)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Update</name>
+      <anchorfile>structiMovingObject.html</anchorfile>
+      <anchor>a7e835c019f6feb3eabae4b8c22e4f225</anchor>
+      <arglist>(csTicks elapsed)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -136858,57 +137161,57 @@
       <type>virtual float</type>
       <name>GetCameraMinimumDistance</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>a45eda765d94ada2643270aa8254ebc5d</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a9728c62e406c04f58385b56de483c234</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual CameraMode</type>
       <name>GetCameraMode</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>a56c1db1195e3b190174d4abe5996bca5</anchor>
-      <arglist>()=0</arglist>
+      <anchor>acd5ff0415dc899dec8d971f4519ce2ce</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetCameraTarget</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>aaa330754472f095fe66c90728e5c0de0</anchor>
-      <arglist>()=0</arglist>
+      <anchor>afed05d67dae867ba943204b4c6f58495</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMotionSpeed</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>af277b14d2264af7390f5d63223f0232d</anchor>
-      <arglist>()=0</arglist>
+      <anchor>aebb9e3d6db052f36c3060df255793b6a</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>GetMouseMoveEnabled</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>acea87a6a330cd2fe13f56186d24a829f</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a6868b612cb76688a1f80bb1eb3b75f0a</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetRotationSpeed</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>ab682926e909ef23b910d526a8f850a1c</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a42dbda773c8c34a9e382427bdd197751</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetStartPosition</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>a9c06bfb36f8f13e1b9995841066cf4e6</anchor>
-      <arglist>()=0</arglist>
+      <anchor>ad2d0e8bc0ae1d44e483a6be3ef65a2d3</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>HasStartPosition</name>
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
-      <anchor>a69d8ef33beee19b960b2e87bc055f03c</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a308ea0d425744218bcedd387eadbb0e0</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -136937,6 +137240,13 @@
       <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
       <anchor>a666069bc36b60fdd4ab1280543f8758c</anchor>
       <arglist>(CameraMode cameraMode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetCameraTarget</name>
+      <anchorfile>structCS_1_1Utility_1_1iCameraManager.html</anchorfile>
+      <anchor>ae0ab269032819e3905c811012c4d9e14</anchor>
+      <arglist>(iMovable *target)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
