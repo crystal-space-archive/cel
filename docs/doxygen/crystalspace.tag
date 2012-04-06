@@ -86308,6 +86308,13 @@
     <name>iBlobViewPort</name>
     <filename>structiBlobViewPort.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetScrollSpeed</name>
+      <anchorfile>structiBlobViewPort.html</anchorfile>
+      <anchor>a1316c568326a7023ad118be49661016b</anchor>
+      <arglist>(float factor)=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iBodyGroup</name>
