@@ -86286,8 +86286,8 @@
       <type>virtual void</type>
       <name>MapTexture</name>
       <anchorfile>structiBlobManager.html</anchorfile>
-      <anchor>af44fea05bf1de25c9c82152d025c536c</anchor>
-      <arglist>(const char *big, const char *small, int x, int y, int w, int h)=0</arglist>
+      <anchor>a28356acf32386d7d548f52444207c860</anchor>
+      <arglist>(const char *bigtxt, const char *smalltxt, int x, int y, int w, int h)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
