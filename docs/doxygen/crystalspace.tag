@@ -30464,6 +30464,12 @@
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>DEBUG_ELLIPSOIDS</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ab41fda8ce1767f6bd08ac8feced7e11e</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>ik.h</name>
@@ -33074,6 +33080,7 @@
     <filename>ivaria_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
     <includes id="blobs_8h" name="blobs.h" local="yes" imported="no">ivaria/blobs.h</includes>
+    <includes id="bodytype_8h" name="bodytype.h" local="yes" imported="no">ivaria/bodytype.h</includes>
     <includes id="bugplug_8h" name="bugplug.h" local="yes" imported="no">ivaria/bugplug.h</includes>
     <includes id="bullet_8h" name="bullet.h" local="yes" imported="no">ivaria/bullet.h</includes>
     <includes id="bullet2_8h" name="bullet2.h" local="yes" imported="no">ivaria/bullet2.h</includes>
@@ -33121,6 +33128,65 @@
     <class kind="struct">iGeom</class>
     <class kind="struct">iImageModifier</class>
     <class kind="struct">iMovingObject</class>
+  </compound>
+  <compound kind="file">
+    <name>bodytype.h</name>
+    <path>/tmp/tmp2/trunk/include/ivaria/</path>
+    <filename>bodytype_8h</filename>
+    <member kind="enumeration">
+      <name>csColliderGeometryType</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NO_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2ebaefbf57ccb4343924af11ad25c83e5e65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BOX_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2ebac9579bab9dd006c058e72a53a40ff797</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PLANE_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2eba179dbc929235eed745244a2a7707ebda</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TRIMESH_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2eba7d27101260b1f081ac11330ed112bae8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CONVEXMESH_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2eba218cb808d74be141c3530aacfbadf4eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CYLINDER_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2ebac256ea63e17f323f481d4143072ca7a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CAPSULE_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2ebaf06db39521f51b1ca2b887c751aa19c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPHERE_COLLIDER_GEOMETRY</name>
+      <anchorfile>bodytype_8h.html</anchorfile>
+      <anchor>ae98fb60c1a44d37139aced583984a2ebaec93d9a152badc254b287564f7459a8f</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>bugplug.h</name>
@@ -33432,6 +33498,7 @@
     <path>/tmp/tmp2/trunk/include/ivaria/</path>
     <filename>dynamics_8h</filename>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="bodytype_8h" name="bodytype.h" local="yes" imported="no">ivaria/bodytype.h</includes>
     <class kind="struct">iBodyGroup</class>
     <class kind="struct">iDynamics</class>
     <class kind="struct">iDynamicsColliderCollisionCallback</class>
@@ -33442,60 +33509,6 @@
     <class kind="struct">iDynamicSystem</class>
     <class kind="struct">iJoint</class>
     <class kind="struct">iRigidBody</class>
-    <member kind="enumeration">
-      <name>csColliderGeometryType</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NO_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2ebaefbf57ccb4343924af11ad25c83e5e65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BOX_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2ebac9579bab9dd006c058e72a53a40ff797</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PLANE_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2eba179dbc929235eed745244a2a7707ebda</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TRIMESH_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2eba7d27101260b1f081ac11330ed112bae8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CONVEXMESH_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2eba218cb808d74be141c3530aacfbadf4eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CYLINDER_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2ebac256ea63e17f323f481d4143072ca7a4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CAPSULE_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2ebaf06db39521f51b1ca2b887c751aa19c4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPHERE_COLLIDER_GEOMETRY</name>
-      <anchorfile>dynamics_8h.html</anchorfile>
-      <anchor>ae98fb60c1a44d37139aced583984a2ebaec93d9a152badc254b287564f7459a8f</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>dynamicsdebug.h</name>
@@ -64634,6 +64647,13 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>DrawBoxProjected</name>
+      <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
+      <anchor>a91ef9286a7248cef5007eb732514b580</anchor>
+      <arglist>(const csBox3 &amp;box, const csTransform &amp;object2camera, const CS::Math::Matrix4 &amp;projection, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>DrawLine</name>
       <anchorfile>classcsGraphics2DGLCommon.html</anchorfile>
       <anchor>a259bb764c5bc5888e08fd7d9a4bdd6d1</anchor>
@@ -80591,6 +80611,20 @@
     <name>csStringArray</name>
     <filename>classcsStringArray.html</filename>
     <base>StringArray&lt; CS::Memory::AllocatorMalloc, csArrayCapacityDefault &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>csStringArray</name>
+      <anchorfile>classcsStringArray.html</anchorfile>
+      <anchor>a799d404d1e000173fda109de46f3f4d3</anchor>
+      <arglist>(const char *str, const char *delimiters, ConsecutiveDelimiterMode delimMode=delimSplitEach, size_t limit=0, size_t threshold=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csStringArray</name>
+      <anchorfile>classcsStringArray.html</anchorfile>
+      <anchor>a07a5351eb454d89bb8e831f2033fc6be</anchor>
+      <arglist>(size_t limit=0, size_t threshold=0)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>csStringBase</name>
@@ -93892,6 +93926,13 @@
       <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>ad6abb6d4a418ad240d83675d6c3cf6c3</anchor>
       <arglist>(int x, int y, int w, int h, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawBoxProjected</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>ac00a82d527a0213b7a955be339c1796f</anchor>
+      <arglist>(const csBox3 &amp;box, const csTransform &amp;object2camera, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -118012,6 +118053,12 @@
       <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066a58b1b4ca1d727318ca2e031ff5053d2c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>DEBUG_ELLIPSOIDS</name>
+      <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
+      <anchor>a0bf0b9f164861ecbc2a6731ad9a9e066ab41fda8ce1767f6bd08ac8feced7e11e</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>SkeletonNoiseChannel</name>
       <anchorfile>namespaceCS_1_1Animation.html</anchorfile>
@@ -118289,9 +118336,9 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
-      <name>SetRessourceFile</name>
+      <name>SetResourceFile</name>
       <anchorfile>classCS_1_1Animation_1_1BVHMocapParser.html</anchorfile>
-      <anchor>a374cca99fbd1e68ae63f8e34ddd233fa</anchor>
+      <anchor>ae3512b1c2ecf5766e049646909cb6c17</anchor>
       <arglist>(const char *filename)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -119878,14 +119925,21 @@
       <type>virtual void</type>
       <name>Draw</name>
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNode.html</anchorfile>
-      <anchor>a7e72ee68b7bf84f2c6c40f211ea90885</anchor>
-      <arglist>(iCamera *camera, csColor color=csColor(255, 0, 255))=0</arglist>
+      <anchor>abf04a8acb75b1545a3c7225374a236a9</anchor>
+      <arglist>(iCamera *camera, csColor color=csColor(1.0f, 0.0f, 1.0f))=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>CS::Animation::iSkeletonDebugNodeFactory</name>
     <filename>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</filename>
     <base virtualness="virtual">CS::Animation::iSkeletonAnimNodeFactory</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVector3</type>
+      <name>GetBoneOffset</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>a852d47b0e7eca1866d7e790f1a729eb7</anchor>
+      <arglist>(BoneID boneID) const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSkeletonAnimNodeFactory *</type>
       <name>GetChildNode</name>
@@ -119913,6 +119967,13 @@
       <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
       <anchor>a8909b528527cf064f341f2ad390341df</anchor>
       <arglist>(csBitArray &amp;boneMask)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBoneOffset</name>
+      <anchorfile>structCS_1_1Animation_1_1iSkeletonDebugNodeFactory.html</anchorfile>
+      <anchor>ac85d76069de7a2909f03f8c53487f311</anchor>
+      <arglist>(BoneID boneID, csVector3 offset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -121265,9 +121326,9 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
-      <name>SetRessourceFile</name>
+      <name>SetResourceFile</name>
       <anchorfile>classCS_1_1Animation_1_1MocapParser.html</anchorfile>
-      <anchor>a7d904fb8c1fd404d91df6daaf1118f4a</anchor>
+      <anchor>a6fde01e6abfa0c15183b9f63cece4a7d</anchor>
       <arglist>(const char *filename)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -128746,6 +128807,13 @@
       <anchor>a0fbc29ebd4af751b9f904b01522d8567</anchor>
       <arglist>(iObjectRegistry *object_reg, const char *path, const char *baseMesh, const char *factoryName, const char *meshMask=&quot;&quot;)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>PopulateSkeletonBoundingBoxes</name>
+      <anchorfile>classCS_1_1Mesh_1_1AnimatedMeshTools.html</anchorfile>
+      <anchor>ae913ecaa6c5220142525398974fa16e9</anchor>
+      <arglist>(CS::Mesh::iAnimatedMeshFactory *animeshFactory, csBitArray *boneMask=nullptr)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Mesh::iAnimatedMesh</name>
@@ -128854,6 +128922,13 @@
     <name>CS::Mesh::iAnimatedMeshFactory</name>
     <filename>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Invalidate</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
+      <anchor>aa7c668064ae59706cb8f238fdd3a0fb6</anchor>
+      <arglist>()=0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>AddSubset</name>
@@ -128985,13 +129060,6 @@
       <name>GetVertices</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
       <anchor>aec6e9ae72476894d188290af4f3a79c8</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Invalidate</name>
-      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>aa7c668064ae59706cb8f238fdd3a0fb6</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -129135,18 +129203,18 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual CS::Animation::iSkeletonFactory *</type>
-      <name>GetSkeletonFactory</name>
-      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
-      <anchor>aeb0fd1d007242e6b87d1d73d3c32363e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetBoneInfluencesPerVertex</name>
       <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
       <anchor>a96b4d41257820bef68d49791beff8d32</anchor>
       <arglist>(uint num)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Animation::iSkeletonFactory *</type>
+      <name>GetSkeletonFactory</name>
+      <anchorfile>structCS_1_1Mesh_1_1iAnimatedMeshFactory.html</anchorfile>
+      <anchor>aeb0fd1d007242e6b87d1d73d3c32363e</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
