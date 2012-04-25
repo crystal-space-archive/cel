@@ -28577,6 +28577,20 @@
       <arglist>(const char *path)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>IsRegularFile</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>ab9e2f7844f759fcc3637ffd5638acf37</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Stat</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a6b6857f37b0a96c8b8a03444288161ff</anchor>
+      <arglist>(const char *path, struct stat *buf)</arglist>
+    </member>
+    <member kind="function">
       <type>csString</type>
       <name>csGetConfigPath</name>
       <anchorfile>group__util.html</anchorfile>
@@ -132187,6 +132201,20 @@
       <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
       <anchor>ae2a5a384bcc38a660c0de1092a506283</anchor>
       <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsRegularFile</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>ab9e2f7844f759fcc3637ffd5638acf37</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Stat</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a6b6857f37b0a96c8b8a03444288161ff</anchor>
+      <arglist>(const char *path, struct stat *buf)</arglist>
     </member>
   </compound>
   <compound kind="struct">
