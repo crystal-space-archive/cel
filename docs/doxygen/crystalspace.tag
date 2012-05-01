@@ -9446,6 +9446,48 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>GL_FLOAT_MAT2x3</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a3117745c4bac9c9d9a6b84229a4f553f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FLOAT_MAT2x4</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aba62d0bf6d4cf702d57410e8cb000185</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FLOAT_MAT3x2</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>ab5022a1a24299368b061b3f4b1cac950</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FLOAT_MAT3x4</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a0940ecca4dc2ffdcf71cfd54e40180ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FLOAT_MAT4x2</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a73de4bfbe1d597cd11fb3d60ed830c31</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_FLOAT_MAT4x3</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>afa821271f6254cd1623a1311e608df17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>GL_PIXEL_PACK_BUFFER</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>a836578dbccb4de7ca40be25acb258c12</anchor>
