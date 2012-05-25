@@ -24781,6 +24781,12 @@
       <anchor>a26e1124d33b4acdb532c49f6498df549a7b201792a220f5f30d589b62e7ad26f2</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>CS_SAVER_FILE_LIGHTFACT</name>
+      <anchorfile>imap_2saverfile_8h.html</anchorfile>
+      <anchor>a26e1124d33b4acdb532c49f6498df549a0ce1ca3698111968109a4c97fe3a3635</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>saverref.h</name>
@@ -90982,6 +90988,13 @@
       <arglist>(csColor &amp;c) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iLightFactoryList *</type>
+      <name>GetLightFactories</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a29d629506d11a4496a3199221b5f9175</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iLightIterator &gt;</type>
       <name>GetLightIterator</name>
       <anchorfile>structiEngine.html</anchorfile>
@@ -96832,6 +96845,13 @@
       <arglist>(const char *Filename, int Format=CS_IMGFMT_INVALID)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iLightFactory &gt;</type>
+      <name>LoadLightFactory</name>
+      <anchorfile>structiLoader.html</anchorfile>
+      <anchor>ac8c2e4e7f9969511f14bffade566805c</anchor>
+      <arglist>(const char *fname, iStreamSource *ssource=0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>LoadMapFile</name>
       <anchorfile>structiLoader.html</anchorfile>
@@ -96982,6 +97002,13 @@
       <anchorfile>structiLoaderContext.html</anchorfile>
       <anchor>a8516b68e9d929d206d9b40cd2cf66b54</anchor>
       <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iLightFactory *</type>
+      <name>FindLightFactory</name>
+      <anchorfile>structiLoaderContext.html</anchorfile>
+      <anchor>abb74800f7f0e696dc9c314e3e35d5a1d</anchor>
+      <arglist>(const char *name, bool notify=true)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iMaterialWrapper *</type>
@@ -98909,6 +98936,13 @@
       <name>MissingLight</name>
       <anchorfile>structiMissingLoaderData.html</anchorfile>
       <anchor>a6eef44456fe728a8f835283b3d05c450</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iLightFactory *</type>
+      <name>MissingLightFactory</name>
+      <anchorfile>structiMissingLoaderData.html</anchorfile>
+      <anchor>a012c2c5cc02b85801e731ec280e76be8</anchor>
       <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -113812,6 +113846,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iLightFactLoaderIterator &gt;</type>
+      <name>GetLoaderLightFactories</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>a22512e8eba52478f61dc89204b79122f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iMaterialLoaderIterator &gt;</type>
       <name>GetLoaderMaterials</name>
       <anchorfile>structiThreadedLoader.html</anchorfile>
@@ -113880,6 +113921,13 @@
       <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>a88a22a0abc32da9295d4ef8d99f70503</anchor>
       <arglist>(LoadMeshObjectFactory, const char *cwd, const char *fname, csRef&lt; iStreamSource &gt; ssource=0, bool do_verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>THREADED_INTERFACE4</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>ad0cf19fb5db3e73451b20160e8840d52</anchor>
+      <arglist>(LoadLightFactory, const char *cwd, const char *fname, csRef&lt; iStreamSource &gt; ssource=0, bool do_verbose=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
