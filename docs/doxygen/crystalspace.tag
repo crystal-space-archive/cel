@@ -104730,6 +104730,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
+      <name>SaveLightFactories</name>
+      <anchorfile>structiSaver.html</anchorfile>
+      <anchor>ac7f947205ab3b18282526864fff96172</anchor>
+      <arglist>(iCollection *collection, iDocumentNode *parent)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
       <name>SavePortal</name>
       <anchorfile>structiSaver.html</anchorfile>
       <anchor>a7e2fd8e7986bd04a0026067416c2c1c3</anchor>
