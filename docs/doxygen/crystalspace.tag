@@ -17264,9 +17264,9 @@
     </member>
     <member kind="typedef">
       <type>GLuint(*</type>
-      <name>csGLCREATEPROGRAMOBJECT</name>
+      <name>csGLCREATEPROGRAM</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a71d6de70b4b5925c886f11bcaff32082</anchor>
+      <anchor>a5e8eb4b59b6efc210aea68a3e900a523</anchor>
       <arglist>)()</arglist>
     </member>
     <member kind="typedef">
@@ -17334,10 +17334,10 @@
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
-      <name>csGLGETATTACHEDOBJECTS</name>
+      <name>csGLGETATTACHEDSHADERS</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aaa62aa8fd562105131b273dccfafc62d</anchor>
-      <arglist>)(GLuint containerObj, GLsizei maxCount, GLsizei *count, GLuint *obj)</arglist>
+      <anchor>a6bac45f1365cea221bb3b87d423f0bc0</anchor>
+      <arglist>)(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders)</arglist>
     </member>
     <member kind="typedef">
       <type>GLint(*</type>
@@ -17347,32 +17347,32 @@
       <arglist>)(GLuint programObj, const GLchar *name)</arglist>
     </member>
     <member kind="typedef">
-      <type>GLuint(*</type>
-      <name>csGLGETHANDLE</name>
-      <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a7888d798551610d67fc5bc3ec08f3a51</anchor>
-      <arglist>)(GLenum pname)</arglist>
-    </member>
-    <member kind="typedef">
       <type>GLvoid(*</type>
-      <name>csGLGETINFOLOG</name>
+      <name>csGLGETPROGRAMINFOLOG</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>aca34e72600e48646ae31bd6c844370e7</anchor>
+      <anchor>a10d63e9cdb58062b0e35916ff2a10820</anchor>
       <arglist>)(GLuint obj, GLsizei maxLength, GLsizei *length, GLchar *infoLog)</arglist>
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
-      <name>csGLGETOBJECTPARAMETERFV</name>
+      <name>csGLGETPROGRAMIV</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>a9434c19cbf8f9a39c2b7914fe7d8725c</anchor>
-      <arglist>)(GLuint obj, GLenum pname, GLfloat *params)</arglist>
+      <anchor>aaec3077aab0d996e8fcb80dc0f28c8c6</anchor>
+      <arglist>)(GLuint program, GLenum pname, GLint *params)</arglist>
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
-      <name>csGLGETOBJECTPARAMETERIV</name>
+      <name>csGLGETSHADERINFOLOG</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
-      <anchor>ab78bde222538e2ce3c21099beadf16c0</anchor>
-      <arglist>)(GLuint obj, GLenum pname, GLint *params)</arglist>
+      <anchor>a13c0ea8a57b12d29418f5fe8c7d8edb4</anchor>
+      <arglist>)(GLuint obj, GLsizei maxLength, GLsizei *length, GLchar *infoLog)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>GLvoid(*</type>
+      <name>csGLGETSHADERIV</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a950ce35336709d235018389a877eff68</anchor>
+      <arglist>)(GLuint shader, GLenum pname, GLint *params)</arglist>
     </member>
     <member kind="typedef">
       <type>GLvoid(*</type>
@@ -22656,13 +22656,6 @@
       <anchor>ab89d43782322865ee3b33ea0a92b7854</anchor>
       <arglist>(const CS::Math::Matrix4 &amp;m, float matrix[16], bool rowMajor=false)</arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>makeGLMatrixInverted</name>
-      <anchorfile>group__plugincommon.html</anchorfile>
-      <anchor>ga93fd2bff52a816c665b354b63cc61c0a</anchor>
-      <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>glss.h</name>
@@ -23113,9 +23106,6 @@
     <includes id="csplugincommon_2rendermanager_2viscull_8h" name="viscull.h" local="yes" imported="no">csplugincommon/rendermanager/viscull.h</includes>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
     <includes id="projections_8h" name="projections.h" local="yes" imported="no">csgeom/projections.h</includes>
-    <class kind="struct">CS::RenderManager::ShadowPSSM::PersistentData</class>
-    <class kind="class">CS::RenderManager::ShadowPSSM</class>
-    <class kind="class">CS::RenderManager::ShadowPSSM::ViewSetup</class>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
@@ -35891,13 +35881,6 @@
       <name>makeGLMatrix</name>
       <anchorfile>group__plugincommon.html</anchorfile>
       <anchor>ga092bd65b19184dfa3a3d4d72223ea9e1</anchor>
-      <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>makeGLMatrixInverted</name>
-      <anchorfile>group__plugincommon.html</anchorfile>
-      <anchor>ga93fd2bff52a816c665b354b63cc61c0a</anchor>
       <arglist>(const csReversibleTransform &amp;t, float matrix[16], bool rowMajor=false)</arglist>
     </member>
   </compound>
@@ -56916,10 +56899,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLCREATEPROGRAMOBJECT</type>
-      <name>glCreateProgramObject</name>
+      <type>csGLCREATEPROGRAM</type>
+      <name>glCreateProgram</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>ad42e02fe64bf27262fef1c40ce12af54</anchor>
+      <anchor>ab3a4077eab21eadc8f5bbf86d9743b1b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -56986,10 +56969,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLGETATTACHEDOBJECTS</type>
-      <name>glGetAttachedObjects</name>
+      <type>csGLGETATTACHEDSHADERS</type>
+      <name>glGetAttachedShaders</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>adbf5fc1d64f60ec4af09d0ff6e4bedf1</anchor>
+      <anchor>a2fef334486b6e718a161c7d2eb8c71b3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -57000,31 +56983,31 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLGETHANDLE</type>
-      <name>glGetHandle</name>
+      <type>csGLGETPROGRAMINFOLOG</type>
+      <name>glGetProgramInfoLog</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>af6dd33211e967636cc136168a18d158c</anchor>
+      <anchor>a8ecb49ed991dccc2806f924ccbaf5786</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLGETINFOLOG</type>
-      <name>glGetInfoLog</name>
+      <type>csGLGETPROGRAMIV</type>
+      <name>glGetProgramiv</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>a14795083a13090ae9ac7d66b90c62e54</anchor>
+      <anchor>ac7a30b8058c1988f7a4a61514d8ad1c5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLGETOBJECTPARAMETERFV</type>
-      <name>glGetObjectParameterfv</name>
+      <type>csGLGETSHADERINFOLOG</type>
+      <name>glGetShaderInfoLog</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>abe5027c193fc9fb4f8609b0f3cb0be42</anchor>
+      <anchor>a1d1548d77dbf0399538e9789d0749426</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csGLGETOBJECTPARAMETERIV</type>
-      <name>glGetObjectParameteriv</name>
+      <type>csGLGETSHADERIV</type>
+      <name>glGetShaderiv</name>
       <anchorfile>structcsGLExtensionFunctions.html</anchorfile>
-      <anchor>a12a32f814e6008989e055639e0d76514</anchor>
+      <anchor>aace7a8e3dd92d0a7d121ab7507627ea9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -80029,6 +80012,20 @@
       <anchorfile>classcsStringBase.html</anchorfile>
       <anchor>a26de49c84eb5f97149ce3c9e207b66b9</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>EndsWith</name>
+      <anchorfile>classcsStringBase.html</anchorfile>
+      <anchor>a4e8bc64b268718e89af50bce3eb7dfe5</anchor>
+      <arglist>(const char *iStr, bool ignore_case=false) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>EndsWith</name>
+      <anchorfile>classcsStringBase.html</anchorfile>
+      <anchor>ab3d8ccf4e069e04c45d8ca506b258395</anchor>
+      <arglist>(const csStringBase &amp;iStr, bool ignore_case=false) const </arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -104024,6 +104021,13 @@
       <anchorfile>structiSceneNode.html</anchorfile>
       <anchor>a2916081f052599ce3e5d9af7994da914</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iObjectModel *</type>
+      <name>GetObjectModel</name>
+      <anchorfile>structiSceneNode.html</anchorfile>
+      <anchor>a628f936c95afcb9248cf0d3d983d2966</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iSceneNode *</type>
@@ -133337,7 +133341,6 @@
     <class kind="class">CS::RenderManager::ShaderSetup</class>
     <class kind="class">CS::RenderManager::ShaderSVSetup</class>
     <class kind="class">CS::RenderManager::ShadowNone</class>
-    <class kind="class">CS::RenderManager::ShadowPSSM</class>
     <class kind="class">CS::RenderManager::ShadowSettings</class>
     <class kind="class">CS::RenderManager::SimpleContextRender</class>
     <class kind="class">CS::RenderManager::SimpleContextRenderByMesh</class>
@@ -135575,29 +135578,6 @@
   <compound kind="struct">
     <name>CS::RenderManager::ShadowNone::ShadowParameters</name>
     <filename>structCS_1_1RenderManager_1_1ShadowNone_1_1ShadowParameters.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>CS::RenderManager::ShadowPSSM</name>
-    <filename>classCS_1_1RenderManager_1_1ShadowPSSM.html</filename>
-    <templarg></templarg>
-    <templarg></templarg>
-    <class kind="struct">CS::RenderManager::ShadowPSSM::PersistentData</class>
-    <class kind="class">CS::RenderManager::ShadowPSSM::ViewSetup</class>
-  </compound>
-  <compound kind="struct">
-    <name>CS::RenderManager::ShadowPSSM::PersistentData</name>
-    <filename>structCS_1_1RenderManager_1_1ShadowPSSM_1_1PersistentData.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>SetConfigPrefix</name>
-      <anchorfile>structCS_1_1RenderManager_1_1ShadowPSSM_1_1PersistentData.html</anchorfile>
-      <anchor>a37cab3b2ecd27494b424b7763bd3a822</anchor>
-      <arglist>(const char *configPrefix)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::RenderManager::ShadowPSSM::ViewSetup</name>
-    <filename>classCS_1_1RenderManager_1_1ShadowPSSM_1_1ViewSetup.html</filename>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::ShadowSettings</name>
