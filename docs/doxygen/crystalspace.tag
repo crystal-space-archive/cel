@@ -69808,11 +69808,25 @@
       <arglist>(iObjectRegistry *object_reg)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>DoRender</name>
+      <anchorfile>classcsMeshOnTexture.html</anchorfile>
+      <anchor>ab3f7bf507fb688990a15f0deb7b2abc3</anchor>
+      <arglist>(iTextureHandle *handle, bool persistent=false, int color=-1)</arglist>
+    </member>
+    <member kind="function">
       <type>csView *</type>
       <name>GetView</name>
       <anchorfile>classcsMeshOnTexture.html</anchorfile>
       <anchor>a0d293e502f6d9cbf70183d233dc51633</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>PrepareRender</name>
+      <anchorfile>classcsMeshOnTexture.html</anchorfile>
+      <anchor>ab491b99f1d1df40da7d427639115533e</anchor>
+      <arglist>(iTextureHandle *handle)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
