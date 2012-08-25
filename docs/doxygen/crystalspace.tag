@@ -24238,6 +24238,7 @@
     <includes id="iutil_2virtclk_8h" name="virtclk.h" local="yes" imported="no">iutil/virtclk.h</includes>
     <includes id="visualdebug_8h" name="visualdebug.h" local="yes" imported="no">iutil/visualdebug.h</includes>
     <includes id="ivideo_2graph2d_8h" name="graph2d.h" local="yes" imported="no">ivideo/graph2d.h</includes>
+    <includes id="natwin_8h" name="natwin.h" local="yes" imported="no">ivideo/natwin.h</includes>
     <includes id="cameramanager_8h" name="cameramanager.h" local="yes" imported="no">ivaria/cameramanager.h</includes>
     <includes id="hudmanager_8h" name="hudmanager.h" local="yes" imported="no">ivaria/hudmanager.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
@@ -137471,6 +137472,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>csRef&lt; iCommandLineParser &gt;</type>
+      <name>clp</name>
+      <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
+      <anchor>a7fc5db86ccd1092fb4dbb959470a6fbd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>csConfigAccess</type>
       <name>config</name>
       <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
@@ -137524,6 +137532,13 @@
       <name>mouse</name>
       <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
       <anchor>afdf4b1f81e5514934bf2ca7b6a8a6174</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>csRef&lt; iNativeWindow &gt;</type>
+      <name>natwin</name>
+      <anchorfile>classCS_1_1Utility_1_1DemoApplication.html</anchorfile>
+      <anchor>a78903280603d8db85b49faf6836a6fed</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
