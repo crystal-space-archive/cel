@@ -28635,6 +28635,27 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>IsDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>ab5ea1b6cc5ef7c5f949b8f872b30223d</anchor>
+      <arglist>(struct stat *file_stat)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>abf43b6516c8a341bc1fa401b077f1157</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsRegularFile</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a129cca26646b3f0f9693ebe8d22e774b</anchor>
+      <arglist>(struct stat *file_stat)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>IsRegularFile</name>
       <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
       <anchor>ab9e2f7844f759fcc3637ffd5638acf37</anchor>
@@ -131795,6 +131816,27 @@
       <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
       <anchor>ae2a5a384bcc38a660c0de1092a506283</anchor>
       <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>ab5ea1b6cc5ef7c5f949b8f872b30223d</anchor>
+      <arglist>(struct stat *file_stat)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsDirectory</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>abf43b6516c8a341bc1fa401b077f1157</anchor>
+      <arglist>(const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsRegularFile</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a129cca26646b3f0f9693ebe8d22e774b</anchor>
+      <arglist>(struct stat *file_stat)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
