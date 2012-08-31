@@ -109242,6 +109242,13 @@
       <arglist>(int mesh_id)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetScaleFactor</name>
+      <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
+      <anchor>a76ffa8e78b59e87d20043ac7c4efbd6f</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iSpriteCal3DSocket *</type>
       <name>GetSocket</name>
       <anchorfile>structiSpriteCal3DFactoryState.html</anchorfile>
