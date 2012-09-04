@@ -23967,6 +23967,7 @@
     <includes id="meshobjtmpl_8h" name="meshobjtmpl.h" local="yes" imported="no">cstool/meshobjtmpl.h</includes>
     <includes id="mocapparser_8h" name="mocapparser.h" local="yes" imported="no">cstool/mocapparser.h</includes>
     <includes id="normalcalc_8h" name="normalcalc.h" local="yes" imported="no">cstool/normalcalc.h</includes>
+    <includes id="cstool_2objectcomment_8h" name="objectcomment.h" local="yes" imported="no">cstool/objectcomment.h</includes>
     <includes id="cstool_2objmodel_8h" name="objmodel.h" local="yes" imported="no">cstool/objmodel.h</includes>
     <includes id="pen_8h" name="pen.h" local="yes" imported="no">cstool/pen.h</includes>
     <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
@@ -24619,6 +24620,23 @@
     <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <class kind="class">csNormalCalculator</class>
+  </compound>
+  <compound kind="file">
+    <name>objectcomment.h</name>
+    <path>/tmp/tmp0/trunk/include/cstool/</path>
+    <filename>cstool_2objectcomment_8h</filename>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
+    <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
+    <includes id="imap_2objectcomment_8h" name="objectcomment.h" local="yes" imported="no">imap/objectcomment.h</includes>
+    <class kind="class">csObjectComment</class>
+  </compound>
+  <compound kind="file">
+    <name>objectcomment.h</name>
+    <path>/tmp/tmp0/trunk/include/imap/</path>
+    <filename>imap_2objectcomment_8h</filename>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <class kind="struct">iObjectComment</class>
   </compound>
   <compound kind="file">
     <name>objmodel.h</name>
@@ -30331,6 +30349,7 @@
     <includes id="ldrctxt_8h" name="ldrctxt.h" local="yes" imported="no">imap/ldrctxt.h</includes>
     <includes id="loader_8h" name="loader.h" local="yes" imported="no">imap/loader.h</includes>
     <includes id="modelload_8h" name="modelload.h" local="yes" imported="no">imap/modelload.h</includes>
+    <includes id="imap_2objectcomment_8h" name="objectcomment.h" local="yes" imported="no">imap/objectcomment.h</includes>
     <includes id="reader_8h" name="reader.h" local="yes" imported="no">imap/reader.h</includes>
     <includes id="renderbufferpersistence_8h" name="renderbufferpersistence.h" local="yes" imported="no">imap/renderbufferpersistence.h</includes>
     <includes id="saver_8h" name="saver.h" local="yes" imported="no">imap/saver.h</includes>
@@ -70745,6 +70764,25 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>csObjectComment</name>
+    <filename>classcsObjectComment.html</filename>
+    <base>scfImplementationExt1&lt; csObjectComment, csObject, iObjectComment &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iString *</type>
+      <name>GetComment</name>
+      <anchorfile>classcsObjectComment.html</anchorfile>
+      <anchor>ab0980e5fcdc2511d463647f445485a4a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classcsObjectComment.html</anchorfile>
+      <anchor>a02d1724758010e3b3e5b6a6f24b722e0</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>csObjectModel</name>
     <filename>classcsObjectModel.html</filename>
     <base>scfImplementation1&lt; csObjectModel, iObjectModel &gt;</base>
@@ -99016,6 +99054,25 @@
       <anchorfile>structiObject.html</anchorfile>
       <anchor>afdf5db6ec78d5ba13e591eebf3dae730</anchor>
       <arglist>(iObject *obj)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iObjectComment</name>
+    <filename>structiObjectComment.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iString *</type>
+      <name>GetComment</name>
+      <anchorfile>structiObjectComment.html</anchorfile>
+      <anchor>a1c814f8006d24e7320fa0afb782f8049</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>structiObjectComment.html</anchorfile>
+      <anchor>a51029b34056f35712e7a0c0c795ad26b</anchor>
+      <arglist>()=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
