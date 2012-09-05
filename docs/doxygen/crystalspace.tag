@@ -24628,8 +24628,41 @@
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
     <includes id="csobject_8h" name="csobject.h" local="yes" imported="no">csutil/csobject.h</includes>
+    <includes id="document_8h" name="document.h" local="yes" imported="no">iutil/document.h</includes>
+    <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="imap_2objectcomment_8h" name="objectcomment.h" local="yes" imported="no">imap/objectcomment.h</includes>
-    <class kind="class">csObjectComment</class>
+    <includes id="engine_8h" name="engine.h" local="yes" imported="no">iengine/engine.h</includes>
+    <class kind="class">CS::Persistence::ObjectComment</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Persistence</namespace>
+    <member kind="function">
+      <type>bool</type>
+      <name>LoadComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>ad83b10ad7f04f7abd9f81fc02e89e4b5</anchor>
+      <arglist>(iObjectRegistry *object_reg, iObject *object, iDocumentNode *node, bool replace=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LoadComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>a3ed1c36c33952801799209415304b522</anchor>
+      <arglist>(iEngine *engine, iObject *object, iDocumentNode *node, bool replace=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SaveComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>a06c9e9e2254b1a7b1f160c903d0bf90c</anchor>
+      <arglist>(iObjectRegistry *object_reg, iObject *obj, iDocumentNode *parentNode)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SaveComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>acb462e9015bc5b0671ab257f06c5d76b</anchor>
+      <arglist>(iEngine *engine, iObject *obj, iDocumentNode *parentNode)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>objectcomment.h</name>
@@ -35711,6 +35744,7 @@
     <namespace>CS::Memory</namespace>
     <namespace>CS::Mesh</namespace>
     <namespace>CS::Meta</namespace>
+    <namespace>CS::Persistence</namespace>
     <namespace>CS::Physics</namespace>
     <namespace>CS::Physics::Bullet</namespace>
     <namespace>CS::Platform</namespace>
@@ -70764,25 +70798,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>csObjectComment</name>
-    <filename>classcsObjectComment.html</filename>
-    <base>scfImplementationExt1&lt; csObjectComment, csObject, iObjectComment &gt;</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual iString *</type>
-      <name>GetComment</name>
-      <anchorfile>classcsObjectComment.html</anchorfile>
-      <anchor>ab0980e5fcdc2511d463647f445485a4a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual iObject *</type>
-      <name>QueryObject</name>
-      <anchorfile>classcsObjectComment.html</anchorfile>
-      <anchor>a02d1724758010e3b3e5b6a6f24b722e0</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>csObjectModel</name>
     <filename>classcsObjectModel.html</filename>
     <base>scfImplementation1&lt; csObjectModel, iObjectModel &gt;</base>
@@ -96337,6 +96352,13 @@
       <anchor>a8f095eb1fec958fa4396b0ee4b593b7d</anchor>
       <arglist>()=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadComment</name>
+      <anchorfile>structiLoaderContext.html</anchorfile>
+      <anchor>a72234b4e6e0b643bf6f6ac67894e6a86</anchor>
+      <arglist>(iObject *obj, iDocumentNode *commentNode, bool replace=false)=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iLoaderPlugin</name>
@@ -115894,6 +115916,7 @@
     <namespace>CS::Memory</namespace>
     <namespace>CS::Mesh</namespace>
     <namespace>CS::Meta</namespace>
+    <namespace>CS::Persistence</namespace>
     <namespace>CS::Physics</namespace>
     <namespace>CS::Platform</namespace>
     <namespace>CS::Plugin</namespace>
@@ -129807,6 +129830,58 @@
     <name>CS::Meta::Implementation::Wrap</name>
     <filename>structCS_1_1Meta_1_1Implementation_1_1Wrap.html</filename>
     <templarg></templarg>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::Persistence</name>
+    <filename>namespaceCS_1_1Persistence.html</filename>
+    <class kind="class">CS::Persistence::ObjectComment</class>
+    <member kind="function">
+      <type>bool</type>
+      <name>LoadComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>ad83b10ad7f04f7abd9f81fc02e89e4b5</anchor>
+      <arglist>(iObjectRegistry *object_reg, iObject *object, iDocumentNode *node, bool replace=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>LoadComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>a3ed1c36c33952801799209415304b522</anchor>
+      <arglist>(iEngine *engine, iObject *object, iDocumentNode *node, bool replace=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SaveComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>a06c9e9e2254b1a7b1f160c903d0bf90c</anchor>
+      <arglist>(iObjectRegistry *object_reg, iObject *obj, iDocumentNode *parentNode)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SaveComment</name>
+      <anchorfile>namespaceCS_1_1Persistence.html</anchorfile>
+      <anchor>acb462e9015bc5b0671ab257f06c5d76b</anchor>
+      <arglist>(iEngine *engine, iObject *obj, iDocumentNode *parentNode)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Persistence::ObjectComment</name>
+    <filename>classCS_1_1Persistence_1_1ObjectComment.html</filename>
+    <base>scfImplementationExt1&lt; ObjectComment, csObject, iObjectComment &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iString *</type>
+      <name>GetComment</name>
+      <anchorfile>classCS_1_1Persistence_1_1ObjectComment.html</anchorfile>
+      <anchor>a40027614b164d920d48e6487ddf71535</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iObject *</type>
+      <name>QueryObject</name>
+      <anchorfile>classCS_1_1Persistence_1_1ObjectComment.html</anchorfile>
+      <anchor>ae578f366954cc43c1072b584d350f080</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>CS::Physics</name>
