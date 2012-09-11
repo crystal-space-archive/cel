@@ -66702,6 +66702,13 @@
       <arglist>(const csSegment3 &amp;seg, const csVector3 &amp;tr1, const csVector3 &amp;tr2, const csVector3 &amp;tr3, csVector3 &amp;isect)</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>SegmentTriangleBF</name>
+      <anchorfile>classcsIntersect3.html</anchorfile>
+      <anchor>ade0ada932e3a9bc17ed71329079e1b67</anchor>
+      <arglist>(const csSegment3 &amp;seg, const csVector3 &amp;tr1, const csVector3 &amp;tr2, const csVector3 &amp;tr3, csVector3 &amp;isect)</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static float</type>
       <name>SegmentXFrustum</name>
       <anchorfile>classcsIntersect3.html</anchorfile>
@@ -69749,8 +69756,8 @@
       <type>virtual bool</type>
       <name>HitBeamObject</name>
       <anchorfile>classcsMeshObject.html</anchorfile>
-      <anchor>ada02b9acb07f3a103ceae80ab28fcbd4</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **=0)</arglist>
+      <anchor>a67d2a5ef0cff643ee82c2b042269fa12</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **=0, bool bf=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual bool</type>
@@ -97582,8 +97589,8 @@
       <type>virtual bool</type>
       <name>HitBeamObject</name>
       <anchorfile>structiMeshObject.html</anchorfile>
-      <anchor>a11f23a1e8e26b8a48de7d3b991bab5a9</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **material=0)=0</arglist>
+      <anchor>afece32f65c917a755b20a3c755c0a378</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr, int *polygon_idx=0, iMaterialWrapper **material=0, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -97994,8 +98001,8 @@
       <type>virtual csHitBeamResult</type>
       <name>HitBeam</name>
       <anchorfile>structiMeshWrapper.html</anchorfile>
-      <anchor>a64f423079b21ccd61e3b8b5ccda8e027</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool do_material=false)=0</arglist>
+      <anchor>ab01196803b3ae73574f1d28045da2ee0</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool do_material=false, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csHitBeamResult</type>
@@ -98008,8 +98015,8 @@
       <type>virtual csHitBeamResult</type>
       <name>HitBeamObject</name>
       <anchorfile>structiMeshWrapper.html</anchorfile>
-      <anchor>af228a9e920829e92bb3d0f4ef8bdfbb0</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool do_material=false)=0</arglist>
+      <anchor>a9186b02e4969b8176f72d4ed14a64b67</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool do_material=false, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csHitBeamResult</type>
@@ -102398,8 +102405,8 @@
       <type>virtual iMeshWrapper *</type>
       <name>HitBeamPortals</name>
       <anchorfile>structiPortal.html</anchorfile>
-      <anchor>a672431a14ec2b03ae3987a42395075cd</anchor>
-      <arglist>(const csReversibleTransform &amp;t, const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, int *polygon_idx, iSector **final_sector=0)=0</arglist>
+      <anchor>ada8814bd472c0f2a6a021702ec7b04fc</anchor>
+      <arglist>(const csReversibleTransform &amp;t, const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, int *polygon_idx, iSector **final_sector=0, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -104710,15 +104717,15 @@
       <type>virtual csSectorHitBeamResult</type>
       <name>HitBeam</name>
       <anchorfile>structiSector.html</anchorfile>
-      <anchor>a1f9077b16a785db4db8176e0c9c36ed2</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool accurate=false)=0</arglist>
+      <anchor>a51d8eb81a9a36519d587137b09abe16c</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool accurate=false, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csSectorHitBeamResult</type>
       <name>HitBeamPortals</name>
       <anchorfile>structiSector.html</anchorfile>
-      <anchor>ab5bd7bb8a6cb9a117ab3b266929dafb6</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end)=0</arglist>
+      <anchor>ad151c675ea856b0d1a1b8bf11e8a449c</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -114002,15 +114009,15 @@
       <type>virtual bool</type>
       <name>IntersectSegment</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
-      <anchor>a94f88404a89678d152256d40d45dfa4f</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr=0, iMeshWrapper **p_mesh=0, int *poly_idx=0, bool accurate=true)=0</arglist>
+      <anchor>a85e5a9f7bf145f57e42dc1022f1bac79</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, csVector3 &amp;isect, float *pr=0, iMeshWrapper **p_mesh=0, int *poly_idx=0, bool accurate=true, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iVisibilityObjectIterator &gt;</type>
       <name>IntersectSegment</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
-      <anchor>a897ff1c31c766d9fc139e934132cd201</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool accurate=false)=0</arglist>
+      <anchor>ac179303a3a72f697038ea265bd0ef4ba</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end, bool accurate=false, bool bf=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iVisibilityObjectIterator &gt;</type>
