@@ -27838,6 +27838,7 @@
     <path>/tmp/tmp0/trunk/include/csutil/</path>
     <filename>ref_8h</filename>
     <includes id="customallocated_8h" name="customallocated.h" local="yes" imported="no">csutil/customallocated.h</includes>
+    <includes id="atomicops_8h" name="atomicops.h" local="yes" imported="no">csutil/threading/atomicops.h</includes>
     <class kind="class">csPtr</class>
     <class kind="class">csRef</class>
   </compound>
