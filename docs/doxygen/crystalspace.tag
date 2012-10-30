@@ -40861,6 +40861,13 @@
       <type>void</type>
       <name>FixSizes</name>
       <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga581459ced9f450d953c94279046c6f49</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FixSizes</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>ga8ca24f1bb0f8f6badd99d9160568b666</anchor>
       <arglist>(int size)</arglist>
     </member>
@@ -40868,8 +40875,8 @@
       <type>csString</type>
       <name>GetCanonical</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gab5756f68c1ccccee3a3d551575e28e7c</anchor>
-      <arglist>()</arglist>
+      <anchor>ga30cdc215c973a66c028464087c1e1c90</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>char</type>
@@ -40917,8 +40924,8 @@
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gaedd846f03d09cefa720125baff26afc6</anchor>
-      <arglist>()</arglist>
+      <anchor>ga8c9699dbf9d6cc707107898e140872a5</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -40945,8 +40952,8 @@
       <type></type>
       <name>StructuredTextureFormat</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga113a2ea8f06f1249a75ac21e01912298</anchor>
-      <arglist>(char cmp1, int size1, char cmp2=0, int size2=0, char cmp3=0, int size3=0, char cmp4=0, int size4=0, TextureFormat fmt=Integer)</arglist>
+      <anchor>gadc0e969c29bfeec05d2e12ec03831e3c</anchor>
+      <arglist>(TextureFormat fmt)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -40968,6 +40975,34 @@
       <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>ga7628fb4571baef0d00b1120abf842675</anchor>
       <arglist>[CS_BUFCOMP_BASE_TYPECOUNT]</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga0739b9132c77d106a085e42b87d84457</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, char cmp3, int size3, char cmp4, int size4, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>gace1138aa4217c39b9ee0f06daa1244ed</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, char cmp3, int size3, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga4abed6f6a15aebe1817080084e8ca30e</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga610103b8d129ac457898c9569b95d59d</anchor>
+      <arglist>(char cmp1, int size1, TextureFormat fmt=Integer)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -116873,6 +116908,13 @@
       <type>void</type>
       <name>FixSizes</name>
       <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga581459ced9f450d953c94279046c6f49</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>FixSizes</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>ga8ca24f1bb0f8f6badd99d9160568b666</anchor>
       <arglist>(int size)</arglist>
     </member>
@@ -116880,8 +116922,8 @@
       <type>csString</type>
       <name>GetCanonical</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gab5756f68c1ccccee3a3d551575e28e7c</anchor>
-      <arglist>()</arglist>
+      <anchor>ga30cdc215c973a66c028464087c1e1c90</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>char</type>
@@ -116929,8 +116971,8 @@
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gaedd846f03d09cefa720125baff26afc6</anchor>
-      <arglist>()</arglist>
+      <anchor>ga8c9699dbf9d6cc707107898e140872a5</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -116957,8 +116999,8 @@
       <type></type>
       <name>StructuredTextureFormat</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ga113a2ea8f06f1249a75ac21e01912298</anchor>
-      <arglist>(char cmp1, int size1, char cmp2=0, int size2=0, char cmp3=0, int size3=0, char cmp4=0, int size4=0, TextureFormat fmt=Integer)</arglist>
+      <anchor>gadc0e969c29bfeec05d2e12ec03831e3c</anchor>
+      <arglist>(TextureFormat fmt)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -116973,6 +117015,34 @@
       <anchorfile>group__gfx3d.html</anchorfile>
       <anchor>gab2c85ce48376013950c2a82501c778c8</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga0739b9132c77d106a085e42b87d84457</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, char cmp3, int size3, char cmp4, int size4, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>gace1138aa4217c39b9ee0f06daa1244ed</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, char cmp3, int size3, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga4abed6f6a15aebe1817080084e8ca30e</anchor>
+      <arglist>(char cmp1, int size1, char cmp2, int size2, TextureFormat fmt=Integer)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StructuredTextureFormat</name>
+      <anchorfile>group__gfx3d.html</anchorfile>
+      <anchor>ga610103b8d129ac457898c9569b95d59d</anchor>
+      <arglist>(char cmp1, int size1, TextureFormat fmt=Integer)</arglist>
     </member>
   </compound>
   <compound kind="class">
