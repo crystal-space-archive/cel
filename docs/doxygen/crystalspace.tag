@@ -25060,6 +25060,14 @@
     <class kind="class">csVfsDirectoryChanger</class>
   </compound>
   <compound kind="file">
+    <name>wxappargconvert.h</name>
+    <path>/tmp/tmp0/trunk/include/cstool/</path>
+    <filename>wxappargconvert_8h</filename>
+    <class kind="class">CS::WX::AppArgConvert</class>
+    <namespace>CS</namespace>
+    <namespace>CS::WX</namespace>
+  </compound>
+  <compound kind="file">
     <name>cstypes.h</name>
     <path>/tmp/tmp0/trunk/include/</path>
     <filename>cstypes_8h</filename>
@@ -35763,6 +35771,7 @@
     <namespace>CS::SndSys</namespace>
     <namespace>CS::Threading</namespace>
     <namespace>CS::Utility</namespace>
+    <namespace>CS::WX</namespace>
   </compound>
   <compound kind="page">
     <name>Allocators</name>
@@ -115968,6 +115977,7 @@
     <namespace>CS::SndSys</namespace>
     <namespace>CS::Threading</namespace>
     <namespace>CS::Utility</namespace>
+    <namespace>CS::WX</namespace>
     <class kind="class">CS::CowWrapper</class>
     <class kind="class">CS::DataBuffer</class>
     <class kind="class">CS::ImageAutoConvert</class>
@@ -139793,5 +139803,35 @@
   <compound kind="class">
     <name>CS::Utility::ResourceCache::SortingNone</name>
     <filename>classCS_1_1Utility_1_1ResourceCache_1_1SortingNone.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>CS::WX</name>
+    <filename>namespaceCS_1_1WX.html</filename>
+    <class kind="class">CS::WX::AppArgConvert</class>
+  </compound>
+  <compound kind="class">
+    <name>CS::WX::AppArgConvert</name>
+    <filename>classCS_1_1WX_1_1AppArgConvert.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>AppArgConvert</name>
+      <anchorfile>classCS_1_1WX_1_1AppArgConvert.html</anchorfile>
+      <anchor>a7589a5f17133953922c4df4c84e9d01e</anchor>
+      <arglist>(int argc, const wxChar *const *argv)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>csArgc</name>
+      <anchorfile>classCS_1_1WX_1_1AppArgConvert.html</anchorfile>
+      <anchor>a8d068f102e85470bace9be6f4e402946</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const char *const *</type>
+      <name>csArgv</name>
+      <anchorfile>classCS_1_1WX_1_1AppArgConvert.html</anchorfile>
+      <anchor>abf21ffe855b335f29703d90f7a6d1d6e</anchor>
+      <arglist>() const </arglist>
+    </member>
   </compound>
 </tagfile>
