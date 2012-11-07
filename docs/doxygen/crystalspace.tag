@@ -24229,6 +24229,7 @@
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
     <includes id="csutil_2stringarray_8h" name="stringarray.h" local="yes" imported="no">csutil/stringarray.h</includes>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
+    <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
     <includes id="scenenode_8h" name="scenenode.h" local="yes" imported="no">iengine/scenenode.h</includes>
     <includes id="sector_8h" name="sector.h" local="yes" imported="no">iengine/sector.h</includes>
     <includes id="movable_8h" name="movable.h" local="yes" imported="no">iengine/movable.h</includes>
