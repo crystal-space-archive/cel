@@ -94010,6 +94010,13 @@
       <arglist>(bool iAllow)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>CanResize</name>
+      <anchorfile>structiGraphicsCanvas.html</anchorfile>
+      <anchor>a8587c0d4183268b77e60856bc3397c8a</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>CanvasClose</name>
       <anchorfile>structiGraphicsCanvas.html</anchorfile>
@@ -94028,6 +94035,13 @@
       <name>CanvasResize</name>
       <anchorfile>structiGraphicsCanvas.html</anchorfile>
       <anchor>a927a4cca2db7657f615a6c5f2530e8af</anchor>
+      <arglist>(int w, int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ForceCanvasResize</name>
+      <anchorfile>structiGraphicsCanvas.html</anchorfile>
+      <anchor>ae6b6ac868927a53332ca5a49d534c7b5</anchor>
       <arglist>(int w, int h)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -132233,12 +132247,12 @@
       <anchor>af7b253859ba4dfa51c3f820efe4f4d1eab5c453d032950bfa5821252157369241</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>AllowResize</name>
+    <member kind="function">
+      <type>bool</type>
+      <name>CanResize</name>
       <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
-      <anchor>a02ea436129d1f5aa1876549e304f6a88</anchor>
-      <arglist>(bool)</arglist>
+      <anchor>a6b3956a3f70e9ad1f9285590242a60e6</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -132267,6 +132281,13 @@
       <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
       <anchor>abc2aa8f174d186048206e2a841de31a7</anchor>
       <arglist>(int d)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ForceCanvasResize</name>
+      <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
+      <anchor>a562aa556b31cf1d1d5365fa44af64d0d</anchor>
+      <arglist>(int w, int h)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -132415,6 +132436,13 @@
       <anchor>a62324896da4e03e49014ca1e699dc4fc</anchor>
       <arglist>(int &amp;width, int &amp;height)</arglist>
     </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>BroadcastResize</name>
+      <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
+      <anchor>abf32ca4378d42987fe85ebb52603158c</anchor>
+      <arglist>(int oldWidth, int oldHeight)</arglist>
+    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
       <name>GetWorkspaceDimensions</name>
@@ -132428,6 +132456,13 @@
       <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
       <anchor>ac2ef88799a959aeacd29c6241b8fd5a6</anchor>
       <arglist>(iObjectRegistry *object_reg)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>ResizeNotify</name>
+      <anchorfile>classCS_1_1PluginCommon_1_1CanvasCommonBase.html</anchorfile>
+      <anchor>acaa0aa2b634e26cd47a06847eae45199</anchor>
+      <arglist>(int newWidth, int newHeight)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
@@ -132839,8 +132874,8 @@
       <type>void</type>
       <name>HandleResize</name>
       <anchorfile>classCS_1_1PluginCommon_1_1Graphics2DCommon.html</anchorfile>
-      <anchor>a7b7d52f4abefbb159297c5419d9fcab1</anchor>
-      <arglist>()</arglist>
+      <anchor>abe3b78c50486d26058b0aa15b0097048</anchor>
+      <arglist>(iEvent &amp;Event)</arglist>
     </member>
   </compound>
   <compound kind="class">
