@@ -137218,6 +137218,7 @@ SWIGEXPORT void SWIG_init(void) {
   SWIG_InstallConstants(d,swig_const_table);
   
   
+  SWIG_Python_SetConstant(d, "CEL_DATA_UNKNOWN",SWIG_From_int(static_cast< int >(CEL_DATA_UNKNOWN)));
   SWIG_Python_SetConstant(d, "CEL_DATA_NONE",SWIG_From_int(static_cast< int >(CEL_DATA_NONE)));
   SWIG_Python_SetConstant(d, "CEL_DATA_BOOL",SWIG_From_int(static_cast< int >(CEL_DATA_BOOL)));
   SWIG_Python_SetConstant(d, "CEL_DATA_BYTE",SWIG_From_int(static_cast< int >(CEL_DATA_BYTE)));
