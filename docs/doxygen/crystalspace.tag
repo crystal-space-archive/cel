@@ -28,7 +28,6 @@
     <includes id="iutil_8h" name="iutil.h" local="yes" imported="no">iutil.h</includes>
     <includes id="ivaria_8h" name="ivaria.h" local="yes" imported="no">ivaria.h</includes>
     <includes id="ivideo_8h" name="ivideo.h" local="yes" imported="no">ivideo.h</includes>
-    <includes id="ivideodecode_8h" name="ivideodecode.h" local="yes" imported="no">ivideodecode.h</includes>
   </compound>
   <compound kind="file">
     <name>csgeom.h</name>
@@ -1024,31 +1023,31 @@
     <member kind="enumvalue">
       <name>CS_TRIMESH_CLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ae79eee97416d39f451607fc2c94b01dc</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a03fce5c7db65c3182ec683ff006698a3</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_CONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26aeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a3d71f9603c9ea6f85b041230d365c984</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_DEFORMABLE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1645,13 +1644,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -22734,6 +22733,7 @@
     <includes id="imesh_2object_8h" name="object.h" local="yes" imported="no">imesh/object.h</includes>
     <includes id="imesh_2objmodel_8h" name="objmodel.h" local="yes" imported="no">imesh/objmodel.h</includes>
     <includes id="polyclip_8h" name="polyclip.h" local="yes" imported="no">csgeom/polyclip.h</includes>
+    <includes id="cameracache_8h" name="cameracache.h" local="yes" imported="no">csplugincommon/rendermanager/cameracache.h</includes>
     <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <includes id="texturecache_8h" name="texturecache.h" local="yes" imported="no">csplugincommon/rendermanager/texturecache.h</includes>
@@ -22743,6 +22743,15 @@
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
     <namespace>CS::RenderManager::AutoFX</namespace>
+  </compound>
+  <compound kind="file">
+    <name>cameracache.h</name>
+    <path>/tmp/tmp0/trunk/include/csplugincommon/rendermanager/</path>
+    <filename>cameracache_8h</filename>
+    <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
+    <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
+    <namespace>CS</namespace>
+    <namespace>CS::RenderManager</namespace>
   </compound>
   <compound kind="file">
     <name>debugcommon.h</name>
@@ -24835,31 +24844,31 @@
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_WORLD</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a73c53bacb25588538843a1dcfe5f382ba83e2005fe6301861439ac56abb9ddf85</anchor>
+      <anchor>a26e1124d33b4acdb532c49f6498df549a83e2005fe6301861439ac56abb9ddf85</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_LIBRARY</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a73c53bacb25588538843a1dcfe5f382ba04aa157fdde5f7ec507f082ac947c643</anchor>
+      <anchor>a26e1124d33b4acdb532c49f6498df549a04aa157fdde5f7ec507f082ac947c643</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_MESHFACT</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a73c53bacb25588538843a1dcfe5f382bac2eabfdace938604cf1b14127064cc3a</anchor>
+      <anchor>a26e1124d33b4acdb532c49f6498df549ac2eabfdace938604cf1b14127064cc3a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_PARAMS</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a73c53bacb25588538843a1dcfe5f382ba7b201792a220f5f30d589b62e7ad26f2</anchor>
+      <anchor>a26e1124d33b4acdb532c49f6498df549a7b201792a220f5f30d589b62e7ad26f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_LIGHTFACT</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a73c53bacb25588538843a1dcfe5f382ba0ce1ca3698111968109a4c97fe3a3635</anchor>
+      <anchor>a26e1124d33b4acdb532c49f6498df549a0ce1ca3698111968109a4c97fe3a3635</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -25320,6 +25329,7 @@
     <includes id="tuple_8h" name="tuple.h" local="yes" imported="no">csutil/tuple.h</includes>
     <includes id="typetraits_8h" name="typetraits.h" local="yes" imported="no">csutil/typetraits.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
+    <includes id="variant_8h" name="variant.h" local="yes" imported="no">csutil/variant.h</includes>
     <includes id="verbosity_8h" name="verbosity.h" local="yes" imported="no">csutil/verbosity.h</includes>
     <includes id="vfscache_8h" name="vfscache.h" local="yes" imported="no">csutil/vfscache.h</includes>
     <includes id="vfshiercache_8h" name="vfshiercache.h" local="yes" imported="no">csutil/vfshiercache.h</includes>
@@ -26444,7 +26454,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>ggaa618c4d8c29ef4efe6f10c741fb1f47aa502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>ggad63240694c6dc2a28c24bfc2db90ad7aa502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -28139,37 +28149,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -29031,6 +29041,99 @@
       <anchorfile>namespaceCS.html</anchorfile>
       <anchor>a2a255ea1bc67ebee680069a791b1c610</anchor>
       <arglist>(const wchar_t *s)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>variant.h</name>
+    <path>/tmp/tmp0/trunk/include/csutil/</path>
+    <filename>variant_8h</filename>
+    <includes id="matrix3_8h" name="matrix3.h" local="yes" imported="no">csgeom/matrix3.h</includes>
+    <includes id="transfrm_8h" name="transfrm.h" local="yes" imported="no">csgeom/transfrm.h</includes>
+    <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
+    <includes id="vector3_8h" name="vector3.h" local="yes" imported="no">csgeom/vector3.h</includes>
+    <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
+    <includes id="cscolor_8h" name="cscolor.h" local="yes" imported="no">csutil/cscolor.h</includes>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
+    <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
+    <class kind="struct">csVariant</class>
+    <member kind="enumeration">
+      <name>csVariantType</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>ga91624a433f78618fba6823a5d79bdb52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_BOOL</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52af17bc3eb7bd1d4e1fc0613efbfa10517</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_CMD</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ad54f393a047982f3d1cf4d1d619d17a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_FLOAT</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a889201a771dfd2a1496b23e69a94c18f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_STRING</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR2</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_MATRIX3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ac719f9171ec6f46589beb5053f1c5e98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_TRANSFORM</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8bcc7259735ef5e9af35b336309b050c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_IBASE</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ac4f0d0c0539e936afb354d8842289d2f</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -30246,37 +30349,37 @@
     <member kind="enumvalue">
       <name>CS_CLIP_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_CLIPPED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a75e75d608a45eea6c9fda90b04aeefbd</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ORIGINAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5ab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ONEDGE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -31808,19 +31911,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fcab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -31939,25 +32042,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -33115,47 +33218,9 @@
     <name>pluginconfig.h</name>
     <path>/tmp/tmp0/trunk/include/iutil/</path>
     <filename>pluginconfig_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
+    <includes id="variant_8h" name="variant.h" local="yes" imported="no">csutil/variant.h</includes>
     <class kind="struct">csOptionDescription</class>
-    <class kind="struct">csVariant</class>
     <class kind="struct">iPluginConfig</class>
-    <member kind="enumeration">
-      <name>csVariantType</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>ga91624a433f78618fba6823a5d79bdb52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_LONG</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a2214fd7cbaeede53271fb01107889556</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_BOOL</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52af17bc3eb7bd1d4e1fc0613efbfa10517</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_CMD</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52ad54f393a047982f3d1cf4d1d619d17a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_FLOAT</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a889201a771dfd2a1496b23e69a94c18f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CSVAR_STRING</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>reftrack.h</name>
@@ -33863,19 +33928,19 @@
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_NONE</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a1b7b7893d940926615b39239ac05829da47b796e7b1f919fd36cc960eb591bc55</anchor>
+      <anchor>a098384b0034af0daa7c9c5c82b563567a47b796e7b1f919fd36cc960eb591bc55</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_LESS</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a1b7b7893d940926615b39239ac05829da003628ad03747b08e6bf75545e799e3f</anchor>
+      <anchor>a098384b0034af0daa7c9c5c82b563567a003628ad03747b08e6bf75545e799e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_GREATER</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a1b7b7893d940926615b39239ac05829da29a7194001b550e811008129dc92aaeb</anchor>
+      <anchor>a098384b0034af0daa7c9c5c82b563567a29a7194001b550e811008129dc92aaeb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -34774,73 +34839,73 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa62585826f145edac424308dd93100b15</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfaba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -35988,12 +36053,6 @@
     <class kind="struct">iWxWindow</class>
   </compound>
   <compound kind="file">
-    <name>ivideodecode.h</name>
-    <path>/tmp/tmp0/trunk/include/</path>
-    <filename>ivideodecode_8h</filename>
-    <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
-  </compound>
-  <compound kind="file">
     <name>namespacedocs.h</name>
     <path>/tmp/tmp0/trunk/include/</path>
     <filename>namespacedocs_8h</filename>
@@ -36005,8 +36064,6 @@
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
-    <namespace>CS::Editor</namespace>
-    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Material</namespace>
@@ -39537,6 +39594,36 @@
       <arglist>(const T &amp;x)</arglist>
     </member>
     <member kind="enumvalue">
+      <name>CS_TRIMESH_CLOSED</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_NOTCLOSED</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_CONVEX</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_NOTCONVEX</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_TRIMESH_DEFORMABLE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CS_BOX_CORNER_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
       <anchor>ggabc6126af1d45847bc59afa0aa3216b04a86d75fcdcc57f10b7e00afa9571b2d56</anchor>
@@ -39881,67 +39968,37 @@
     <member kind="enumvalue">
       <name>CS_CLIP_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_CLIPPED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga84fe57ba52f8e237004a413b27ea4db8a75e75d608a45eea6c9fda90b04aeefbd</anchor>
+      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ORIGINAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5ab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ONEDGE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a38ad988c5e359fec3a8328c9965a691c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_CLOSED</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ae79eee97416d39f451607fc2c94b01dc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_NOTCLOSED</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a03fce5c7db65c3182ec683ff006698a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_CONVEX</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26aeb9ea0bd96761361e39a61c17d65a256</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_NOTCONVEX</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a3d71f9603c9ea6f85b041230d365c984</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_TRIMESH_DEFORMABLE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -40113,13 +40170,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga92c4bd66c8074c3d126a069275a0a80ca70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -40355,73 +40412,73 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa62585826f145edac424308dd93100b15</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfaba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -41863,37 +41920,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>ggae33c78feb670de33d2abf21ec0624531a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -42041,19 +42098,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fca21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>ggac34c4c978f4130a92a5068f9e21ea9fcab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -42244,7 +42301,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>ggaa618c4d8c29ef4efe6f10c741fb1f47aa502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>ggad63240694c6dc2a28c24bfc2db90ad7aa502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -42296,12 +42353,6 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSVAR_LONG</name>
-      <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52a2214fd7cbaeede53271fb01107889556</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
       <name>CSVAR_BOOL</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52af17bc3eb7bd1d4e1fc0613efbfa10517</anchor>
@@ -42323,6 +42374,54 @@
       <name>CSVAR_STRING</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52a8ac63ce74118d6c3336dacf0e766cdb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR2</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8fb0d0ae163899825de0bdbe394713a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ad6c08f2918f91c3d6ff97cc815046ae7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_VECTOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa3e401b00ed93fe0ba7558a3846b4b0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a59b5884559a13c0c61414b2fa0c4add8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_COLOR4</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52af466348bdcb26d9e9a2e341f1e76545a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_MATRIX3</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ac719f9171ec6f46589beb5053f1c5e98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_TRANSFORM</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a8bcc7259735ef5e9af35b336309b050c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CSVAR_IBASE</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52ac4f0d0c0539e936afb354d8842289d2f</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -42545,25 +42644,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga0ae1e3bf78c960c83e2d437efd802058a356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected" static="yes">
@@ -83184,6 +83283,69 @@
       <type></type>
       <name>csVariant</name>
       <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a67fdf9c2768917e6aa1ee821690fca82</anchor>
+      <arglist>(iBase *ib)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a8d344976f98547507de5c25264ab4fbf</anchor>
+      <arglist>(const csTransform &amp;t)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a66457ebd5760ba4b40b0788f5a2d1fef</anchor>
+      <arglist>(const csMatrix3 &amp;m)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a4d0cbe20fb933b8322014d0f579cb67e</anchor>
+      <arglist>(const csVector4 &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a2877cb7eebe88abe499b14c87e68e425</anchor>
+      <arglist>(const csVector3 &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ab7762483c0d7d344eef9ce48548f3e66</anchor>
+      <arglist>(const csVector2 &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a44f70ee846e4bd7273364f72d5d78581</anchor>
+      <arglist>(const csColor4 &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ae5a4aa2a71526356bccddd0ab85fbe87</anchor>
+      <arglist>(const csColor &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ae71b2ee6e86d114cf06dae29896c41c2</anchor>
+      <arglist>(scfString &amp;s)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csVariant</name>
+      <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a13f1f95f0ec3bac94130e3a8a9d09532</anchor>
       <arglist>(const char *s)</arglist>
     </member>
@@ -83223,10 +83385,31 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>csString</type>
+      <name>Description</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a45fd38df648256c215a0027d6ae61d06</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>GetBool</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a36fa1d06d3d829ca555a9985a596b43c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csColor</type>
+      <name>GetColor</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ad8afa7c0ac8fa01b9606a89774e73945</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csColor4</type>
+      <name>GetColor4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a06d43b5955467257b4eced886615912f</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -83237,10 +83420,24 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>iBase *</type>
+      <name>GetIBase</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a7eb70520e96175eb1ed4d07eb8e4a155</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>long</type>
       <name>GetLong</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>ababd9d1ee88facf3a25afc5911d4fdee</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csMatrix3</type>
+      <name>GetMatrix3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a06c356766e8159cc796e8717bfa82000</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -83251,10 +83448,38 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>csTransform</type>
+      <name>GetTransform</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>aa697432733c1a60f307b64653ded9dbd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>csVariantType</type>
       <name>GetType</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a0aa9f6d202cc90e06447f70c238f44c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector2</type>
+      <name>GetVector2</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a4fb3857eec74c1a3475330db599d5d2f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector3</type>
+      <name>GetVector3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a38005416c1e13ee77285729553d5c6f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>csVector4</type>
+      <name>GetVector4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a8d409ad682a1699adbee030ef58de158</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -83273,6 +83498,20 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetColor</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>aca698a80f9b1af917d22121b09cf9b36</anchor>
+      <arglist>(const csColor &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetColor4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a7277e5f418b79cb5450632506847a4da</anchor>
+      <arglist>(const csColor4 &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetCommand</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a1f651e489b425485c7ba4620b8b571b4</anchor>
@@ -83287,6 +83526,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetIBase</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ab93d19d67d5674c431ff31069aa4a3a9</anchor>
+      <arglist>(const csRef&lt; iBase &gt; &amp;ib)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetLong</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a6ae9d0b1f1dbe2b0d190425d1b584f68</anchor>
@@ -83294,10 +83540,45 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetMatrix3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ae42fb6283323a4b4ebbd3c53011f0254</anchor>
+      <arglist>(const csMatrix3 &amp;m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetString</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a70568ffe2ca094b6da29a5264da53fa6</anchor>
       <arglist>(const char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetTransform</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>a933245e9f8c9116c2077e4f0388d1ef2</anchor>
+      <arglist>(const csTransform &amp;t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector2</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>aa07c941b1dafe030db77691b203b288d</anchor>
+      <arglist>(const csVector2 &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector3</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ac28ef8508ddfbf016e758cb17f06d64d</anchor>
+      <arglist>(const csVector3 &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetVector4</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ab5e83c2ba26411efa85fcbb83b6020ea</anchor>
+      <arglist>(const csVector4 &amp;v)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -100087,13 +100368,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>EnableStepFast</name>
-      <anchorfile>structiODEDynamicState.html</anchorfile>
-      <anchor>a7219d10c5e83e672015751cc961df6f3</anchor>
-      <arglist>(bool enable)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetGlobalCFM</name>
       <anchorfile>structiODEDynamicState.html</anchorfile>
       <anchor>a6772f5b405c746bbf7c7345bf2883231</anchor>
@@ -100179,13 +100453,6 @@
       <name>EnableOldInertia</name>
       <anchorfile>structiODEDynamicSystemState.html</anchorfile>
       <anchor>a10f3533cfdb7c71750577c8e4d63443d</anchor>
-      <arglist>(bool enable)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>EnableStepFast</name>
-      <anchorfile>structiODEDynamicSystemState.html</anchorfile>
-      <anchor>abd4bb53305a6bc9815590477658b6447</anchor>
       <arglist>(bool enable)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -102490,25 +102757,25 @@
     <member kind="enumvalue">
       <name>lpiInitialize</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>a20b3085a885dc98d013d359629800fa1aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
+      <anchor>ae1d4fd740305b8ba14833c48742dd371aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReportErrors</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>a20b3085a885dc98d013d359629800fa1afea2fe7c6628ed1c6b62caa10187fb80</anchor>
+      <anchor>ae1d4fd740305b8ba14833c48742dd371afea2fe7c6628ed1c6b62caa10187fb80</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiLoadDependencies</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>a20b3085a885dc98d013d359629800fa1a27d76f7ebccca23d0296c4ee98e829d4</anchor>
+      <anchor>ae1d4fd740305b8ba14833c48742dd371a27d76f7ebccca23d0296c4ee98e829d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReturnLoadedInstance</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>a20b3085a885dc98d013d359629800fa1a132f07d961c1733a0603788498274cd4</anchor>
+      <anchor>ae1d4fd740305b8ba14833c48742dd371a132f07d961c1733a0603788498274cd4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -113045,13 +113312,13 @@
     <member kind="enumvalue">
       <name>blitbufReadable</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>ac34e65b1f0a1984b8cee534e1b8d6a89a932bb081f300bc89772998296459cd75</anchor>
+      <anchor>a6e04e680caf17a4ba5edccd3528aea4ea932bb081f300bc89772998296459cd75</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>blitbufRetainArea</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>ac34e65b1f0a1984b8cee534e1b8d6a89ab9303d14862a3ebfcc71099c5c0a2c53</anchor>
+      <anchor>a6e04e680caf17a4ba5edccd3528aea4eab9303d14862a3ebfcc71099c5c0a2c53</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -113859,10 +114126,38 @@
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
+      <name>GetCurrentLanguage</name>
+      <anchorfile>structiTranslator.html</anchorfile>
+      <anchor>ae74a2df1ded5430dab097a42c099465f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iStringArray &gt;</type>
+      <name>GetFallbacks</name>
+      <anchorfile>structiTranslator.html</anchorfile>
+      <anchor>a5e6da41f76abcb852640f30c54141e43</anchor>
+      <arglist>(const char *language) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
       <name>GetMsg</name>
       <anchorfile>structiTranslator.html</anchorfile>
-      <anchor>ae989c9c03596a73879e04477a6e8c84d</anchor>
-      <arglist>(const char *src) const =0</arglist>
+      <anchor>a0d615665f19eff9366c27eeb7c5c4538</anchor>
+      <arglist>(const char *src, bool fallback=true) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadTranslation</name>
+      <anchorfile>structiTranslator.html</anchorfile>
+      <anchor>ac1245c82acdec2ebe6d550354c92a5eb</anchor>
+      <arglist>(const char *file, iLoaderPlugin *loader=nullptr)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetCurrentLanguage</name>
+      <anchorfile>structiTranslator.html</anchorfile>
+      <anchor>a228624828509037f59b8d3af562597c6</anchor>
+      <arglist>(const char *language)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -116328,8 +116623,6 @@
     <namespace>CS::Debug</namespace>
     <namespace>CS::Deprecated</namespace>
     <namespace>CS::DocSystem</namespace>
-    <namespace>CS::Editor</namespace>
-    <namespace>CS::EditorApp</namespace>
     <namespace>CS::Geometry</namespace>
     <namespace>CS::Graphics</namespace>
     <namespace>CS::Material</namespace>
@@ -123798,13 +124091,35 @@
     <templarg>ArrayMemoryAlloc</templarg>
     <templarg>ArrayElementHandler</templarg>
     <base protection="protected">csHash</base>
+    <class kind="class">CS::Container::WeakKeyedHash::ConstGlobalIterator</class>
     <class kind="class">CS::Container::WeakKeyedHash::GlobalIterator</class>
+    <member kind="function">
+      <type>void</type>
+      <name>DeleteElement</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>a4adeb7ab955bd17aa67591c9bf4957ac</anchor>
+      <arglist>(GlobalIterator &amp;iterator)</arglist>
+    </member>
     <member kind="function">
       <type>const T &amp;</type>
       <name>Get</name>
       <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
       <anchor>a4f027aba9b550f68d58e93cb0a3674f0</anchor>
       <arglist>(const K &amp;key, const T &amp;fallback)</arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>GetElementPointer</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>a784742ebec7e1f254881be6d5c047454</anchor>
+      <arglist>(const K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>ConstGlobalIterator</type>
+      <name>GetIterator</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>aa662d84868409ed797ae216b2d698760</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>GlobalIterator</type>
@@ -123814,11 +124129,99 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>Purge</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>a4c33872ea2b1ac369d889cb299cfab2f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>T &amp;</type>
       <name>Put</name>
       <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
       <anchor>aff49f813940fa73001c0972d24371a8a</anchor>
       <arglist>(const K &amp;key, const T &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>PutUnique</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash.html</anchorfile>
+      <anchor>ac3ef34617b5c27314ddee7af75895302</anchor>
+      <arglist>(const K &amp;key, const T &amp;value)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Container::WeakKeyedHash::ConstGlobalIterator</name>
+    <filename>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Advance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>aa1a49f853a8fc90b5ae1a3d8f59f18cd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ConstGlobalIterator</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>ad0b39a8381ed2b17c8cabb3e302778e7</anchor>
+      <arglist>(const ConstGlobalIterator &amp;o)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>HasNext</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>ac00a71a85ca2941c22806181a5532846</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>Next</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a1813a3121f68994b23816ba12bfb3eae</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>Next</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>ab450dfea60692642655b5057e0a32fdd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>NextNoAdvance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a10d1f87dbfb9b46e62e1da49ffa333d2</anchor>
+      <arglist>(K &amp;key)</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>NextNoAdvance</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a0b5e72796f9bfa73c788946d402a0b0d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const csTuple2&lt; T, K &gt;</type>
+      <name>NextTuple</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a92de9dd6c8784bf5de18d499d30020c4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>ConstGlobalIterator &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>a5098c1ce0e31095db80c8c03e5eb5ba2</anchor>
+      <arglist>(const ConstGlobalIterator &amp;o)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>classCS_1_1Container_1_1WeakKeyedHash_1_1ConstGlobalIterator.html</anchorfile>
+      <anchor>acfd2ca284e82af5144bac0038cbc4595</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -124250,591 +124653,6 @@
       <anchorfile>classCS_1_1DocSystem_1_1Implementation_1_1FilterDocumentNodeIterator.html</anchorfile>
       <anchor>ae978ae3b6d75499ef725c64fc925df04</anchor>
       <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::Editor</name>
-    <filename>namespaceCS_1_1Editor.html</filename>
-  </compound>
-  <compound kind="namespace">
-    <name>CS::EditorApp</name>
-    <filename>namespaceCS_1_1EditorApp.html</filename>
-    <class kind="struct">CS::EditorApp::iAction</class>
-    <class kind="struct">CS::EditorApp::iActionListener</class>
-    <class kind="struct">CS::EditorApp::iActionManager</class>
-    <class kind="struct">CS::EditorApp::iBaseIterator</class>
-    <class kind="struct">CS::EditorApp::iEditor</class>
-    <class kind="struct">CS::EditorApp::iEditorObject</class>
-    <class kind="struct">CS::EditorApp::iEditorObjectChangeListener</class>
-    <class kind="struct">CS::EditorApp::iEditorObjectIterator</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapper</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapperFactory</class>
-    <class kind="struct">CS::EditorApp::iInterfaceWrapperManager</class>
-    <class kind="struct">CS::EditorApp::iMapListener</class>
-    <class kind="struct">CS::EditorApp::iMenu</class>
-    <class kind="struct">CS::EditorApp::iMenuBar</class>
-    <class kind="struct">CS::EditorApp::iMenuCheckItem</class>
-    <class kind="struct">CS::EditorApp::iMenuItem</class>
-    <class kind="struct">CS::EditorApp::iMenuItemEventListener</class>
-    <class kind="struct">CS::EditorApp::iObjectList</class>
-    <class kind="struct">CS::EditorApp::iObjectListListener</class>
-    <class kind="struct">CS::EditorApp::iPanel</class>
-    <class kind="struct">CS::EditorApp::iPanelManager</class>
-    <member kind="enumeration">
-      <name>EditorObjectType</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeFactory</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27accfe6d917a9b5384d2e21379ee7025f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeInstance</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27aec2ee3346f42b55c029b4f065429ed44</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EditorObjectTypeUnknown</name>
-      <anchorfile>namespaceCS_1_1EditorApp.html</anchorfile>
-      <anchor>a7866ac8fb9343093d4c50d6c28820f27abd75cfba08ff9f58fd03609becb4d6ff</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iAction</name>
-    <filename>structCS_1_1EditorApp_1_1iAction.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iAction &gt;</type>
-      <name>Do</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
-      <anchor>a01f05edb89bd23210aea001d29f44bb2</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetDescription</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iAction.html</anchorfile>
-      <anchor>a68c4a24a610a9a293020d8220b4e5725</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iActionListener</name>
-    <filename>structCS_1_1EditorApp_1_1iActionListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnActionDone</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionListener.html</anchorfile>
-      <anchor>a8c4a7241dc3d27ac0789ae61f0f5cb26</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iActionManager</name>
-    <filename>structCS_1_1EditorApp_1_1iActionManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Do</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a1d81fddbc803e7bf7de0f24a816b8dc9</anchor>
-      <arglist>(iAction *action)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekRedo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a66dd81aac3635c6f0649565e32499675</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const iAction *</type>
-      <name>PeekUndo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>ad0cebf34f5fb431628b0e28bcbda8635</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Redo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>a276bd8858a7812eda3a6cd902e96e608</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Undo</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iActionManager.html</anchorfile>
-      <anchor>ac5d835df3bc67d309c46dc16d537b1e9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iBaseIterator</name>
-    <filename>structCS_1_1EditorApp_1_1iBaseIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditor</name>
-    <filename>structCS_1_1EditorApp_1_1iEditor.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddMapListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a1415f497e894ee7e4ad42e68eee30a58</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iEditorObject &gt;</type>
-      <name>CreateEditorObject</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a080f3856bd6af9e5a726ad65f1639a26</anchor>
-      <arglist>(iBase *object, wxBitmap *icon)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iMenuBar *</type>
-      <name>GetMenuBar</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aa7688958e2cf7ab3537de9d18795fca5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetObjects</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aad16fbe14cd087dcd61d2ef3cc0849fd</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iPanelManager *</type>
-      <name>GetPanelManager</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>ac600a3de2f29534e6b6155560831e006</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iProgressMeter &gt;</type>
-      <name>GetProgressMeter</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>aacb8ee2a09b030d81e2ea2bb13ffadcd</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iObjectList *</type>
-      <name>GetSelection</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a5eab7ca5feda9f271225f96e9e3e7efb</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>ae460dc8244a4e98d6874d67a4b97e88c</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iThreadReturn *</type>
-      <name>LoadLibraryFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a10c0b536d3f7a9e32cc433d5ac02f929</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iThreadReturn *</type>
-      <name>LoadMapFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a65843ab535c997bd470ec834bd85cd65</anchor>
-      <arglist>(const char *path, const char *filename, bool clearEngine=true)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveMapListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a37af98210d42c6d7f9b0a4c020821381</anchor>
-      <arglist>(iMapListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SaveMapFile</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditor.html</anchorfile>
-      <anchor>a4b90bcda0859a3db6d2b4902336d3f47</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObject</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObject.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>abc11c61f6cb98dc7d6bfed0e465efcd0</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetIBase</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a348a2c92131b5bd6d8c79f54720b1677</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxBitmap *</type>
-      <name>GetIcon</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a5c52c3ae7362fd7089ea50bd24192475</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a8f4ae9a286b96830ad32fa513f6e61b9</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a1381f627ed6bf477804209a610412b46</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a7df63ae8cdf3701a7b40fa19deebc4fa</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetType</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a33c778ac0fe75dec78ad578fdf8f02f5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasInterface</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a77986d311ceb5992145660dc71b8fb46</anchor>
-      <arglist>(scfInterfaceID id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveListener</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>a6e5c773923591c4bbb426efb1817998d</anchor>
-      <arglist>(iEditorObjectChangeListener *listener)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>abf05f4e888b27ed2d521724a11e40c0c</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObject.html</anchorfile>
-      <anchor>ac3d3af8770906923824ec0cb3c0150d5</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObjectChangeListener</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectChanged</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iEditorObjectChangeListener.html</anchorfile>
-      <anchor>aff01f152209e8e859b9fd7887d88c6eb</anchor>
-      <arglist>(iEditorObject *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iEditorObjectIterator</name>
-    <filename>structCS_1_1EditorApp_1_1iEditorObjectIterator.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapper</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a52cece60b0327fa84e5e01ee15b0c720</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iBaseIterator &gt;</type>
-      <name>GetIterator</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>ac02666be677309c9b0e4d55de2929183</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetObjectName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>aa5df298c0a563c46e64eb222757eeb56</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iBase *</type>
-      <name>GetObjectParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a703af97cd1bf4f5d6e8bff9a245d7245</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetObjectName</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a46ba4a3c0c879fe3102d91b6567d1eb7</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SetObjectParent</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapper.html</anchorfile>
-      <anchor>a435be0db1bed2c95f1fe1dda474675bc</anchor>
-      <arglist>(iBase *parent)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapperFactory</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iInterfaceWrapper &gt;</type>
-      <name>CreateInstance</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a227b95ce09669db417fd51045b65ac29</anchor>
-      <arglist>(iBase *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual scfInterfaceID</type>
-      <name>GetInterfaceID</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>af5e6b211b53fa7b1829913c6b6f935fa</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual EditorObjectType</type>
-      <name>GetInterfaceType</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>acd972abf3cbdd064f64d257973d0d5ba</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasNameAttribute</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a6bc2d7ebb2c4a29ffee78c24d1ea221e</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>HasParentAttribute</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperFactory.html</anchorfile>
-      <anchor>a899e4cf9b59cc1dbb35d1c5c06133c9d</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iInterfaceWrapperManager</name>
-    <filename>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iInterfaceWrapperFactory *</type>
-      <name>GetFactory</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>ae715a0000cec0bb41557e56baeeeff07</anchor>
-      <arglist>(scfInterfaceID interface_id)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Register</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iInterfaceWrapperManager.html</anchorfile>
-      <anchor>a4683a48259717748fe11f59ca8fb8fa3</anchor>
-      <arglist>(iInterfaceWrapperFactory *wrapper)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMapListener</name>
-    <filename>structCS_1_1EditorApp_1_1iMapListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnLibraryLoaded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
-      <anchor>abf6eb98824305423a0f186726767a972</anchor>
-      <arglist>(const char *path, const char *filename, iCollection *collection)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnMapLoaded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMapListener.html</anchorfile>
-      <anchor>a6616e2c8c271a67fc23c7b6beabd9c51</anchor>
-      <arglist>(const char *path, const char *filename)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenu</name>
-    <filename>structCS_1_1EditorApp_1_1iMenu.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenu *</type>
-      <name>GetwxMenu</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenu.html</anchorfile>
-      <anchor>a5659bed359fb0fec40cd5e15d5731f96</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuBar</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuBar.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenuBar *</type>
-      <name>GetwxMenuBar</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuBar.html</anchorfile>
-      <anchor>a2570f2fe11e6f5a3ab7275ff006a4baa</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuCheckItem</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuCheckItem.html</filename>
-    <base>CS::EditorApp::iMenuItem</base>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuItem</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuItem.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxMenuItem *</type>
-      <name>GetwxMenuItem</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuItem.html</anchorfile>
-      <anchor>aaab054511124a39df4aabaa09b4a63df</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iMenuItemEventListener</name>
-    <filename>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnClick</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iMenuItemEventListener.html</anchorfile>
-      <anchor>a69a0d515f847b2e6fb3525ab7da2daae</anchor>
-      <arglist>(iMenuItem *)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iObjectList</name>
-    <filename>structCS_1_1EditorApp_1_1iObjectList.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual iEditorObject *</type>
-      <name>FindObject</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectList.html</anchorfile>
-      <anchor>a003153187233c6c6b0302cdd5c7c14e3</anchor>
-      <arglist>(iBase *obj)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iObjectListListener</name>
-    <filename>structCS_1_1EditorApp_1_1iObjectListListener.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectAdded</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>a5a7f4987ea82baa675985f36c3b2ccf8</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectRemoved</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>a9fff57d10178a844111992e5910f1210</anchor>
-      <arglist>(iObjectList *list, iEditorObject *obj)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>OnObjectsCleared</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iObjectListListener.html</anchorfile>
-      <anchor>ab24ca982b4c768682f5d2859bce42ed6</anchor>
-      <arglist>(iObjectList *list)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iPanel</name>
-    <filename>structCS_1_1EditorApp_1_1iPanel.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual const wxChar *</type>
-      <name>GetCaption</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>ad83c8effc6895dff062f26af47817656</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual PanelDockPosition</type>
-      <name>GetDefaultDockPosition</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>ad01fb52c12c4c97b2f83e3adc27e5e80</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual wxWindow *</type>
-      <name>GetWindow</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanel.html</anchorfile>
-      <anchor>a196f4db338439e9db69b2940ef8210f2</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::EditorApp::iPanelManager</name>
-    <filename>structCS_1_1EditorApp_1_1iPanelManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddPanel</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>aa4f019c66cd79b3546708918ba599c76</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemovePanel</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>a69d8bd24bf744e2a2471bd5d4ab95433</anchor>
-      <arglist>(iPanel *panel)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPanelVisible</name>
-      <anchorfile>structCS_1_1EditorApp_1_1iPanelManager.html</anchorfile>
-      <anchor>a61919610b45b0e70f7f5808c134a2f9c</anchor>
-      <arglist>(iPanel *panel, bool visible)=0</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -139497,13 +139315,13 @@
     <member kind="enumvalue">
       <name>tcacheExactSizeMatch</name>
       <anchorfile>classCS_1_1RenderManager_1_1TextureCacheT.html</anchorfile>
-      <anchor>ab1e3a1a3603213006ef2b186969c4934ad5cf19cf5e5e05986793222b683a1c36</anchor>
+      <anchor>a53cf50a6c5cd6c6d38ea6099947c43bfad5cf19cf5e5e05986793222b683a1c36</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>tcachePowerOfTwo</name>
       <anchorfile>classCS_1_1RenderManager_1_1TextureCacheT.html</anchorfile>
-      <anchor>ab1e3a1a3603213006ef2b186969c4934a7d8386dd479eae30ed5783e010d65c4a</anchor>
+      <anchor>a53cf50a6c5cd6c6d38ea6099947c43bfa7d8386dd479eae30ed5783e010d65c4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -139703,6 +139521,13 @@
       <anchorfile>structCS_1_1RenderManager_1_1AutoFX_1_1ReflectRefract__Base_1_1PersistentData.html</anchorfile>
       <anchor>a583b30b38b7db24d7a025d998029f699</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>CameraCache</type>
+      <name>reflectionCams</name>
+      <anchorfile>structCS_1_1RenderManager_1_1AutoFX_1_1ReflectRefract__Base_1_1PersistentData.html</anchorfile>
+      <anchor>a275386fb6519d0c238e5154098e70da7</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -140653,6 +140478,15 @@
     <namespace>CS::Utility::BitOps</namespace>
     <namespace>CS::Utility::ResourceCache</namespace>
     <class kind="class">CS::Utility::AtomicRefCount</class>
+    <class kind="class">CS::Utility::csBasicModifiableDescription</class>
+    <class kind="class">CS::Utility::csBasicModifiableParameter</class>
+    <class kind="class">CS::Utility::csConstraintBitMask</class>
+    <class kind="class">CS::Utility::csConstraintBounded</class>
+    <class kind="class">CS::Utility::csConstraintEnum</class>
+    <class kind="class">CS::Utility::csConstraintTextEntry</class>
+    <class kind="class">CS::Utility::csConstraintVfsDir</class>
+    <class kind="class">CS::Utility::csConstraintVfsFile</class>
+    <class kind="class">CS::Utility::csConstraintVfsPath</class>
     <class kind="class">CS::Utility::DemoApplication</class>
     <class kind="class">CS::Utility::FastRefCount</class>
     <class kind="class">CS::Utility::FixedSizeBestChoiceLRUPolicy</class>
@@ -140663,6 +140497,12 @@
     <class kind="struct">CS::Utility::GraphEdge</class>
     <class kind="struct">CS::Utility::iCameraManager</class>
     <class kind="struct">CS::Utility::iHUDManager</class>
+    <class kind="struct">CS::Utility::iModifiable</class>
+    <class kind="struct">CS::Utility::iModifiableConstraint</class>
+    <class kind="struct">CS::Utility::iModifiableConstraintBounded</class>
+    <class kind="struct">CS::Utility::iModifiableConstraintEnum</class>
+    <class kind="struct">CS::Utility::iModifiableDescription</class>
+    <class kind="struct">CS::Utility::iModifiableParameter</class>
     <class kind="class">CS::Utility::ImportKit</class>
     <class kind="class">CS::Utility::InternalRefCount</class>
     <class kind="class">CS::Utility::PriorityQueue</class>
@@ -140799,6 +140639,156 @@
       <anchor>a26c10867ca9d3adea99eb215d9daa478</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csBasicModifiableDescription</name>
+    <filename>classCS_1_1Utility_1_1csBasicModifiableDescription.html</filename>
+    <base>scfImplementation1&lt; csBasicModifiableDescription, iModifiableDescription &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>FindParameter</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a5d3fa45c1e14c8ea8f069a538096ae37</anchor>
+      <arglist>(csStringID id) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iModifiableDescription *</type>
+      <name>GetChild</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a53a6204968d839fc318e911ae9a0d26b</anchor>
+      <arglist>(size_t index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetChildrenCount</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a499d5d1706cad157a868f73dbac21b32</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetLabel</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a290c4659c644859ab0a559c5d4717bb9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a97d3edf36e212de8cd056ba03db8f332</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iModifiableParameter *</type>
+      <name>GetParameter</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a6ad01a1d11a64e8d6e1b4fc15a55066d</anchor>
+      <arglist>(size_t index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iModifiableParameter *</type>
+      <name>GetParameter</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a8c8ff20f64beb433c494a355e21cc089</anchor>
+      <arglist>(csStringID id) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetParameterCount</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>aa5c19b3c6ef7ea2e6be9eed1b3c23879</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual size_t</type>
+      <name>GetTotalParameterCount</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>af34641ab9a67b84613b74afd76f40f43</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Push</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a80329518c9654eae31cf4cd612d9db70</anchor>
+      <arglist>(const char *resource)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Push</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a07992fd230c80b0713b0eb348ac5b7b4</anchor>
+      <arglist>(csBasicModifiableDescription *child)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Push</name>
+      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
+      <anchor>a076021fe5ddeb2f486642da413759697</anchor>
+      <arglist>(iModifiableParameter *param)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csBasicModifiableParameter</name>
+    <filename>classCS_1_1Utility_1_1csBasicModifiableParameter.html</filename>
+    <base>scfImplementation1&lt; csBasicModifiableParameter, iModifiableParameter &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintBitMask</name>
+    <filename>classCS_1_1Utility_1_1csConstraintBitMask.html</filename>
+    <base>scfImplementation1&lt; csConstraintBitMask, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintBounded</name>
+    <filename>classCS_1_1Utility_1_1csConstraintBounded.html</filename>
+    <base>scfImplementation1&lt; csConstraintBounded, iModifiableConstraintBounded &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>csConstraintBounded</name>
+      <anchorfile>classCS_1_1Utility_1_1csConstraintBounded.html</anchorfile>
+      <anchor>a2fab37a504d8c7f5533d0a3001cc56c1</anchor>
+      <arglist>(const csVariant &amp;max)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>csConstraintBounded</name>
+      <anchorfile>classCS_1_1Utility_1_1csConstraintBounded.html</anchorfile>
+      <anchor>a6efaa8ee86271d0ee1aceb3a3e82842d</anchor>
+      <arglist>(const csVariant &amp;min, const csVariant &amp;max)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintEnum</name>
+    <filename>classCS_1_1Utility_1_1csConstraintEnum.html</filename>
+    <base>scfImplementation1&lt; csConstraintEnum, iModifiableConstraintEnum &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>csConstraintEnum</name>
+      <anchorfile>classCS_1_1Utility_1_1csConstraintEnum.html</anchorfile>
+      <anchor>a3ba0c321ea340446e9533af461498641</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintTextEntry</name>
+    <filename>classCS_1_1Utility_1_1csConstraintTextEntry.html</filename>
+    <base>scfImplementation1&lt; csConstraintTextEntry, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintVfsDir</name>
+    <filename>classCS_1_1Utility_1_1csConstraintVfsDir.html</filename>
+    <base>scfImplementation1&lt; csConstraintVfsDir, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintVfsFile</name>
+    <filename>classCS_1_1Utility_1_1csConstraintVfsFile.html</filename>
+    <base>scfImplementation1&lt; csConstraintVfsFile, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::csConstraintVfsPath</name>
+    <filename>classCS_1_1Utility_1_1csConstraintVfsPath.html</filename>
+    <base>scfImplementation1&lt; csConstraintVfsPath, iModifiableConstraint &gt;</base>
   </compound>
   <compound kind="class">
     <name>CS::Utility::DemoApplication</name>
@@ -141428,6 +141418,141 @@
       <anchorfile>structCS_1_1Utility_1_1iHUDManager.html</anchorfile>
       <anchor>a865265964916c5fd4f2b18551d7c07f9</anchor>
       <arglist>(int x, int y, int fg, int color, const char *str, va_list) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiable</name>
+    <filename>structCS_1_1Utility_1_1iModifiable.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iModifiableDescription &gt;</type>
+      <name>GetDescription</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>a35340f42ddf4d76d5f525ac7ed76b532</anchor>
+      <arglist>(iObjectRegistry *object_reg) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetParameterValue</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>a23d5f0c8e95e3061161cdf358c6c45ef</anchor>
+      <arglist>(size_t parameterIndex, csVariant &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetTotalParameterCount</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>a733333aea47a6697baded08e51143719</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetParameterValue</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>af54184892ed7beee1d298cf4076309c4</anchor>
+      <arglist>(size_t parameterIndex, const csVariant &amp;value)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableConstraint</name>
+    <filename>structCS_1_1Utility_1_1iModifiableConstraint.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Validate</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraint.html</anchorfile>
+      <anchor>ad9211cb6e1090ccecfbb5205cb58fa6a</anchor>
+      <arglist>(const csVariant *variant) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableConstraintBounded</name>
+    <filename>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</filename>
+    <base virtualness="virtual">CS::Utility::iModifiableConstraint</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableConstraintEnum</name>
+    <filename>structCS_1_1Utility_1_1iModifiableConstraintEnum.html</filename>
+    <base virtualness="virtual">CS::Utility::iModifiableConstraint</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableDescription</name>
+    <filename>structCS_1_1Utility_1_1iModifiableDescription.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a908ecbd863e898f7535b7a30f11005d9</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iModifiableParameter *</type>
+      <name>GetParameter</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>aea1156602392bb8c3c31d0f6c8b24e19</anchor>
+      <arglist>(size_t index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iModifiableParameter *</type>
+      <name>GetParameter</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a2b42375028e082947bb60b2621eb6306</anchor>
+      <arglist>(csStringID id) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetParameterCount</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>aca89203118e2e20e8e6aa8ce9a9d445c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetTotalParameterCount</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a908436f15de7487a1b5b72b2224d7867</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableParameter</name>
+    <filename>structCS_1_1Utility_1_1iModifiableParameter.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iModifiableConstraint *</type>
+      <name>GetConstraint</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>a24a7ff91e96870740e84d9e3319eb014</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetDescription</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>ae37aaafddccd5eb98446bd90ea25041c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csStringID</type>
+      <name>GetID</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>a80115721eacb1898e24ab0d77e6bdd40</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>aaebf72ee9fa5e77922d0e79f75c38cf5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVariantType</type>
+      <name>GetType</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>a72325f257562478f2781dbe2db31727a</anchor>
+      <arglist>() const =0</arglist>
     </member>
   </compound>
   <compound kind="class">
