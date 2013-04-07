@@ -110347,6 +110347,70 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuestManager_AddChangeClassReward(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuestManager *arg1 = (iQuestManager *) 0 ;
+  iQuestTriggerResponseFactory *arg2 = (iQuestTriggerResponseFactory *) 0 ;
+  char *arg3 = (char *) 0 ;
+  char *arg4 = (char *) 0 ;
+  bool arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int res3 ;
+  char *buf3 = 0 ;
+  int alloc3 = 0 ;
+  int res4 ;
+  char *buf4 = 0 ;
+  int alloc4 = 0 ;
+  bool val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  iRewardFactory *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuestManager_AddChangeClassReward",5,5,&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuestManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuestManager_AddChangeClassReward" "', argument " "1"" of type '" "iQuestManager *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuestManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iQuestTriggerResponseFactory, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuestManager_AddChangeClassReward" "', argument " "2"" of type '" "iQuestTriggerResponseFactory *""'"); 
+  }
+  arg2 = reinterpret_cast< iQuestTriggerResponseFactory * >(argp2);
+  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuestManager_AddChangeClassReward" "', argument " "3"" of type '" "char const *""'");
+  }
+  arg3 = reinterpret_cast< char * >(buf3);
+  res4 = SWIG_AsCharPtrAndSize(obj3, &buf4, NULL, &alloc4);
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "iQuestManager_AddChangeClassReward" "', argument " "4"" of type '" "char const *""'");
+  }
+  arg4 = reinterpret_cast< char * >(buf4);
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "iQuestManager_AddChangeClassReward" "', argument " "5"" of type '" "bool""'");
+  } 
+  arg5 = static_cast< bool >(val5);
+  result = (iRewardFactory *)(arg1)->AddChangeClassReward(arg2,(char const *)arg3,(char const *)arg4,arg5);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iRewardFactory, 0 |  0 );
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
+  return resultobj;
+fail:
+  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuestManager_AddActionReward(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuestManager *arg1 = (iQuestManager *) 0 ;
@@ -128418,6 +128482,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuestManager_AddChangePropertyReward", _wrap_iQuestManager_AddChangePropertyReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddCreateEntityReward", _wrap_iQuestManager_AddCreateEntityReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddDestroyEntityReward", _wrap_iQuestManager_AddDestroyEntityReward, METH_VARARGS, NULL},
+	 { (char *)"iQuestManager_AddChangeClassReward", _wrap_iQuestManager_AddChangeClassReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddActionReward", _wrap_iQuestManager_AddActionReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_AddMessageReward", _wrap_iQuestManager_AddMessageReward, METH_VARARGS, NULL},
 	 { (char *)"iQuestManager_SetTimeoutTrigger", _wrap_iQuestManager_SetTimeoutTrigger, METH_VARARGS, NULL},
