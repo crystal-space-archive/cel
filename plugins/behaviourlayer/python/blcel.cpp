@@ -108181,6 +108181,130 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_iQuest_MarkBaseline(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_MarkBaseline",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_MarkBaseline" "', argument " "1"" of type '" "iQuest *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  (arg1)->MarkBaseline();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuest_IsModifiedSinceBaseline(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_IsModifiedSinceBaseline",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_IsModifiedSinceBaseline" "', argument " "1"" of type '" "iQuest const *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  result = (bool)((iQuest const *)arg1)->IsModifiedSinceBaseline();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuest_SaveModifications(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  iCelCompactDataBufferWriter *arg2 = (iCelCompactDataBufferWriter *) 0 ;
+  iStringSet *arg3 = (iStringSet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_SaveModifications",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_SaveModifications" "', argument " "1"" of type '" "iQuest *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelCompactDataBufferWriter, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuest_SaveModifications" "', argument " "2"" of type '" "iCelCompactDataBufferWriter *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelCompactDataBufferWriter * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_iStringSet, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuest_SaveModifications" "', argument " "3"" of type '" "iStringSet *""'"); 
+  }
+  arg3 = reinterpret_cast< iStringSet * >(argp3);
+  (arg1)->SaveModifications(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iQuest_RestoreModifications(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iQuest *arg1 = (iQuest *) 0 ;
+  iCelCompactDataBufferReader *arg2 = (iCelCompactDataBufferReader *) 0 ;
+  csHash< csString,csStringID > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iQuest_RestoreModifications",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iQuest, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iQuest_RestoreModifications" "', argument " "1"" of type '" "iQuest *""'"); 
+  }
+  arg1 = reinterpret_cast< iQuest * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iCelCompactDataBufferReader, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iQuest_RestoreModifications" "', argument " "2"" of type '" "iCelCompactDataBufferReader *""'"); 
+  }
+  arg2 = reinterpret_cast< iCelCompactDataBufferReader * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_csHashT_csString_CS__StringIDT_CS__StringSetTag__General_t_CS__Memory__AllocatorMalloc_csArrayElementHandlerT_CS__Container__HashElementT_csString_CS__StringIDT_CS__StringSetTag__General_t_t_t_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "iQuest_RestoreModifications" "', argument " "3"" of type '" "csHash< csString,csStringID > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "iQuest_RestoreModifications" "', argument " "3"" of type '" "csHash< csString,csStringID > const &""'"); 
+  }
+  arg3 = reinterpret_cast< csHash< csString,csStringID > * >(argp3);
+  (arg1)->RestoreModifications(arg2,(csHash< csString,csStringID > const &)*arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_iQuest_CurrentState_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iQuest *arg1 = (iQuest *) 0 ;
@@ -128409,6 +128533,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iQuest_FindSequence", _wrap_iQuest_FindSequence, METH_VARARGS, NULL},
 	 { (char *)"iQuest_Activate", _wrap_iQuest_Activate, METH_VARARGS, NULL},
 	 { (char *)"iQuest_Deactivate", _wrap_iQuest_Deactivate, METH_VARARGS, NULL},
+	 { (char *)"iQuest_MarkBaseline", _wrap_iQuest_MarkBaseline, METH_VARARGS, NULL},
+	 { (char *)"iQuest_IsModifiedSinceBaseline", _wrap_iQuest_IsModifiedSinceBaseline, METH_VARARGS, NULL},
+	 { (char *)"iQuest_SaveModifications", _wrap_iQuest_SaveModifications, METH_VARARGS, NULL},
+	 { (char *)"iQuest_RestoreModifications", _wrap_iQuest_RestoreModifications, METH_VARARGS, NULL},
 	 { (char *)"iQuest_CurrentState_get", _wrap_iQuest_CurrentState_get, METH_VARARGS, NULL},
 	 { (char *)"delete_iQuest", _wrap_delete_iQuest, METH_VARARGS, NULL},
 	 { (char *)"iQuest_swigregister", iQuest_swigregister, METH_VARARGS, NULL},
