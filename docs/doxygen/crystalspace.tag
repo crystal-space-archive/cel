@@ -133386,6 +133386,13 @@
       <type>virtual void</type>
       <name>DebugDraw</name>
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a7bccd5c0ca5adbdd0bd613fff2fd99ee</anchor>
+      <arglist>(iGraphics3D *g3d, iCamera *camera)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DebugDraw</name>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
       <anchor>a852724fe01d286e993f3a82b96c3315e</anchor>
       <arglist>(iView *rview)=0</arglist>
     </member>
