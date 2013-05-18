@@ -34076,7 +34076,6 @@
     <path>/tmp/tmp2/trunk/include/ivaria/</path>
     <filename>physics_8h</filename>
     <includes id="tri_8h" name="tri.h" local="yes" imported="no">csgeom/tri.h</includes>
-    <includes id="primitives_8h" name="primitives.h" local="yes" imported="no">cstool/primitives.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="mesh_8h" name="mesh.h" local="yes" imported="no">iengine/mesh.h</includes>
@@ -134869,8 +134868,8 @@
       <type>static csPtr&lt; iMeshFactoryWrapper &gt;</type>
       <name>CreateClothGenMeshFactory</name>
       <anchorfile>structCS_1_1Physics_1_1SoftBodyHelper.html</anchorfile>
-      <anchor>afd27393d2cf6bb0a1a0c30db4968a18b</anchor>
-      <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth)</arglist>
+      <anchor>a61b92823bab5495c083df3d7a8ccaa87</anchor>
+      <arglist>(iObjectRegistry *object_reg, const char *factoryName, iSoftBody *cloth, csVector2 scale=csVector2(1.0f))</arglist>
     </member>
   </compound>
   <compound kind="namespace">
