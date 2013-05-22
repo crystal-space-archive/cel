@@ -124237,11 +124237,32 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeleteCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a93651a1407633ca0d8f4395b950bf74a</anchor>
+      <arglist>(iCollisionSector *sector)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeleteCollisionSectors</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a549f2f3c993c6d68242329ef8f48e886</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iCollisionGroup *</type>
       <name>FindCollisionGroup</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
       <anchor>a8dbae5640acbcbfcc42024304bd7c73e</anchor>
       <arglist>(const char *name) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iCollisionSector *</type>
+      <name>FindCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>af21972f5925de22a86d83e1ec245cf81</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionSector *</type>
@@ -124291,13 +124312,6 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
       <anchor>a0dbb9e0ff4068d418543ae6b75babeeb</anchor>
       <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a51e258b96365374c62b8c3ed39a0bab8</anchor>
-      <arglist>(iCollisionSector *sector)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
