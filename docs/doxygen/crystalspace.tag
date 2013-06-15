@@ -33768,7 +33768,7 @@
     <class kind="struct">CS::Collisions::iColliderCylinder</class>
     <class kind="struct">CS::Collisions::iColliderPlane</class>
     <class kind="struct">CS::Collisions::iColliderSphere</class>
-    <class kind="struct">CS::Collisions::iColliderTerrain</class>
+    <class kind="struct">CS::Collisions::iColliderTerrainCell</class>
     <namespace>CS</namespace>
     <namespace>CS::Collisions</namespace>
     <namespace>CS::Physics</namespace>
@@ -33873,6 +33873,7 @@
     <class kind="struct">CS::Collisions::iCollisionSector</class>
     <class kind="struct">CS::Collisions::iCollisionSystem</class>
     <class kind="struct">CS::Collisions::iCollisionTerrain</class>
+    <class kind="struct">CS::Collisions::iCollisionTerrainFactory</class>
     <namespace>CS</namespace>
     <namespace>CS::Collisions</namespace>
     <namespace>CS::Physics</namespace>
@@ -33904,6 +33905,12 @@
       <name>COLLISION_OBJECT_ACTOR</name>
       <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
       <anchor>a96cafc1a39189fde1c16b413ecc6d021a1cedec218d3ed10d0f7327aeebe9b4eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>COLLISION_OBJECT_TERRAIN</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a96cafc1a39189fde1c16b413ecc6d021a54d6ab27f679fe77da860158ce5a392e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -122885,7 +122892,7 @@
     <class kind="struct">CS::Collisions::iColliderCylinder</class>
     <class kind="struct">CS::Collisions::iColliderPlane</class>
     <class kind="struct">CS::Collisions::iColliderSphere</class>
-    <class kind="struct">CS::Collisions::iColliderTerrain</class>
+    <class kind="struct">CS::Collisions::iColliderTerrainCell</class>
     <class kind="struct">CS::Collisions::iCollisionActor</class>
     <class kind="struct">CS::Collisions::iCollisionActorFactory</class>
     <class kind="struct">CS::Collisions::iCollisionCallback</class>
@@ -122898,6 +122905,7 @@
     <class kind="struct">CS::Collisions::iCollisionSector</class>
     <class kind="struct">CS::Collisions::iCollisionSystem</class>
     <class kind="struct">CS::Collisions::iCollisionTerrain</class>
+    <class kind="struct">CS::Collisions::iCollisionTerrainFactory</class>
     <class kind="struct">CS::Collisions::iConvexDecomposer</class>
     <member kind="enumeration">
       <name>ColliderType</name>
@@ -123007,6 +123015,12 @@
       <anchor>a96cafc1a39189fde1c16b413ecc6d021a1cedec218d3ed10d0f7327aeebe9b4eb</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>COLLISION_OBJECT_TERRAIN</name>
+      <anchorfile>namespaceCS_1_1Collisions.html</anchorfile>
+      <anchor>a96cafc1a39189fde1c16b413ecc6d021a54d6ab27f679fe77da860158ce5a392e</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::Collisions::CollisionHelper</name>
@@ -123066,6 +123080,34 @@
       <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
       <anchor>a145193ecc62e717a2768bf51fcef2f23</anchor>
       <arglist>(iEngine *engine, iCollection *collection=nullptr) const </arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; CS::Collisions::iCollider &gt;</type>
+      <name>ParseCollider</name>
+      <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
+      <anchor>a7b475ca698849990dc3a9f2eb372682d</anchor>
+      <arglist>(iDocumentNode *node, csTransform &amp;transform, iLoaderContext *loaderContext, iBase *context) const </arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; CS::Collisions::iCollisionObjectFactory &gt;</type>
+      <name>ParseCollisionObjectFactory</name>
+      <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
+      <anchor>ac8140d4152f4afd71865d0886a17f3e5</anchor>
+      <arglist>(iDocumentNode *node, iLoaderContext *loaderContext, iBase *context) const </arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; CS::Physics::iJointFactory &gt;</type>
+      <name>ParseJointFactory</name>
+      <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
+      <anchor>acbd51604fdd5917955e5926c2c0760f0</anchor>
+      <arglist>(iDocumentNode *node, csTransform &amp;transform, iLoaderContext *loaderContext, iBase *context) const </arglist>
+    </member>
+    <member kind="function">
+      <type>csPtr&lt; CS::Physics::iRigidBodyFactory &gt;</type>
+      <name>ParseRigidBodyFactory</name>
+      <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
+      <anchor>a378bf32bb5affcebb11d9b48dcc64b82</anchor>
+      <arglist>(iDocumentNode *node, iLoaderContext *loaderContext, iBase *context) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -123497,14 +123539,14 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collisions::iColliderTerrain</name>
-    <filename>structCS_1_1Collisions_1_1iColliderTerrain.html</filename>
+    <name>CS::Collisions::iColliderTerrainCell</name>
+    <filename>structCS_1_1Collisions_1_1iColliderTerrainCell.html</filename>
     <base virtualness="virtual">CS::Collisions::iCollider</base>
     <member kind="function" virtualness="pure">
       <type>virtual iTerrainCell *</type>
       <name>GetCell</name>
-      <anchorfile>structCS_1_1Collisions_1_1iColliderTerrain.html</anchorfile>
-      <anchor>ac62be75efd94762a15e6176ae0418e79</anchor>
+      <anchorfile>structCS_1_1Collisions_1_1iColliderTerrainCell.html</anchorfile>
+      <anchor>a88a683735fcd348897628ef741854826</anchor>
       <arglist>() const =0</arglist>
     </member>
   </compound>
@@ -123803,13 +123845,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>RebuildObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a1cc99ccfe4e21b2d0f636513f8f6d91f</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetAttachedCamera</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
       <anchor>a993b6b27b9251af96738dbf71a89aee3</anchor>
@@ -123959,34 +123994,6 @@
       <arglist>(iCollisionObject *object)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddCollisionTerrain</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a14406541e6412f0eb1aebf2811b5d8ce</anchor>
-      <arglist>(iCollisionTerrain *terrain)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddPortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>aad58ba1e28d3f9fb715887bf43162afd</anchor>
-      <arglist>(iPortal *portal, const csOrthoTransform &amp;meshTrans)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iCollisionDataList &gt;</type>
-      <name>CollisionTest</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a8d1faac83c40df434ec2b910224906b1</anchor>
-      <arglist>(iCollisionObject *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DeleteAll</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a9260dc3f5619cc7006f55c250b083f28</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual iCollisionObject *</type>
       <name>GetCollisionObject</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
@@ -124001,25 +124008,53 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iCollisionTerrain *</type>
-      <name>GetCollisionTerrain</name>
+      <type>virtual void</type>
+      <name>RemoveCollisionObject</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>aa28e96651cf1391a44ee3a98197071cb</anchor>
-      <arglist>(iTerrainSystem *terrain)=0</arglist>
+      <anchor>a07dc1c305dd042389772be2d1e617d8f</anchor>
+      <arglist>(iCollisionObject *object)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iCollisionTerrain *</type>
-      <name>GetCollisionTerrain</name>
+      <type>virtual void</type>
+      <name>AddPortal</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a85dde351b4ae9d2ac4c6485bf192fd07</anchor>
-      <arglist>(size_t index) const =0</arglist>
+      <anchor>aad58ba1e28d3f9fb715887bf43162afd</anchor>
+      <arglist>(iPortal *portal, const csOrthoTransform &amp;meshTrans)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetCollisionTerrainCount</name>
+      <type>virtual void</type>
+      <name>DeleteAll</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a7130845c645ed73f8c873a511d1c4fe2</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>a9260dc3f5619cc7006f55c250b083f28</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemovePortal</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a6197f1ab8cff4b0f48b5a24f76bef90b</anchor>
+      <arglist>(iPortal *portal)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iCollisionDataList &gt;</type>
+      <name>CollisionTest</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a8d1faac83c40df434ec2b910224906b1</anchor>
+      <arglist>(iCollisionObject *object)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual HitBeamResult</type>
+      <name>HitBeam</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>aec21d61ec4b03bc3928b6a39f8e94739</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual HitBeamResult</type>
+      <name>HitBeamPortal</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a557f5429be9310959536031158f42ac3</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
@@ -124050,20 +124085,6 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual HitBeamResult</type>
-      <name>HitBeam</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>aec21d61ec4b03bc3928b6a39f8e94739</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual HitBeamResult</type>
-      <name>HitBeamPortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a557f5429be9310959536031158f42ac3</anchor>
-      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual iObject *</type>
       <name>QueryObject</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
@@ -124076,27 +124097,6 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
       <anchor>aaa60f1e7bafae26ff61b5d8f23169a59</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollisionObject</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a07dc1c305dd042389772be2d1e617d8f</anchor>
-      <arglist>(iCollisionObject *object)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveCollisionTerrain</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a9932a9ba01006702de56991030a583ae</anchor>
-      <arglist>(iCollisionTerrain *terrain)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemovePortal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
-      <anchor>a6197f1ab8cff4b0f48b5a24f76bef90b</anchor>
-      <arglist>(iPortal *portal)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -124195,13 +124195,6 @@
       <arglist>(CS::Collisions::iCollider *collider=nullptr)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iCollisionGroup *</type>
-      <name>CreateCollisionGroup</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>ade5d974579e2d2d397938784884c039e</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iCollisionObjectFactory &gt;</type>
       <name>CreateCollisionObjectFactory</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
@@ -124209,18 +124202,11 @@
       <arglist>(CS::Collisions::iCollider *collider=nullptr)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iCollisionSector *</type>
-      <name>CreateCollisionSector</name>
+      <type>virtual csPtr&lt; iCollisionTerrainFactory &gt;</type>
+      <name>CreateCollisionTerrainFactory</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a199eec3f77ae26f7455d36b5646c1054</anchor>
-      <arglist>(iSector *sector=nullptr)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iCollisionTerrain &gt;</type>
-      <name>CreateCollisionTerrain</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a98e4e2210efeb517f4dd5a6e75e36cba</anchor>
-      <arglist>(iTerrainSystem *terrain, float minHeight=0, float maxHeight=0)=0</arglist>
+      <anchor>afd1d624cb916b37e7f25b8e1578d0f6e</anchor>
+      <arglist>(iTerrainFactory *terrain)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iCollisionObjectFactory &gt;</type>
@@ -124230,25 +124216,11 @@
       <arglist>(CS::Collisions::iCollider *collider=nullptr)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DeleteAll</name>
+      <type>virtual iCollisionGroup *</type>
+      <name>CreateCollisionGroup</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a648617d97df0609293ed1e1b94db55d0</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DeleteCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a93651a1407633ca0d8f4395b950bf74a</anchor>
-      <arglist>(iCollisionSector *sector)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>DeleteCollisionSectors</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a549f2f3c993c6d68242329ef8f48e886</anchor>
-      <arglist>()=0</arglist>
+      <anchor>ade5d974579e2d2d397938784884c039e</anchor>
+      <arglist>(const char *name)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionGroup *</type>
@@ -124256,20 +124228,6 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
       <anchor>a8dbae5640acbcbfcc42024304bd7c73e</anchor>
       <arglist>(const char *name) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionSector *</type>
-      <name>FindCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>af21972f5925de22a86d83e1ec245cf81</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iCollisionSector *</type>
-      <name>FindCollisionSector</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a0a1545d7847969314a877d8f854f3f41</anchor>
-      <arglist>(const iSector *sceneSector)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionGroup *</type>
@@ -124287,6 +124245,41 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iCollisionSector *</type>
+      <name>CreateCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a199eec3f77ae26f7455d36b5646c1054</anchor>
+      <arglist>(iSector *sector=nullptr)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeleteCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a93651a1407633ca0d8f4395b950bf74a</anchor>
+      <arglist>(iCollisionSector *sector)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeleteCollisionSectors</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a549f2f3c993c6d68242329ef8f48e886</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iCollisionSector *</type>
+      <name>FindCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>af21972f5925de22a86d83e1ec245cf81</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iCollisionSector *</type>
+      <name>FindCollisionSector</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a0a1545d7847969314a877d8f854f3f41</anchor>
+      <arglist>(const iSector *sceneSector)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iCollisionSector *</type>
       <name>GetCollisionSector</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
       <anchor>ac3c885f1a8e15f7685c2a8e93f8d8d16</anchor>
@@ -124298,6 +124291,13 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
       <anchor>ae8f7b3a5ebdb52c6be95ab85daf99016</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeleteAll</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
+      <anchor>a648617d97df0609293ed1e1b94db55d0</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
@@ -124324,12 +124324,52 @@
   <compound kind="struct">
     <name>CS::Collisions::iCollisionTerrain</name>
     <filename>structCS_1_1Collisions_1_1iCollisionTerrain.html</filename>
-    <base virtualness="virtual">iBase</base>
+    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iColliderTerrainCell *</type>
+      <name>GetCell</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrain.html</anchorfile>
+      <anchor>a8f3fb48d9aa882b97e07a0a1017a3543</anchor>
+      <arglist>(iTerrainCell *cell) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iColliderTerrainCell *</type>
+      <name>GetCell</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrain.html</anchorfile>
+      <anchor>a970d3023a7276b169e8da44e711f0726</anchor>
+      <arglist>(size_t index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetCellCount</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrain.html</anchorfile>
+      <anchor>ae9f52b16e10bf7c142716863ad07f6e9</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual iTerrainSystem *</type>
       <name>GetTerrain</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrain.html</anchorfile>
       <anchor>af9f76b3e9fb0105213725c9409c56cce</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Collisions::iCollisionTerrainFactory</name>
+    <filename>structCS_1_1Collisions_1_1iCollisionTerrainFactory.html</filename>
+    <base virtualness="virtual">CS::Collisions::iCollisionObjectFactory</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iCollisionTerrain &gt;</type>
+      <name>CreateTerrain</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrainFactory.html</anchorfile>
+      <anchor>ac3a035d6ffd4c28a9b8e842118a4b16a</anchor>
+      <arglist>(iTerrainSystem *system)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTerrainFactory *</type>
+      <name>GetTerrainFactory</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionTerrainFactory.html</anchorfile>
+      <anchor>af67d77e094893e37118d3d29c0b05873</anchor>
       <arglist>() const =0</arglist>
     </member>
   </compound>
@@ -132526,52 +132566,24 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetRotConstraints</name>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>a2c80ed0ff89bdf5d468cea75a2a5cabd</anchor>
+      <arglist>(bool &amp;X, bool &amp;Y, bool &amp;Z) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetTransConstraints</name>
+      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
+      <anchor>ad5ef988aa01798f51cf5e610bb89113e</anchor>
+      <arglist>(bool &amp;X, bool &amp;Y, bool &amp;Z) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csOrthoTransform</type>
       <name>GetTransform</name>
       <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
       <anchor>ab139f3e281bffd62cc94affd4dad1595</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>af8b43a6fe46b030062db62f0aa687e7b</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>aae6d899f1c873f2b96ab7231e301b5dc</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a2b253ce63ef4dc19ecd6a21c70615672</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a36c6d2edbcf8722476c8941ea16a4158</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>a4b47ca27b78df9c25f5714bf7d4f5586</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJoint.html</anchorfile>
-      <anchor>ac3131360c91a63f96b3ecc3ae8af321f</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -132811,46 +132823,18 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXRotConstrained</name>
+      <type>virtual void</type>
+      <name>GetRotConstraints</name>
       <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>ae0bf492a6b2407ea2b1727282891ffea</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>a881334321d2bc671aec42c175d090555</anchor>
+      <arglist>(bool &amp;X, bool &amp;Y, bool &amp;Z) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsXTransConstrained</name>
+      <type>virtual void</type>
+      <name>GetTransConstraints</name>
       <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>aff3989f5bc4aff93b016e3ea7a7d3cd2</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>ae955376ccc74a968339c2dc7aab4dde0</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsYTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>a55bb6c130855455f6b98004e73ca3dcc</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZRotConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>a0eede8dddc076c3255b23fcd73fb14c5</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsZTransConstrained</name>
-      <anchorfile>structCS_1_1Physics_1_1iJointFactory.html</anchorfile>
-      <anchor>a6f00634b8243c4d6e90be37e0f0c8877</anchor>
-      <arglist>() const =0</arglist>
+      <anchor>a5a7a12dea1d833742b0cec3db878ff4c</anchor>
+      <arglist>(bool &amp;X, bool &amp;Y, bool &amp;Z) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
