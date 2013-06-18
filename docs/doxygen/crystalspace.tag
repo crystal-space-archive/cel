@@ -34158,10 +34158,34 @@
       <anchor>a503603c1f2d386e4bd33db4b45f16232abec5993a87fe97996e78b226ec06bc8c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_CONTIGUOUS</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a503603c1f2d386e4bd33db4b45f16232ab7e01570f9e6036d2353c46db943c94c</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>PhysicalObjectType</name>
       <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
       <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_RIGIDBODY</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a3a09939c80e8fd7fb31a90ce14a9d5bc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_SOFTBODY</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a37f932f5627a23be386b08496228f540</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_DYNAMICACTOR</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68afa46d782e07a9f3f80deffd18fa5e866</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -123109,6 +123133,13 @@
       <anchor>a378bf32bb5affcebb11d9b48dcc64b82</anchor>
       <arglist>(iDocumentNode *node, iLoaderContext *loaderContext, iBase *context) const </arglist>
     </member>
+    <member kind="function">
+      <type>csPtr&lt; CS::Physics::iSoftBodyFactory &gt;</type>
+      <name>ParseSoftBodyFactory</name>
+      <anchorfile>classCS_1_1Collisions_1_1CollisionHelper.html</anchorfile>
+      <anchor>af6c8368d9a0d4f400cde5b12d6b49a08</anchor>
+      <arglist>(iDocumentNode *node, iLoaderContext *loaderContext, iBase *context) const </arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Collisions::HitBeamResult</name>
@@ -123229,6 +123260,13 @@
       <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
       <anchor>a9b431770c000ece5901152da85b2bd5e</anchor>
       <arglist>(float s)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRotation</name>
+      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
+      <anchor>a33d88113f367d3a1b163df6ff3c831a0</anchor>
+      <arglist>(const csMatrix3 &amp;rot)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -123891,13 +123929,6 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
       <anchor>a517c225f892fc128c9b6095ab35cc875</anchor>
       <arglist>(bool d)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRotation</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a03d11951891a72396133aad52e8fb3c2</anchor>
-      <arglist>(const csMatrix3 &amp;rot)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -132366,10 +132397,34 @@
       <anchor>a503603c1f2d386e4bd33db4b45f16232abec5993a87fe97996e78b226ec06bc8c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>MESH_DUPLICATION_CONTIGUOUS</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a503603c1f2d386e4bd33db4b45f16232ab7e01570f9e6036d2353c46db943c94c</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <name>PhysicalObjectType</name>
       <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
       <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_RIGIDBODY</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a3a09939c80e8fd7fb31a90ce14a9d5bc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_SOFTBODY</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a37f932f5627a23be386b08496228f540</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PHYSICAL_OBJECT_DYNAMICACTOR</name>
+      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
+      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68afa46d782e07a9f3f80deffd18fa5e866</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -133495,8 +133550,8 @@
       <type>virtual void</type>
       <name>Step</name>
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a800df2bbf4192c17b2ad5553f7cf43c9</anchor>
-      <arglist>(csTicks duration)=0</arglist>
+      <anchor>a85677e63794f853385076ba58979283a</anchor>
+      <arglist>(float duration)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -133844,13 +133899,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetAnchorsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a37145f26e412481858c04053d8135354</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetAngularStiffness</name>
       <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
       <anchor>a7d8c12af69cc50e5485ac93bee41772d</anchor>
@@ -133869,13 +133917,6 @@
       <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
       <anchor>a8fbdc7207df3e4beedce3baeca3440b7</anchor>
       <arglist>(float drag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>addcd17a87156ab83b2b3704075c618de</anchor>
-      <arglist>(float hardness)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -133907,20 +133948,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetRContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>ac95f5d255eebe6600f224789e7ad3f9f</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>aade837d81a5d6a10e88b0bd6e879579e</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetShapeMatching</name>
       <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
       <anchor>a6ff42491e27cb62480ec0aff737f5ca8</anchor>
@@ -133932,48 +133959,6 @@
       <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
       <anchor>a78284092bed01d99f4175500a9c51901</anchor>
       <arglist>(float matching)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>aaf180b7d0451c5ce2fb99d0859d79e47</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a1cf334a9eee8e9067033f117a75c3a77</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a2763767b573bf77f9ae7937a9b235031</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a8923be1abe38d9b4859e68745cb0e69f</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a132bde665ab77edfb738d5a7d052acf1</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
-      <anchor>a26df142924e222a2a45574f55051e60f</anchor>
-      <arglist>(float impulse)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -134031,13 +134016,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetAnchorsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a699dbaa889f66f4315e075d10ae45fc2</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetAngularStiffness</name>
       <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
       <anchor>a161241665a41b2bf946994582e411a2f</anchor>
@@ -134056,13 +134034,6 @@
       <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
       <anchor>a5be43cf5e420ec3c76dabd6572e761e9</anchor>
       <arglist>(float drag)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>af1ee9773e7336b50d2f6a95a903c6e3c</anchor>
-      <arglist>(float hardness)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -134087,20 +134058,6 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>SetRContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a64847efac9eb0a3617d55b503d55aadf</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSContactsHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a369d54f14533144ec62a7a2860180c34</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
       <name>SetShapeMatching</name>
       <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
       <anchor>aeddb8760ce3407e68378ecbc63227cbd</anchor>
@@ -134112,48 +134069,6 @@
       <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
       <anchor>ac25bc013270e73fc8565f1b28d0c005e</anchor>
       <arglist>(float matching)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a47e191d42c33c223febf877cd35f265b</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSKImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a6ebeea55253bc8f2d6a7a5c38262f623</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>aa06ab2bf4a9ace07c40e21ef3aa91c6a</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSRImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a63f028036d27614e2746405178760331</anchor>
-      <arglist>(float impulse)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSHardness</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>a090bf405221a9cf960e03cb72d7834b2</anchor>
-      <arglist>(float hardness)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetSSImpulse</name>
-      <anchorfile>structCS_1_1Physics_1_1iSoftBodyFactory.html</anchorfile>
-      <anchor>aaf8fe42930b941be7343969f3e9c3444</anchor>
-      <arglist>(float impulse)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
