@@ -33859,8 +33859,6 @@
     <includes id="iutil_2strset_8h" name="strset.h" local="yes" imported="no">iutil/strset.h</includes>
     <includes id="colliders_8h" name="colliders.h" local="yes" imported="no">ivaria/colliders.h</includes>
     <class kind="struct">CS::Collisions::HitBeamResult</class>
-    <class kind="struct">CS::Collisions::iActor</class>
-    <class kind="struct">CS::Collisions::iActorFactory</class>
     <class kind="struct">CS::Collisions::iCollisionActor</class>
     <class kind="struct">CS::Collisions::iCollisionActorFactory</class>
     <class kind="struct">CS::Collisions::iCollisionCallback</class>
@@ -34091,8 +34089,6 @@
     <includes id="iutil_2objreg_8h" name="objreg.h" local="yes" imported="no">iutil/objreg.h</includes>
     <includes id="collisions_8h" name="collisions.h" local="yes" imported="no">ivaria/collisions.h</includes>
     <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
-    <class kind="struct">CS::Physics::iDynamicActor</class>
-    <class kind="struct">CS::Physics::iDynamicActorFactory</class>
     <class kind="struct">CS::Physics::iJoint</class>
     <class kind="struct">CS::Physics::iJointFactory</class>
     <class kind="struct">CS::Physics::iKinematicCallback</class>
@@ -34180,12 +34176,6 @@
       <name>PHYSICAL_OBJECT_SOFTBODY</name>
       <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
       <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a37f932f5627a23be386b08496228f540</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PHYSICAL_OBJECT_DYNAMICACTOR</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68afa46d782e07a9f3f80deffd18fa5e866</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -122904,8 +122894,6 @@
     <filename>namespaceCS_1_1Collisions.html</filename>
     <class kind="class">CS::Collisions::CollisionHelper</class>
     <class kind="struct">CS::Collisions::HitBeamResult</class>
-    <class kind="struct">CS::Collisions::iActor</class>
-    <class kind="struct">CS::Collisions::iActorFactory</class>
     <class kind="struct">CS::Collisions::iCollider</class>
     <class kind="struct">CS::Collisions::iColliderBox</class>
     <class kind="struct">CS::Collisions::iColliderCapsule</class>
@@ -123181,198 +123169,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>CS::Collisions::iActor</name>
-    <filename>structCS_1_1Collisions_1_1iActor.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetAirControlFactor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a2008d37ea37aa1c351ba71527ccac56b</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetGravityEnabled</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a6d5fe0b8f7966b31fdad2c7138513d13</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a138d053f22944d4c55e98b3791e1fbc9</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetStepHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>affaa13676a49003d7e92bb7b558df542</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetWalkSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a467ce8ba45c1aab2793611d7229bb87c</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsFreeFalling</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a5d0b5bb23735e59960991fd5f7b77e77</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>IsOnGround</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a7d90fce7c10eee44effea97fd12074d8</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Jump</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>aa06c4b78314aa4f6c886696cfe87a57a</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAirControlFactor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>ad5f7a7de2671d4b5fbc81e622e570201</anchor>
-      <arglist>(float f)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetGravityEnabled</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a2b14970a8544f1714d15e15ccef12f17</anchor>
-      <arglist>(bool g)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a9b431770c000ece5901152da85b2bd5e</anchor>
-      <arglist>(float s)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRotation</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a33d88113f367d3a1b163df6ff3c831a0</anchor>
-      <arglist>(const csMatrix3 &amp;rot)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetStepHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a09250ee0a5740ae98d25886b67345541</anchor>
-      <arglist>(float h)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetWalkSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a76a9c99d0ffba91b196f8d9d202ecc7b</anchor>
-      <arglist>(float s)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>StopMoving</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a74da6053c6741445f4afd27d53445440</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Walk</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>a5657671396f06acadfa94858b77c13b7</anchor>
-      <arglist>(csVector3 dir)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>WalkHorizontal</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActor.html</anchorfile>
-      <anchor>abc43d28c513866d2568eeed4098f83d0</anchor>
-      <arglist>(csVector2 dir)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Collisions::iActorFactory</name>
-    <filename>structCS_1_1Collisions_1_1iActorFactory.html</filename>
-    <base virtualness="virtual">CS::Collisions::iCollisionObjectFactory</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iActor &gt;</type>
-      <name>CreateActor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a095798dafc36acefa4def864e2b0fd30</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetAirControlFactor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>ab628a012f4eea773d52d6b899bee29d3</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>af11e57cd4edac513d17a494e1f020ea1</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetStepHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a3b2f5f9e01e64fade2b31b8d2e4cee31</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetWalkSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a1993cf64205e90ff852bd05b64eb7bae</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetAirControlFactor</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a0d493d006155bc345e5f2ebdb4d8cec5</anchor>
-      <arglist>(float f)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetJumpSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a7f76498bd4fec9e68ad5f7c729e869d3</anchor>
-      <arglist>(float s)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetStepHeight</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a23946dc6905ac48575fd21f479c3eafd</anchor>
-      <arglist>(float h)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetWalkSpeed</name>
-      <anchorfile>structCS_1_1Collisions_1_1iActorFactory.html</anchorfile>
-      <anchor>a43fd411d090ab446886164f16a63ffca</anchor>
-      <arglist>(float s)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>CS::Collisions::iCollider</name>
     <filename>structCS_1_1Collisions_1_1iCollider.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -123592,7 +123388,13 @@
     <name>CS::Collisions::iCollisionActor</name>
     <filename>structCS_1_1Collisions_1_1iCollisionActor.html</filename>
     <base virtualness="virtual">CS::Collisions::iCollisionObject</base>
-    <base virtualness="virtual">CS::Collisions::iActor</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetJumpSpeed</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>ab3ae084c6bce4391303334890f36adf4</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetMaximumSlope</name>
@@ -123601,18 +123403,73 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetStepHeight</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>afa362da7d13bf44b0cc73196fa011ec9</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsOnGround</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>ac9f1d0410f3fcbcdd3f15589ad8901aa</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Jump</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a2210d43ee1a41dc37b29fd1f8f44bf12</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Rotate</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>af5cdad6616fc5225466ea791492f7236</anchor>
+      <arglist>(float yaw, float pitch)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetJumpSpeed</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>ae1266d7f27d2aa0585d9eee38db9ccf6</anchor>
+      <arglist>(float s)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetMaximumSlope</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
       <anchor>ab06938366e24acc8f1193de1d3b0748e</anchor>
       <arglist>(float slope)=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetRotation</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>a2fe33037ca668a581f95e881d392e463</anchor>
+      <arglist>(const csMatrix3 &amp;rotation)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSpeed</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>af541943873d67577ffc19f34981dc588</anchor>
+      <arglist>(const csVector3 &amp;speed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetStepHeight</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
+      <anchor>ac4f00de3a49f40b7067484d52d06cb25</anchor>
+      <arglist>(float h)=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Collisions::iCollisionActorFactory</name>
     <filename>structCS_1_1Collisions_1_1iCollisionActorFactory.html</filename>
     <base virtualness="virtual">CS::Collisions::iCollisionObjectFactory</base>
-    <base virtualness="virtual">CS::Collisions::iActorFactory</base>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iCollisionActor &gt;</type>
       <name>CreateCollisionActor</name>
@@ -123622,10 +123479,31 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual float</type>
+      <name>GetJumpSpeed</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
+      <anchor>a1555a39fb9309db6ac6c33004ad89d03</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
       <name>GetMaximumSlope</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
       <anchor>a0aca871519611acb83c9abbdee5efe94</anchor>
       <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetStepHeight</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
+      <anchor>ab405e54c6b489130f7ea1fa1abc7bb5b</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetJumpSpeed</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
+      <anchor>a87ac7fb7459f487f58d00536bf2b5e49</anchor>
+      <arglist>(float s)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -123633,6 +123511,13 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
       <anchor>a7c75e6f32374f46f0e25049a28ca9755</anchor>
       <arglist>(float slope)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetStepHeight</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionActorFactory.html</anchorfile>
+      <anchor>a05dc6572c1ffb1125eb5e48d205844b6</anchor>
+      <arglist>(float h)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -123861,10 +123746,10 @@
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iActor *</type>
-      <name>QueryActor</name>
+      <type>virtual iCollisionActor *</type>
+      <name>QueryCollisionActor</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionObject.html</anchorfile>
-      <anchor>a2e08738102abddf4f056155e204677ee</anchor>
+      <anchor>aa152fe119a636208b856acb7947de2cd</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -132326,8 +132211,6 @@
     <filename>namespaceCS_1_1Physics.html</filename>
     <namespace>CS::Physics::Bullet</namespace>
     <class kind="struct">CS::Physics::iAnchorAnimationControl</class>
-    <class kind="struct">CS::Physics::iDynamicActor</class>
-    <class kind="struct">CS::Physics::iDynamicActorFactory</class>
     <class kind="struct">CS::Physics::iJoint</class>
     <class kind="struct">CS::Physics::iJointFactory</class>
     <class kind="struct">CS::Physics::iKinematicCallback</class>
@@ -132421,12 +132304,6 @@
       <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68a37f932f5627a23be386b08496228f540</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>PHYSICAL_OBJECT_DYNAMICACTOR</name>
-      <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
-      <anchor>a0fc5c6fb9b96461cfa0d9799bd3cfb68afa46d782e07a9f3f80deffd18fa5e866</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <name>RigidBodyState</name>
       <anchorfile>namespaceCS_1_1Physics.html</anchorfile>
@@ -132462,53 +132339,6 @@
       <anchorfile>structCS_1_1Physics_1_1iAnchorAnimationControl.html</anchorfile>
       <anchor>a462624809aaedb5bd98078272e883b5e</anchor>
       <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iDynamicActor</name>
-    <filename>structCS_1_1Physics_1_1iDynamicActor.html</filename>
-    <base virtualness="virtual">CS::Physics::iRigidBody</base>
-    <base virtualness="virtual">CS::Collisions::iActor</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetKinematicStepsEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iDynamicActor.html</anchorfile>
-      <anchor>a4ae3512681ecbdbee2c0983df56a6470</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKinematicStepsEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iDynamicActor.html</anchorfile>
-      <anchor>ac00b2bc1c688b39749aee22e63bc1729</anchor>
-      <arglist>(bool u)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::Physics::iDynamicActorFactory</name>
-    <filename>structCS_1_1Physics_1_1iDynamicActorFactory.html</filename>
-    <base virtualness="virtual">CS::Physics::iRigidBodyFactory</base>
-    <base virtualness="virtual">CS::Collisions::iActorFactory</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iDynamicActor &gt;</type>
-      <name>CreateDynamicActor</name>
-      <anchorfile>structCS_1_1Physics_1_1iDynamicActorFactory.html</anchorfile>
-      <anchor>a67a794c06a62302b1f8fb0632628c479</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetKinematicStepsEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iDynamicActorFactory.html</anchorfile>
-      <anchor>aaaa14064ecf3c1e41a6512ed4ea75559</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetKinematicStepsEnabled</name>
-      <anchorfile>structCS_1_1Physics_1_1iDynamicActorFactory.html</anchorfile>
-      <anchor>a62a86a9c1cacd12a3ed7b475d1dbd108</anchor>
-      <arglist>(bool u)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -133335,13 +133165,6 @@
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
       <anchor>aa8c698d7a12faa3166fe5de870bf0e92</anchor>
       <arglist>(float swingSpan1, float swingSpan2, float twistSpan)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iDynamicActorFactory &gt;</type>
-      <name>CreateDynamicActorFactory</name>
-      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>aa837d72eb38c03ce2f109e1924b22e97</anchor>
-      <arglist>(CS::Collisions::iCollider *collider=nullptr)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iJointFactory &gt;</type>
