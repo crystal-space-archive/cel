@@ -87217,13 +87217,6 @@
       <arglist>(const char *fname, iStreamSource *ssource=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>LoadMapFile</name>
-      <anchorfile>structiLoader.html</anchorfile>
-      <anchor>a27113ad858c8443181ea0f56c25d899f</anchor>
-      <arglist>(const char *filename, bool clearEngine=true, iCollection *collection=0, bool curRegOnly=true, bool checkDupes=false, iStreamSource *ssource=0, iMissingLoaderData *missingdata=0, uint keepFlags=KEEP_ALL)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iMeshWrapper &gt;</type>
       <name>LoadMeshObject</name>
       <anchorfile>structiLoader.html</anchorfile>
@@ -87327,6 +87320,13 @@
       <anchorfile>structiLoader.html</anchorfile>
       <anchor>a4f9166d71f8923b048d6a130e4a2a455</anchor>
       <arglist>(iDocumentNode *world_node, bool clearEngine=true, iCollection *collection=0, bool curRegOnly=true, bool checkDupes=false, iStreamSource *ssource=0, iMissingLoaderData *missingdata=0, uint keepFlags=KEEP_ALL)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadMapFile</name>
+      <anchorfile>structiLoader.html</anchorfile>
+      <anchor>a27113ad858c8443181ea0f56c25d899f</anchor>
+      <arglist>(const char *filename, bool clearEngine=true, iCollection *collection=0, bool curRegOnly=true, bool checkDupes=false, iStreamSource *ssource=0, iMissingLoaderData *missingdata=0, uint keepFlags=KEEP_ALL)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iTextureWrapper *</type>
@@ -104451,13 +104451,6 @@
     </member>
     <member kind="function">
       <type></type>
-      <name>THREADED_INTERFACE8</name>
-      <anchorfile>structiThreadedLoader.html</anchorfile>
-      <anchor>a94b7a587ca2f38b14f849dc4d178ddd5</anchor>
-      <arglist>(LoadMapFile, const char *cwd, const char *filename, bool clearEngine=true, csRef&lt; iCollection &gt; collection=0, csRef&lt; iStreamSource &gt; ssource=0, csRef&lt; iMissingLoaderData &gt; missingdata=0, uint keepFlags=KEEP_ALL, bool do_verbose=false)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
       <name>THREADED_INTERFACE9</name>
       <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>a3f19cee177692eaee978d9370a1f178f</anchor>
@@ -104511,6 +104504,13 @@
       <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>a8b7db113cc93d37c628c924499250124</anchor>
       <arglist>(LoadMap, const char *cwd, csRef&lt; iDocumentNode &gt; world_node, bool clearEngine=true, csRef&lt; iCollection &gt; collection=0, csRef&lt; iStreamSource &gt; ssource=0, csRef&lt; iMissingLoaderData &gt; missingdata=0, uint keepFlags=KEEP_ALL, bool do_verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>THREADED_INTERFACE8</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>a94b7a587ca2f38b14f849dc4d178ddd5</anchor>
+      <arglist>(LoadMapFile, const char *cwd, const char *filename, bool clearEngine=true, csRef&lt; iCollection &gt; collection=0, csRef&lt; iStreamSource &gt; ssource=0, csRef&lt; iMissingLoaderData &gt; missingdata=0, uint keepFlags=KEEP_ALL, bool do_verbose=false)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -123427,8 +123427,8 @@
       <type>virtual void</type>
       <name>Rotate</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>af5cdad6616fc5225466ea791492f7236</anchor>
-      <arglist>(float yaw, float pitch)=0</arglist>
+      <anchor>a075ae873a8cf24660a2403a3ab3e4ab5</anchor>
+      <arglist>(float yaw)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -123443,13 +123443,6 @@
       <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
       <anchor>ab06938366e24acc8f1193de1d3b0748e</anchor>
       <arglist>(float slope)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetRotation</name>
-      <anchorfile>structCS_1_1Collisions_1_1iCollisionActor.html</anchorfile>
-      <anchor>a2fe33037ca668a581f95e881d392e463</anchor>
-      <arglist>(const csMatrix3 &amp;rotation)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
