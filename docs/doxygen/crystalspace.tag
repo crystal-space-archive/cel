@@ -29134,6 +29134,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CSVAR_LONG</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a2214fd7cbaeede53271fb01107889556</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CSVAR_BOOL</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52af17bc3eb7bd1d4e1fc0613efbfa10517</anchor>
@@ -29200,9 +29206,9 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSVAR_IBASE</name>
+      <name>CSVAR_BASE</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52ac4f0d0c0539e936afb354d8842289d2f</anchor>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa90423eeeeac1b1ebbbbb5676cde2e18</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -29464,6 +29470,7 @@
     <name>csver.h</name>
     <path>/tmp/tmp2/trunk/include/</path>
     <filename>csver_8h</filename>
+    <includes id="csverdef_8h" name="csverdef.h" local="yes" imported="no">csverdef.h</includes>
     <member kind="define">
       <type>#define</type>
       <name>CS_VERSION</name>
@@ -29536,13 +29543,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>CS_VERSION_NUM_COMPARABLE</name>
-      <anchorfile>csver_8h.html</anchorfile>
-      <anchor>a8de150f554ffd5d219b7f7ee93bc655f</anchor>
-      <arglist>(Major, Minor, Release, Build)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>CS_VERSION_NUM_COMPARABLE_CURRENT</name>
       <anchorfile>csver_8h.html</anchorfile>
       <anchor>a3d53f9481949b0110d8a6c1cd4827eae</anchor>
@@ -29568,6 +29568,18 @@
       <anchorfile>csver_8h.html</anchorfile>
       <anchor>a1f18b4f9cf9f8ea93b46187a0299b456</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>csverdef.h</name>
+    <path>/tmp/tmp2/trunk/include/</path>
+    <filename>csverdef_8h</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>CS_VERSION_NUM_COMPARABLE</name>
+      <anchorfile>csverdef_8h.html</anchorfile>
+      <anchor>a8de150f554ffd5d219b7f7ee93bc655f</anchor>
+      <arglist>(Major, Minor, Release, Build)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -42437,6 +42449,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>CSVAR_LONG</name>
+      <anchorfile>group__util.html</anchorfile>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52a2214fd7cbaeede53271fb01107889556</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CSVAR_BOOL</name>
       <anchorfile>group__util.html</anchorfile>
       <anchor>gga91624a433f78618fba6823a5d79bdb52af17bc3eb7bd1d4e1fc0613efbfa10517</anchor>
@@ -42503,9 +42521,9 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CSVAR_IBASE</name>
+      <name>CSVAR_BASE</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga91624a433f78618fba6823a5d79bdb52ac4f0d0c0539e936afb354d8842289d2f</anchor>
+      <anchor>gga91624a433f78618fba6823a5d79bdb52aa90423eeeeac1b1ebbbbb5676cde2e18</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -73788,6 +73806,13 @@
       <arglist>() const </arglist>
     </member>
     <member kind="function">
+      <type>iBase *</type>
+      <name>GetBase</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>af8f4ce2c7e2e5d22d9f52e1180db80f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>GetBool</name>
       <anchorfile>structcsVariant.html</anchorfile>
@@ -73813,13 +73838,6 @@
       <name>GetFloat</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>ad4ffafd84f2eac8e44ced0bb87312e4e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>iBase *</type>
-      <name>GetIBase</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>a7eb70520e96175eb1ed4d07eb8e4a155</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -73887,6 +73905,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>SetBase</name>
+      <anchorfile>structcsVariant.html</anchorfile>
+      <anchor>ae138400b93bc88c28e2ae8352fcf069e</anchor>
+      <arglist>(iBase *ib)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>SetBool</name>
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a6c45850ca04ce0b460a95c4433a584b5</anchor>
@@ -73919,13 +73944,6 @@
       <anchorfile>structcsVariant.html</anchorfile>
       <anchor>a8c0a880bd68da00c11776cb4b75ce291</anchor>
       <arglist>(float f)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetIBase</name>
-      <anchorfile>structcsVariant.html</anchorfile>
-      <anchor>ab93d19d67d5674c431ff31069aa4a3a9</anchor>
-      <arglist>(const csRef&lt; iBase &gt; &amp;ib)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -140846,15 +140864,8 @@
     <namespace>CS::Utility::BitOps</namespace>
     <namespace>CS::Utility::ResourceCache</namespace>
     <class kind="class">CS::Utility::AtomicRefCount</class>
-    <class kind="class">CS::Utility::csBasicModifiableDescription</class>
-    <class kind="class">CS::Utility::csBasicModifiableParameter</class>
-    <class kind="class">CS::Utility::csConstraintBitMask</class>
-    <class kind="class">CS::Utility::csConstraintBounded</class>
-    <class kind="class">CS::Utility::csConstraintEnum</class>
-    <class kind="class">CS::Utility::csConstraintTextEntry</class>
-    <class kind="class">CS::Utility::csConstraintVfsDir</class>
-    <class kind="class">CS::Utility::csConstraintVfsFile</class>
-    <class kind="class">CS::Utility::csConstraintVfsPath</class>
+    <class kind="class">CS::Utility::BaseModifiableDescription</class>
+    <class kind="class">CS::Utility::BaseModifiableParameter</class>
     <class kind="class">CS::Utility::DemoApplication</class>
     <class kind="class">CS::Utility::FastRefCount</class>
     <class kind="class">CS::Utility::FixedSizeBestChoiceLRUPolicy</class>
@@ -140870,9 +140881,17 @@
     <class kind="struct">CS::Utility::iModifiableConstraintBounded</class>
     <class kind="struct">CS::Utility::iModifiableConstraintEnum</class>
     <class kind="struct">CS::Utility::iModifiableDescription</class>
+    <class kind="struct">CS::Utility::iModifiableListener</class>
     <class kind="struct">CS::Utility::iModifiableParameter</class>
     <class kind="class">CS::Utility::ImportKit</class>
     <class kind="class">CS::Utility::InternalRefCount</class>
+    <class kind="class">CS::Utility::ModifiableConstraintBitMask</class>
+    <class kind="class">CS::Utility::ModifiableConstraintBounded</class>
+    <class kind="class">CS::Utility::ModifiableConstraintEnum</class>
+    <class kind="class">CS::Utility::ModifiableConstraintTextEntry</class>
+    <class kind="class">CS::Utility::ModifiableConstraintVFSDir</class>
+    <class kind="class">CS::Utility::ModifiableConstraintVFSFile</class>
+    <class kind="class">CS::Utility::ModifiableConstraintVFSPath</class>
     <class kind="class">CS::Utility::PriorityQueue</class>
     <class kind="class">CS::Utility::RootedHierarchicalCache</class>
     <class kind="class">CS::Utility::ScopedDelete</class>
@@ -140910,6 +140929,60 @@
       <name>CAMERA_ROTATE</name>
       <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
       <anchor>aad39af309187b12e0aa5151e74f63d89af5fa407075479d25f7c0eac3cf32a111</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>iModifiableConstraintType</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_BOUNDED</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a390636f5991e98586f92b21a24d3d179</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_ENUM</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a8a5c98b0c5269c8b55ce4a8ef7f3f10c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_VFS_FILE</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a213d3e31e5bf3390a9dfe2a5241a3914</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_VFS_DIR</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a567eaad2dd88d68d5dd5bca11eea818f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_VFS_PATH</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a10b26c00c1ec67950d45201e4ea00e7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_TEXT_ENTRY</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916ab63ed8bf577ba64daef4f6d26a7b40e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_TEXT_BLOB</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a6462882b3331fea5abe78eaffc9abc27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MODIFIABLE_CONSTRAINT_BITMASK</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>ac70a6bb592e9cb290fbd4ae720169916a9674fc4b724d3ec3a5dcc1a317bce5ec</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -141009,154 +141082,147 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>CS::Utility::csBasicModifiableDescription</name>
-    <filename>classCS_1_1Utility_1_1csBasicModifiableDescription.html</filename>
-    <base>scfImplementation1&lt; csBasicModifiableDescription, iModifiableDescription &gt;</base>
+    <name>CS::Utility::BaseModifiableDescription</name>
+    <filename>classCS_1_1Utility_1_1BaseModifiableDescription.html</filename>
+    <base>scfImplementation1&lt; BaseModifiableDescription, iModifiableDescription &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>FindParameter</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a5d3fa45c1e14c8ea8f069a538096ae37</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>aeb995ec76eb100eb37d6ec9d1e118b63</anchor>
       <arglist>(csStringID id) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iModifiableDescription *</type>
       <name>GetChild</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a53a6204968d839fc318e911ae9a0d26b</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a0af00e4dea45d0e727100633f07822e3</anchor>
       <arglist>(size_t index) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>GetChildrenCount</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a499d5d1706cad157a868f73dbac21b32</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a0301b434a3270d2397f14d54f7a63c88</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
       <name>GetLabel</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a290c4659c644859ab0a559c5d4717bb9</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>ab15335f99d62b24f1668db021a4589ce</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual const char *</type>
       <name>GetName</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a97d3edf36e212de8cd056ba03db8f332</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a79106c29f82eb344f33abece514abc5b</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iModifiableParameter *</type>
       <name>GetParameter</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a6ad01a1d11a64e8d6e1b4fc15a55066d</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a120cc6898bea6ebb607bb0dcfcaa66b8</anchor>
       <arglist>(size_t index) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iModifiableParameter *</type>
       <name>GetParameter</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a8c8ff20f64beb433c494a355e21cc089</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a981a4ee59423cbaae032186317dbe19d</anchor>
       <arglist>(csStringID id) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>GetParameterCount</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>aa5c19b3c6ef7ea2e6be9eed1b3c23879</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>abe069b6140b2df41348cce6580d3abf2</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual size_t</type>
       <name>GetTotalParameterCount</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>af34641ab9a67b84613b74afd76f40f43</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a1335e4281db7d939c326529abe42ce5f</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Push</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a80329518c9654eae31cf4cd612d9db70</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>ac973cfdc9bf6cce22879bdb5fc077511</anchor>
       <arglist>(const char *resource)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Push</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a07992fd230c80b0713b0eb348ac5b7b4</anchor>
-      <arglist>(csBasicModifiableDescription *child)</arglist>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>aee08f7486b06518ef43252cc45d850d4</anchor>
+      <arglist>(BaseModifiableDescription *child)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Push</name>
-      <anchorfile>classCS_1_1Utility_1_1csBasicModifiableDescription.html</anchorfile>
-      <anchor>a076021fe5ddeb2f486642da413759697</anchor>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableDescription.html</anchorfile>
+      <anchor>a98960f0d2aa8f10220d14247dc90ffd0</anchor>
       <arglist>(iModifiableParameter *param)</arglist>
     </member>
   </compound>
   <compound kind="class">
-    <name>CS::Utility::csBasicModifiableParameter</name>
-    <filename>classCS_1_1Utility_1_1csBasicModifiableParameter.html</filename>
-    <base>scfImplementation1&lt; csBasicModifiableParameter, iModifiableParameter &gt;</base>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintBitMask</name>
-    <filename>classCS_1_1Utility_1_1csConstraintBitMask.html</filename>
-    <base>scfImplementation1&lt; csConstraintBitMask, iModifiableConstraint &gt;</base>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintBounded</name>
-    <filename>classCS_1_1Utility_1_1csConstraintBounded.html</filename>
-    <base>scfImplementation1&lt; csConstraintBounded, iModifiableConstraintBounded &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>csConstraintBounded</name>
-      <anchorfile>classCS_1_1Utility_1_1csConstraintBounded.html</anchorfile>
-      <anchor>a2fab37a504d8c7f5533d0a3001cc56c1</anchor>
-      <arglist>(const csVariant &amp;max)</arglist>
+    <name>CS::Utility::BaseModifiableParameter</name>
+    <filename>classCS_1_1Utility_1_1BaseModifiableParameter.html</filename>
+    <base>scfImplementation1&lt; BaseModifiableParameter, iModifiableParameter &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iModifiableConstraint *</type>
+      <name>GetConstraint</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>adcb4b90819432f8c0547fb2d6581de15</anchor>
+      <arglist>() const </arglist>
     </member>
-    <member kind="function">
-      <type></type>
-      <name>csConstraintBounded</name>
-      <anchorfile>classCS_1_1Utility_1_1csConstraintBounded.html</anchorfile>
-      <anchor>a6efaa8ee86271d0ee1aceb3a3e82842d</anchor>
-      <arglist>(const csVariant &amp;min, const csVariant &amp;max)</arglist>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetDescription</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>a39816f8d7b5d7fa546d5dd58f000b27c</anchor>
+      <arglist>() const </arglist>
     </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintEnum</name>
-    <filename>classCS_1_1Utility_1_1csConstraintEnum.html</filename>
-    <base>scfImplementation1&lt; csConstraintEnum, iModifiableConstraintEnum &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>csConstraintEnum</name>
-      <anchorfile>classCS_1_1Utility_1_1csConstraintEnum.html</anchorfile>
-      <anchor>a3ba0c321ea340446e9533af461498641</anchor>
-      <arglist>()</arglist>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csStringID</type>
+      <name>GetID</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>a122c807185d596d88a7f5956d329bad3</anchor>
+      <arglist>() const </arglist>
     </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintTextEntry</name>
-    <filename>classCS_1_1Utility_1_1csConstraintTextEntry.html</filename>
-    <base>scfImplementation1&lt; csConstraintTextEntry, iModifiableConstraint &gt;</base>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintVfsDir</name>
-    <filename>classCS_1_1Utility_1_1csConstraintVfsDir.html</filename>
-    <base>scfImplementation1&lt; csConstraintVfsDir, iModifiableConstraint &gt;</base>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintVfsFile</name>
-    <filename>classCS_1_1Utility_1_1csConstraintVfsFile.html</filename>
-    <base>scfImplementation1&lt; csConstraintVfsFile, iModifiableConstraint &gt;</base>
-  </compound>
-  <compound kind="class">
-    <name>CS::Utility::csConstraintVfsPath</name>
-    <filename>classCS_1_1Utility_1_1csConstraintVfsPath.html</filename>
-    <base>scfImplementation1&lt; csConstraintVfsPath, iModifiableConstraint &gt;</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetLabel</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>aca6751bd49039ba6dec8d8d063fd99b5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>a52d5b643b81e1e2a7779eb38789287ea</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVariantType</type>
+      <name>GetType</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>acd9d6549fae7ceede056b20c269a80bd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetConstraint</name>
+      <anchorfile>classCS_1_1Utility_1_1BaseModifiableParameter.html</anchorfile>
+      <anchor>ad0ab5f97eae2a941421c129776d4a858</anchor>
+      <arglist>(iModifiableConstraint *constraint)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::Utility::DemoApplication</name>
@@ -141793,6 +141859,13 @@
     <filename>structCS_1_1Utility_1_1iModifiable.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>AddListener</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>ae588b9ff68caaf6b11a6d3d1f123615a</anchor>
+      <arglist>(iModifiableListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iModifiableDescription &gt;</type>
       <name>GetDescription</name>
       <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
@@ -141814,6 +141887,13 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>RemoveListener</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
+      <anchor>ae2eb10a6b6f68a395368f6678af252ae</anchor>
+      <arglist>(iModifiableListener *listener)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>SetParameterValue</name>
       <anchorfile>structCS_1_1Utility_1_1iModifiable.html</anchorfile>
@@ -141826,6 +141906,13 @@
     <filename>structCS_1_1Utility_1_1iModifiableConstraint.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual iModifiableConstraintType</type>
+      <name>GetType</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraint.html</anchorfile>
+      <anchor>acd7ab49ad86339a30566dd32d31d5593</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>Validate</name>
       <anchorfile>structCS_1_1Utility_1_1iModifiableConstraint.html</anchorfile>
@@ -141837,16 +141924,93 @@
     <name>CS::Utility::iModifiableConstraintBounded</name>
     <filename>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</filename>
     <base virtualness="virtual">CS::Utility::iModifiableConstraint</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVariant &amp;</type>
+      <name>GetMaximum</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</anchorfile>
+      <anchor>ac5f1c958a3129ade30a5842e629410c8</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVariant &amp;</type>
+      <name>GetMinimum</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</anchorfile>
+      <anchor>a86ce7abae9a4977cd89330f823b03e51</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasMaximum</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</anchorfile>
+      <anchor>adb60b462b3aa884b2c4fc358b1a72ad8</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>HasMinimum</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintBounded.html</anchorfile>
+      <anchor>a2efe1496356a88169e05480e1ff15087</anchor>
+      <arglist>() const =0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Utility::iModifiableConstraintEnum</name>
     <filename>structCS_1_1Utility_1_1iModifiableConstraintEnum.html</filename>
     <base virtualness="virtual">CS::Utility::iModifiableConstraint</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetLabel</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintEnum.html</anchorfile>
+      <anchor>a10c2e30e8a60cab1c8279838260bc183</anchor>
+      <arglist>(size_t index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csVariant &amp;</type>
+      <name>GetValue</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintEnum.html</anchorfile>
+      <anchor>a655aeb91b8e6827f399a0fc096fe1163</anchor>
+      <arglist>(size_t index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetValueCount</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableConstraintEnum.html</anchorfile>
+      <anchor>abf2261ed3e1af2b8cda2fba55c876cdc</anchor>
+      <arglist>() const =0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>CS::Utility::iModifiableDescription</name>
     <filename>structCS_1_1Utility_1_1iModifiableDescription.html</filename>
     <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>FindParameter</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a50ac3139ffed43bf1d6eff8b9a81ef2c</anchor>
+      <arglist>(csStringID id) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iModifiableDescription *</type>
+      <name>GetChild</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a156aa6dd957b415d38f71ea875cf3b84</anchor>
+      <arglist>(size_t index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetChildrenCount</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>aee883d0d6b45d33331b1aa744e52e300</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetLabel</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>abb4605496cc36f52cbbcd4f366210606</anchor>
+      <arglist>() const =0</arglist>
+    </member>
     <member kind="function" virtualness="pure">
       <type>virtual const char *</type>
       <name>GetName</name>
@@ -141876,11 +142040,30 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual iStringArray *</type>
+      <name>GetResources</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
+      <anchor>a76e0b5b6f24be23a5ff07f4f6e4cd29b</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual size_t</type>
       <name>GetTotalParameterCount</name>
       <anchorfile>structCS_1_1Utility_1_1iModifiableDescription.html</anchorfile>
       <anchor>a908436f15de7487a1b5b72b2224d7867</anchor>
       <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Utility::iModifiableListener</name>
+    <filename>structCS_1_1Utility_1_1iModifiableListener.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ValueChanged</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableListener.html</anchorfile>
+      <anchor>ad4ca2e28f3982adb4d1c65eac25fe2ae</anchor>
+      <arglist>(iModifiable *modifiable, size_t parameterIndex)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -141906,6 +142089,13 @@
       <name>GetID</name>
       <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
       <anchor>a80115721eacb1898e24ab0d77e6bdd40</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetLabel</name>
+      <anchorfile>structCS_1_1Utility_1_1iModifiableParameter.html</anchorfile>
+      <anchor>a920482538e862d2e60401caa1f1b02bb</anchor>
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -142122,6 +142312,62 @@
       <anchor>ac498e12bbd99eb7e4cd2a01d426d2895</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintBitMask</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintBitMask.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintBitMask, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintBounded</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintBounded.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintBounded, iModifiableConstraintBounded &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>ModifiableConstraintBounded</name>
+      <anchorfile>classCS_1_1Utility_1_1ModifiableConstraintBounded.html</anchorfile>
+      <anchor>aae641d8346a3ca4f9955c9c1ec649f0f</anchor>
+      <arglist>(const csVariant &amp;max)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ModifiableConstraintBounded</name>
+      <anchorfile>classCS_1_1Utility_1_1ModifiableConstraintBounded.html</anchorfile>
+      <anchor>a47d34fc072ff738f0a612bfd3dbf156c</anchor>
+      <arglist>(const csVariant &amp;min, const csVariant &amp;max)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintEnum</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintEnum.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintEnum, iModifiableConstraintEnum &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>ModifiableConstraintEnum</name>
+      <anchorfile>classCS_1_1Utility_1_1ModifiableConstraintEnum.html</anchorfile>
+      <anchor>aa7e271afeffaba2d58545478fd4f6f4c</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintTextEntry</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintTextEntry.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintTextEntry, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintVFSDir</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintVFSDir.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintVFSDir, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintVFSFile</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintVFSFile.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintVFSFile, iModifiableConstraint &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ModifiableConstraintVFSPath</name>
+    <filename>classCS_1_1Utility_1_1ModifiableConstraintVFSPath.html</filename>
+    <base>scfImplementation1&lt; ModifiableConstraintVFSPath, iModifiableConstraint &gt;</base>
   </compound>
   <compound kind="class">
     <name>CS::Utility::PriorityQueue</name>
