@@ -107874,6 +107874,13 @@
     </member>
     <member kind="variable">
       <type>bool</type>
+      <name>CS_GL_ARB_seamless_cubemap_per_texture</name>
+      <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
+      <anchor>ae155362e0f00bfa8fb83bd9a358bfbaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
       <name>CS_GL_ARB_shader_objects</name>
       <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
       <anchor>a78777e9b8e7b4be253710497689eef35</anchor>
@@ -115643,6 +115650,13 @@
       <name>InitGL_ARB_seamless_cube_map</name>
       <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
       <anchor>a693b47ade0fb0a203a9407a304fbae4a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitGL_ARB_seamless_cubemap_per_texture</name>
+      <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
+      <anchor>ad5b1f7d39dcc94da2e0f66e92a2a4641</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
