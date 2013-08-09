@@ -74268,6 +74268,13 @@
       <type>friend bool</type>
       <name>operator&lt;</name>
       <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a7b947fa7cddd73d0be4df9fc98ffe817</anchor>
+      <arglist>(float f, const csVector2 &amp;v)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classcsVector2.html</anchorfile>
       <anchor>aaf6caaa84b6fe448c6d3b04825f48826</anchor>
       <arglist>(const csVector2 &amp;v, float f)</arglist>
     </member>
@@ -74277,6 +74284,13 @@
       <anchorfile>classcsVector2.html</anchorfile>
       <anchor>a946b2cdf4f03f01a04a59efb13a8d63b</anchor>
       <arglist>(const csVector2 &amp;v1, const csVector2 &amp;v2)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>classcsVector2.html</anchorfile>
+      <anchor>a7321a138bf9f1f9e7f309b03e6727e92</anchor>
+      <arglist>(const csVector2 &amp;v, float f)</arglist>
     </member>
     <member kind="friend">
       <type>friend bool</type>
