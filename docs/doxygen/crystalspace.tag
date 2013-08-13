@@ -29604,13 +29604,7 @@
     <includes id="objwatch_8h" name="objwatch.h" local="yes" imported="no">iengine/objwatch.h</includes>
     <includes id="portal_8h" name="portal.h" local="yes" imported="no">iengine/portal.h</includes>
     <includes id="portalcontainer_8h" name="portalcontainer.h" local="yes" imported="no">iengine/portalcontainer.h</includes>
-    <includes id="renderloop_8h" name="renderloop.h" local="yes" imported="no">iengine/renderloop.h</includes>
     <includes id="rendermanager_8h" name="rendermanager.h" local="yes" imported="no">iengine/rendermanager.h</includes>
-    <includes id="icontainer_8h" name="icontainer.h" local="yes" imported="no">iengine/rendersteps/icontainer.h</includes>
-    <includes id="igeneric_8h" name="igeneric.h" local="yes" imported="no">iengine/rendersteps/igeneric.h</includes>
-    <includes id="ilightiter_8h" name="ilightiter.h" local="yes" imported="no">iengine/rendersteps/ilightiter.h</includes>
-    <includes id="irenderstep_8h" name="irenderstep.h" local="yes" imported="no">iengine/rendersteps/irenderstep.h</includes>
-    <includes id="irsfact_8h" name="irsfact.h" local="yes" imported="no">iengine/rendersteps/irsfact.h</includes>
     <includes id="rview_8h" name="rview.h" local="yes" imported="no">iengine/rview.h</includes>
     <includes id="scenenode_8h" name="scenenode.h" local="yes" imported="no">iengine/scenenode.h</includes>
     <includes id="sector_8h" name="sector.h" local="yes" imported="no">iengine/sector.h</includes>
@@ -30230,22 +30224,6 @@
     <class kind="struct">iPortalContainer</class>
   </compound>
   <compound kind="file">
-    <name>renderloop.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/</path>
-    <filename>renderloop_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="icontainer_8h" name="icontainer.h" local="yes" imported="no">iengine/rendersteps/icontainer.h</includes>
-    <class kind="struct">iRenderLoop</class>
-    <class kind="struct">iRenderLoopManager</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>CS_DEFAULT_RENDERLOOP_NAME</name>
-      <anchorfile>group__engine3d__rloop.html</anchorfile>
-      <anchor>ga569c1d8f97e1d478de101695aafc9af9</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>rendermanager.h</name>
     <path>/tmp/tmp2/trunk/include/iengine/</path>
     <filename>rendermanager_8h</filename>
@@ -30255,46 +30233,6 @@
     <class kind="struct">iRenderManagerPostEffects</class>
     <class kind="struct">iRenderManagerTargets</class>
     <class kind="struct">iRenderManagerVisCull</class>
-  </compound>
-  <compound kind="file">
-    <name>icontainer.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
-    <filename>icontainer_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <class kind="struct">iRenderStepContainer</class>
-  </compound>
-  <compound kind="file">
-    <name>igeneric.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
-    <filename>igeneric_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="graph3d_8h" name="graph3d.h" local="yes" imported="no">ivideo/graph3d.h</includes>
-    <class kind="struct">iGenericRenderStep</class>
-  </compound>
-  <compound kind="file">
-    <name>ilightiter.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
-    <filename>ilightiter_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
-    <class kind="struct">iLightIterRenderStep</class>
-    <class kind="struct">iLightRenderStep</class>
-  </compound>
-  <compound kind="file">
-    <name>irenderstep.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
-    <filename>irenderstep_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
-    <class kind="struct">iRenderStep</class>
-  </compound>
-  <compound kind="file">
-    <name>irsfact.h</name>
-    <path>/tmp/tmp2/trunk/include/iengine/rendersteps/</path>
-    <filename>irsfact_8h</filename>
-    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
-    <class kind="struct">iRenderStepFactory</class>
-    <class kind="struct">iRenderStepType</class>
   </compound>
   <compound kind="file">
     <name>rview.h</name>
@@ -38596,22 +38534,6 @@
     <name>engine3d_rloop</name>
     <title>Renderloops &amp; Rendersteps</title>
     <filename>group__engine3d__rloop.html</filename>
-    <class kind="struct">iGenericRenderStep</class>
-    <class kind="struct">iLightIterRenderStep</class>
-    <class kind="struct">iLightRenderStep</class>
-    <class kind="struct">iRenderLoop</class>
-    <class kind="struct">iRenderLoopManager</class>
-    <class kind="struct">iRenderStep</class>
-    <class kind="struct">iRenderStepContainer</class>
-    <class kind="struct">iRenderStepFactory</class>
-    <class kind="struct">iRenderStepType</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>CS_DEFAULT_RENDERLOOP_NAME</name>
-      <anchorfile>group__engine3d__rloop.html</anchorfile>
-      <anchor>ga569c1d8f97e1d478de101695aafc9af9</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>engine3d_textures</name>
@@ -71748,7 +71670,7 @@
   <compound kind="class">
     <name>csStringHashReversible</name>
     <filename>classcsStringHashReversible.html</filename>
-    <base>CS::Utility::StringHash</base>
+    <base>StringHash&lt; CS::StringSetTag::General &gt;</base>
     <member kind="function">
       <type></type>
       <name>csStringHashReversible</name>
@@ -81640,10 +81562,24 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>Draw</name>
+      <name>EnableAdaptiveLODs</name>
       <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a492af84d9a8807199525ac1e09a9533e</anchor>
-      <arglist>(iCamera *c, iClipper2D *clipper, iMeshWrapper *mesh=0)=0</arglist>
+      <anchor>a8ff941d00d21a203c29df2ab27f63c9c</anchor>
+      <arglist>(bool enable, float target_fps)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetAdaptiveLODsMultiplier</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a5b74bf9d8851043df0f4a35f752f4897</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>UpdateAdaptiveLODs</name>
+      <anchorfile>structiEngine.html</anchorfile>
+      <anchor>a4cc9e81e25c96ce0f77ce4e95862a6c4</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int</type>
@@ -81674,13 +81610,6 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual iRenderLoop *</type>
-      <name>GetCurrentDefaultRenderloop</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a459bc3323b47b1de452032af0238eaff</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual uint</type>
       <name>GetCurrentFrameNumber</name>
       <anchorfile>structiEngine.html</anchorfile>
@@ -81700,13 +81629,6 @@
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>a8e24a85a79ec7a6d7e422566ae267f7c</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRenderLoopManager *</type>
-      <name>GetRenderLoopManager</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a194a2bb47730e51de356fb182320422b</anchor>
-      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual iRenderView *</type>
@@ -81751,38 +81673,10 @@
       <arglist>(iTextureHandle *ctxt)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>SetCurrentDefaultRenderloop</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a07a8666ce425201e93009f97fe84dce3</anchor>
-      <arglist>(iRenderLoop *loop)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>UpdateNewFrame</name>
       <anchorfile>structiEngine.html</anchorfile>
       <anchor>aa0bd2caeac2a129f3b6ff683c50911d4</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>EnableAdaptiveLODs</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a8ff941d00d21a203c29df2ab27f63c9c</anchor>
-      <arglist>(bool enable, float target_fps)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual float</type>
-      <name>GetAdaptiveLODsMultiplier</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a5b74bf9d8851043df0f4a35f752f4897</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>UpdateAdaptiveLODs</name>
-      <anchorfile>structiEngine.html</anchorfile>
-      <anchor>a4cc9e81e25c96ce0f77ce4e95862a6c4</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -83949,95 +83843,6 @@
       <anchorfile>structiGeneralMeshSubMesh.html</anchorfile>
       <anchor>a87746ce72d3d68ce886b3332209465a8</anchor>
       <arglist>(csZBufMode mode)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>iGenericRenderStep</name>
-    <filename>structiGenericRenderStep.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>AddDisableDefaultTriggerType</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a456c0332d07a5c0d933bba832fe778ec</anchor>
-      <arglist>(const char *type)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iShader *</type>
-      <name>GetDefaultShader</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a46d66bd841526f239cd2d78bb9a1157b</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetPortalTraversal</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>abd21998917a1ca47ddd73b25a919adb7</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetShaderType</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>af5e3d4200d1f54a27437bb60d82db5ec</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csZBufMode</type>
-      <name>GetZBufMode</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a06e515b9d5c50266945a42822ffff552</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>GetZOffset</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a1b5d84da433270b9add75b09d4b040da</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>RemoveDisableDefaultTriggerType</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>aaeea3ea03d886d286a5d97467ef0c4a5</anchor>
-      <arglist>(const char *type)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetDefaultShader</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a08656fe1d3c7858ab40c724747ac38b9</anchor>
-      <arglist>(iShader *shader)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetPortalTraversal</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a4a5f8c8088ae3da5113fc3e6284c77a9</anchor>
-      <arglist>(bool p)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetShaderType</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a0093599b21e35fa1befe7c5831ea8069</anchor>
-      <arglist>(const char *type)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetZBufMode</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a99df0190ac612e7c6cefea025f8d3d67</anchor>
-      <arglist>(csZBufMode zmode)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>SetZOffset</name>
-      <anchorfile>structiGenericRenderStep.html</anchorfile>
-      <anchor>a6dff39603684aad6b655cc5919be5a6c</anchor>
-      <arglist>(bool zOffset)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -87033,11 +86838,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>iLightIterRenderStep</name>
-    <filename>structiLightIterRenderStep.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
     <name>iLightList</name>
     <filename>structiLightList.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -87205,11 +87005,6 @@
       <anchor>ad85a32ca8af5ef9514adc6f80026af36</anchor>
       <arglist>(const csVector3 &amp;pos)=0</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>iLightRenderStep</name>
-    <filename>structiLightRenderStep.html</filename>
-    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="struct">
     <name>iLightVisibleCallback</name>
@@ -93682,13 +93477,6 @@
       <arglist>(csVector3 *vertices, int num)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Draw</name>
-      <anchorfile>structiPortalContainer.html</anchorfile>
-      <anchor>afc188e691c26105f786fc7c898358f73</anchor>
-      <arglist>(iRenderView *rview)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual iPortal *</type>
       <name>GetPortal</name>
       <anchorfile>structiPortalContainer.html</anchorfile>
@@ -94233,65 +94021,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>iRenderLoop</name>
-    <filename>structiRenderLoop.html</filename>
-    <base>iRenderStepContainer</base>
-  </compound>
-  <compound kind="struct">
-    <name>iRenderLoopManager</name>
-    <filename>structiRenderLoopManager.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iRenderLoop &gt;</type>
-      <name>Create</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a9d7672353a004244a478b8540b242c98</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual const char *</type>
-      <name>GetName</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a15942aa4c39b149eacf9234bf502ec9f</anchor>
-      <arglist>(iRenderLoop *loop)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iRenderLoop &gt;</type>
-      <name>Load</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a5581c05f696b8e79b5d82903a9286682</anchor>
-      <arglist>(const char *fileName)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Register</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a21291027de40377665fc7a380f03eba8</anchor>
-      <arglist>(const char *name, iRenderLoop *loop, bool checkDupes=false)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRenderLoop *</type>
-      <name>Retrieve</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a4288d59cc5732d02f3d17a2312208fdb</anchor>
-      <arglist>(const char *name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>Unregister</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a18f4e424cae40dca6158074be29b5210</anchor>
-      <arglist>(iRenderLoop *loop)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>UnregisterAll</name>
-      <anchorfile>structiRenderLoopManager.html</anchorfile>
-      <anchor>a7736cffc65ee35cc8fb6db826b1ea041</anchor>
-      <arglist>(bool evenDefault=false)=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>iRenderManager</name>
     <filename>structiRenderManager.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -94395,75 +94124,6 @@
       <name>GetVisCuller</name>
       <anchorfile>structiRenderManagerVisCull.html</anchorfile>
       <anchor>acfe844bb1b2f185fa2d85814ff6b3398</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>iRenderStep</name>
-    <filename>structiRenderStep.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>iRenderStepContainer</name>
-    <filename>structiRenderStepContainer.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>AddStep</name>
-      <anchorfile>structiRenderStepContainer.html</anchorfile>
-      <anchor>add49c394c9cab2778a548bf157ba0a5b</anchor>
-      <arglist>(iRenderStep *step)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>DeleteStep</name>
-      <anchorfile>structiRenderStepContainer.html</anchorfile>
-      <anchor>a25b695ea89d053af8242188070a4a226</anchor>
-      <arglist>(iRenderStep *step)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>Find</name>
-      <anchorfile>structiRenderStepContainer.html</anchorfile>
-      <anchor>a0dd8f326fc9ecab9b5ed4e2f3ba90645</anchor>
-      <arglist>(iRenderStep *step) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRenderStep *</type>
-      <name>GetStep</name>
-      <anchorfile>structiRenderStepContainer.html</anchorfile>
-      <anchor>ab3911c3f5ef04543185ff912e2216e28</anchor>
-      <arglist>(size_t n) const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual size_t</type>
-      <name>GetStepCount</name>
-      <anchorfile>structiRenderStepContainer.html</anchorfile>
-      <anchor>a4b67995f5e6acb67919e3f6c539732f0</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>iRenderStepFactory</name>
-    <filename>structiRenderStepFactory.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iRenderStep &gt;</type>
-      <name>Create</name>
-      <anchorfile>structiRenderStepFactory.html</anchorfile>
-      <anchor>a8dc47cc09f6168079637411b910fac97</anchor>
-      <arglist>()=0</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>iRenderStepType</name>
-    <filename>structiRenderStepType.html</filename>
-    <base virtualness="virtual">iBase</base>
-    <member kind="function" virtualness="pure">
-      <type>virtual csPtr&lt; iRenderStepFactory &gt;</type>
-      <name>NewFactory</name>
-      <anchorfile>structiRenderStepType.html</anchorfile>
-      <anchor>a243936b7f8c177c8e397d1e7da224388</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
@@ -95921,25 +95581,11 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
-      <name>Draw</name>
-      <anchorfile>structiSector.html</anchorfile>
-      <anchor>a688880e04de47b4e65b94c8b52602bb0</anchor>
-      <arglist>(iRenderView *rview)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual int</type>
       <name>GetRecLevel</name>
       <anchorfile>structiSector.html</anchorfile>
       <anchor>af35b966b5def8a83628074c9fdf4fec3</anchor>
       <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual iRenderLoop *</type>
-      <name>GetRenderLoop</name>
-      <anchorfile>structiSector.html</anchorfile>
-      <anchor>aafc7002d02b023a813a1594e2d60edd2</anchor>
-      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -95954,13 +95600,6 @@
       <anchorfile>structiSector.html</anchorfile>
       <anchor>a72352a154e3c66aedce95465886a3f2c</anchor>
       <arglist>(iRenderView *rview)=0</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>THREADED_INTERFACE1</name>
-      <anchorfile>structiSector.html</anchorfile>
-      <anchor>a29c57479c7c93b4aaa199f90c70af342</anchor>
-      <arglist>(SetRenderLoop, iRenderLoop *rl)</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -104408,6 +104047,13 @@
       <type></type>
       <name>THREADED_INTERFACE3</name>
       <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>ae2b9a77bfe8c7ff5a1646d188d4a613f</anchor>
+      <arglist>(LoadImage, csRef&lt; iDataBuffer &gt; buf, int Format=CS_IMGFMT_INVALID, bool do_verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>THREADED_INTERFACE3</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>aae2e2e413a9ee7af01234794fa3d96cf</anchor>
       <arglist>(LoadSoundSysData, const char *cwd, const char *fname, bool do_verbose=false)</arglist>
     </member>
@@ -104469,6 +104115,13 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>THREADED_INTERFACE5</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>a7459296d91df19b1283f0e0c1f70312f</anchor>
+      <arglist>(LoadTexture, csRef&lt; iDataBuffer &gt; buf, int Flags=CS_TEXTURE_3D, csRef&lt; iTextureManager &gt; texman=0, csRef&lt; iImage &gt; *image=0, bool do_verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>THREADED_INTERFACE6</name>
       <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>a70b8f6e6d4e71b771094e7ee24a9ea43</anchor>
@@ -104480,6 +104133,13 @@
       <anchorfile>structiThreadedLoader.html</anchorfile>
       <anchor>a299def58387df55168925cebd891387e</anchor>
       <arglist>(LoadTexture, const char *cwd, const char *Filename, int Flags=CS_TEXTURE_3D, csRef&lt; iTextureManager &gt; tm=0, csRef&lt; iImage &gt; *image=0, bool do_verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>THREADED_INTERFACE8</name>
+      <anchorfile>structiThreadedLoader.html</anchorfile>
+      <anchor>ae7bd9627a27eb3813a36c37461e260b6</anchor>
+      <arglist>(LoadTexture, csRef&lt; iDataBuffer &gt; buf, const char *Name, int Flags=CS_TEXTURE_3D, csRef&lt; iTextureManager &gt; texman=0, bool reg=true, bool create_material=true, bool free_image=true, bool do_verbose=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
