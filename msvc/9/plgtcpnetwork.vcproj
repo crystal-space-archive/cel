@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="appnettest_static"
-	ProjectGUID="{ECEE6A39-81B8-E135-B699-92DD86A4B667}"
+	Name="plgtcpnetwork"
+	ProjectGUID="{5E9F17D2-1DFB-84BA-62E9-F1EBD6B787F0}"
 	SccProjectName=""
 	SccLocalPath="">
 	<Platforms>
@@ -13,10 +13,9 @@
 	<Configurations>
             		<Configuration
 			Name="ReleaseWithStaticLibs|Win32"
-			OutputDirectory="..\..\out\release9\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\release9\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release9\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\release9\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -27,14 +26,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release9\build\appnettest_static\Win32\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\release9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\release9\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\release9\build\appnettest_static\"
-				ObjectFile="..\..\out\release9\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\release9\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\release9\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\release9\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -51,11 +50,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\release9\build\appnettest_static\Win32\nettest_static.pdb"
-				SubSystem="2"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9.lib cg.lib cgGL.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\release9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release9\build\plgtcpnetwork\Win32\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release9\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release9\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -69,7 +70,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release9\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\release9\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release9\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release9\bin\&#x0D;&#x0A;"
@@ -81,7 +82,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -90,10 +91,9 @@
 		</Configuration>
       		<Configuration
 			Name="ReleaseWithDlls|Win32"
-			OutputDirectory="..\..\out\release9\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\release9\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release9\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\release9\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -104,14 +104,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release9\build\appnettest_static\Win32\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\release9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\release9\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\release9\build\appnettest_static\"
-				ObjectFile="..\..\out\release9\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\release9\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\release9\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\release9\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -128,11 +128,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\release9\build\appnettest_static\Win32\nettest_static.pdb"
-				SubSystem="2"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9.lib cg.lib cgGL.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\release9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release9\build\plgtcpnetwork\Win32\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release9\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release9\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -146,7 +148,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release9\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\release9\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release9\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release9\bin\&#x0D;&#x0A;"
@@ -158,7 +160,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -167,10 +169,9 @@
 		</Configuration>
                 		<Configuration
 			Name="DebugWithStaticLibs|Win32"
-			OutputDirectory="..\..\out\debug9\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\debug9\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug9\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\debug9\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -180,14 +181,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug9\build\appnettest_static\Win32\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\debug9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\debug9\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\debug9\build\appnettest_static\"
-				ObjectFile="..\..\out\debug9\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\debug9\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\debug9\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\debug9\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -202,11 +203,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\debug9\build\appnettest_static\Win32\nettest_static.pdb"
-				SubSystem="1"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9_d.lib cg.lib cgGL.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace_d.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\debug9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug9\build\plgtcpnetwork\Win32\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug9\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug9\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -220,7 +223,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug9\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\debug9\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug9\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug9\bin\&#x0D;&#x0A;"
@@ -232,7 +235,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -241,10 +244,9 @@
 		</Configuration>
       		<Configuration
 			Name="DebugWithDlls|Win32"
-			OutputDirectory="..\..\out\debug9\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\debug9\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug9\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\debug9\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -254,14 +256,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug9\build\appnettest_static\Win32\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\debug9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\debug9\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\debug9\build\appnettest_static\"
-				ObjectFile="..\..\out\debug9\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\debug9\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\debug9\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\debug9\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -276,11 +278,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\debug9\build\appnettest_static\Win32\nettest_static.pdb"
-				SubSystem="1"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9_d.lib cg.lib cgGL.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace_d.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\debug9\build\plgtcpnetwork\Win32\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug9\build\plgtcpnetwork\Win32\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug9\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug9\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -294,7 +298,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug9\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\debug9\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug9\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug9\bin\&#x0D;&#x0A;"
@@ -306,7 +310,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -315,10 +319,9 @@
 		</Configuration>
                         		<Configuration
 			Name="ReleaseWithStaticLibs|x64"
-			OutputDirectory="..\..\out\release9-x64\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\release9-x64\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release9-x64\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\release9-x64\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -329,14 +332,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release9-x64\build\appnettest_static\x64\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\release9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\release9-x64\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\release9-x64\build\appnettest_static\"
-				ObjectFile="..\..\out\release9-x64\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\release9-x64\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\release9-x64\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\release9-x64\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -353,11 +356,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\release9-x64\build\appnettest_static\x64\nettest_static.pdb"
-				SubSystem="2"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9.lib cg.lib cgGL.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\release9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release9-x64\build\plgtcpnetwork\x64\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release9-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release9-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -371,7 +376,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release9-x64\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\release9-x64\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release9-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release9-x64\bin\&#x0D;&#x0A;"
@@ -383,7 +388,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -392,10 +397,9 @@
 		</Configuration>
       		<Configuration
 			Name="ReleaseWithDlls|x64"
-			OutputDirectory="..\..\out\release9-x64\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\release9-x64\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\release9-x64\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\release9-x64\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			WholeProgramOptimization="1"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
@@ -406,14 +410,14 @@
 				EnableFunctionLevelLinking="TRUE"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="FALSE"
-				ProgramDataBaseFileName="..\..\out\release9-x64\build\appnettest_static\x64\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\release9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\release9-x64\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\release9-x64\build\appnettest_static\"
-				ObjectFile="..\..\out\release9-x64\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\release9-x64\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\release9-x64\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\release9-x64\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -430,11 +434,13 @@
 				EnableCOMDATFolding="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\release9-x64\build\appnettest_static\x64\nettest_static.pdb"
-				SubSystem="2"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9.lib cg.lib cgGL.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\release9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\release9-x64\build\plgtcpnetwork\x64\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\release9-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release9-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -448,7 +454,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\release9-x64\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\release9-x64\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\release9-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\release9-x64\bin\&#x0D;&#x0A;"
@@ -460,7 +466,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -469,10 +475,9 @@
 		</Configuration>
                 		<Configuration
 			Name="DebugWithStaticLibs|x64"
-			OutputDirectory="..\..\out\debug9-x64\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\debug9-x64\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug9-x64\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\debug9-x64\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -482,14 +487,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug9-x64\build\appnettest_static\x64\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\debug9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_STATIC_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\debug9-x64\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\debug9-x64\build\appnettest_static\"
-				ObjectFile="..\..\out\debug9-x64\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\debug9-x64\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\debug9-x64\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\debug9-x64\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -504,11 +509,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\debug9-x64\build\appnettest_static\x64\nettest_static.pdb"
-				SubSystem="1"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9_d.lib cg.lib cgGL.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace_d.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\debug9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug9-x64\build\plgtcpnetwork\x64\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug9-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug9-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -522,7 +529,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug9-x64\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\debug9-x64\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug9-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug9-x64\bin\&#x0D;&#x0A;"
@@ -534,7 +541,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -543,10 +550,9 @@
 		</Configuration>
       		<Configuration
 			Name="DebugWithDlls|x64"
-			OutputDirectory="..\..\out\debug9-x64\build\appnettest_static\"
-			IntermediateDirectory="..\..\out\debug9-x64\build\appnettest_static\"
-			ConfigurationType="1"
-			CharacterSet="2"
+			OutputDirectory="..\..\out\debug9-x64\build\plgtcpnetwork\"
+			IntermediateDirectory="..\..\out\debug9-x64\build\plgtcpnetwork\"
+			ConfigurationType="2"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="FALSE">
 			<Tool
@@ -556,14 +562,14 @@
 				RuntimeTypeInfo="TRUE"
 				RuntimeLibrary="3"
 
-				ProgramDataBaseFileName="..\..\out\debug9-x64\build\appnettest_static\x64\nettest_static.pdb"
+				ProgramDataBaseFileName="..\..\out\debug9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;WIN32;CS_USE_SHARED_LIBS;CEL_BUILD_SHARED_LIBS"
 				OptimizeForProcessor="1"
-				AdditionalOptions="/D CS_HAVE_CAL3D "
+				AdditionalOptions=" "
 				AdditionalIncludeDirectories=".;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
-				PrecompiledHeaderFile="..\..\out\debug9-x64\build\appnettest_static\appnettest_static.pch"
-				AssemblerListingLocation="..\..\out\debug9-x64\build\appnettest_static\"
-				ObjectFile="..\..\out\debug9-x64\build\appnettest_static\"
+				PrecompiledHeaderFile="..\..\out\debug9-x64\build\plgtcpnetwork\plgtcpnetwork.pch"
+				AssemblerListingLocation="..\..\out\debug9-x64\build\plgtcpnetwork\"
+				ObjectFile="..\..\out\debug9-x64\build\plgtcpnetwork\"
 				WarningLevel="3"
 				SuppressStartupBanner="TRUE"
 				Detect64BitPortabilityProblems="false"
@@ -578,11 +584,13 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
 				IgnoreDefaultLibraryNames="LIBC,LIBCD,LIBCMT,LIBCMTD,MSVCRT"
-				OutputFile="..\..\nettest_static.exe"
-				ProgramDatabaseFile="..\..\out\debug9-x64\build\appnettest_static\x64\nettest_static.pdb"
-				SubSystem="1"
-				AdditionalOptions="libjpeg.lib libpng.lib cal3d-vc9_d.lib cg.lib cgGL.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib "
-				AdditionalDependencies="libcrystalspace_d.lib ws2_32.lib"
+				OutputFile="..\..\tcpnetwork.dll"
+				ProgramDatabaseFile="..\..\out\debug9-x64\build\plgtcpnetwork\x64\tcpnetwork.pdb"
+				IgnoreImportLibrary="TRUE"
+				DelayLoadDLLs=""
+				ImportLibrary="..\..\out\debug9-x64\build\plgtcpnetwork\x64\plgtcpnetwork.lib"
+				AdditionalOptions=" "
+				AdditionalDependencies="delayimp.lib ws2_32.lib libcrystalspace_d.lib"
 				SuppressStartupBanner="TRUE"
 				AdditionalLibraryDirectories="..\..\..\CS\out\debug9-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug9-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib"
 				LargeAddressAware="2"
@@ -596,7 +604,7 @@
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName="..\..\out\debug9-x64\build\appnettest_static\appnettest_static.tlb"/>
+				TypeLibraryName="..\..\out\debug9-x64\build\plgtcpnetwork\plgtcpnetwork.tlb"/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="md ..\..\out\debug9-x64\bin 2&gt; nul&#x0D;&#x0A;copy /y &quot;$(TargetPath)&quot; ..\..\out\debug9-x64\bin\&#x0D;&#x0A;"
@@ -608,7 +616,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;PACKAGE_NAME=CEL;_WINDOWS;PROJECTGEN_VERSION=9"
-				AdditionalIncludeDirectories=".;..\..\apps\nettest;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
+				AdditionalIncludeDirectories=".;..\..\plugins\network\tcp;..\..;..\..\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include"
 				Culture="1033"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
@@ -621,45 +629,127 @@
 			Name="Source Files"
 			Filter="">
 			<File
-				RelativePath="..\..\apps\nettest\behave.cpp">
+				RelativePath="..\..\msvc\plugin_impl.cpp">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\netmanagers.cpp">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\crc.c">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\nettest.cpp">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\err.c">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\ntmain.cpp">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\errorstr.c">
 			</File>
 			<File
-				RelativePath="..\..\msvc\appnettest_static_static_glue_app.cpp">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\group.c">
 			</File>
 			<File
-				RelativePath="..\..\msvc\appnettest_static_static_glue_app_CRYSTAL.cpp">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\htcondition.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\hthread.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\htmutex.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\ipx.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\loopback.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\nl.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\nltime.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\sock.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\wsock.c">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgame.cpp">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgameclient.cpp">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgamefactory.cpp">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgameserver.cpp">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcputils.cpp">
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="">
 			<File
-				RelativePath="..\..\apps\nettest\behave.h">
+				RelativePath="..\..\plugins\network\tcp\hawknl\include\hawklib.h">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\netmanagers.h">
+				RelativePath="..\..\plugins\network\tcp\hawknl\include\hawkthreads.h">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\nettest.h">
+				RelativePath="..\..\plugins\network\tcp\hawknl\include\nl.h">
 			</File>
 			<File
-				RelativePath="..\..\apps\nettest\networktypes.h">
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\htinternal.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\ipx.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\loopback.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\nlinternal.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\parallel.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\serial.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\sock.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\hawknl\src\wsock.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgame.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgameclient.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgamefactory.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpgameserver.h">
+			</File>
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcputils.h">
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="">
 			<File
-				RelativePath="..\..\msvc\appnettest_static.rc">
+				RelativePath="..\..\msvc\plgtcpnetwork.rc">
+			</File>
+		</Filter>
+		<Filter
+			Name="Other Files"
+			Filter="">
+			<File
+				RelativePath="..\..\plugins\network\tcp\tcpnetwork.csplugin">
 			</File>
 		</Filter>
 	</Files>
