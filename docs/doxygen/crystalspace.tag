@@ -23070,6 +23070,7 @@
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
     <includes id="standardtreetraits_8h" name="standardtreetraits.h" local="yes" imported="no">csplugincommon/rendermanager/standardtreetraits.h</includes>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
+    <includes id="metautils_8h" name="metautils.h" local="yes" imported="no">csutil/metautils.h</includes>
     <includes id="redblacktree_8h" name="redblacktree.h" local="yes" imported="no">csutil/redblacktree.h</includes>
     <includes id="rendermeshholder_8h" name="rendermeshholder.h" local="yes" imported="no">cstool/rendermeshholder.h</includes>
     <class kind="struct">CS::RenderManager::RenderTree::ContextNode</class>
@@ -25302,10 +25303,12 @@
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">csutil/fifo.h</includes>
     <includes id="filereadhelper_8h" name="filereadhelper.h" local="yes" imported="no">csutil/filereadhelper.h</includes>
     <includes id="fixedsizeallocator_8h" name="fixedsizeallocator.h" local="yes" imported="no">csutil/fixedsizeallocator.h</includes>
+    <includes id="fixedsizecache_8h" name="fixedsizecache.h" local="yes" imported="no">csutil/fixedsizecache.h</includes>
     <includes id="flags_8h" name="flags.h" local="yes" imported="no">csutil/flags.h</includes>
     <includes id="floatrand_8h" name="floatrand.h" local="yes" imported="no">csutil/floatrand.h</includes>
     <includes id="formatter_8h" name="formatter.h" local="yes" imported="no">csutil/formatter.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <includes id="hashcomputer_8h" name="hashcomputer.h" local="yes" imported="no">csutil/hashcomputer.h</includes>
     <includes id="hashr_8h" name="hashr.h" local="yes" imported="no">csutil/hashr.h</includes>
     <includes id="inputdef_8h" name="inputdef.h" local="yes" imported="no">csutil/inputdef.h</includes>
     <includes id="invasivelist_8h" name="invasivelist.h" local="yes" imported="no">csutil/invasivelist.h</includes>
@@ -25316,6 +25319,7 @@
     <includes id="memfile_8h" name="memfile.h" local="yes" imported="no">csutil/memfile.h</includes>
     <includes id="memheap_8h" name="memheap.h" local="yes" imported="no">csutil/memheap.h</includes>
     <includes id="mempool_8h" name="mempool.h" local="yes" imported="no">csutil/mempool.h</includes>
+    <includes id="metautils_8h" name="metautils.h" local="yes" imported="no">csutil/metautils.h</includes>
     <includes id="mmapio_8h" name="mmapio.h" local="yes" imported="no">csutil/mmapio.h</includes>
     <includes id="nobjvec_8h" name="nobjvec.h" local="yes" imported="no">csutil/nobjvec.h</includes>
     <includes id="nulcache_8h" name="nulcache.h" local="yes" imported="no">csutil/nulcache.h</includes>
@@ -25325,6 +25329,7 @@
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
     <includes id="partialorder_8h" name="partialorder.h" local="yes" imported="no">csutil/partialorder.h</includes>
     <includes id="physfile_8h" name="physfile.h" local="yes" imported="no">csutil/physfile.h</includes>
+    <includes id="platform_8h" name="platform.h" local="yes" imported="no">csutil/platform.h</includes>
     <includes id="platformfile_8h" name="platformfile.h" local="yes" imported="no">csutil/platformfile.h</includes>
     <includes id="plugldr_8h" name="plugldr.h" local="yes" imported="no">csutil/plugldr.h</includes>
     <includes id="plugmgr_8h" name="plugmgr.h" local="yes" imported="no">csutil/plugmgr.h</includes>
@@ -25809,6 +25814,7 @@
     <includes id="csutil_2allocator_8h" name="allocator.h" local="yes" imported="no">csutil/allocator.h</includes>
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="hash_8h" name="hash.h" local="yes" imported="no">csutil/hash.h</includes>
+    <includes id="metautils_8h" name="metautils.h" local="yes" imported="no">csutil/metautils.h</includes>
     <includes id="compileassert_8h" name="compileassert.h" local="yes" imported="no">csutil/compileassert.h</includes>
     <class kind="class">csBitArray</class>
     <class kind="class">csBitArrayTweakable</class>
@@ -25829,6 +25835,7 @@
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>blockallocator_8h</filename>
     <includes id="fixedsizeallocator_8h" name="fixedsizeallocator.h" local="yes" imported="no">csutil/fixedsizeallocator.h</includes>
+    <includes id="metautils_8h" name="metautils.h" local="yes" imported="no">csutil/metautils.h</includes>
     <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
     <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
     <class kind="class">CS::Memory::BlockAllocatorSafe</class>
@@ -27462,6 +27469,35 @@
     <namespace>CS::Memory</namespace>
   </compound>
   <compound kind="file">
+    <name>fixedsizecache.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>fixedsizecache_8h</filename>
+    <includes id="metautils_8h" name="metautils.h" local="yes" imported="no">csutil/metautils.h</includes>
+    <includes id="compileassert_8h" name="compileassert.h" local="yes" imported="no">csutil/compileassert.h</includes>
+    <includes id="hashcomputer_8h" name="hashcomputer.h" local="yes" imported="no">csutil/hashcomputer.h</includes>
+    <includes id="custom__new__disable_8h" name="custom_new_disable.h" local="yes" imported="no">csutil/custom_new_disable.h</includes>
+    <includes id="custom__new__enable_8h" name="custom_new_enable.h" local="yes" imported="no">csutil/custom_new_enable.h</includes>
+    <class kind="struct">CS::Utility::Implementation::FixedSizeBestChoiceLRU</class>
+    <class kind="struct">CS::Utility::Implementation::FixedSizeBestChoiceLRU&lt; 1 &gt;</class>
+    <class kind="struct">CS::Utility::Implementation::FixedSizeBestChoiceLRU&lt; 2 &gt;</class>
+    <class kind="class">CS::Utility::FixedSizeBestChoiceLRUPolicy</class>
+    <class kind="class">CS::Utility::FixedSizeCache</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizeCacheElement</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizeCacheSet</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizeLRU</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizeLRU&lt; 1 &gt;</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizeLRU&lt; 2 &gt;</class>
+    <class kind="class">CS::Utility::FixedSizeLRUPolicy</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizePseudoLRU</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizePseudoLRU&lt; 4 &gt;</class>
+    <class kind="class">CS::Utility::Implementation::FixedSizePseudoLRU&lt; 8 &gt;</class>
+    <class kind="class">CS::Utility::FixedSizePseudoLRUPolicy</class>
+    <class kind="struct">CS::Utility::Implementation::SetNumberComputer</class>
+    <class kind="struct">CS::Utility::Implementation::SetNumberComputer&lt; 0 &gt;</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Utility</namespace>
+  </compound>
+  <compound kind="file">
     <name>flags.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>flags_8h</filename>
@@ -27538,6 +27574,7 @@
     <includes id="comparator_8h" name="comparator.h" local="yes" imported="no">csutil/comparator.h</includes>
     <includes id="util_8h" name="util.h" local="yes" imported="no">csutil/util.h</includes>
     <includes id="tuple_8h" name="tuple.h" local="yes" imported="no">csutil/tuple.h</includes>
+    <includes id="hashcomputer_8h" name="hashcomputer.h" local="yes" imported="no">csutil/hashcomputer.h</includes>
     <class kind="class">csHash::ConstGlobalIterator</class>
     <class kind="class">csHash::ConstIterator</class>
     <class kind="class">csConstPtrKey</class>
@@ -27548,6 +27585,47 @@
     <class kind="class">csHash::Iterator</class>
     <namespace>CS</namespace>
     <namespace>CS::Container</namespace>
+  </compound>
+  <compound kind="file">
+    <name>hashcomputer.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>hashcomputer_8h</filename>
+    <class kind="class">csHashComputer</class>
+    <class kind="class">csHashComputer&lt; const char * &gt;</class>
+    <class kind="class">csHashComputer&lt; T * &gt;</class>
+    <class kind="class">csHashComputerIntegral</class>
+    <class kind="class">csHashComputerString</class>
+    <class kind="class">csHashComputerStruct</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Utility</namespace>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>csHashCompute</name>
+      <anchorfile>group__util__containers.html</anchorfile>
+      <anchor>ga440290362fd5eacc043fbf55698cfa81</anchor>
+      <arglist>(char const *, size_t length)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>csHashCompute</name>
+      <anchorfile>group__util__containers.html</anchorfile>
+      <anchor>gab805c6e597fbb1d73233fecf4c050a6e</anchor>
+      <arglist>(char const *)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>HashCombine</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>ae2a5c3f3ec23f5516734cd8ed8b5ce52</anchor>
+      <arglist>(uint &amp;hash, uint nextHash)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static uint</type>
+      <name>HashCompute</name>
+      <anchorfile>namespaceCS.html</anchorfile>
+      <anchor>ac1313276c15dd97c25345b82be5466a6</anchor>
+      <arglist>(const T &amp;val)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>hashr.h</name>
@@ -27681,6 +27759,23 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>metautils.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>metautils_8h</filename>
+    <class kind="struct">CS::Meta::Implementation::AlignmentLogic</class>
+    <class kind="struct">CS::Meta::AlignmentOf</class>
+    <class kind="struct">CS::Meta::Implementation::AlignmentOfHack</class>
+    <class kind="struct">CS::Meta::Implementation::AlignmentOfImpl</class>
+    <class kind="struct">CS::Meta::AlignSize</class>
+    <class kind="struct">CS::Meta::EBOptHelper</class>
+    <class kind="struct">CS::Meta::IsLog2</class>
+    <class kind="struct">CS::Meta::Log2</class>
+    <class kind="struct">CS::Meta::TypeOfSize</class>
+    <class kind="struct">CS::Meta::TypeWithAlignment</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Meta</namespace>
+  </compound>
+  <compound kind="file">
     <name>mmap_dummy.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>mmap__dummy_8h</filename>
@@ -27812,6 +27907,35 @@
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="vfs_8h" name="vfs.h" local="yes" imported="no">iutil/vfs.h</includes>
     <class kind="class">csPhysicalFile</class>
+  </compound>
+  <compound kind="file">
+    <name>platform.h</name>
+    <path>/tmp/tmp2/trunk/include/csutil/</path>
+    <filename>platform_8h</filename>
+    <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <namespace>CS</namespace>
+    <namespace>CS::Platform</namespace>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetMaxVirtualSize</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a25b179c4f65c82ad9bf4f5238808c0b7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetPhysicalMemorySize</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a79751474e178533967770bad4230aea7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>uint</type>
+      <name>GetProcessorCount</name>
+      <anchorfile>namespaceCS_1_1Platform.html</anchorfile>
+      <anchor>a9ee630f77ae61243b5e377c9030505fb</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>platformfile.h</name>
