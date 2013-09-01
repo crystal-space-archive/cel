@@ -22967,6 +22967,7 @@
     <includes id="renderbuffer_8h" name="renderbuffer.h" local="yes" imported="no">csgfx/renderbuffer.h</includes>
     <includes id="shadervarcontext_8h" name="shadervarcontext.h" local="yes" imported="no">csgfx/shadervarcontext.h</includes>
     <includes id="rbuflock_8h" name="rbuflock.h" local="yes" imported="no">cstool/rbuflock.h</includes>
+    <includes id="cameracache_8h" name="cameracache.h" local="yes" imported="no">csplugincommon/rendermanager/cameracache.h</includes>
     <includes id="renderview_8h" name="renderview.h" local="yes" imported="no">csplugincommon/rendermanager/renderview.h</includes>
     <includes id="svsetup_8h" name="svsetup.h" local="yes" imported="no">csplugincommon/rendermanager/svsetup.h</includes>
     <includes id="texturecache_8h" name="texturecache.h" local="yes" imported="no">csplugincommon/rendermanager/texturecache.h</includes>
@@ -139369,8 +139370,8 @@
       <type>void</type>
       <name>Initialize</name>
       <anchorfile>structCS_1_1RenderManager_1_1StandardPortalSetup__Base_1_1PersistentData.html</anchorfile>
-      <anchor>afa5c0b241cc028bd95bb597377b8620a</anchor>
-      <arglist>(iShaderManager *shmgr, iGraphics3D *g3d, RenderTreeBase::DebugPersistent &amp;dbgPersist)</arglist>
+      <anchor>a15100453267bc0ebb4d1d24192a03862</anchor>
+      <arglist>(iObjectRegistry *object_reg, RenderTreeBase::DebugPersistent &amp;dbgPersist)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -139392,6 +139393,13 @@
       <anchorfile>structCS_1_1RenderManager_1_1StandardPortalSetup__Base_1_1PersistentData.html</anchorfile>
       <anchor>a9c7e4ca59c99d012da323846b4197697</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>CameraCache</type>
+      <name>cameras</name>
+      <anchorfile>structCS_1_1RenderManager_1_1StandardPortalSetup__Base_1_1PersistentData.html</anchorfile>
+      <anchor>aeaae97af3fef02a17ee2dab37d844fab</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
