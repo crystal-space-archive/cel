@@ -22786,7 +22786,9 @@
     <path>/tmp/tmp2/trunk/include/csplugincommon/rendermanager/</path>
     <filename>cameracache_8h</filename>
     <includes id="camera_8h" name="camera.h" local="yes" imported="no">iengine/camera.h</includes>
+    <includes id="priorityqueue_8h" name="priorityqueue.h" local="yes" imported="no">csutil/priorityqueue.h</includes>
     <includes id="weakref_8h" name="weakref.h" local="yes" imported="no">csutil/weakref.h</includes>
+    <class kind="class">CS::RenderManager::CameraCache</class>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
   </compound>
@@ -28596,6 +28598,7 @@
     <name>scopedpointer.h</name>
     <path>/tmp/tmp2/trunk/include/csutil/</path>
     <filename>scopedpointer_8h</filename>
+    <class kind="class">CS::Utility::ScopedArrayPointer</class>
     <class kind="class">CS::Utility::ScopedPointer</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
@@ -67230,6 +67233,13 @@
       <anchorfile>classcsRef.html</anchorfile>
       <anchor>a27690290149b073a49ff073b5731820a</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>Get</name>
+      <anchorfile>classcsRef.html</anchorfile>
+      <anchor>a906630562a95288d2c3998245c71b2e9</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>uint</type>
@@ -125032,7 +125042,6 @@
     <name>CS::Engine::MovableSectorList</name>
     <filename>classCS_1_1Engine_1_1MovableSectorList.html</filename>
     <base>scfImplementation1&lt; MovableSectorList, iSectorList &gt;</base>
-    <base>csRefArrayObject&lt; iSector &gt;</base>
     <member kind="function" virtualness="virtual">
       <type>virtual int</type>
       <name>Add</name>
@@ -125046,6 +125055,13 @@
       <anchorfile>classCS_1_1Engine_1_1MovableSectorList.html</anchorfile>
       <anchor>a695aed0fd689cb308376a34cc7a63eb8</anchor>
       <arglist>(iSector *obj) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iSector *</type>
+      <name>FindByName</name>
+      <anchorfile>classCS_1_1Engine_1_1MovableSectorList.html</anchorfile>
+      <anchor>a624bb13d484592a8f84c40685c9e0fd5</anchor>
+      <arglist>(const char *Name) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual iSector *</type>
@@ -136753,6 +136769,7 @@
     <namespace>CS::RenderManager::AutoFX</namespace>
     <namespace>CS::RenderManager::HDR</namespace>
     <class kind="class">CS::RenderManager::BeginFinishDrawScope</class>
+    <class kind="class">CS::RenderManager::CameraCache</class>
     <class kind="class">CS::RenderManager::ContextTargetSetup</class>
     <class kind="class">CS::RenderManager::DependentTargetManager</class>
     <class kind="class">CS::RenderManager::HDRHelper</class>
@@ -136909,6 +136926,72 @@
   <compound kind="class">
     <name>CS::RenderManager::BeginFinishDrawScope</name>
     <filename>classCS_1_1RenderManager_1_1BeginFinishDrawScope.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>CS::RenderManager::CameraCache</name>
+    <filename>classCS_1_1RenderManager_1_1CameraCache.html</filename>
+    <member kind="enumvalue">
+      <name>syncTransform</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a9443b19152ad4746b51d1db33749c8df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncSector</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26abe33c10e964493bdd7243ad2b7b6ce15</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncMirrored</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a6b7d787b31a9b05a77981b6f38f1aae1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncFarPlane</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a2d5238a1e1785e54feaaee8024eeba62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncOnlyPortals</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26ab53837d7c0a39d3706c46748c5aa6648</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncProjection</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a6b936b17ff85ac80f720fb584e962e1f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncAll</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a049b84fd65f46afae658af833c6f0e5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>syncNothing</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a139b0851d3362e34c5ea93320b592f26a2f93979583d5287fa32cfbb064e7919b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Initialize</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>a7dab0d13b7b2356e937fd8fc9994df73</anchor>
+      <arglist>(iEngine *engine)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Purge</name>
+      <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
+      <anchor>afb25253fca95985d20e4b909b0311c93</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::ContextTargetSetup</name>
@@ -140714,6 +140797,7 @@
     <class kind="class">CS::Utility::ModifiableConstraintVFSPath</class>
     <class kind="class">CS::Utility::PriorityQueue</class>
     <class kind="class">CS::Utility::RootedHierarchicalCache</class>
+    <class kind="class">CS::Utility::ScopedArrayPointer</class>
     <class kind="class">CS::Utility::ScopedDelete</class>
     <class kind="class">CS::Utility::ScopedPointer</class>
     <class kind="class">CS::Utility::StringArray</class>
@@ -142297,6 +142381,75 @@
       <anchorfile>classCS_1_1Utility_1_1RootedHierarchicalCache.html</anchorfile>
       <anchor>a42867aeb3eb1d6a5fdd6816f560e90c4</anchor>
       <arglist>(const char *path)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Utility::ScopedArrayPointer</name>
+    <filename>classCS_1_1Utility_1_1ScopedArrayPointer.html</filename>
+    <templarg></templarg>
+    <base protection="private">CS::Implementation::NonCopyable_</base>
+    <member kind="function">
+      <type>void</type>
+      <name>Invalidate</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>ad02ead54b2d7766ced69a4167efc341f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsValid</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>ab40fad227f06e1618db2b4be52e5ea8d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator T *</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>ac58a83fbb8ab197878716964744a169c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>operator*</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>af15558b607247ab964b0a67d0c7ca8ca</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>operator-&gt;</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>a2de9bfebb62c7ae4831eafa34a23f1a8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>operator[]</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>ab3717588378be90df686b02b784b9bab</anchor>
+      <arglist>(size_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Reset</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>a130b5371b909c7c7eef1c11971041a15</anchor>
+      <arglist>(T *ptr=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ScopedArrayPointer</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>a0e2f37c28436ad4ec51cb6ede51b85a7</anchor>
+      <arglist>(T *ptr=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ScopedArrayPointer</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>aa759b4bb0325898405a167ea147fbfb0</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
