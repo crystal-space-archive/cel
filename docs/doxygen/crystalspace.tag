@@ -34,8 +34,10 @@
     <path>/tmp/tmp2/trunk/include/</path>
     <filename>csgeom_8h</filename>
     <includes id="cssysdef_8h" name="cssysdef.h" local="yes" imported="no">cssysdef.h</includes>
+    <includes id="bih_8h" name="bih.h" local="yes" imported="no">csgeom/bih.h</includes>
     <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
     <includes id="bsptree_8h" name="bsptree.h" local="yes" imported="no">csgeom/bsptree.h</includes>
+    <includes id="bvh_8h" name="bvh.h" local="yes" imported="no">csgeom/bvh.h</includes>
     <includes id="chainhull2d_8h" name="chainhull2d.h" local="yes" imported="no">csgeom/chainhull2d.h</includes>
     <includes id="csrect_8h" name="csrect.h" local="yes" imported="no">csgeom/csrect.h</includes>
     <includes id="csrectrg_8h" name="csrectrg.h" local="yes" imported="no">csgeom/csrectrg.h</includes>
@@ -43,7 +45,6 @@
     <includes id="fixed_8h" name="fixed.h" local="yes" imported="no">csgeom/fixed.h</includes>
     <includes id="frustum_8h" name="frustum.h" local="yes" imported="no">csgeom/frustum.h</includes>
     <includes id="kdtree_8h" name="kdtree.h" local="yes" imported="no">csgeom/kdtree.h</includes>
-    <includes id="kdtreex_8h" name="kdtreex.h" local="yes" imported="no">csgeom/kdtreex.h</includes>
     <includes id="math_8h" name="math.h" local="yes" imported="no">csgeom/math.h</includes>
     <includes id="math2d_8h" name="math2d.h" local="yes" imported="no">csgeom/math2d.h</includes>
     <includes id="math3d_8h" name="math3d.h" local="yes" imported="no">csgeom/math3d.h</includes>
@@ -79,6 +80,15 @@
     <includes id="vector4_8h" name="vector4.h" local="yes" imported="no">csgeom/vector4.h</includes>
   </compound>
   <compound kind="file">
+    <name>bih.h</name>
+    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <filename>bih_8h</filename>
+    <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
+    <class kind="class">CS::Geometry::BIH</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Geometry</namespace>
+  </compound>
+  <compound kind="file">
     <name>box.h</name>
     <path>/tmp/tmp2/trunk/include/csgeom/</path>
     <filename>box_8h</filename>
@@ -103,319 +113,319 @@
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a86d75fcdcc57f10b7e00afa9571b2d56</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca86d75fcdcc57f10b7e00afa9571b2d56</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04aaa41ac3e362d3bab01aadf9aa6e89ed3</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caaa41ac3e362d3bab01aadf9aa6e89ed3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a66981a2c120c408cd6a662687e809536</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca66981a2c120c408cd6a662687e809536</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a22189c053382e35184dbc0d0c4056c49</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca22189c053382e35184dbc0d0c4056c49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CENTER2</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a26daf5755b88f571d2f8b44b8a4eb1f2</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca26daf5755b88f571d2f8b44b8a4eb1f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xy_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab42077b10139d5a537a31773f9d82116</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eab42077b10139d5a537a31773f9d82116</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xy_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cae9cda4d3571c9e32d2aba7e4e36255b8</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eae9cda4d3571c9e32d2aba7e4e36255b8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xy_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad9e23645086f99891c4ca5eccba117a1</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ead9e23645086f99891c4ca5eccba117a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XY_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca6e0c54f9e09d052f5da9c4d157720922</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea6e0c54f9e09d052f5da9c4d157720922</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XY_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cadef3cca359637bed9cbd0240ffd2051d</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eadef3cca359637bed9cbd0240ffd2051d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xY_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca0f820cda4b14b108a4a8eea2f04a399a</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea0f820cda4b14b108a4a8eea2f04a399a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xY_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca703caeef06bfab521bdb139104d80154</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea703caeef06bfab521bdb139104d80154</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xy_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca675911addea7e87c3a8c8d7dff2ccb98</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea675911addea7e87c3a8c8d7dff2ccb98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea89d329160331dbc52961462fa640e016</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a89d329160331dbc52961462fa640e016</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea0adf66ef9191dbadc5ff14a6bad51070</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a0adf66ef9191dbadc5ff14a6bad51070</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9eace4d8a92c8104f1f48452cb3d312d47c</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635ace4d8a92c8104f1f48452cb3d312d47c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9eacf591c4f61dc416d2f12e53caa0fc804</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635acf591c4f61dc416d2f12e53caa0fc804</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ead13ea13c11becbf554b5ae66e58faa24</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635ad13ea13c11becbf554b5ae66e58faa24</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea764db01cad89323ece3563d24b822a9a</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a764db01cad89323ece3563d24b822a9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea2b8f79719b79e9a75f8284feb3cafdf5</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a2b8f79719b79e9a75f8284feb3cafdf5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea9249f548cf717ea61e140681e58aeac5</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a9249f548cf717ea61e140681e58aeac5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CENTER3</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea8240f71d83e88f58c9c7da2a583e3c03</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a8240f71d83e88f58c9c7da2a583e3c03</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_x</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635abf5848df27bb69f664cbd291d39420ee</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dabf5848df27bb69f664cbd291d39420ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_X</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a45dd9cccdf41c83a927d6407db8d896d</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da45dd9cccdf41c83a927d6407db8d896d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a6a332bf491cf4c6d41382d86e048b2af</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6a332bf491cf4c6d41382d86e048b2af</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_Y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a609482712abd0e66fdc499c79446e436</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da609482712abd0e66fdc499c79446e436</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635ad7e05664a7c62642086c8208312f7e0f</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad7e05664a7c62642086c8208312f7e0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_Z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a7406d4fc7aaf58e925da20fa75e958c7</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7406d4fc7aaf58e925da20fa75e958c7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a3f565d480903f9a9037e5a4f557ac32d</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da3f565d480903f9a9037e5a4f557ac32d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da28c05175d3a2a4c149f796f4c6f64b0f</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a28c05175d3a2a4c149f796f4c6f64b0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daf1b6f3bca9b6f462f95b3ee037ea45b9</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600af1b6f3bca9b6f462f95b3ee037ea45b9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daab03491e2bc4107e684f35213bcbcd61</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aab03491e2bc4107e684f35213bcbcd61</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da66b26777890e8aa3a1548c43b8db5e6a</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a66b26777890e8aa3a1548c43b8db5e6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da0287c5a744c7f5f969f704b7417918e0</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a0287c5a744c7f5f969f704b7417918e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dafd27ca2b7840189a4e65b6574f1dfae8</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600afd27ca2b7840189a4e65b6574f1dfae8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da335c45578982e7a26b9d26f4fb0273fc</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a335c45578982e7a26b9d26f4fb0273fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da26ef6a1c17df15e763df523ca4d6092a</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a26ef6a1c17df15e763df523ca4d6092a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da8364a7525248aaa39bf3754f87ab0e6e</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a8364a7525248aaa39bf3754f87ab0e6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7beb6b0163fcf275a4b4f9e898e17ec6</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a7beb6b0163fcf275a4b4f9e898e17ec6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da1e9f896d12d1a99e0c222045a11d6911</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a1e9f896d12d1a99e0c222045a11d6911</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dae3504080e396e00052243b9c0dc3c8c1</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ae3504080e396e00052243b9c0dc3c8c1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daab569a7997e86dd33ba8636830a2d46f</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aab569a7997e86dd33ba8636830a2d46f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da52ad8f1f084dbdedfcf455b97b237945</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a52ad8f1f084dbdedfcf455b97b237945</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dafba0050e6b406ec4837ca5ecb876cac2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600afba0050e6b406ec4837ca5ecb876cac2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da70555ffeea5abe887d7c2b11d52a3fe2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a70555ffeea5abe887d7c2b11d52a3fe2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da43b1277678de6c48152cfd869f6a52e2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a43b1277678de6c48152cfd869f6a52e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da98abe1d1ea24fd6e0e79e71997c48029</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a98abe1d1ea24fd6e0e79e71997c48029</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7d2b31db7d0e7f15105194030fed4a23</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a7d2b31db7d0e7f15105194030fed4a23</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad023f48dcdce21774666352abed6b56b</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad023f48dcdce21774666352abed6b56b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daaea4a1129a5c51aae234283ce02df056</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aaea4a1129a5c51aae234283ce02df056</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da80fb3e69e2048893619b1d79d1af1f31</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a80fb3e69e2048893619b1d79d1af1f31</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6e42bf64feb368b283b43cd588c81007</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a6e42bf64feb368b283b43cd588c81007</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad7607d9544acab7162ea123acc6fb711</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad7607d9544acab7162ea123acc6fb711</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -430,6 +440,15 @@
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <includes id="set_8h" name="set.h" local="yes" imported="no">csutil/set.h</includes>
     <class kind="class">csBSPTree</class>
+  </compound>
+  <compound kind="file">
+    <name>bvh.h</name>
+    <path>/tmp/tmp2/trunk/include/csgeom/</path>
+    <filename>bvh_8h</filename>
+    <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
+    <class kind="class">CS::Geometry::BVH</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Geometry</namespace>
   </compound>
   <compound kind="file">
     <name>chainhull2d.h</name>
@@ -481,25 +500,25 @@
     <member kind="enumvalue">
       <name>CS_FRUST_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a94cc72a1a3f8f76be34890b8b685f382</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a94cc72a1a3f8f76be34890b8b685f382</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a5d55e08138192c764d87aec4cb6fd8e2</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a5d55e08138192c764d87aec4cb6fd8e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_COVERED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600ada01f0cc2cf09d08a4cc49d8ec31e208</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ada01f0cc2cf09d08a4cc49d8ec31e208</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_PARTIAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a29a0b767ce5e46c8d3c8150713ed7dc8</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a29a0b767ce5e46c8d3c8150713ed7dc8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -507,48 +526,11 @@
     <name>kdtree.h</name>
     <path>/tmp/tmp2/trunk/include/csgeom/</path>
     <filename>kdtree_8h</filename>
-    <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
-    <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
-    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
-    <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
     <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="dbghelp_8h" name="dbghelp.h" local="yes" imported="no">iutil/dbghelp.h</includes>
-    <class kind="class">csKDTree</class>
-    <class kind="class">csKDTreeChild</class>
-    <class kind="struct">iKDTreeObjectDescriptor</class>
-    <class kind="struct">iKDTreeUserData</class>
-    <member kind="typedef">
-      <type>bool(</type>
-      <name>csKDTreeVisitFunc</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ga89e1a8f421704aae373010c9da6b4e64</anchor>
-      <arglist>)(csKDTree *treenode, void *userdata, uint32 timestamp, uint32 &amp;frustum_mask)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>kdtreex.h</name>
-    <path>/tmp/tmp2/trunk/include/csgeom/</path>
-    <filename>kdtreex_8h</filename>
-    <includes id="box_8h" name="box.h" local="yes" imported="no">csgeom/box.h</includes>
-    <includes id="csgeom_2sphere_8h" name="sphere.h" local="yes" imported="no">csgeom/sphere.h</includes>
-    <includes id="kdtree_8h" name="kdtree.h" local="yes" imported="no">csgeom/kdtree.h</includes>
-    <includes id="blockallocator_8h" name="blockallocator.h" local="yes" imported="no">csutil/blockallocator.h</includes>
-    <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
-    <includes id="scfstr_8h" name="scfstr.h" local="yes" imported="no">csutil/scfstr.h</includes>
-    <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
-    <includes id="dbghelp_8h" name="dbghelp.h" local="yes" imported="no">iutil/dbghelp.h</includes>
-    <class kind="struct">CS::Geometry::iObjectDescriptor</class>
     <class kind="class">CS::Geometry::KDTree</class>
-    <class kind="class">CS::Geometry::KDTreeChild</class>
     <namespace>CS</namespace>
     <namespace>CS::Geometry</namespace>
-    <member kind="typedef">
-      <type>bool(</type>
-      <name>KDTreeVisitFunc</name>
-      <anchorfile>namespaceCS_1_1Geometry.html</anchorfile>
-      <anchor>af925c1f22a78e8ca34fdaca320bc10b4</anchor>
-      <arglist>)(KDTree *treenode, void *userdata, uint32 timestamp, uint32 &amp;frustum_mask)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>math.h</name>
@@ -14073,6 +14055,62 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>GL_QUERY_BUFFER_AMD</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a6333f42decc14af78ab2e85ddd8aa08b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_BUFFER_BARRIER_BIT_AMD</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a40b79a23acb358cbc826bda33a3c2ea8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_BUFFER_BINDING_AMD</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>af55f812acf6ed70bfdc45be60a7d9903</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_RESULT_NO_WAIT_AMD</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a8c8dbb66f8bb162e85c35af1ddb08a38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_BUFFER_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a172d1a144badf176a7b033cafd0b9cd0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_BUFFER_BARRIER_BIT_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>a9e323a297c269840304dd10300825817</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_BUFFER_BINDING_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>aa013aee17f4a61e27abca4236f71fb91</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>GL_QUERY_RESULT_NO_WAIT_ARB</name>
+      <anchorfile>glextmanager_8h.html</anchorfile>
+      <anchor>afb0e8f12c25213b179b23e4f120fa4f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>GL_R16</name>
       <anchorfile>glextmanager_8h.html</anchorfile>
       <anchor>a26dd5464d60dfd4bb4e4217efa1234df</anchor>
@@ -23027,6 +23065,7 @@
     <class kind="class">CS::RenderManager::BeginFinishDrawScope</class>
     <class kind="class">CS::RenderManager::ContextTargetSetup</class>
     <class kind="class">CS::RenderManager::RenderCommon</class>
+    <class kind="struct">CS::RenderManager::RenderCommon::ShaderActivator</class>
     <class kind="class">CS::RenderManager::SimpleContextRender</class>
     <class kind="class">CS::RenderManager::SimpleContextRenderByMesh</class>
     <class kind="class">CS::RenderManager::SimpleTreeRenderer</class>
@@ -36072,6 +36111,7 @@
     <class kind="struct">iShader</class>
     <class kind="struct">iShaderCompiler</class>
     <class kind="struct">iShaderManager</class>
+    <class kind="struct">iShaderPassesActivator</class>
     <class kind="struct">iShaderPriorityList</class>
     <class kind="struct">iShaderVariableContext</class>
     <namespace>CS</namespace>
@@ -39536,8 +39576,6 @@
     <class kind="class">csFrustum</class>
     <class kind="class">csIntersect2</class>
     <class kind="class">csIntersect3</class>
-    <class kind="class">csKDTree</class>
-    <class kind="class">csKDTreeChild</class>
     <class kind="class">csMath2</class>
     <class kind="class">csMath3</class>
     <class kind="class">csMatrix2</class>
@@ -39600,8 +39638,6 @@
     <class kind="struct">iDecalBuilder</class>
     <class kind="struct">iDecalManager</class>
     <class kind="struct">iDecalTemplate</class>
-    <class kind="struct">iKDTreeObjectDescriptor</class>
-    <class kind="struct">iKDTreeUserData</class>
     <class kind="struct">iObjectModel</class>
     <class kind="struct">iObjectModelListener</class>
     <class kind="struct">iPath</class>
@@ -39621,13 +39657,6 @@
       <anchorfile>group__geom__utils.html</anchorfile>
       <anchor>ga341887053b96768adb51e5df20878869</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>bool(</type>
-      <name>csKDTreeVisitFunc</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ga89e1a8f421704aae373010c9da6b4e64</anchor>
-      <arglist>)(csKDTree *treenode, void *userdata, uint32 timestamp, uint32 &amp;frustum_mask)</arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_POL_SAME_PLANE</name>
@@ -39772,343 +39801,343 @@
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a86d75fcdcc57f10b7e00afa9571b2d56</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca86d75fcdcc57f10b7e00afa9571b2d56</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04aaa41ac3e362d3bab01aadf9aa6e89ed3</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caaa41ac3e362d3bab01aadf9aa6e89ed3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a66981a2c120c408cd6a662687e809536</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca66981a2c120c408cd6a662687e809536</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a22189c053382e35184dbc0d0c4056c49</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca22189c053382e35184dbc0d0c4056c49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CENTER2</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabc6126af1d45847bc59afa0aa3216b04a26daf5755b88f571d2f8b44b8a4eb1f2</anchor>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca26daf5755b88f571d2f8b44b8a4eb1f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xy_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab42077b10139d5a537a31773f9d82116</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eab42077b10139d5a537a31773f9d82116</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xy_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cae9cda4d3571c9e32d2aba7e4e36255b8</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eae9cda4d3571c9e32d2aba7e4e36255b8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xy_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad9e23645086f99891c4ca5eccba117a1</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ead9e23645086f99891c4ca5eccba117a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XY_Xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca6e0c54f9e09d052f5da9c4d157720922</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea6e0c54f9e09d052f5da9c4d157720922</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XY_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cadef3cca359637bed9cbd0240ffd2051d</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eadef3cca359637bed9cbd0240ffd2051d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xY_XY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca0f820cda4b14b108a4a8eea2f04a399a</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea0f820cda4b14b108a4a8eea2f04a399a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xY_xy</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca703caeef06bfab521bdb139104d80154</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea703caeef06bfab521bdb139104d80154</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xy_xY</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca675911addea7e87c3a8c8d7dff2ccb98</anchor>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea675911addea7e87c3a8c8d7dff2ccb98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea89d329160331dbc52961462fa640e016</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a89d329160331dbc52961462fa640e016</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea0adf66ef9191dbadc5ff14a6bad51070</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a0adf66ef9191dbadc5ff14a6bad51070</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9eace4d8a92c8104f1f48452cb3d312d47c</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635ace4d8a92c8104f1f48452cb3d312d47c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9eacf591c4f61dc416d2f12e53caa0fc804</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635acf591c4f61dc416d2f12e53caa0fc804</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ead13ea13c11becbf554b5ae66e58faa24</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635ad13ea13c11becbf554b5ae66e58faa24</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea764db01cad89323ece3563d24b822a9a</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a764db01cad89323ece3563d24b822a9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea2b8f79719b79e9a75f8284feb3cafdf5</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a2b8f79719b79e9a75f8284feb3cafdf5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CORNER_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea9249f548cf717ea61e140681e58aeac5</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a9249f548cf717ea61e140681e58aeac5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_CENTER3</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga61dadd085c1777f559549e05962b2c9ea8240f71d83e88f58c9c7da2a583e3c03</anchor>
+      <anchor>gga726ca809ffd3d67ab4b8476646f26635a8240f71d83e88f58c9c7da2a583e3c03</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_x</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635abf5848df27bb69f664cbd291d39420ee</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dabf5848df27bb69f664cbd291d39420ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_X</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a45dd9cccdf41c83a927d6407db8d896d</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da45dd9cccdf41c83a927d6407db8d896d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a6a332bf491cf4c6d41382d86e048b2af</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6a332bf491cf4c6d41382d86e048b2af</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_Y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a609482712abd0e66fdc499c79446e436</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da609482712abd0e66fdc499c79446e436</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635ad7e05664a7c62642086c8208312f7e0f</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad7e05664a7c62642086c8208312f7e0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_SIDE_Z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a7406d4fc7aaf58e925da20fa75e958c7</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7406d4fc7aaf58e925da20fa75e958c7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga726ca809ffd3d67ab4b8476646f26635a3f565d480903f9a9037e5a4f557ac32d</anchor>
+      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da3f565d480903f9a9037e5a4f557ac32d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da28c05175d3a2a4c149f796f4c6f64b0f</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a28c05175d3a2a4c149f796f4c6f64b0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daf1b6f3bca9b6f462f95b3ee037ea45b9</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600af1b6f3bca9b6f462f95b3ee037ea45b9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daab03491e2bc4107e684f35213bcbcd61</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aab03491e2bc4107e684f35213bcbcd61</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da66b26777890e8aa3a1548c43b8db5e6a</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a66b26777890e8aa3a1548c43b8db5e6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da0287c5a744c7f5f969f704b7417918e0</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a0287c5a744c7f5f969f704b7417918e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dafd27ca2b7840189a4e65b6574f1dfae8</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600afd27ca2b7840189a4e65b6574f1dfae8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da335c45578982e7a26b9d26f4fb0273fc</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a335c45578982e7a26b9d26f4fb0273fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da26ef6a1c17df15e763df523ca4d6092a</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a26ef6a1c17df15e763df523ca4d6092a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_Xyz_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da8364a7525248aaa39bf3754f87ab0e6e</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a8364a7525248aaa39bf3754f87ab0e6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_Xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7beb6b0163fcf275a4b4f9e898e17ec6</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a7beb6b0163fcf275a4b4f9e898e17ec6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da1e9f896d12d1a99e0c222045a11d6911</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a1e9f896d12d1a99e0c222045a11d6911</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dae3504080e396e00052243b9c0dc3c8c1</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ae3504080e396e00052243b9c0dc3c8c1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_XYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daab569a7997e86dd33ba8636830a2d46f</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aab569a7997e86dd33ba8636830a2d46f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYz_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da52ad8f1f084dbdedfcf455b97b237945</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a52ad8f1f084dbdedfcf455b97b237945</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XYZ_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dafba0050e6b406ec4837ca5ecb876cac2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600afba0050e6b406ec4837ca5ecb876cac2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_XYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da70555ffeea5abe887d7c2b11d52a3fe2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a70555ffeea5abe887d7c2b11d52a3fe2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_xYz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da43b1277678de6c48152cfd869f6a52e2</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a43b1277678de6c48152cfd869f6a52e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYz_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da98abe1d1ea24fd6e0e79e71997c48029</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a98abe1d1ea24fd6e0e79e71997c48029</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xYZ_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7d2b31db7d0e7f15105194030fed4a23</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a7d2b31db7d0e7f15105194030fed4a23</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_xYZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad023f48dcdce21774666352abed6b56b</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad023f48dcdce21774666352abed6b56b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_xyz</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daaea4a1129a5c51aae234283ce02df056</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aaea4a1129a5c51aae234283ce02df056</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyz_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da80fb3e69e2048893619b1d79d1af1f31</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a80fb3e69e2048893619b1d79d1af1f31</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_xyZ_XyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6e42bf64feb368b283b43cd588c81007</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600a6e42bf64feb368b283b43cd588c81007</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_BOX_EDGE_XyZ_xyZ</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2dad7607d9544acab7162ea123acc6fb711</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad7607d9544acab7162ea123acc6fb711</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a94cc72a1a3f8f76be34890b8b685f382</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a94cc72a1a3f8f76be34890b8b685f382</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a5d55e08138192c764d87aec4cb6fd8e2</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a5d55e08138192c764d87aec4cb6fd8e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_COVERED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600ada01f0cc2cf09d08a4cc49d8ec31e208</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ada01f0cc2cf09d08a4cc49d8ec31e208</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_FRUST_PARTIAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>ggabed82baf7f470b522273a3e37c24c600a29a0b767ce5e46c8d3c8150713ed7dc8</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a29a0b767ce5e46c8d3c8150713ed7dc8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -57988,281 +58017,6 @@
       <anchorfile>classcsJoystickEventHelper.html</anchorfile>
       <anchor>a67cc8ddf6dc6c84652aab2fb1bba799c</anchor>
       <arglist>(csRef&lt; iEventNameRegistry &gt; &amp;reg, csTicks, csEventID name, int n, int x, int y, uint32 axesChanged, uint button, bool buttonState, uint32 buttonMask, const csKeyModifiers &amp;modifiers)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>csKDTree</name>
-    <filename>classcsKDTree.html</filename>
-    <base>scfImplementation1&lt; csKDTree, iDebugHelper &gt;</base>
-    <member kind="function">
-      <type>csKDTreeChild *</type>
-      <name>AddObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a3be15758430b4d89834dff8a0abb23a1</anchor>
-      <arglist>(const csBox3 &amp;bbox, void *object)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csTicks</type>
-      <name>Benchmark</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a3e9b0ec3f292e61ad2eeb25a7d5c6054</anchor>
-      <arglist>(int num_iterations)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Clear</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a9ea3338e7af0c395a39f0397c6a188e9</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>csKDTree</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a80c7edecba2ebf6acff61a35448855ca</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual bool</type>
-      <name>DebugCommand</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>aaebffde40199efca8acd9d785e75cd0f</anchor>
-      <arglist>(const char *)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Distribute</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a9a63c52048b778cdcc32bfa6dae8a312</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>Dump</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a713cb0e510c875003221d3a780f4c237</anchor>
-      <arglist>(iGraphics3D *)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csPtr&lt; iString &gt;</type>
-      <name>Dump</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a2891fcb30d19fd8cf56c4707b5569677</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Flatten</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a5e1a7902a5f4f8eb1f1cf3f7e5d61ed8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Front2Back</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>ad134123d2de69a67fd1151e5114bc456</anchor>
-      <arglist>(const csVector3 &amp;pos, csKDTreeVisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>FullDistribute</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a2149b44be3c92151741641a695ed2ba8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>csKDTree *</type>
-      <name>GetChild1</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a835938f73dbe5613e108ab325b363083</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csKDTree *</type>
-      <name>GetChild2</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a4e3630f290bfc3392f82f255111f9224</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetEstimatedObjectCount</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a28d8d32022d45b45e45af4c6e3f3428e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const csBox3 &amp;</type>
-      <name>GetNodeBBox</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a06d9333ee699cf00fb4cf8df6dbcd9d3</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetObjectCount</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>ac79313b66fcac110d1d5d7241f1eebe0</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>csKDTreeChild **</type>
-      <name>GetObjects</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a72dd0fce97684a66b62fc7308d060a34</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSupportedTests</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>ab2a1459a108d03e095ae26bf727c312a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>iKDTreeUserData *</type>
-      <name>GetUserObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a9d0dc7604e8f4e5030add12470cdf52d</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>MoveObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a8228386cbe8671a8b1a87c560e4ad551</anchor>
-      <arglist>(csKDTreeChild *object, const csBox3 &amp;new_bbox)</arglist>
-    </member>
-    <member kind="function">
-      <type>uint32</type>
-      <name>NewTraversal</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a5b0381d3836a5745216c17054357f3bb</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a8c52cdeb657cbe42a7352f298819a757</anchor>
-      <arglist>(csKDTreeChild *object)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetMinimumSplitAmount</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a6a446ca595ff9b4fd9c737d6e28cc785</anchor>
-      <arglist>(int m)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetObjectDescriptor</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a8e208c2f5d1e42f46d6c32de1b7316c7</anchor>
-      <arglist>(iKDTreeObjectDescriptor *descriptor)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetParent</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>af9410b6e8b838aa2811fbe99f82185ee</anchor>
-      <arglist>(csKDTree *p)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetUserObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>ad6f0678cdf707347f4d1005c27f06e39</anchor>
-      <arglist>(iKDTreeUserData *userobj)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csPtr&lt; iString &gt;</type>
-      <name>StateTest</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a5e63f841e839490bc862980a3c8bc35c</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>TraverseRandom</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a320e178bd111884d6b3bdd49013c3bb7</anchor>
-      <arglist>(csKDTreeVisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>UnlinkObject</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>a0cba4f297830cfbdaafce2e48cbf0606</anchor>
-      <arglist>(csKDTreeChild *object)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~csKDTree</name>
-      <anchorfile>classcsKDTree.html</anchorfile>
-      <anchor>ab00177d627556c2f74198181f2785c4a</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>csKDTreeChild</name>
-    <filename>classcsKDTreeChild.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>AddLeaf</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a4c99f05ff9657bf063f9b408fe3996e6</anchor>
-      <arglist>(csKDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>FindLeaf</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>aac6136baf22a79861aa4ed3e43d9ef69</anchor>
-      <arglist>(csKDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>const csBox3 &amp;</type>
-      <name>GetBBox</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a7114e623c78033c8510fb7b070a29ebe</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>GetObject</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a10299bedeba8e0076675d6ae61fe7a5d</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveLeaf</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a24bdf7664112795c921050c3d423b2ac</anchor>
-      <arglist>(csKDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveLeaf</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>adc7591feebbbe7808e04575ac3f3cd9a</anchor>
-      <arglist>(int idx)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ReplaceLeaf</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a0eb530603a4eaca5b840e6ab4bc6c377</anchor>
-      <arglist>(csKDTree *old_leaf, csKDTree *new_leaf)</arglist>
-    </member>
-    <member kind="friend" protection="private">
-      <type>friend class</type>
-      <name>csKDTree</name>
-      <anchorfile>classcsKDTreeChild.html</anchorfile>
-      <anchor>a0cc25cc70d4868629988a2ef1af4755d</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -84995,6 +84749,13 @@
       <anchor>a65f69595c9ee6f2e15c5089cf85670de</anchor>
       <arglist>(unsigned int occlusion_query)=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OQVisibleQueries</name>
+      <anchorfile>structiGraphics3D.html</anchorfile>
+      <anchor>a0ac40b2a154432d27cccef08078059ae</anchor>
+      <arglist>(unsigned int *queries, bool *results, int num_queries)=0</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>iGraphicsCanvas</name>
@@ -86176,16 +85937,6 @@
       <anchor>ae025402a12afa8a7360ffd920e7f96c7</anchor>
       <arglist>()=0</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>iKDTreeObjectDescriptor</name>
-    <filename>structiKDTreeObjectDescriptor.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
-  <compound kind="struct">
-    <name>iKDTreeUserData</name>
-    <filename>structiKDTreeUserData.html</filename>
-    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="struct">
     <name>iKeyboardDriver</name>
@@ -96523,6 +96274,13 @@
       <arglist>(size_t ticket, size_t number)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iShaderPassesActivator &gt;</type>
+      <name>BeginShaderActivation</name>
+      <anchorfile>structiShader.html</anchorfile>
+      <anchor>abec6e01dce201f4ffc959fd97547233d</anchor>
+      <arglist>(size_t ticket, iShaderPassesActivator *previous_activator)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>DeactivatePass</name>
       <anchorfile>structiShader.html</anchorfile>
@@ -96815,6 +96573,39 @@
       <name>UnregisterShaderVariableAcessors</name>
       <anchorfile>structiShaderManager.html</anchorfile>
       <anchor>a5bb356361b7072adab937a5cff55e676</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>iShaderPassesActivator</name>
+    <filename>structiShaderPassesActivator.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ActivateNextPass</name>
+      <anchorfile>structiShaderPassesActivator.html</anchorfile>
+      <anchor>a41a32a61c017ff4bb8f067bff6b4d312</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DeactivatePass</name>
+      <anchorfile>structiShaderPassesActivator.html</anchorfile>
+      <anchor>a8ea743fa4b749a48c90f125dc7ff509a</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetupPass</name>
+      <anchorfile>structiShaderPassesActivator.html</anchorfile>
+      <anchor>a4a91fc97eaf710051551ca000747fbad</anchor>
+      <arglist>(const CS::Graphics::RenderMesh *mesh, CS::Graphics::RenderMeshModes &amp;modes, const csShaderVariableStack &amp;stack)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>TeardownPass</name>
+      <anchorfile>structiShaderPassesActivator.html</anchorfile>
+      <anchor>ab305c9980950fa5ecdc8c9f83d937492</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
@@ -105001,10 +104792,10 @@
       <arglist>(iVisibilityObject *visobj)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
+      <type>virtual bool</type>
       <name>RenderViscull</name>
       <anchorfile>structiVisibilityCuller.html</anchorfile>
-      <anchor>a6ef3860d1a4c04551ce6c21564c2c252</anchor>
+      <anchor>a1fe445067b0d58139616f1f6f8651621</anchor>
       <arglist>(iRenderView *rview, iShaderVariableContext *shadervars)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -107466,6 +107257,13 @@
     </member>
     <member kind="variable">
       <type>bool</type>
+      <name>CS_GL_AMD_query_buffer_object</name>
+      <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
+      <anchor>a1c244db198891ad2a1a6d47e8c3a1ddf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
       <name>CS_GL_AMD_seamless_cubemap_per_texture</name>
       <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
       <anchor>a4d7f9f9bcd95833f1cd3394a1b3f1adf</anchor>
@@ -107672,6 +107470,13 @@
       <name>CS_GL_ARB_point_sprite</name>
       <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
       <anchor>ae2f8a9fc2075dddc405d8615f37bb656</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>CS_GL_ARB_query_buffer_object</name>
+      <anchorfile>structCS_1_1GLExtensionFlags.html</anchorfile>
+      <anchor>aa9e89631b7ba623178abd4dc50e9b164</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -115246,6 +115051,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>InitGL_AMD_query_buffer_object</name>
+      <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
+      <anchor>acec1e69946984106852bb5f01ef684fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>InitGL_AMD_seamless_cubemap_per_texture</name>
       <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
       <anchor>a66b1468365c8336937c4cb90b3bc81b3</anchor>
@@ -115452,6 +115264,13 @@
       <name>InitGL_ARB_point_sprite</name>
       <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
       <anchor>a53ec3844e7fcc886d24cb49df8ae2a40</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>InitGL_ARB_query_buffer_object</name>
+      <anchorfile>structCS_1_1GLExtensionManager.html</anchorfile>
+      <anchor>a6ff79b72d4f996be8ae34e9940e4b778</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -125106,15 +124925,15 @@
   <compound kind="namespace">
     <name>CS::Geometry</name>
     <filename>namespaceCS_1_1Geometry.html</filename>
+    <class kind="class">CS::Geometry::BIH</class>
     <class kind="class">CS::Geometry::Box</class>
+    <class kind="class">CS::Geometry::BVH</class>
     <class kind="class">CS::Geometry::Capsule</class>
     <class kind="class">CS::Geometry::Cone</class>
     <class kind="class">CS::Geometry::csEarClipper</class>
     <class kind="class">CS::Geometry::DensityTextureMapper</class>
     <class kind="class">CS::Geometry::GeneralMeshBuilder</class>
-    <class kind="struct">CS::Geometry::iObjectDescriptor</class>
     <class kind="class">CS::Geometry::KDTree</class>
-    <class kind="class">CS::Geometry::KDTreeChild</class>
     <class kind="struct">CS::Geometry::Primitive</class>
     <class kind="class">CS::Geometry::Primitives</class>
     <class kind="class">CS::Geometry::Sphere</class>
@@ -125123,12 +124942,52 @@
     <class kind="class">CS::Geometry::TesselatedQuad</class>
     <class kind="struct">CS::Geometry::TextureMapper</class>
     <class kind="class">CS::Geometry::Triangulate3D</class>
+  </compound>
+  <compound kind="class">
+    <name>CS::Geometry::BIH</name>
+    <filename>classCS_1_1Geometry_1_1BIH.html</filename>
+    <templarg></templarg>
     <member kind="typedef">
       <type>bool(</type>
-      <name>KDTreeVisitFunc</name>
-      <anchorfile>namespaceCS_1_1Geometry.html</anchorfile>
-      <anchor>af925c1f22a78e8ca34fdaca320bc10b4</anchor>
-      <arglist>)(KDTree *treenode, void *userdata, uint32 timestamp, uint32 &amp;frustum_mask)</arglist>
+      <name>VisitFunc</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>a043ef515c1b8770c19cf0b72ff63e280</anchor>
+      <arglist>)(Self *treenode, void *userdata, uint32 &amp;frustum_mask)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>BIH</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>a665b9d47ce1e863bdb99e8e082375f96</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Distribute</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>a5fe0139c13a92eb708f1ce7deccac0e2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Front2Back</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>a616c5b173cefd8c650872284f51a55de</anchor>
+      <arglist>(csVector3 const &amp;pos, VisitFunc *func, void *data, uint32 frustumMask)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>MoveObject</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>ab5ee047d08f72f6b168a647be3acaac9</anchor>
+      <arglist>(Child *obj, BoundType const &amp;newBound)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TraverseRandom</name>
+      <anchorfile>classCS_1_1Geometry_1_1BIH.html</anchorfile>
+      <anchor>a1ce17e9e800107c7aa7e471d00363525</anchor>
+      <arglist>(VisitFunc *func, void *data, uint32 frustumMask)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -125169,6 +125028,60 @@
       <anchorfile>classCS_1_1Geometry_1_1Box.html</anchorfile>
       <anchor>a3c3087d88c508f32071a3af2876f8bd0</anchor>
       <arglist>(TextureMapper *mapper)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Geometry::BVH</name>
+    <filename>classCS_1_1Geometry_1_1BVH.html</filename>
+    <templarg></templarg>
+    <member kind="typedef">
+      <type>bool(</type>
+      <name>VisitFunc</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>a9a68ff30b7de9dd4f36fbb672b00d8f0</anchor>
+      <arglist>)(Self *treenode, void *userdata, uint32 &amp;frustum_mask)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>BVH</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>a364023eaff3d231c49b4b72a69fa6808</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Distribute</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>a8fa82f5f9bd9804b70dc4a027ed15b58</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Front2Back</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>a703fb1f80cd9112375799bb5c3874e74</anchor>
+      <arglist>(csVector3 const &amp;pos, VisitFunc *func, void *data, uint32 frustumMask)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>MoveObject</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>a818745af093c252cb1071992634d052b</anchor>
+      <arglist>(Child *obj, BoundType const &amp;newBound)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TraverseRandom</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>af013cbd733110d85ecf06444124a195c</anchor>
+      <arglist>(VisitFunc *func, void *data, uint32 frustumMask)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~BVH</name>
+      <anchorfile>classCS_1_1Geometry_1_1BVH.html</anchorfile>
+      <anchor>af21eaa6c473e4375f55bdbe829108ceb</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -125320,277 +125233,58 @@
       <arglist>(iEngine *engine, iSector *sector, const char *name, iMeshFactoryWrapper *factory)</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>CS::Geometry::iObjectDescriptor</name>
-    <filename>structCS_1_1Geometry_1_1iObjectDescriptor.html</filename>
-    <base virtualness="virtual">iBase</base>
-  </compound>
   <compound kind="class">
     <name>CS::Geometry::KDTree</name>
     <filename>classCS_1_1Geometry_1_1KDTree.html</filename>
-    <base>scfImplementation1&lt; KDTree, iDebugHelper &gt;</base>
-    <member kind="function">
-      <type>KDTreeChild *</type>
-      <name>AddObject</name>
+    <templarg></templarg>
+    <member kind="typedef">
+      <type>bool(</type>
+      <name>VisitFunc</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a43c2a48040cefbc67d759f6944855454</anchor>
-      <arglist>(const csSphere &amp;bsphere, void *object)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csTicks</type>
-      <name>Benchmark</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>aa99f340afe4d354d56e454e3beaba546</anchor>
-      <arglist>(int num_iterations)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Clear</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a7a12cc605b892a69dbb9993fe514b3b6</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual bool</type>
-      <name>DebugCommand</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a0a1240037d0eb9c44bbab365136e734b</anchor>
-      <arglist>(const char *)</arglist>
+      <anchor>a6c63df6962798d08a88fc4e540a95e7d</anchor>
+      <arglist>)(Self *treenode, void *userdata, uint32 timestamp, uint32 &amp;frustum_mask)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Distribute</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a467052221ad15d752d413a0f83aa63a4</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
-      <name>Dump</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a0873884a89a26a63e889eb4a6a613f19</anchor>
-      <arglist>(iGraphics3D *)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csPtr&lt; iString &gt;</type>
-      <name>Dump</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>ad40531faa18ba927b8555a15db11ce29</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Flatten</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a4fd58a1e7ed1485b5f76136e3ebce20e</anchor>
+      <anchor>a19ba3f2d572f39a3f345ceef8eb38e3e</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Front2Back</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a59fac435f77ecf429840cd39ddecdad8</anchor>
-      <arglist>(const csVector3 &amp;pos, KDTreeVisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>FullDistribute</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a9353d6f5e3ec4fda4ddf134e160a3ec1</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>KDTree *</type>
-      <name>GetChild1</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>aae3561d13c8d997b3596ee56d1f0f94d</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>KDTree *</type>
-      <name>GetChild2</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a5d7a392b793f794a63a53b50868af988</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetEstimatedObjectCount</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>ac8bd7a294d6ebe9fc42a41e594789707</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const csBox3 &amp;</type>
-      <name>GetNodeBBox</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a335f0b8a468fff2da2fde77aa0368ba0</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetObjectCount</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>aff5cc90c4fdf8207e916cbc8f9432a24</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>KDTreeChild **</type>
-      <name>GetObjects</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>aeea8af1de597fae6424b581ed671cfbd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual int</type>
-      <name>GetSupportedTests</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a4b46401fd16347424391b1894e2b2fd9</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>iKDTreeUserData *</type>
-      <name>GetUserObject</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a0f48456777508e49056dbd0d5d88cbe8</anchor>
-      <arglist>() const </arglist>
+      <anchor>a09ef31d900b71966f26a4723523d714a</anchor>
+      <arglist>(const csVector3 &amp;pos, VisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>KDTree</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a8d0ff1d8ad4f041e6ef729038017f2bb</anchor>
+      <anchor>ac2c1c85c58fa6a82b9a1ea3ef56013b9</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>MoveObject</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>ab4dec364bebfe0025409a617e29894a7</anchor>
-      <arglist>(KDTreeChild *object, const csSphere &amp;new_bsphere)</arglist>
+      <anchor>a1933e63b045b3e1ff4969af1a814ff1c</anchor>
+      <arglist>(Child *object, BoundType const &amp;bounds)</arglist>
     </member>
     <member kind="function">
       <type>uint32</type>
       <name>NewTraversal</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a447a0dbeb590e6971b4e2c3cae3a408a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveObject</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>af8298f46c73d83c4937d302f4c54ec78</anchor>
-      <arglist>(KDTreeChild *object)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetMinimumSplitAmount</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a465fd8ebd5d7703de6acf79edac87e17</anchor>
-      <arglist>(int m)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetObjectDescriptor</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>ad843921b35bbfc8afdefd7d8ed2eca9f</anchor>
-      <arglist>(iObjectDescriptor *descriptor)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetParent</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a03f350fbcfc290c748406fb9f291e98b</anchor>
-      <arglist>(KDTree *p)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetUserObject</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a4710e86fb951daf390288c942da3634c</anchor>
-      <arglist>(iKDTreeUserData *userobj)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual csPtr&lt; iString &gt;</type>
-      <name>StateTest</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a2183000e30b13dc1551bfce2350b502c</anchor>
+      <anchor>a6c3aacde6faee4f303a0e259320b19d0</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>TraverseRandom</name>
       <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a549ed79a48b7ac7f020441cee89b5f22</anchor>
-      <arglist>(KDTreeVisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>UnlinkObject</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>a2bef24e1d156ef44c49ca8b4942b31f3</anchor>
-      <arglist>(KDTreeChild *object)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~KDTree</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTree.html</anchorfile>
-      <anchor>ac039784af59156ec750ee1c205f2136f</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::Geometry::KDTreeChild</name>
-    <filename>classCS_1_1Geometry_1_1KDTreeChild.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>AddLeaf</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>acb298eb1f8dffa654678800b2f50d3ec</anchor>
-      <arglist>(KDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>FindLeaf</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>a07f30d75ff4a665253bf7f49b66244df</anchor>
-      <arglist>(KDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>const csSphere &amp;</type>
-      <name>GetBSphere</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>a7d98b66df129c6e5afaeb7d2c83dcdb9</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>GetObject</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>ad57fad3c5d7aa7b4e3477a244c3912b4</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveLeaf</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>a721f11427b3acc10f9cac41b44a03804</anchor>
-      <arglist>(KDTree *leaf)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>RemoveLeaf</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>a01f85fb0fd9c30ad4088233bbbf0bfec</anchor>
-      <arglist>(int idx)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ReplaceLeaf</name>
-      <anchorfile>classCS_1_1Geometry_1_1KDTreeChild.html</anchorfile>
-      <anchor>afe869c5937df78c75954513d89292a98</anchor>
-      <arglist>(KDTree *old_leaf, KDTree *new_leaf)</arglist>
+      <anchor>a4d7133e5e7fc4b33f8b6f96858c1809d</anchor>
+      <arglist>(VisitFunc *func, void *userdata, uint32 frustum_mask)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -125663,6 +125357,16 @@
       <anchor>ae870d273baf09f9330511fd5a8a89b19</anchor>
       <arglist>(const csVector3 &amp;v0, const csVector3 &amp;v1, const csVector3 &amp;v2, int tesselations, csDirtyAccessArray&lt; csVector3 &gt; &amp;mesh_vertices, csDirtyAccessArray&lt; csVector2 &gt; &amp;mesh_texels, csDirtyAccessArray&lt; csVector3 &gt; &amp;mesh_normals, csDirtyAccessArray&lt; csTriangle &gt; &amp;mesh_triangles, TextureMapper *mapper=0)</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Geometry::SpatialTree::iObjectDescriptor</name>
+    <filename>structCS_1_1Geometry_1_1SpatialTree_1_1iObjectDescriptor.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Geometry::SpatialTree::iUserData</name>
+    <filename>structCS_1_1Geometry_1_1SpatialTree_1_1iUserData.html</filename>
+    <base virtualness="virtual">iBase</base>
   </compound>
   <compound kind="class">
     <name>CS::Geometry::Sphere</name>
@@ -131994,6 +131698,131 @@
     <filename>structCS_1_1Meta_1_1Implementation_1_1Wrap.html</filename>
     <templarg></templarg>
   </compound>
+  <compound kind="struct">
+    <name>CS::Network::Socket::iAddress</name>
+    <filename>structCS_1_1Network_1_1Socket_1_1iAddress.html</filename>
+    <base virtualness="virtual">iBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Network::Socket::iSocket</name>
+    <filename>structCS_1_1Network_1_1Socket_1_1iSocket.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iSocket &gt;</type>
+      <name>Accept</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a181de0f0a6bad271b3e5ffa4bfc20290</anchor>
+      <arglist>(csRef&lt; iAddress &gt; *client=nullptr)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Bind</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a5b4c715477361be2af41e6e9ecc913bb</anchor>
+      <arglist>(iAddress const *address)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Connect</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a4f2ba766b8d45ce7306da731dc9c86a5</anchor>
+      <arglist>(iAddress const *client)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Family</type>
+      <name>GetFamily</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a9a14a614c6914252863f77653fadfbfb</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual char const *</type>
+      <name>GetLastError</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a2221799bc22c7acace988b58a2ffabc1</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Protocol</type>
+      <name>GetProtocol</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>abf6db3e16fa2906d9ab8f630ac4f04c7</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsConnected</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a8e118f1ca082cf95f5dfc26cc8022880</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsReady</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a7ef1c88c8b8669e9098e8a9d4be4558c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Listen</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>ad69f7aec6404a1b050e5f98c9f126d6e</anchor>
+      <arglist>(int queueSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>Receive</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a829acb3ca744c6a1985e331b5436f87d</anchor>
+      <arglist>(char *buffer, size_t size, csRef&lt; iAddress &gt; *client=nullptr)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>Send</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocket.html</anchorfile>
+      <anchor>a1c25666f14672162043446fa909303eb</anchor>
+      <arglist>(char const *buffer, size_t size, iAddress *client=nullptr)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Network::Socket::iSocketArray</name>
+    <filename>structCS_1_1Network_1_1Socket_1_1iSocketArray.html</filename>
+    <base>iArrayChangeAll&lt; iSocket * &gt;</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Network::Socket::iSocketManager</name>
+    <filename>structCS_1_1Network_1_1Socket_1_1iSocketManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iSocket &gt;</type>
+      <name>CreateSocket</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocketManager.html</anchorfile>
+      <anchor>aa3e65402ff4b66a6f4e9d21db610d0f5</anchor>
+      <arglist>(Family family, Protocol protocol) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetSelectLimit</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocketManager.html</anchorfile>
+      <anchor>a74fde5ebe79b5372af60cebc9eaff79d</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iAddress &gt;</type>
+      <name>Resolve</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocketManager.html</anchorfile>
+      <anchor>a237d7642a763db070aa898da2572938a</anchor>
+      <arglist>(char const *host, char const *service, Family family, Protocol protocol) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Select</name>
+      <anchorfile>structCS_1_1Network_1_1Socket_1_1iSocketManager.html</anchorfile>
+      <anchor>a112fd41eed5fd2b2d82fd25fa06c7aa1</anchor>
+      <arglist>(iSocketArray *read, iSocketArray *write) const =0</arglist>
+    </member>
+  </compound>
   <compound kind="namespace">
     <name>CS::Persistence</name>
     <filename>namespaceCS_1_1Persistence.html</filename>
@@ -133211,9 +133040,9 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>Step</name>
+      <name>StepSimulation</name>
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
-      <anchor>a85677e63794f853385076ba58979283a</anchor>
+      <anchor>aecc6a923f7d97570d4b7bde5fce6061d</anchor>
       <arglist>(float duration)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -138032,6 +137861,109 @@
     <name>CS::RenderManager::RenderCommon</name>
     <filename>classCS_1_1RenderManager_1_1RenderCommon.html</filename>
     <templarg></templarg>
+    <class kind="struct">CS::RenderManager::RenderCommon::ShaderActivator</class>
+  </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::RenderCommon::ShaderActivator</name>
+    <filename>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>ActivateNextPass</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a9ebc755ebf19197aa97de68d0e171df4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>BeginPassIteration</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>afa52595a2733976163afaffefb96f9f5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DeactivatePass</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a2cd0a92ad6f5a4be79370e45de0b3a7f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>EndPassIteration</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a2ba69f3b94897ab9059108c25ec56afc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>iShader *</type>
+      <name>GetShader</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>af9dfeca678eda17c6141c975931a1a42</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetTicket</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a05919b23c7970969b827e1ebaa1dd389</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsNewShader</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a9fbe0e5c63f8d5365c12901228af5711</anchor>
+      <arglist>(iShader *shader, size_t ticket) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetShader</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a6652244e3d7f8c979d66eb22e08545e4</anchor>
+      <arglist>(iShader *shader, size_t ticket)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetupPass</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a45fb01242283c2adc9549c2fa091ea52</anchor>
+      <arglist>(const CS::Graphics::RenderMesh *mesh, CS::Graphics::RenderMeshModes &amp;modes, const csShaderVariableStack &amp;stack)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>TeardownPass</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a40aa2e2e881e6fea48ab6c0a499756ec</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>UnsetShader</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>a8d9353ee70a5c66ab9b1fa358e406e48</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>iShader *</type>
+      <name>currentShader</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>aec529a47940f9bdbc82c03e00d616a06</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>size_t</type>
+      <name>currentTicket</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>ae4fbe4aaf0f1fc54a01f487e81d02b2c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRef&lt; iShaderPassesActivator &gt;</type>
+      <name>shaderActivator</name>
+      <anchorfile>structCS_1_1RenderManager_1_1RenderCommon_1_1ShaderActivator.html</anchorfile>
+      <anchor>aee2d3e4cbbf8ac1cb7f57f2ccee40de6</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::RenderTree</name>
@@ -142422,13 +142354,6 @@
       <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
       <anchor>a2de9bfebb62c7ae4831eafa34a23f1a8</anchor>
       <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>T &amp;</type>
-      <name>operator[]</name>
-      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
-      <anchor>ab3717588378be90df686b02b784b9bab</anchor>
-      <arglist>(size_t index) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
