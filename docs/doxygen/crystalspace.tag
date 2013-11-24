@@ -1005,31 +1005,31 @@
     <member kind="enumvalue">
       <name>CS_TRIMESH_CLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549ae79eee97416d39f451607fc2c94b01dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a03fce5c7db65c3182ec683ff006698a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_CONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549aeb9ea0bd96761361e39a61c17d65a256</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a3d71f9603c9ea6f85b041230d365c984</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_DEFORMABLE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1073,31 +1073,31 @@
     <member kind="enumvalue">
       <name>CS_AXIS_NONE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a82bccad8e3789fcecb889116579b71ea</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a82bccad8e3789fcecb889116579b71ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_X</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a8e81da4ab0c7c07c39847d17fb3a95b5</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a8e81da4ab0c7c07c39847d17fb3a95b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_Y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a9734b1073fe8f5572622f5e39120317d</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a9734b1073fe8f5572622f5e39120317d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_Z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a2524f76ec772151941164bee31d5d9f1</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a2524f76ec772151941164bee31d5d9f1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_W</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310ab090525794378a5a8ee78c5ad7e220b4</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18ab090525794378a5a8ee78c5ad7e220b4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1626,13 +1626,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -24934,31 +24934,31 @@
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_WORLD</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a83e2005fe6301861439ac56abb9ddf85</anchor>
+      <anchor>a7ee8d0f117a79ca7eb1e0076a9182bcba83e2005fe6301861439ac56abb9ddf85</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_LIBRARY</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a04aa157fdde5f7ec507f082ac947c643</anchor>
+      <anchor>a7ee8d0f117a79ca7eb1e0076a9182bcba04aa157fdde5f7ec507f082ac947c643</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_MESHFACT</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549ac2eabfdace938604cf1b14127064cc3a</anchor>
+      <anchor>a7ee8d0f117a79ca7eb1e0076a9182bcbac2eabfdace938604cf1b14127064cc3a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_PARAMS</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a7b201792a220f5f30d589b62e7ad26f2</anchor>
+      <anchor>a7ee8d0f117a79ca7eb1e0076a9182bcba7b201792a220f5f30d589b62e7ad26f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SAVER_FILE_LIGHTFACT</name>
       <anchorfile>imap_2saverfile_8h.html</anchorfile>
-      <anchor>a26e1124d33b4acdb532c49f6498df549a0ce1ca3698111968109a4c97fe3a3635</anchor>
+      <anchor>a7ee8d0f117a79ca7eb1e0076a9182bcba0ce1ca3698111968109a4c97fe3a3635</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -26550,7 +26550,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>ggad63240694c6dc2a28c24bfc2db90ad7aa502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>gga7859c0a3efa8b1c360f5c2376baf051ea502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -28362,37 +28362,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -30534,39 +30534,39 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CS_CLIP_OUTSIDE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_CLIP_CLIPPED</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_CLIP_INSIDE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
       <name>CS_VERTEX_ORIGINAL</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382bab2c5f01a5c75c95a126f9352fecc63db</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_ONEDGE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba5648edc14e0bc979178d7f7cf4ad76d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_VERTEX_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba38ad988c5e359fec3a8328c9965a691c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_CLIP_OUTSIDE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_CLIP_CLIPPED</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_CLIP_INSIDE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -32098,19 +32098,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1ca4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1ca21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1cab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -32229,25 +32229,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -34120,19 +34120,19 @@
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_NONE</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a47b796e7b1f919fd36cc960eb591bc55</anchor>
+      <anchor>a92c4bd66c8074c3d126a069275a0a80ca47b796e7b1f919fd36cc960eb591bc55</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_LESS</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a003628ad03747b08e6bf75545e799e3f</anchor>
+      <anchor>a92c4bd66c8074c3d126a069275a0a80ca003628ad03747b08e6bf75545e799e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SEQUENCE_LIGHTCHANGE_GREATER</name>
       <anchorfile>engseq_8h.html</anchorfile>
-      <anchor>a098384b0034af0daa7c9c5c82b563567a29a7194001b550e811008129dc92aaeb</anchor>
+      <anchor>a92c4bd66c8074c3d126a069275a0a80ca29a7194001b550e811008129dc92aaeb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -35040,73 +35040,73 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eaba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -39685,31 +39685,31 @@
     <member kind="enumvalue">
       <name>CS_AXIS_NONE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a82bccad8e3789fcecb889116579b71ea</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a82bccad8e3789fcecb889116579b71ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_X</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a8e81da4ab0c7c07c39847d17fb3a95b5</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a8e81da4ab0c7c07c39847d17fb3a95b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_Y</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a9734b1073fe8f5572622f5e39120317d</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a9734b1073fe8f5572622f5e39120317d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_Z</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310a2524f76ec772151941164bee31d5d9f1</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18a2524f76ec772151941164bee31d5d9f1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_AXIS_W</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga94798fdadfbf49a7c658ace669a1d310ab090525794378a5a8ee78c5ad7e220b4</anchor>
+      <anchor>ggae4d5251432e1a9e6803c0240cc492e18ab090525794378a5a8ee78c5ad7e220b4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -39769,33 +39769,51 @@
       <arglist>(const T &amp;x)</arglist>
     </member>
     <member kind="enumvalue">
+      <name>CS_VERTEX_ORIGINAL</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382bab2c5f01a5c75c95a126f9352fecc63db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_VERTEX_ONEDGE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba5648edc14e0bc979178d7f7cf4ad76d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CS_VERTEX_INSIDE</name>
+      <anchorfile>group__geom__utils.html</anchorfile>
+      <anchor>gga73c53bacb25588538843a1dcfe5f382ba38ad988c5e359fec3a8328c9965a691c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>CS_TRIMESH_CLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382bae79eee97416d39f451607fc2c94b01dc</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549ae79eee97416d39f451607fc2c94b01dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCLOSED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba03fce5c7db65c3182ec683ff006698a3</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a03fce5c7db65c3182ec683ff006698a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_CONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382baeb9ea0bd96761361e39a61c17d65a256</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549aeb9ea0bd96761361e39a61c17d65a256</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_NOTCONVEX</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba3d71f9603c9ea6f85b041230d365c984</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a3d71f9603c9ea6f85b041230d365c984</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_TRIMESH_DEFORMABLE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga73c53bacb25588538843a1dcfe5f382ba9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
+      <anchor>gga26e1124d33b4acdb532c49f6498df549a9c5cd7efda84b38e2bdc0089c8ef74ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -40143,37 +40161,19 @@
     <member kind="enumvalue">
       <name>CS_CLIP_OUTSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a327d20023b6a973b24df4878ac1ca2a9</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a327d20023b6a973b24df4878ac1ca2a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_CLIPPED</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a5545e595302e89c3de51ec06a09ad73f</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5545e595302e89c3de51ec06a09ad73f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_CLIP_INSIDE</name>
       <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga78372742882dccd1c13323dbd66c25c5a75e75d608a45eea6c9fda90b04aeefbd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_VERTEX_ORIGINAL</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26ab2c5f01a5c75c95a126f9352fecc63db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_VERTEX_ONEDGE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a5648edc14e0bc979178d7f7cf4ad76d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CS_VERTEX_INSIDE</name>
-      <anchorfile>group__geom__utils.html</anchorfile>
-      <anchor>gga2d5492e116eebd5075f247d21fb9db26a38ad988c5e359fec3a8328c9965a691c</anchor>
+      <anchor>gga2d5492e116eebd5075f247d21fb9db26a75e75d608a45eea6c9fda90b04aeefbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -40345,13 +40345,13 @@
     <member kind="enumvalue">
       <name>CS_WRITE_BASELINE</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa54886ddf8e7152c7de68ce148eeba005</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a54886ddf8e7152c7de68ce148eeba005</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_WRITE_NOANTIALIAS</name>
       <anchorfile>group__gfx2d.html</anchorfile>
-      <anchor>gga2ee507fea44084259042ff7bb45ecabfa70c03137897cfcdd55da3da9584c5e37</anchor>
+      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a70c03137897cfcdd55da3da9584c5e37</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -40587,151 +40587,151 @@
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ZERO</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5af5ce179a35fe83eb4d7bc9412fe53c42</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eaf5ce179a35fe83eb4d7bc9412fe53c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_ONE</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a62585826f145edac424308dd93100b15</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea62585826f145edac424308dd93100b15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a5f2225042583871689d329f3d551c5b5</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea5f2225042583871689d329f3d551c5b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a39df002786ee50e5a002606e76298b01</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea39df002786ee50e5a002606e76298b01</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a6d03e7095dabb0cefe33d15164c1d3d4</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea6d03e7095dabb0cefe33d15164c1d3d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTCOLOR_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea2cbcb29d021d8dedb4ae80c2ec469e4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5aba5a437af635a0f59c2df4a711b077e0</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eaba5a437af635a0f59c2df4a711b077e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_SRCALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a402ca8198cd18db1db1c89d580340562</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea402ca8198cd18db1db1c89d580340562</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac77a53103daa13c42b245c309061bb8c</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eac77a53103daa13c42b245c309061bb8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_DSTALPHA_INV</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5ac0dce88efddadc4c010208518a4637fe</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28eac0dce88efddadc4c010208518a4637fe</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_COUNT</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a47f785c2424ca7659c468f85674e18f0</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea47f785c2424ca7659c468f85674e18f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_MIXMODE_FACT_MASK</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>ggaa7df87806f64f3b241c8cde9eb57cad5a982f2fa247ecce5a55dfa01fd64dc956</anchor>
+      <anchor>gga2f1398dba5e4a5616b83437528bdb28ea982f2fa247ecce5a55dfa01fd64dc956</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3daea1b0373f6ce3921dac7abdbffb66d15</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0aea1b0373f6ce3921dac7abdbffb66d15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compG</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da07463652e50be8ca18caf7c4a43a0801</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a07463652e50be8ca18caf7c4a43a0801</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compB</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da7abf487abfbf2aa7a7baab5616198a27</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a7abf487abfbf2aa7a7baab5616198a27</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dab1de66d99bc3969da9af4d6e582c9169</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ab1de66d99bc3969da9af4d6e582c9169</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compX</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad3e35daaa7ae2d4e5a819c7d0c661a2c</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad3e35daaa7ae2d4e5a819c7d0c661a2c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compL</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dac4e2266cd38ee155fb17bed8b06c9d1b</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ac4e2266cd38ee155fb17bed8b06c9d1b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compD</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad504896c6a09c1a63a612d72c25883cb</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad504896c6a09c1a63a612d72c25883cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compS</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3daf3149626a043ece26b4800376eae6fde</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0af3149626a043ece26b4800376eae6fde</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compRGB</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da1bf979e7bc1b944d62e6ab52b6587dff</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a1bf979e7bc1b944d62e6ab52b6587dff</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compRGBA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad999ec2d3c708563e5e079bc18caee84</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad999ec2d3c708563e5e079bc18caee84</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compLumA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dae78d82aed2749e5f22147838b613f858</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ae78d82aed2749e5f22147838b613f858</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compDepthStencil</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da58469ffed83156c77026bc2acf653777</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a58469ffed83156c77026bc2acf653777</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compUnknown</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da6319eb0febc4c5a12e82160244d47991</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a6319eb0febc4c5a12e82160244d47991</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -42095,37 +42095,37 @@
     <member kind="enumvalue">
       <name>SCF_VERBOSE_NONE</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a103bd7d223adbf6f6320c245ac38d6bc</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a103bd7d223adbf6f6320c245ac38d6bc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_SCAN</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1618478cd455be73b5425af2658c054f</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a1618478cd455be73b5425af2658c054f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_LOAD</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340af68a22da73642042e6355dcffdef8a74</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24af68a22da73642042e6355dcffdef8a74</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_PLUGIN_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340aeb61d605202afa31732b04143d022e63</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24aeb61d605202afa31732b04143d022e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_CLASS_REGISTER</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a1adcd0e4d15d2bec680094f5154aa4a0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SCF_VERBOSE_ALL</name>
       <anchorfile>group__scf.html</anchorfile>
-      <anchor>gga950bf8e3371138ceb9649d45e9a96340a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
+      <anchor>gga5a77d65f4abba81d4456fa6ba8136e24a5b39fff166e4e12caed2e5cb5ff67ea5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -42273,19 +42273,19 @@
     <member kind="enumvalue">
       <name>CS_SND3D_DISABLE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a4401fef783851d77029e6a74e4d6faee</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1ca4401fef783851d77029e6a74e4d6faee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_RELATIVE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469a21804053f393ecd9b1ad79d9132179a1</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1ca21804053f393ecd9b1ad79d9132179a1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_SND3D_ABSOLUTE</name>
       <anchorfile>group__sndsys.html</anchorfile>
-      <anchor>gga10e74d65d7876276a8f6061c71dcf469ab9f7a0ab979ba1e2456205bb8087f65e</anchor>
+      <anchor>gga1f3b6c692395e5007ff47ce5d9304c1cab9f7a0ab979ba1e2456205bb8087f65e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -42476,7 +42476,7 @@
     <member kind="enumvalue">
       <name>csUcMapSimple</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>ggad63240694c6dc2a28c24bfc2db90ad7aa502727b715dbfce568251bcf397ca4ca</anchor>
+      <anchor>gga7859c0a3efa8b1c360f5c2376baf051ea502727b715dbfce568251bcf397ca4ca</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -42825,25 +42825,25 @@
     <member kind="enumvalue">
       <name>CS_DBGHELP_BENCHMARK</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada8ebbd608c1cee89bc482a336b3560b4d</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa8ebbd608c1cee89bc482a336b3560b4d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_TXTDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada13dc137df8ca48aa57ecb956f5e081d5</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa13dc137df8ca48aa57ecb956f5e081d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_GFXDUMP</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada0a79c12019dd553e6412bd9dc7f80964</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa0a79c12019dd553e6412bd9dc7f80964</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>CS_DBGHELP_STATETEST</name>
       <anchorfile>group__util.html</anchorfile>
-      <anchor>gga01aea4eb01aa6415eee118b5a5ee3dada356357b2ad35764e2ac8efa5816a322a</anchor>
+      <anchor>gga7646ae03981912f97626c39dfe9318daa356357b2ad35764e2ac8efa5816a322a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected" static="yes">
@@ -56187,7 +56187,7 @@
     <member kind="enumvalue">
       <name>NUM_FACES</name>
       <anchorfile>classcsImageCubeMapMaker.html</anchorfile>
-      <anchor>ad732cb0547c542db51af7888267ee8b1aa0f6e2130bea525edc7adac7c788e0be</anchor>
+      <anchor>a283f53bf7a09fe3fa90fb9a9342055b7aa0f6e2130bea525edc7adac7c788e0be</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
@@ -92880,25 +92880,25 @@
     <member kind="enumvalue">
       <name>lpiInitialize</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
+      <anchor>ab2ae596ff7c3e48105774595844494b7aa08f56d16506fa21ab4a8d7dc79220d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReportErrors</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371afea2fe7c6628ed1c6b62caa10187fb80</anchor>
+      <anchor>ab2ae596ff7c3e48105774595844494b7afea2fe7c6628ed1c6b62caa10187fb80</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiLoadDependencies</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371a27d76f7ebccca23d0296c4ee98e829d4</anchor>
+      <anchor>ab2ae596ff7c3e48105774595844494b7a27d76f7ebccca23d0296c4ee98e829d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>lpiReturnLoadedInstance</name>
       <anchorfile>structiPluginManager.html</anchorfile>
-      <anchor>ae1d4fd740305b8ba14833c48742dd371a132f07d961c1733a0603788498274cd4</anchor>
+      <anchor>ab2ae596ff7c3e48105774595844494b7a132f07d961c1733a0603788498274cd4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -103326,13 +103326,13 @@
     <member kind="enumvalue">
       <name>blitbufReadable</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>a6e04e680caf17a4ba5edccd3528aea4ea932bb081f300bc89772998296459cd75</anchor>
+      <anchor>a1f9e7f6f48504f0350c6f888eec81e18a932bb081f300bc89772998296459cd75</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>blitbufRetainArea</name>
       <anchorfile>structiTextureHandle.html</anchorfile>
-      <anchor>a6e04e680caf17a4ba5edccd3528aea4eab9303d14862a3ebfcc71099c5c0a2c53</anchor>
+      <anchor>a1f9e7f6f48504f0350c6f888eec81e18ab9303d14862a3ebfcc71099c5c0a2c53</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -116782,79 +116782,79 @@
     <member kind="enumvalue">
       <name>compR</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3daea1b0373f6ce3921dac7abdbffb66d15</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0aea1b0373f6ce3921dac7abdbffb66d15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compG</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da07463652e50be8ca18caf7c4a43a0801</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a07463652e50be8ca18caf7c4a43a0801</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compB</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da7abf487abfbf2aa7a7baab5616198a27</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a7abf487abfbf2aa7a7baab5616198a27</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dab1de66d99bc3969da9af4d6e582c9169</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ab1de66d99bc3969da9af4d6e582c9169</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compX</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad3e35daaa7ae2d4e5a819c7d0c661a2c</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad3e35daaa7ae2d4e5a819c7d0c661a2c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compL</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dac4e2266cd38ee155fb17bed8b06c9d1b</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ac4e2266cd38ee155fb17bed8b06c9d1b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compD</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad504896c6a09c1a63a612d72c25883cb</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad504896c6a09c1a63a612d72c25883cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compS</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3daf3149626a043ece26b4800376eae6fde</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0af3149626a043ece26b4800376eae6fde</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compRGB</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da1bf979e7bc1b944d62e6ab52b6587dff</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a1bf979e7bc1b944d62e6ab52b6587dff</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compRGBA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dad999ec2d3c708563e5e079bc18caee84</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ad999ec2d3c708563e5e079bc18caee84</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compLumA</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3dae78d82aed2749e5f22147838b613f858</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0ae78d82aed2749e5f22147838b613f858</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compDepthStencil</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da58469ffed83156c77026bc2acf653777</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a58469ffed83156c77026bc2acf653777</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>compUnknown</name>
       <anchorfile>group__gfx3d.html</anchorfile>
-      <anchor>gga8e57e4003305642c062693f4e46d1f3da6319eb0febc4c5a12e82160244d47991</anchor>
+      <anchor>gga269a1d1f7dfd0335582f353a42eb8ab0a6319eb0febc4c5a12e82160244d47991</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -131699,6 +131699,128 @@
     <templarg></templarg>
   </compound>
   <compound kind="struct">
+    <name>CS::Network::EventManager::iEventCallback</name>
+    <filename>structCS_1_1Network_1_1EventManager_1_1iEventCallback.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnConnect</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventCallback.html</anchorfile>
+      <anchor>a453e85b01b2330bd86f069e8cbde5418</anchor>
+      <arglist>(ConnectionID connection)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnDestroy</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventCallback.html</anchorfile>
+      <anchor>a491dc6ad8dcc0ed6bb7bb89064e20c4b</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnDisconnect</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventCallback.html</anchorfile>
+      <anchor>a1d0926810b7a29db0720555f6c867b6a</anchor>
+      <arglist>(ConnectionID connection)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>OnUnhandledEvent</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventCallback.html</anchorfile>
+      <anchor>a9c76694ed4c6631d8e3e11b82373b529</anchor>
+      <arglist>(iEvent *e)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::Network::EventManager::iEventManager</name>
+    <filename>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual ConnectionID</type>
+      <name>Connect</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a5bd1ec4b8cbf8e631aed4b499d0c86c4</anchor>
+      <arglist>(iAddress *address, Protocol p)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Disconnect</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>aa2f13326f2d363dc1d9cdc4d597a7866</anchor>
+      <arglist>(ConnectionID)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iSocketManager *</type>
+      <name>GetSocketManager</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a14eaf0aad703587eaa3f1360f6fea2ed</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual ConnectionID</type>
+      <name>Listen</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a2ec7cca8714135f73c4b379b0d6b4470</anchor>
+      <arglist>(iAddress *address, Protocol p)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Process</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>ad821fe660133da9e0baad3474c3f6f08</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Send</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a2ac4da72d459823fc9f6efef8b673783</anchor>
+      <arglist>(iEvent *e)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetCallback</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a7eb42ed5944964ee3bffa0a8ddaa6b5c</anchor>
+      <arglist>(iEventCallback *callback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetProcessEvent</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>af7573d2a287858f7df304bc7b84cf67c</anchor>
+      <arglist>(csEventID processType)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Subscribe</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a95509b6bc4e620a782f91383d278da39</anchor>
+      <arglist>(csEventID const types[], Source source)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Subscribe</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a9b97209dc80b51083524ab77cad575fe</anchor>
+      <arglist>(csEventID type, Source source)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Unsubscribe</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>ab0732ab685ef36d300f6ee9a9d6046d1</anchor>
+      <arglist>(csEventID const types[], Source source)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Unsubscribe</name>
+      <anchorfile>structCS_1_1Network_1_1EventManager_1_1iEventManager.html</anchorfile>
+      <anchor>a40a16b9cc2df611d2b13b65ed7e14451</anchor>
+      <arglist>(csEventID type, Source source)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>CS::Network::Socket::iAddress</name>
     <filename>structCS_1_1Network_1_1Socket_1_1iAddress.html</filename>
     <base virtualness="virtual">iBase</base>
@@ -136762,49 +136884,49 @@
     <member kind="enumvalue">
       <name>syncTransform</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a9443b19152ad4746b51d1db33749c8df</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea9443b19152ad4746b51d1db33749c8df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncSector</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26abe33c10e964493bdd7243ad2b7b6ce15</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2beabe33c10e964493bdd7243ad2b7b6ce15</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncMirrored</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a6b7d787b31a9b05a77981b6f38f1aae1</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea6b7d787b31a9b05a77981b6f38f1aae1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncFarPlane</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a2d5238a1e1785e54feaaee8024eeba62</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea2d5238a1e1785e54feaaee8024eeba62</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncOnlyPortals</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26ab53837d7c0a39d3706c46748c5aa6648</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2beab53837d7c0a39d3706c46748c5aa6648</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncProjection</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a6b936b17ff85ac80f720fb584e962e1f</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea6b936b17ff85ac80f720fb584e962e1f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncAll</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a049b84fd65f46afae658af833c6f0e5c</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea049b84fd65f46afae658af833c6f0e5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>syncNothing</name>
       <anchorfile>classCS_1_1RenderManager_1_1CameraCache.html</anchorfile>
-      <anchor>a139b0851d3362e34c5ea93320b592f26a2f93979583d5287fa32cfbb064e7919b</anchor>
+      <anchor>a085c082cf323c44e6f966e7c2be6f2bea2f93979583d5287fa32cfbb064e7919b</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -139536,13 +139658,13 @@
     <member kind="enumvalue">
       <name>tcacheExactSizeMatch</name>
       <anchorfile>classCS_1_1RenderManager_1_1TextureCacheT.html</anchorfile>
-      <anchor>a53cf50a6c5cd6c6d38ea6099947c43bfad5cf19cf5e5e05986793222b683a1c36</anchor>
+      <anchor>a4eca77cd2c6940dec85198d455f06318ad5cf19cf5e5e05986793222b683a1c36</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>tcachePowerOfTwo</name>
       <anchorfile>classCS_1_1RenderManager_1_1TextureCacheT.html</anchorfile>
-      <anchor>a53cf50a6c5cd6c6d38ea6099947c43bfa7d8386dd479eae30ed5783e010d65c4a</anchor>
+      <anchor>a4eca77cd2c6940dec85198d455f06318a7d8386dd479eae30ed5783e010d65c4a</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
