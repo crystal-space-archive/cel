@@ -20534,7 +20534,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_iCelPlLayer_GetHitEntity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_iCelPlLayer_GetHitEntity__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
   iCamera *arg2 = (iCamera *) 0 ;
@@ -22315,6 +22315,127 @@ SWIGINTERN PyObject *_wrap_iCelPlLayer_QueryMessageSender(PyObject *SWIGUNUSEDPA
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iMessageSender, 0 |  0 );
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_GetHitEntity__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  iCelPlLayer *arg1 = (iCelPlLayer *) 0 ;
+  iView *arg2 = (iView *) 0 ;
+  int arg3 ;
+  int arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  iCelEntity *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"iCelPlLayer_GetHitEntity",4,4,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_iCelPlLayer, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "iCelPlLayer_GetHitEntity" "', argument " "1"" of type '" "iCelPlLayer *""'"); 
+  }
+  arg1 = reinterpret_cast< iCelPlLayer * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_iView, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "iCelPlLayer_GetHitEntity" "', argument " "2"" of type '" "iView *""'"); 
+  }
+  arg2 = reinterpret_cast< iView * >(argp2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "iCelPlLayer_GetHitEntity" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "iCelPlLayer_GetHitEntity" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
+  result = (iCelEntity *)(arg1)->GetHitEntity(arg2,arg3,arg4);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_iCelEntity, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_iCelPlLayer_GetHitEntity(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = (int)PyObject_Length(args);
+  for (ii = 0; (ii < argc) && (ii < 4); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iCamera, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_int(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_iCelPlLayer_GetHitEntity__SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_iCelPlLayer, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_iView, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_int(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_iCelPlLayer_GetHitEntity__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number of arguments for overloaded function 'iCelPlLayer_GetHitEntity'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    GetHitEntity(iCelPlLayer *,iCamera *,int,int)\n"
+    "    GetHitEntity(iCelPlLayer *,iView *,int,int)\n");
   return NULL;
 }
 
@@ -126304,7 +126425,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPlLayer_GetBehaviour", _wrap_iCelPlLayer_GetBehaviour, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_FindAttachedEntity", _wrap_iCelPlLayer_FindAttachedEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_FindNearbyEntities", _wrap_iCelPlLayer_FindNearbyEntities, METH_VARARGS, NULL},
-	 { (char *)"iCelPlLayer_GetHitEntity", _wrap_iCelPlLayer_GetHitEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateEmptyEntityList", _wrap_iCelPlLayer_CreateEmptyEntityList, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_CreateEntityTracker", _wrap_iCelPlLayer_CreateEntityTracker, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_FindEntityTracker", _wrap_iCelPlLayer_FindEntityTracker, METH_VARARGS, NULL},
@@ -126344,6 +126464,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"iCelPlLayer_GetClassEntitiesList", _wrap_iCelPlLayer_GetClassEntitiesList, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_SendMessage", _wrap_iCelPlLayer_SendMessage, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_QueryMessageSender", _wrap_iCelPlLayer_QueryMessageSender, METH_VARARGS, NULL},
+	 { (char *)"iCelPlLayer_GetHitEntity", _wrap_iCelPlLayer_GetHitEntity, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityCount_get", _wrap_iCelPlLayer_EntityCount_get, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityAddonAllowed_set", _wrap_iCelPlLayer_EntityAddonAllowed_set, METH_VARARGS, NULL},
 	 { (char *)"iCelPlLayer_EntityAddonAllowed_get", _wrap_iCelPlLayer_EntityAddonAllowed_get, METH_VARARGS, NULL},

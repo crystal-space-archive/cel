@@ -1435,6 +1435,7 @@
     <includes id="shadervar_8h" name="shadervar.h" local="yes" imported="no">shadervar.h</includes>
     <class kind="class">csShaderVariableContext</class>
     <class kind="class">CS::Graphics::OverlayShaderVariableContextImpl</class>
+    <class kind="class">CS::Graphics::PriorityShaderVariableContextImpl</class>
     <class kind="class">CS::Graphics::ShaderVariableContextImpl</class>
     <namespace>CS</namespace>
     <namespace>CS::Graphics</namespace>
@@ -23027,20 +23028,94 @@
     <filename>posteffects_8h</filename>
     <includes id="shadervarcontext_8h" name="shadervarcontext.h" local="yes" imported="no">csgfx/shadervarcontext.h</includes>
     <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
+    <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
+    <includes id="scf__implementation_8h" name="scf_implementation.h" local="yes" imported="no">csutil/scf_implementation.h</includes>
     <includes id="csutil_2array_8h" name="array.h" local="yes" imported="no">csutil/array.h</includes>
     <includes id="dirtyaccessarray_8h" name="dirtyaccessarray.h" local="yes" imported="no">csutil/dirtyaccessarray.h</includes>
     <includes id="parray_8h" name="parray.h" local="yes" imported="no">csutil/parray.h</includes>
     <includes id="ref_8h" name="ref.h" local="yes" imported="no">csutil/ref.h</includes>
     <includes id="services_8h" name="services.h" local="yes" imported="no">imap/services.h</includes>
     <includes id="shader_8h" name="shader.h" local="yes" imported="no">ivideo/shader/shader.h</includes>
-    <class kind="class">CS::RenderManager::PostEffectManager::Layer</class>
-    <class kind="struct">CS::RenderManager::PostEffectManager::LayerInputMap</class>
-    <class kind="struct">CS::RenderManager::PostEffectManager::LayerOptions</class>
+    <class kind="struct">CS::RenderManager::iPostEffect</class>
+    <class kind="struct">CS::RenderManager::iPostEffectManager</class>
+    <class kind="struct">CS::RenderManager::LayerDesc</class>
+    <class kind="struct">CS::RenderManager::PostEffectLayerInputMap</class>
+    <class kind="struct">CS::RenderManager::PostEffectLayerOptions</class>
     <class kind="class">CS::RenderManager::PostEffectLayersParser</class>
-    <class kind="class">CS::RenderManager::PostEffectManager</class>
-    <class kind="struct">CS::RenderManager::PostEffectManager::DimensionData::TexturesBucket</class>
     <namespace>CS</namespace>
     <namespace>CS::RenderManager</namespace>
+    <member kind="enumeration">
+      <name>DownsampleAxis</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_X</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920ad8cd13bc714c4b2099d302defc1e098d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_Y</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920ab4881c2d7537a69338db7caa4671b7fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_XY</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920a03f60678c8f4e72eefe0bd0ab2d257a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>LayerInputType</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AUTO</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990faa86e300a3a540bb1fa8040bbf5a6e646</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>STATIC</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990fa7ca65c4d85bc24d068ad2629ec895731</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MANUAL</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990fa5e6afe5068a8e9f8590782ed1e9a2a64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>PostEffectDrawTarget</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TARGET</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a7ec0ffd32174c7bd27180c43a8f31751</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SCREEN</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a3300172f0962b038aaac18e0e16b5038</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NONE</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a07c3bee0a2cb8bd0a309cdeb3c2f2085</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>posteffectssupport.h</name>
@@ -24371,6 +24446,8 @@
     <class kind="class">csEngineTools</class>
     <class kind="struct">csScreenTargetResult</class>
     <class kind="struct">csShortestDistanceResult</class>
+    <namespace>CS</namespace>
+    <namespace>CS::Collisions</namespace>
   </compound>
   <compound kind="file">
     <name>fogmath.h</name>
@@ -29784,6 +29861,7 @@
     <path>/tmp/tmp2/trunk/include/iengine/</path>
     <filename>camera_8h</filename>
     <includes id="matrix4_8h" name="matrix4.h" local="yes" imported="no">csgeom/matrix4.h</includes>
+    <includes id="vector2_8h" name="vector2.h" local="yes" imported="no">csgeom/vector2.h</includes>
     <includes id="scf_8h" name="scf.h" local="yes" imported="no">csutil/scf.h</includes>
     <includes id="deprecated__warn__off_8h" name="deprecated_warn_off.h" local="yes" imported="no">csutil/deprecated_warn_off.h</includes>
     <includes id="deprecated__warn__on_8h" name="deprecated_warn_on.h" local="yes" imported="no">csutil/deprecated_warn_on.h</includes>
@@ -30396,6 +30474,8 @@
     <filename>rendermanager_8h</filename>
     <includes id="scf__interface_8h" name="scf_interface.h" local="yes" imported="no">csutil/scf_interface.h</includes>
     <includes id="view_8h" name="view.h" local="yes" imported="no">ivaria/view.h</includes>
+    <includes id="posteffects_8h" name="posteffects.h" local="yes" imported="no">csplugincommon/rendermanager/posteffects.h</includes>
+    <includes id="rendertree_8h" name="rendertree.h" local="yes" imported="no">csplugincommon/rendermanager/rendertree.h</includes>
     <class kind="struct">iRenderManager</class>
     <class kind="struct">iRenderManagerPostEffects</class>
     <class kind="struct">iRenderManagerTargets</class>
@@ -52229,8 +52309,29 @@
       <type>static csScreenTargetResult</type>
       <name>FindScreenTarget</name>
       <anchorfile>classcsEngineTools.html</anchorfile>
-      <anchor>a7024d7f1c7cec5e285c4d8989ea891ac</anchor>
-      <arglist>(const csVector2 &amp;pos, float maxdist, iCamera *camera, iCollideSystem *cdsys=0)</arglist>
+      <anchor>a326260a325c41ba3bd35482b0e22cd10</anchor>
+      <arglist>(const csVector2 &amp;position, float maxdist, iView *view, CS::Collisions::iCollisionSystem *collisionSystem)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csScreenTargetResult</type>
+      <name>FindScreenTarget</name>
+      <anchorfile>classcsEngineTools.html</anchorfile>
+      <anchor>ab4b4b65ab86e61923887b74028ba6f9c</anchor>
+      <arglist>(const csVector2 &amp;position, float maxdist, iView *view, iCollideSystem *cdsys=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csScreenTargetResult</type>
+      <name>FindScreenTarget</name>
+      <anchorfile>classcsEngineTools.html</anchorfile>
+      <anchor>af6291c37c8f0c5f14c1d0cbd3d437680</anchor>
+      <arglist>(const csVector2 &amp;position, float maxdist, iCamera *camera, size_t screenWidth, size_t screenHeight, iCollideSystem *cdsys=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csScreenTargetResult</type>
+      <name>FindScreenTarget</name>
+      <anchorfile>classcsEngineTools.html</anchorfile>
+      <anchor>a133335c33ea6f35dc9f712272a44b00e</anchor>
+      <arglist>(const csVector2 &amp;position, float maxdist, iCamera *camera, iCollideSystem *cdsys=nullptr)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static csShortestDistanceResult</type>
@@ -52238,6 +52339,20 @@
       <anchorfile>classcsEngineTools.html</anchorfile>
       <anchor>a197cae78b3a7439cea68a2f4fe1300ff</anchor>
       <arglist>(const csVector3 &amp;source, iSector *sourceSector, const csVector3 &amp;dest, iSector *destSector, float maxradius, bool accurate=false)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csVector2</type>
+      <name>NormalizedToScreen</name>
+      <anchorfile>classcsEngineTools.html</anchorfile>
+      <anchor>a8f1cdbc043361eb149707777b8337e13</anchor>
+      <arglist>(const csVector2 &amp;position, float screenWidth, float screenHeight)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static csVector2</type>
+      <name>ScreenToNormalized</name>
+      <anchorfile>classcsEngineTools.html</anchorfile>
+      <anchor>a7f2d9ec523fdcfd4e4671bd9296f6335</anchor>
+      <arglist>(const csVector2 &amp;position, float screenWidth, float screenHeight)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -67803,6 +67918,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>csPlane3</type>
+      <name>frustum</name>
+      <anchorfile>classcsRenderContext.html</anchorfile>
+      <anchor>a19d7837bd614d778a4150a9fefe028b7</anchor>
+      <arglist>[5]</arglist>
+    </member>
+    <member kind="variable">
       <type>csRef&lt; iCamera &gt;</type>
       <name>icamera</name>
       <anchorfile>classcsRenderContext.html</anchorfile>
@@ -75300,6 +75422,20 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>aef6b5db274c73e78c90c52f1e8c5a612</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual CS::Utility::MeshFilter &amp;</type>
+      <name>GetMeshFilter</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>aacac2e1e59845af03a399a75f642bc51</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual iPerspectiveCamera *</type>
       <name>GetPerspectiveCamera</name>
       <anchorfile>classcsView.html</anchorfile>
@@ -75307,11 +75443,32 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>af2f6de830e3a2a0f5feb16faa3b7c512</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector3</type>
+      <name>InvProject</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a8e61a9e50c2cfd79bc5c8ccfa71c91e9</anchor>
+      <arglist>(const csVector2 &amp;p, float z) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual csVector2</type>
       <name>NormalizedToScreen</name>
       <anchorfile>classcsView.html</anchorfile>
       <anchor>a59dc3a35b0ed27f2e064c554f886f42c</anchor>
       <arglist>(const csVector2 &amp;pos)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csVector2</type>
+      <name>Project</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>aa6489c9b4abd22063e31e16ce76bb285</anchor>
+      <arglist>(const csVector3 &amp;v) const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -75364,6 +75521,13 @@
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
+      <name>SetHeight</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a8a6ff7b3e622390314284960cbffd2e0</anchor>
+      <arglist>(int h)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
       <name>SetPerspectiveCamera</name>
       <anchorfile>classcsView.html</anchorfile>
       <anchor>a8e597e107e614c22eaa6852283873b10</anchor>
@@ -75375,6 +75539,13 @@
       <anchorfile>classcsView.html</anchorfile>
       <anchor>a05c75a2b0837b91c1d4bdbdb03744816</anchor>
       <arglist>(int x, int y, int w, int h, bool restrictToScreen=true)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetWidth</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a7933e1235093faed7e06e8d38ae949f8</anchor>
+      <arglist>(int w)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -76994,6 +77165,13 @@
       <arglist>(const csVector2 &amp;p, float z) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual csVector3</type>
+      <name>InvProject</name>
+      <anchorfile>structiCamera.html</anchorfile>
+      <anchor>a3357dd916a0efd052d941a5ead80f0c9</anchor>
+      <arglist>(const csVector2 &amp;p, float z) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>IsMirrored</name>
       <anchorfile>structiCamera.html</anchorfile>
@@ -77040,6 +77218,13 @@
       <name>Perspective</name>
       <anchorfile>structiCamera.html</anchorfile>
       <anchor>ad20cfa0371835cde47edba6bdba3372a</anchor>
+      <arglist>(const csVector3 &amp;v) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVector2</type>
+      <name>Project</name>
+      <anchorfile>structiCamera.html</anchorfile>
+      <anchor>aaa45f71e4e0f24166607079a8aae2558</anchor>
       <arglist>(const csVector3 &amp;v) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -84083,6 +84268,13 @@
       <type>virtual void</type>
       <name>DrawLineProjected</name>
       <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>a2f3faf4a683cb256f53686630fb48a34</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, float aspect, int color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>a28bd5dff28a40671551920769b2d72af</anchor>
       <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, const CS::Math::Matrix4 &amp;projection, int color)=0</arglist>
     </member>
@@ -84232,6 +84424,13 @@
       <anchorfile>structiGraphics2D.html</anchorfile>
       <anchor>a22b0cd2c6781aaeb807f7dd3bc2bd9b0</anchor>
       <arglist>(int w, int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ScreenShot</name>
+      <anchorfile>structiGraphics2D.html</anchorfile>
+      <anchor>a832c0b801f2b46997c4b0a4e46340b4a</anchor>
+      <arglist>(unsigned char *buffer)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iImage &gt;</type>
@@ -92751,6 +92950,13 @@
     <filename>structiPerspectiveCamera.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetAspectRatio</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a0fba4e2b4474ccbfcc7f6d7260ef46c1</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iCamera *</type>
       <name>GetCamera</name>
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
@@ -92800,6 +93006,27 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetVerticalFOV</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a72012688fb7126f8c01d901db76649b7</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>GetVerticalFOVAngle</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>ae242fad8973bedcd24d474ad637cb342</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetAspectRatio</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a5e035d021527501ccf72080a7e8462f0</anchor>
+      <arglist>(float aspect)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>SetFOV</name>
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
@@ -92810,8 +93037,8 @@
       <type>virtual void</type>
       <name>SetFOVAngle</name>
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
-      <anchor>ae09c83aa203e744b2b179cddcb7e2469</anchor>
-      <arglist>(float fov, float width)=0</arglist>
+      <anchor>aa736c9c95b2112c94166dd7b286c8e38</anchor>
+      <arglist>(float fov, float aspect)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -92826,6 +93053,20 @@
       <anchorfile>structiPerspectiveCamera.html</anchorfile>
       <anchor>a3d1d229ba8af5b74a6887fc721fdfeb4</anchor>
       <arglist>(float x, float y)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVerticalFOV</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a67ba504a1be0645bcfc28e2af8f2c9a3</anchor>
+      <arglist>(float fov)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetVerticalFOVAngle</name>
+      <anchorfile>structiPerspectiveCamera.html</anchorfile>
+      <anchor>a619744e5a17f944bb447feae2c1e7426</anchor>
+      <arglist>(float fov)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -93930,25 +94171,123 @@
     <filename>structiRenderManagerPostEffects.html</filename>
     <base virtualness="virtual">iBase</base>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>AddLayersFromDocument</name>
+      <type>virtual void</type>
+      <name>AddPostEffect</name>
       <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
-      <anchor>a26b5581aad11b7972115c14972486256</anchor>
-      <arglist>(iDocumentNode *node)=0</arglist>
+      <anchor>a76add09cea56ebeb4677fcf196c78978</anchor>
+      <arglist>(CS::RenderManager::iPostEffect *effect)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>AddLayersFromFile</name>
+      <type>virtual csPtr&lt; CS::RenderManager::iPostEffect &gt;</type>
+      <name>CreatePostEffect</name>
       <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
-      <anchor>aeb942676cedfa1a11d3cedee381562b4</anchor>
-      <arglist>(const char *filename)=0</arglist>
+      <anchor>a6cb9e3996fd1a365865eb46cc824eb64</anchor>
+      <arglist>(const char *name) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
-      <name>ClearLayers</name>
+      <name>DrawPostEffects</name>
       <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
-      <anchor>ac9405895359102a63a5c6fa23872d112</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a7d1519e7b8a546250f2b927b0a88f5c0</anchor>
+      <arglist>(CS::RenderManager::RenderTreeBase &amp;renderTree)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>FindPostEffect</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a92fe387f45a48bce3f66e84b924eeb72</anchor>
+      <arglist>(const char *name) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetDepthTarget</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a63f45d2381193938b23ec9a406443b25</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetEffectsOutputTarget</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>aca1f03921fccc0d92dfc9757a6d2a066</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::RenderManager::iPostEffect *</type>
+      <name>GetPostEffect</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>af298fa138f820fe820e80ffbd81abee2</anchor>
+      <arglist>(size_t index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>GetPostEffectCount</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a36fc13d5e13fc0138c187c5c742608c6</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetScreenTarget</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>aa5cbcd7aa1036fdb85ab9965e9e3e5ce</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>InsertPostEffect</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a71fc679c115ce8ae927e06e51a466668</anchor>
+      <arglist>(CS::RenderManager::iPostEffect *effect, size_t index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>RemovePostEffect</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a6894f9f24c5d85d7a91005ca9e4676fa</anchor>
+      <arglist>(CS::RenderManager::iPostEffect *effect)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>RemovePostEffect</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a08befe3651444090dd4bbdd538e16738</anchor>
+      <arglist>(size_t index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ScreenSpaceYFlipped</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>aa557e4ca5d39f85974df3bddc06873af</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDepthBuffer</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>af916e947ed1cbcad92a6ea62514db020</anchor>
+      <arglist>(iTextureHandle *depth)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetEffectsOutputTarget</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>a0cc8ab72f09644f794a2e6f28c0fdc11</anchor>
+      <arglist>(iTextureHandle *tex)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetPostEffectsEnabled</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>ac67b2af4e92c1a4b7c774b1554a4dfb0</anchor>
+      <arglist>(bool status)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetupView</name>
+      <anchorfile>structiRenderManagerPostEffects.html</anchorfile>
+      <anchor>af9c923ced735b0f40741134e89215e01</anchor>
+      <arglist>(iView *view, CS::Math::Matrix4 &amp;perspectiveFixup)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -98349,6 +98688,13 @@
       <arglist>(iSndSysData *data, int mode3d)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual size_t</type>
+      <name>FillDriverBuffer</name>
+      <anchorfile>structiSndSysRenderer.html</anchorfile>
+      <anchor>a36c5ead8cec9aea248ee7d4e4f85e431</anchor>
+      <arglist>(void *buf1, size_t buf1_len, void *buf2, size_t buf2_len)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csRef&lt; iSndSysListener &gt;</type>
       <name>GetListener</name>
       <anchorfile>structiSndSysRenderer.html</anchorfile>
@@ -98356,10 +98702,24 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetLoopbackFormat</name>
+      <anchorfile>structiSndSysRenderer.html</anchorfile>
+      <anchor>a8041d3e580d347bd973d4bccf2075fba</anchor>
+      <arglist>(csSndSysSoundFormat *pFormat)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetVolume</name>
       <anchorfile>structiSndSysRenderer.html</anchorfile>
       <anchor>ad354568adb94ea5083376df6ee11e4ba</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsLoopback</name>
+      <anchorfile>structiSndSysRenderer.html</anchorfile>
+      <anchor>a1d08106ba1e7a10f7eeac31d4d490b43</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -104586,6 +104946,20 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetHeight</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a1260d31d6efaac5833b4b3c6e2dc3f67</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::Utility::MeshFilter &amp;</type>
+      <name>GetMeshFilter</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>ae6a19a8bcadd35f62d65596e52ddde85</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iPerspectiveCamera *</type>
       <name>GetPerspectiveCamera</name>
       <anchorfile>structiView.html</anchorfile>
@@ -104593,11 +104967,32 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>GetWidth</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a232e5591fb571af60a9c869cae639a61</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVector3</type>
+      <name>InvProject</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a1240d7b434db29aa3b7e3428000f31b1</anchor>
+      <arglist>(const csVector2 &amp;p, float z) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csVector2</type>
       <name>NormalizedToScreen</name>
       <anchorfile>structiView.html</anchorfile>
       <anchor>af23d1c46dcbd1a864fe7f008a94f5e85</anchor>
       <arglist>(const csVector2 &amp;pos)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csVector2</type>
+      <name>Project</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a404ecb5fc6bdd3c0614de659629fd0c9</anchor>
+      <arglist>(const csVector3 &amp;v) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -104650,6 +105045,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
+      <name>SetHeight</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>ab0ed628bc313816225ee9f6ace2d3b37</anchor>
+      <arglist>(int h)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
       <name>SetPerspectiveCamera</name>
       <anchorfile>structiView.html</anchorfile>
       <anchor>aa5b534e3e5f49f36700ea63c970edd1f</anchor>
@@ -104661,6 +105063,13 @@
       <anchorfile>structiView.html</anchorfile>
       <anchor>aee9b395896db4de67a0847423604e3de</anchor>
       <arglist>(int x, int y, int w, int h, bool restrictToScreen=true)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetWidth</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a8f77169552b8fca458c21acfbc58182a</anchor>
+      <arglist>(int w)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -105779,7 +106188,7 @@
   <compound kind="class">
     <name>scfImplementation0</name>
     <filename>classscfImplementation0.html</filename>
-    <templarg></templarg>
+    <templarg>Class</templarg>
     <base>scfImplementation</base>
     <member kind="function">
       <type>void *</type>
@@ -123626,6 +124035,13 @@
       <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual HitBeamResult</type>
+      <name>HitBeamPortals</name>
+      <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
+      <anchor>a632415ca86b9ab9395634d96c550106f</anchor>
+      <arglist>(const csVector3 &amp;start, const csVector3 &amp;end) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual csVector3</type>
       <name>GetGravity</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSector.html</anchorfile>
@@ -123711,8 +124127,8 @@
       <type>virtual csPtr&lt; iColliderConcaveMesh &gt;</type>
       <name>CreateColliderConcaveMesh</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a8dc737f521f427c475627d23d490961e</anchor>
-      <arglist>(iTriangleMesh *mesh)=0</arglist>
+      <anchor>a26e5e9518d84b684dcaa6ce68d26f8f4</anchor>
+      <arglist>(iTriangleMesh *mesh, bool dynamicEnabled=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iColliderConcaveMeshScaled &gt;</type>
@@ -123732,8 +124148,8 @@
       <type>virtual csPtr&lt; iColliderConvexMesh &gt;</type>
       <name>CreateColliderConvexMesh</name>
       <anchorfile>structCS_1_1Collisions_1_1iCollisionSystem.html</anchorfile>
-      <anchor>a8f6b9212bd5bc6ad2cb7112edb7ffd58</anchor>
-      <arglist>(iTriangleMesh *mesh, bool simplify=false)=0</arglist>
+      <anchor>a71a38e31d5ea54e558019ed0e05f0ff4</anchor>
+      <arglist>(iTriangleMesh *mesh)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual csPtr&lt; iColliderCylinder &gt;</type>
@@ -125598,6 +126014,7 @@
     <class kind="struct">CS::Graphics::AlphaTestOptions</class>
     <class kind="struct">CS::Graphics::CoreRenderMesh</class>
     <class kind="class">CS::Graphics::OverlayShaderVariableContextImpl</class>
+    <class kind="class">CS::Graphics::PriorityShaderVariableContextImpl</class>
     <class kind="struct">CS::Graphics::RenderMesh</class>
     <class kind="struct">CS::Graphics::RenderMeshIndexRange</class>
     <class kind="struct">CS::Graphics::RenderMeshModes</class>
@@ -125847,6 +126264,18 @@
       <anchorfile>classCS_1_1Graphics_1_1OverlayShaderVariableContextImpl.html</anchorfile>
       <anchor>aece279929b3cdae1ef150325e1ed3568</anchor>
       <arglist>(csShaderVariable *variable)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::Graphics::PriorityShaderVariableContextImpl</name>
+    <filename>classCS_1_1Graphics_1_1PriorityShaderVariableContextImpl.html</filename>
+    <base>CS::Graphics::ShaderVariableContextImpl</base>
+    <member kind="function">
+      <type>void</type>
+      <name>PushVariables</name>
+      <anchorfile>classCS_1_1Graphics_1_1PriorityShaderVariableContextImpl.html</anchorfile>
+      <anchor>acb8ced47e263996bd82b9f1037d621e3</anchor>
+      <arglist>(csShaderVariableStack &amp;stacks) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -132656,6 +133085,13 @@
       <arglist>(const csVector3 &amp;force)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
+      <anchor>a6486cac1ff972b6285cddc2a6c85244c</anchor>
+      <arglist>(const csVector3 &amp;impulse)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetDensity</name>
       <anchorfile>structCS_1_1Physics_1_1iPhysicalBody.html</anchorfile>
@@ -133084,6 +133520,13 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>GetDynamicConcaveEnabled</name>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a3841988af116bf0b720eebaab45925c5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual float</type>
       <name>GetInternalScale</name>
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
@@ -133124,6 +133567,13 @@
       <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
       <anchor>a1140af6272c5bf3ddfd2bd0922dc17b2</anchor>
       <arglist>(DebugMode mode)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetDynamicConcaveEnabled</name>
+      <anchorfile>structCS_1_1Physics_1_1iPhysicalSystem.html</anchorfile>
+      <anchor>a4a58a528d8f8a9ca427de25ea3b22ee9</anchor>
+      <arglist>(bool enabled)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -133226,6 +133676,20 @@
       <name>AddTorque</name>
       <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
       <anchor>a3a83c7f7ec5a11049562a96a58121a22</anchor>
+      <arglist>(const csVector3 &amp;torque)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>af98d837b18a6facaf92d3a8e5ca38561</anchor>
+      <arglist>(const csVector3 &amp;impulse, const csVector3 &amp;position)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyTorque</name>
+      <anchorfile>structCS_1_1Physics_1_1iRigidBody.html</anchorfile>
+      <anchor>a20f0c85dfa1d19c7cef35d3d1433e644</anchor>
       <arglist>(const csVector3 &amp;torque)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -133433,6 +133897,13 @@
       <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
       <anchor>afb9899c57ca096897274cd8c482f4081</anchor>
       <arglist>(size_t vertexIndex)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ApplyImpulse</name>
+      <anchorfile>structCS_1_1Physics_1_1iSoftBody.html</anchorfile>
+      <anchor>a5ff3c15d14f606b31a64ed5b697dcdb8</anchor>
+      <arglist>(const csVector3 &amp;impulse, size_t vertexIndex)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -136326,8 +136797,15 @@
       <type>virtual void</type>
       <name>DrawLineProjected</name>
       <anchorfile>classCS_1_1PluginCommon_1_1GL_1_1Graphics2DCommon.html</anchorfile>
-      <anchor>a5b65cf8796551844df9c2ba1d7c2233b</anchor>
-      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, int color)</arglist>
+      <anchor>a14b9c7a054b9b5b6791d088098c02d03</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float fov, float aspect, int color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DrawLineProjected</name>
+      <anchorfile>classCS_1_1PluginCommon_1_1GL_1_1Graphics2DCommon.html</anchorfile>
+      <anchor>af33ce181d1d5e9e5be44b07db692307d</anchor>
+      <arglist>(const csVector3 &amp;v1, const csVector3 &amp;v2, float viewHeight, int color)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -136426,6 +136904,13 @@
       <anchorfile>classCS_1_1PluginCommon_1_1GL_1_1Graphics2DCommon.html</anchorfile>
       <anchor>a86e7b47a00cb856b277a7d34f6c4e70f</anchor>
       <arglist>(int width, int height)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>ScreenShot</name>
+      <anchorfile>classCS_1_1PluginCommon_1_1GL_1_1Graphics2DCommon.html</anchorfile>
+      <anchor>a8a17f904aad7a6046df47926a989f2e3</anchor>
+      <arglist>(unsigned char *buffer)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual csPtr&lt; iImage &gt;</type>
@@ -136725,6 +137210,9 @@
     <class kind="class">CS::RenderManager::DependentTargetManager</class>
     <class kind="class">CS::RenderManager::HDRHelper</class>
     <class kind="class">CS::RenderManager::HDRSettings</class>
+    <class kind="struct">CS::RenderManager::iPostEffect</class>
+    <class kind="struct">CS::RenderManager::iPostEffectManager</class>
+    <class kind="struct">CS::RenderManager::LayerDesc</class>
     <class kind="class">CS::RenderManager::LayerHelper</class>
     <class kind="class">CS::RenderManager::LightingSorter</class>
     <class kind="class">CS::RenderManager::LightingVariablesHelper</class>
@@ -136739,8 +137227,9 @@
     <class kind="struct">CS::RenderManager::OperationTraits&lt; StandardMeshSorter&lt; RenderTree &gt; &gt;</class>
     <class kind="struct">CS::RenderManager::OperationUnordered</class>
     <class kind="struct">CS::RenderManager::OperationUnorderedParallel</class>
+    <class kind="struct">CS::RenderManager::PostEffectLayerInputMap</class>
+    <class kind="struct">CS::RenderManager::PostEffectLayerOptions</class>
     <class kind="class">CS::RenderManager::PostEffectLayersParser</class>
-    <class kind="class">CS::RenderManager::PostEffectManager</class>
     <class kind="class">CS::RenderManager::PostEffectsSupport</class>
     <class kind="class">CS::RenderManager::RenderCommon</class>
     <class kind="class">CS::RenderManager::RenderTree</class>
@@ -136773,6 +137262,78 @@
       <name>TextureCache</name>
       <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
       <anchor>a302505af306f72a0353f26a1001b771c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>DownsampleAxis</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_X</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920ad8cd13bc714c4b2099d302defc1e098d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_Y</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920ab4881c2d7537a69338db7caa4671b7fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AXIS_XY</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a99c36a831576c9f9d8eeb3d714dec920a03f60678c8f4e72eefe0bd0ab2d257a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>LayerInputType</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AUTO</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990faa86e300a3a540bb1fa8040bbf5a6e646</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>STATIC</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990fa7ca65c4d85bc24d068ad2629ec895731</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MANUAL</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>aa1302c710ab76202797aea303b0e990fa5e6afe5068a8e9f8590782ed1e9a2a64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>PostEffectDrawTarget</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TARGET</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a7ec0ffd32174c7bd27180c43a8f31751</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SCREEN</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a3300172f0962b038aaac18e0e16b5038</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NONE</name>
+      <anchorfile>namespaceCS_1_1RenderManager.html</anchorfile>
+      <anchor>a51e89f0d8432b91d16896641e80abc92a07c3bee0a2cb8bd0a309cdeb3c2f2085</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -137070,10 +137631,10 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>PostEffectManager &amp;</type>
+      <type>iPostEffect *</type>
       <name>GetHDRPostEffects</name>
       <anchorfile>classCS_1_1RenderManager_1_1HDRHelper.html</anchorfile>
-      <anchor>aadd331e08d9c47983ec8d22ba42e5239</anchor>
+      <anchor>af79664cccb2edd2647941a9984bc2b5c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -137091,10 +137652,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>PostEffectManager::Layer *</type>
+      <type>iPostEffectLayer *</type>
       <name>GetMeasureLayer</name>
       <anchorfile>classCS_1_1RenderManager_1_1HDRHelper.html</anchorfile>
-      <anchor>a5a826a9cb153b24f3791649789567ca3</anchor>
+      <anchor>a0109abc1a41dfce122bcf7037165c0d6</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
@@ -137108,8 +137669,8 @@
       <type>bool</type>
       <name>Setup</name>
       <anchorfile>classCS_1_1RenderManager_1_1HDRHelper.html</anchorfile>
-      <anchor>a599e420b01092a13598a316be5345ba4</anchor>
-      <arglist>(iObjectRegistry *objectReg, Quality quality, int colorRange)</arglist>
+      <anchor>a84066a01e9df5838fba03548165c0fad</anchor>
+      <arglist>(iObjectRegistry *objectReg, Quality quality, int colorRange, iRenderManagerPostEffects *postEffectManager)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -137150,6 +137711,202 @@
       <anchor>aea26bd7f9a9be98e5c86fd37615b7581</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::iPostEffect</name>
+    <filename>structCS_1_1RenderManager_1_1iPostEffect.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual iPostEffectLayer *</type>
+      <name>AddLayer</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>ade263496c8bc9d95d19bea93cdb3894b</anchor>
+      <arglist>(const LayerDesc &amp;desc)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>Clear</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>af6ff7b22b8da06b43ed489d4c9cbaef0</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>ClearLayers</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a8bac88edc275b4151e95b6d505727049</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>Construct</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a135cde7d69413e10b1b4578ca004df60</anchor>
+      <arglist>(bool forced)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawPostEffect</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>acaa3dfab53dd32636290bbb1144a1524</anchor>
+      <arglist>(RenderTreeBase &amp;renderTree, PostEffectDrawTarget flag=TARGET)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetInputTexture</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a14ddae6f8aa53134b80df1cd38e5061c</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iPostEffectLayer *</type>
+      <name>GetLayer</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a3a7e71dd6e3a66af40875721b12ca576</anchor>
+      <arglist>(int num)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iPostEffectLayer *</type>
+      <name>GetLayer</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>ad45d13367a101319079f04e4baa61d83</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetLayerOutput</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>ad5af64e1b9c0afb128cb7eeb7787288a</anchor>
+      <arglist>(const iPostEffectLayer *layer)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>GetLayerRenderSVs</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a4045e5735c479a58663ff14f2ec2d314</anchor>
+      <arglist>(iPostEffectLayer *layer, csShaderVariableStack &amp;svStack)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const char *</type>
+      <name>GetName</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>ab78f360f085343df51001f201d5e2ec7</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetOutputTarget</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>aa2fb6aaac1da059969704f2acdd77551</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iPostEffectLayer *</type>
+      <name>GetScreenLayer</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>ac8d9f8dc0d8d7ef327b70f0851ee6e64</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetScreenTarget</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a119a2efdaf9969e37ac41f47be2aaf67</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>LoadFromFile</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>aa4f9eaed690c1f8a5184af4dc17c1e66</anchor>
+      <arglist>(const char *fileName)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>RemoveLayer</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a6bc84fc47b9b290bdba1060574213f4f</anchor>
+      <arglist>(iPostEffectLayer *layer)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>ScreenSpaceYFlipped</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a5c6e9f9e8fab0054e1090cc82c342fc1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetInputTexture</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>af9f6a8a4048983120071e2f6a292b85c</anchor>
+      <arglist>(iTextureHandle *tex)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetOutputTarget</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a4d57ff7878738e904db096d3f32423e4</anchor>
+      <arglist>(iTextureHandle *tex)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetSetupViewCallback</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a4cb9808c709076cf304dc8ef0ba90110</anchor>
+      <arglist>(iSetupViewCallback *pCallback)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetupView</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffect.html</anchorfile>
+      <anchor>a750d53834c0f9371be5a9c30addcbcbb</anchor>
+      <arglist>(uint width, uint height)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::iPostEffectManager</name>
+    <filename>structCS_1_1RenderManager_1_1iPostEffectManager.html</filename>
+    <base virtualness="virtual">iBase</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iPostEffect &gt;</type>
+      <name>CreatePostEffect</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffectManager.html</anchorfile>
+      <anchor>a6634198123078b05c86dbfa8648af89a</anchor>
+      <arglist>(const char *name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iShaderVariableContext *</type>
+      <name>GetSharedSVs</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffectManager.html</anchorfile>
+      <anchor>a1f46d391d2b87e318f476d4a87ae4992</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual CS::StringIDValue</type>
+      <name>GetStringID</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffectManager.html</anchorfile>
+      <anchor>a6011ee5c0bccc78385dbfbbc86d5e702</anchor>
+      <arglist>(const char *str) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csPtr&lt; iTextureHandle &gt;</type>
+      <name>RequestTexture</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffectManager.html</anchorfile>
+      <anchor>a4d18d476c8ce4bd81454db25b59b5be8</anchor>
+      <arglist>(TextureAllocationInfo &amp;info, int num)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>SetupView</name>
+      <anchorfile>structCS_1_1RenderManager_1_1iPostEffectManager.html</anchorfile>
+      <anchor>acd9856813435c5eb01290c0b77eba1e0</anchor>
+      <arglist>(uint width, uint height)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::LayerDesc</name>
+    <filename>structCS_1_1RenderManager_1_1LayerDesc.html</filename>
   </compound>
   <compound kind="class">
     <name>CS::RenderManager::LayerHelper</name>
@@ -137574,6 +138331,77 @@
     <name>CS::RenderManager::OperationUnorderedParallel</name>
     <filename>structCS_1_1RenderManager_1_1OperationUnorderedParallel.html</filename>
   </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::PostEffectLayerInputMap</name>
+    <filename>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</filename>
+    <member kind="variable">
+      <type>csString</type>
+      <name>sourceName</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>acf866976a5859ad0cf4b5c07c07fa788</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRect</type>
+      <name>sourceRect</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>a2be3cb9a8bbe55643c1dc2063c33bb47</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csString</type>
+      <name>svPixelSizeName</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>a38de62221025502902bd168c83d5c63a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csString</type>
+      <name>svTexcoordName</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>a2c91bfdb7145cc5153154597b040f571</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csString</type>
+      <name>svTextureName</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>acd5a046ef1230c8b30b41b3c33bec16c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>LayerInputType</type>
+      <name>type</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerInputMap.html</anchorfile>
+      <anchor>a47c5d485794fb6e4ad61b9ac3c650115</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CS::RenderManager::PostEffectLayerOptions</name>
+    <filename>structCS_1_1RenderManager_1_1PostEffectLayerOptions.html</filename>
+    <member kind="variable">
+      <type>csString</type>
+      <name>name</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerOptions.html</anchorfile>
+      <anchor>a1c453fe39cd4111c27c749c29e66ee87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRef&lt; iTextureHandle &gt;</type>
+      <name>renderTarget</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerOptions.html</anchorfile>
+      <anchor>ad8539d86399a16c6f46eceb4ab804275</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>csRect</type>
+      <name>targetRect</name>
+      <anchorfile>structCS_1_1RenderManager_1_1PostEffectLayerOptions.html</anchorfile>
+      <anchor>a704673800e787ba8a97587f8988ce25e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>CS::RenderManager::PostEffectLayersParser</name>
     <filename>classCS_1_1RenderManager_1_1PostEffectLayersParser.html</filename>
@@ -137582,15 +138410,15 @@
       <type>bool</type>
       <name>AddLayersFromDocument</name>
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectLayersParser.html</anchorfile>
-      <anchor>a5e45b8e173ec519f9bc70fc02f5ebec5</anchor>
-      <arglist>(iDocumentNode *node, PostEffectManager &amp;effects)</arglist>
+      <anchor>af587f60a71a39cd447f2bd603dec84f4</anchor>
+      <arglist>(iDocumentNode *node, iPostEffect *effect) const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>AddLayersFromFile</name>
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectLayersParser.html</anchorfile>
-      <anchor>a4591970a374057f096d0571d52727f13</anchor>
-      <arglist>(const char *filename, PostEffectManager &amp;effects)</arglist>
+      <anchor>a53616260919043b29eb2cd0785482df6</anchor>
+      <arglist>(const char *filename, iPostEffect *effect) const </arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -137598,352 +138426,6 @@
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectLayersParser.html</anchorfile>
       <anchor>a960df7f68a5582c0ae9f1636bdd70659</anchor>
       <arglist>(iObjectRegistry *objReg)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::RenderManager::PostEffectManager</name>
-    <filename>classCS_1_1RenderManager_1_1PostEffectManager.html</filename>
-    <base>CustomAllocatedDerived&lt; csRefCount &gt;</base>
-    <class kind="class">CS::RenderManager::PostEffectManager::Layer</class>
-    <class kind="struct">CS::RenderManager::PostEffectManager::LayerInputMap</class>
-    <class kind="struct">CS::RenderManager::PostEffectManager::LayerOptions</class>
-    <member kind="function">
-      <type>void</type>
-      <name>ClearIntermediates</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a889ae5ddc5f426fdc74012c918b776ac</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ClearLayers</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>ae56299eec68aa8b4f3a7108ca4565686</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>DrawPostEffects</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>ab9f06b79421baf9db7a629e598d0bb06</anchor>
-      <arglist>(RenderTreeBase &amp;renderTree)</arglist>
-    </member>
-    <member kind="function">
-      <type>iTextureHandle *</type>
-      <name>GetEffectsOutputTarget</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a0a004ba28e363be811ad5419a2dfd599</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>GetIntermediateTargetFormat</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a5e9392f01f1de4d85de760f052e4826d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>GetLastLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>ad4768e784c4106a0ccb90fbe733e21f1</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>iTextureHandle *</type>
-      <name>GetLayerOutput</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a04565f15865b2e8423ebefce6b1b4482</anchor>
-      <arglist>(const Layer *layer)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>GetLayerRenderSVs</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a4c358794aca6660df39a23c61bdfa67a</anchor>
-      <arglist>(const Layer *layer, csShaderVariableStack &amp;svStack) const </arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>GetScreenLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>aa3c09123fa9190f599b53ac2e556608e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>iTextureHandle *</type>
-      <name>GetScreenTarget</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a7c0189298e762bdf37a68fdbf71831ad</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>Initialize</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a9bba6f8d15f5004b65e5d6e851df46ed</anchor>
-      <arglist>(iObjectRegistry *objectReg)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>RemoveLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>aab818e00560568fee918e0d53dd421f9</anchor>
-      <arglist>(Layer *layer)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>ScreenSpaceYFlipped</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a97c79e0fc101e4766aaf6e1eaad6823e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetEffectsOutputTarget</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a536188fbc77e5e9fafbd8f62d77b1eb7</anchor>
-      <arglist>(iTextureHandle *tex)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetIntermediateTargetFormat</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a3a1d278b262dbb12fc023f3b7e3baf6c</anchor>
-      <arglist>(const char *textureFmt)</arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>AddLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a878cd415bfeee70f47b99cfb27ff6acd</anchor>
-      <arglist>(iShader *shader, const LayerOptions &amp;opt, size_t numMaps, const LayerInputMap *maps)</arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>AddLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a7b65ed1d43eb011e19734c29b88710fe</anchor>
-      <arglist>(iShader *shader, size_t numMaps, const LayerInputMap *maps)</arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>AddLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>ae328536936efe286bd74ced6b9d06581</anchor>
-      <arglist>(iShader *shader, const LayerOptions &amp;opt)</arglist>
-    </member>
-    <member kind="function">
-      <type>Layer *</type>
-      <name>AddLayer</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a947450eac6885eacde6cfd72f25fae3c</anchor>
-      <arglist>(iShader *shader)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetChainedOutput</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a4544b29f7249f0e9bc5dcd1eadfe2af9</anchor>
-      <arglist>(PostEffectManager &amp;nextEffects)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetChainedOutput</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a1e9f5dfafd383c00e99132cc922a0d9e</anchor>
-      <arglist>(PostEffectManager *nextEffects)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>SetupView</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>ab406ec5cdd691481eb97c187d66914e5</anchor>
-      <arglist>(uint width, uint height, CS::Math::Matrix4 &amp;perspectiveFixup)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>SetupView</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager.html</anchorfile>
-      <anchor>a25d137c803e945bfa05558f7b555bc38</anchor>
-      <arglist>(iView *view, CS::Math::Matrix4 &amp;perspectiveFixup)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::RenderManager::PostEffectManager::DimensionData::TexturesBucket</name>
-    <filename>structCS_1_1RenderManager_1_1PostEffectManager_1_1DimensionData_1_1TexturesBucket.html</filename>
-    <member kind="variable">
-      <type>float</type>
-      <name>texMaxX</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1DimensionData_1_1TexturesBucket.html</anchorfile>
-      <anchor>a16ca662e6cd00772cc22114753886ec0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRefArray&lt; iTextureHandle &gt;</type>
-      <name>textures</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1DimensionData_1_1TexturesBucket.html</anchorfile>
-      <anchor>a3993acf4f97f1d962f6cb99670be2ae7</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>CS::RenderManager::PostEffectManager::Layer</name>
-    <filename>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</filename>
-    <member kind="function">
-      <type>const csArray&lt; LayerInputMap &gt; &amp;</type>
-      <name>GetInputs</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>a611ce7460d4b7f396e474f0e60187db8</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const LayerOptions &amp;</type>
-      <name>GetOptions</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>addbe09810e181f9ec497c4658bc1a27b</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>GetOutTextureNum</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>ad9935cfc30cd91ee563cd76024c35dbe</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>iShader *</type>
-      <name>GetShader</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>ade68a51ca5b5a0fb8a6b9c34ff201116</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>iShaderVariableContext *</type>
-      <name>GetSVContext</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>a36d3dc8c456cec08149a26f86f750c63</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetOptions</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>a5f9308a90cd0b543933681aee825be9b</anchor>
-      <arglist>(const LayerOptions &amp;opt)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>SetShader</name>
-      <anchorfile>classCS_1_1RenderManager_1_1PostEffectManager_1_1Layer.html</anchorfile>
-      <anchor>a3ea0a135b86d01cbfee41ad1ef07be4f</anchor>
-      <arglist>(iShader *shader)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::RenderManager::PostEffectManager::LayerInputMap</name>
-    <filename>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</filename>
-    <member kind="variable">
-      <type>Layer *</type>
-      <name>inputLayer</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>a0ed453e8ba9ef1a5975288b1c14ae953</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csString</type>
-      <name>inputPixelSizeName</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>a3c7a238f159e58b48c757a0e9fdfcb18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRef&lt; csShaderVariable &gt;</type>
-      <name>manualInput</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>a583c91408bea7c8a9cb76ec57de58b2a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRect</type>
-      <name>sourceRect</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>aa717826e602747672d2540ee5d69e0a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csString</type>
-      <name>texcoordName</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>a69aee0cb5c3339707425175e17c94149</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csString</type>
-      <name>textureName</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerInputMap.html</anchorfile>
-      <anchor>a4d7bfb21619dc6d454112b5b60bcf04d</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>CS::RenderManager::PostEffectManager::LayerOptions</name>
-    <filename>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</filename>
-    <member kind="variable">
-      <type>int</type>
-      <name>downsample</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>a51a17278461430688562d51aca5c69ed</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRef&lt; iTextureHandle &gt;</type>
-      <name>manualTarget</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>a54ce3274c8f1f944573966ab76a13919</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>maxMipmap</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>a6f9eeb07195b55c3731a240cd4c15aee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>mipmap</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>ac7dee6c411f482c85342dfaec770675d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>noTextureReuse</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>aa924e62f82e7349db1d81d3d55bb7dec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>readback</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>ab0b2a8529b6cd96c7e67da29591500c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Layer *</type>
-      <name>renderOn</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>aa5c61323cbdadb88bb0733ae160beb88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>csRect</type>
-      <name>targetRect</name>
-      <anchorfile>structCS_1_1RenderManager_1_1PostEffectManager_1_1LayerOptions.html</anchorfile>
-      <anchor>a1d87e32d21759579eccb5bef93c12b2a</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -137958,25 +138440,123 @@
       <arglist>(iObjectRegistry *objectReg, const char *configKey)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>AddLayersFromDocument</name>
+      <type>void</type>
+      <name>AddPostEffect</name>
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
-      <anchor>a0d3485498cfb34495c2a03279cd73463</anchor>
-      <arglist>(iDocumentNode *node)</arglist>
+      <anchor>a96a218297b7b09c9489d08f599c6bb68</anchor>
+      <arglist>(iPostEffect *effect)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>AddLayersFromFile</name>
+      <type>csPtr&lt; iPostEffect &gt;</type>
+      <name>CreatePostEffect</name>
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
-      <anchor>a311921f36d73dcbe0856a217ac4d0b01</anchor>
-      <arglist>(const char *filename)</arglist>
+      <anchor>ab559a12c6094c2dca2d13ee5837729b6</anchor>
+      <arglist>(const char *name) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>ClearLayers</name>
+      <name>DrawPostEffects</name>
       <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
-      <anchor>a06e00bd7523d7cedb04fc477496775ba</anchor>
-      <arglist>()</arglist>
+      <anchor>ae1141562bd963bf5c4ad02f297db2e2f</anchor>
+      <arglist>(RenderTreeBase &amp;renderTree)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>FindPostEffect</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>ab1ab65ba57ebb147e9cb0287a7b530e7</anchor>
+      <arglist>(const char *name) const </arglist>
+    </member>
+    <member kind="function">
+      <type>iTextureHandle *</type>
+      <name>GetDepthTarget</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a1426bcb469d38aa346e0c552e379df0c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>iTextureHandle *</type>
+      <name>GetEffectsOutputTarget</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a1391a348e35e5bf68cb6990b03c1bdfd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>iPostEffect *</type>
+      <name>GetPostEffect</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>ae75d778e77d3bf65ff59e27d65055d14</anchor>
+      <arglist>(size_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>GetPostEffectCount</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a04cd1991fef97f1c66a183497bc3de40</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>iTextureHandle *</type>
+      <name>GetScreenTarget</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>acda86cb4578a500111e47d5611861024</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>InsertPostEffect</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a32d5e7f8cb7d51f29c02b5f48ab407b2</anchor>
+      <arglist>(iPostEffect *effect, size_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>RemovePostEffect</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a945abd4d0d33cc9ecdd9a2f80829a92e</anchor>
+      <arglist>(iPostEffect *effect)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>RemovePostEffect</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a483b98b133121968cfd5421d895a47d6</anchor>
+      <arglist>(size_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ScreenSpaceYFlipped</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a8670b7cfdd75eb260f8e0c6688e0530a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetDepthBuffer</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a51d35f15f348fb44aa8739ad53c40def</anchor>
+      <arglist>(iTextureHandle *depth)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetEffectsOutputTarget</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a5f89710fff8dfe7be3d97fdcfac43947</anchor>
+      <arglist>(iTextureHandle *tex)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetPostEffectsEnabled</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>ac592014b8af387572dee12f46a548ef0</anchor>
+      <arglist>(bool status)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>SetupView</name>
+      <anchorfile>classCS_1_1RenderManager_1_1PostEffectsSupport.html</anchorfile>
+      <anchor>a549c4d8f41ca1323e4f3f14b82021168</anchor>
+      <arglist>(iView *view, CS::Math::Matrix4 &amp;perspectiveFixup)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -138229,10 +138809,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>csRef&lt; PostEffectManager &gt;</type>
-      <name>postEffects</name>
+      <type>csRef&lt; iPostEffect &gt;</type>
+      <name>postEffect</name>
       <anchorfile>structCS_1_1RenderManager_1_1RenderTree_1_1ContextNode.html</anchorfile>
-      <anchor>a3d2548b31cf26dd8f29e9422f07492ee</anchor>
+      <anchor>a51c3d0d97e5202c73543475bbc160b23</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -139178,10 +139758,10 @@
       <arglist>(iObjectRegistry *objReg, const char *shadowType)</arglist>
     </member>
     <member kind="variable">
-      <type>csRef&lt; PostEffectManager &gt;</type>
-      <name>postEffects</name>
+      <type>csRef&lt; iPostEffect &gt;</type>
+      <name>postEffect</name>
       <anchorfile>classCS_1_1RenderManager_1_1ShadowSettings.html</anchorfile>
-      <anchor>a2119c215b71751cc6be32e3f277c9fa8</anchor>
+      <anchor>a5d5c2830e5796d80a76a16ced2cf430f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -139803,8 +140383,8 @@
       <type>void</type>
       <name>Initialize</name>
       <anchorfile>classCS_1_1RenderManager_1_1AutoFX_1_1FramebufferTex__Base_1_1PersistentData.html</anchorfile>
-      <anchor>a241993cff5a60881530e2a117a5a52bb</anchor>
-      <arglist>(iObjectRegistry *objReg, PostEffectManager *postEffects)</arglist>
+      <anchor>a2b54a9982a7f09dc2002ddea9b3046fc</anchor>
+      <arglist>(iObjectRegistry *objReg, iRenderManagerPostEffects *postEffectManager)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -139848,8 +140428,8 @@
       <type>void</type>
       <name>Initialize</name>
       <anchorfile>structCS_1_1RenderManager_1_1AutoFX_1_1ReflectRefract__Base_1_1PersistentData.html</anchorfile>
-      <anchor>a7b68d9cc42cd6cf64e3323fc0f68bfd8</anchor>
-      <arglist>(iObjectRegistry *objReg, RenderTreeBase::DebugPersistent &amp;dbgPersist, PostEffectManager *postEffects)</arglist>
+      <anchor>abdd34f0d84815616b2d4c368d6aed4f3</anchor>
+      <arglist>(iObjectRegistry *objReg, RenderTreeBase::DebugPersistent &amp;dbgPersist, iRenderManagerPostEffects *postEffectManager)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -140842,6 +141422,7 @@
     <class kind="struct">CS::Utility::iModifiableParameter</class>
     <class kind="class">CS::Utility::ImportKit</class>
     <class kind="class">CS::Utility::InternalRefCount</class>
+    <class kind="class">CS::Utility::MeshFilter</class>
     <class kind="class">CS::Utility::ModifiableConstraintBitMask</class>
     <class kind="class">CS::Utility::ModifiableConstraintBounded</class>
     <class kind="class">CS::Utility::ModifiableConstraintEnum</class>
@@ -140941,6 +141522,24 @@
       <name>MODIFIABLE_CONSTRAINT_BITMASK</name>
       <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
       <anchor>ac70a6bb592e9cb290fbd4ae720169916a9674fc4b724d3ec3a5dcc1a317bce5ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>MeshFilterMode</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>a3dc981c479bc9b1938fda75f2cbef9a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_FILTER_EXCLUDE</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>a3dc981c479bc9b1938fda75f2cbef9a7a54d8c02000c7f05f1061fb6c3c67695b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MESH_FILTER_INCLUDE</name>
+      <anchorfile>namespaceCS_1_1Utility.html</anchorfile>
+      <anchor>a3dc981c479bc9b1938fda75f2cbef9a7ad660c9cb43487342745de27b01f2e276</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -142272,6 +142871,52 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CS::Utility::MeshFilter</name>
+    <filename>classCS_1_1Utility_1_1MeshFilter.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>AddFilterMesh</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>a54fd7fe1b546dd19d9dc7fcaa4fd2751</anchor>
+      <arglist>(iMeshWrapper *mesh, bool addChildren=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>a0ce9302554ea62ff15b2c642459218bb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MeshFilterMode</type>
+      <name>GetFilterMode</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>abcff88e62437d31a675ec9ef82341c3b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsMeshFiltered</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>a363c44b16bcf443ae5a43eda53270069</anchor>
+      <arglist>(iMeshWrapper *mesh) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RemoveFilterMesh</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>a980cf467cf55f8d567677d25569196b5</anchor>
+      <arglist>(iMeshWrapper *mesh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetFilterMode</name>
+      <anchorfile>classCS_1_1Utility_1_1MeshFilter.html</anchorfile>
+      <anchor>a97592703c97f3cf47e60e7a0cbd06005</anchor>
+      <arglist>(MeshFilterMode mode)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CS::Utility::ModifiableConstraintBitMask</name>
     <filename>classCS_1_1Utility_1_1ModifiableConstraintBitMask.html</filename>
     <base>scfImplementation1&lt; ModifiableConstraintBitMask, iModifiableConstraint &gt;</base>
@@ -142443,6 +143088,13 @@
     <templarg></templarg>
     <base protection="private">CS::Implementation::NonCopyable_</base>
     <member kind="function">
+      <type>T *</type>
+      <name>Detach</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
+      <anchor>a56ef4b4793917529259cf44503c4c1b9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>Invalidate</name>
       <anchorfile>classCS_1_1Utility_1_1ScopedArrayPointer.html</anchorfile>
@@ -142517,6 +143169,13 @@
     <filename>classCS_1_1Utility_1_1ScopedPointer.html</filename>
     <templarg></templarg>
     <base protection="private">CS::Implementation::NonCopyable_</base>
+    <member kind="function">
+      <type>T *</type>
+      <name>Detach</name>
+      <anchorfile>classCS_1_1Utility_1_1ScopedPointer.html</anchorfile>
+      <anchor>a4d2bb31b15d0a39f5f7bd4c224ef4bb9</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>Invalidate</name>
