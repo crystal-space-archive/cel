@@ -26099,6 +26099,8 @@
     <class kind="class">csComparator&lt; csString, csString &gt;</class>
     <class kind="class">csComparatorString</class>
     <class kind="class">csComparatorStruct</class>
+    <class kind="class">CS::EqualComparator</class>
+    <namespace>CS</namespace>
   </compound>
   <compound kind="file">
     <name>compileassert.h</name>
@@ -27715,6 +27717,7 @@
     <class kind="class">csHashComputerIntegral</class>
     <class kind="class">csHashComputerString</class>
     <class kind="class">csHashComputerStruct</class>
+    <class kind="struct">CS::HashFunction</class>
     <namespace>CS</namespace>
     <namespace>CS::Utility</namespace>
     <member kind="function">
@@ -47063,6 +47066,13 @@
       <arglist>(int edge, int &amp;v1, int &amp;v2) const </arglist>
     </member>
     <member kind="function">
+      <type>csVector2</type>
+      <name>GetSize</name>
+      <anchorfile>classcsBox2.html</anchorfile>
+      <anchor>ac7a32cabffb062b512478c94276a9cc7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>In</name>
       <anchorfile>classcsBox2.html</anchorfile>
@@ -48045,6 +48055,13 @@
       <anchorfile>classcsBoxClipper.html</anchorfile>
       <anchor>a72a74d9d24995199da33cadae780fc79</anchor>
       <arglist>(const csBox2 &amp;b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual csBox2</type>
+      <name>GetBoundingBox</name>
+      <anchorfile>classcsBoxClipper.html</anchorfile>
+      <anchor>a1ea6ecede8b5fc766097531b16fc4dff</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual ClipperType</type>
@@ -64856,6 +64873,13 @@
       <arglist>(csPoly2D *Clipper, bool mirror=false, bool copy=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual csBox2</type>
+      <name>GetBoundingBox</name>
+      <anchorfile>classcsPolygonClipper.html</anchorfile>
+      <anchor>ab5239ff19a2f53315de6a59953f43e2b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual ClipperType</type>
       <name>GetClipperType</name>
       <anchorfile>classcsPolygonClipper.html</anchorfile>
@@ -75387,6 +75411,27 @@
       <arglist>(iMeshWrapper *mesh=0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>DrawBackground</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>ac511daef5b994d418fd43bc8511165b7</anchor>
+      <arglist>(iGraphics3D *g3d)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const csColor4 *</type>
+      <name>GetBackgroundColor</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a96558fa326fd742448a49652d12c0945</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual iTextureHandle *</type>
+      <name>GetBackgroundTexture</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a78ba3ae3d53a51e90a8ebbc97eafb12e</anchor>
+      <arglist>(int &amp;sx, int &amp;sy, int &amp;sw, int &amp;sh, int &amp;tx, int &amp;ty, int &amp;tw, int &amp;th, uint8 &amp;alpha, bool &amp;tiled) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
       <type>virtual iCamera *</type>
       <name>GetCamera</name>
       <anchorfile>classcsView.html</anchorfile>
@@ -75490,6 +75535,20 @@
       <anchorfile>classcsView.html</anchorfile>
       <anchor>a4337049ef2cbdffb7c8c03c8266ef97a</anchor>
       <arglist>(bool state)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetBackgroundColor</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>a35fac5ddb5609004bfe837d89d9ce096</anchor>
+      <arglist>(csColor4 *color)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>SetBackgroundTexture</name>
+      <anchorfile>classcsView.html</anchorfile>
+      <anchor>abfc7bb86418561f31b02b1d771a86ae6</anchor>
+      <arglist>(iTextureHandle *texture, int sx, int sy, int sw, int sh, int tx, int ty, int tw, int th, uint8 alpha, bool tiled)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -77652,6 +77711,13 @@
       <arglist>(iScript *script=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsInitialized</name>
+      <anchorfile>structiCEGUI.html</anchorfile>
+      <anchor>ad8aa6b5dfc86dac256f1ab0fff10d151</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>Render</name>
       <anchorfile>structiCEGUI.html</anchorfile>
@@ -77722,6 +77788,13 @@
       <anchorfile>structiClipper2D.html</anchorfile>
       <anchor>a372dfc98a91136aee698f9baaf2ed962</anchor>
       <arglist>(csVector2 *InPolygon, size_t &amp;InOutCount, csBox2 &amp;BoundingBox)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual csBox2</type>
+      <name>GetBoundingBox</name>
+      <anchorfile>structiClipper2D.html</anchorfile>
+      <anchor>af22bc81f79aca1be1bc9c4d2f48e93ce</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ClipperType</type>
@@ -104911,6 +104984,27 @@
       <arglist>(iMeshWrapper *mesh=0)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>DrawBackground</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a63db5af0f3dd9e4cb576434cb591e95a</anchor>
+      <arglist>(iGraphics3D *g3d)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual const csColor4 *</type>
+      <name>GetBackgroundColor</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a42615083be0343df57dc8bc05c5b6093</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual iTextureHandle *</type>
+      <name>GetBackgroundTexture</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>abac84f9008d280ca813f3854e436146b</anchor>
+      <arglist>(int &amp;sx, int &amp;sy, int &amp;sw, int &amp;sh, int &amp;tx, int &amp;ty, int &amp;tw, int &amp;th, uint8 &amp;alpha, bool &amp;tiled) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
       <type>virtual iCamera *</type>
       <name>GetCamera</name>
       <anchorfile>structiView.html</anchorfile>
@@ -105014,6 +105108,20 @@
       <anchorfile>structiView.html</anchorfile>
       <anchor>a0614c7de334babdbf08121a480ed808f</anchor>
       <arglist>(bool state)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBackgroundColor</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>a522da258c60975aaaf90d5c677c592b5</anchor>
+      <arglist>(csColor4 *color)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>SetBackgroundTexture</name>
+      <anchorfile>structiView.html</anchorfile>
+      <anchor>ada26878cb52eb49d7a4f33bcd63f4437</anchor>
+      <arglist>(iTextureHandle *texture, int sx, int sy, int sw, int sh, int tx, int ty, int tw, int th, uint8 alpha, bool tiled)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -107295,12 +107403,14 @@
     <namespace>CS::WX</namespace>
     <class kind="class">CS::CowWrapper</class>
     <class kind="class">CS::DataBuffer</class>
+    <class kind="class">CS::EqualComparator</class>
     <class kind="struct">CS::GLExtensionFlags</class>
     <class kind="struct">CS::GLExtensionFunctions</class>
     <class kind="struct">CS::GLExtensionManager</class>
     <class kind="struct">CS::GLXExtensionFlags</class>
     <class kind="struct">CS::GLXExtensionFunctions</class>
     <class kind="struct">CS::GLXExtensionManager</class>
+    <class kind="struct">CS::HashFunction</class>
     <class kind="class">CS::ImageAutoConvert</class>
     <class kind="struct">CS::InvalidStringID</class>
     <class kind="class">CS::MeasureTime</class>
@@ -107652,6 +107762,18 @@
       <anchorfile>classCS_1_1DataBuffer.html</anchorfile>
       <anchor>a5878d572b0ec8e8309c89ec621acdb3d</anchor>
       <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CS::EqualComparator</name>
+    <filename>classCS_1_1EqualComparator.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator()</name>
+      <anchorfile>classCS_1_1EqualComparator.html</anchorfile>
+      <anchor>ac4309227447b394ac3cb3a778e59e62a</anchor>
+      <arglist>(T const &amp;r1, T const &amp;r2) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -116718,6 +116840,11 @@
     <filename>structCS_1_1GLXExtensionManager.html</filename>
     <base>CS::GLXExtensionFunctions</base>
     <base>CS::GLXExtensionFlags</base>
+  </compound>
+  <compound kind="struct">
+    <name>CS::HashFunction</name>
+    <filename>structCS_1_1HashFunction.html</filename>
+    <templarg></templarg>
   </compound>
   <compound kind="class">
     <name>CS::ImageAutoConvert</name>
